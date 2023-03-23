@@ -10,8 +10,9 @@ public class ArangeElements : MonoBehaviour
     void Start()
     {
         if(textElement){
-
-        CreateEnemiesAroundPoint(28,transform.position,GetComponent<SphereCollider>().radius/6);
+            Debug.Log(transform.localScale.x);
+            Debug.Log(GetComponent<SphereCollider>().radius);
+        CreateEnemiesAroundPoint(28,transform.position,GetComponent<SphereCollider>().radius);
         }
     }
 
