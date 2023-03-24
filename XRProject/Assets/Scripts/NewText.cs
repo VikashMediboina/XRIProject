@@ -8,13 +8,15 @@ public class NewText : MonoBehaviour
 {
     // Start is called before the first frame update
      public TextMeshPro textComponent; 
+     public GameObject EnableInteractable;
     void Start()
     {
        
     }
 
     public void NewTextEntry(TextMeshPro value){
-        if(textComponent.text=="Enter Text..."){
+        if(EnableInteractable.GetComponent<EnableInteractable>().acessClick()){
+ if(textComponent.text=="Enter Text..."){
             textComponent.text="";
         }
         else if(textComponent.text==""){
@@ -29,6 +31,10 @@ public class NewText : MonoBehaviour
         else{
         textComponent.text+=value.text;
         }
+
+        EnableInteractable.GetComponent<EnableInteractable>().resetClick();
+        }
+       
     }
     // Update is called once per frame
     void Update()
