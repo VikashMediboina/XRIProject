@@ -15,7 +15,6 @@ public class NewText : MonoBehaviour
     }
 
     public void NewTextEntry(TextMeshPro value){
-        if(EnableInteractable.GetComponent<EnableInteractable>().acessClick()){
  if(textComponent.text=="Enter Text..."){
             textComponent.text="";
         }
@@ -32,8 +31,6 @@ public class NewText : MonoBehaviour
         textComponent.text+=value.text;
         }
 
-        EnableInteractable.GetComponent<EnableInteractable>().resetClick();
-        }
        
     }
     // Update is called once per frame

@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61896
+53987
 Successfully changed project path to: /Users/vikashmediboina/XRIProject/XRProject
 /Users/vikashmediboina/XRIProject/XRProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -54,12 +54,12 @@ Successfully changed project path to: /Users/vikashmediboina/XRIProject/XRProjec
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8608758400] Host "[IP] 10.0.0.172 [Port] 0 [Flags] 2 [Guid] 1343620898 [EditorId] 1343620898 [Version] 1048832 [Id] OSXEditor(0,vikashs-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8831187584] Host "[IP] 10.0.0.172 [Port] 0 [Flags] 2 [Guid] 4213643543 [EditorId] 4213643543 [Version] 1048832 [Id] OSXEditor(0,vikashs-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8608758400] Host "[IP] 10.0.0.172 [Port] 0 [Flags] 2 [Guid] 1343620898 [EditorId] 1343620898 [Version] 1048832 [Id] OSXEditor(0,vikashs-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8831187584] Host "[IP] 10.0.0.172 [Port] 0 [Flags] 2 [Guid] 4213643543 [EditorId] 4213643543 [Version] 1048832 [Id] OSXEditor(0,vikashs-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 90.10 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.16 ms.
+Refreshing native plugins compatible for Editor in 90.08 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/vikashmediboina/XRIProject/XRProject/Assets
@@ -74,14 +74,14 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56069
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56837
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.16f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.16f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.16f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.003021 seconds.
+Registered in 0.001389 seconds.
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
@@ -89,39 +89,39 @@ Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 98.99 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.18 ms.
+Refreshing native plugins compatible for Editor in 92.27 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.528 seconds
+- Completed reload, in  0.468 seconds
 Domain Reload Profiling:
-	ReloadAssembly (528ms)
-		BeginReloadAssembly (48ms)
+	ReloadAssembly (468ms)
+		BeginReloadAssembly (27ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (408ms)
-			LoadAssemblies (49ms)
+		EndReloadAssembly (370ms)
+			LoadAssemblies (27ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (72ms)
+			SetupTypeCache (73ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (22ms)
-			SetupLoadedEditorAssemblies (284ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (251ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (102ms)
+				InitializePlatformSupportModulesInManaged (83ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (99ms)
+				RefreshPlugins (92ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (54ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
+				ProcessInitializeOnLoadAttributes (50ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002115 seconds.
+Registered in 0.002008 seconds.
 Android Extension - Scanning For ADB Devices 553 ms
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
@@ -133,33 +133,35 @@ Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.71 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
+Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
 Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  0.794 seconds
+- Completed reload, in  0.709 seconds
 Domain Reload Profiling:
-	ReloadAssembly (795ms)
-		BeginReloadAssembly (61ms)
+	ReloadAssembly (709ms)
+		BeginReloadAssembly (59ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (661ms)
-			LoadAssemblies (47ms)
+		EndReloadAssembly (585ms)
+			LoadAssemblies (34ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (223ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (300ms)
+			SetupTypeCache (190ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (281ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (15ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (65ms)
-				ProcessInitializeOnLoadAttributes (201ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
+				BeforeProcessingInitializeOnLoad (61ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -170,104 +172,12 @@ Worker process is ready to serve import requests
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Launching external process: /Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.76 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
-Unloading 4981 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (406.4 KB). Loaded Objects now: 5419.
-Memory consumption went from 175.1 MB to 174.7 MB.
-Total: 2.937625 ms (FindLiveObjects: 0.160709 ms CreateObjectMapping: 0.053209 ms MarkObjects: 2.605917 ms  DeleteObjects: 0.117166 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002023 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x2b467f000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  0.693 seconds
-Domain Reload Profiling:
-	ReloadAssembly (694ms)
-		BeginReloadAssembly (85ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (549ms)
-			LoadAssemblies (37ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (201ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (247ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (42ms)
-				ProcessInitializeOnLoadAttributes (172ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on WitService
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 3.98 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
-Unloading 4877 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (130.0 KB). Loaded Objects now: 5424.
-Memory consumption went from 165.1 MB to 165.0 MB.
-Total: 2.607375 ms (FindLiveObjects: 0.149667 ms CreateObjectMapping: 0.063208 ms MarkObjects: 2.316875 ms  DeleteObjects: 0.076917 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 4.09 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
-Unloading 50 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (130.1 KB). Loaded Objects now: 5424.
-Memory consumption went from 68.4 MB to 68.3 MB.
-Total: 3.242792 ms (FindLiveObjects: 0.181333 ms CreateObjectMapping: 0.055750 ms MarkObjects: 2.913750 ms  DeleteObjects: 0.091667 ms)
+Refreshing native plugins compatible for Editor in 0.67 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 4989 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (414.8 KB). Loaded Objects now: 5428.
+Memory consumption went from 175.6 MB to 175.2 MB.
+Total: 2.742959 ms (FindLiveObjects: 0.161083 ms CreateObjectMapping: 0.058458 ms MarkObjects: 2.371667 ms  DeleteObjects: 0.151000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -281,19 +191,481 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 416270.962873 seconds.
-  path: Assets/AlwaysLookAt.cs
-  artifactKey: Guid(3fca120a73c614a5694ffdf7e75a210b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/AlwaysLookAt.cs using Guid(3fca120a73c614a5694ffdf7e75a210b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e3416ef31e91884462fccc3a48eac33') in 0.111731 seconds 
+  Time since last request: 44564.086441 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Scissors_03.wav
+  artifactKey: Guid(4eb7c76586f55214595478557cf00925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Scissors_03.wav using Guid(4eb7c76586f55214595478557cf00925) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315bbd99b54eb8839a5ee026b6889b1a') in 0.083148 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_04.wav
+  artifactKey: Guid(1bd60f4e4774c97469bd13aad8a14735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_04.wav using Guid(1bd60f4e4774c97469bd13aad8a14735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ea32024b3e3db9dd85ce025fdc0a589') in 0.003866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_05.wav
+  artifactKey: Guid(07b5938cd1fd49c4999aa1b2b6b398eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_05.wav using Guid(07b5938cd1fd49c4999aa1b2b6b398eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ac7fddce511b812c7fcfb04abccea71') in 0.004015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Oculus/Interaction/Samples/Sounds/GrabObject01.wav
+  artifactKey: Guid(452cab5cd4cc31a4bbda065fe1729e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Sounds/GrabObject01.wav using Guid(452cab5cd4cc31a4bbda065fe1729e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '424af1f200859c3e77a6713a77199971') in 0.004183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Press_02.wav
+  artifactKey: Guid(2ed5105a8954bb84186243c8ac778daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Press_02.wav using Guid(2ed5105a8954bb84186243c8ac778daf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8180d9f7f69fc0e9f1d7f0b15d1016de') in 0.003917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxClose_03.wav
+  artifactKey: Guid(1d7fb3c7a39fe574798cf3697c8204fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxClose_03.wav using Guid(1d7fb3c7a39fe574798cf3697c8204fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1400eba1a4e159f8073587c23ecf3264') in 0.004256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Oculus/Spatializer/scenes/sounds/hammer.wav
+  artifactKey: Guid(3a4baf251c1814716b9458d036384a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Spatializer/scenes/sounds/hammer.wav using Guid(3a4baf251c1814716b9458d036384a76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a262f0a055e089a3e3b0c3225f2dff') in 0.005510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsDown_02.wav
+  artifactKey: Guid(7774adc1dddd0814380db576766b7efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsDown_02.wav using Guid(7774adc1dddd0814380db576766b7efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e78daa127483a0103c8198921b54b4b') in 0.004185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_05.wav
+  artifactKey: Guid(061eee0218cd9a5448e78cfe72eaebfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_05.wav using Guid(061eee0218cd9a5448e78cfe72eaebfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c674f4391b2179f7f59d015a98c5fbb3') in 0.003874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Rock_02.wav
+  artifactKey: Guid(46ea7610960363c418d8f456b08b9cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Rock_02.wav using Guid(46ea7610960363c418d8f456b08b9cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61631292dab367b044e812cb1f9392f9') in 0.004846 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Reappear_01.wav
+  artifactKey: Guid(44420cc82247b8c41b2a11399c3dda75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Reappear_01.wav using Guid(44420cc82247b8c41b2a11399c3dda75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe4affcf91541b4549a53d67cd3e7c12') in 0.004451 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/SceneManager/Audio/bubble.wav
+  artifactKey: Guid(9a752d3328516a44384df0f171c8a5ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/SceneManager/Audio/bubble.wav using Guid(9a752d3328516a44384df0f171c8a5ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd00b4da19536656f0129c407e46ad0e') in 0.006347 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Rock_01.wav
+  artifactKey: Guid(0d5bc27cc53f12b4c9ae2d4e8bc8fd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Rock_01.wav using Guid(0d5bc27cc53f12b4c9ae2d4e8bc8fd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ba19a5155e60d5d4489f945fac1dd6f') in 0.004903 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Locomotion_HotspotHover.wav
+  artifactKey: Guid(a4104b81b59e0254585ab51f18eb979d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Locomotion_HotspotHover.wav using Guid(a4104b81b59e0254585ab51f18eb979d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ff55f4fae7ceeff53a4196927c0838b') in 0.004571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Release_01.wav
+  artifactKey: Guid(01ee74389d1a6844c9250d4230e734d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Release_01.wav using Guid(01ee74389d1a6844c9250d4230e734d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1dc884fc6b3e0092f7e303da4d7fbe7') in 0.005013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Stop_03.wav
+  artifactKey: Guid(05069c5421bd2de43aaae9a9d2df1099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Stop_03.wav using Guid(05069c5421bd2de43aaae9a9d2df1099) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da6790739ba33705cc156756a93eb174') in 0.004357 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Release_02.wav
+  artifactKey: Guid(c778383a4f7517444bceb89ec51cc4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Release_02.wav using Guid(c778383a4f7517444bceb89ec51cc4c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a526adfa4850aa7de79d1bb5e2d6a796') in 0.004502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxOpen_03.wav
+  artifactKey: Guid(2a3a28423ef0779459533afedeee12cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxOpen_03.wav using Guid(2a3a28423ef0779459533afedeee12cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e772529b31ce7e0957da05a9040e34c8') in 0.004187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_CameraTool_Shutter_01.wav
+  artifactKey: Guid(d009b2948655d054d8f4b6c17607d08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_CameraTool_Shutter_01.wav using Guid(d009b2948655d054d8f4b6c17607d08b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43b7157284dc0bfa719deebeb6112b2a') in 0.004611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_03.wav
+  artifactKey: Guid(7f1459cc291cebf46b6a654b2530e93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_03.wav using Guid(7f1459cc291cebf46b6a654b2530e93f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adc4b65db2142a453d639e63d0a5c9e9') in 0.004279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicRay_Release.wav
+  artifactKey: Guid(2786b7a027507264ebaad5d1bf1cd1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicRay_Release.wav using Guid(2786b7a027507264ebaad5d1bf1cd1dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5ef95490f480947c8a371a7b4b73684') in 0.004458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Press_01.wav
+  artifactKey: Guid(9c7f85ce3536b3b4c89aa4bd0db96665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Press_01.wav using Guid(9c7f85ce3536b3b4c89aa4bd0db96665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd921c8f4de15039462a21c8f4cfdb24c') in 0.004236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_07.wav
+  artifactKey: Guid(7c0de7743a99e16458d6b4b9d5bf49a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_07.wav using Guid(7c0de7743a99e16458d6b4b9d5bf49a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929e27e2e0a39a84ceff281f4e54db16') in 0.004590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_01.wav
+  artifactKey: Guid(b684caa52b59fdf4a8b0b0436f92268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_01.wav using Guid(b684caa52b59fdf4a8b0b0436f92268a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '937f4239ab7ce7b1dfdeb4e8463efc65') in 0.004096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxClose_02.wav
+  artifactKey: Guid(87ea10243c060994e963520e19099c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxClose_02.wav using Guid(87ea10243c060994e963520e19099c35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0a69cf87777114231d6b33bd6977ba8') in 0.004191 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Release_01.wav
+  artifactKey: Guid(1cb50a7de0f9f954b8b0c331fe898a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Release_01.wav using Guid(1cb50a7de0f9f954b8b0c331fe898a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c32d2587d4bfb9f837b3427160cb19ed') in 0.003951 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Locomotion_SnapTurn.wav
+  artifactKey: Guid(73b1216fbe8e8c7408f4269715da6d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Locomotion_SnapTurn.wav using Guid(73b1216fbe8e8c7408f4269715da6d86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79880d410c26e2b8ed3294d747001df2') in 0.004321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_02.wav
+  artifactKey: Guid(2cb38d6272069334da3b06fb6d75c673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_02.wav using Guid(2cb38d6272069334da3b06fb6d75c673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d75ded2b9a1e7d6bcd9eabab7e9f8b0') in 0.004605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Scissors_02.wav
+  artifactKey: Guid(a988f805ead2c9f4db2a2956cf3555f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Scissors_02.wav using Guid(a988f805ead2c9f4db2a2956cf3555f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9f866ec707fac5f529c6dd2e2d614eb') in 0.004437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsUp_01.wav
+  artifactKey: Guid(e37b07310ea895b42aab47a925469ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsUp_01.wav using Guid(e37b07310ea895b42aab47a925469ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4824a1d768186e389f2a1e2675c97ceb') in 0.005551 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Stop_02.wav
+  artifactKey: Guid(ac747ae94ae63b14da0640929cb8cb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Stop_02.wav using Guid(ac747ae94ae63b14da0640929cb8cb60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '394f701d53b21f9b5ad7b480334fe275') in 0.004399 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_03.wav
+  artifactKey: Guid(94b72b7e55617a048a8468e9ac572290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_03.wav using Guid(94b72b7e55617a048a8468e9ac572290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5901e5cdf2cd52159aa426d7c478454a') in 0.004276 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxClose_01.wav
+  artifactKey: Guid(25a99cec3fc16184490a8fbfe21d1528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_ComplexGrab_BoxClose_01.wav using Guid(25a99cec3fc16184490a8fbfe21d1528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9625750e55f9325e94e4948e61e4c45') in 0.004453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsDown_03.wav
+  artifactKey: Guid(11f00901e96c8d34687e2b184c356f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsDown_03.wav using Guid(11f00901e96c8d34687e2b184c356f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b77d5933d525c58bc05d62c5b9cd964') in 0.004385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Oculus/Voice/Demo/Audio/Charlie_TimerComplete.wav
+  artifactKey: Guid(ad0a5185ecef964498ee86f08f3694da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Voice/Demo/Audio/Charlie_TimerComplete.wav using Guid(ad0a5185ecef964498ee86f08f3694da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb54356e23f57f358752775ba6c4f21d') in 0.004074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_06.wav
+  artifactKey: Guid(9ef66d69357ce984099c0573a74b624d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_06.wav using Guid(9ef66d69357ce984099c0573a74b624d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baf4484fc611ccb99567a8dc08a0f658') in 0.004367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGestures_SwipeForward_01.wav
+  artifactKey: Guid(152aafa4bc75a894f80f0da543555c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGestures_SwipeForward_01.wav using Guid(152aafa4bc75a894f80f0da543555c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3be638af79b4962a8c7a3fef5787a9f') in 0.004027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsDown_01.wav
+  artifactKey: Guid(21ddc34a9e2a4184884d0ac0d16e5a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsDown_01.wav using Guid(21ddc34a9e2a4184884d0ac0d16e5a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edde194a03596e36ff2351f2375e4fdb') in 0.004555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Release_03.wav
+  artifactKey: Guid(ef4f51c9b55aa174e96e815bd0e7cbda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Release_03.wav using Guid(ef4f51c9b55aa174e96e815bd0e7cbda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b3523f2513613e72c8ea6d7b7dedd52') in 0.004634 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Stop_01.wav
+  artifactKey: Guid(33504eb0b3cd875429958bc67b832de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Stop_01.wav using Guid(33504eb0b3cd875429958bc67b832de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40beb3a87cc9baddcb6dc5f7586c9bc9') in 0.003953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Locomotion_Enter.wav
+  artifactKey: Guid(4f4594d3823cc9e4ea68ebb1e27310da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Locomotion_Enter.wav using Guid(4f4594d3823cc9e4ea68ebb1e27310da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d0935bf2fde4952b1c3eb7ac59ce36') in 0.006139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_09.wav
+  artifactKey: Guid(b38b26d07f7435f43a1179467c7deacc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_Keypad_09.wav using Guid(b38b26d07f7435f43a1179467c7deacc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2add262ddbb2a5078c17ce82e72cb299') in 0.004143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_01.wav
+  artifactKey: Guid(f9d3d78b93262df46b15e931d171f693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_01.wav using Guid(f9d3d78b93262df46b15e931d171f693) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21eac1d6a887afaeb31e3482126978d5') in 0.004363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_01.wav
+  artifactKey: Guid(ba24ea69ea5a83349b560a6d0abcef47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_01.wav using Guid(ba24ea69ea5a83349b560a6d0abcef47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6da3bfeadf3f094ce4e9d9dab027be38') in 0.004170 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_DistanceGrab_Pull.wav
+  artifactKey: Guid(fbedf1b2a14410642b76da03d6d664f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_DistanceGrab_Pull.wav using Guid(fbedf1b2a14410642b76da03d6d664f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '803cf3ec2887dbeb9313ce298d80fc5c') in 0.003851 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Locomotion_Exit.wav
+  artifactKey: Guid(4a0124413f6c41543a1bdffc9f0fe78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Locomotion_Exit.wav using Guid(4a0124413f6c41543a1bdffc9f0fe78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c43dae7fff3ce82607826da6d36a85') in 0.004294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicRay_Back.wav
+  artifactKey: Guid(4393389c4e9969940bfda2dc7f786204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicRay_Back.wav using Guid(4393389c4e9969940bfda2dc7f786204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02379080b1d3f4b86f704c2cb82444e8') in 0.003679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Oculus/Interaction/Samples/Objects/Props/BigRedButton/Sounds/ButtonHit.ogg
+  artifactKey: Guid(e98bc45c5ab32d94f9fcea3ab3f0b38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Objects/Props/BigRedButton/Sounds/ButtonHit.ogg using Guid(e98bc45c5ab32d94f9fcea3ab3f0b38c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f0816de08bb5fdbcb893046d84d599') in 0.033954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_11.wav
+  artifactKey: Guid(3c95fd7328ce55b42901d3ededf06b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Object_Impact_11.wav using Guid(3c95fd7328ce55b42901d3ededf06b2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a0ac80de94c4f05a0c55e41722115c7') in 0.003843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Locomotion_Teleport.wav
+  artifactKey: Guid(d3735878005c4af448c2abff3edc88c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_Locomotion_Teleport.wav using Guid(d3735878005c4af448c2abff3edc88c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5bb306efec8f609cb1831e2a3421ad2') in 0.003837 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_03.wav
+  artifactKey: Guid(5d75990ed604109429ae282bde2c21f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_03.wav using Guid(5d75990ed604109429ae282bde2c21f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adf6159a4dd8f82f995b92f7c07eeea3') in 0.004113 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_05.wav
+  artifactKey: Guid(5e44ad0f498709b458e0b33478e5c161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicGrab_Grab_05.wav using Guid(5e44ad0f498709b458e0b33478e5c161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e3ea9084222400ab3154e84aaad1027') in 0.003937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ButtonPress.wav
+  artifactKey: Guid(56fe077fa3d84f24c951589f5d187be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ButtonPress.wav using Guid(56fe077fa3d84f24c951589f5d187be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b68b0dcb907a9e76352ac6f181d8f182') in 0.003531 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Press_03.wav
+  artifactKey: Guid(354b04977aec15c42819ef6947075146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_BasicPoke_ToyButton_Press_03.wav using Guid(354b04977aec15c42819ef6947075146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb7c08a6fa295bfa8c74d66c59136bf') in 0.004052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Scissors_01.wav
+  artifactKey: Guid(35700466f1688cb488905b1899b92552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_Scissors_01.wav using Guid(35700466f1688cb488905b1899b92552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fdc2aa9cac897656725d33b3716195f') in 0.003839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_DistanceGrab_Hover.wav
+  artifactKey: Guid(1ec345b9b29f7be4a9844256d11985e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_DistanceGrab_Hover.wav using Guid(1ec345b9b29f7be4a9844256d11985e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5b829a7e00b7cc445c20988ea113a6c') in 0.003884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.376353 seconds.
+  path: Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsUp_02.wav
+  artifactKey: Guid(09261974b330663419f6e892d56cee88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Audio/Content/Interaction_PoseDetection_ThumbsUp_02.wav using Guid(09261974b330663419f6e892d56cee88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4647bf4dca0790ada7f07db09be9afff') in 0.006361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Oculus/Spatializer/scenes/sounds/loop.ogg
+  artifactKey: Guid(37c9e69911022452a9ebd4ee732ab036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Spatializer/scenes/sounds/loop.ogg using Guid(37c9e69911022452a9ebd4ee732ab036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95c668ad52613b55f7a105a21a8f984e') in 0.004355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Crossing.wav
+  artifactKey: Guid(c60b8ac4916103d41abbb35a9287ff09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Crossing.wav using Guid(c60b8ac4916103d41abbb35a9287ff09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba454b14d325afe966d1ea9409b9048') in 0.003701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Oculus/Spatializer/scenes/sounds/sine.wav
+  artifactKey: Guid(197b6f9ffe1223343aa4672db3771875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Spatializer/scenes/sounds/sine.wav using Guid(197b6f9ffe1223343aa4672db3771875) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52cade47c79644e3bafefede6e1ea5e4') in 0.004362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Oculus/AudioManager/Audio/TestSounds/metal_sliding_door_close_01a.wav
+  artifactKey: Guid(d3994560fb567c34a821fd9355c10eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/AudioManager/Audio/TestSounds/metal_sliding_door_close_01a.wav using Guid(d3994560fb567c34a821fd9355c10eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f2d8b7c37a70ca821c8ac298345b3a8') in 0.004414 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Oculus/Voice/Demo/Audio/Rebecca_TimerComplete.wav
+  artifactKey: Guid(35471033dbbe17f419f151ad822445e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Voice/Demo/Audio/Rebecca_TimerComplete.wav using Guid(35471033dbbe17f419f151ad822445e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfe8000e9602d1430508d75925e2fa88') in 0.004031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/SceneManager/Audio/loadball.wav
+  artifactKey: Guid(e73b66c29312de047ba040fb2231cdda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/SceneManager/Audio/loadball.wav using Guid(e73b66c29312de047ba040fb2231cdda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc936c0cd4fbd1a476eda5d154750074') in 0.004910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Oculus/AudioManager/Audio/TestSounds/metal_sliding_door_open_01a.wav
+  artifactKey: Guid(8198ccc08475a764daaf226b841a55f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/AudioManager/Audio/TestSounds/metal_sliding_door_open_01a.wav using Guid(8198ccc08475a764daaf226b841a55f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d8a384f067db3ab48cd4ea48e7c344d') in 0.004102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Oculus/Interaction/Samples/Objects/Props/SprayBottle/Sounds/Spray_Broad.wav
+  artifactKey: Guid(5d537aa5c81ccb44ba40aa06a0327255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Objects/Props/SprayBottle/Sounds/Spray_Broad.wav using Guid(5d537aa5c81ccb44ba40aa06a0327255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a69e403e55e3ebbf843913de96aaf8e') in 0.004411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Oculus/VR/AudioClips/sfx_belt_in.wav
+  artifactKey: Guid(d716392289ac6764994885f5821f7d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/VR/AudioClips/sfx_belt_in.wav using Guid(d716392289ac6764994885f5821f7d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec528a99841d8499396b1c271119b99a') in 0.004205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Oculus/Spatializer/scenes/sounds/vocal1.ogg
+  artifactKey: Guid(33a0d552717ab4c2e87a77c856d9aaf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Spatializer/scenes/sounds/vocal1.ogg using Guid(33a0d552717ab4c2e87a77c856d9aaf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3964b1318da89ecb6fb5275b70698f') in 0.003747 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Oculus/Spatializer/scenes/sounds/water.mp3
+  artifactKey: Guid(a05d082cd207b4b12a47c089be8b7a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Spatializer/scenes/sounds/water.mp3 using Guid(a05d082cd207b4b12a47c089be8b7a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '345e4bcd206929f440d08ebbef9f26e2') in 0.614618 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/TrainWhistleAv01.wav
+  artifactKey: Guid(cf81cbb09d9674f46ae0bc9f562caa8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/TrainWhistleAv01.wav using Guid(cf81cbb09d9674f46ae0bc9f562caa8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ca9d9b2afbbe6f09bcfcfa9e3747dc') in 0.004326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Stop_From_Speed_4.wav
+  artifactKey: Guid(032212d43ecf5e94889a672b0be0312d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Stop_From_Speed_4.wav using Guid(032212d43ecf5e94889a672b0be0312d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28823ff5a4530edaab4baea6ae3e679') in 0.003757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Stop_From_Speed_5.wav
+  artifactKey: Guid(b0bdc702f0adfaf43b6c3fb7061c51e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Stop_From_Speed_5.wav using Guid(b0bdc702f0adfaf43b6c3fb7061c51e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7a72a27f25445248fb3ee3dd5ab804d') in 0.004146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Speed_5_Loop.wav
+  artifactKey: Guid(1ddf75c4b5cd9b9469f634ec80086bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Speed_5_Loop.wav using Guid(1ddf75c4b5cd9b9469f634ec80086bef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a270d2fd67719d9cff21db372dad3b6') in 0.004193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_SteamBlast_A.wav
+  artifactKey: Guid(cc4358f7b0d2fa2409a84eef73d956f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_SteamBlast_A.wav using Guid(cc4358f7b0d2fa2409a84eef73d956f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1fcff6bc5c75bd8bcf1e21dd4d5f2dc') in 0.004254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Windmill_Rotate_Fast_Loop.wav
+  artifactKey: Guid(2883b27e450c9164496330700b848f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Windmill_Rotate_Fast_Loop.wav using Guid(2883b27e450c9164496330700b848f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8531e0c772bda6cc72ae61f706defc10') in 0.004780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Oculus/AudioManager/Audio/TestSounds/metal_sliding_door_open_01.wav
+  artifactKey: Guid(7000b4d67a1320940b363f3cf891dfff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/AudioManager/Audio/TestSounds/metal_sliding_door_open_01.wav using Guid(7000b4d67a1320940b363f3cf891dfff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05880f5527c6cfceafb0b4f001a61cb8') in 0.004074 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Stop_From_Speed_2.wav
+  artifactKey: Guid(9cd536ae13df22a499575339535af0ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Stop_From_Speed_2.wav using Guid(9cd536ae13df22a499575339535af0ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea4bc8027f9745995af7b7c1963b3ea8') in 0.005137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Oculus/Interaction/Samples/Objects/Props/SprayBottle/Sounds/Spray_Steam.wav
+  artifactKey: Guid(7f7a0827e6fa2ea43986bb0f70436a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/Interaction/Samples/Objects/Props/SprayBottle/Sounds/Spray_Steam.wav using Guid(7f7a0827e6fa2ea43986bb0f70436a6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '723061ea5dbe423d4cc5418bb6adf455') in 0.004545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Speed_3_Loop.wav
+  artifactKey: Guid(895afed3a12c32c4d94fa45643087c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Audio/Train_Speed_3_Loop.wav using Guid(895afed3a12c32c4d94fa45643087c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16416ebe9a2e9b7d6e65e039935b16fb') in 0.004156 seconds 
 ========================================================================
 Received Prepare
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 10.68 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.18 ms.
+Refreshing native plugins compatible for Editor in 2.79 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
 Unloading 50 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (130.2 KB). Loaded Objects now: 5424.
-Memory consumption went from 72.6 MB to 72.4 MB.
-Total: 2.740125 ms (FindLiveObjects: 0.177458 ms CreateObjectMapping: 0.103917 ms MarkObjects: 2.364000 ms  DeleteObjects: 0.094208 ms)
+Unloading 50 unused Assets / (138.5 KB). Loaded Objects now: 5439.
+Memory consumption went from 83.1 MB to 83.0 MB.
+Total: 2.912917 ms (FindLiveObjects: 0.150708 ms CreateObjectMapping: 0.052167 ms MarkObjects: 2.622750 ms  DeleteObjects: 0.086750 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -308,17 +680,17 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005234 seconds.
+Registered in 0.002176 seconds.
 Begin MonoManager ReloadAssembly
-Thread 0x16b6c3000 may have been prematurely finalized
+Thread 0x2b0853000 may have been prematurely finalized
 Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.15 ms.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
@@ -326,266 +698,28 @@ Preloading 1 native plugins for Editor in 0.15 ms.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  0.806 seconds
+- Completed reload, in  0.634 seconds
 Domain Reload Profiling:
-	ReloadAssembly (807ms)
-		BeginReloadAssembly (103ms)
+	ReloadAssembly (635ms)
+		BeginReloadAssembly (75ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (2ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (646ms)
-			LoadAssemblies (37ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (505ms)
+			LoadAssemblies (30ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (232ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (291ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (64ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (43ms)
-				ProcessInitializeOnLoadAttributes (169ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on WitService
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.18 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Unloading 4877 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (130.1 KB). Loaded Objects now: 5428.
-Memory consumption went from 169.3 MB to 169.2 MB.
-Total: 2.733542 ms (FindLiveObjects: 0.164417 ms CreateObjectMapping: 0.057584 ms MarkObjects: 2.423375 ms  DeleteObjects: 0.087250 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002057 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16b6c3000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.15 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  0.708 seconds
-Domain Reload Profiling:
-	ReloadAssembly (708ms)
-		BeginReloadAssembly (117ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (54ms)
-		EndReloadAssembly (530ms)
-			LoadAssemblies (56ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (194ms)
+			SetupTypeCache (190ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (231ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (226ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
 				BeforeProcessingInitializeOnLoad (40ms)
-				ProcessInitializeOnLoadAttributes (158ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on WitService
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.05 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Unloading 4877 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (130.0 KB). Loaded Objects now: 5432.
-Memory consumption went from 169.3 MB to 169.2 MB.
-Total: 2.673958 ms (FindLiveObjects: 0.144416 ms CreateObjectMapping: 0.054875 ms MarkObjects: 2.385416 ms  DeleteObjects: 0.088542 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001817 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16b6c3000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.12 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  0.662 seconds
-Domain Reload Profiling:
-	ReloadAssembly (662ms)
-		BeginReloadAssembly (89ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (511ms)
-			LoadAssemblies (37ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (195ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (221ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (40ms)
-				ProcessInitializeOnLoadAttributes (149ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on WitService
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 1.92 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
-Unloading 4877 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (137.9 KB). Loaded Objects now: 5436.
-Memory consumption went from 169.3 MB to 169.2 MB.
-Total: 2.606500 ms (FindLiveObjects: 0.166083 ms CreateObjectMapping: 0.058167 ms MarkObjects: 2.306500 ms  DeleteObjects: 0.075541 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 9.57 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
-Unloading 50 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (130.2 KB). Loaded Objects now: 5436.
-Memory consumption went from 72.6 MB to 72.5 MB.
-Total: 4.202125 ms (FindLiveObjects: 0.205500 ms CreateObjectMapping: 0.055875 ms MarkObjects: 3.822542 ms  DeleteObjects: 0.117333 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1716.199730 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79842766b460edbeab6a34051e857a80') in 0.005306 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002127 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16afa7000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  0.672 seconds
-Domain Reload Profiling:
-	ReloadAssembly (673ms)
-		BeginReloadAssembly (99ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (519ms)
-			LoadAssemblies (36ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (196ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (30ms)
-			SetupLoadedEditorAssemblies (228ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (40ms)
-				ProcessInitializeOnLoadAttributes (156ms)
+				ProcessInitializeOnLoadAttributes (155ms)
 				ProcessInitializeOnLoadMethodAttributes (12ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
@@ -596,132 +730,12 @@ OnLevelWasLoaded was found on WitService
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.09 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.83 ms, found 4 plugins.
 Preloading 1 native plugins for Editor in 0.13 ms.
-Unloading 4880 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (130.1 KB). Loaded Objects now: 5443.
-Memory consumption went from 169.4 MB to 169.3 MB.
-Total: 2.613167 ms (FindLiveObjects: 0.150583 ms CreateObjectMapping: 0.057042 ms MarkObjects: 2.326791 ms  DeleteObjects: 0.078417 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 48.397958 seconds.
-  path: Assets/Spherical Keyboard/Scripts
-  artifactKey: Guid(7439476f04ba74a61ba79760dfdb35b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spherical Keyboard/Scripts using Guid(7439476f04ba74a61ba79760dfdb35b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b7494dda104d44d4a27c15b5af03fcc') in 0.006861 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.006463 seconds.
-  path: Assets/Spherical Keyboard/Scripts/SphericalKeyboard.cs
-  artifactKey: Guid(20d044f46309a4cf382d2effc9fed15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spherical Keyboard/Scripts/SphericalKeyboard.cs using Guid(20d044f46309a4cf382d2effc9fed15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18bee70cd8ea334c54943d7452f1b5fc') in 0.002881 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.078646 seconds.
-  path: Assets/Spherical Keyboard/Prefabs/PokeInteractable.prefab
-  artifactKey: Guid(6d8f7bc39754641968458dad215e9810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spherical Keyboard/Prefabs/PokeInteractable.prefab using Guid(6d8f7bc39754641968458dad215e9810) Importer(815301076,1909f56bfc062723c751e8b465ee728b) UnassignedReferenceException: The variable _renderers of MaterialPropertyBlockEditor has not been assigned.
-You probably need to assign the _renderers variable of the MaterialPropertyBlockEditor script in the inspector.
-  at (wrapper managed-to-native) UnityEngine.Renderer.Internal_SetPropertyBlock(UnityEngine.Renderer,UnityEngine.MaterialPropertyBlock)
-  at UnityEngine.Renderer.SetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) [0x00001] in /Users/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:59 
-  at Oculus.Interaction.MaterialPropertyBlockEditor.UpdateMaterialPropertyBlock () [0x00116] in /Users/vikashmediboina/XRIProject/XRProject/Assets/Oculus/Interaction/Runtime/Scripts/MaterialProperties/MaterialPropertyBlockEditor.cs:177 
-  at Oculus.Interaction.RoundedBoxProperties.UpdateMaterialPropertyBlock () [0x000bd] in /Users/vikashmediboina/XRIProject/XRProject/Assets/Oculus/Interaction/Runtime/Scripts/MaterialProperties/RoundedBoxProperties.cs:245 
-  at Oculus.Interaction.RoundedBoxProperties.UpdateSize () [0x0003b] in /Users/vikashmediboina/XRIProject/XRProject/Assets/Oculus/Interaction/Runtime/Scripts/MaterialProperties/RoundedBoxProperties.cs:212 
-  at Oculus.Interaction.RoundedBoxProperties.OnValidate () [0x00000] in /Users/vikashmediboina/XRIProject/XRProject/Assets/Oculus/Interaction/Runtime/Scripts/MaterialProperties/RoundedBoxProperties.cs:250 
-
-(Filename: Assets/Oculus/Interaction/Runtime/Scripts/MaterialProperties/MaterialPropertyBlockEditor.cs Line: 177)
-
-UnassignedReferenceException: The variable _renderers of MaterialPropertyBlockEditor has not been assigned.
-You probably need to assign the _renderers variable of the MaterialPropertyBlockEditor script in the inspector.
-  at (wrapper managed-to-native) UnityEngine.Renderer.Internal_SetPropertyBlock(UnityEngine.Renderer,UnityEngine.MaterialPropertyBlock)
-  at UnityEngine.Renderer.SetPropertyBlock (UnityEngine.MaterialPropertyBlock properties) [0x00001] in /Users/bokken/build/output/unity/unity/Runtime/Export/Graphics/GraphicsRenderers.bindings.cs:59 
-  at Oculus.Interaction.MaterialPropertyBlockEditor.UpdateMaterialPropertyBlock () [0x00116] in /Users/vikashmediboina/XRIProject/XRProject/Assets/Oculus/Interaction/Runtime/Scripts/MaterialProperties/MaterialPropertyBlockEditor.cs:177 
-  at Oculus.Interaction.RoundedBoxProperties.UpdateMaterialPropertyBlock () [0x000bd] in /Users/vikashmediboina/XRIProject/XRProject/Assets/Oculus/Interaction/Runtime/Scripts/MaterialProperties/RoundedBoxProperties.cs:245 
-  at Oculus.Interaction.RoundedBoxProperties.UpdateSize () [0x0003b] in /Users/vikashmediboina/XRIProject/XRProject/Assets/Oculus/Interaction/Runtime/Scripts/MaterialProperties/RoundedBoxProperties.cs:212 
-  at Oculus.Interaction.RoundedBoxProperties.OnValidate () [0x00000] in /Users/vikashmediboina/XRIProject/XRProject/Assets/Oculus/Interaction/Runtime/Scripts/MaterialProperties/RoundedBoxProperties.cs:250 
-
-(Filename: Assets/Oculus/Interaction/Runtime/Scripts/MaterialProperties/MaterialPropertyBlockEditor.cs Line: 177)
-
- -> (artifact id: '14b25883088aad30a4a394cc4e10ca84') in 0.703739 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.217813 seconds.
-  path: Assets/Spherical Keyboard/Editor/SphericalKeyboardEditor.cs
-  artifactKey: Guid(dc350261284b74e609808ca58b023fec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spherical Keyboard/Editor/SphericalKeyboardEditor.cs using Guid(dc350261284b74e609808ca58b023fec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a0e6664e6648dcfe38956ef3ea4aca8') in 0.001452 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.607648 seconds.
-  path: Assets/Spherical Keyboard/Editor/SphericalKeyboardMenu.cs
-  artifactKey: Guid(e3b51f724ba80455face6fbffc8e5463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spherical Keyboard/Editor/SphericalKeyboardMenu.cs using Guid(e3b51f724ba80455face6fbffc8e5463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da6173f7b8bd8c9b20eed0f096238bf5') in 0.001533 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001951 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16b74f000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.19 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  0.711 seconds
-Domain Reload Profiling:
-	ReloadAssembly (712ms)
-		BeginReloadAssembly (79ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (2ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (570ms)
-			LoadAssemblies (35ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (216ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (248ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (46ms)
-				ProcessInitializeOnLoadAttributes (168ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on WitService
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.05 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Unloading 4880 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (137.9 KB). Loaded Objects now: 5457.
-Memory consumption went from 175.5 MB to 175.4 MB.
-Total: 2.906375 ms (FindLiveObjects: 0.161375 ms CreateObjectMapping: 0.058625 ms MarkObjects: 2.578417 ms  DeleteObjects: 0.106917 ms)
+Unloading 4884 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (130.5 KB). Loaded Objects now: 5442.
+Memory consumption went from 180.0 MB to 179.9 MB.
+Total: 2.877125 ms (FindLiveObjects: 0.159167 ms CreateObjectMapping: 0.059166 ms MarkObjects: 2.559292 ms  DeleteObjects: 0.098667 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -736,88 +750,12 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 4.23 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
+Refreshing native plugins compatible for Editor in 3.45 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
 Unloading 50 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (137.9 KB). Loaded Objects now: 5457.
-Memory consumption went from 78.8 MB to 78.6 MB.
-Total: 3.092833 ms (FindLiveObjects: 0.161000 ms CreateObjectMapping: 0.078917 ms MarkObjects: 2.751500 ms  DeleteObjects: 0.100750 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 704.496087 seconds.
-  path: Assets/Spherical Keyboard
-  artifactKey: Guid(deefb23e04e1544c2ae1433e61fe40e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Spherical Keyboard using Guid(deefb23e04e1544c2ae1433e61fe40e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '519eeaddfa3e0cdc516717fd751a52a3') in 0.018470 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002050 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x16afa7000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  0.685 seconds
-Domain Reload Profiling:
-	ReloadAssembly (686ms)
-		BeginReloadAssembly (105ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (54ms)
-		EndReloadAssembly (522ms)
-			LoadAssemblies (37ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (196ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (228ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (42ms)
-				ProcessInitializeOnLoadAttributes (154ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (2ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on WitService
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.18 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
-Unloading 4877 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 51 unused Assets / (130.2 KB). Loaded Objects now: 5460.
-Memory consumption went from 175.5 MB to 175.3 MB.
-Total: 2.665542 ms (FindLiveObjects: 0.154625 ms CreateObjectMapping: 0.059542 ms MarkObjects: 2.362708 ms  DeleteObjects: 0.088125 ms)
+Unloading 50 unused Assets / (138.5 KB). Loaded Objects now: 5442.
+Memory consumption went from 83.2 MB to 83.0 MB.
+Total: 2.635833 ms (FindLiveObjects: 0.153708 ms CreateObjectMapping: 0.055458 ms MarkObjects: 2.343542 ms  DeleteObjects: 0.082583 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -832,12 +770,32 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 10.54 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
+Refreshing native plugins compatible for Editor in 2.98 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
 Unloading 50 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 50 unused Assets / (137.7 KB). Loaded Objects now: 5460.
-Memory consumption went from 78.8 MB to 78.6 MB.
-Total: 3.289875 ms (FindLiveObjects: 0.176916 ms CreateObjectMapping: 0.058125 ms MarkObjects: 2.963209 ms  DeleteObjects: 0.091166 ms)
+Unloading 50 unused Assets / (130.8 KB). Loaded Objects now: 5442.
+Memory consumption went from 83.1 MB to 83.0 MB.
+Total: 2.590375 ms (FindLiveObjects: 0.166875 ms CreateObjectMapping: 0.053208 ms MarkObjects: 2.284875 ms  DeleteObjects: 0.084958 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 10.00 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 50 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (138.5 KB). Loaded Objects now: 5442.
+Memory consumption went from 83.2 MB to 83.0 MB.
+Total: 5.944750 ms (FindLiveObjects: 0.249042 ms CreateObjectMapping: 0.055167 ms MarkObjects: 5.519083 ms  DeleteObjects: 0.120875 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 

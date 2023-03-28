@@ -6,9 +6,10 @@ public class ArangeElements : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject textElement;
-
+    public Transform hand;
     void Start()
     {
+        // transform.position+=hand.transform.position;
         if(textElement){
             Debug.Log(transform.localScale.x);
             Debug.Log(GetComponent<SphereCollider>().radius);
