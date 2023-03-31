@@ -139,6 +139,4 @@ private static int Total_Timer;
         UnityWebRequest form = UnityWebRequest.Post(url, survey);
         yield return form.SendWebRequest();
     }
-
-
 }
