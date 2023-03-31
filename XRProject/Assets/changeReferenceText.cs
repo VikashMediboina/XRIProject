@@ -66,7 +66,7 @@ private int user_Rating;
 private string url;
 private static Timer Avg_timer;
 private static int Total_Timer;
-   
+public TextMeshPro buttons;
  
     // Start is called before the first frame update
     void Start()
@@ -105,25 +105,46 @@ private static int Total_Timer;
     private double calculateTime()
     {
         //Avg Time = Total Time / Total Sentences;
-        return Total_Timer ;/// 6
+        return Total_Timer/6 ;/// 6
     }
 
 
     public void TaskOnClick()
     {
-        Avg_timer.Stop();
-        sendQualtricsData();
-         Total_Timer = 0;
-         this.timerHandler();
-         index+=1;
+         if(textToEnter.text!=typedText.text){
+             Err_Rate+=1;
+         }
+        if(index%6==4){
+            // buttons.text="Submit";
+            index+=1;
         textToEnter.text=textArray[index];
         typedText.text="Enter Text...";
+        }
+        else if(index%6==5){
+        sendQualtricsData();
+     
+  Avg_timer.Stop();
+         Total_Timer = 0;
+         Err_Rate=0;
+         this.timerHandler();
+        // button.text="Next";
+        index+=1;
+        textToEnter.text=textArray[index];
+        typedText.text="Enter Text...";
+        }
+   else{
+        index+=1;
+        textToEnter.text=textArray[index];
+        typedText.text="Enter Text...";
+   }
+       
+        
     }
 
     private double calculateError()
     {
         //Error Rate = Total Error / Total Time;
-        return 0;
+        return Err_Rate*100/6;
     }
 
     IEnumerator sendQualtricsData()
@@ -137,6 +158,7 @@ private static int Total_Timer;
         survey.AddField("Typed_Sentance", typedText.text);
         survey.AddField("Actual_Sentance", textArray[index]);
         UnityWebRequest form = UnityWebRequest.Post(url, survey);
+          
         yield return form.SendWebRequest();
     }
 
