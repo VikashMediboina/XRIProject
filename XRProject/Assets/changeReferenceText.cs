@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using System.Timers;
 using UnityEngine.Networking;
+// using UnityEngine.XR.Interaction.Toolkit;
 
 public class changeReferenceText : MonoBehaviour
 {
@@ -67,7 +68,6 @@ private string url;
 private static Timer Avg_timer;
 private static int Total_Timer;
 public TextMeshPro buttons;
- 
     // Start is called before the first frame update
     void Start()
     {
@@ -111,6 +111,8 @@ public TextMeshPro buttons;
 
     public void TaskOnClick()
     {
+        // xr = (XRController) GameObject.FindObjectOfType(typeof(XRController));
+        OVRInput.SetControllerVibration(1, 1);
          if(textToEnter.text!=typedText.text){
              Err_Rate+=1;
          }

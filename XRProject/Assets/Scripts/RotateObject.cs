@@ -12,6 +12,7 @@ public class RotateObject : MonoBehaviour
     public float rotateSpeed = 360f;
 void RotateSphere ()
 {
+
 if (Input.GetAxisRaw ("Vertical") > 0) {
 // transform.Rotate (Vector3.right, rotateSpeed * Time.deltaTime);
 } else if (Input.GetAxisRaw ("Vertical") < 0) {
