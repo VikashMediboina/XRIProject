@@ -72,14 +72,9 @@ public TextMeshPro buttons;
     // Start is called before the first frame update
     void Start()
     {
-<<<<<<< HEAD
+
 
         PID = PlayerPrefs.GetString("PID");
-        //PID = "FPG31";
-=======
-        PID = IntroButton.PID;
-        Scene_No = "SPH01";
->>>>>>> cdb4100c2181792faab5f7e321a5ef5efe62f88e
         Err_Rate = 0;
         user_Rating = 9;
         url = "https://neu.co1.qualtrics.com/jfe/form/SV_3fT8qgIOPUgibki";
