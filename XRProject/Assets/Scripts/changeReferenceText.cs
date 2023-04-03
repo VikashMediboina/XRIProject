@@ -4,11 +4,12 @@ using UnityEngine;
 using TMPro;
 using System.Timers;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 // using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.SceneManagement;
 
 public class changeReferenceText : MonoBehaviour
 {
-    
 public TextMeshPro typedText; 
 public TextMeshPro textToEnter; 
 int index=0;
@@ -61,20 +62,19 @@ private List<string> textArray =new List<string>(new string[] { "Just playing wi
 
 
 private string PID;
-private string Scene_No;
+public string Scene_No;
 private double Err_Rate;
 private int user_Rating;
-private string url;
+private string url="https://neu.co1.qualtrics.com/jfe/form/SV_3fT8qgIOPUgibki";
 private static Timer Avg_timer;
 private static int Total_Timer;
 public TextMeshPro buttons;
     // Start is called before the first frame update
     void Start()
     {
-        
-        
-        PID = "FPG31";
-        Scene_No = "SPH01";
+
+        PID = PlayerPrefs.GetString("PID");
+        //PID = "FPG31";
         Err_Rate = 0;
         user_Rating = 9;
         url = "https://neu.co1.qualtrics.com/jfe/form/SV_3fT8qgIOPUgibki";
@@ -111,36 +111,36 @@ public TextMeshPro buttons;
 
     public void TaskOnClick()
     {
-        // xr = (XRController) GameObject.FindObjectOfType(typeof(XRController));
-        OVRInput.SetControllerVibration(1, 1);
-         if(textToEnter.text!=typedText.text){
-             Err_Rate+=1;
-         }
-        if(index%6==4){
-            // buttons.text="Submit";
-            index+=1;
-        textToEnter.text=textArray[index];
-        typedText.text="Enter Text...";
+        if (typedText.text!="" && typedText.text != "Enter Text...")
+        {
+            OVRInput.SetControllerLocalizedVibration(OVRInput.HapticsLocation.Index, 0f, 0.5f, OVRInput.Controller.Active);
+            if (textToEnter.text != typedText.text)
+            {
+                Err_Rate += 1;
+            }
+            if (index == 4)
+            {
+                buttons.text = "Submit";
+                index += 1;
+                textToEnter.text = textArray[index];
+                typedText.text = "Enter Text...";
+            }
+            else if (index == 5)
+            {
+                Avg_timer.Stop();
+                StartCoroutine(sendQualtricsData());
+                SceneManager.LoadScene("QwertySceneController");
+            }
+            else
+            {
+                index += 1;
+                textToEnter.text = textArray[index];
+                typedText.text = "Enter Text...";
+            }
+
+
         }
-        else if(index%6==5){
-        sendQualtricsData();
-     
-  Avg_timer.Stop();
-         Total_Timer = 0;
-         Err_Rate=0;
-         this.timerHandler();
-        // button.text="Next";
-        index+=1;
-        textToEnter.text=textArray[index];
-        typedText.text="Enter Text...";
-        }
-   else{
-        index+=1;
-        textToEnter.text=textArray[index];
-        typedText.text="Enter Text...";
-   }
-       
-        
+
     }
 
     private double calculateError()
@@ -149,18 +149,20 @@ public TextMeshPro buttons;
         return Err_Rate*100/6;
     }
 
-    IEnumerator sendQualtricsData()
+   public IEnumerator sendQualtricsData()
     {
         WWWForm survey = new WWWForm();
+       
         survey.AddField("PID", PID);
         survey.AddField("Scene_No", Scene_No);
-        survey.AddField("Avg_Type_Time", calculateTime().ToString());
+        survey.AddField("Avg_Type_Time",calculateTime().ToString());
         survey.AddField("Avg_Error_Rate", calculateError().ToString());
         survey.AddField("User_Access_Rating", user_Rating);
-        survey.AddField("Typed_Sentance", typedText.text);
-        survey.AddField("Actual_Sentance", textArray[index]);
+        Debug.Log(url);
         UnityWebRequest form = UnityWebRequest.Post(url, survey);
-          
+        Debug.Log(form.ToString());
+        //  Total_Timer = 0;
+        //  Err_Rate=0;
         yield return form.SendWebRequest();
     }
 }

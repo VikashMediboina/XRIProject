@@ -1,4 +1,7 @@
 <linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="Bhaptics.Tact.Unity.SettingDeviceIcon" preserve="nothing" serialized="true"/>
+	</assembly>
 	<assembly fullname="Oculus.Interaction">
 		<type fullname="Oculus.Interaction.InteractableColorVisual/ColorState" preserve="nothing" serialized="true"/>
 		<type fullname="Oculus.Interaction.MaterialPropertyVector" preserve="nothing" serialized="true"/>
@@ -10,6 +13,9 @@
 		<type fullname="Oculus.Interaction.PoseDetection.FingerFeatureStateThreshold" preserve="nothing" serialized="true"/>
 		<type fullname="Oculus.Interaction.PoseDetection.FingerFeatureThresholds" preserve="nothing" serialized="true"/>
 		<type fullname="Oculus.Interaction.ProgressCurve" preserve="nothing" serialized="true"/>
+	</assembly>
+	<assembly fullname="Oculus.Interaction.OVR.Samples">
+		<type fullname="Oculus.Interaction.MinMaxPair" preserve="nothing" serialized="true"/>
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro">
 		<type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true"/>
@@ -41,11 +47,6 @@
 		<type fullname="UnityEngine.TextCore.GlyphRect" preserve="nothing" serialized="true"/>
 	</assembly>
 	<assembly fullname="UnityEngine.UI">
-		<type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true"/>
-		<type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="nothing" serialized="true"/>
-		<type fullname="UnityEngine.UI.ColorBlock" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true"/>
-		<type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true"/>
-		<type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true"/>
 	</assembly>
 </linker>

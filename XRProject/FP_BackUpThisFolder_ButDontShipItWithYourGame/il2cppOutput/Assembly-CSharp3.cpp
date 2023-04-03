@@ -20,6 +20,28 @@ struct VirtualActionInvoker0
 		((Action)invokeData.methodPtr)(obj, invokeData.method);
 	}
 };
+template <typename T1>
+struct VirtualActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename T1, typename T2>
+struct VirtualActionInvoker2
+{
+	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
 template <typename T1, typename T2, typename T3>
 struct VirtualActionInvoker3
 {
@@ -42,6 +64,50 @@ struct VirtualFuncInvoker0
 		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
 	}
 };
+template <typename R, typename T1>
+struct VirtualFuncInvoker1
+{
+	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename R, typename T1, typename T2>
+struct VirtualFuncInvoker2
+{
+	typedef R (*Func)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+template <typename T1, typename T2>
+struct InterfaceActionInvoker2
+{
+	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+template <typename T1, typename T2, typename T3>
+struct InterfaceActionInvoker3
+{
+	typedef void (*Action)(void*, T1, T2, T3, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		((Action)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
+	}
+};
 template <typename R>
 struct InterfaceFuncInvoker0
 {
@@ -53,9 +119,22 @@ struct InterfaceFuncInvoker0
 		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
 	}
 };
+template <typename R, typename T1>
+struct InterfaceFuncInvoker1
+{
+	typedef R (*Func)(void*, T1, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
+		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
 
 // System.Action`1<OculusSampleFramework.ColliderZoneArgs>
 struct Action_1_tCFBE340FD442BC4B5557FD1B5ECC8237D9ADD49F;
+// System.Action`1<System.Int32>
+struct Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404;
 // System.Action`1<OVRCameraRig>
 struct Action_1_t88CC03E8C305DA991BBBCEBE79519B58D52F577F;
 // System.Action`1<System.Object>
@@ -64,6 +143,8 @@ struct Action_1_t6F9EB113EB3F16226AEF811A2744F4111C116C87;
 struct Action_1_t10D7C827ADC73ED438E0CA8F04465BA6F2BAED7D;
 // System.Action`1<System.UInt64>
 struct Action_1_t2F07B42BD085A4AC03ECE5676157E93B9A344C1C;
+// System.Action`2<System.Int32,System.Int32>
+struct Action_2_tD7438462601D3939500ED67463331FE00CFFBDB8;
 // System.Action`2<System.Single,System.Single>
 struct Action_2_t4195ED8D681728C29103F36BCD591C0F089C9132;
 // System.Action`2<System.UInt64,System.Boolean>
@@ -78,6 +159,10 @@ struct Action_4_t540B344FD589096100128D9A1B39946413ED9AAE;
 struct Action_4_t4EDE5C99870C78676D9C651284E64891D8D4F58A;
 // System.Action`6<System.UInt64,System.Boolean,OVRSpace,System.Guid,OVRPlugin/SpaceComponentType,System.Boolean>
 struct Action_6_tD8B17612932122F2ABF5C8545327C8F527403625;
+// System.Converter`2<System.Byte,System.Int32>
+struct Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A;
+// System.Collections.Generic.Dictionary`2<System.Int32Enum,System.Object>
+struct Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71;
 // System.Collections.Generic.Dictionary`2<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo>
 struct Dictionary_2_t0E0584945B4E3068F9A994C51F1DBE0090B67287;
 // System.Collections.Generic.Dictionary`2<OculusSampleFramework.InteractableTool,OculusSampleFramework.InteractableState>
@@ -86,6 +171,14 @@ struct Dictionary_2_t6DB59BF621375F7C5B905DE434C895D071F4FA2E;
 struct Dictionary_2_t749E8D446C2E8EE6FF423979EE55DB04E3E91EBD;
 // System.Collections.Generic.Dictionary`2<System.Object,System.Object>
 struct Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA;
+// System.Collections.Generic.Dictionary`2<Bhaptics.Tact.PositionType,System.Int32[]>
+struct Dictionary_2_tAA28B112099476AB6B27CF458644BE15FBA8EE04;
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+struct Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB;
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode>
+struct Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8;
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.JSONNode>
+struct Dictionary_2_t0A6C52FDA88C212B6330382F49C67477ACE2E50A;
 // System.Collections.Generic.Dictionary`2<System.String,UnityEngine.UI.ToggleGroup>
 struct Dictionary_2_t4D32AB7B38D14EB24A56141DC52CF5643FDF9834;
 // System.Func`2<UnityEngine.Collider,System.Boolean>
@@ -110,28 +203,66 @@ struct IEnumerable_1_t738A577130D5FBE55CDA8A3FF4898A00C43996CA;
 struct IEnumerable_1_tF95C9E01A913DD50575531C8305932628663D9E9;
 // System.Collections.Generic.IEqualityComparer`1<OculusSampleFramework.Interactable>
 struct IEqualityComparer_1_tFC484D969B74D81BF4622C484B76203AF4F61DBC;
+// System.Collections.Generic.IEqualityComparer`1<Bhaptics.Tact.PositionType>
+struct IEqualityComparer_1_t90B302C147CB93C1C47380E71F6B9026DA392024;
+// System.Collections.Generic.IEqualityComparer`1<System.String>
+struct IEqualityComparer_1_tAE94C8F24AD5B94D4EE85CA9FC59E3409D41CAF7;
 // System.Collections.Generic.Dictionary`2/KeyCollection<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo>
 struct KeyCollection_tD0D229B233C9C5DE77FF867C9947DDDE36F872E7;
 // System.Collections.Generic.Dictionary`2/KeyCollection<System.Object,System.Object>
 struct KeyCollection_tB45A861D090B15129521119AE48ED3813820A974;
+// System.Collections.Generic.Dictionary`2/KeyCollection<Bhaptics.Tact.PositionType,System.Int32[]>
+struct KeyCollection_t15582BD2D9C093146B2DFF191FE0842855D57C01;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+struct KeyCollection_t3DDC6358C4BEF99324F23BFACCC48F54B79886F8;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Bhaptics.Tact.Unity.HapticEffectMode>
+struct KeyCollection_t6923E59E42F277BED4441A248D8B8FEFCB0CE1E1;
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI>
+struct List_1_t4BB714C32C63320E15F9BE811510151332419557;
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Android_DeviceController>
+struct List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC;
 // System.Collections.Generic.List`1<UnityEngine.CanvasGroup>
 struct List_1_t2CDCA768E7F493F5EDEBC75AEB200FD621354E35;
+// System.Collections.Generic.List`1<Bhaptics.Tact.DotPoint>
+struct List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7;
 // System.Collections.Generic.List`1<UnityEngine.GameObject>
 struct List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B;
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice>
+struct List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21;
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticEffect>
+struct List_1_t7708E016E8D5714047242D10B6F8574A29C085E6;
+// System.Collections.Generic.List`1<UnityEngine.UI.Image>
+struct List_1_tE6BB71ABF15905EFA2BE92C38A2716547AEADB19;
 // System.Collections.Generic.List`1<OculusSampleFramework.Interactable>
 struct List_1_tE24BA6DEA09B928DD057B20C565CD199D7E9050D;
 // System.Collections.Generic.List`1<OculusSampleFramework.InteractableCollisionInfo>
 struct List_1_t490A09E30860203F317F45478EF4A90AE431CAEE;
+// System.Collections.Generic.List`1<Bhaptics.Tact.JSONNode>
+struct List_1_t6E24A931558F3D2261E2EF5388D74DD216130B74;
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.LayoutObject>
+struct List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8;
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
+// System.Collections.Generic.List`1<Bhaptics.Tact.PathPoint>
+struct List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD;
 // System.Collections.Generic.List`1<UnityEngine.Renderer>
 struct List_1_tD435DCC2A88E36DFC551EA5392CE0182F0C50E93;
+// System.Collections.Generic.List`1<System.String>
+struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD;
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Track>
+struct List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2;
+// System.Collections.Generic.List`1<UnityEngine.Events.UnityAction>
+struct List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D;
 // System.Collections.Generic.List`1<UnityEngine.XR.XRDisplaySubsystem>
 struct List_1_tA7666C6690CE2AEE97571615AD3AFCE2BB020597;
 // System.Collections.Generic.List`1<UnityEngine.XR.XRDisplaySubsystemDescriptor>
 struct List_1_tC3F021D09EFA4F3516555517B5E0D39308C9C1B4;
 // System.Collections.Generic.List`1<UnityEngine.XR.XRInputSubsystem>
 struct List_1_t90832B88D7207769654164CC28440CF594CC397D;
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidUtils/StreamHost>
+struct List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF;
+// UnityEngine.UI.CoroutineTween.TweenRunner`1<UnityEngine.UI.CoroutineTween.ColorTween>
+struct TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4;
 // UnityEngine.Events.UnityAction`1<OculusSampleFramework.InteractableStateArgs>
 struct UnityAction_1_t678924284150AF04511FDFDB52D96859D5876644;
 // UnityEngine.Events.UnityAction`1<System.Object>
@@ -142,18 +273,40 @@ struct UnityEvent_1_t1ED2AE761CB7C186AC6B6A8C5BE14C7204486168;
 struct UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205;
 // System.Collections.Generic.Dictionary`2/ValueCollection<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo>
 struct ValueCollection_t0CCD26D05C0E59C3DCE36632B959FA6C2AECAF3B;
+// System.Collections.Generic.Dictionary`2/ValueCollection<Bhaptics.Tact.PositionType,System.Int32[]>
+struct ValueCollection_tDB23BB87AD4212F076B856F1EDAE3DE683E41590;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+struct ValueCollection_t5B2731ECFF0D7A5A15044C710DAB0B9984A2C896;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,Bhaptics.Tact.Unity.HapticEffectMode>
+struct ValueCollection_t627466F7B06B23DBE40D15E16C024D42D7B51EA7;
 // System.WeakReference`1<UnityEngine.Camera>
 struct WeakReference_1_t08942AAA5C58B24D75314BD9594E2DE409CB9C93;
 // System.Collections.Generic.Dictionary`2/Entry<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo>[]
 struct EntryU5BU5D_tE6AF665E85BF224E3821A60E3691C6A1D251F460;
+// System.Collections.Generic.Dictionary`2/Entry<Bhaptics.Tact.PositionType,System.Int32[]>[]
+struct EntryU5BU5D_t28645F3745D5E74A04128706BCA2A27457C48811;
+// System.Collections.Generic.Dictionary`2/Entry<System.String,Bhaptics.Tact.Unity.LayoutObject[]>[]
+struct EntryU5BU5D_t1CDED48B5B0624A305A269044D3080031E49033A;
+// System.Collections.Generic.Dictionary`2/Entry<System.String,Bhaptics.Tact.Unity.HapticEffectMode>[]
+struct EntryU5BU5D_t794A5DDE8484460CD3FD4005794CADD02E860065;
 // System.Collections.Generic.List`1<UnityEngine.RectTransform>[]
 struct List_1U5BU5D_t826337C0A88A91A3DE75521974962C2C682A3865;
+// Bhaptics.Tact.Unity.AndroidWidget_ControlButton[]
+struct AndroidWidget_ControlButtonU5BU5D_tDAB320020613CB967B0C2A8082DA23B2E9816A38;
+// Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI[]
+struct AndroidWidget_PairedDeviceUIU5BU5D_tF0AC6016B135D42D3E3C200F81E7060AAB0BE8A7;
+// Bhaptics.Tact.Unity.Android_DeviceController[]
+struct Android_DeviceControllerU5BU5D_t43D3D1A387EA5A7326D21031B2BD3B00C3E40337;
 // UnityEngine.AudioClip[]
 struct AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31;
 // System.Boolean[]
 struct BooleanU5BU5D_tD317D27C31DB892BE79FAE3AEBC0B3FFB73DE9B4;
+// UnityEngine.UI.Button[]
+struct ButtonU5BU5D_t0D512FF2FF5A72DAC04754F2C10182F850328BEF;
 // System.Byte[]
 struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
+// System.Char[]
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
 // UnityEngine.Collider[]
 struct ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787;
 // UnityEngine.Color[]
@@ -162,12 +315,18 @@ struct ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389;
 struct DelegateU5BU5D_tC5AB7E8F745616680F337909D3A8E6C722CDF771;
 // OculusSampleFramework.DistanceGrabber[]
 struct DistanceGrabberU5BU5D_tA4B9B85AE5B4C46A4C35AAD085E1A989C38A7982;
+// Bhaptics.Tact.DotPoint[]
+struct DotPointU5BU5D_t92A20976F3335DB9E9E434016016B030EFB51A31;
 // UnityEngine.GameObject[]
 struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
 // UnityEngine.GradientAlphaKey[]
 struct GradientAlphaKeyU5BU5D_tA5D7ED787780B5C01635C8C59B15B2BC01AEC50E;
 // UnityEngine.GradientColorKey[]
 struct GradientColorKeyU5BU5D_tB8929E6EE130CA1F3C1664B300BE83A95A642C18;
+// Bhaptics.Tact.Unity.HapticDevice[]
+struct HapticDeviceU5BU5D_t71D49B864EBC3494C31023BD28A989471D3E302E;
+// Bhaptics.Tact.Unity.HapticEffect[]
+struct HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743;
 // System.Int32[]
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 // System.IntPtr[]
@@ -178,6 +337,8 @@ struct InteractableU5BU5D_t1A363494C6DF3F058E67C5C347A7D33046E02435;
 struct InteractableCollisionInfoU5BU5D_t9ADD08F1E3BD32560EB9E44D0D3BBF0EE496949E;
 // OculusSampleFramework.InteractableToolTags[]
 struct InteractableToolTagsU5BU5D_t9691CC6F71F873F7CCADD2EFE97DC96C689B7DBA;
+// Bhaptics.Tact.Unity.LayoutObject[]
+struct LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1;
 // UnityEngine.Material[]
 struct MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D;
 // OVRHand[]
@@ -194,20 +355,30 @@ struct OVRSkeletonU5BU5D_t8571A9F94528C9F3D576BA4834AED2D551212F89;
 struct OVRSkeletonRendererU5BU5D_tA05C9B59A89C88B8B7A4245774D8A7401C64F6BB;
 // System.Object[]
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+// Bhaptics.Tact.PathPoint[]
+struct PathPointU5BU5D_t981C30A4BE1D8E2B1365278D2817E4B7B5A7F517;
+// Bhaptics.Tact.PositionType[]
+struct PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7;
 // UnityEngine.RaycastHit[]
 struct RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8;
 // UnityEngine.RectTransform[]
 struct RectTransformU5BU5D_tD8879AA94435492C205ABBE1E530FFD24CE0393D;
 // UnityEngine.Renderer[]
 struct RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A;
+// System.SByte[]
+struct SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913;
 // UnityEngine.UI.Selectable[]
 struct SelectableU5BU5D_t4160E135F02A40F75A63F787D36F31FEC6FE91A9;
 // System.Single[]
 struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
 // System.Diagnostics.StackTrace[]
 struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
+// System.String[]
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 // UnityEngine.Texture[]
 struct TextureU5BU5D_t0C3F884241E8243E791A31B920CAA89212888E46;
+// Bhaptics.Tact.Unity.Track[]
+struct TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78;
 // OculusSampleFramework.TrackSegment[]
 struct TrackSegmentU5BU5D_tD84AF9120F4019904C24BA6A699C67DEBFCE9295;
 // OculusSampleFramework.TrainCar[]
@@ -216,12 +387,24 @@ struct TrainCarU5BU5D_t7CFF4CCAF90716935B7C8324466A6326DB2414DD;
 struct TrainCarBaseU5BU5D_t6F8E5463CC2FF62ADD249184806D420B00F70B8A;
 // UnityEngine.Transform[]
 struct TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24;
+// System.Type[]
+struct TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB;
+// UnityEngine.UIVertex[]
+struct UIVertexU5BU5D_tBC532486B45D071A520751A90E819C77BA4E3D2F;
+// UnityEngine.Events.UnityAction[]
+struct UnityActionU5BU5D_tC838FF7328261C2396AA15640067667EDB436D07;
 // UnityEngine.Vector2[]
 struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
 // UnityEngine.Vector3[]
 struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
+// UnityEngine.jvalue[]
+struct jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F;
+// Bhaptics.Tact.Unity.AndroidUtils/StreamHost[]
+struct StreamHostU5BU5D_tA17A409947D7DB66BC2D8BE1792DA3ACD848BFA4;
 // OculusSampleFramework.ButtonController/ContactTest[]
 struct ContactTestU5BU5D_t75A498A776B0A042C8885B8D28F9A1BB0F0D23C6;
+// Bhaptics.Tact.Unity.HapticApi/point[]
+struct pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723;
 // OVRDisplay/EyeRenderDesc[]
 struct EyeRenderDescU5BU5D_tB048865C1A81E8F904CC0EE2F949AC71D6CF728F;
 // OVROverlay/LayerTexture[]
@@ -236,12 +419,34 @@ struct RectfU5BU5D_tCBABD552E093C7891710F2D448FACAA8140C1DD0;
 struct TrackingConfidenceU5BU5D_t6B1A6ADEF3656B62D4BE66AE16338E2001714B37;
 // System.Action
 struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
+// Bhaptics.Tact.Unity.AndroidHaptic
+struct AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1;
+// UnityEngine.AndroidJavaClass
+struct AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03;
+// UnityEngine.AndroidJavaObject
+struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0;
+// Bhaptics.Tact.Unity.AndroidWidget_ControlButton
+struct AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE;
+// Bhaptics.Tact.Unity.AndroidWidget_ObjectPool
+struct AndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD;
+// Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI
+struct AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2;
+// Bhaptics.Tact.Unity.AndroidWidget_SettingUIAnimation
+struct AndroidWidget_SettingUIAnimation_t9781087DBDCBFEA803DB6A32BF193B7A5F16D742;
+// Bhaptics.Tact.Unity.AndroidWidget_UI
+struct AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0;
+// Bhaptics.Tact.Unity.Android_DeviceController
+struct Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8;
+// Bhaptics.Tact.Unity.Android_UIController
+struct Android_UIController_tE2FCA9B09C445E64061C16692B2C7D1A42635BDB;
 // UnityEngine.Animation
 struct Animation_t6593B06C39E3B139808B19F2C719C860F3F61040;
 // UnityEngine.UI.AnimationTriggers
 struct AnimationTriggers_tA0DC06F89C5280C6DD972F6F4C8A56D7F4F79074;
 // UnityEngine.Animator
 struct Animator_t8A52E42AE54F76681838FE9E632683EF3952E883;
+// Bhaptics.Tact.Unity.ArmsHapticClip
+struct ArmsHapticClip_t147D7B1D9FA2AEB6F4001D52E83C485D05738DE7;
 // System.AsyncCallback
 struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
 // UnityEngine.AudioClip
@@ -250,10 +455,26 @@ struct AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20;
 struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
 // UnityEngine.Behaviour
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
+// Bhaptics.Tact.Unity.BhapticsAndroidManager
+struct BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422;
+// Bhaptics.Tact.Unity.BhapticsHaptic
+struct BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4;
+// Bhaptics.Tact.Unity.BhapticsProject
+struct BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20;
+// Bhaptics.Tact.Unity.Bhaptics_Widget_Setting
+struct Bhaptics_Widget_Setting_t161D157DE26028AEFEDCA2A862E8748B281671EA;
+// UnityEngine.BoxCollider
+struct BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23;
+// UnityEngine.UI.Button
+struct Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098;
 // OculusSampleFramework.ButtonController
 struct ButtonController_t1660558E417C701B092265A45EBC1795F1DBBC79;
 // UnityEngine.Camera
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
+// UnityEngine.Canvas
+struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26;
+// UnityEngine.CanvasRenderer
+struct CanvasRenderer_tAB9A55A976C4E3B2B37D0CE5616E5685A8B43860;
 // UnityEngine.Collider
 struct Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76;
 // OculusSampleFramework.ColliderZone
@@ -278,8 +499,20 @@ struct DistanceGrabbable_tACCCB0048BA604AD31B49237D057C5DF38DB07BB;
 struct DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9;
 // OculusSampleFramework.DistanceGrabberSample
 struct DistanceGrabberSample_tF65500593830D7A0811EE927DE6F3AAF2E0241B3;
+// Bhaptics.Tact.Unity.DotMode
+struct DotMode_t2634A7C409754F2F57C67CC419D8F645DAF1AFA0;
+// Bhaptics.Tact.DotPoint
+struct DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0;
+// System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2;
+// Bhaptics.Tact.Unity.FileHapticClip
+struct FileHapticClip_t48EC83EE51B9DE69C85D3DC520865AA88CB0F9D9;
+// UnityEngine.UI.FontData
+struct FontData_tB8E562846C6CB59C43260F69AE346B9BF3157224;
 // UnityEngine.GameObject
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+// UnityEngine.GlobalJavaObjectRef
+struct GlobalJavaObjectRef_t20D8E5AAFC2EB2518FCABBF40465855E797FF0D8;
 // UnityEngine.Gradient
 struct Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E;
 // UnityEngine.UI.Graphic
@@ -290,12 +523,28 @@ struct Hand_t0A62347EF4DB551FDA3B99B5637AD55098FE07A8;
 struct HandPose_t07CBF9E66547E7ADC0D785A41DCCD8150DBCB5C8;
 // OculusSampleFramework.HandsManager
 struct HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7;
+// Bhaptics.Tact.Unity.HapticApi
+struct HapticApi_t87B1593645D295452798ECC1F695B512A12DEB65;
+// Bhaptics.Tact.Unity.HapticDevice
+struct HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029;
+// Bhaptics.Tact.Unity.HapticEffect
+struct HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C;
+// Bhaptics.Tact.Unity.HapticEffectMode
+struct HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8;
+// Bhaptics.Tact.Unity.HapticFeedbackFile
+struct HapticFeedbackFile_tA8FA7E232A215E89B17E7B24B665152C52D63AF2;
 // System.IAsyncResult
 struct IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5;
 // System.Collections.IDictionary
 struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
 // System.Collections.IEnumerator
 struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
+// Bhaptics.Tact.Unity.IHaptic
+struct IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362;
+// Bhaptics.Tact.Unity.IconSetting
+struct IconSetting_t870A56F9950D91A50903F32FC2AA9660C7DEF95D;
+// UnityEngine.UI.Image
+struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E;
 // OculusSampleFramework.Interactable
 struct Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2;
 // OculusSampleFramework.InteractableCollisionInfo
@@ -308,12 +557,24 @@ struct InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED;
 struct InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0;
 // UnityEngine.Events.InvokableCallList
 struct InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382;
+// Bhaptics.Tact.JSONArray
+struct JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7;
+// Bhaptics.Tact.JSONNode
+struct JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D;
+// Bhaptics.Tact.JSONObject
+struct JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC;
 // LaserPointer
 struct LaserPointer_t0E77E38E488CC0E97D2E29F61CA3422430FEB874;
+// Bhaptics.Tact.Unity.Layout
+struct Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F;
+// Bhaptics.Tact.Unity.LayoutObject
+struct LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4;
 // UnityEngine.LineRenderer
 struct LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D;
 // UnityEngine.Material
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
+// UnityEngine.Mesh
+struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4;
 // UnityEngine.MeshFilter
 struct MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5;
 // UnityEngine.MeshRenderer
@@ -354,42 +615,72 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
 struct PanelHMDFollower_t165DC5D42A74521DA6760E47E5785F2A867FF1CB;
 // UnityEngine.ParticleSystem
 struct ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1;
+// Bhaptics.Tact.Unity.PathMode
+struct PathMode_tA48CEF708F5F4EEC562B34F54FB07DF30A100000;
+// Bhaptics.Tact.PathPoint
+struct PathPoint_t3387227BE18139BB95143995AC86B7F88730105C;
 // UnityEngine.Events.PersistentCallGroup
 struct PersistentCallGroup_tB826EDF15DC80F71BCBCD8E410FD959A04C33F25;
 // OculusSampleFramework.PinchStateModule
 struct PinchStateModule_t26670935C9EF39E986F937F3403178D51A33C557;
 // OculusSampleFramework.Pose
 struct Pose_t586B98D092E896A4FE933ADA4074D3F7D44A8CF7;
+// Bhaptics.Tact.Unity.PositonIconSetting
+struct PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F;
 // OculusSampleFramework.RayTool
 struct RayTool_t0DE40836B7440F04FA3DEB39E1F5B2D27BA87941;
 // OculusSampleFramework.RayToolView
 struct RayToolView_tFA488BAE7913AED37AFD9F0889C1E71E882353D8;
+// UnityEngine.UI.RectMask2D
+struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
 // UnityEngine.RectTransform
 struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5;
 // UnityEngine.RenderTexture
 struct RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27;
 // UnityEngine.Renderer
 struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF;
+// Bhaptics.Tact.RotationOption
+struct RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B;
 // System.Runtime.Serialization.SafeSerializationManager
 struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+// Bhaptics.Tact.ScaleOption
+struct ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A;
+// UnityEngine.ScriptableObject
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A;
+// UnityEngine.UI.ScrollRect
+struct ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E;
+// UnityEngine.UI.Scrollbar
+struct Scrollbar_t7CDC9B956698D9385A11E4C12964CD51477072C3;
 // UnityEngine.UI.Selectable
 struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712;
 // OculusSampleFramework.SelectionCylinder
 struct SelectionCylinder_tB79C20E28823E6A7C8933C2A86C953A990F4480E;
+// Bhaptics.Tact.Unity.SettingDeviceIcon
+struct SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC;
 // UnityEngine.SkinnedMeshRenderer
 struct SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E;
 // UnityEngine.Sprite
 struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
 // System.String
 struct String_t;
+// System.Text.StringBuilder
+struct StringBuilder_t;
+// UnityEngine.UI.Text
+struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62;
+// UnityEngine.TextGenerator
+struct TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC;
 // UnityEngine.Texture
 struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700;
+// UnityEngine.Texture2D
+struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
 // UnityEngine.UI.Toggle
 struct Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F;
 // UnityEngine.UI.ToggleGroup
 struct ToggleGroup_tF2E6FE7D4B17BDBF82462715CFB57C4FDE0A2A2C;
 // OVRTouchSample.TouchController
 struct TouchController_t1BCC5F911D1E7987E5DA9A4654DD05D585C32A03;
+// Bhaptics.Tact.Unity.Track
+struct Track_t890B55E3594EA0442464072A11DE8398FB0420E9;
 // OculusSampleFramework.TrackSegment
 struct TrackSegment_t564FB15D19598A8A893D0EB2ACBF5EA66BCF5680;
 // OculusSampleFramework.TrainButtonVisualController
@@ -406,6 +697,14 @@ struct TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E;
 struct TrainTrack_t327DBFA324D407E9D3EF3533C4AD8399B8DBDB09;
 // UnityEngine.Transform
 struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
+// System.Type
+struct Type_t;
+// UnityEngine.Events.UnityAction
+struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7;
+// UnityEngine.Events.UnityEvent
+struct UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977;
+// UnityEngine.UI.VertexHelper
+struct VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE;
 // System.Void
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 // UnityEngine.WaitForSeconds
@@ -414,20 +713,32 @@ struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3;
 struct WindmillBladesController_t3D939B222C0BA9D7509B92B44060A9051E477616;
 // OculusSampleFramework.WindmillController
 struct WindmillController_t48184B7B7519BC2EAE5A80F03C239213E815EE53;
+// Bhaptics.Tact.Unity.AndroidUtils/Device
+struct Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F;
+// Bhaptics.Tact.Unity.AndroidUtils/StreamHost
+struct StreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509;
 // UnityEngine.AudioClip/PCMReaderCallback
 struct PCMReaderCallback_t3396D9613664F0AFF65FB91018FD0F901CC16F1E;
 // UnityEngine.AudioClip/PCMSetPositionCallback
 struct PCMSetPositionCallback_t8D7135A2FB40647CAEC93F5254AD59E18DEB6072;
+// UnityEngine.UI.Button/ButtonClickedEvent
+struct ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C;
 // UnityEngine.Camera/CameraCallback
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
+// UnityEngine.Canvas/WillRenderCanvases
+struct WillRenderCanvases_tA4A6E66DBA797DCB45B995DBA449A9D1D80D0FBC;
 // DebugUIBuilder/OnClick
 struct OnClick_tE915BFC88D1C91D68F96A97D675ECCCF91B8D46A;
 // DebugUIBuilder/OnToggleValueChange
 struct OnToggleValueChange_tD8DB8B3514D20938EF5BC2B343F5B5824217DBDF;
 // OVRTouchSample.Hand/<>c
 struct U3CU3Ec_tADB0E95203F0A090B7A367EF6CE374F2A78D832F;
+// Bhaptics.Tact.Unity.HapticApi/status
+struct status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576;
 // OculusSampleFramework.Interactable/InteractableStateArgsEvent
 struct InteractableStateArgsEvent_tAE90140049B5BEA21987B055A652C8CBA4D67D41;
+// UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 // OVRManager/InstantiateMrcCameraDelegate
 struct InstantiateMrcCameraDelegate_t26D39C3003CADD2CBA4E7C5EB75333089B2F03C8;
 // OVRManager/PassthroughCapabilities
@@ -440,6 +751,8 @@ struct U3CWaitforOVROverlayU3Ed__30_t25C38D56AC2CF1BD6CBB208C219C7767D98716AA;
 struct U3CLerpToHMDU3Ed__13_t1C19488BA4B9911BD55B1260DF036568478F5BDA;
 // UnityEngine.RectTransform/ReapplyDrivenProperties
 struct ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24;
+// UnityEngine.UI.ScrollRect/ScrollRectEvent
+struct ScrollRectEvent_t812C011901E6101F2A0FFC34C66AC5F65C0DEC26;
 // UnityEngine.UI.Toggle/ToggleEvent
 struct ToggleEvent_t88B31268F9D6D1882E4F921B14704FB9F7047F02;
 // OculusSampleFramework.TrainButtonVisualController/<ResetPosition>d__26
@@ -455,37 +768,83 @@ struct U3CPlaySoundDelayedU3Ed__18_tBE94A17594158C3B2FFB6425EBEFE88FBF6E58B1;
 
 IL2CPP_EXTERN_C RuntimeClass* Action_1_tCFBE340FD442BC4B5557FD1B5ECC8237D9ADD49F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BhapticsLogger_t3A2740F5DBA63ECA7B30DD351ADE5D030CE0C645_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BhapticsManager_t7514043B74A443B9EBEDDCEF5CFF974ABD6055B9_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ColliderZone_tA9DAAD7F9B3FDEC5B607DB97A934B1081CCF7E19_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DebugUIBuilder_tC18B19AE08445BA1378C7DABB0E4858217E02E71_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t0E0584945B4E3068F9A994C51F1DBE0090B67287_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_tAA28B112099476AB6B27CF458644BE15FBA8EE04_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Exception_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Func_2_t6AD3CFC7C337E46C1DA946EEEA6278162FB59A04_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GradientAlphaKeyU5BU5D_tA5D7ED787780B5C01635C8C59B15B2BC01AEC50E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GradientColorKeyU5BU5D_tB8929E6EE130CA1F3C1664B300BE83A95A642C18_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* HapticFeedbackFile_tA8FA7E232A215E89B17E7B24B665152C52D63AF2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InteractableCollisionInfo_t0706183E9D28BE08640A9C78564FB7098214E3E3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t490A09E30860203F317F45478EF4A90AE431CAEE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t4BB714C32C63320E15F9BE811510151332419557_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t7708E016E8D5714047242D10B6F8574A29C085E6_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tD435DCC2A88E36DFC551EA5392CE0182F0C50E93_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tE24BA6DEA09B928DD057B20C565CD199D7E9050D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* OVRInput_t759D9CC8F14D8539AD78A0375A2306C39D77100A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* OVRManager_t21429E69CA88C5E9C6EE3AAB75EAFBE6E1B129D4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* OnClick_tE915BFC88D1C91D68F96A97D675ECCCF91B8D46A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* OnToggleValueChange_tD8DB8B3514D20938EF5BC2B343F5B5824217DBDF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PinchStateModule_t26670935C9EF39E986F937F3403178D51A33C557_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Pose_t586B98D092E896A4FE933ADA4074D3F7D44A8CF7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* PositionType_tD1C4BFED25BC51F45D95DDEC6629B96BB5D18B53_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* RuntimeObject_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SelectionCylinder_tB79C20E28823E6A7C8933C2A86C953A990F4480E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Track_t890B55E3594EA0442464072A11DE8398FB0420E9_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* TrainCarBase_t705A8BBC9FCF8E55A9BCFA43EDBEE3FFB1528616_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CAnimateCrossingU3Ed__15_t9A1936026B9E1AC63FF1BA774A462DD291B14235_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CLerpToHMDU3Ed__13_t1C19488BA4B9911BD55B1260DF036568478F5BDA_il2cpp_TypeInfo_var;
@@ -496,100 +855,276 @@ IL2CPP_EXTERN_C RuntimeClass* U3CStartStopTrainU3Ed__34_t56DD6C2FB4AB2588CC63AC7
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec_tADB0E95203F0A090B7A367EF6CE374F2A78D832F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CWaitforOVROverlayU3Ed__30_t25C38D56AC2CF1BD6CBB208C219C7767D98716AA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UnityAction_1_t678924284150AF04511FDFDB52D96859D5876644_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral002D677C331359A7FD36DC2DB9A416553AEB95E8;
+IL2CPP_EXTERN_C String_t* _stringLiteral01793EF08F35461796EA0A5F4E67477C7FF077C5;
+IL2CPP_EXTERN_C String_t* _stringLiteral0291659353D7703E088B9DCAA8272442CAC27034;
+IL2CPP_EXTERN_C String_t* _stringLiteral062DB096C728515E033CF8C48A1C1F0B9A79384B;
 IL2CPP_EXTERN_C String_t* _stringLiteral0D58C254A6B34D95CA1A2DAB761F42AD1EE1A371;
+IL2CPP_EXTERN_C String_t* _stringLiteral13A4747C63089446596A49FB9959B98B26D7F1E7;
 IL2CPP_EXTERN_C String_t* _stringLiteral149967D8B0B4FF60C95B519437C63F4F13C1E258;
 IL2CPP_EXTERN_C String_t* _stringLiteral14C2ADB24F817CBC7BFFBC0BFF9C1D45C4B77AA3;
 IL2CPP_EXTERN_C String_t* _stringLiteral14DF90F7B7B1D0C29E073C07C92DBA6A25DAA187;
+IL2CPP_EXTERN_C String_t* _stringLiteral1856CB9BD6A6A229A86D3C1E1B2B3AE1C590DEFF;
+IL2CPP_EXTERN_C String_t* _stringLiteral18E0BE74583C2EDA6F0BB6D9B879168F785D750A;
+IL2CPP_EXTERN_C String_t* _stringLiteral193F970307496CCD8E09DA5E0B5912EFAE953B69;
+IL2CPP_EXTERN_C String_t* _stringLiteral1AABBEEBF70E1E44D0F04B20FAD11EAC5C78165F;
+IL2CPP_EXTERN_C String_t* _stringLiteral1D215336354689060C710F1E6E3000FC8840D86D;
+IL2CPP_EXTERN_C String_t* _stringLiteral1ED0A90C7B9D3B7DE2E7BA200E806BEB45FC687F;
 IL2CPP_EXTERN_C String_t* _stringLiteral1F3291D82C248D9EFE2A239A1C14E576AC239A66;
 IL2CPP_EXTERN_C String_t* _stringLiteral20825170D1B0DA2A733E78D5B035FF14697DA12B;
+IL2CPP_EXTERN_C String_t* _stringLiteral21AF401D54A069E066A9313533E7CF143D7B97E0;
+IL2CPP_EXTERN_C String_t* _stringLiteral241CB8F68E6A171074F44FED9737EDE5BD45F4ED;
 IL2CPP_EXTERN_C String_t* _stringLiteral2752A64BA712F6F13A300028AB018ACD9A80434C;
+IL2CPP_EXTERN_C String_t* _stringLiteral27604803165C6541AB273EC61FCF3B90782F0C93;
+IL2CPP_EXTERN_C String_t* _stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1;
+IL2CPP_EXTERN_C String_t* _stringLiteral2C64D2F0E9FD6EBA8D616B686F625B2CC7B6EF9C;
 IL2CPP_EXTERN_C String_t* _stringLiteral2F3C67FF0314F3C94FF7278A2AF1C6B55C36D01B;
+IL2CPP_EXTERN_C String_t* _stringLiteral32B1B5BC31D44B18AA1644A3D65D62E49574C1C9;
+IL2CPP_EXTERN_C String_t* _stringLiteral332EB1CE470981513721D7B46A5736A11902C33C;
+IL2CPP_EXTERN_C String_t* _stringLiteral38018D780185B892C3BD624FEE65FADF400FFAE4;
+IL2CPP_EXTERN_C String_t* _stringLiteral3AF9AEDF456482BD9FF1FC3C194BFE6189E4D52A;
+IL2CPP_EXTERN_C String_t* _stringLiteral403BCFE0001F9C86FF3A19E3672B56F4E7606F3D;
+IL2CPP_EXTERN_C String_t* _stringLiteral4255BDDB287905DDB2F8F92AF8C726E57614987B;
 IL2CPP_EXTERN_C String_t* _stringLiteral42B3D9B0AAE35211614438B3160DC944B9155D26;
+IL2CPP_EXTERN_C String_t* _stringLiteral43F32C02AC90817DA1CC462CAE0F89F773A79517;
+IL2CPP_EXTERN_C String_t* _stringLiteral45D31A3E5A0FB09EFB727F4AE69681F65421C263;
+IL2CPP_EXTERN_C String_t* _stringLiteral4608FE87101D22BE8C4DEB6889237BF7C534CF19;
 IL2CPP_EXTERN_C String_t* _stringLiteral47A3FAF17D89549FD0F0ECA7370B81F7C80DFCDE;
+IL2CPP_EXTERN_C String_t* _stringLiteral49CA2AACD7A3F1D84342065C74703FD43DC9A881;
+IL2CPP_EXTERN_C String_t* _stringLiteral4A29D43588148F5C1F56062D678D7E9C246707D2;
+IL2CPP_EXTERN_C String_t* _stringLiteral4C9B6052064C2DAD443B35F799CDD94393B4B844;
+IL2CPP_EXTERN_C String_t* _stringLiteral4D4EA719DB7D4D715ADBA2AFD3A8B297C1D8AADF;
+IL2CPP_EXTERN_C String_t* _stringLiteral4D613657609485AE586A3379BA0E3FC13C1E1078;
+IL2CPP_EXTERN_C String_t* _stringLiteral4D8D9C94AC5DA5FCED2EC8A64E10E714A2515C30;
 IL2CPP_EXTERN_C String_t* _stringLiteral51B065FCE4F717615DF020D641986901AC7DA270;
+IL2CPP_EXTERN_C String_t* _stringLiteral52DA1A9AB57410CB78F94ED8D633B7E7D2776678;
+IL2CPP_EXTERN_C String_t* _stringLiteral53EF00C5C787F29C2FC919E385A5882E802CCA7E;
 IL2CPP_EXTERN_C String_t* _stringLiteral548D93DDB2AC6B24373148B19D9A625571AB2318;
+IL2CPP_EXTERN_C String_t* _stringLiteral570253F88E90C7BA74C253F223E308E59B6BDBB8;
+IL2CPP_EXTERN_C String_t* _stringLiteral598F6BDC1DE4AF4534F357D9B662B61D7B78EAFC;
+IL2CPP_EXTERN_C String_t* _stringLiteral5A00A52D746A79D3B1B788CFBF70D40C304302E1;
 IL2CPP_EXTERN_C String_t* _stringLiteral5A848793342F75888D40DE2AEDC507A1035ED454;
+IL2CPP_EXTERN_C String_t* _stringLiteral5C5762698C6D3C8DECF127042026A9EE1CF8A258;
 IL2CPP_EXTERN_C String_t* _stringLiteral604773D3DBC620869237443189180C03C02206AE;
+IL2CPP_EXTERN_C String_t* _stringLiteral67956624C8A0DB393DE7946FDC10919F77D06DB1;
 IL2CPP_EXTERN_C String_t* _stringLiteral686B62DC85A76B4D986AD7F54097517BC28F71E3;
+IL2CPP_EXTERN_C String_t* _stringLiteral6B973FB601C693F2F934EF8531CAB44A3EAB9943;
+IL2CPP_EXTERN_C String_t* _stringLiteral73F1C0DB7E67894BD0991354AA6CB2DA4A3A5D88;
+IL2CPP_EXTERN_C String_t* _stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D;
 IL2CPP_EXTERN_C String_t* _stringLiteral75AB8BCFD46EFD61011E81C209870785F7C0429A;
 IL2CPP_EXTERN_C String_t* _stringLiteral761CAF2881EC72215DE6C3BFBC1BEEEC0E195109;
 IL2CPP_EXTERN_C String_t* _stringLiteral78B861D9789220F101E6A2B45F723663B75C06E9;
+IL2CPP_EXTERN_C String_t* _stringLiteral7A3569A644A81677ECC45BFBCF217702F1D0DE07;
 IL2CPP_EXTERN_C String_t* _stringLiteral7C04A407FE215D295E25E3D30FD585ED38C7AA05;
 IL2CPP_EXTERN_C String_t* _stringLiteral7E85ECCB7093F5018C9F13499309750C0A65403D;
+IL2CPP_EXTERN_C String_t* _stringLiteral838972E650CA3FD4D675F87D16F99140CA031238;
 IL2CPP_EXTERN_C String_t* _stringLiteral83C940CCC7153451903DD8149886EAB029AB7BB6;
 IL2CPP_EXTERN_C String_t* _stringLiteral8527477538A58C4D0BEFF1E314F25DFC679B1257;
+IL2CPP_EXTERN_C String_t* _stringLiteral87B8BC37181E395185B9587D34E316567F1E9D59;
 IL2CPP_EXTERN_C String_t* _stringLiteral8AB4E9905F6F550494FF4D258F973A6CC2395CC7;
+IL2CPP_EXTERN_C String_t* _stringLiteral8F8BFCFC439A636B20C06C334A493AB7004843ED;
+IL2CPP_EXTERN_C String_t* _stringLiteral8FD9DB8B3223A2F2BCA9D8F14697E741652ACF09;
 IL2CPP_EXTERN_C String_t* _stringLiteral90423BAEC36E20DF5579ED0EB88D5B96F533BB4D;
+IL2CPP_EXTERN_C String_t* _stringLiteral9384C6EF2DA5C0BD5274A0DACFF291D0ABBFD8B1;
+IL2CPP_EXTERN_C String_t* _stringLiteral968BCC925729104400F6833A0BF2314988E79A99;
+IL2CPP_EXTERN_C String_t* _stringLiteral9A04AD09CED8218F534F56ED2DC908890C2490A7;
+IL2CPP_EXTERN_C String_t* _stringLiteralA1803F65AD973EE8D06624989A0CFFA68EBBC242;
+IL2CPP_EXTERN_C String_t* _stringLiteralA191E9A1127B5BD50FB629B3243E9F005DCF1660;
+IL2CPP_EXTERN_C String_t* _stringLiteralA32EACCE82D1C49B998F7C469FE014DEE8737D09;
+IL2CPP_EXTERN_C String_t* _stringLiteralA5B5B6A1E33D2841FFE94060CB6309AB2E865B85;
+IL2CPP_EXTERN_C String_t* _stringLiteralA8045E997F6A30602D5147099A2B221E2F630869;
+IL2CPP_EXTERN_C String_t* _stringLiteralAA7652C413DDCECDA5CEEFD1F271621491C39158;
+IL2CPP_EXTERN_C String_t* _stringLiteralAAE7996AEBD1E7547D27971F45D26AAB78DA8974;
+IL2CPP_EXTERN_C String_t* _stringLiteralAAEBEE338DAD4D6AAEA13759AF249D8B75C3005E;
+IL2CPP_EXTERN_C String_t* _stringLiteralAB1DF493E6BF8DE49A74F5D9EA8F32266343FB1D;
+IL2CPP_EXTERN_C String_t* _stringLiteralAD2BBC5DEC8245A45FBFBFF88DC127E3874E61B2;
+IL2CPP_EXTERN_C String_t* _stringLiteralB2300EA83FF633A1B69AC0C39454E4CA42EAF493;
 IL2CPP_EXTERN_C String_t* _stringLiteralB4FE860573CD6E03F0D1A4378C1F330A3820D8C9;
 IL2CPP_EXTERN_C String_t* _stringLiteralB85E78C75EF1A6F636689BD88A9D6C2A3B2B0A1B;
+IL2CPP_EXTERN_C String_t* _stringLiteralB989A5DE43B63E2F14FE6ABCFF8A44D8E17E5DDD;
 IL2CPP_EXTERN_C String_t* _stringLiteralBC09616FC7A1F15CD91C601854596281EF11A6AC;
 IL2CPP_EXTERN_C String_t* _stringLiteralBD3F2B6A71339D70457CEBD856E50EE4127313E1;
+IL2CPP_EXTERN_C String_t* _stringLiteralCCCDD19BAC8E228E10128C1D017E557BF3B69BEA;
 IL2CPP_EXTERN_C String_t* _stringLiteralCE4A0C460C7F0EA4954EC81E660C43B0182E5295;
+IL2CPP_EXTERN_C String_t* _stringLiteralCF0721EB476D8E0A383221ED51278EF4F855AD39;
 IL2CPP_EXTERN_C String_t* _stringLiteralD4AA04A90C2CC6C0CFC75CEBB85B6C30003F96EC;
+IL2CPP_EXTERN_C String_t* _stringLiteralD6CFAA9A8F507F384B1008F247D2327A3D2F1426;
+IL2CPP_EXTERN_C String_t* _stringLiteralDA0D4ADB4827DFE816DCB5FC0F426D8EFA7FA798;
+IL2CPP_EXTERN_C String_t* _stringLiteralDAAF728FBB5EB3ACF224F10BDA51C4E7943F8E50;
+IL2CPP_EXTERN_C String_t* _stringLiteralDB09044921B59E41E8633E1318451E988AFE2BDD;
 IL2CPP_EXTERN_C String_t* _stringLiteralDD75F043211EC7F57B7E6A391486703462CE7633;
+IL2CPP_EXTERN_C String_t* _stringLiteralDFB5CBFBA742C6182719C9944D08ACBC80F3127D;
+IL2CPP_EXTERN_C String_t* _stringLiteralE70CB4024B22F0B327478FD74DC02C05EF38A443;
 IL2CPP_EXTERN_C String_t* _stringLiteralE7A03396ACA66C7D8DF8563B2D34692EDC276118;
+IL2CPP_EXTERN_C String_t* _stringLiteralE8507000EFFD73B7527B58D20A10702778D64750;
+IL2CPP_EXTERN_C String_t* _stringLiteralEBE25ECBA8EC59517B5872227BC62813DA59F539;
 IL2CPP_EXTERN_C String_t* _stringLiteralEDCEC302F0B84B1209C009FA5818F3EA90BC8E64;
+IL2CPP_EXTERN_C String_t* _stringLiteralEE5B11901E1FFD2A68EE46A0CB37A1CEFE3D8B68;
+IL2CPP_EXTERN_C String_t* _stringLiteralEEF0656DAC77BA0682D559BA060D3A098D973083;
+IL2CPP_EXTERN_C String_t* _stringLiteralF0086625FC01AC0161E43904A94043C121704B2A;
 IL2CPP_EXTERN_C String_t* _stringLiteralF00ABD0EDECB5F784B852981D50B2B420FA66811;
+IL2CPP_EXTERN_C String_t* _stringLiteralF3C6C902DBF80139640F6554F0C3392016A8ADF7;
 IL2CPP_EXTERN_C String_t* _stringLiteralF4C9085A8FC519D61179956F4A28BAD81D661A82;
+IL2CPP_EXTERN_C String_t* _stringLiteralF64A2350393A3C6F7071EB4703EDF3F0841F5264;
+IL2CPP_EXTERN_C String_t* _stringLiteralF69E0C8368390F2D07397A3289B401F916EAC1AB;
+IL2CPP_EXTERN_C String_t* _stringLiteralFB4AE4F77150C3A8E8E4F8B23E734E0C7277B7D9;
+IL2CPP_EXTERN_C String_t* _stringLiteralFC41D4D571C981EFBE0C1CE06EE3E858A5C19B2C;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_Call_TisByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_mA0C075B9F98F168BBD9A6C0C926437671132FB1C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_Call_TisStringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_mDB9546BEEC88451F68DCAD34A4F2E207E1C31E00_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidWidget_ControlButton_OnClickDevice_m6C93174B1EBF75CA13A72AEBF371CA2E18ED568B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidWidget_PairedDeviceUI_OnPing_mB3EBAAB7A5BC58F52D2E9A434E4C931887720A19_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidWidget_PairedDeviceUI_OnSwap_m46081CC3D208EAB673127DFF438BD9DD6DFD6A82_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidWidget_UI_ButtonClickSound_mD0DDD702302A2A265429C3FC327AD29E2B39B7B7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidWidget_UI_Refresh_m75CE0CE3B0FEDD4AB257C03B80E1155CEE77C29F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Android_DeviceController_Ping_mAF7ED8708F4DA8CBDF34996F1C90E33514926B0B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Android_DeviceController_ToLeft_mBF80F1AF95724B8566D2011AADB9DBF56F392ADA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Android_DeviceController_ToRight_m79A43062C1BFC6CDFFA5BBD82180BADF69D73DE4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Android_UIController_BackPage_m6F137BC1524634461104A7BE895168E68E0A4378_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Android_UIController_CloseHelpNotification_mE66FE60FFE435D533C26F053B619EF822550B105_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Android_UIController_NextPage_mEC3E176184A869D72F66704DEE21BE6234C93B54_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Android_UIController_OnHelp_m8CCE88D39439AFB8F42F1561EFB8411419503B11_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Android_UIController_OpenLink_m570004CFEAF93D5F635FF74A7D32A68A5A823DE1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Android_UIController_Refresh_m2E15D0E893D71239399995112C58B7CB7018E340_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Array_ConvertAll_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m604AA5FBDA330F676A256966E40970E613C3A703_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* BhapticsAndroidManager_PingAll_m243880100D9A9961145BE391E30F00C0E92819F2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisToggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F_m90D2C4B376A07542F929EE9E44801C73D517332C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisTrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E_m95FCA4CB92F6DE57BE094BDD6974BC757B586B70_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisWindmillBladesController_t3D939B222C0BA9D7509B92B44060A9051E477616_m53755224721F80FC4D0EB82D4A8BAA35EFF514C4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisAndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD_m7C18455D334406A4D39F0F3CDDF69C69A59615BF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m1C9FCB4BBE56BEC6BDEF6E4BA1E5DFF91614D7CE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisBoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23_m59698092F1230C6FB7F40D0F58F643A931A732D7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mFF8BA4CA5D7158D1D6249559A3289E7A6DF0A2BB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m209BA4F663AB98A4504995B5BD3EADEDEFB92BF2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisColliderZone_tA9DAAD7F9B3FDEC5B607DB97A934B1081CCF7E19_m5FD81D5298881EED18EE5FCFCFEE886CD181ACE8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m820398EDBF1D3766C3166A0C323A127662A29A14_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisHandPose_t07CBF9E66547E7ADC0D785A41DCCD8150DBCB5C8_mD6BC519B31A7ED5AF993C7BB5F6291110C4F51F9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisOVRGrabber_tC16FABB1A90FB635BDE98E18F032A793D7033FCC_mC820FC13FAD6DC529D204CDC86DF3E1C6A918B9A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentsInChildren_TisAndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE_m938DDEC4507771E85D84C27B4F930F646DEFA27A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentsInChildren_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_m7A1316B78CB597034F354DE4BF82C98424AE0DAC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentsInChildren_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m64EB86DDB49F92CFAAF6003C9EAC7D7D8B0F35DB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentsInChildren_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m35AC34F858BD2F34770712CD020AA0518D9409C7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentsInChildren_TisTrackSegment_t564FB15D19598A8A893D0EB2ACBF5EA66BCF5680_m4496ABBB105279A0038A9E35859784E5E7F2FCB6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentsInChildren_TisTrainCar_t6DCDD84A769A7A356BCBCEAF536718032D8C625D_m6458A84700BCD1DA009674C73A5E7E028C2D32EC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Convert_ToInt32_mD8869793A34ED86D38EFDF4BFCDD8D03FBBCCAB6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Clear_m2375631931E466D2FA2F82F186B258DCAFC1CC14_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_ContainsKey_mAB3476357A261A9A8FA11775C2205CCEDE3302AF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_GetEnumerator_mF12F10866C45A0B1B8A3EE0D58859B460B82C1DD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_GetEnumerator_mF714EE84D6B491403CBDDC49BC235DEA9F32B1A9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_TryGetValue_m49211054AB3C9ED84B0A6B59B87BDAC923F39FFA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m186A3E7A3D8D8539CB74BCC387C1C8D8CC692D63_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m265D14F9AC7823D8E7212D6E2C0AD583C1C718F1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m5AD37AE0E51A6C8607C96A15A8675522968D6032_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_m91D0ECA8F609D4B777FA36DD5EC73FD3D8E670E3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mE771721AC304A86F1630D0199A1B665A30B5A07E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Item_m142D0E7E33486DC23B97F6D02ACDFC1869C0C192_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_get_Keys_m3F8B96D2DFA7018ABE5656B11078647250F384E9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_set_Item_m0A3D98FAEB0F65902D723519478843CA0B4B88B7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_set_Item_m10468F6EE34A8E09441845957DCB42E407A1C3BC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_set_Item_m376BB50AB03340D45100E27F2D9839C76701CFB1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_set_Item_mD41796A33BB535C677472D5041543A0BCC75D8EE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DistanceGrabberSample_ToggleGrabThroughWalls_mC791A5365642A7594D531F99E01BFB3F6636FDC1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DistanceGrabberSample_ToggleSphereCasting_m09365D26298FBD3D07C0E32FEF7B74516751B12F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_First_TisKeyValuePair_2_t714F012033B118070D84D2FE7ADCC4A01632B564_m1C93238B0708C9985123DF4B993F8B3C7AF62CD5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_ToArray_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m1A489F1406F2CD15719E60F537BD5AA4FB036808_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Where_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m7BABC61375EC3967C05129799DCA3C44560E3786_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m5D6360F15AE7100C86563BB29E250064F31BDB7D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m8B501F5CC306AB22C3B20E2A0292E9689DE72A3C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_mB424B789C3350F9B1B2E3979AA5FEE529C18F45E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_mCC9A1E5F4BDFB868096B30068742864C016C9767_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_mF44A749CAD40EDA9B6081E0ADF65A2E15DE7C967_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m4B76B8D6B70D42385525A1DB6EC4923B8087B84A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m6C3C607FD4E9958AB10F34D55329467F27751E35_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m7B63C391FB3B1AC14E498DF503298EA3BF4D2E5F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m8EC0B64D6543C2195EC5408BA4AD3721F9EE6A63_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_mEAA7C6293BF470D52DF93D7DB43EAA9F8B2B5F48_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m04F8D7B43D8F3A71533643AC54E14D9CD398F0AB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m188CDEC569878737D1819C8994CC25DA6A8755DB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m46AD6166313DB38D9B4A28CDE9D4031B92FB2E1F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mBBB36CD9C8AC48D9C2201FAA6D00557B96308E8B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mCA6B86088D2DF3206509B44DE3E97DC1FCED2982_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisBoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23_m655518C8454E418FE8CF0E4770881B7A2B12BB23_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_m3B3C11550E48AA36AFF82788636EB163CC51FEE6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisInteractable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2_m0CDEA8EF47A15EFA3EB104C354E834030C56E3D3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Hand_OnInputFocusAcquired_m0812ABDFE30CE9348919181D77BB8F5E4F5A3490_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Hand_OnInputFocusLost_mD3FFDE39026F3EEFDFE8212B6E1FE3B064EB8C52_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* JsonUtility_FromJson_TisDevice_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F_m25AA6438982B9C944F4C51C553E348E406950EC9_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* JsonUtility_FromJson_TisStreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509_m640FDC7E26DD3A75A00E7399BAAB965E626E9134_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* KeyCollection_GetEnumerator_mA15F8F46DF83A9020DBC9406D588286860F54A2D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Key_mB131019F0E8B06EBCBD52EEBB1C2E472089494D3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Key_mC7AFE5CE55D57ACC0FDF084330BE36D51F87EECB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Key_mF07391A7439D788E88A3B2B2DCB7CE9EACE9E5D4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Value_m465F12313B09FA5CE70FEF66329BC3E69254127D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Value_m8EC4293E0EFA757EBA2C4D4493C4A6D6B41296D5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m259096A378ED94C3F677ABBBEF65E991ED99825F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m323BA24FD0DE9D93F9DA4067FA613B338AABC76B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m41B83FFA140FAECC46735D613830E944B0C31DD1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m43FBF207375C6E06B8C45ECE614F9B8008FB686E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m4E39030928BF0CB15FDFD6FAEF9FAC0EEACC634B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m65A4366A70D351BA1DA1C40B08E29FF12A4EB581_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m6FE3E021596B9C8CE5FBC6BD3CFF6BFA31A7222C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mB608316C3D0F44AB60BB05CC6676E509D51F7AC2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mC2DF5232ABF0B0204C6270D8ADA13950F86EC7C5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mC65A1F3381C6A430BF849270CBFD574D6DF4420B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mDC6D01E871526F43E79135E5BAE2640B86060FAC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mDFD8A0A00B649A9483B1223FCC037C8AF4FDA1C1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_m0444A69F2E16C517FEDBEB99B58E0F8D853E4073_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_m2015A321C3FE1E88A4A285CC4C0890648746A0A5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_m32D399BDD753B5BD6CE27560249096418F3F0867_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_m353BA138DA7EC0DCCE13B18A6F1022881AC6A346_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Clear_mC96627CBAE9D449A6E4DB53014F7BBE86253038D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Contains_m0C5FCCCBE548A92296B0533DE7EA8052A1BB4078_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_mE5352A85CD278A63E5412CDCF8B1BED6FF7BE949_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_mF7725E97FD02143B1832493CB2BA1C1DEE898F5C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Remove_mB10D46FB6ED1EA7AB7DFC1780F9572FD316A251D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_m71C4C97E9EA541BB629B14B592863E4CB6D8A787_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_m9F04218A0494C4BF91025C2252E199DE56610D9A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_mF15116DA6DE7656E08C99D78C17B748F4EC02E36_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m0B7AF9FD4A9CF0CDDB278C3862B1B266A4D9FEF2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m173CBA10D23C6D0AF363140EA3153D6A2BEDFFF1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m1FB770381C3A129AD86880AAA4F631C28565CC93_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m447372C1EF7141193B93090A77395B786C72C7BC_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m5C8558CF51B2FB07D5D5481E2C43FB2C237E6D0F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m6B6749012AA714828B1A6A1FABDEBDD8335FEE19_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m803E10F7A50EB22BF82C0C1AB251D5407B4496DE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mA303FBEE7FA9428CC4C53279B5497EFFBFBC621C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mB146B188E8D323468B9EB6643271CCA4794A00F8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mE98E867DE869699619CAC1FACC2727C677239CD4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mFC1BDB339D9BF587ACFC0328ADF82046EBF00385_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m2235CDCD234718681BDBD928B5695B70869CFDF7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m4C37ED2D928D63B80F55AF434730C2D64EEB9F22_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m7E8776B1EB9BBB2344F8E108C1F50CF657F1C2F2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_mA6E8E551DC8B567A0F1BEA949DBFEAF141BC307F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_mD2BCC5BF6F66FB7D76954B86923CDDB834FA5E95_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_mEDD6D3CBA7B18AB7F0E8E301BF83BF3C114E5C70_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m1E3E02F8E3D829A6B2A87379F9BF11A6FDE90319_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m28EDEA4B6A9DF285910079B34B540331FFE727F6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m2A866E5FF9CD642C76D27133D3FCEC2F15033DA2_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m958095FD9590D93606AE823DA4A459A0E172E2EF_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mBCA183A7F112CB3A0F1FBD7BA9E2CEB601F5753A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mE8DBE527F24D9CFED839C34216C475B716169979_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mEBAD153627C85633E6EBA6E3F67EB5B3E3290F89_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_set_Capacity_m47E6556844CFB1C459EC7CB191184BDD3D0B2E7C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* OVROverlaySample_TriggerLoad_m700D3A873346D40C61B4E35D6222810766FB7C1D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* OVROverlaySample_TriggerUnload_mC2BCD58945AE57A99E5C988C844126C2CC74706E_RuntimeMethod_var;
@@ -597,6 +1132,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* OVROverlaySample_U3CStartU3Eb__24_0_mBF39A5
 IL2CPP_EXTERN_C const RuntimeMethod* OVROverlaySample_U3CStartU3Eb__24_1_m1970159E2C8C7043DBC6797017C840EA7A9429FE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* OVROverlaySample_U3CStartU3Eb__24_2_m9DCDFEF1326B4909B69D2FE1E754D18C7C289EB4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectOfType_TisOVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9_m1564DCD77DA806C8E84BE6808F00823EBCA88234_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisAndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2_mEAA2DBC2455BF4D6097DEE0E122F70E5B730A0A6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisAndroid_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_m918BF1EF25916A3CB76952D9E373B9C553FCFDDB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m831D2F71DF2AA6C93AFDFEFA04CF2CFC5FBBCDB4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* TouchController_OnInputFocusAcquired_m4CE35E8F9CA5C7E611193F2859EF5D72E4C6A106_RuntimeMethod_var;
@@ -621,23 +1158,38 @@ struct Exception_t_marshaled_pinvoke;
 struct Fovf_t7A8312168C57A6CC5AA4FE685369A4618BF686E7;
 struct Quatf_t5347392804DF5326AF790F82E4EDE1578FED682A;
 struct Rectf_t28AE83DFE92F018AD3956872DED5880FB4F06459;
+struct status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576;;
+struct status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke;
+struct status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke;;
 
+struct AndroidWidget_ControlButtonU5BU5D_tDAB320020613CB967B0C2A8082DA23B2E9816A38;
 struct AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31;
+struct ButtonU5BU5D_t0D512FF2FF5A72DAC04754F2C10182F850328BEF;
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031;
 struct ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787;
 struct ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389;
 struct DistanceGrabberU5BU5D_tA4B9B85AE5B4C46A4C35AAD085E1A989C38A7982;
 struct GradientAlphaKeyU5BU5D_tA5D7ED787780B5C01635C8C59B15B2BC01AEC50E;
 struct GradientColorKeyU5BU5D_tB8929E6EE130CA1F3C1664B300BE83A95A642C18;
+struct HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743;
+struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
+struct LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1;
 struct MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7;
 struct RaycastHitU5BU5D_t008B8309DE422FE7567068D743D68054D5EBF1A8;
 struct RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A;
+struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 struct TextureU5BU5D_t0C3F884241E8243E791A31B920CAA89212888E46;
+struct TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78;
 struct TrackSegmentU5BU5D_tD84AF9120F4019904C24BA6A699C67DEBFCE9295;
 struct TrainCarU5BU5D_t7CFF4CCAF90716935B7C8324466A6326DB2414DD;
 struct TrainCarBaseU5BU5D_t6F8E5463CC2FF62ADD249184806D420B00F70B8A;
 struct TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24;
 struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
+struct jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F;
+struct pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723;
 
 IL2CPP_EXTERN_C_BEGIN
 IL2CPP_EXTERN_C_END
@@ -673,6 +1225,86 @@ struct Dictionary_2_t0E0584945B4E3068F9A994C51F1DBE0090B67287  : public RuntimeO
 	RuntimeObject* ____syncRoot_9;
 };
 
+// System.Collections.Generic.Dictionary`2<Bhaptics.Tact.PositionType,System.Int32[]>
+struct Dictionary_2_tAA28B112099476AB6B27CF458644BE15FBA8EE04  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t28645F3745D5E74A04128706BCA2A27457C48811* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_t15582BD2D9C093146B2DFF191FE0842855D57C01* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_tDB23BB87AD4212F076B856F1EDAE3DE683E41590* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+struct Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t1CDED48B5B0624A305A269044D3080031E49033A* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_t3DDC6358C4BEF99324F23BFACCC48F54B79886F8* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t5B2731ECFF0D7A5A15044C710DAB0B9984A2C896* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode>
+struct Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t794A5DDE8484460CD3FD4005794CADD02E860065* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_t6923E59E42F277BED4441A248D8B8FEFCB0CE1E1* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t627466F7B06B23DBE40D15E16C024D42D7B51EA7* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
+
+// System.EmptyArray`1<System.Object>
+struct EmptyArray_1_tDF0DD7256B115243AA6BD5558417387A734240EE  : public RuntimeObject
+{
+};
+
 // System.Collections.Generic.Dictionary`2/KeyCollection<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo>
 struct KeyCollection_tD0D229B233C9C5DE77FF867C9947DDDE36F872E7  : public RuntimeObject
 {
@@ -680,11 +1312,76 @@ struct KeyCollection_tD0D229B233C9C5DE77FF867C9947DDDE36F872E7  : public Runtime
 	Dictionary_2_t0E0584945B4E3068F9A994C51F1DBE0090B67287* ____dictionary_0;
 };
 
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI>
+struct List_1_t4BB714C32C63320E15F9BE811510151332419557  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	AndroidWidget_PairedDeviceUIU5BU5D_tF0AC6016B135D42D3E3C200F81E7060AAB0BE8A7* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Android_DeviceController>
+struct List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	Android_DeviceControllerU5BU5D_t43D3D1A387EA5A7326D21031B2BD3B00C3E40337* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.DotPoint>
+struct List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	DotPointU5BU5D_t92A20976F3335DB9E9E434016016B030EFB51A31* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
 // System.Collections.Generic.List`1<UnityEngine.GameObject>
 struct List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B  : public RuntimeObject
 {
 	// T[] System.Collections.Generic.List`1::_items
 	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice>
+struct List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	HapticDeviceU5BU5D_t71D49B864EBC3494C31023BD28A989471D3E302E* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticEffect>
+struct List_1_t7708E016E8D5714047242D10B6F8574A29C085E6  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* ____items_1;
 	// System.Int32 System.Collections.Generic.List`1::_size
 	int32_t ____size_2;
 	// System.Int32 System.Collections.Generic.List`1::_version
@@ -719,11 +1416,37 @@ struct List_1_t490A09E30860203F317F45478EF4A90AE431CAEE  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.LayoutObject>
+struct List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
 {
 	// T[] System.Collections.Generic.List`1::_items
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.PathPoint>
+struct List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	PathPointU5BU5D_t981C30A4BE1D8E2B1365278D2817E4B7B5A7F517* ____items_1;
 	// System.Int32 System.Collections.Generic.List`1::_size
 	int32_t ____size_2;
 	// System.Int32 System.Collections.Generic.List`1::_version
@@ -745,9 +1468,184 @@ struct List_1_tD435DCC2A88E36DFC551EA5392CE0182F0C50E93  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
+// System.Collections.Generic.List`1<System.String>
+struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Track>
+struct List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+// System.Collections.Generic.List`1<UnityEngine.Events.UnityAction>
+struct List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	UnityActionU5BU5D_tC838FF7328261C2396AA15640067667EDB436D07* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidUtils/StreamHost>
+struct List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	StreamHostU5BU5D_tA17A409947D7DB66BC2D8BE1792DA3ACD848BFA4* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+// UnityEngine.AndroidJavaObject
+struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0  : public RuntimeObject
+{
+	// UnityEngine.GlobalJavaObjectRef UnityEngine.AndroidJavaObject::m_jobject
+	GlobalJavaObjectRef_t20D8E5AAFC2EB2518FCABBF40465855E797FF0D8* ___m_jobject_1;
+	// UnityEngine.GlobalJavaObjectRef UnityEngine.AndroidJavaObject::m_jclass
+	GlobalJavaObjectRef_t20D8E5AAFC2EB2518FCABBF40465855E797FF0D8* ___m_jclass_2;
+};
+
+// Bhaptics.Tact.Unity.AndroidUtils
+struct AndroidUtils_t025A4FBB048EC7858EF2E45D09D6790D7C2AAC30  : public RuntimeObject
+{
+};
+
+// Bhaptics.Tact.Unity.BhapticsHaptic
+struct BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4  : public RuntimeObject
+{
+};
+
+// BhapticsManager
+struct BhapticsManager_t7514043B74A443B9EBEDDCEF5CFF974ABD6055B9  : public RuntimeObject
+{
+};
+
+// Bhaptics.Tact.Unity.BhapticsProject
+struct BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20  : public RuntimeObject
+{
+	// Bhaptics.Tact.Unity.Track[] Bhaptics.Tact.Unity.BhapticsProject::<Tracks>k__BackingField
+	TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* ___U3CTracksU3Ek__BackingField_0;
+	// Bhaptics.Tact.Unity.Layout Bhaptics.Tact.Unity.BhapticsProject::<Layout>k__BackingField
+	Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* ___U3CLayoutU3Ek__BackingField_1;
+};
+
+// System.Convert
+struct Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC  : public RuntimeObject
+{
+};
+
+// Bhaptics.Tact.DotPoint
+struct DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0  : public RuntimeObject
+{
+	// System.Int32 Bhaptics.Tact.DotPoint::<Index>k__BackingField
+	int32_t ___U3CIndexU3Ek__BackingField_0;
+	// System.Int32 Bhaptics.Tact.DotPoint::<Intensity>k__BackingField
+	int32_t ___U3CIntensityU3Ek__BackingField_1;
+};
+
 // System.EventArgs
 struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377  : public RuntimeObject
 {
+};
+
+// Bhaptics.Tact.Unity.HapticApi
+struct HapticApi_t87B1593645D295452798ECC1F695B512A12DEB65  : public RuntimeObject
+{
+};
+
+// Bhaptics.Tact.Unity.HapticDevice
+struct HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029  : public RuntimeObject
+{
+	// System.Boolean Bhaptics.Tact.Unity.HapticDevice::IsPaired
+	bool ___IsPaired_0;
+	// System.Boolean Bhaptics.Tact.Unity.HapticDevice::IsConnected
+	bool ___IsConnected_1;
+	// System.String Bhaptics.Tact.Unity.HapticDevice::DeviceName
+	String_t* ___DeviceName_2;
+	// Bhaptics.Tact.PositionType Bhaptics.Tact.Unity.HapticDevice::Position
+	int32_t ___Position_3;
+	// System.String Bhaptics.Tact.Unity.HapticDevice::Address
+	String_t* ___Address_4;
+	// Bhaptics.Tact.PositionType[] Bhaptics.Tact.Unity.HapticDevice::Candidates
+	PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* ___Candidates_5;
+	// System.Boolean Bhaptics.Tact.Unity.HapticDevice::IsEnable
+	bool ___IsEnable_6;
+	// System.Boolean Bhaptics.Tact.Unity.HapticDevice::IsAudioJack
+	bool ___IsAudioJack_7;
+	// System.Int32 Bhaptics.Tact.Unity.HapticDevice::Battery
+	int32_t ___Battery_8;
+};
+
+// Bhaptics.Tact.Unity.HapticEffect
+struct HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C  : public RuntimeObject
+{
+	// System.Int32 Bhaptics.Tact.Unity.HapticEffect::<StartTime>k__BackingField
+	int32_t ___U3CStartTimeU3Ek__BackingField_0;
+	// System.Int32 Bhaptics.Tact.Unity.HapticEffect::<OffsetTime>k__BackingField
+	int32_t ___U3COffsetTimeU3Ek__BackingField_1;
+	// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode> Bhaptics.Tact.Unity.HapticEffect::<Modes>k__BackingField
+	Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* ___U3CModesU3Ek__BackingField_2;
+};
+
+// Bhaptics.Tact.Unity.HapticEffectMode
+struct HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8  : public RuntimeObject
+{
+	// Bhaptics.Tact.FeedbackMode Bhaptics.Tact.Unity.HapticEffectMode::<Mode>k__BackingField
+	int32_t ___U3CModeU3Ek__BackingField_0;
+	// Bhaptics.Tact.Unity.DotMode Bhaptics.Tact.Unity.HapticEffectMode::<DotMode>k__BackingField
+	DotMode_t2634A7C409754F2F57C67CC419D8F645DAF1AFA0* ___U3CDotModeU3Ek__BackingField_1;
+	// Bhaptics.Tact.Unity.PathMode Bhaptics.Tact.Unity.HapticEffectMode::<PathMode>k__BackingField
+	PathMode_tA48CEF708F5F4EEC562B34F54FB07DF30A100000* ___U3CPathModeU3Ek__BackingField_2;
+};
+
+// Bhaptics.Tact.Unity.HapticFeedbackFile
+struct HapticFeedbackFile_tA8FA7E232A215E89B17E7B24B665152C52D63AF2  : public RuntimeObject
+{
+	// Bhaptics.Tact.Unity.BhapticsProject Bhaptics.Tact.Unity.HapticFeedbackFile::Project
+	BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* ___Project_0;
+};
+
+// Bhaptics.Tact.Unity.IconSetting
+struct IconSetting_t870A56F9950D91A50903F32FC2AA9660C7DEF95D  : public RuntimeObject
+{
+	// Bhaptics.Tact.Unity.PositonIconSetting Bhaptics.Tact.Unity.IconSetting::Vest
+	PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* ___Vest_0;
+	// Bhaptics.Tact.Unity.PositonIconSetting Bhaptics.Tact.Unity.IconSetting::Head
+	PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* ___Head_1;
+	// Bhaptics.Tact.Unity.PositonIconSetting Bhaptics.Tact.Unity.IconSetting::Arm
+	PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* ___Arm_2;
+	// Bhaptics.Tact.Unity.PositonIconSetting Bhaptics.Tact.Unity.IconSetting::Foot
+	PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* ___Foot_3;
+	// Bhaptics.Tact.Unity.PositonIconSetting Bhaptics.Tact.Unity.IconSetting::Hand
+	PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* ___Hand_4;
+	// Bhaptics.Tact.Unity.PositonIconSetting Bhaptics.Tact.Unity.IconSetting::GloveL
+	PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* ___GloveL_5;
+	// Bhaptics.Tact.Unity.PositonIconSetting Bhaptics.Tact.Unity.IconSetting::GloveR
+	PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* ___GloveR_6;
 };
 
 // OculusSampleFramework.InteractableCollisionInfo
@@ -759,6 +1657,31 @@ struct InteractableCollisionInfo_t0706183E9D28BE08640A9C78564FB7098214E3E3  : pu
 	int32_t ___CollisionDepth_1;
 	// OculusSampleFramework.InteractableTool OculusSampleFramework.InteractableCollisionInfo::CollidingTool
 	InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* ___CollidingTool_2;
+};
+
+// Bhaptics.Tact.JSONNode
+struct JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D  : public RuntimeObject
+{
+};
+
+// Bhaptics.Tact.Unity.Layout
+struct Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F  : public RuntimeObject
+{
+	// System.String Bhaptics.Tact.Unity.Layout::<Type>k__BackingField
+	String_t* ___U3CTypeU3Ek__BackingField_0;
+	// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]> Bhaptics.Tact.Unity.Layout::<Layouts>k__BackingField
+	Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* ___U3CLayoutsU3Ek__BackingField_1;
+};
+
+// Bhaptics.Tact.Unity.LayoutObject
+struct LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4  : public RuntimeObject
+{
+	// System.Int32 Bhaptics.Tact.Unity.LayoutObject::<Index>k__BackingField
+	int32_t ___U3CIndexU3Ek__BackingField_0;
+	// System.Single Bhaptics.Tact.Unity.LayoutObject::<X>k__BackingField
+	float ___U3CXU3Ek__BackingField_1;
+	// System.Single Bhaptics.Tact.Unity.LayoutObject::<Y>k__BackingField
+	float ___U3CYU3Ek__BackingField_2;
 };
 
 // OVRDisplay
@@ -778,6 +1701,19 @@ struct OVRDisplay_t1518043CC531CD088400F80558DF7A849ECA2D27  : public RuntimeObj
 	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___RecenteredPose_5;
 };
 
+// Bhaptics.Tact.PathPoint
+struct PathPoint_t3387227BE18139BB95143995AC86B7F88730105C  : public RuntimeObject
+{
+	// System.Single Bhaptics.Tact.PathPoint::<X>k__BackingField
+	float ___U3CXU3Ek__BackingField_0;
+	// System.Single Bhaptics.Tact.PathPoint::<Y>k__BackingField
+	float ___U3CYU3Ek__BackingField_1;
+	// System.Int32 Bhaptics.Tact.PathPoint::<Intensity>k__BackingField
+	int32_t ___U3CIntensityU3Ek__BackingField_2;
+	// System.Int32 Bhaptics.Tact.PathPoint::<MotorCount>k__BackingField
+	int32_t ___U3CMotorCountU3Ek__BackingField_3;
+};
+
 // OculusSampleFramework.PinchStateModule
 struct PinchStateModule_t26670935C9EF39E986F937F3403178D51A33C557  : public RuntimeObject
 {
@@ -787,6 +1723,42 @@ struct PinchStateModule_t26670935C9EF39E986F937F3403178D51A33C557  : public Runt
 	Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2* ____firstFocusedInteractable_2;
 };
 
+// Bhaptics.Tact.Unity.PositonIconSetting
+struct PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F  : public RuntimeObject
+{
+	// UnityEngine.Sprite Bhaptics.Tact.Unity.PositonIconSetting::connect
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___connect_0;
+	// UnityEngine.Sprite Bhaptics.Tact.Unity.PositonIconSetting::disconnect
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___disconnect_1;
+};
+
+// Bhaptics.Tact.RotationOption
+struct RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B  : public RuntimeObject
+{
+	// System.Single Bhaptics.Tact.RotationOption::<OffsetAngleX>k__BackingField
+	float ___U3COffsetAngleXU3Ek__BackingField_0;
+	// System.Single Bhaptics.Tact.RotationOption::<OffsetY>k__BackingField
+	float ___U3COffsetYU3Ek__BackingField_1;
+};
+
+// Bhaptics.Tact.ScaleOption
+struct ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A  : public RuntimeObject
+{
+	// System.Single Bhaptics.Tact.ScaleOption::<Intensity>k__BackingField
+	float ___U3CIntensityU3Ek__BackingField_0;
+	// System.Single Bhaptics.Tact.ScaleOption::<Duration>k__BackingField
+	float ___U3CDurationU3Ek__BackingField_1;
+};
+
+// Bhaptics.Tact.Unity.SettingDeviceIcon
+struct SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC  : public RuntimeObject
+{
+	// UnityEngine.Sprite Bhaptics.Tact.Unity.SettingDeviceIcon::pairImage
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___pairImage_0;
+	// UnityEngine.Sprite Bhaptics.Tact.Unity.SettingDeviceIcon::unpairImage
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___unpairImage_1;
+};
+
 // System.String
 struct String_t  : public RuntimeObject
 {
@@ -794,6 +1766,13 @@ struct String_t  : public RuntimeObject
 	int32_t ____stringLength_4;
 	// System.Char System.String::_firstChar
 	Il2CppChar ____firstChar_5;
+};
+
+// Bhaptics.Tact.Unity.Track
+struct Track_t890B55E3594EA0442464072A11DE8398FB0420E9  : public RuntimeObject
+{
+	// Bhaptics.Tact.Unity.HapticEffect[] Bhaptics.Tact.Unity.Track::<Effects>k__BackingField
+	HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* ___U3CEffectsU3Ek__BackingField_0;
 };
 
 // UnityEngine.Events.UnityEventBase
@@ -831,6 +1810,36 @@ struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinv
 // Native definition for COM marshalling of UnityEngine.YieldInstruction
 struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
 {
+};
+
+// Bhaptics.Tact.Unity.AndroidUtils/Device
+struct Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F  : public RuntimeObject
+{
+	// System.Boolean Bhaptics.Tact.Unity.AndroidUtils/Device::paired
+	bool ___paired_0;
+	// System.String Bhaptics.Tact.Unity.AndroidUtils/Device::deviceName
+	String_t* ___deviceName_1;
+	// System.Int32 Bhaptics.Tact.Unity.AndroidUtils/Device::position
+	int32_t ___position_2;
+	// System.Boolean Bhaptics.Tact.Unity.AndroidUtils/Device::connected
+	bool ___connected_3;
+	// System.String Bhaptics.Tact.Unity.AndroidUtils/Device::address
+	String_t* ___address_4;
+	// System.Int32 Bhaptics.Tact.Unity.AndroidUtils/Device::battery
+	int32_t ___battery_5;
+	// System.Boolean Bhaptics.Tact.Unity.AndroidUtils/Device::enable
+	bool ___enable_6;
+	// System.Boolean Bhaptics.Tact.Unity.AndroidUtils/Device::audioJackIn
+	bool ___audioJackIn_7;
+};
+
+// Bhaptics.Tact.Unity.AndroidUtils/StreamHost
+struct StreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509  : public RuntimeObject
+{
+	// System.String Bhaptics.Tact.Unity.AndroidUtils/StreamHost::ip
+	String_t* ___ip_0;
+	// System.Boolean Bhaptics.Tact.Unity.AndroidUtils/StreamHost::connected
+	bool ___connected_1;
 };
 
 // OVRTouchSample.Hand/<>c
@@ -921,6 +1930,19 @@ struct U3CPlaySoundDelayedU3Ed__18_tBE94A17594158C3B2FFB6425EBEFE88FBF6E58B1  : 
 	AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___clip_5;
 };
 
+// System.Collections.Generic.List`1/Enumerator<Bhaptics.Tact.Unity.HapticDevice>
+struct Enumerator_t261861876184B54ED984B2385428914934E16B5B 
+{
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::_list
+	List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* ____list_0;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_index
+	int32_t ____index_1;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_version
+	int32_t ____version_2;
+	// T System.Collections.Generic.List`1/Enumerator::_current
+	HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* ____current_3;
+};
+
 // System.Collections.Generic.List`1/Enumerator<OculusSampleFramework.Interactable>
 struct Enumerator_t8C77C72F0F74EDC97DFD7E3D6708F4087B2A5B23 
 {
@@ -945,6 +1967,19 @@ struct Enumerator_tDA87C83C820B90FDAA5CA9DF87D139E0C4A79646
 	int32_t ____version_2;
 	// T System.Collections.Generic.List`1/Enumerator::_current
 	InteractableCollisionInfo_t0706183E9D28BE08640A9C78564FB7098214E3E3* ____current_3;
+};
+
+// System.Collections.Generic.List`1/Enumerator<Bhaptics.Tact.JSONNode>
+struct Enumerator_tEAB3CE491E0AC0D57C08F1FB30CA5FB86AB63907 
+{
+	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::_list
+	List_1_t6E24A931558F3D2261E2EF5388D74DD216130B74* ____list_0;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_index
+	int32_t ____index_1;
+	// System.Int32 System.Collections.Generic.List`1/Enumerator::_version
+	int32_t ____version_2;
+	// T System.Collections.Generic.List`1/Enumerator::_current
+	JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* ____current_3;
 };
 
 // System.Collections.Generic.List`1/Enumerator<System.Object>
@@ -1004,11 +2039,66 @@ struct KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230
 	RuntimeObject* ___value_1;
 };
 
+// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+struct KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535 
+{
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	String_t* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* ___value_1;
+};
+
+// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode>
+struct KeyValuePair_2_tBD50AD3A0892764218F3B61D9120EF0A919B27D1 
+{
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	String_t* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* ___value_1;
+};
+
+// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode>
+struct KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC 
+{
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	String_t* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* ___value_1;
+};
+
 // UnityEngine.Events.UnityEvent`1<OculusSampleFramework.InteractableStateArgs>
 struct UnityEvent_1_t1ED2AE761CB7C186AC6B6A8C5BE14C7204486168  : public UnityEventBase_t4968A4C72559F35C0923E4BD9C042C3A842E1DB8
 {
 	// System.Object[] UnityEngine.Events.UnityEvent`1::m_InvokeArray
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___m_InvokeArray_3;
+};
+
+// UnityEngine.AndroidJavaClass
+struct AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03  : public AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0
+{
+};
+
+// UnityEngine.AnimatorStateInfo
+struct AnimatorStateInfo_t1F47379289C7CE7FD588FBC3BBD79A777243B6B2 
+{
+	// System.Int32 UnityEngine.AnimatorStateInfo::m_Name
+	int32_t ___m_Name_0;
+	// System.Int32 UnityEngine.AnimatorStateInfo::m_Path
+	int32_t ___m_Path_1;
+	// System.Int32 UnityEngine.AnimatorStateInfo::m_FullPath
+	int32_t ___m_FullPath_2;
+	// System.Single UnityEngine.AnimatorStateInfo::m_NormalizedTime
+	float ___m_NormalizedTime_3;
+	// System.Single UnityEngine.AnimatorStateInfo::m_Length
+	float ___m_Length_4;
+	// System.Single UnityEngine.AnimatorStateInfo::m_Speed
+	float ___m_Speed_5;
+	// System.Single UnityEngine.AnimatorStateInfo::m_SpeedMultiplier
+	float ___m_SpeedMultiplier_6;
+	// System.Int32 UnityEngine.AnimatorStateInfo::m_Tag
+	int32_t ___m_Tag_7;
+	// System.Int32 UnityEngine.AnimatorStateInfo::m_Loop
+	int32_t ___m_Loop_8;
 };
 
 // System.Boolean
@@ -1058,6 +2148,31 @@ struct Double_tE150EF3D1D43DEE85D533810AB4C742307EEDE5F
 	double ___m_value_0;
 };
 
+// UnityEngine.DrivenRectTransformTracker
+struct DrivenRectTransformTracker_tFB0706C933E3C68E4F377C204FCEEF091F1EE0B1 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t DrivenRectTransformTracker_tFB0706C933E3C68E4F377C204FCEEF091F1EE0B1__padding[1];
+	};
+};
+
+// System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+// Native definition for P/Invoke marshalling of System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
+
 // UnityEngine.GradientAlphaKey
 struct GradientAlphaKey_tF469955E4BBAF1044320D956CD8D990F1A26EAA0 
 {
@@ -1094,6 +2209,24 @@ struct InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906  : public
 	int32_t ___NewInteractableState_4;
 	// OculusSampleFramework.ColliderZoneArgs OculusSampleFramework.InteractableStateArgs::ColliderArgs
 	ColliderZoneArgs_tC7431174FDF0C6002A554118B81A5E6096D41087* ___ColliderArgs_5;
+};
+
+// Bhaptics.Tact.JSONArray
+struct JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7  : public JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D
+{
+	// System.Collections.Generic.List`1<Bhaptics.Tact.JSONNode> Bhaptics.Tact.JSONArray::m_List
+	List_1_t6E24A931558F3D2261E2EF5388D74DD216130B74* ___m_List_4;
+	// System.Boolean Bhaptics.Tact.JSONArray::inline
+	bool ___inline_5;
+};
+
+// Bhaptics.Tact.JSONObject
+struct JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC  : public JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D
+{
+	// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.JSONNode> Bhaptics.Tact.JSONObject::m_Dict
+	Dictionary_2_t0A6C52FDA88C212B6330382F49C67477ACE2E50A* ___m_Dict_4;
+	// System.Boolean Bhaptics.Tact.JSONObject::inline
+	bool ___inline_5;
 };
 
 // UnityEngine.LayerMask
@@ -1251,6 +2384,13 @@ struct SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD_marshaled_com
 	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_DisabledSprite_3;
 };
 
+// UnityEngine.Events.UnityEvent
+struct UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977  : public UnityEventBase_t4968A4C72559F35C0923E4BD9C042C3A842E1DB8
+{
+	// System.Object[] UnityEngine.Events.UnityEvent::m_InvokeArray
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___m_InvokeArray_3;
+};
+
 // UnityEngine.Vector2
 struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 
 {
@@ -1313,34 +2453,17 @@ struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_com : 
 	float ___m_Seconds_0;
 };
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=24
-struct __StaticArrayInitTypeSizeU3D24_t3464DA68B6CCAB9A0A43F94B3DB9AA7E7FDDB19A 
+// Bhaptics.Tact.Unity.HapticApi/point
+struct point_tFD793B132EE65A0C93FD921353591DA6B9A89CA9 
 {
-	union
-	{
-		struct
-		{
-			union
-			{
-			};
-		};
-		uint8_t __StaticArrayInitTypeSizeU3D24_t3464DA68B6CCAB9A0A43F94B3DB9AA7E7FDDB19A__padding[24];
-	};
-};
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=32
-struct __StaticArrayInitTypeSizeU3D32_tC3894D25C1E879699FE1C9BAB1BBF2787B405069 
-{
-	union
-	{
-		struct
-		{
-			union
-			{
-			};
-		};
-		uint8_t __StaticArrayInitTypeSizeU3D32_tC3894D25C1E879699FE1C9BAB1BBF2787B405069__padding[32];
-	};
+	// System.Single Bhaptics.Tact.Unity.HapticApi/point::x
+	float ___x_0;
+	// System.Single Bhaptics.Tact.Unity.HapticApi/point::y
+	float ___y_1;
+	// System.Int32 Bhaptics.Tact.Unity.HapticApi/point::intensity
+	int32_t ___intensity_2;
+	// System.Int32 Bhaptics.Tact.Unity.HapticApi/point::motorCount
+	int32_t ___motorCount_3;
 };
 
 // OVRPlugin/Quatf
@@ -1410,9 +2533,118 @@ struct MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshaled_com
 	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___m_ParticleSystem_0;
 };
 
-// <PrivateImplementationDetails>
-struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA  : public RuntimeObject
+// System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>
+struct Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9 
 {
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_dictionary
+	Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* ____dictionary_0;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_version
+	int32_t ____version_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_index
+	int32_t ____index_2;
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_current
+	KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 ____current_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_getEnumeratorRetType
+	int32_t ____getEnumeratorRetType_4;
+};
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+struct Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4 
+{
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_dictionary
+	Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* ____dictionary_0;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_version
+	int32_t ____version_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_index
+	int32_t ____index_2;
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_current
+	KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535 ____current_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_getEnumeratorRetType
+	int32_t ____getEnumeratorRetType_4;
+};
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.HapticEffectMode>
+struct Enumerator_tB74F4FEDF1F70644A20CE16CD663367054900974 
+{
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_dictionary
+	Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* ____dictionary_0;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_version
+	int32_t ____version_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_index
+	int32_t ____index_2;
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_current
+	KeyValuePair_2_tBD50AD3A0892764218F3B61D9120EF0A919B27D1 ____current_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_getEnumeratorRetType
+	int32_t ____getEnumeratorRetType_4;
+};
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.JSONNode>
+struct Enumerator_tAE42FB017EB3BDF9C14D44ACAFBC3B53DE5A4D53 
+{
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_dictionary
+	Dictionary_2_t0A6C52FDA88C212B6330382F49C67477ACE2E50A* ____dictionary_0;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_version
+	int32_t ____version_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_index
+	int32_t ____index_2;
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_current
+	KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC ____current_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_getEnumeratorRetType
+	int32_t ____getEnumeratorRetType_4;
+};
+
+// Bhaptics.Tact.Unity.AndroidHaptic
+struct AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1  : public RuntimeObject
+{
+	// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice> Bhaptics.Tact.Unity.AndroidHaptic::deviceList
+	List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* ___deviceList_1;
+	// System.Collections.Generic.List`1<System.String> Bhaptics.Tact.Unity.AndroidHaptic::registeredCache
+	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___registeredCache_2;
+	// System.Object Bhaptics.Tact.Unity.AndroidHaptic::syncLock
+	RuntimeObject* ___syncLock_7;
+	// System.Collections.Generic.Dictionary`2<Bhaptics.Tact.PositionType,System.Int32[]> Bhaptics.Tact.Unity.AndroidHaptic::updatedList
+	Dictionary_2_tAA28B112099476AB6B27CF458644BE15FBA8EE04* ___updatedList_8;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::AndroidJavaObjectPtr
+	intptr_t ___AndroidJavaObjectPtr_9;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::SubmitRegisteredPtr
+	intptr_t ___SubmitRegisteredPtr_10;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::SubmitRegisteredWithTimePtr
+	intptr_t ___SubmitRegisteredWithTimePtr_11;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::RegisterPtr
+	intptr_t ___RegisterPtr_12;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::RegisterReflectedPtr
+	intptr_t ___RegisterReflectedPtr_13;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::PingPtr
+	intptr_t ___PingPtr_14;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::PingAllPtr
+	intptr_t ___PingAllPtr_15;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::IsRegisteredPtr
+	intptr_t ___IsRegisteredPtr_16;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::IsPlayingPtr
+	intptr_t ___IsPlayingPtr_17;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::IsPlayingAnythingPtr
+	intptr_t ___IsPlayingAnythingPtr_18;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::ToggleStreamPtr
+	intptr_t ___ToggleStreamPtr_19;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::IsStreamingEnablePtr
+	intptr_t ___IsStreamingEnablePtr_20;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::GetStreamingHostsPtr
+	intptr_t ___GetStreamingHostsPtr_21;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::ShowBluetoothPtr
+	intptr_t ___ShowBluetoothPtr_22;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::RefreshPairingInfoPtr
+	intptr_t ___RefreshPairingInfoPtr_23;
+	// System.IntPtr Bhaptics.Tact.Unity.AndroidHaptic::EnableDevicePtr
+	intptr_t ___EnableDevicePtr_24;
+};
+
+// UnityEngine.Bounds
+struct Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 
+{
+	// UnityEngine.Vector3 UnityEngine.Bounds::m_Center
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Center_0;
+	// UnityEngine.Vector3 UnityEngine.Bounds::m_Extents
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Extents_1;
 };
 
 // UnityEngine.UI.ColorBlock
@@ -1652,6 +2884,13 @@ struct Pose_t586B98D092E896A4FE933ADA4074D3F7D44A8CF7  : public RuntimeObject
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Rotation_1;
 };
 
+// Bhaptics.Tact.PositionType
+struct PositionType_tD1C4BFED25BC51F45D95DDEC6629B96BB5D18B53 
+{
+	// System.Int32 Bhaptics.Tact.PositionType::value__
+	int32_t ___value___2;
+};
+
 // UnityEngine.Ray
 struct Ray_t2B1742D7958DC05BDC3EFC7461D3593E1430DC00 
 {
@@ -1676,6 +2915,329 @@ struct RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_UV_4;
 	// System.Int32 UnityEngine.RaycastHit::m_Collider
 	int32_t ___m_Collider_5;
+};
+
+// UnityEngine.jvalue
+struct jvalue_t1756CE401EE222450C9AD0B98CB30E213D4A3225 
+{
+	union
+	{
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.Boolean UnityEngine.jvalue::z
+			bool ___z_0;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			bool ___z_0_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.SByte UnityEngine.jvalue::b
+			int8_t ___b_1;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int8_t ___b_1_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.Char UnityEngine.jvalue::c
+			Il2CppChar ___c_2;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			Il2CppChar ___c_2_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.Int16 UnityEngine.jvalue::s
+			int16_t ___s_3;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int16_t ___s_3_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.Int32 UnityEngine.jvalue::i
+			int32_t ___i_4;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ___i_4_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.Int64 UnityEngine.jvalue::j
+			int64_t ___j_5;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int64_t ___j_5_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.Single UnityEngine.jvalue::f
+			float ___f_6;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			float ___f_6_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.Double UnityEngine.jvalue::d
+			double ___d_7;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			double ___d_7_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			// System.IntPtr UnityEngine.jvalue::l
+			intptr_t ___l_8;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			intptr_t ___l_8_forAlignmentOnly;
+		};
+	};
+};
+// Native definition for P/Invoke marshalling of UnityEngine.jvalue
+struct jvalue_t1756CE401EE222450C9AD0B98CB30E213D4A3225_marshaled_pinvoke
+{
+	union
+	{
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int32_t ___z_0;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ___z_0_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int8_t ___b_1;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int8_t ___b_1_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			uint8_t ___c_2;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			uint8_t ___c_2_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int16_t ___s_3;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int16_t ___s_3_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int32_t ___i_4;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ___i_4_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int64_t ___j_5;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int64_t ___j_5_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			float ___f_6;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			float ___f_6_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			double ___d_7;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			double ___d_7_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			intptr_t ___l_8;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			intptr_t ___l_8_forAlignmentOnly;
+		};
+	};
+};
+// Native definition for COM marshalling of UnityEngine.jvalue
+struct jvalue_t1756CE401EE222450C9AD0B98CB30E213D4A3225_marshaled_com
+{
+	union
+	{
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int32_t ___z_0;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ___z_0_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int8_t ___b_1;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int8_t ___b_1_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			uint8_t ___c_2;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			uint8_t ___c_2_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int16_t ___s_3;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int16_t ___s_3_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int32_t ___i_4;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ___i_4_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int64_t ___j_5;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int64_t ___j_5_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			float ___f_6;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			float ___f_6_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			double ___d_7;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			double ___d_7_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			intptr_t ___l_8;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			intptr_t ___l_8_forAlignmentOnly;
+		};
+	};
+};
+
+// UnityEngine.UI.Button/ButtonClickedEvent
+struct ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C  : public UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977
+{
+};
+
+// Bhaptics.Tact.Unity.HapticApi/status
+struct status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576 
+{
+	// System.Int32[] Bhaptics.Tact.Unity.HapticApi/status::values
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___values_0;
+};
+// Native definition for P/Invoke marshalling of Bhaptics.Tact.Unity.HapticApi/status
+struct status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke
+{
+	int32_t ___values_0[20];
+};
+// Native definition for COM marshalling of Bhaptics.Tact.Unity.HapticApi/status
+struct status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_com
+{
+	int32_t ___values_0[20];
 };
 
 // OculusSampleFramework.Interactable/InteractableStateArgsEvent
@@ -1882,6 +3444,24 @@ struct MulticastDelegate_t_marshaled_com : public Delegate_t_marshaled_com
 	Delegate_t_marshaled_com** ___delegates_13;
 };
 
+// UnityEngine.ScriptableObject
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+// Native definition for P/Invoke marshalling of UnityEngine.ScriptableObject
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_pinvoke : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of UnityEngine.ScriptableObject
+struct ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A_marshaled_com : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+};
+
+// UnityEngine.Sprite
+struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+
 // System.SystemException
 struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
 {
@@ -1890,6 +3470,31 @@ struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Excep
 // UnityEngine.Texture
 struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
 {
+};
+
+// Bhaptics.Tact.JSONNode/Enumerator
+struct Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 
+{
+	// Bhaptics.Tact.JSONNode/Enumerator/Type Bhaptics.Tact.JSONNode/Enumerator::type
+	int32_t ___type_0;
+	// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.JSONNode> Bhaptics.Tact.JSONNode/Enumerator::m_Object
+	Enumerator_tAE42FB017EB3BDF9C14D44ACAFBC3B53DE5A4D53 ___m_Object_1;
+	// System.Collections.Generic.List`1/Enumerator<Bhaptics.Tact.JSONNode> Bhaptics.Tact.JSONNode/Enumerator::m_Array
+	Enumerator_tEAB3CE491E0AC0D57C08F1FB30CA5FB86AB63907 ___m_Array_2;
+};
+// Native definition for P/Invoke marshalling of Bhaptics.Tact.JSONNode/Enumerator
+struct Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6_marshaled_pinvoke
+{
+	int32_t ___type_0;
+	Enumerator_tAE42FB017EB3BDF9C14D44ACAFBC3B53DE5A4D53 ___m_Object_1;
+	Enumerator_tEAB3CE491E0AC0D57C08F1FB30CA5FB86AB63907 ___m_Array_2;
+};
+// Native definition for COM marshalling of Bhaptics.Tact.JSONNode/Enumerator
+struct Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6_marshaled_com
+{
+	int32_t ___type_0;
+	Enumerator_tAE42FB017EB3BDF9C14D44ACAFBC3B53DE5A4D53 ___m_Object_1;
+	Enumerator_tEAB3CE491E0AC0D57C08F1FB30CA5FB86AB63907 ___m_Array_2;
 };
 
 // OVRPlugin/HandState
@@ -1954,6 +3559,11 @@ struct Action_1_tCFBE340FD442BC4B5557FD1B5ECC8237D9ADD49F  : public MulticastDel
 {
 };
 
+// System.Converter`2<System.Byte,System.Int32>
+struct Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A  : public MulticastDelegate_t
+{
+};
+
 // System.Func`2<UnityEngine.Collider,System.Boolean>
 struct Func_2_t6AD3CFC7C337E46C1DA946EEEA6278162FB59A04  : public MulticastDelegate_t
 {
@@ -1974,9 +3584,33 @@ struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t
 {
 };
 
+// Bhaptics.Tact.Unity.Bhaptics_Widget_Setting
+struct Bhaptics_Widget_Setting_t161D157DE26028AEFEDCA2A862E8748B281671EA  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
+{
+	// Bhaptics.Tact.Unity.SettingDeviceIcon Bhaptics.Tact.Unity.Bhaptics_Widget_Setting::SettingTactot
+	SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* ___SettingTactot_4;
+	// Bhaptics.Tact.Unity.SettingDeviceIcon Bhaptics.Tact.Unity.Bhaptics_Widget_Setting::SettingTactal
+	SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* ___SettingTactal_5;
+	// Bhaptics.Tact.Unity.SettingDeviceIcon Bhaptics.Tact.Unity.Bhaptics_Widget_Setting::SettingTactosyArm
+	SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* ___SettingTactosyArm_6;
+	// Bhaptics.Tact.Unity.SettingDeviceIcon Bhaptics.Tact.Unity.Bhaptics_Widget_Setting::SettingTactosyFoot
+	SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* ___SettingTactosyFoot_7;
+	// Bhaptics.Tact.Unity.SettingDeviceIcon Bhaptics.Tact.Unity.Bhaptics_Widget_Setting::SettingTactosyHand
+	SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* ___SettingTactosyHand_8;
+};
+
 // UnityEngine.Collider
 struct Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
+};
+
+// Bhaptics.Tact.Unity.HapticClip
+struct HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
+{
+	// System.String Bhaptics.Tact.Unity.HapticClip::assetId
+	String_t* ___assetId_4;
+	// System.String Bhaptics.Tact.Unity.HapticClip::keyId
+	String_t* ___keyId_5;
 };
 
 // UnityEngine.MeshFilter
@@ -2009,6 +3643,11 @@ struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t
 {
 };
 
+// UnityEngine.Events.UnityAction
+struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7  : public MulticastDelegate_t
+{
+};
+
 // DebugUIBuilder/OnClick
 struct OnClick_tE915BFC88D1C91D68F96A97D675ECCCF91B8D46A  : public MulticastDelegate_t
 {
@@ -2017,6 +3656,23 @@ struct OnClick_tE915BFC88D1C91D68F96A97D675ECCCF91B8D46A  : public MulticastDele
 // DebugUIBuilder/OnToggleValueChange
 struct OnToggleValueChange_tD8DB8B3514D20938EF5BC2B343F5B5824217DBDF  : public MulticastDelegate_t
 {
+};
+
+// Bhaptics.Tact.JSONNode/KeyEnumerator
+struct KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE 
+{
+	// Bhaptics.Tact.JSONNode/Enumerator Bhaptics.Tact.JSONNode/KeyEnumerator::m_Enumerator
+	Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 ___m_Enumerator_0;
+};
+// Native definition for P/Invoke marshalling of Bhaptics.Tact.JSONNode/KeyEnumerator
+struct KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE_marshaled_pinvoke
+{
+	Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6_marshaled_pinvoke ___m_Enumerator_0;
+};
+// Native definition for COM marshalling of Bhaptics.Tact.JSONNode/KeyEnumerator
+struct KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE_marshaled_com
+{
+	Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6_marshaled_com ___m_Enumerator_0;
 };
 
 // UnityEngine.Animation
@@ -2034,9 +3690,34 @@ struct AudioBehaviour_t2DC0BEF7B020C952F3D2DA5AAAC88501C7EEB941  : public Behavi
 {
 };
 
+// UnityEngine.BoxCollider
+struct BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23  : public Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76
+{
+};
+
 // UnityEngine.Camera
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
 {
+};
+
+// UnityEngine.Canvas
+struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+};
+
+// Bhaptics.Tact.Unity.FileHapticClip
+struct FileHapticClip_t48EC83EE51B9DE69C85D3DC520865AA88CB0F9D9  : public HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E
+{
+	// System.Single Bhaptics.Tact.Unity.FileHapticClip::Intensity
+	float ___Intensity_6;
+	// System.Single Bhaptics.Tact.Unity.FileHapticClip::Duration
+	float ___Duration_7;
+	// Bhaptics.Tact.Unity.HapticDeviceType Bhaptics.Tact.Unity.FileHapticClip::ClipType
+	int32_t ___ClipType_8;
+	// System.String Bhaptics.Tact.Unity.FileHapticClip::JsonValue
+	String_t* ___JsonValue_9;
+	// System.Int32 Bhaptics.Tact.Unity.FileHapticClip::_clipDurationTime
+	int32_t ____clipDurationTime_10;
 };
 
 // UnityEngine.LineRenderer
@@ -2059,9 +3740,184 @@ struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5  : public Transfo
 {
 };
 
+// Bhaptics.Tact.Unity.AndroidWidget_ControlButton
+struct AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// Bhaptics.Tact.PositionType Bhaptics.Tact.Unity.AndroidWidget_ControlButton::DeviceType
+	int32_t ___DeviceType_4;
+	// UnityEngine.Sprite Bhaptics.Tact.Unity.AndroidWidget_ControlButton::defaultImage
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___defaultImage_5;
+	// UnityEngine.Sprite Bhaptics.Tact.Unity.AndroidWidget_ControlButton::pairImage
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___pairImage_6;
+	// UnityEngine.Sprite Bhaptics.Tact.Unity.AndroidWidget_ControlButton::defaultHoverImage
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___defaultHoverImage_7;
+	// UnityEngine.Sprite Bhaptics.Tact.Unity.AndroidWidget_ControlButton::pairHoverImage
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___pairHoverImage_8;
+	// UnityEngine.Transform Bhaptics.Tact.Unity.AndroidWidget_ControlButton::pairDeviceCount
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___pairDeviceCount_9;
+	// UnityEngine.UI.Button Bhaptics.Tact.Unity.AndroidWidget_ControlButton::button
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___button_10;
+};
+
+// Bhaptics.Tact.Unity.AndroidWidget_ObjectPool
+struct AndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.UI.ScrollRect Bhaptics.Tact.Unity.AndroidWidget_ObjectPool::pariedDeviceScrollrect
+	ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* ___pariedDeviceScrollrect_4;
+	// Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI Bhaptics.Tact.Unity.AndroidWidget_ObjectPool::pairedDeviceUIGameObject
+	AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* ___pairedDeviceUIGameObject_5;
+	// System.Int32 Bhaptics.Tact.Unity.AndroidWidget_ObjectPool::objectCount
+	int32_t ___objectCount_6;
+	// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI> Bhaptics.Tact.Unity.AndroidWidget_ObjectPool::pairedUIList
+	List_1_t4BB714C32C63320E15F9BE811510151332419557* ___pairedUIList_7;
+};
+
+// Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI
+struct AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.UI.Image Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI::deviceImage
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___deviceImage_4;
+	// UnityEngine.UI.Text Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI::deviceName
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___deviceName_5;
+	// UnityEngine.UI.Button Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI::pingButton
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___pingButton_6;
+	// UnityEngine.UI.Button Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI::toggleButton
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___toggleButton_7;
+	// UnityEngine.Sprite Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI::leftSide
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___leftSide_8;
+	// UnityEngine.Sprite Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI::rightSide
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___rightSide_9;
+	// Bhaptics.Tact.Unity.HapticDevice Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI::device
+	HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* ___device_10;
+};
+
+// Bhaptics.Tact.Unity.AndroidWidget_SettingUIAnimation
+struct AndroidWidget_SettingUIAnimation_t9781087DBDCBFEA803DB6A32BF193B7A5F16D742  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject Bhaptics.Tact.Unity.AndroidWidget_SettingUIAnimation::SettingUI
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___SettingUI_4;
+	// UnityEngine.Animator Bhaptics.Tact.Unity.AndroidWidget_SettingUIAnimation::animator
+	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___animator_5;
+	// System.Boolean Bhaptics.Tact.Unity.AndroidWidget_SettingUIAnimation::settingPanelEnable
+	bool ___settingPanelEnable_6;
+};
+
+// Bhaptics.Tact.Unity.AndroidWidget_UI
+struct AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.GameObject Bhaptics.Tact.Unity.AndroidWidget_UI::uiContainer
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___uiContainer_4;
+	// UnityEngine.UI.Button Bhaptics.Tact.Unity.AndroidWidget_UI::pingAllButton
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___pingAllButton_5;
+	// Bhaptics.Tact.Unity.Bhaptics_Widget_Setting Bhaptics.Tact.Unity.AndroidWidget_UI::WidgetSetting
+	Bhaptics_Widget_Setting_t161D157DE26028AEFEDCA2A862E8748B281671EA* ___WidgetSetting_6;
+	// Bhaptics.Tact.Unity.AndroidWidget_ObjectPool Bhaptics.Tact.Unity.AndroidWidget_UI::settingObjectPool
+	AndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD* ___settingObjectPool_7;
+	// UnityEngine.AudioSource Bhaptics.Tact.Unity.AndroidWidget_UI::buttonClickAudio
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___buttonClickAudio_8;
+	// UnityEngine.Animator Bhaptics.Tact.Unity.AndroidWidget_UI::animator
+	Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* ___animator_9;
+	// System.Boolean Bhaptics.Tact.Unity.AndroidWidget_UI::widgetActive
+	bool ___widgetActive_10;
+	// Bhaptics.Tact.Unity.AndroidWidget_ControlButton[] Bhaptics.Tact.Unity.AndroidWidget_UI::controllButtons
+	AndroidWidget_ControlButtonU5BU5D_tDAB320020613CB967B0C2A8082DA23B2E9816A38* ___controllButtons_11;
+};
+
+// Bhaptics.Tact.Unity.Android_DeviceController
+struct Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.UI.Image Bhaptics.Tact.Unity.Android_DeviceController::icon
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___icon_4;
+	// Bhaptics.Tact.Unity.IconSetting Bhaptics.Tact.Unity.Android_DeviceController::widgetSetting
+	IconSetting_t870A56F9950D91A50903F32FC2AA9660C7DEF95D* ___widgetSetting_5;
+	// UnityEngine.Sprite Bhaptics.Tact.Unity.Android_DeviceController::TactsuitWiredIcon
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___TactsuitWiredIcon_6;
+	// UnityEngine.UI.Image Bhaptics.Tact.Unity.Android_DeviceController::batteryLowImage
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___batteryLowImage_7;
+	// UnityEngine.GameObject Bhaptics.Tact.Unity.Android_DeviceController::ConnectMenu
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___ConnectMenu_8;
+	// UnityEngine.UI.Button Bhaptics.Tact.Unity.Android_DeviceController::pingButton
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___pingButton_9;
+	// UnityEngine.UI.Button Bhaptics.Tact.Unity.Android_DeviceController::lButton
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___lButton_10;
+	// UnityEngine.UI.Button Bhaptics.Tact.Unity.Android_DeviceController::rButton
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___rButton_11;
+	// UnityEngine.GameObject Bhaptics.Tact.Unity.Android_DeviceController::wiredNotification
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___wiredNotification_12;
+	// UnityEngine.GameObject Bhaptics.Tact.Unity.Android_DeviceController::DisconnectMenu
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___DisconnectMenu_13;
+	// Bhaptics.Tact.Unity.HapticDevice Bhaptics.Tact.Unity.Android_DeviceController::device
+	HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* ___device_18;
+};
+
+// Bhaptics.Tact.Unity.Android_UIController
+struct Android_UIController_tE2FCA9B09C445E64061C16692B2C7D1A42635BDB  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.RectTransform Bhaptics.Tact.Unity.Android_UIController::mainPanel
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___mainPanel_4;
+	// UnityEngine.Transform Bhaptics.Tact.Unity.Android_UIController::devicesContainer
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___devicesContainer_5;
+	// UnityEngine.Transform Bhaptics.Tact.Unity.Android_UIController::deviceListPageUi
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___deviceListPageUi_6;
+	// UnityEngine.UI.Button Bhaptics.Tact.Unity.Android_UIController::deviceListNextPageButton
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___deviceListNextPageButton_7;
+	// UnityEngine.UI.Button Bhaptics.Tact.Unity.Android_UIController::deviceListBackPageButton
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___deviceListBackPageButton_8;
+	// UnityEngine.UI.Text Bhaptics.Tact.Unity.Android_UIController::deviceListPageText
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___deviceListPageText_9;
+	// Bhaptics.Tact.Unity.Android_DeviceController Bhaptics.Tact.Unity.Android_UIController::devicePrefab
+	Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* ___devicePrefab_10;
+	// UnityEngine.GameObject Bhaptics.Tact.Unity.Android_UIController::noPairedDeviceUi
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___noPairedDeviceUi_11;
+	// UnityEngine.UI.Button Bhaptics.Tact.Unity.Android_UIController::helpButton
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___helpButton_12;
+	// UnityEngine.UI.Button Bhaptics.Tact.Unity.Android_UIController::bHpaticsLinkButton
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___bHpaticsLinkButton_13;
+	// UnityEngine.GameObject Bhaptics.Tact.Unity.Android_UIController::helpUi
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___helpUi_14;
+	// UnityEngine.UI.Button Bhaptics.Tact.Unity.Android_UIController::helpCloseButton
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___helpCloseButton_15;
+	// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Android_DeviceController> Bhaptics.Tact.Unity.Android_UIController::controllers
+	List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC* ___controllers_16;
+	// UnityEngine.BoxCollider Bhaptics.Tact.Unity.Android_UIController::mainPanelCollider
+	BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* ___mainPanelCollider_17;
+	// UnityEngine.Vector2 Bhaptics.Tact.Unity.Android_UIController::defaultMainPanelSize
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___defaultMainPanelSize_18;
+	// UnityEngine.Vector2 Bhaptics.Tact.Unity.Android_UIController::defaultDeviceContainerSize
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___defaultDeviceContainerSize_19;
+	// System.Int32 Bhaptics.Tact.Unity.Android_UIController::deviceListSize
+	int32_t ___deviceListSize_20;
+	// System.Int32 Bhaptics.Tact.Unity.Android_UIController::deviceListPageIndex
+	int32_t ___deviceListPageIndex_21;
+	// System.Int32 Bhaptics.Tact.Unity.Android_UIController::expandHeight
+	int32_t ___expandHeight_22;
+	// System.Int32 Bhaptics.Tact.Unity.Android_UIController::expandDeviceCount
+	int32_t ___expandDeviceCount_23;
+	// System.Int32 Bhaptics.Tact.Unity.Android_UIController::pageActivateDeviceCount
+	int32_t ___pageActivateDeviceCount_24;
+	// System.Int32 Bhaptics.Tact.Unity.Android_UIController::pageExpandHeight
+	int32_t ___pageExpandHeight_25;
+	// System.Int32 Bhaptics.Tact.Unity.Android_UIController::maxPageIndex
+	int32_t ___maxPageIndex_26;
+};
+
+// Bhaptics.Tact.Unity.ArmsHapticClip
+struct ArmsHapticClip_t147D7B1D9FA2AEB6F4001D52E83C485D05738DE7  : public FileHapticClip_t48EC83EE51B9DE69C85D3DC520865AA88CB0F9D9
+{
+	// System.Boolean Bhaptics.Tact.Unity.ArmsHapticClip::IsReflect
+	bool ___IsReflect_11;
+};
+
 // UnityEngine.AudioSource
 struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299  : public AudioBehaviour_t2DC0BEF7B020C952F3D2DA5AAAC88501C7EEB941
 {
+};
+
+// Bhaptics.Tact.Unity.BhapticsAndroidManager
+struct BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice> Bhaptics.Tact.Unity.BhapticsAndroidManager::Devices
+	List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* ___Devices_6;
 };
 
 // OculusSampleFramework.ControllerBoxController
@@ -3015,6 +4871,49 @@ struct DistanceGrabber_t56690441864EC9DD12844C2AAA0441AB4E3761C9  : public OVRGr
 	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___m_targetCollider_36;
 };
 
+// UnityEngine.UI.Graphic
+struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931  : public UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D
+{
+	// UnityEngine.Material UnityEngine.UI.Graphic::m_Material
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_Material_6;
+	// UnityEngine.Color UnityEngine.UI.Graphic::m_Color
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_Color_7;
+	// System.Boolean UnityEngine.UI.Graphic::m_SkipLayoutUpdate
+	bool ___m_SkipLayoutUpdate_8;
+	// System.Boolean UnityEngine.UI.Graphic::m_SkipMaterialUpdate
+	bool ___m_SkipMaterialUpdate_9;
+	// System.Boolean UnityEngine.UI.Graphic::m_RaycastTarget
+	bool ___m_RaycastTarget_10;
+	// System.Boolean UnityEngine.UI.Graphic::m_RaycastTargetCache
+	bool ___m_RaycastTargetCache_11;
+	// UnityEngine.Vector4 UnityEngine.UI.Graphic::m_RaycastPadding
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___m_RaycastPadding_12;
+	// UnityEngine.RectTransform UnityEngine.UI.Graphic::m_RectTransform
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_RectTransform_13;
+	// UnityEngine.CanvasRenderer UnityEngine.UI.Graphic::m_CanvasRenderer
+	CanvasRenderer_tAB9A55A976C4E3B2B37D0CE5616E5685A8B43860* ___m_CanvasRenderer_14;
+	// UnityEngine.Canvas UnityEngine.UI.Graphic::m_Canvas
+	Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* ___m_Canvas_15;
+	// System.Boolean UnityEngine.UI.Graphic::m_VertsDirty
+	bool ___m_VertsDirty_16;
+	// System.Boolean UnityEngine.UI.Graphic::m_MaterialDirty
+	bool ___m_MaterialDirty_17;
+	// UnityEngine.Events.UnityAction UnityEngine.UI.Graphic::m_OnDirtyLayoutCallback
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyLayoutCallback_18;
+	// UnityEngine.Events.UnityAction UnityEngine.UI.Graphic::m_OnDirtyVertsCallback
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyVertsCallback_19;
+	// UnityEngine.Events.UnityAction UnityEngine.UI.Graphic::m_OnDirtyMaterialCallback
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyMaterialCallback_20;
+	// UnityEngine.Mesh UnityEngine.UI.Graphic::m_CachedMesh
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___m_CachedMesh_23;
+	// UnityEngine.Vector2[] UnityEngine.UI.Graphic::m_CachedUvs
+	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___m_CachedUvs_24;
+	// UnityEngine.UI.CoroutineTween.TweenRunner`1<UnityEngine.UI.CoroutineTween.ColorTween> UnityEngine.UI.Graphic::m_ColorTweenRunner
+	TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4* ___m_ColorTweenRunner_25;
+	// System.Boolean UnityEngine.UI.Graphic::<useLegacyMeshGeneration>k__BackingField
+	bool ___U3CuseLegacyMeshGenerationU3Ek__BackingField_26;
+};
+
 // OculusSampleFramework.RayTool
 struct RayTool_t0DE40836B7440F04FA3DEB39E1F5B2D27BA87941  : public InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED
 {
@@ -3040,6 +4939,85 @@ struct RayTool_t0DE40836B7440F04FA3DEB39E1F5B2D27BA87941  : public InteractableT
 	ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ____secondaryOverlapResults_27;
 	// System.Boolean OculusSampleFramework.RayTool::_initialized
 	bool ____initialized_28;
+};
+
+// UnityEngine.UI.ScrollRect
+struct ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E  : public UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D
+{
+	// UnityEngine.RectTransform UnityEngine.UI.ScrollRect::m_Content
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_Content_4;
+	// System.Boolean UnityEngine.UI.ScrollRect::m_Horizontal
+	bool ___m_Horizontal_5;
+	// System.Boolean UnityEngine.UI.ScrollRect::m_Vertical
+	bool ___m_Vertical_6;
+	// UnityEngine.UI.ScrollRect/MovementType UnityEngine.UI.ScrollRect::m_MovementType
+	int32_t ___m_MovementType_7;
+	// System.Single UnityEngine.UI.ScrollRect::m_Elasticity
+	float ___m_Elasticity_8;
+	// System.Boolean UnityEngine.UI.ScrollRect::m_Inertia
+	bool ___m_Inertia_9;
+	// System.Single UnityEngine.UI.ScrollRect::m_DecelerationRate
+	float ___m_DecelerationRate_10;
+	// System.Single UnityEngine.UI.ScrollRect::m_ScrollSensitivity
+	float ___m_ScrollSensitivity_11;
+	// UnityEngine.RectTransform UnityEngine.UI.ScrollRect::m_Viewport
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_Viewport_12;
+	// UnityEngine.UI.Scrollbar UnityEngine.UI.ScrollRect::m_HorizontalScrollbar
+	Scrollbar_t7CDC9B956698D9385A11E4C12964CD51477072C3* ___m_HorizontalScrollbar_13;
+	// UnityEngine.UI.Scrollbar UnityEngine.UI.ScrollRect::m_VerticalScrollbar
+	Scrollbar_t7CDC9B956698D9385A11E4C12964CD51477072C3* ___m_VerticalScrollbar_14;
+	// UnityEngine.UI.ScrollRect/ScrollbarVisibility UnityEngine.UI.ScrollRect::m_HorizontalScrollbarVisibility
+	int32_t ___m_HorizontalScrollbarVisibility_15;
+	// UnityEngine.UI.ScrollRect/ScrollbarVisibility UnityEngine.UI.ScrollRect::m_VerticalScrollbarVisibility
+	int32_t ___m_VerticalScrollbarVisibility_16;
+	// System.Single UnityEngine.UI.ScrollRect::m_HorizontalScrollbarSpacing
+	float ___m_HorizontalScrollbarSpacing_17;
+	// System.Single UnityEngine.UI.ScrollRect::m_VerticalScrollbarSpacing
+	float ___m_VerticalScrollbarSpacing_18;
+	// UnityEngine.UI.ScrollRect/ScrollRectEvent UnityEngine.UI.ScrollRect::m_OnValueChanged
+	ScrollRectEvent_t812C011901E6101F2A0FFC34C66AC5F65C0DEC26* ___m_OnValueChanged_19;
+	// UnityEngine.Vector2 UnityEngine.UI.ScrollRect::m_PointerStartLocalCursor
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_PointerStartLocalCursor_20;
+	// UnityEngine.Vector2 UnityEngine.UI.ScrollRect::m_ContentStartPosition
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_ContentStartPosition_21;
+	// UnityEngine.RectTransform UnityEngine.UI.ScrollRect::m_ViewRect
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_ViewRect_22;
+	// UnityEngine.Bounds UnityEngine.UI.ScrollRect::m_ContentBounds
+	Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 ___m_ContentBounds_23;
+	// UnityEngine.Bounds UnityEngine.UI.ScrollRect::m_ViewBounds
+	Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 ___m_ViewBounds_24;
+	// UnityEngine.Vector2 UnityEngine.UI.ScrollRect::m_Velocity
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Velocity_25;
+	// System.Boolean UnityEngine.UI.ScrollRect::m_Dragging
+	bool ___m_Dragging_26;
+	// System.Boolean UnityEngine.UI.ScrollRect::m_Scrolling
+	bool ___m_Scrolling_27;
+	// UnityEngine.Vector2 UnityEngine.UI.ScrollRect::m_PrevPosition
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_PrevPosition_28;
+	// UnityEngine.Bounds UnityEngine.UI.ScrollRect::m_PrevContentBounds
+	Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 ___m_PrevContentBounds_29;
+	// UnityEngine.Bounds UnityEngine.UI.ScrollRect::m_PrevViewBounds
+	Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 ___m_PrevViewBounds_30;
+	// System.Boolean UnityEngine.UI.ScrollRect::m_HasRebuiltLayout
+	bool ___m_HasRebuiltLayout_31;
+	// System.Boolean UnityEngine.UI.ScrollRect::m_HSliderExpand
+	bool ___m_HSliderExpand_32;
+	// System.Boolean UnityEngine.UI.ScrollRect::m_VSliderExpand
+	bool ___m_VSliderExpand_33;
+	// System.Single UnityEngine.UI.ScrollRect::m_HSliderHeight
+	float ___m_HSliderHeight_34;
+	// System.Single UnityEngine.UI.ScrollRect::m_VSliderWidth
+	float ___m_VSliderWidth_35;
+	// UnityEngine.RectTransform UnityEngine.UI.ScrollRect::m_Rect
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_Rect_36;
+	// UnityEngine.RectTransform UnityEngine.UI.ScrollRect::m_HorizontalScrollbarRect
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_HorizontalScrollbarRect_37;
+	// UnityEngine.RectTransform UnityEngine.UI.ScrollRect::m_VerticalScrollbarRect
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_VerticalScrollbarRect_38;
+	// UnityEngine.DrivenRectTransformTracker UnityEngine.UI.ScrollRect::m_Tracker
+	DrivenRectTransformTracker_tFB0706C933E3C68E4F377C204FCEEF091F1EE0B1 ___m_Tracker_39;
+	// UnityEngine.Vector3[] UnityEngine.UI.ScrollRect::m_Corners
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___m_Corners_40;
 };
 
 // UnityEngine.UI.Selectable
@@ -3139,6 +5117,38 @@ struct TrainLocomotive_t9B892C94EE7B2A4637F28836BBFDD0291115E57E  : public Train
 	Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ____startStopTrainCr_43;
 };
 
+// UnityEngine.UI.Button
+struct Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098  : public Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712
+{
+	// UnityEngine.UI.Button/ButtonClickedEvent UnityEngine.UI.Button::m_OnClick
+	ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* ___m_OnClick_20;
+};
+
+// UnityEngine.UI.MaskableGraphic
+struct MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E  : public Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931
+{
+	// System.Boolean UnityEngine.UI.MaskableGraphic::m_ShouldRecalculateStencil
+	bool ___m_ShouldRecalculateStencil_27;
+	// UnityEngine.Material UnityEngine.UI.MaskableGraphic::m_MaskMaterial
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_MaskMaterial_28;
+	// UnityEngine.UI.RectMask2D UnityEngine.UI.MaskableGraphic::m_ParentMask
+	RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670* ___m_ParentMask_29;
+	// System.Boolean UnityEngine.UI.MaskableGraphic::m_Maskable
+	bool ___m_Maskable_30;
+	// System.Boolean UnityEngine.UI.MaskableGraphic::m_IsMaskingGraphic
+	bool ___m_IsMaskingGraphic_31;
+	// System.Boolean UnityEngine.UI.MaskableGraphic::m_IncludeForMasking
+	bool ___m_IncludeForMasking_32;
+	// UnityEngine.UI.MaskableGraphic/CullStateChangedEvent UnityEngine.UI.MaskableGraphic::m_OnCullStateChanged
+	CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8* ___m_OnCullStateChanged_33;
+	// System.Boolean UnityEngine.UI.MaskableGraphic::m_ShouldRecalculate
+	bool ___m_ShouldRecalculate_34;
+	// System.Int32 UnityEngine.UI.MaskableGraphic::m_StencilValue
+	int32_t ___m_StencilValue_35;
+	// UnityEngine.Vector3[] UnityEngine.UI.MaskableGraphic::m_Corners
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___m_Corners_36;
+};
+
 // UnityEngine.UI.Toggle
 struct Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F  : public Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712
 {
@@ -3154,13 +5164,111 @@ struct Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F  : public Selectable_t32
 	bool ___m_IsOn_24;
 };
 
+// UnityEngine.UI.Image
+struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E  : public MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E
+{
+	// UnityEngine.Sprite UnityEngine.UI.Image::m_Sprite
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_Sprite_38;
+	// UnityEngine.Sprite UnityEngine.UI.Image::m_OverrideSprite
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_OverrideSprite_39;
+	// UnityEngine.UI.Image/Type UnityEngine.UI.Image::m_Type
+	int32_t ___m_Type_40;
+	// System.Boolean UnityEngine.UI.Image::m_PreserveAspect
+	bool ___m_PreserveAspect_41;
+	// System.Boolean UnityEngine.UI.Image::m_FillCenter
+	bool ___m_FillCenter_42;
+	// UnityEngine.UI.Image/FillMethod UnityEngine.UI.Image::m_FillMethod
+	int32_t ___m_FillMethod_43;
+	// System.Single UnityEngine.UI.Image::m_FillAmount
+	float ___m_FillAmount_44;
+	// System.Boolean UnityEngine.UI.Image::m_FillClockwise
+	bool ___m_FillClockwise_45;
+	// System.Int32 UnityEngine.UI.Image::m_FillOrigin
+	int32_t ___m_FillOrigin_46;
+	// System.Single UnityEngine.UI.Image::m_AlphaHitTestMinimumThreshold
+	float ___m_AlphaHitTestMinimumThreshold_47;
+	// System.Boolean UnityEngine.UI.Image::m_Tracked
+	bool ___m_Tracked_48;
+	// System.Boolean UnityEngine.UI.Image::m_UseSpriteMesh
+	bool ___m_UseSpriteMesh_49;
+	// System.Single UnityEngine.UI.Image::m_PixelsPerUnitMultiplier
+	float ___m_PixelsPerUnitMultiplier_50;
+	// System.Single UnityEngine.UI.Image::m_CachedReferencePixelsPerUnit
+	float ___m_CachedReferencePixelsPerUnit_51;
+};
+
+// UnityEngine.UI.Text
+struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62  : public MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E
+{
+	// UnityEngine.UI.FontData UnityEngine.UI.Text::m_FontData
+	FontData_tB8E562846C6CB59C43260F69AE346B9BF3157224* ___m_FontData_37;
+	// System.String UnityEngine.UI.Text::m_Text
+	String_t* ___m_Text_38;
+	// UnityEngine.TextGenerator UnityEngine.UI.Text::m_TextCache
+	TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC* ___m_TextCache_39;
+	// UnityEngine.TextGenerator UnityEngine.UI.Text::m_TextCacheForLayout
+	TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC* ___m_TextCacheForLayout_40;
+	// System.Boolean UnityEngine.UI.Text::m_DisableFontTextureRebuiltCallback
+	bool ___m_DisableFontTextureRebuiltCallback_42;
+	// UnityEngine.UIVertex[] UnityEngine.UI.Text::m_TempVerts
+	UIVertexU5BU5D_tBC532486B45D071A520751A90E819C77BA4E3D2F* ___m_TempVerts_43;
+};
+
 // System.Collections.Generic.Dictionary`2<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo>
 
 // System.Collections.Generic.Dictionary`2<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo>
+
+// System.Collections.Generic.Dictionary`2<Bhaptics.Tact.PositionType,System.Int32[]>
+
+// System.Collections.Generic.Dictionary`2<Bhaptics.Tact.PositionType,System.Int32[]>
+
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode>
+
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode>
+
+// System.EmptyArray`1<System.Object>
+struct EmptyArray_1_tDF0DD7256B115243AA6BD5558417387A734240EE_StaticFields
+{
+	// T[] System.EmptyArray`1::Value
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___Value_0;
+};
+
+// System.EmptyArray`1<System.Object>
 
 // System.Collections.Generic.Dictionary`2/KeyCollection<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo>
 
 // System.Collections.Generic.Dictionary`2/KeyCollection<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo>
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI>
+struct List_1_t4BB714C32C63320E15F9BE811510151332419557_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	AndroidWidget_PairedDeviceUIU5BU5D_tF0AC6016B135D42D3E3C200F81E7060AAB0BE8A7* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI>
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Android_DeviceController>
+struct List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	Android_DeviceControllerU5BU5D_t43D3D1A387EA5A7326D21031B2BD3B00C3E40337* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Android_DeviceController>
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.DotPoint>
+struct List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	DotPointU5BU5D_t92A20976F3335DB9E9E434016016B030EFB51A31* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.DotPoint>
 
 // System.Collections.Generic.List`1<UnityEngine.GameObject>
 struct List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B_StaticFields
@@ -3170,6 +5278,24 @@ struct List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B_StaticFields
 };
 
 // System.Collections.Generic.List`1<UnityEngine.GameObject>
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice>
+struct List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	HapticDeviceU5BU5D_t71D49B864EBC3494C31023BD28A989471D3E302E* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice>
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticEffect>
+struct List_1_t7708E016E8D5714047242D10B6F8574A29C085E6_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticEffect>
 
 // System.Collections.Generic.List`1<OculusSampleFramework.Interactable>
 struct List_1_tE24BA6DEA09B928DD057B20C565CD199D7E9050D_StaticFields
@@ -3189,6 +5315,15 @@ struct List_1_t490A09E30860203F317F45478EF4A90AE431CAEE_StaticFields
 
 // System.Collections.Generic.List`1<OculusSampleFramework.InteractableCollisionInfo>
 
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.LayoutObject>
+struct List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.LayoutObject>
+
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
 {
@@ -3197,6 +5332,15 @@ struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
 };
 
 // System.Collections.Generic.List`1<System.Object>
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.PathPoint>
+struct List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	PathPointU5BU5D_t981C30A4BE1D8E2B1365278D2817E4B7B5A7F517* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.PathPoint>
 
 // System.Collections.Generic.List`1<UnityEngine.Renderer>
 struct List_1_tD435DCC2A88E36DFC551EA5392CE0182F0C50E93_StaticFields
@@ -3207,6 +5351,95 @@ struct List_1_tD435DCC2A88E36DFC551EA5392CE0182F0C50E93_StaticFields
 
 // System.Collections.Generic.List`1<UnityEngine.Renderer>
 
+// System.Collections.Generic.List`1<System.String>
+struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<System.String>
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Track>
+struct List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Track>
+
+// System.Collections.Generic.List`1<UnityEngine.Events.UnityAction>
+struct List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	UnityActionU5BU5D_tC838FF7328261C2396AA15640067667EDB436D07* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<UnityEngine.Events.UnityAction>
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidUtils/StreamHost>
+struct List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	StreamHostU5BU5D_tA17A409947D7DB66BC2D8BE1792DA3ACD848BFA4* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidUtils/StreamHost>
+
+// UnityEngine.AndroidJavaObject
+struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_StaticFields
+{
+	// System.Boolean UnityEngine.AndroidJavaObject::enableDebugPrints
+	bool ___enableDebugPrints_0;
+};
+
+// UnityEngine.AndroidJavaObject
+
+// Bhaptics.Tact.Unity.AndroidUtils
+
+// Bhaptics.Tact.Unity.AndroidUtils
+
+// Bhaptics.Tact.Unity.BhapticsHaptic
+
+// Bhaptics.Tact.Unity.BhapticsHaptic
+
+// BhapticsManager
+struct BhapticsManager_t7514043B74A443B9EBEDDCEF5CFF974ABD6055B9_StaticFields
+{
+	// Bhaptics.Tact.Unity.IHaptic BhapticsManager::Haptic
+	RuntimeObject* ___Haptic_0;
+	// System.Boolean BhapticsManager::Init
+	bool ___Init_1;
+};
+
+// BhapticsManager
+
+// Bhaptics.Tact.Unity.BhapticsProject
+
+// Bhaptics.Tact.Unity.BhapticsProject
+
+// System.Convert
+struct Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_StaticFields
+{
+	// System.SByte[] System.Convert::s_decodingMap
+	SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* ___s_decodingMap_0;
+	// System.Type[] System.Convert::ConvertTypes
+	TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* ___ConvertTypes_1;
+	// System.Type System.Convert::EnumType
+	Type_t* ___EnumType_2;
+	// System.Char[] System.Convert::base64Table
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___base64Table_3;
+	// System.Object System.Convert::DBNull
+	RuntimeObject* ___DBNull_4;
+};
+
+// System.Convert
+
+// Bhaptics.Tact.DotPoint
+
+// Bhaptics.Tact.DotPoint
+
 // System.EventArgs
 struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_StaticFields
 {
@@ -3216,17 +5449,87 @@ struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_StaticFields
 
 // System.EventArgs
 
+// Bhaptics.Tact.Unity.HapticApi
+
+// Bhaptics.Tact.Unity.HapticApi
+
+// Bhaptics.Tact.Unity.HapticDevice
+
+// Bhaptics.Tact.Unity.HapticDevice
+
+// Bhaptics.Tact.Unity.HapticEffect
+
+// Bhaptics.Tact.Unity.HapticEffect
+
+// Bhaptics.Tact.Unity.HapticEffectMode
+
+// Bhaptics.Tact.Unity.HapticEffectMode
+
+// Bhaptics.Tact.Unity.HapticFeedbackFile
+
+// Bhaptics.Tact.Unity.HapticFeedbackFile
+
+// Bhaptics.Tact.Unity.IconSetting
+
+// Bhaptics.Tact.Unity.IconSetting
+
 // OculusSampleFramework.InteractableCollisionInfo
 
 // OculusSampleFramework.InteractableCollisionInfo
+
+// Bhaptics.Tact.JSONNode
+struct JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_StaticFields
+{
+	// System.Boolean Bhaptics.Tact.JSONNode::forceASCII
+	bool ___forceASCII_0;
+	// System.Boolean Bhaptics.Tact.JSONNode::longAsString
+	bool ___longAsString_1;
+	// System.Boolean Bhaptics.Tact.JSONNode::allowLineComments
+	bool ___allowLineComments_2;
+};
+
+// Bhaptics.Tact.JSONNode
+struct JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_ThreadStaticFields
+{
+	// System.Text.StringBuilder Bhaptics.Tact.JSONNode::m_EscapeBuilder
+	StringBuilder_t* ___m_EscapeBuilder_3;
+};
+
+// Bhaptics.Tact.Unity.Layout
+
+// Bhaptics.Tact.Unity.Layout
+
+// Bhaptics.Tact.Unity.LayoutObject
+
+// Bhaptics.Tact.Unity.LayoutObject
 
 // OVRDisplay
 
 // OVRDisplay
 
+// Bhaptics.Tact.PathPoint
+
+// Bhaptics.Tact.PathPoint
+
 // OculusSampleFramework.PinchStateModule
 
 // OculusSampleFramework.PinchStateModule
+
+// Bhaptics.Tact.Unity.PositonIconSetting
+
+// Bhaptics.Tact.Unity.PositonIconSetting
+
+// Bhaptics.Tact.RotationOption
+
+// Bhaptics.Tact.RotationOption
+
+// Bhaptics.Tact.ScaleOption
+
+// Bhaptics.Tact.ScaleOption
+
+// Bhaptics.Tact.Unity.SettingDeviceIcon
+
+// Bhaptics.Tact.Unity.SettingDeviceIcon
 
 // System.String
 struct String_t_StaticFields
@@ -3237,6 +5540,10 @@ struct String_t_StaticFields
 
 // System.String
 
+// Bhaptics.Tact.Unity.Track
+
+// Bhaptics.Tact.Unity.Track
+
 // UnityEngine.Events.UnityEventBase
 
 // UnityEngine.Events.UnityEventBase
@@ -3248,6 +5555,14 @@ struct String_t_StaticFields
 // UnityEngine.YieldInstruction
 
 // UnityEngine.YieldInstruction
+
+// Bhaptics.Tact.Unity.AndroidUtils/Device
+
+// Bhaptics.Tact.Unity.AndroidUtils/Device
+
+// Bhaptics.Tact.Unity.AndroidUtils/StreamHost
+
+// Bhaptics.Tact.Unity.AndroidUtils/StreamHost
 
 // OVRTouchSample.Hand/<>c
 struct U3CU3Ec_tADB0E95203F0A090B7A367EF6CE374F2A78D832F_StaticFields
@@ -3280,6 +5595,10 @@ struct U3CU3Ec_tADB0E95203F0A090B7A367EF6CE374F2A78D832F_StaticFields
 
 // OculusSampleFramework.WindmillBladesController/<PlaySoundDelayed>d__18
 
+// System.Collections.Generic.List`1/Enumerator<Bhaptics.Tact.Unity.HapticDevice>
+
+// System.Collections.Generic.List`1/Enumerator<Bhaptics.Tact.Unity.HapticDevice>
+
 // System.Collections.Generic.List`1/Enumerator<OculusSampleFramework.Interactable>
 
 // System.Collections.Generic.List`1/Enumerator<OculusSampleFramework.Interactable>
@@ -3287,6 +5606,10 @@ struct U3CU3Ec_tADB0E95203F0A090B7A367EF6CE374F2A78D832F_StaticFields
 // System.Collections.Generic.List`1/Enumerator<OculusSampleFramework.InteractableCollisionInfo>
 
 // System.Collections.Generic.List`1/Enumerator<OculusSampleFramework.InteractableCollisionInfo>
+
+// System.Collections.Generic.List`1/Enumerator<Bhaptics.Tact.JSONNode>
+
+// System.Collections.Generic.List`1/Enumerator<Bhaptics.Tact.JSONNode>
 
 // System.Collections.Generic.List`1/Enumerator<System.Object>
 
@@ -3308,9 +5631,29 @@ struct U3CU3Ec_tADB0E95203F0A090B7A367EF6CE374F2A78D832F_StaticFields
 
 // System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>
 
+// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+
+// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+
+// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode>
+
+// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode>
+
+// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode>
+
+// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode>
+
 // UnityEngine.Events.UnityEvent`1<OculusSampleFramework.InteractableStateArgs>
 
 // UnityEngine.Events.UnityEvent`1<OculusSampleFramework.InteractableStateArgs>
+
+// UnityEngine.AndroidJavaClass
+
+// UnityEngine.AndroidJavaClass
+
+// UnityEngine.AnimatorStateInfo
+
+// UnityEngine.AnimatorStateInfo
 
 // System.Boolean
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
@@ -3339,6 +5682,19 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 
 // System.Double
 
+// UnityEngine.DrivenRectTransformTracker
+
+// UnityEngine.DrivenRectTransformTracker
+
+// System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
+{
+	// System.Char[] System.Enum::enumSeperatorCharArray
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___enumSeperatorCharArray_0;
+};
+
+// System.Enum
+
 // UnityEngine.GradientAlphaKey
 
 // UnityEngine.GradientAlphaKey
@@ -3359,6 +5715,14 @@ struct IntPtr_t_StaticFields
 // OculusSampleFramework.InteractableStateArgs
 
 // OculusSampleFramework.InteractableStateArgs
+
+// Bhaptics.Tact.JSONArray
+
+// Bhaptics.Tact.JSONArray
+
+// Bhaptics.Tact.JSONObject
+
+// Bhaptics.Tact.JSONObject
 
 // UnityEngine.LayerMask
 
@@ -3408,6 +5772,10 @@ struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
 // UnityEngine.UI.SpriteState
 
 // UnityEngine.UI.SpriteState
+
+// UnityEngine.Events.UnityEvent
+
+// UnityEngine.Events.UnityEvent
 
 // UnityEngine.Vector2
 struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
@@ -3482,13 +5850,9 @@ struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
 
 // UnityEngine.WaitForSeconds
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=24
+// Bhaptics.Tact.Unity.HapticApi/point
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=24
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=32
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=32
+// Bhaptics.Tact.Unity.HapticApi/point
 
 // OVRPlugin/Quatf
 struct Quatf_t5347392804DF5326AF790F82E4EDE1578FED682A_StaticFields
@@ -3525,18 +5889,42 @@ struct Vector3f_t232AF83B4642C67BE8EFF85D8E1599D3B06BD562_StaticFields
 
 // UnityEngine.ParticleSystem/MainModule
 
-// <PrivateImplementationDetails>
-struct U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields
+// System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.HapticEffectMode>
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.HapticEffectMode>
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.JSONNode>
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.JSONNode>
+
+// Bhaptics.Tact.Unity.AndroidHaptic
+struct AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields
 {
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=32 <PrivateImplementationDetails>::1385A3395CDC9F7F90324CB0A06C5AC11AD4A425A35BBB7D5C9C0C33D8ADE9A0
-	__StaticArrayInitTypeSizeU3D32_tC3894D25C1E879699FE1C9BAB1BBF2787B405069 ___1385A3395CDC9F7F90324CB0A06C5AC11AD4A425A35BBB7D5C9C0C33D8ADE9A0_0;
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=32 <PrivateImplementationDetails>::5F5673AE83EE13B46A7C1D9CE2F8CC01C37CFC893B0AC5E6E9260B79215F5ADC
-	__StaticArrayInitTypeSizeU3D32_tC3894D25C1E879699FE1C9BAB1BBF2787B405069 ___5F5673AE83EE13B46A7C1D9CE2F8CC01C37CFC893B0AC5E6E9260B79215F5ADC_1;
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=24 <PrivateImplementationDetails>::753D5E1ADA77B20B9959A1030B8E0BA5CF925F2881D3635C3F791E5A0AE0EEB1
-	__StaticArrayInitTypeSizeU3D24_t3464DA68B6CCAB9A0A43F94B3DB9AA7E7FDDB19A ___753D5E1ADA77B20B9959A1030B8E0BA5CF925F2881D3635C3F791E5A0AE0EEB1_2;
+	// UnityEngine.AndroidJavaObject Bhaptics.Tact.Unity.AndroidHaptic::androidJavaObject
+	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* ___androidJavaObject_0;
+	// System.Object[] Bhaptics.Tact.Unity.AndroidHaptic::SubmitRegisteredParams
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___SubmitRegisteredParams_3;
+	// System.Int32[] Bhaptics.Tact.Unity.AndroidHaptic::Empty
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___Empty_4;
+	// System.Object[] Bhaptics.Tact.Unity.AndroidHaptic::EmptyParams
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___EmptyParams_5;
+	// Bhaptics.Tact.RotationOption Bhaptics.Tact.Unity.AndroidHaptic::DefaultRotationOption
+	RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* ___DefaultRotationOption_6;
 };
 
-// <PrivateImplementationDetails>
+// Bhaptics.Tact.Unity.AndroidHaptic
+
+// UnityEngine.Bounds
+
+// UnityEngine.Bounds
 
 // UnityEngine.UI.ColorBlock
 struct ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11_StaticFields
@@ -3589,6 +5977,10 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 
 // OculusSampleFramework.Pose
 
+// Bhaptics.Tact.PositionType
+
+// Bhaptics.Tact.PositionType
+
 // UnityEngine.Ray
 
 // UnityEngine.Ray
@@ -3596,6 +5988,18 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 // UnityEngine.RaycastHit
 
 // UnityEngine.RaycastHit
+
+// UnityEngine.jvalue
+
+// UnityEngine.jvalue
+
+// UnityEngine.UI.Button/ButtonClickedEvent
+
+// UnityEngine.UI.Button/ButtonClickedEvent
+
+// Bhaptics.Tact.Unity.HapticApi/status
+
+// Bhaptics.Tact.Unity.HapticApi/status
 
 // OculusSampleFramework.Interactable/InteractableStateArgsEvent
 
@@ -3655,6 +6059,14 @@ struct TextureRectMatrixf_t389BA8981D39B99E120A6C70AF140911993215C5_StaticFields
 
 // System.MulticastDelegate
 
+// UnityEngine.ScriptableObject
+
+// UnityEngine.ScriptableObject
+
+// UnityEngine.Sprite
+
+// UnityEngine.Sprite
+
 // System.SystemException
 
 // System.SystemException
@@ -3668,6 +6080,10 @@ struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700_StaticFields
 
 // UnityEngine.Texture
 
+// Bhaptics.Tact.JSONNode/Enumerator
+
+// Bhaptics.Tact.JSONNode/Enumerator
+
 // OVRPlugin/HandState
 
 // OVRPlugin/HandState
@@ -3675,6 +6091,10 @@ struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700_StaticFields
 // System.Action`1<OculusSampleFramework.ColliderZoneArgs>
 
 // System.Action`1<OculusSampleFramework.ColliderZoneArgs>
+
+// System.Converter`2<System.Byte,System.Int32>
+
+// System.Converter`2<System.Byte,System.Int32>
 
 // System.Func`2<UnityEngine.Collider,System.Boolean>
 
@@ -3692,9 +6112,17 @@ struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700_StaticFields
 
 // UnityEngine.Behaviour
 
+// Bhaptics.Tact.Unity.Bhaptics_Widget_Setting
+
+// Bhaptics.Tact.Unity.Bhaptics_Widget_Setting
+
 // UnityEngine.Collider
 
 // UnityEngine.Collider
+
+// Bhaptics.Tact.Unity.HapticClip
+
+// Bhaptics.Tact.Unity.HapticClip
 
 // UnityEngine.MeshFilter
 
@@ -3720,6 +6148,10 @@ struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700_StaticFields
 
 // UnityEngine.Transform
 
+// UnityEngine.Events.UnityAction
+
+// UnityEngine.Events.UnityAction
+
 // DebugUIBuilder/OnClick
 
 // DebugUIBuilder/OnClick
@@ -3727,6 +6159,10 @@ struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700_StaticFields
 // DebugUIBuilder/OnToggleValueChange
 
 // DebugUIBuilder/OnToggleValueChange
+
+// Bhaptics.Tact.JSONNode/KeyEnumerator
+
+// Bhaptics.Tact.JSONNode/KeyEnumerator
 
 // UnityEngine.Animation
 
@@ -3739,6 +6175,10 @@ struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700_StaticFields
 // UnityEngine.AudioBehaviour
 
 // UnityEngine.AudioBehaviour
+
+// UnityEngine.BoxCollider
+
+// UnityEngine.BoxCollider
 
 // UnityEngine.Camera
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
@@ -3752,6 +6192,27 @@ struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
 };
 
 // UnityEngine.Camera
+
+// UnityEngine.Canvas
+struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_StaticFields
+{
+	// UnityEngine.Canvas/WillRenderCanvases UnityEngine.Canvas::preWillRenderCanvases
+	WillRenderCanvases_tA4A6E66DBA797DCB45B995DBA449A9D1D80D0FBC* ___preWillRenderCanvases_4;
+	// UnityEngine.Canvas/WillRenderCanvases UnityEngine.Canvas::willRenderCanvases
+	WillRenderCanvases_tA4A6E66DBA797DCB45B995DBA449A9D1D80D0FBC* ___willRenderCanvases_5;
+	// System.Action`1<System.Int32> UnityEngine.Canvas::<externBeginRenderOverlays>k__BackingField
+	Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* ___U3CexternBeginRenderOverlaysU3Ek__BackingField_6;
+	// System.Action`2<System.Int32,System.Int32> UnityEngine.Canvas::<externRenderOverlaysBefore>k__BackingField
+	Action_2_tD7438462601D3939500ED67463331FE00CFFBDB8* ___U3CexternRenderOverlaysBeforeU3Ek__BackingField_7;
+	// System.Action`1<System.Int32> UnityEngine.Canvas::<externEndRenderOverlays>k__BackingField
+	Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* ___U3CexternEndRenderOverlaysU3Ek__BackingField_8;
+};
+
+// UnityEngine.Canvas
+
+// Bhaptics.Tact.Unity.FileHapticClip
+
+// Bhaptics.Tact.Unity.FileHapticClip
 
 // UnityEngine.LineRenderer
 
@@ -3774,9 +6235,70 @@ struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_StaticFields
 
 // UnityEngine.RectTransform
 
+// Bhaptics.Tact.Unity.AndroidWidget_ControlButton
+
+// Bhaptics.Tact.Unity.AndroidWidget_ControlButton
+
+// Bhaptics.Tact.Unity.AndroidWidget_ObjectPool
+
+// Bhaptics.Tact.Unity.AndroidWidget_ObjectPool
+
+// Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI
+
+// Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI
+
+// Bhaptics.Tact.Unity.AndroidWidget_SettingUIAnimation
+
+// Bhaptics.Tact.Unity.AndroidWidget_SettingUIAnimation
+
+// Bhaptics.Tact.Unity.AndroidWidget_UI
+struct AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0_StaticFields
+{
+	// Bhaptics.Tact.Unity.AndroidWidget_UI Bhaptics.Tact.Unity.AndroidWidget_UI::Instance
+	AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* ___Instance_12;
+};
+
+// Bhaptics.Tact.Unity.AndroidWidget_UI
+
+// Bhaptics.Tact.Unity.Android_DeviceController
+struct Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_StaticFields
+{
+	// System.String Bhaptics.Tact.Unity.Android_DeviceController::SelectHexColor
+	String_t* ___SelectHexColor_14;
+	// System.String Bhaptics.Tact.Unity.Android_DeviceController::SelectHoverHexColor
+	String_t* ___SelectHoverHexColor_15;
+	// System.String Bhaptics.Tact.Unity.Android_DeviceController::DisableHexColor
+	String_t* ___DisableHexColor_16;
+	// System.String Bhaptics.Tact.Unity.Android_DeviceController::DisableHoverHexColor
+	String_t* ___DisableHoverHexColor_17;
+};
+
+// Bhaptics.Tact.Unity.Android_DeviceController
+
+// Bhaptics.Tact.Unity.Android_UIController
+
+// Bhaptics.Tact.Unity.Android_UIController
+
+// Bhaptics.Tact.Unity.ArmsHapticClip
+
+// Bhaptics.Tact.Unity.ArmsHapticClip
+
 // UnityEngine.AudioSource
 
 // UnityEngine.AudioSource
+
+// Bhaptics.Tact.Unity.BhapticsAndroidManager
+struct BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields
+{
+	// Bhaptics.Tact.Unity.BhapticsAndroidManager Bhaptics.Tact.Unity.BhapticsAndroidManager::Instance
+	BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422* ___Instance_4;
+	// System.Boolean Bhaptics.Tact.Unity.BhapticsAndroidManager::pcAndoidTestMode
+	bool ___pcAndoidTestMode_5;
+	// System.Collections.Generic.List`1<UnityEngine.Events.UnityAction> Bhaptics.Tact.Unity.BhapticsAndroidManager::refreshActions
+	List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* ___refreshActions_7;
+};
+
+// Bhaptics.Tact.Unity.BhapticsAndroidManager
 
 // OculusSampleFramework.ControllerBoxController
 
@@ -4077,9 +6599,28 @@ struct TrainCarBase_t705A8BBC9FCF8E55A9BCFA43EDBEE3FFB1528616_StaticFields
 
 // OculusSampleFramework.DistanceGrabber
 
+// UnityEngine.UI.Graphic
+struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
+{
+	// UnityEngine.Material UnityEngine.UI.Graphic::s_DefaultUI
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___s_DefaultUI_4;
+	// UnityEngine.Texture2D UnityEngine.UI.Graphic::s_WhiteTexture
+	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___s_WhiteTexture_5;
+	// UnityEngine.Mesh UnityEngine.UI.Graphic::s_Mesh
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___s_Mesh_21;
+	// UnityEngine.UI.VertexHelper UnityEngine.UI.Graphic::s_VertexHelper
+	VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE* ___s_VertexHelper_22;
+};
+
+// UnityEngine.UI.Graphic
+
 // OculusSampleFramework.RayTool
 
 // OculusSampleFramework.RayTool
+
+// UnityEngine.UI.ScrollRect
+
+// UnityEngine.UI.ScrollRect
 
 // UnityEngine.UI.Selectable
 struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712_StaticFields
@@ -4100,9 +6641,47 @@ struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712_StaticFields
 
 // OculusSampleFramework.TrainLocomotive
 
+// UnityEngine.UI.Button
+
+// UnityEngine.UI.Button
+
+// UnityEngine.UI.MaskableGraphic
+
+// UnityEngine.UI.MaskableGraphic
+
 // UnityEngine.UI.Toggle
 
 // UnityEngine.UI.Toggle
+
+// UnityEngine.UI.Image
+struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_StaticFields
+{
+	// UnityEngine.Material UnityEngine.UI.Image::s_ETC1DefaultUI
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___s_ETC1DefaultUI_37;
+	// UnityEngine.Vector2[] UnityEngine.UI.Image::s_VertScratch
+	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___s_VertScratch_52;
+	// UnityEngine.Vector2[] UnityEngine.UI.Image::s_UVScratch
+	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___s_UVScratch_53;
+	// UnityEngine.Vector3[] UnityEngine.UI.Image::s_Xy
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___s_Xy_54;
+	// UnityEngine.Vector3[] UnityEngine.UI.Image::s_Uv
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___s_Uv_55;
+	// System.Collections.Generic.List`1<UnityEngine.UI.Image> UnityEngine.UI.Image::m_TrackedTexturelessImages
+	List_1_tE6BB71ABF15905EFA2BE92C38A2716547AEADB19* ___m_TrackedTexturelessImages_56;
+	// System.Boolean UnityEngine.UI.Image::s_Initialized
+	bool ___s_Initialized_57;
+};
+
+// UnityEngine.UI.Image
+
+// UnityEngine.UI.Text
+struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_StaticFields
+{
+	// UnityEngine.Material UnityEngine.UI.Text::s_DefaultText
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___s_DefaultText_41;
+};
+
+// UnityEngine.UI.Text
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -4656,7 +7235,418 @@ struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeA
 		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
 	}
 };
+// System.String[]
+struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248  : public RuntimeArray
+{
+	ALIGN_FIELD (8) String_t* m_Items[1];
 
+	inline String_t* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, String_t* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline String_t* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline String_t** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, String_t* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// System.Int32[]
+struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C  : public RuntimeArray
+{
+	ALIGN_FIELD (8) int32_t m_Items[1];
+
+	inline int32_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, int32_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline int32_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, int32_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Single[]
+struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C  : public RuntimeArray
+{
+	ALIGN_FIELD (8) float m_Items[1];
+
+	inline float GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline float* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, float value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline float GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline float* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, float value)
+	{
+		m_Items[index] = value;
+	}
+};
+// System.Byte[]
+struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArray
+{
+	ALIGN_FIELD (8) uint8_t m_Items[1];
+
+	inline uint8_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, uint8_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline uint8_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline uint8_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, uint8_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// Bhaptics.Tact.PositionType[]
+struct PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7  : public RuntimeArray
+{
+	ALIGN_FIELD (8) int32_t m_Items[1];
+
+	inline int32_t GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, int32_t value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline int32_t GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline int32_t* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, int32_t value)
+	{
+		m_Items[index] = value;
+	}
+};
+// UnityEngine.jvalue[]
+struct jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F  : public RuntimeArray
+{
+	ALIGN_FIELD (8) jvalue_t1756CE401EE222450C9AD0B98CB30E213D4A3225 m_Items[1];
+
+	inline jvalue_t1756CE401EE222450C9AD0B98CB30E213D4A3225 GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline jvalue_t1756CE401EE222450C9AD0B98CB30E213D4A3225* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, jvalue_t1756CE401EE222450C9AD0B98CB30E213D4A3225 value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline jvalue_t1756CE401EE222450C9AD0B98CB30E213D4A3225 GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline jvalue_t1756CE401EE222450C9AD0B98CB30E213D4A3225* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, jvalue_t1756CE401EE222450C9AD0B98CB30E213D4A3225 value)
+	{
+		m_Items[index] = value;
+	}
+};
+// Bhaptics.Tact.Unity.AndroidWidget_ControlButton[]
+struct AndroidWidget_ControlButtonU5BU5D_tDAB320020613CB967B0C2A8082DA23B2E9816A38  : public RuntimeArray
+{
+	ALIGN_FIELD (8) AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE* m_Items[1];
+
+	inline AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// UnityEngine.UI.Button[]
+struct ButtonU5BU5D_t0D512FF2FF5A72DAC04754F2C10182F850328BEF  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* m_Items[1];
+
+	inline Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// Bhaptics.Tact.Unity.HapticApi/point[]
+struct pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723  : public RuntimeArray
+{
+	ALIGN_FIELD (8) point_tFD793B132EE65A0C93FD921353591DA6B9A89CA9 m_Items[1];
+
+	inline point_tFD793B132EE65A0C93FD921353591DA6B9A89CA9 GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline point_tFD793B132EE65A0C93FD921353591DA6B9A89CA9* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, point_tFD793B132EE65A0C93FD921353591DA6B9A89CA9 value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline point_tFD793B132EE65A0C93FD921353591DA6B9A89CA9 GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline point_tFD793B132EE65A0C93FD921353591DA6B9A89CA9* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, point_tFD793B132EE65A0C93FD921353591DA6B9A89CA9 value)
+	{
+		m_Items[index] = value;
+	}
+};
+// Bhaptics.Tact.Unity.Track[]
+struct TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Track_t890B55E3594EA0442464072A11DE8398FB0420E9* m_Items[1];
+
+	inline Track_t890B55E3594EA0442464072A11DE8398FB0420E9* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Track_t890B55E3594EA0442464072A11DE8398FB0420E9** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Track_t890B55E3594EA0442464072A11DE8398FB0420E9* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline Track_t890B55E3594EA0442464072A11DE8398FB0420E9* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Track_t890B55E3594EA0442464072A11DE8398FB0420E9** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Track_t890B55E3594EA0442464072A11DE8398FB0420E9* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// Bhaptics.Tact.Unity.HapticEffect[]
+struct HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743  : public RuntimeArray
+{
+	ALIGN_FIELD (8) HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* m_Items[1];
+
+	inline HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+// Bhaptics.Tact.Unity.LayoutObject[]
+struct LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1  : public RuntimeArray
+{
+	ALIGN_FIELD (8) LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* m_Items[1];
+
+	inline LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+
+IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_pinvoke(const status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576& unmarshaled, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke& marshaled);
+IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_pinvoke_back(const status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke& marshaled, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576& unmarshaled);
+IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_pinvoke_cleanup(status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke& marshaled);
 
 // TSource System.Linq.Enumerable::First<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>(System.Collections.Generic.IEnumerable`1<TSource>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 Enumerable_First_TisKeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230_m93CBB954FCCA2D8CD18552A18B58326CDD9F1DBD_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
@@ -4732,9 +7722,47 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m13C0A7F33154D861E2A041B52E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Where_TisRuntimeObject_m5DAF16724887B42DDBBF391C7F375749E8AA4AD7_gshared (RuntimeObject* ___0_source, Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* ___1_predicate, const RuntimeMethod* method) ;
 // TSource[] System.Linq.Enumerable::ToArray<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Enumerable_ToArray_TisRuntimeObject_mA54265C2C8A0864929ECD300B75E4952D553D17D_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32Enum,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_mCC9983804D8DC41E938E080075F9EA7BDD0C7059_gshared (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* __this, const RuntimeMethod* method) ;
+// FieldType UnityEngine.AndroidJavaObject::GetStatic<System.Object>(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AndroidJavaObject_GetStatic_TisRuntimeObject_m4EF4E4761A0A6E99E0A298F653E8129B1494E4C9_gshared (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_fieldName, const RuntimeMethod* method) ;
+// T[] System.Array::Empty<System.Object>()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_gshared_inline (const RuntimeMethod* method) ;
+// ReturnType UnityEngine.AndroidJavaObject::Call<System.Object>(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AndroidJavaObject_Call_TisRuntimeObject_mA5AF1A9E0463CE91F0ACB6AC2FE0C1922B579EF7_gshared (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// T UnityEngine.JsonUtility::FromJson<System.Object>(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* JsonUtility_FromJson_TisRuntimeObject_m0CCF0FE109BF4C85AECC9C5D0DBB43422A24FB40_gshared (String_t* ___0_json, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.List`1<System.Object>::Contains(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Contains_m4C9139C2A6B23E9343D3F87807B32C6E2CFE660D_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+// System.Void System.Converter`2<System.Byte,System.Int32>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Converter_2__ctor_m321A02D2EB18FBD95CE3EFFDA2E875971C6E1DEE_gshared (Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+// TOutput[] System.Array::ConvertAll<System.Byte,System.Int32>(TInput[],System.Converter`2<TInput,TOutput>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* Array_ConvertAll_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m604AA5FBDA330F676A256966E40970E613C3A703_gshared (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_array, Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A* ___1_converter, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Int32Enum,System.Object>::set_Item(TKey,TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m78DDC81EE49FB9D4194E83685FFED445DFDB75CA_gshared (Dictionary_2_t514396B90715EDD83BB0470C76C2F426F9381C71* __this, int32_t ___0_key, RuntimeObject* ___1_value, const RuntimeMethod* method) ;
+// T UnityEngine.Object::Instantiate<System.Object>(T,UnityEngine.Transform)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m75BF3B0A3747B60491845FA41612FE7F795F0A59_gshared (RuntimeObject* ___0_original, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___1_parent, const RuntimeMethod* method) ;
+// T[] UnityEngine.Component::GetComponentsInChildren<System.Object>(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Component_GetComponentsInChildren_TisRuntimeObject_m90734C3A39A158985239CB90DE2F0792F1D99926_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, bool ___0_includeInactive, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::AddComponent<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.List`1<System.Object>::Remove(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Remove_m4DFA48F4CEB9169601E75FC28517C5C06EFA5AD7_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>::get_Value()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) ;
+// T[] System.Collections.Generic.List`1<System.Object>::ToArray()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* List_1_ToArray_mD7E4F8E7C11C3C67CB5739FCC0A6E86106A6291F_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// TKey System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>::get_Key()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9 Dictionary_2_GetEnumerator_m52AB12790B0B9B46B1DFB1F861C9DBEAB07C1FDA_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mEA5E01B81EB943B7003D87CEC1B6040524F0402C_gshared (Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>::get_Current()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 Enumerator_get_Current_mE3475384B761E1C7971D3639BD09117FE8363422_gshared_inline (Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mCD4950A75FFADD54AF354D48C6C0DB0B5A22A5F4_gshared (Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9* __this, const RuntimeMethod* method) ;
 
-// System.Void System.Object::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // UnityEngine.Transform UnityEngine.Component::get_transform()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // TSource System.Linq.Enumerable::First<System.Collections.Generic.KeyValuePair`2<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo>>(System.Collections.Generic.IEnumerable`1<TSource>)
@@ -4866,6 +7894,8 @@ inline void Dictionary_2__ctor_m186A3E7A3D8D8539CB74BCC387C1C8D8CC692D63 (Dictio
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Single OVRHand::GetFingerPinchStrength(OVRHand/HandFinger)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float OVRHand_GetFingerPinchStrength_mF6517B5CA9FF87146ECDAED8914DE2EFA29BE4E6 (OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* __this, int32_t ___0_finger, const RuntimeMethod* method) ;
 // System.Boolean OculusSampleFramework.PinchStateModule::get_PinchDownOnFocusedObject()
@@ -5620,6 +8650,807 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Collider_get_isTrigger_mFF457F6AA71D173F
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRInput_Get_m8CF227684F49E1C26239D78F826E11A956E909C1 (int32_t ___0_virtualMask, int32_t ___1_controllerMask, const RuntimeMethod* method) ;
 // UnityEngine.Vector2 OVRInput::Get(OVRInput/Axis2D,OVRInput/Controller)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 OVRInput_Get_mF4EA350D5898449529C641C72B7D440DF81180C8 (int32_t ___0_virtualMask, int32_t ___1_controllerMask, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice>::.ctor()
+inline void List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1 (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1<System.String>::.ctor()
+inline void List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<Bhaptics.Tact.PositionType,System.Int32[]>::.ctor()
+inline void Dictionary_2__ctor_m265D14F9AC7823D8E7212D6E2C0AD583C1C718F1 (Dictionary_2_tAA28B112099476AB6B27CF458644BE15FBA8EE04* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tAA28B112099476AB6B27CF458644BE15FBA8EE04*, const RuntimeMethod*))Dictionary_2__ctor_mCC9983804D8DC41E938E080075F9EA7BDD0C7059_gshared)(__this, method);
+}
+// System.Void UnityEngine.AndroidJavaClass::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidJavaClass__ctor_mB5466169E1151B8CC44C8FED234D79984B431389 (AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* __this, String_t* ___0_className, const RuntimeMethod* method) ;
+// FieldType UnityEngine.AndroidJavaObject::GetStatic<UnityEngine.AndroidJavaObject>(System.String)
+inline AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_fieldName, const RuntimeMethod* method)
+{
+	return ((  AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* (*) (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, String_t*, const RuntimeMethod*))AndroidJavaObject_GetStatic_TisRuntimeObject_m4EF4E4761A0A6E99E0A298F653E8129B1494E4C9_gshared)(__this, ___0_fieldName, method);
+}
+// System.Void UnityEngine.AndroidJavaObject::.ctor(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidJavaObject__ctor_m5A65B5D325C2CEFAC4097A0D3813F8E158178DD7 (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_className, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// System.IntPtr UnityEngine.AndroidJavaObject::GetRawObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t AndroidJavaObject_GetRawObject_m536F043B5CE2C21369FF6173C9D2A9A62136BC48 (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, const RuntimeMethod* method) ;
+// System.IntPtr UnityEngine.AndroidJavaObject::GetRawClass()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5 (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, const RuntimeMethod* method) ;
+// System.IntPtr UnityEngine.AndroidJNIHelper::GetMethodID(System.IntPtr,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B (intptr_t ___0_javaClass, String_t* ___1_methodName, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::LogErrorFormat(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogErrorFormat_m96690322C941D23A125E5769C9803606859A707C (String_t* ___0_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice> Bhaptics.Tact.Unity.AndroidHaptic::GetDevices()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* AndroidHaptic_GetDevices_mF84E3F4064C8EE585CFF28B0E3463F2A74A1B6E2 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidUtils/StreamHost>::.ctor()
+inline void List_1__ctor_mB146B188E8D323468B9EB6643271CCA4794A00F8 (List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// T[] System.Array::Empty<System.Object>()
+inline ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline (const RuntimeMethod* method)
+{
+	return ((  ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* (*) (const RuntimeMethod*))Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_gshared_inline)(method);
+}
+// ReturnType UnityEngine.AndroidJavaObject::Call<System.String[]>(System.String,System.Object[])
+inline StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* AndroidJavaObject_Call_TisStringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_mDB9546BEEC88451F68DCAD34A4F2E207E1C31E00 (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method)
+{
+	return ((  StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* (*) (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, const RuntimeMethod*))AndroidJavaObject_Call_TisRuntimeObject_mA5AF1A9E0463CE91F0ACB6AC2FE0C1922B579EF7_gshared)(__this, ___0_methodName, ___1_args, method);
+}
+// T UnityEngine.JsonUtility::FromJson<Bhaptics.Tact.Unity.AndroidUtils/StreamHost>(System.String)
+inline StreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509* JsonUtility_FromJson_TisStreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509_m640FDC7E26DD3A75A00E7399BAAB965E626E9134 (String_t* ___0_json, const RuntimeMethod* method)
+{
+	return ((  StreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509* (*) (String_t*, const RuntimeMethod*))JsonUtility_FromJson_TisRuntimeObject_m0CCF0FE109BF4C85AECC9C5D0DBB43422A24FB40_gshared)(___0_json, method);
+}
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidUtils/StreamHost>::Add(T)
+inline void List_1_Add_mDC6D01E871526F43E79135E5BAE2640B86060FAC_inline (List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF* __this, StreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF*, StreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+// System.Void UnityEngine.Debug::LogFormat(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogFormat_mD555556327B42AA3482D077EFAEB16B0AFDF72C7 (String_t* ___0_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// System.Boolean Bhaptics.Tact.Unity.AndroidHaptic::CallNativeBoolMethod(System.IntPtr,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidHaptic_CallNativeBoolMethod_mAE8135FDB6AE4D9A8BA81465A0A9AD4DAA073FD4 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, intptr_t ___0_methodPtr, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_param, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::CallNativeVoidMethod(System.IntPtr,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_CallNativeVoidMethod_m70ABE25624420F60DA12C75A880780B9D8C9C476 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, intptr_t ___0_methodPtr, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_param, const RuntimeMethod* method) ;
+// System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice>::GetEnumerator()
+inline Enumerator_t261861876184B54ED984B2385428914934E16B5B List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t261861876184B54ED984B2385428914934E16B5B (*) (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.List`1/Enumerator<Bhaptics.Tact.Unity.HapticDevice>::Dispose()
+inline void Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409 (Enumerator_t261861876184B54ED984B2385428914934E16B5B* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t261861876184B54ED984B2385428914934E16B5B*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+// T System.Collections.Generic.List`1/Enumerator<Bhaptics.Tact.Unity.HapticDevice>::get_Current()
+inline HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_inline (Enumerator_t261861876184B54ED984B2385428914934E16B5B* __this, const RuntimeMethod* method)
+{
+	return ((  HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* (*) (Enumerator_t261861876184B54ED984B2385428914934E16B5B*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+// System.Boolean System.Collections.Generic.List`1/Enumerator<Bhaptics.Tact.Unity.HapticDevice>::MoveNext()
+inline bool Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907 (Enumerator_t261861876184B54ED984B2385428914934E16B5B* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t261861876184B54ED984B2385428914934E16B5B*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+// Bhaptics.Tact.PositionType Bhaptics.Tact.Unity.BhapticsUtils::ToPositionType(Bhaptics.Tact.Unity.HapticDeviceType,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t BhapticsUtils_ToPositionType_mD7153937883C07B4A9F78AEB48006E06FD686A3B (int32_t ___0_pos, bool ___1_isLeft, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.List`1<System.String>::Contains(T)
+inline bool List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1 (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, String_t* ___0_item, const RuntimeMethod* method)
+{
+	return ((  bool (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, String_t*, const RuntimeMethod*))List_1_Contains_m4C9139C2A6B23E9343D3F87807B32C6E2CFE660D_gshared)(__this, ___0_item, method);
+}
+// System.Void System.Collections.Generic.List`1<System.String>::Add(T)
+inline void List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, String_t* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, String_t*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+// System.Int32 System.Collections.Generic.List`1<Bhaptics.Tact.DotPoint>::get_Count()
+inline int32_t List_1_get_Count_mA6E8E551DC8B567A0F1BEA949DBFEAF141BC307F_inline (List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+// T System.Collections.Generic.List`1<Bhaptics.Tact.DotPoint>::get_Item(System.Int32)
+inline DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* List_1_get_Item_m1E3E02F8E3D829A6B2A87379F9BF11A6FDE90319 (List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* (*) (List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+// System.Int32 Bhaptics.Tact.DotPoint::get_Index()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t DotPoint_get_Index_m633D59299ED59D6254D7CC8667EB024D087A7574_inline (DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* __this, const RuntimeMethod* method) ;
+// System.Int32 Bhaptics.Tact.DotPoint::get_Intensity()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t DotPoint_get_Intensity_m8C6D8B150CCE0A547E1B3C7124AC4380D5A3016C_inline (DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* __this, const RuntimeMethod* method) ;
+// System.String System.Enum::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.AndroidJavaObject::Call(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidJavaObject_Call_mDEF7846E2AB1C5379069BB21049ED55A9D837B1C (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// System.Void BhapticsLogger::LogError(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsLogger_LogError_m3CDDC648847F1E3DB8695FB80FEC30430BAF701E (String_t* ___0_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<Bhaptics.Tact.PathPoint>::get_Count()
+inline int32_t List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_inline (List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+// T System.Collections.Generic.List`1<Bhaptics.Tact.PathPoint>::get_Item(System.Int32)
+inline PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A (List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* (*) (List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+// System.Single Bhaptics.Tact.PathPoint::get_X()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float PathPoint_get_X_mC6D8AD1FC8309504340DEEF64E8F78FF6F4658D2_inline (PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* __this, const RuntimeMethod* method) ;
+// System.Single Bhaptics.Tact.PathPoint::get_Y()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float PathPoint_get_Y_m222EBAB437A3BB6D31690746927433FB7EA5283C_inline (PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* __this, const RuntimeMethod* method) ;
+// System.Int32 Bhaptics.Tact.PathPoint::get_Intensity()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PathPoint_get_Intensity_mD87D87612D1B2B24FF1F6AF055689F274E08288B_inline (PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::SubmitRegistered(System.String,System.String,Bhaptics.Tact.RotationOption,Bhaptics.Tact.ScaleOption)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_SubmitRegistered_m7BB2E3A47D4A4306B7C7A41AACF938BC7B9C33EB (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_key, String_t* ___1_altKey, RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* ___2_rOption, ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* ___3_sOption, const RuntimeMethod* method) ;
+// System.Single Bhaptics.Tact.ScaleOption::get_Intensity()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float ScaleOption_get_Intensity_mE8C2586F37BE648417F6C735CCCF5B3D75AC4559_inline (ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* __this, const RuntimeMethod* method) ;
+// System.Single Bhaptics.Tact.ScaleOption::get_Duration()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float ScaleOption_get_Duration_m60FA7C23E16DAA58D396627DDA93749ED0ECAA12_inline (ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* __this, const RuntimeMethod* method) ;
+// System.Single Bhaptics.Tact.RotationOption::get_OffsetAngleX()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float RotationOption_get_OffsetAngleX_m2502A84A2ABDBB567D9E75C521FE2D11540C5834_inline (RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* __this, const RuntimeMethod* method) ;
+// System.Single Bhaptics.Tact.RotationOption::get_OffsetY()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float RotationOption_get_OffsetY_m8CC6564773B11D0765E3D3EC08315356CEFF0184_inline (RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::SubmitRequest(System.String,System.String,System.Single,System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_SubmitRequest_m0E1374682508C6E3FADB7070C42B69548849FAC6 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_key, String_t* ___1_altKey, float ___2_intensity, float ___3_duration, float ___4_offsetAngleX, float ___5_offsetY, const RuntimeMethod* method) ;
+// System.Void System.Threading.Monitor::Exit(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Monitor_Exit_m05B2CF037E2214B3208198C282490A2A475653FA (RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
+// System.Void System.Threading.Monitor::Enter(System.Object,System.Boolean&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149 (RuntimeObject* ___0_obj, bool* ___1_lockTaken, const RuntimeMethod* method) ;
+// ReturnType UnityEngine.AndroidJavaObject::Call<System.Byte[]>(System.String,System.Object[])
+inline ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* AndroidJavaObject_Call_TisByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_mA0C075B9F98F168BBD9A6C0C926437671132FB1C (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method)
+{
+	return ((  ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* (*) (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, String_t*, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*, const RuntimeMethod*))AndroidJavaObject_Call_TisRuntimeObject_mA5AF1A9E0463CE91F0ACB6AC2FE0C1922B579EF7_gshared)(__this, ___0_methodName, ___1_args, method);
+}
+// System.Void System.Converter`2<System.Byte,System.Int32>::.ctor(System.Object,System.IntPtr)
+inline void Converter_2__ctor_m321A02D2EB18FBD95CE3EFFDA2E875971C6E1DEE (Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
+{
+	((  void (*) (Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A*, RuntimeObject*, intptr_t, const RuntimeMethod*))Converter_2__ctor_m321A02D2EB18FBD95CE3EFFDA2E875971C6E1DEE_gshared)(__this, ___0_object, ___1_method, method);
+}
+// TOutput[] System.Array::ConvertAll<System.Byte,System.Int32>(TInput[],System.Converter`2<TInput,TOutput>)
+inline Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* Array_ConvertAll_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m604AA5FBDA330F676A256966E40970E613C3A703 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_array, Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A* ___1_converter, const RuntimeMethod* method)
+{
+	return ((  Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* (*) (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A*, const RuntimeMethod*))Array_ConvertAll_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m604AA5FBDA330F676A256966E40970E613C3A703_gshared)(___0_array, ___1_converter, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<Bhaptics.Tact.PositionType,System.Int32[]>::set_Item(TKey,TValue)
+inline void Dictionary_2_set_Item_m10468F6EE34A8E09441845957DCB42E407A1C3BC (Dictionary_2_tAA28B112099476AB6B27CF458644BE15FBA8EE04* __this, int32_t ___0_key, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tAA28B112099476AB6B27CF458644BE15FBA8EE04*, int32_t, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*, const RuntimeMethod*))Dictionary_2_set_Item_m78DDC81EE49FB9D4194E83685FFED445DFDB75CA_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice> Bhaptics.Tact.Unity.AndroidUtils::ConvertToBhapticsDevices(System.String[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* AndroidUtils_ConvertToBhapticsDevices_m5CF87876108990F8A666A43560E95D134D5A4B15 (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___0_deviceJson, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidUtils::CallNativeVoidMethod(System.IntPtr,System.IntPtr,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidUtils_CallNativeVoidMethod_m8173C7919C79F990E20524CC697286F944183593 (intptr_t ___0_androidObjPtr, intptr_t ___1_methodPtr, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___2_param, const RuntimeMethod* method) ;
+// System.Boolean Bhaptics.Tact.Unity.AndroidUtils::CallNativeBoolMethod(System.IntPtr,System.IntPtr,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidUtils_CallNativeBoolMethod_m558252FF8D4E0B0234DCDE8D35FBD4A160126F5E (intptr_t ___0_androidObjPtr, intptr_t ___1_methodPtr, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___2_param, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.RotationOption::.ctor(System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RotationOption__ctor_mDD99255B3A8363D09F908335260F164FCB5B3EE7 (RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* __this, float ___0_offsetAngleX, float ___1_offsetY, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticDevice::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticDevice__ctor_mAAE9D272968DD2A9158286A348120F4B9F205426 (HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.PositionType Bhaptics.Tact.Unity.AndroidUtils::ToDeviceType(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AndroidUtils_ToDeviceType_m37C5D428CEF7E7E421A93ABDE24F154603582194 (int32_t ___0_type, const RuntimeMethod* method) ;
+// Bhaptics.Tact.PositionType[] Bhaptics.Tact.Unity.AndroidUtils::ToCandidates(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* AndroidUtils_ToCandidates_mF67BD4CD435844A1CA8F60BDB19096C8F515A62B (int32_t ___0_type, const RuntimeMethod* method) ;
+// T UnityEngine.JsonUtility::FromJson<Bhaptics.Tact.Unity.AndroidUtils/Device>(System.String)
+inline Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* JsonUtility_FromJson_TisDevice_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F_m25AA6438982B9C944F4C51C553E348E406950EC9 (String_t* ___0_json, const RuntimeMethod* method)
+{
+	return ((  Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* (*) (String_t*, const RuntimeMethod*))JsonUtility_FromJson_TisRuntimeObject_m0CCF0FE109BF4C85AECC9C5D0DBB43422A24FB40_gshared)(___0_json, method);
+}
+// Bhaptics.Tact.Unity.HapticDevice Bhaptics.Tact.Unity.AndroidUtils::Convert(Bhaptics.Tact.Unity.AndroidUtils/Device)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* AndroidUtils_Convert_m564A40220106F1FA2CCD2D9168AFD2796D233067 (Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* ___0_d, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice>::Add(T)
+inline void List_1_Add_mC2DF5232ABF0B0204C6270D8ADA13950F86EC7C5_inline (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* __this, HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21*, HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+// UnityEngine.jvalue[] UnityEngine.AndroidJNIHelper::CreateJNIArgArray(System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F* AndroidJNIHelper_CreateJNIArgArray_mC12C279EEB43D740F42C5E90301DC54F6E04B876 (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___0_args, const RuntimeMethod* method) ;
+// System.Void UnityEngine.AndroidJNIHelper::DeleteJNIArgArray(System.Object[],UnityEngine.jvalue[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidJNIHelper_DeleteJNIArgArray_mBDC874B32FF09E6B48E18B2A58794C0A4DE2FA23 (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___0_args, jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F* ___1_jniArgs, const RuntimeMethod* method) ;
+// System.Void UnityEngine.AndroidJNI::CallVoidMethod(System.IntPtr,System.IntPtr,UnityEngine.jvalue[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidJNI_CallVoidMethod_mFCFF6A5FF4A51305C3D2DBFB3A0699617EF40D48 (intptr_t ___0_obj, intptr_t ___1_methodID, jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F* ___2_args, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.AndroidJNI::CallBooleanMethod(System.IntPtr,System.IntPtr,UnityEngine.jvalue[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidJNI_CallBooleanMethod_m78FC31B29854285F1164C75974AB463FE5716F84 (intptr_t ___0_obj, intptr_t ___1_methodID, jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F* ___2_args, const RuntimeMethod* method) ;
+// T UnityEngine.Component::GetComponent<UnityEngine.UI.Button>()
+inline Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* Component_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mFF8BA4CA5D7158D1D6249559A3289E7A6DF0A2BB (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// UnityEngine.UI.Button/ButtonClickedEvent UnityEngine.UI.Button::get_onClick()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline (Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Events.UnityAction::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131 (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Events.UnityEvent::AddListener(UnityEngine.Events.UnityAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302 (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* __this, UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___0_call, const RuntimeMethod* method) ;
+// System.Void BhapticsLogger::LogDebug(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsLogger_LogDebug_m093D44ACACD234A93650107B06766A504677D172 (String_t* ___0_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice> Bhaptics.Tact.Unity.BhapticsAndroidManager::GetConnectedDevices(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* BhapticsAndroidManager_GetConnectedDevices_mC6FBA187E1CB7DDD8776572A85455DCDD92127FF (int32_t ___0_pos, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice>::get_Count()
+inline int32_t List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_inline (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+// UnityEngine.UI.Image UnityEngine.UI.Selectable::get_image()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* Selectable_get_image_m88664022F6BC90E7B8D4BFCBA7FE24B48E90C639 (Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UI.Image::set_sprite(UnityEngine.Sprite)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE (Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* __this, Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___0_value, const RuntimeMethod* method) ;
+// UnityEngine.UI.SpriteState UnityEngine.UI.Selectable::get_spriteState()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD Selectable_get_spriteState_m7388F8F08AB8A03CB56516A7C9713733A737629A_inline (Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UI.SpriteState::set_highlightedSprite(UnityEngine.Sprite)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SpriteState_set_highlightedSprite_mEECDB7C62DE0C6A0B2A7D5D7ADF54EB8CDDB20B0_inline (SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD* __this, Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___0_value, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UI.Selectable::set_spriteState(UnityEngine.UI.SpriteState)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Selectable_set_spriteState_mE0E2CDA8757045FE0D35BC4D9E827857F64E19ED (Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* __this, SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD ___0_value, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.GameObject::get_activeSelf()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::Ping(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_Ping_mE9A7A6DA840C91665602E9CAC22FD02AB003E5EB (int32_t ___0_pos, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_ControlButton::OnPingDevice()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_ControlButton_OnPingDevice_mF5D833F79FF7F53591E946567E0EB552714B438F (AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI>::.ctor()
+inline void List_1__ctor_m0B7AF9FD4A9CF0CDDB278C3862B1B266A4D9FEF2 (List_1_t4BB714C32C63320E15F9BE811510151332419557* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t4BB714C32C63320E15F9BE811510151332419557*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// UnityEngine.RectTransform UnityEngine.UI.ScrollRect::get_content()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ScrollRect_get_content_m7878BCA28A96B7FBA02DC466A1ED2C9E191C6996_inline (ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* __this, const RuntimeMethod* method) ;
+// T UnityEngine.Object::Instantiate<Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI>(T,UnityEngine.Transform)
+inline AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* Object_Instantiate_TisAndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2_mEAA2DBC2455BF4D6097DEE0E122F70E5B730A0A6 (AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* ___0_original, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___1_parent, const RuntimeMethod* method)
+{
+	return ((  AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* (*) (AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, const RuntimeMethod*))Object_Instantiate_TisRuntimeObject_m75BF3B0A3747B60491845FA41612FE7F795F0A59_gshared)(___0_original, ___1_parent, method);
+}
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI>::Add(T)
+inline void List_1_Add_m41B83FFA140FAECC46735D613830E944B0C31DD1_inline (List_1_t4BB714C32C63320E15F9BE811510151332419557* __this, AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t4BB714C32C63320E15F9BE811510151332419557*, AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+// T System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI>::get_Item(System.Int32)
+inline AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* List_1_get_Item_m958095FD9590D93606AE823DA4A459A0E172E2EF (List_1_t4BB714C32C63320E15F9BE811510151332419557* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* (*) (List_1_t4BB714C32C63320E15F9BE811510151332419557*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+// System.Int32 System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI>::get_Count()
+inline int32_t List_1_get_Count_m7E8776B1EB9BBB2344F8E108C1F50CF657F1C2F2_inline (List_1_t4BB714C32C63320E15F9BE811510151332419557* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t4BB714C32C63320E15F9BE811510151332419557*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+// System.Void UnityEngine.UI.Selectable::set_interactable(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492 (Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* __this, bool ___0_value, const RuntimeMethod* method) ;
+// System.Boolean Bhaptics.Tact.Unity.AndroidUtils::CanChangePosition(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidUtils_CanChangePosition_m19CD746A3405C260FBF2EF5AB859F8F38639B03A (int32_t ___0_pos, const RuntimeMethod* method) ;
+// System.Boolean Bhaptics.Tact.Unity.AndroidUtils::IsLeft(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidUtils_IsLeft_mFDF16B67864EEC0E92DD16AB863DDD8FB3A1F202 (int32_t ___0_pos, const RuntimeMethod* method) ;
+// UnityEngine.Sprite Bhaptics.Tact.Unity.Bhaptics_Widget_Setting::GetPairedDeviceSprite(Bhaptics.Tact.Unity.HapticDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* Bhaptics_Widget_Setting_GetPairedDeviceSprite_m26FF74D377A3363EE2A1F3E16791745BB5A10479 (Bhaptics_Widget_Setting_t161D157DE26028AEFEDCA2A862E8748B281671EA* __this, HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* ___0_device, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::Ping(Bhaptics.Tact.Unity.HapticDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_Ping_mFBEF3D6E86FD47D89FB718BC2424BAA2B008EF53 (HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* ___0_device, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::TogglePosition(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_TogglePosition_mF0CE4FAF0A39F831012CF8EA4160C03D2C3FAA6F (String_t* ___0_address, const RuntimeMethod* method) ;
+// T UnityEngine.Component::GetComponent<UnityEngine.Animator>()
+inline Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* Component_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m1C9FCB4BBE56BEC6BDEF6E4BA1E5DFF91614D7CE (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// UnityEngine.AnimatorStateInfo UnityEngine.Animator::GetCurrentAnimatorStateInfo(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnimatorStateInfo_t1F47379289C7CE7FD588FBC3BBD79A777243B6B2 Animator_GetCurrentAnimatorStateInfo_mD5B526FA605F6CFBC31B7DE36740F6AD1E534CAD (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, int32_t ___0_layerIndex, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.AnimatorStateInfo::IsName(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AnimatorStateInfo_IsName_mB936F493D6BDDB9372C8E9D813CE0416B002C4D0 (AnimatorStateInfo_t1F47379289C7CE7FD588FBC3BBD79A777243B6B2* __this, String_t* ___0_name, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Animator::Play(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_Play_m0F6A9F84B2E256E644D56C34A7A9BD622CB00FF9 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, String_t* ___0_stateName, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_UI::InitializeButtons()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_UI_InitializeButtons_mF0CF5229B5CA29DBC2177A68A91423A98D4FDC6D (AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* __this, const RuntimeMethod* method) ;
+// T UnityEngine.Component::GetComponent<UnityEngine.AudioSource>()
+inline AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// T UnityEngine.Component::GetComponent<Bhaptics.Tact.Unity.AndroidWidget_ObjectPool>()
+inline AndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD* Component_GetComponent_TisAndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD_m7C18455D334406A4D39F0F3CDDF69C69A59615BF (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  AndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// T[] UnityEngine.Component::GetComponentsInChildren<Bhaptics.Tact.Unity.AndroidWidget_ControlButton>(System.Boolean)
+inline AndroidWidget_ControlButtonU5BU5D_tDAB320020613CB967B0C2A8082DA23B2E9816A38* Component_GetComponentsInChildren_TisAndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE_m938DDEC4507771E85D84C27B4F930F646DEFA27A (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, bool ___0_includeInactive, const RuntimeMethod* method)
+{
+	return ((  AndroidWidget_ControlButtonU5BU5D_tDAB320020613CB967B0C2A8082DA23B2E9816A38* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, bool, const RuntimeMethod*))Component_GetComponentsInChildren_TisRuntimeObject_m90734C3A39A158985239CB90DE2F0792F1D99926_gshared)(__this, ___0_includeInactive, method);
+}
+// T UnityEngine.Component::GetComponent<UnityEngine.Canvas>()
+inline Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* Component_GetComponent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m209BA4F663AB98A4504995B5BD3EADEDEFB92BF2 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// UnityEngine.Camera UnityEngine.Camera::get_main()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF (const RuntimeMethod* method) ;
+// System.Void UnityEngine.Canvas::set_worldCamera(UnityEngine.Camera)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Canvas_set_worldCamera_m007F7DABDB5A3A6BFB043E3500DA82A4D936EDD4 (Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* __this, Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ___0_value, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::AddRefreshAction(UnityEngine.Events.UnityAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_AddRefreshAction_m28C3B7D6677BC3B50E3A3E8FA9E2472A370B78FD (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___0_action, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_UI::Refresh()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_UI_Refresh_m75CE0CE3B0FEDD4AB257C03B80E1155CEE77C29F (AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* __this, const RuntimeMethod* method) ;
+// T[] UnityEngine.Component::GetComponentsInChildren<UnityEngine.UI.Button>(System.Boolean)
+inline ButtonU5BU5D_t0D512FF2FF5A72DAC04754F2C10182F850328BEF* Component_GetComponentsInChildren_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_m7A1316B78CB597034F354DE4BF82C98424AE0DAC (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, bool ___0_includeInactive, const RuntimeMethod* method)
+{
+	return ((  ButtonU5BU5D_t0D512FF2FF5A72DAC04754F2C10182F850328BEF* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, bool, const RuntimeMethod*))Component_GetComponentsInChildren_TisRuntimeObject_m90734C3A39A158985239CB90DE2F0792F1D99926_gshared)(__this, ___0_includeInactive, method);
+}
+// T UnityEngine.Component::GetComponent<UnityEngine.Collider>()
+inline Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* Component_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m820398EDBF1D3766C3166A0C323A127662A29A14 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// T UnityEngine.GameObject::AddComponent<UnityEngine.BoxCollider>()
+inline BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* GameObject_AddComponent_TisBoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23_m655518C8454E418FE8CF0E4770881B7A2B12BB23 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared)(__this, method);
+}
+// T UnityEngine.Component::GetComponent<UnityEngine.RectTransform>()
+inline RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// UnityEngine.Vector2 UnityEngine.RectTransform::get_sizeDelta()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 RectTransform_get_sizeDelta_m822A8493F2035677384F1540A2E9E5ACE63010BB (RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.BoxCollider::set_size(UnityEngine.Vector3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BoxCollider_set_size_m8374267FDE5DD628973E0E5E1331E781552B855A (BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_UI::ShowWidget()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_UI_ShowWidget_mBCDA65F3A6F9895F922322E7B7CF72F88A0F1AEC (AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_UI::HideWidget()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_UI_HideWidget_mBC11D7742FEC259841313F87A8048DC33D79E8F5 (AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI Bhaptics.Tact.Unity.AndroidWidget_ObjectPool::GetPairedDeviceUI()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* AndroidWidget_ObjectPool_GetPairedDeviceUI_m02E6FC22CE3D5F38D9AFC704447D0EF2A44E87F7 (AndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI::Refresh(Bhaptics.Tact.Unity.HapticDevice,Bhaptics.Tact.Unity.Bhaptics_Widget_Setting)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_PairedDeviceUI_Refresh_mE7EC9A860F7DAC998EE5773D6A5E4D205025C06C (AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* __this, HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* ___0_tactDevice, Bhaptics_Widget_Setting_t161D157DE26028AEFEDCA2A862E8748B281671EA* ___1_setting, const RuntimeMethod* method) ;
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice> Bhaptics.Tact.Unity.BhapticsAndroidManager::GetDevices()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* BhapticsAndroidManager_GetDevices_m3E091E55A5D8FDA7E6F5F314EE64150952546899 (const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_ObjectPool::DisableAll()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_ObjectPool_DisableAll_mA75D44A82610B270A35046010F16EB0FCD1006FD (AndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_UI::RefreshPairedDevices(System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_UI_RefreshPairedDevices_m08FB224DD06EF2540316519E0481B7DE357E50DE (AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* __this, List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* ___0_devices, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_ControlButton::Refresh()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_ControlButton_Refresh_m7AF22716BB9A849EA9C88752C49DF0BC996CE24E (AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::UpdateIcon(Bhaptics.Tact.Unity.HapticDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_UpdateIcon_mCF4925BB9A45CD95FD4BD5A5BB405C35DE9268EA (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* ___0_d, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::RenderConnectMenu()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_RenderConnectMenu_m454A6914A90B82E32957DA0D330BA1561A0E2FD7 (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::RenderDisconnectMenu()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_RenderDisconnectMenu_mAEDD179F73C956A6090AE24FFCB7EFC77C0D2008 (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, const RuntimeMethod* method) ;
+// UnityEngine.GameObject UnityEngine.GameObject::get_gameObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::UpdateButtons()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_UpdateButtons_m05A8DD528AEB0B93974ED3047B870BDD3B462672 (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, const RuntimeMethod* method) ;
+// System.Boolean Bhaptics.Tact.Unity.Android_DeviceController::IsLeft(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Android_DeviceController_IsLeft_m0D5801EDF5796CC727920C7869D8084DD85CABF4 (int32_t ___0_pos, const RuntimeMethod* method) ;
+// System.Boolean Bhaptics.Tact.Unity.Android_DeviceController::IsRight(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Android_DeviceController_IsRight_m873756CCE67A073F592CA8289ABBC5BBF59325EF (int32_t ___0_pos, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::ChangeButtonColor(UnityEngine.UI.Button,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_ChangeButtonColor_mBD1D13D0075A0C945AE4EB6449268844DB3656FB (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___0_targetButton, bool ___1_isSelect, const RuntimeMethod* method) ;
+// UnityEngine.Sprite Bhaptics.Tact.Unity.Android_DeviceController::GetSprite(Bhaptics.Tact.Unity.PositonIconSetting,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* Android_DeviceController_GetSprite_m85774A8C2238D99B35629E7215E3DFC664D5930D (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* ___0_icon, bool ___1_connected, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::Ping()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_Ping_mAF7ED8708F4DA8CBDF34996F1C90E33514926B0B (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, const RuntimeMethod* method) ;
+// UnityEngine.Color UnityEngine.Color::get_white()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.ColorUtility::TryParseHtmlString(System.String,UnityEngine.Color&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ColorUtility_TryParseHtmlString_m8E4DF912AF247EE6893655537CDF0FB47BFE563D (String_t* ___0_htmlString, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* ___1_color, const RuntimeMethod* method) ;
+// UnityEngine.Color Bhaptics.Tact.Unity.Android_DeviceController::ToColor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Android_DeviceController_ToColor_m6437453B8B4B0067020E5F8EE8D2FB45D7DB822C (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, String_t* ___0_hex, const RuntimeMethod* method) ;
+// UnityEngine.UI.ColorBlock UnityEngine.UI.Selectable::get_colors()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11 Selectable_get_colors_mB53E365D02351D4B64084295C4B2A7AF2DEC4750_inline (Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UI.ColorBlock::set_normalColor(UnityEngine.Color)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ColorBlock_set_normalColor_m3EBF594F6FA2C6494ACA9FCB9B458807D85B96F8_inline (ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UI.ColorBlock::set_highlightedColor(UnityEngine.Color)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ColorBlock_set_highlightedColor_m04E97DF2CCE7CAC47120D8F486E18BF62F16FF86_inline (ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UI.ColorBlock::set_pressedColor(UnityEngine.Color)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ColorBlock_set_pressedColor_m644C938090857AB07C57B25FE53F6DC2BB0DD5A8_inline (ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UI.Selectable::set_colors(UnityEngine.UI.ColorBlock)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Selectable_set_colors_m0A49ED3ACD6647B7E5A2DA10B3D417E8FE1BE55A (Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* __this, ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11 ___0_value, const RuntimeMethod* method) ;
+// T UnityEngine.Object::Instantiate<Bhaptics.Tact.Unity.Android_DeviceController>(T,UnityEngine.Transform)
+inline Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* Object_Instantiate_TisAndroid_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_m918BF1EF25916A3CB76952D9E373B9C553FCFDDB (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* ___0_original, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___1_parent, const RuntimeMethod* method)
+{
+	return ((  Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* (*) (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8*, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1*, const RuntimeMethod*))Object_Instantiate_TisRuntimeObject_m75BF3B0A3747B60491845FA41612FE7F795F0A59_gshared)(___0_original, ___1_parent, method);
+}
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Android_DeviceController>::Add(T)
+inline void List_1_Add_mC65A1F3381C6A430BF849270CBFD574D6DF4420B_inline (List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC* __this, Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC*, Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+// T UnityEngine.Component::GetComponent<UnityEngine.BoxCollider>()
+inline BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* Component_GetComponent_TisBoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23_m59698092F1230C6FB7F40D0F58F643A931A732D7 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::RemoveRefreshAction(UnityEngine.Events.UnityAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_RemoveRefreshAction_mB5B150D8174F5981310DCB556FE5FB23C5A0F8B5 (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___0_action, const RuntimeMethod* method) ;
+// System.Int32 UnityEngine.Mathf::FloorToInt(System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline (float ___0_f, const RuntimeMethod* method) ;
+// System.Void UnityEngine.RectTransform::set_sizeDelta(UnityEngine.Vector2)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RectTransform_set_sizeDelta_mC9A980EA6036E6725EF24CEDF3EE80A9B2B50EE5 (RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_value, const RuntimeMethod* method) ;
+// System.Void UnityEngine.BoxCollider::set_center(UnityEngine.Vector3)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BoxCollider_set_center_m0AB0482699735FEE8306A7FCAAE66A76C479F0F0 (BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+// UnityEngine.Vector2 UnityEngine.Vector2::get_zero()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline (const RuntimeMethod* method) ;
+// System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) ;
+// UnityEngine.Vector2 UnityEngine.Vector2::op_Addition(UnityEngine.Vector2,UnityEngine.Vector2)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_b, const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Android_DeviceController>::get_Item(System.Int32)
+inline Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* List_1_get_Item_mBCA183A7F112CB3A0F1FBD7BA9E2CEB601F5753A (List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* (*) (List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+// T System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice>::get_Item(System.Int32)
+inline HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* List_1_get_Item_mEBAD153627C85633E6EBA6E3F67EB5B3E3290F89 (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* (*) (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::RefreshDevice(Bhaptics.Tact.Unity.HapticDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_RefreshDevice_m09161A779EC3F62E826A0CD4C03FAE35D070FEDF (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* ___0_d, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Application::OpenURL(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Application_OpenURL_mE748FA4D503715DEE12BCA4BDD8A5305AE41DB89 (String_t* ___0_url, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Android_DeviceController>::.ctor()
+inline void List_1__ctor_mFC1BDB339D9BF587ACFC0328ADF82046EBF00385 (List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Void UnityEngine.Object::set_name(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, String_t* ___0_value, const RuntimeMethod* method) ;
+// UnityEngine.RuntimePlatform UnityEngine.Application::get_platform()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Application_get_platform_m59EF7D6155D18891B24767F83F388160B1FF2138 (const RuntimeMethod* method) ;
+// System.Void UnityEngine.MonoBehaviour::InvokeRepeating(System.String,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_InvokeRepeating_mF208501E0E4918F9168BBBA5FC50D8F80D01514D (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, String_t* ___0_methodName, float ___1_time, float ___2_repeatRate, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<UnityEngine.Events.UnityAction>::get_Count()
+inline int32_t List_1_get_Count_m2235CDCD234718681BDBD928B5695B70869CFDF7_inline (List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+// Bhaptics.Tact.Unity.IHaptic BhapticsManager::GetHaptic()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* BhapticsManager_GetHaptic_m307D5434386E8ABB1F232FBD10FB87EE4CD04E63 (const RuntimeMethod* method) ;
+// T System.Collections.Generic.List`1<UnityEngine.Events.UnityAction>::get_Item(System.Int32)
+inline UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* List_1_get_Item_m28EDEA4B6A9DF285910079B34B540331FFE727F6 (List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* (*) (List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+// System.Void UnityEngine.Events.UnityAction::Invoke()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnityAction_Invoke_m5CB9EE17CCDF64D00DE5D96DF3553CDB20D66F70_inline (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::TogglePosition(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_TogglePosition_m31E8A9C2AD97CE9BF266D1FC9C07B2059CA8311D (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_address, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::Ping(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_Ping_m09BC6CC235146355469143020C95FCEDFD305913 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_address, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::PingAll()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_PingAll_m1FB7F40D7C1A4CCA167E470603B032867FE88F65 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.List`1<UnityEngine.Events.UnityAction>::Contains(T)
+inline bool List_1_Contains_m0C5FCCCBE548A92296B0533DE7EA8052A1BB4078 (List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* __this, UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___0_item, const RuntimeMethod* method)
+{
+	return ((  bool (*) (List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D*, UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*, const RuntimeMethod*))List_1_Contains_m4C9139C2A6B23E9343D3F87807B32C6E2CFE660D_gshared)(__this, ___0_item, method);
+}
+// System.Void System.Collections.Generic.List`1<UnityEngine.Events.UnityAction>::Add(T)
+inline void List_1_Add_m323BA24FD0DE9D93F9DA4067FA613B338AABC76B_inline (List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* __this, UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D*, UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+// System.Boolean System.Collections.Generic.List`1<UnityEngine.Events.UnityAction>::Remove(T)
+inline bool List_1_Remove_mB10D46FB6ED1EA7AB7DFC1780F9572FD316A251D (List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* __this, UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___0_item, const RuntimeMethod* method)
+{
+	return ((  bool (*) (List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D*, UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*, const RuntimeMethod*))List_1_Remove_m4DFA48F4CEB9169601E75FC28517C5C06EFA5AD7_gshared)(__this, ___0_item, method);
+}
+// System.Void System.Collections.Generic.List`1<UnityEngine.Events.UnityAction>::Clear()
+inline void List_1_Clear_m0444A69F2E16C517FEDBEB99B58E0F8D853E4073_inline (List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
+}
+// System.Boolean Bhaptics.Tact.Unity.AndroidHaptic::IsStreamingEnable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidHaptic_IsStreamingEnable_mB29EBBED7167244050F59200AE303CD9EAB4D62B (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::ToggleStreaming()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_ToggleStreaming_m10D27D02296C021AB193E5483DDA762E2D16CB96 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidUtils/StreamHost> Bhaptics.Tact.Unity.AndroidHaptic::GetStreamingHosts()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF* AndroidHaptic_GetStreamingHosts_mDEAFC21035282974DDB9F077E0455A091E8D0795 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::ShowBluetoothSetting()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_ShowBluetoothSetting_mDCD08FC689F36A0FB0F468595EAA03F8199A15F9 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::EnableDevice(System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_EnableDevice_mE4AE10A0DA1048EC1E8CAE0D5E9CE8F6A8FF6699 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_address, bool ___1_boo, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::RefreshPairingInfo()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_RefreshPairingInfo_mC003281870C13EBE61AFF9C730730D60994C563A (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<UnityEngine.Events.UnityAction>::.ctor()
+inline void List_1__ctor_m1FB770381C3A129AD86880AAA4F631C28565CC93 (List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Boolean System.String::StartsWith(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0 (String_t* __this, String_t* ___0_value, const RuntimeMethod* method) ;
+// System.Void UnityEngine.ScriptableObject::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
+// System.Void BhapticsManager::Initialize()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsManager_Initialize_mA7BA8260AEF4B5583FF11466F5216CEF1B230266 (const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.ScaleOption::.ctor(System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScaleOption__ctor_m6B6E52F1920EF1A6A6173DBA40373A2EB89EBA97 (ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* __this, float ___0_intensity, float ___1_duration, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.FileHapticClip::ResetValues()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileHapticClip_ResetValues_m24A047517C36F0D208AE4721F32BD256F042D927 (FileHapticClip_t48EC83EE51B9DE69C85D3DC520865AA88CB0F9D9* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.FileHapticClip::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileHapticClip__ctor_mEA03B5953AAC12B4F4F765FD7AAB8CB821CCD6B7 (FileHapticClip_t48EC83EE51B9DE69C85D3DC520865AA88CB0F9D9* __this, const RuntimeMethod* method) ;
+// System.String UnityEngine.Application::get_identifier()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_identifier_mEA3314E50D44FB3CE2C2E78B336ACF4AD97BA056 (const RuntimeMethod* method) ;
+// System.String UnityEngine.Application::get_productName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_productName_m9314FB94C4DE1F1731084FF30B9555F44BA477EB (const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticApi::Initialise(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_Initialise_m30D4F8BBC6D0967EA925219946F6F9F60BDA4580 (String_t* ___0_appId, String_t* ___1_appName, const RuntimeMethod* method) ;
+// System.Boolean Bhaptics.Tact.Unity.HapticApi::IsDevicePlaying(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_IsDevicePlaying_mFE21A3F7D83EE049003C294F212D634B95E1876A (int32_t ___0_pos, const RuntimeMethod* method) ;
+// System.Boolean Bhaptics.Tact.Unity.HapticApi::IsPlayingKey(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_IsPlayingKey_mAB4DE5D6E4D4435F879F0BC791E24D70ACBAFC4F (String_t* ___0_key, const RuntimeMethod* method) ;
+// System.Boolean Bhaptics.Tact.Unity.HapticApi::IsFeedbackRegistered(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_IsFeedbackRegistered_mDA2BBCBF485E8D5EB42B390AF8326C30D45E0801 (String_t* ___0_key, const RuntimeMethod* method) ;
+// System.Boolean Bhaptics.Tact.Unity.HapticApi::IsPlaying()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_IsPlaying_m1D25CFEA0AA7DE886069B542E10EACC244A66598 (const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticApi::RegisterFeedbackFromTactFile(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_RegisterFeedbackFromTactFile_mC25BB735EDF86310F2BE279BE77B7A6814525B4F (String_t* ___0_str, String_t* ___1_tactFileStr, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticApi::RegisterFeedbackFromTactFileReflected(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_RegisterFeedbackFromTactFileReflected_m5AA03F02CA80F09FD972FDEE27CB9D0EDF5A4235 (String_t* ___0_str, String_t* ___1_tactFileStr, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticApi::SubmitByteArray(System.String,Bhaptics.Tact.PositionType,System.Byte[],System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_SubmitByteArray_m0B314566F8054EC2304B09DFA06A0063A469DC5B (String_t* ___0_key, int32_t ___1_pos, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___2_charPtr, int32_t ___3_length, int32_t ___4_durationMillis, const RuntimeMethod* method) ;
+// System.Int32 Bhaptics.Tact.PathPoint::get_MotorCount()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PathPoint_get_MotorCount_mD2EB5DD17D380C9AF1B8E5C2550FF526793BFB22_inline (PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticApi::SubmitPathArray(System.String,Bhaptics.Tact.PositionType,Bhaptics.Tact.Unity.HapticApi/point[],System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_SubmitPathArray_m5332744B2A4F7674045BF625BF85CC6E912E8F36 (String_t* ___0_key, int32_t ___1_pos, pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* ___2_charPtr, int32_t ___3_length, int32_t ___4_durationMillis, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticApi::SubmitRegisteredWithOption(System.String,System.String,System.Single,System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_SubmitRegisteredWithOption_m5E975859E85185123D34871863B497090FFAC63D (String_t* ___0_key, String_t* ___1_altKey, float ___2_intensity, float ___3_duration, float ___4_offsetX, float ___5_offsetY, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticApi::SubmitRegistered(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_SubmitRegistered_m93F146E48AC24FAC9A2C74D4892E9F021731BD67 (String_t* ___0_key, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticApi::SubmitRegisteredStartMillis(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_SubmitRegisteredStartMillis_m4FAF75C81B874CC719A377F06696C26961BB391F (String_t* ___0_key, int32_t ___1_startTimeMillis, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticApi::TurnOffKey(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_TurnOffKey_m1F8EADFB4E136612F575B2103820B5EE8CCD0A4E (String_t* ___0_key, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticApi::TurnOff()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_TurnOff_m37F3E663CD0A64C3EB9626423D112992D8258FF7 (const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticApi::Destroy()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_Destroy_m63DA8F469337114CEC06561FA468D2B1BA2EE1AD (const RuntimeMethod* method) ;
+// System.Boolean Bhaptics.Tact.Unity.HapticApi::TryGetResponseForPosition(Bhaptics.Tact.PositionType,Bhaptics.Tact.Unity.HapticApi/status&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_TryGetResponseForPosition_m410F26B76DD2A379A5CE70ADBA7D7BF6175173E5 (int32_t ___0_pos, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576* ___1_status, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.BhapticsProject::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsProject__ctor_m97FE40ECCE0CAE2F90943DC505EF7EFF418727D1 (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Track>::.ctor()
+inline void List_1__ctor_m6B6749012AA714828B1A6A1FABDEBDD8335FEE19 (List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode> Bhaptics.Tact.JSONNode/Enumerator::get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC Enumerator_get_Current_mADC9138A797DFFC280E40580257BD68E94BC8D5C (Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6* __this, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode>::get_Value()
+inline JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_inline (KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC* __this, const RuntimeMethod* method)
+{
+	return ((  JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* (*) (KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC*, const RuntimeMethod*))KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline)(__this, method);
+}
+// Bhaptics.Tact.Unity.Track Bhaptics.Tact.Unity.Track::ToTrack(Bhaptics.Tact.JSONObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Track_t890B55E3594EA0442464072A11DE8398FB0420E9* Track_ToTrack_m4CC0735436732868D3070C22B5B2304459AA808C (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObj, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Track>::Add(T)
+inline void List_1_Add_m4E39030928BF0CB15FDFD6FAEF9FAC0EEACC634B_inline (List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2* __this, Track_t890B55E3594EA0442464072A11DE8398FB0420E9* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2*, Track_t890B55E3594EA0442464072A11DE8398FB0420E9*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+// System.Boolean Bhaptics.Tact.JSONNode/Enumerator::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m007D2FA8EE0C5EFD0F7CA354C8A9B0E49DEB4528 (Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.Unity.Layout Bhaptics.Tact.Unity.Layout::ToLayout(Bhaptics.Tact.JSONObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* Layout_ToLayout_m523C6596DFF6EAE08B7EF2D8AB8A3EF7AAD7A86D (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObj, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.BhapticsProject::set_Layout(Bhaptics.Tact.Unity.Layout)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BhapticsProject_set_Layout_m086532F448C8A6B38DFE6308CE19C76FB40F66FA_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* ___0_value, const RuntimeMethod* method) ;
+// T[] System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Track>::ToArray()
+inline TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* List_1_ToArray_m9F04218A0494C4BF91025C2252E199DE56610D9A (List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2* __this, const RuntimeMethod* method)
+{
+	return ((  TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* (*) (List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2*, const RuntimeMethod*))List_1_ToArray_mD7E4F8E7C11C3C67CB5739FCC0A6E86106A6291F_gshared)(__this, method);
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsProject::set_Tracks(Bhaptics.Tact.Unity.Track[])
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BhapticsProject_set_Tracks_m6623528C82AA30741BBB706531D490BD5B3F37EC_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* ___0_value, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.JSONObject::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.JSONArray::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JSONArray__ctor_m4C44395E61EC41095CE4E43B84826B6CD00CAAC5 (JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.Unity.Track[] Bhaptics.Tact.Unity.BhapticsProject::get_Tracks()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* BhapticsProject_get_Tracks_mBDE0713754725739BB7910610AF20943A7CD2474_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.Track::ToJsonObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* Track_ToJsonObject_m7805509E16B067BD222D5E582892C5D30F65F6D1 (Track_t890B55E3594EA0442464072A11DE8398FB0420E9* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.Unity.Layout Bhaptics.Tact.Unity.BhapticsProject::get_Layout()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* BhapticsProject_get_Layout_m1CDEA6316C9F5B45CF1FFA0E95B027DBD0988840_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.Layout::ToJsonObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* Layout_ToJsonObject_m1BA3A0A7ACFF10366F6004D700EDF471921F3B90 (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticFeedbackFile::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticFeedbackFile__ctor_mF6D6636FB41BF7D3C78E72D641A80A27F77DCA10 (HapticFeedbackFile_tA8FA7E232A215E89B17E7B24B665152C52D63AF2* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.JSONNode Bhaptics.Tact.JSON::Parse(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* JSON_Parse_m61553DFEF69DCC5F2C7B8D41A4D44A032CEAE4DA (String_t* ___0_aJSON, const RuntimeMethod* method) ;
+// Bhaptics.Tact.Unity.BhapticsProject Bhaptics.Tact.Unity.BhapticsProject::ToProject(Bhaptics.Tact.JSONObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* BhapticsProject_ToProject_m38A058D7097A24F5B37480A5F90A6F59DC2BFDE4 (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObject, const RuntimeMethod* method) ;
+// Bhaptics.Tact.Unity.HapticEffect[] Bhaptics.Tact.Unity.Track::get_Effects()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* Track_get_Effects_mC21F35847118C27DB99160CFD22B7D80CE6C96B7_inline (Track_t890B55E3594EA0442464072A11DE8398FB0420E9* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.Track::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Track__ctor_m040C5ADFD160E9FF5757DC50C2267D04626045CA (Track_t890B55E3594EA0442464072A11DE8398FB0420E9* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticEffect>::.ctor()
+inline void List_1__ctor_mA303FBEE7FA9428CC4C53279B5497EFFBFBC621C (List_1_t7708E016E8D5714047242D10B6F8574A29C085E6* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t7708E016E8D5714047242D10B6F8574A29C085E6*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// Bhaptics.Tact.Unity.HapticEffect Bhaptics.Tact.Unity.HapticEffect::ToEffect(Bhaptics.Tact.JSONObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* HapticEffect_ToEffect_m73F9275C43CE37A80F7C03DCA2E31B5BDB67DFEC (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObj, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticEffect>::Add(T)
+inline void List_1_Add_m6FE3E021596B9C8CE5FBC6BD3CFF6BFA31A7222C_inline (List_1_t7708E016E8D5714047242D10B6F8574A29C085E6* __this, HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t7708E016E8D5714047242D10B6F8574A29C085E6*, HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+// T[] System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticEffect>::ToArray()
+inline HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* List_1_ToArray_m71C4C97E9EA541BB629B14B592863E4CB6D8A787 (List_1_t7708E016E8D5714047242D10B6F8574A29C085E6* __this, const RuntimeMethod* method)
+{
+	return ((  HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* (*) (List_1_t7708E016E8D5714047242D10B6F8574A29C085E6*, const RuntimeMethod*))List_1_ToArray_mD7E4F8E7C11C3C67CB5739FCC0A6E86106A6291F_gshared)(__this, method);
+}
+// System.Void Bhaptics.Tact.Unity.Track::set_Effects(Bhaptics.Tact.Unity.HapticEffect[])
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Track_set_Effects_m15A4E8C1F80A7E795588A3E9EB59370B39B604CD_inline (Track_t890B55E3594EA0442464072A11DE8398FB0420E9* __this, HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* ___0_value, const RuntimeMethod* method) ;
+// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.HapticEffect::ToJsonObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* HapticEffect_ToJsonObject_m63715314F3F7E92A1B74E8A3DDD8A7AC2EA44831 (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, const RuntimeMethod* method) ;
+// System.Int32 Bhaptics.Tact.Unity.HapticEffect::get_StartTime()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HapticEffect_get_StartTime_m0DC962A5FFF8E3667CBDBFE7322FC0F74F1B3867_inline (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, const RuntimeMethod* method) ;
+// System.Int32 Bhaptics.Tact.Unity.HapticEffect::get_OffsetTime()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HapticEffect_get_OffsetTime_mBACA280EC6FDCCE33C8307A54A66D0B9F22E1786_inline (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode> Bhaptics.Tact.Unity.HapticEffect::get_Modes()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* HapticEffect_get_Modes_m5B9239AD91F4846DD87D63132BDB1A136E007EE3_inline (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___0_values, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticEffect::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticEffect__ctor_m665B4337E2441E7F6D2909E619552B81405F7DF6 (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::op_Implicit(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* JSONNode_op_Implicit_m1963C540AD7F39DA77DD07471422D4EEE6F90510 (int32_t ___0_n, const RuntimeMethod* method) ;
+// System.Int32 Bhaptics.Tact.JSONNode::op_Implicit(Bhaptics.Tact.JSONNode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t JSONNode_op_Implicit_m0AE9D7686C2A476A90E423219918B0D0D26B4FAC (JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* ___0_d, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticEffect::set_StartTime(System.Int32)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HapticEffect_set_StartTime_m63DE688652BF53D4992607A21A6DC9A9FC8FDEB1_inline (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.HapticEffect::set_OffsetTime(System.Int32)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HapticEffect_set_OffsetTime_mAE59216F6F484E13C9D9876615DCF06C05DF602B_inline (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode>::.ctor()
+inline void Dictionary_2__ctor_m91D0ECA8F609D4B777FA36DD5EC73FD3D8E670E3 (Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8*, const RuntimeMethod*))Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared)(__this, method);
+}
+// System.Void Bhaptics.Tact.Unity.HapticEffect::set_Modes(System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode>)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HapticEffect_set_Modes_m82FE81370834ADAAAC5471FFCD244107360A66CF_inline (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* ___0_value, const RuntimeMethod* method) ;
+// TKey System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode>::get_Key()
+inline String_t* KeyValuePair_2_get_Key_mC7AFE5CE55D57ACC0FDF084330BE36D51F87EECB_inline (KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC*, const RuntimeMethod*))KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline)(__this, method);
+}
+// Bhaptics.Tact.Unity.HapticEffectMode Bhaptics.Tact.Unity.HapticEffectMode::ToMode(Bhaptics.Tact.JSONObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* HapticEffectMode_ToMode_m516C83440CFF5745983713825E8C63C8B9AEA82A (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObj, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode>::set_Item(TKey,TValue)
+inline void Dictionary_2_set_Item_mD41796A33BB535C677472D5041543A0BCC75D8EE (Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* __this, String_t* ___0_key, HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8*, String_t*, HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8*, const RuntimeMethod*))Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode>::GetEnumerator()
+inline Enumerator_tB74F4FEDF1F70644A20CE16CD663367054900974 Dictionary_2_GetEnumerator_mF714EE84D6B491403CBDDC49BC235DEA9F32B1A9 (Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_tB74F4FEDF1F70644A20CE16CD663367054900974 (*) (Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8*, const RuntimeMethod*))Dictionary_2_GetEnumerator_m52AB12790B0B9B46B1DFB1F861C9DBEAB07C1FDA_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.HapticEffectMode>::Dispose()
+inline void Enumerator_Dispose_mB424B789C3350F9B1B2E3979AA5FEE529C18F45E (Enumerator_tB74F4FEDF1F70644A20CE16CD663367054900974* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_tB74F4FEDF1F70644A20CE16CD663367054900974*, const RuntimeMethod*))Enumerator_Dispose_mEA5E01B81EB943B7003D87CEC1B6040524F0402C_gshared)(__this, method);
+}
+// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.HapticEffectMode>::get_Current()
+inline KeyValuePair_2_tBD50AD3A0892764218F3B61D9120EF0A919B27D1 Enumerator_get_Current_m188CDEC569878737D1819C8994CC25DA6A8755DB_inline (Enumerator_tB74F4FEDF1F70644A20CE16CD663367054900974* __this, const RuntimeMethod* method)
+{
+	return ((  KeyValuePair_2_tBD50AD3A0892764218F3B61D9120EF0A919B27D1 (*) (Enumerator_tB74F4FEDF1F70644A20CE16CD663367054900974*, const RuntimeMethod*))Enumerator_get_Current_mE3475384B761E1C7971D3639BD09117FE8363422_gshared_inline)(__this, method);
+}
+// TKey System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode>::get_Key()
+inline String_t* KeyValuePair_2_get_Key_mB131019F0E8B06EBCBD52EEBB1C2E472089494D3_inline (KeyValuePair_2_tBD50AD3A0892764218F3B61D9120EF0A919B27D1* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (KeyValuePair_2_tBD50AD3A0892764218F3B61D9120EF0A919B27D1*, const RuntimeMethod*))KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline)(__this, method);
+}
+// TValue System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode>::get_Value()
+inline HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* KeyValuePair_2_get_Value_m465F12313B09FA5CE70FEF66329BC3E69254127D_inline (KeyValuePair_2_tBD50AD3A0892764218F3B61D9120EF0A919B27D1* __this, const RuntimeMethod* method)
+{
+	return ((  HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* (*) (KeyValuePair_2_tBD50AD3A0892764218F3B61D9120EF0A919B27D1*, const RuntimeMethod*))KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline)(__this, method);
+}
+// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.HapticEffectMode::ToJsonObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* HapticEffectMode_ToJsonObject_mC63EE8F9DAF9D2E3B1071FBE9EF71B07359AC4A5 (HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.HapticEffectMode>::MoveNext()
+inline bool Enumerator_MoveNext_m7B63C391FB3B1AC14E498DF503298EA3BF4D2E5F (Enumerator_tB74F4FEDF1F70644A20CE16CD663367054900974* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_tB74F4FEDF1F70644A20CE16CD663367054900974*, const RuntimeMethod*))Enumerator_MoveNext_mCD4950A75FFADD54AF354D48C6C0DB0B5A22A5F4_gshared)(__this, method);
+}
+// System.Void Bhaptics.Tact.Unity.Layout::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Layout__ctor_mA9C51F3A9E360AB26821E84D39F2AB15E886511C (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) ;
+// System.String Bhaptics.Tact.JSONNode::op_Implicit(Bhaptics.Tact.JSONNode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* JSONNode_op_Implicit_mF1E8869ECBF9128BBBBDEFAA6BADBEDBD3377D13 (JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* ___0_d, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.Layout::set_Type(System.String)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Layout_set_Type_mC6F3F60CACFB8872D86A13D7CC69532A467F22FC_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, String_t* ___0_value, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::.ctor()
+inline void Dictionary_2__ctor_mE771721AC304A86F1630D0199A1B665A30B5A07E (Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB*, const RuntimeMethod*))Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared)(__this, method);
+}
+// System.Void Bhaptics.Tact.Unity.Layout::set_Layouts(System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Layout_set_Layouts_m04AD09245EA14233E27E00F0620C70A6DAF25DA4_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* ___0_value, const RuntimeMethod* method) ;
+// Bhaptics.Tact.JSONNode/KeyEnumerator Bhaptics.Tact.JSONNode::get_Keys()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE JSONNode_get_Keys_m5AA9857B54A50BCCFC1A3CD00C13FD7E7C4D03FD (JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.JSONNode/KeyEnumerator Bhaptics.Tact.JSONNode/KeyEnumerator::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE KeyEnumerator_GetEnumerator_m5E500FE5C9123A63956B2BBC44C92471A46BE585 (KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE* __this, const RuntimeMethod* method) ;
+// System.String Bhaptics.Tact.JSONNode/KeyEnumerator::get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyEnumerator_get_Current_mC0EFD70B348C797A9097FC3591604248B5E8D9EB (KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.LayoutObject>::.ctor()
+inline void List_1__ctor_mE98E867DE869699619CAC1FACC2727C677239CD4 (List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// Bhaptics.Tact.Unity.LayoutObject Bhaptics.Tact.Unity.LayoutObject::ToLayoutObject(Bhaptics.Tact.JSONObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* LayoutObject_ToLayoutObject_mE5EFACE1A11213D0C866C27533298F610A13CD73 (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObj, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.LayoutObject>::Add(T)
+inline void List_1_Add_mDFD8A0A00B649A9483B1223FCC037C8AF4FDA1C1_inline (List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8* __this, LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8*, LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]> Bhaptics.Tact.Unity.Layout::get_Layouts()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* Layout_get_Layouts_m60E67CC8D7907AFE794DC4BC0616714AB3DB71FD_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) ;
+// T[] System.Collections.Generic.List`1<Bhaptics.Tact.Unity.LayoutObject>::ToArray()
+inline LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* List_1_ToArray_mF15116DA6DE7656E08C99D78C17B748F4EC02E36 (List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8* __this, const RuntimeMethod* method)
+{
+	return ((  LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* (*) (List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8*, const RuntimeMethod*))List_1_ToArray_mD7E4F8E7C11C3C67CB5739FCC0A6E86106A6291F_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::set_Item(TKey,TValue)
+inline void Dictionary_2_set_Item_m0A3D98FAEB0F65902D723519478843CA0B4B88B7 (Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* __this, String_t* ___0_key, LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB*, String_t*, LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1*, const RuntimeMethod*))Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Boolean Bhaptics.Tact.JSONNode/KeyEnumerator::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyEnumerator_MoveNext_mC987ED757BC0CC6842850F7A80E4F52C304D8A65 (KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE* __this, const RuntimeMethod* method) ;
+// System.String Bhaptics.Tact.Unity.Layout::get_Type()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* Layout_get_Type_mBE619D91B8B2EA797249B5CA78B045B764426283_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::op_Implicit(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* JSONNode_op_Implicit_m6D2AC5725D426909C3669AC277D5EEC9C78F3257 (String_t* ___0_s, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::GetEnumerator()
+inline Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4 Dictionary_2_GetEnumerator_mF12F10866C45A0B1B8A3EE0D58859B460B82C1DD (Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4 (*) (Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB*, const RuntimeMethod*))Dictionary_2_GetEnumerator_m52AB12790B0B9B46B1DFB1F861C9DBEAB07C1FDA_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::Dispose()
+inline void Enumerator_Dispose_m5D6360F15AE7100C86563BB29E250064F31BDB7D (Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4*, const RuntimeMethod*))Enumerator_Dispose_mEA5E01B81EB943B7003D87CEC1B6040524F0402C_gshared)(__this, method);
+}
+// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::get_Current()
+inline KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535 Enumerator_get_Current_mCA6B86088D2DF3206509B44DE3E97DC1FCED2982_inline (Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4* __this, const RuntimeMethod* method)
+{
+	return ((  KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535 (*) (Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4*, const RuntimeMethod*))Enumerator_get_Current_mE3475384B761E1C7971D3639BD09117FE8363422_gshared_inline)(__this, method);
+}
+// TValue System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::get_Value()
+inline LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* KeyValuePair_2_get_Value_m8EC4293E0EFA757EBA2C4D4493C4A6D6B41296D5_inline (KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535* __this, const RuntimeMethod* method)
+{
+	return ((  LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* (*) (KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535*, const RuntimeMethod*))KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline)(__this, method);
+}
+// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.LayoutObject::ToJsonObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* LayoutObject_ToJsonObject_mDF2FFCB5A75E71B954FC7BB6BD5F10AC436CF1D8 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) ;
+// TKey System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::get_Key()
+inline String_t* KeyValuePair_2_get_Key_mF07391A7439D788E88A3B2B2DCB7CE9EACE9E5D4_inline (KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535*, const RuntimeMethod*))KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline)(__this, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::MoveNext()
+inline bool Enumerator_MoveNext_m4B76B8D6B70D42385525A1DB6EC4923B8087B84A (Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4*, const RuntimeMethod*))Enumerator_MoveNext_mCD4950A75FFADD54AF354D48C6C0DB0B5A22A5F4_gshared)(__this, method);
+}
+// System.Void Bhaptics.Tact.Unity.LayoutObject::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutObject__ctor_mD41074C142B2FD7BEAD06B58FDB8F6CCEE2A7054 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.LayoutObject::set_Index(System.Int32)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutObject_set_Index_m4823B428685425779BCDA95301365BFF9FDF93AF_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+// System.Single Bhaptics.Tact.JSONNode::op_Implicit(Bhaptics.Tact.JSONNode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float JSONNode_op_Implicit_m13111A524086020853C383F698ACDE0BE8B94711 (JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* ___0_d, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.LayoutObject::set_X(System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutObject_set_X_mED3EBFFCF1FF5840EA1949A4BC85416E33BAA4C4_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, float ___0_value, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.LayoutObject::set_Y(System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutObject_set_Y_mADC9A8BF0AC0DADA023D9ADB0308C5DC41BE0E80_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, float ___0_value, const RuntimeMethod* method) ;
+// System.Int32 Bhaptics.Tact.Unity.LayoutObject::get_Index()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LayoutObject_get_Index_mAC697E34411D251A3D2D364954962063BD0B4A86_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) ;
+// System.Single Bhaptics.Tact.Unity.LayoutObject::get_X()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float LayoutObject_get_X_m3B474C29C3506E8B8DFDB46CD52EE46DA90039B7_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::op_Implicit(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* JSONNode_op_Implicit_mDD64E71A06EF02278E9AEAF16C3B5F6A80D088D5 (float ___0_n, const RuntimeMethod* method) ;
+// System.Single Bhaptics.Tact.Unity.LayoutObject::get_Y()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float LayoutObject_get_Y_mD54E06DF5DAA79AC7723D518ADD3DF17B576EDF2_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Vector3::Magnitude(UnityEngine.Vector3)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Magnitude_m21652D951393A3D7CE92CE40049A0E7F76544D1B_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Quaternion::Internal_FromEulerRad(UnityEngine.Vector3)
@@ -5632,35 +9463,68 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_Internal_MakePositive_m73E2D01920CB0DFE661A55022C129E8617F0C9A8 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_euler, const RuntimeMethod* method) ;
 // System.Void System.Array::Clear(System.Array,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB (RuntimeArray* ___0_array, int32_t ___1_index, int32_t ___2_length, const RuntimeMethod* method) ;
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C int32_t DEFAULT_CALL TryGetExePath(uint8_t*, int32_t*);
 #endif
-// System.Void OculusSampleFramework.InteractableCollisionInfo::.ctor(OculusSampleFramework.ColliderZone,OculusSampleFramework.InteractableCollisionDepth,OculusSampleFramework.InteractableTool)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractableCollisionInfo__ctor_mF048A8CAC8CED3F12917993E39C3DF9B2C459DBD (InteractableCollisionInfo_t0706183E9D28BE08640A9C78564FB7098214E3E3* __this, RuntimeObject* ___0_collider, int32_t ___1_collisionDepth, InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* ___2_collidingTool, const RuntimeMethod* method) 
-{
-	{
-		// public InteractableCollisionInfo(ColliderZone collider, InteractableCollisionDepth collisionDepth,
-		//   InteractableTool collidingTool)
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		// InteractableCollider = collider;
-		RuntimeObject* L_0 = ___0_collider;
-		__this->___InteractableCollider_0 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___InteractableCollider_0), (void*)L_0);
-		// CollisionDepth = collisionDepth;
-		int32_t L_1 = ___1_collisionDepth;
-		__this->___CollisionDepth_1 = L_1;
-		// CollidingTool = collidingTool;
-		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_2 = ___2_collidingTool;
-		__this->___CollidingTool_2 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___CollidingTool_2), (void*)L_2);
-		// }
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C void DEFAULT_CALL Initialise(char*, char*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C void DEFAULT_CALL Destroy();
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C void CDECL RegisterFeedback(char*, char*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C void CDECL RegisterFeedbackFromTactFile(char*, char*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C void CDECL RegisterFeedbackFromTactFileReflected(char*, char*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C void CDECL SubmitRegistered(char*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C void CDECL SubmitRegisteredStartMillis(char*, int32_t);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C void CDECL SubmitRegisteredWithOption(char*, char*, float, float, float, float);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C void CDECL SubmitByteArray(char*, int32_t, uint8_t*, int32_t, int32_t);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C void CDECL SubmitPathArray(char*, int32_t, point_tFD793B132EE65A0C93FD921353591DA6B9A89CA9*, int32_t, int32_t);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C int32_t CDECL IsFeedbackRegistered(char*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C int32_t CDECL IsPlaying();
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C int32_t CDECL IsPlayingKey(char*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C void CDECL TurnOff();
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C void CDECL TurnOffKey(char*);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C void CDECL EnableFeedback();
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C void CDECL DisableFeedback();
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C void CDECL ToggleFeedback();
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C int32_t CDECL IsDevicePlaying(int32_t);
+#endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+IL2CPP_EXTERN_C int32_t CDECL TryGetResponseForPosition(int32_t, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke*);
 #endif
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -16983,6 +20847,8762 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TouchController__ctor_mFEC6542E29C9A7062
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic__ctor_mD7A0AC1E2EC132C5BF837FFEABEB1DB97A9C592B (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m265D14F9AC7823D8E7212D6E2C0AD583C1C718F1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tAA28B112099476AB6B27CF458644BE15FBA8EE04_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RuntimeObject_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral01793EF08F35461796EA0A5F4E67477C7FF077C5);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1D215336354689060C710F1E6E3000FC8840D86D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4A29D43588148F5C1F56062D678D7E9C246707D2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4D4EA719DB7D4D715ADBA2AFD3A8B297C1D8AADF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4D613657609485AE586A3379BA0E3FC13C1E1078);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral570253F88E90C7BA74C253F223E308E59B6BDBB8);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5A00A52D746A79D3B1B788CFBF70D40C304302E1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6B973FB601C693F2F934EF8531CAB44A3EAB9943);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral87B8BC37181E395185B9587D34E316567F1E9D59);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA32EACCE82D1C49B998F7C469FE014DEE8737D09);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAA7652C413DDCECDA5CEEFD1F271621491C39158);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAD2BBC5DEC8245A45FBFBFF88DC127E3874E61B2);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCF0721EB476D8E0A383221ED51278EF4F855AD39);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD6CFAA9A8F507F384B1008F247D2327A3D2F1426);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA0D4ADB4827DFE816DCB5FC0F426D8EFA7FA798);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDAAF728FBB5EB3ACF224F10BDA51C4E7943F8E50);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDFB5CBFBA742C6182719C9944D08ACBC80F3127D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFB4AE4F77150C3A8E8E4F8B23E734E0C7277B7D9);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* V_0 = NULL;
+	Exception_t* V_1 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		// protected List<HapticDevice> deviceList = new List<HapticDevice>();
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_0 = (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21*)il2cpp_codegen_object_new(List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1(L_0, List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1_RuntimeMethod_var);
+		__this->___deviceList_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___deviceList_1), (void*)L_0);
+		// private List<string> registeredCache = new List<string>();
+		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_1 = (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*)il2cpp_codegen_object_new(List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E(L_1, List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E_RuntimeMethod_var);
+		__this->___registeredCache_2 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___registeredCache_2), (void*)L_1);
+		// private readonly object syncLock = new object();
+		RuntimeObject* L_2 = (RuntimeObject*)il2cpp_codegen_object_new(RuntimeObject_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(L_2, NULL);
+		__this->___syncLock_7 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___syncLock_7), (void*)L_2);
+		// private Dictionary<PositionType, int[]> updatedList = new Dictionary<PositionType, int[]>();
+		Dictionary_2_tAA28B112099476AB6B27CF458644BE15FBA8EE04* L_3 = (Dictionary_2_tAA28B112099476AB6B27CF458644BE15FBA8EE04*)il2cpp_codegen_object_new(Dictionary_2_tAA28B112099476AB6B27CF458644BE15FBA8EE04_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Dictionary_2__ctor_m265D14F9AC7823D8E7212D6E2C0AD583C1C718F1(L_3, Dictionary_2__ctor_m265D14F9AC7823D8E7212D6E2C0AD583C1C718F1_RuntimeMethod_var);
+		__this->___updatedList_8 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___updatedList_8), (void*)L_3);
+		// public AndroidHaptic()
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+	}
+	try
+	{// begin try (depth: 1)
+		// AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+		AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_4 = (AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03*)il2cpp_codegen_object_new(AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		AndroidJavaClass__ctor_mB5466169E1151B8CC44C8FED234D79984B431389(L_4, _stringLiteral4D613657609485AE586A3379BA0E3FC13C1E1078, NULL);
+		// AndroidJavaObject currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+		NullCheck(L_4);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_5;
+		L_5 = AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD(L_4, _stringLiteralFB4AE4F77150C3A8E8E4F8B23E734E0C7277B7D9, AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD_RuntimeMethod_var);
+		V_0 = L_5;
+		// androidJavaObject =
+		//     new AndroidJavaObject("com.bhaptics.bhapticsunity.BhapticsManagerWrapper", currentActivity);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_7 = L_6;
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_8 = V_0;
+		NullCheck(L_7);
+		ArrayElementTypeCheck (L_7, L_8);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_8);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_9 = (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*)il2cpp_codegen_object_new(AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
+		AndroidJavaObject__ctor_m5A65B5D325C2CEFAC4097A0D3813F8E158178DD7(L_9, _stringLiteralCF0721EB476D8E0A383221ED51278EF4F855AD39, L_7, NULL);
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0 = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0), (void*)L_9);
+		// AndroidJavaObjectPtr = androidJavaObject.GetRawObject();
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_10 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_10);
+		intptr_t L_11;
+		L_11 = AndroidJavaObject_GetRawObject_m536F043B5CE2C21369FF6173C9D2A9A62136BC48(L_10, NULL);
+		__this->___AndroidJavaObjectPtr_9 = L_11;
+		// ToggleStreamPtr = AndroidJNIHelper.GetMethodID(androidJavaObject.GetRawClass(), "toggleStreamingEnable");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_12 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_12);
+		intptr_t L_13;
+		L_13 = AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5(L_12, NULL);
+		intptr_t L_14;
+		L_14 = AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B(L_13, _stringLiteral01793EF08F35461796EA0A5F4E67477C7FF077C5, NULL);
+		__this->___ToggleStreamPtr_19 = L_14;
+		// SubmitRegisteredPtr = AndroidJNIHelper.GetMethodID(androidJavaObject.GetRawClass(), "submitRegistered");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_15 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_15);
+		intptr_t L_16;
+		L_16 = AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5(L_15, NULL);
+		intptr_t L_17;
+		L_17 = AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B(L_16, _stringLiteral4D4EA719DB7D4D715ADBA2AFD3A8B297C1D8AADF, NULL);
+		__this->___SubmitRegisteredPtr_10 = L_17;
+		// SubmitRegisteredWithTimePtr =
+		//     AndroidJNIHelper.GetMethodID(androidJavaObject.GetRawClass(), "submitRegisteredWithTime");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_18 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_18);
+		intptr_t L_19;
+		L_19 = AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5(L_18, NULL);
+		intptr_t L_20;
+		L_20 = AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B(L_19, _stringLiteralAA7652C413DDCECDA5CEEFD1F271621491C39158, NULL);
+		__this->___SubmitRegisteredWithTimePtr_11 = L_20;
+		// RegisterPtr = AndroidJNIHelper.GetMethodID(androidJavaObject.GetRawClass(), "register");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_21 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_21);
+		intptr_t L_22;
+		L_22 = AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5(L_21, NULL);
+		intptr_t L_23;
+		L_23 = AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B(L_22, _stringLiteralD6CFAA9A8F507F384B1008F247D2327A3D2F1426, NULL);
+		__this->___RegisterPtr_12 = L_23;
+		// RegisterReflectedPtr = AndroidJNIHelper.GetMethodID(androidJavaObject.GetRawClass(), "registerReflected");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_24 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_24);
+		intptr_t L_25;
+		L_25 = AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5(L_24, NULL);
+		intptr_t L_26;
+		L_26 = AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B(L_25, _stringLiteralDA0D4ADB4827DFE816DCB5FC0F426D8EFA7FA798, NULL);
+		__this->___RegisterReflectedPtr_13 = L_26;
+		// PingPtr = AndroidJNIHelper.GetMethodID(androidJavaObject.GetRawClass(), "ping");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_27 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_27);
+		intptr_t L_28;
+		L_28 = AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5(L_27, NULL);
+		intptr_t L_29;
+		L_29 = AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B(L_28, _stringLiteralAD2BBC5DEC8245A45FBFBFF88DC127E3874E61B2, NULL);
+		__this->___PingPtr_14 = L_29;
+		// PingAllPtr = AndroidJNIHelper.GetMethodID(androidJavaObject.GetRawClass(), "pingAll");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_30 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_30);
+		intptr_t L_31;
+		L_31 = AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5(L_30, NULL);
+		intptr_t L_32;
+		L_32 = AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B(L_31, _stringLiteral1D215336354689060C710F1E6E3000FC8840D86D, NULL);
+		__this->___PingAllPtr_15 = L_32;
+		// IsRegisteredPtr = AndroidJNIHelper.GetMethodID(androidJavaObject.GetRawClass(), "isRegistered");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_33 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_33);
+		intptr_t L_34;
+		L_34 = AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5(L_33, NULL);
+		intptr_t L_35;
+		L_35 = AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B(L_34, _stringLiteralDFB5CBFBA742C6182719C9944D08ACBC80F3127D, NULL);
+		__this->___IsRegisteredPtr_16 = L_35;
+		// IsPlayingPtr = AndroidJNIHelper.GetMethodID(androidJavaObject.GetRawClass(), "isPlaying");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_36 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_36);
+		intptr_t L_37;
+		L_37 = AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5(L_36, NULL);
+		intptr_t L_38;
+		L_38 = AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B(L_37, _stringLiteral5A00A52D746A79D3B1B788CFBF70D40C304302E1, NULL);
+		__this->___IsPlayingPtr_17 = L_38;
+		// IsPlayingAnythingPtr = AndroidJNIHelper.GetMethodID(androidJavaObject.GetRawClass(), "isAnythingPlaying");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_39 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_39);
+		intptr_t L_40;
+		L_40 = AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5(L_39, NULL);
+		intptr_t L_41;
+		L_41 = AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B(L_40, _stringLiteralDAAF728FBB5EB3ACF224F10BDA51C4E7943F8E50, NULL);
+		__this->___IsPlayingAnythingPtr_18 = L_41;
+		// IsStreamingEnablePtr = AndroidJNIHelper.GetMethodID(androidJavaObject.GetRawClass(), "isStreamingEnable");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_42 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_42);
+		intptr_t L_43;
+		L_43 = AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5(L_42, NULL);
+		intptr_t L_44;
+		L_44 = AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B(L_43, _stringLiteral6B973FB601C693F2F934EF8531CAB44A3EAB9943, NULL);
+		__this->___IsStreamingEnablePtr_20 = L_44;
+		// GetStreamingHostsPtr = AndroidJNIHelper.GetMethodID(androidJavaObject.GetRawClass(), "getStreamingHosts");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_45 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_45);
+		intptr_t L_46;
+		L_46 = AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5(L_45, NULL);
+		intptr_t L_47;
+		L_47 = AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B(L_46, _stringLiteral570253F88E90C7BA74C253F223E308E59B6BDBB8, NULL);
+		__this->___GetStreamingHostsPtr_21 = L_47;
+		// ShowBluetoothPtr = AndroidJNIHelper.GetMethodID(androidJavaObject.GetRawClass(), "showBluetoothSetting");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_48 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_48);
+		intptr_t L_49;
+		L_49 = AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5(L_48, NULL);
+		intptr_t L_50;
+		L_50 = AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B(L_49, _stringLiteralA32EACCE82D1C49B998F7C469FE014DEE8737D09, NULL);
+		__this->___ShowBluetoothPtr_22 = L_50;
+		// RefreshPairingInfoPtr = AndroidJNIHelper.GetMethodID(androidJavaObject.GetRawClass(), "refreshPairing");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_51 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_51);
+		intptr_t L_52;
+		L_52 = AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5(L_51, NULL);
+		intptr_t L_53;
+		L_53 = AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B(L_52, _stringLiteral87B8BC37181E395185B9587D34E316567F1E9D59, NULL);
+		__this->___RefreshPairingInfoPtr_23 = L_53;
+		// EnableDevicePtr = AndroidJNIHelper.GetMethodID(androidJavaObject.GetRawClass(), "enableDevice");
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_54 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		NullCheck(L_54);
+		intptr_t L_55;
+		L_55 = AndroidJavaObject_GetRawClass_mE4FB4DC4F856A52E10C6AAD0B65BEBF47B5071F5(L_54, NULL);
+		intptr_t L_56;
+		L_56 = AndroidJNIHelper_GetMethodID_m5D0526B2FE20191F966D72521647D686980EE06B(L_55, _stringLiteral4A29D43588148F5C1F56062D678D7E9C246707D2, NULL);
+		__this->___EnableDevicePtr_24 = L_56;
+		// }
+		goto IL_0218;
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_01f8;
+		}
+		throw e;
+	}
+
+CATCH_01f8:
+	{// begin catch(System.Exception)
+		// catch (Exception e)
+		V_1 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		// Debug.LogErrorFormat("AndroidHaptic {0} {1} ", e.Message, e);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_57 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var)), (uint32_t)2);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_58 = L_57;
+		Exception_t* L_59 = V_1;
+		NullCheck(L_59);
+		String_t* L_60;
+		L_60 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_59);
+		NullCheck(L_58);
+		ArrayElementTypeCheck (L_58, L_60);
+		(L_58)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_60);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_61 = L_58;
+		Exception_t* L_62 = V_1;
+		NullCheck(L_61);
+		ArrayElementTypeCheck (L_61, L_62);
+		(L_61)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_62);
+		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
+		Debug_LogErrorFormat_m96690322C941D23A125E5769C9803606859A707C(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral8FD9DB8B3223A2F2BCA9D8F14697E741652ACF09)), L_61, NULL);
+		// }
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_0218;
+	}// end catch (depth: 1)
+
+IL_0218:
+	{
+		// deviceList = GetDevices();
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_63;
+		L_63 = AndroidHaptic_GetDevices_mF84E3F4064C8EE585CFF28B0E3463F2A74A1B6E2(__this, NULL);
+		__this->___deviceList_1 = L_63;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___deviceList_1), (void*)L_63);
+		// }
+		return;
+	}
+}
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidUtils/StreamHost> Bhaptics.Tact.Unity.AndroidHaptic::GetStreamingHosts()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF* AndroidHaptic_GetStreamingHosts_mDEAFC21035282974DDB9F077E0455A091E8D0795 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisStringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_mDB9546BEEC88451F68DCAD34A4F2E207E1C31E00_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonUtility_FromJson_TisStreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509_m640FDC7E26DD3A75A00E7399BAAB965E626E9134_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mDC6D01E871526F43E79135E5BAE2640B86060FAC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mB146B188E8D323468B9EB6643271CCA4794A00F8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral570253F88E90C7BA74C253F223E308E59B6BDBB8);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF* V_0 = NULL;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* V_1 = NULL;
+	int32_t V_2 = 0;
+	StreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509* V_3 = NULL;
+	Exception_t* V_4 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		// return new List<AndroidUtils.StreamHost>();
+		List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF* L_1 = (List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF*)il2cpp_codegen_object_new(List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		List_1__ctor_mB146B188E8D323468B9EB6643271CCA4794A00F8(L_1, List_1__ctor_mB146B188E8D323468B9EB6643271CCA4794A00F8_RuntimeMethod_var);
+		return L_1;
+	}
+
+IL_000d:
+	{
+		// var list = new List<AndroidUtils.StreamHost>();
+		List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF* L_2 = (List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF*)il2cpp_codegen_object_new(List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		List_1__ctor_mB146B188E8D323468B9EB6643271CCA4794A00F8(L_2, List_1__ctor_mB146B188E8D323468B9EB6643271CCA4794A00F8_RuntimeMethod_var);
+		V_0 = L_2;
+		// string[] res = androidJavaObject.Call<string[]>("getStreamingHosts");
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_3 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4;
+		L_4 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_3);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5;
+		L_5 = AndroidJavaObject_Call_TisStringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_mDB9546BEEC88451F68DCAD34A4F2E207E1C31E00(L_3, _stringLiteral570253F88E90C7BA74C253F223E308E59B6BDBB8, L_4, AndroidJavaObject_Call_TisStringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_mDB9546BEEC88451F68DCAD34A4F2E207E1C31E00_RuntimeMethod_var);
+		V_1 = L_5;
+		// for (int index = 0; index < res.Length; index++)
+		V_2 = 0;
+		goto IL_0067;
+	}
+
+IL_002c:
+	{
+	}
+	try
+	{// begin try (depth: 1)
+		// var streamHost = JsonUtility.FromJson<AndroidUtils.StreamHost>(res[index]);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = V_1;
+		int32_t L_7 = V_2;
+		NullCheck(L_6);
+		int32_t L_8 = L_7;
+		String_t* L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
+		StreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509* L_10;
+		L_10 = JsonUtility_FromJson_TisStreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509_m640FDC7E26DD3A75A00E7399BAAB965E626E9134(L_9, JsonUtility_FromJson_TisStreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509_m640FDC7E26DD3A75A00E7399BAAB965E626E9134_RuntimeMethod_var);
+		V_3 = L_10;
+		// list.Add(streamHost);
+		List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF* L_11 = V_0;
+		StreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509* L_12 = V_3;
+		NullCheck(L_11);
+		List_1_Add_mDC6D01E871526F43E79135E5BAE2640B86060FAC_inline(L_11, L_12, List_1_Add_mDC6D01E871526F43E79135E5BAE2640B86060FAC_RuntimeMethod_var);
+		// }
+		goto IL_0063;
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_003f;
+		}
+		throw e;
+	}
+
+CATCH_003f:
+	{// begin catch(System.Exception)
+		// catch (Exception e)
+		V_4 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		// Debug.LogFormat("FromJson {0} {1}", res[index], e.Message);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_13 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var)), (uint32_t)2);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_14 = L_13;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_15 = V_1;
+		int32_t L_16 = V_2;
+		NullCheck(L_15);
+		int32_t L_17 = L_16;
+		String_t* L_18 = (L_15)->GetAt(static_cast<il2cpp_array_size_t>(L_17));
+		NullCheck(L_14);
+		ArrayElementTypeCheck (L_14, L_18);
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_18);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_19 = L_14;
+		Exception_t* L_20 = V_4;
+		NullCheck(L_20);
+		String_t* L_21;
+		L_21 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_20);
+		NullCheck(L_19);
+		ArrayElementTypeCheck (L_19, L_21);
+		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_21);
+		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var)));
+		Debug_LogFormat_mD555556327B42AA3482D077EFAEB16B0AFDF72C7(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral43F32C02AC90817DA1CC462CAE0F89F773A79517)), L_19, NULL);
+		// }
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_0063;
+	}// end catch (depth: 1)
+
+IL_0063:
+	{
+		// for (int index = 0; index < res.Length; index++)
+		int32_t L_22 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_22, 1));
+	}
+
+IL_0067:
+	{
+		// for (int index = 0; index < res.Length; index++)
+		int32_t L_23 = V_2;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_24 = V_1;
+		NullCheck(L_24);
+		if ((((int32_t)L_23) < ((int32_t)((int32_t)(((RuntimeArray*)L_24)->max_length)))))
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		// return list;
+		List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF* L_25 = V_0;
+		return L_25;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.AndroidHaptic::IsStreamingEnable()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidHaptic_IsStreamingEnable_mB29EBBED7167244050F59200AE303CD9EAB4D62B (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return CallNativeBoolMethod(IsStreamingEnablePtr, EmptyParams);
+		intptr_t L_0 = __this->___IsStreamingEnablePtr_20;
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___EmptyParams_5;
+		bool L_2;
+		L_2 = AndroidHaptic_CallNativeBoolMethod_mAE8135FDB6AE4D9A8BA81465A0A9AD4DAA073FD4(__this, L_0, L_1, NULL);
+		return L_2;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::ToggleStreaming()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_ToggleStreaming_m10D27D02296C021AB193E5483DDA762E2D16CB96 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0008:
+	{
+		// CallNativeVoidMethod(ToggleStreamPtr, EmptyParams);
+		intptr_t L_1 = __this->___ToggleStreamPtr_19;
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___EmptyParams_5;
+		AndroidHaptic_CallNativeVoidMethod_m70ABE25624420F60DA12C75A880780B9D8C9C476(__this, L_1, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.AndroidHaptic::IsConnect(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidHaptic_IsConnect_mDC4D9E02980F8599E018E111C10963A2115781E2 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, int32_t ___0_type, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t261861876184B54ED984B2385428914934E16B5B V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* V_1 = NULL;
+	bool V_2 = false;
+	{
+		// foreach (var device in deviceList)
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_0 = __this->___deviceList_1;
+		NullCheck(L_0);
+		Enumerator_t261861876184B54ED984B2385428914934E16B5B L_1;
+		L_1 = List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A(L_0, List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0036:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409((&V_0), Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_002b_1;
+			}
+
+IL_000e_1:
+			{
+				// foreach (var device in deviceList)
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_2;
+				L_2 = Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_inline((&V_0), Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_RuntimeMethod_var);
+				V_1 = L_2;
+				// if (device.Position == type && device.IsConnected)
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_3 = V_1;
+				NullCheck(L_3);
+				int32_t L_4 = L_3->___Position_3;
+				int32_t L_5 = ___0_type;
+				if ((!(((uint32_t)L_4) == ((uint32_t)L_5))))
+				{
+					goto IL_002b_1;
+				}
+			}
+			{
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_6 = V_1;
+				NullCheck(L_6);
+				bool L_7 = L_6->___IsConnected_1;
+				if (!L_7)
+				{
+					goto IL_002b_1;
+				}
+			}
+			{
+				// return true;
+				V_2 = (bool)1;
+				goto IL_0046;
+			}
+
+IL_002b_1:
+			{
+				// foreach (var device in deviceList)
+				bool L_8;
+				L_8 = Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907((&V_0), Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907_RuntimeMethod_var);
+				if (L_8)
+				{
+					goto IL_000e_1;
+				}
+			}
+			{
+				goto IL_0044;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0044:
+	{
+		// return false;
+		return (bool)0;
+	}
+
+IL_0046:
+	{
+		// }
+		bool L_9 = V_2;
+		return L_9;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.AndroidHaptic::IsConnect(Bhaptics.Tact.Unity.HapticDeviceType,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidHaptic_IsConnect_m666862BB3B4B21241EA1E4DD4CC73B9A4EAFCC50 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, int32_t ___0_type, bool ___1_isLeft, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t261861876184B54ED984B2385428914934E16B5B V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* V_1 = NULL;
+	bool V_2 = false;
+	{
+		// foreach (var device in deviceList)
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_0 = __this->___deviceList_1;
+		NullCheck(L_0);
+		Enumerator_t261861876184B54ED984B2385428914934E16B5B L_1;
+		L_1 = List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A(L_0, List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_003c:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409((&V_0), Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0031_1;
+			}
+
+IL_000e_1:
+			{
+				// foreach (var device in deviceList)
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_2;
+				L_2 = Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_inline((&V_0), Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_RuntimeMethod_var);
+				V_1 = L_2;
+				// if (device.Position == BhapticsUtils.ToPositionType(type, isLeft) && device.IsConnected)
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_3 = V_1;
+				NullCheck(L_3);
+				int32_t L_4 = L_3->___Position_3;
+				int32_t L_5 = ___0_type;
+				bool L_6 = ___1_isLeft;
+				int32_t L_7;
+				L_7 = BhapticsUtils_ToPositionType_mD7153937883C07B4A9F78AEB48006E06FD686A3B(L_5, L_6, NULL);
+				if ((!(((uint32_t)L_4) == ((uint32_t)L_7))))
+				{
+					goto IL_0031_1;
+				}
+			}
+			{
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_8 = V_1;
+				NullCheck(L_8);
+				bool L_9 = L_8->___IsConnected_1;
+				if (!L_9)
+				{
+					goto IL_0031_1;
+				}
+			}
+			{
+				// return true;
+				V_2 = (bool)1;
+				goto IL_004c;
+			}
+
+IL_0031_1:
+			{
+				// foreach (var device in deviceList)
+				bool L_10;
+				L_10 = Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907((&V_0), Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907_RuntimeMethod_var);
+				if (L_10)
+				{
+					goto IL_000e_1;
+				}
+			}
+			{
+				goto IL_004a;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_004a:
+	{
+		// return false;
+		return (bool)0;
+	}
+
+IL_004c:
+	{
+		// }
+		bool L_11 = V_2;
+		return L_11;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.AndroidHaptic::IsPlaying(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidHaptic_IsPlaying_m9B360968DA699BCDC12F0BE354F455DA2B427F6A (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_key, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		// return false;
+		return (bool)0;
+	}
+
+IL_0009:
+	{
+		// return CallNativeBoolMethod(IsPlayingPtr, new object[] {key});
+		intptr_t L_1 = __this->___IsPlayingPtr_17;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = L_2;
+		String_t* L_4 = ___0_key;
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_4);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_4);
+		bool L_5;
+		L_5 = AndroidHaptic_CallNativeBoolMethod_mAE8135FDB6AE4D9A8BA81465A0A9AD4DAA073FD4(__this, L_1, L_3, NULL);
+		return L_5;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.AndroidHaptic::IsFeedbackRegistered(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidHaptic_IsFeedbackRegistered_m6482C1B81957F288CB0316EC531CD6201DA4658E (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_key, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool G_B6_0 = false;
+	bool G_B5_0 = false;
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		// return false;
+		return (bool)0;
+	}
+
+IL_0009:
+	{
+		// if (registeredCache.Contains(key))
+		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_1 = __this->___registeredCache_2;
+		String_t* L_2 = ___0_key;
+		NullCheck(L_1);
+		bool L_3;
+		L_3 = List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1(L_1, L_2, List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1_RuntimeMethod_var);
+		if (!L_3)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		// return true;
+		return (bool)1;
+	}
+
+IL_0019:
+	{
+		// var res = CallNativeBoolMethod(IsRegisteredPtr, new object[] {key});
+		intptr_t L_4 = __this->___IsRegisteredPtr_16;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = L_5;
+		String_t* L_7 = ___0_key;
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, L_7);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_7);
+		bool L_8;
+		L_8 = AndroidHaptic_CallNativeBoolMethod_mAE8135FDB6AE4D9A8BA81465A0A9AD4DAA073FD4(__this, L_4, L_6, NULL);
+		// if (res)
+		bool L_9 = L_8;
+		G_B5_0 = L_9;
+		if (!L_9)
+		{
+			G_B6_0 = L_9;
+			goto IL_003e;
+		}
+	}
+	{
+		// registeredCache.Add(key);
+		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_10 = __this->___registeredCache_2;
+		String_t* L_11 = ___0_key;
+		NullCheck(L_10);
+		List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline(L_10, L_11, List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
+		G_B6_0 = G_B5_0;
+	}
+
+IL_003e:
+	{
+		// return res;
+		return G_B6_0;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.AndroidHaptic::IsPlaying()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidHaptic_IsPlaying_m6AB8E48E2174BE72CF4A2C91C5CB1ED102BDCBD8 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		// return false;
+		return (bool)0;
+	}
+
+IL_0009:
+	{
+		// return CallNativeBoolMethod(IsPlayingAnythingPtr, EmptyParams);
+		intptr_t L_1 = __this->___IsPlayingAnythingPtr_18;
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___EmptyParams_5;
+		bool L_3;
+		L_3 = AndroidHaptic_CallNativeBoolMethod_mAE8135FDB6AE4D9A8BA81465A0A9AD4DAA073FD4(__this, L_1, L_2, NULL);
+		return L_3;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::RegisterTactFileStr(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_RegisterTactFileStr_m7AD97DF846B129E10243F735531D2AB34A47F429 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_key, String_t* ___1_tactFileStr, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0008:
+	{
+		// CallNativeVoidMethod(RegisterPtr, new object[] {key, tactFileStr});
+		intptr_t L_1 = __this->___RegisterPtr_12;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)2);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = L_2;
+		String_t* L_4 = ___0_key;
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_4);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_4);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5 = L_3;
+		String_t* L_6 = ___1_tactFileStr;
+		NullCheck(L_5);
+		ArrayElementTypeCheck (L_5, L_6);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_6);
+		AndroidHaptic_CallNativeVoidMethod_m70ABE25624420F60DA12C75A880780B9D8C9C476(__this, L_1, L_5, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::RegisterTactFileStrReflected(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_RegisterTactFileStrReflected_mFF0BFD43336016B1CABEEB230D28F53E15F30ED4 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_key, String_t* ___1_tactFileStr, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0008:
+	{
+		// CallNativeVoidMethod(RegisterReflectedPtr, new object[] {key, tactFileStr});
+		intptr_t L_1 = __this->___RegisterReflectedPtr_13;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)2);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = L_2;
+		String_t* L_4 = ___0_key;
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_4);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_4);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5 = L_3;
+		String_t* L_6 = ___1_tactFileStr;
+		NullCheck(L_5);
+		ArrayElementTypeCheck (L_5, L_6);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_6);
+		AndroidHaptic_CallNativeVoidMethod_m70ABE25624420F60DA12C75A880780B9D8C9C476(__this, L_1, L_5, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::Submit(System.String,Bhaptics.Tact.PositionType,System.Collections.Generic.List`1<Bhaptics.Tact.DotPoint>,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_Submit_m51B0248063DCEF9C03E7C4C5F675EFE7CF18534C (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_key, int32_t ___1_position, List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7* ___2_points, int32_t ___3_durationMillis, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mA6E8E551DC8B567A0F1BEA949DBFEAF141BC307F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m1E3E02F8E3D829A6B2A87379F9BF11A6FDE90319_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PositionType_tD1C4BFED25BC51F45D95DDEC6629B96BB5D18B53_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral52DA1A9AB57410CB78F94ED8D633B7E7D2776678);
+		s_Il2CppMethodInitialized = true;
+	}
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* V_0 = NULL;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* V_1 = NULL;
+	int32_t V_2 = 0;
+	Exception_t* V_3 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0008:
+	{
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			// int[] indexes = new int[points.Count];
+			List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7* L_1 = ___2_points;
+			NullCheck(L_1);
+			int32_t L_2;
+			L_2 = List_1_get_Count_mA6E8E551DC8B567A0F1BEA949DBFEAF141BC307F_inline(L_1, List_1_get_Count_mA6E8E551DC8B567A0F1BEA949DBFEAF141BC307F_RuntimeMethod_var);
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_3 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)L_2);
+			V_0 = L_3;
+			// int[] intensity = new int[points.Count];
+			List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7* L_4 = ___2_points;
+			NullCheck(L_4);
+			int32_t L_5;
+			L_5 = List_1_get_Count_mA6E8E551DC8B567A0F1BEA949DBFEAF141BC307F_inline(L_4, List_1_get_Count_mA6E8E551DC8B567A0F1BEA949DBFEAF141BC307F_RuntimeMethod_var);
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_6 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)L_5);
+			V_1 = L_6;
+			// for (var i = 0; i < points.Count; i++)
+			V_2 = 0;
+			goto IL_0047_1;
+		}
+
+IL_0025_1:
+		{
+			// indexes[i] = points[i].Index;
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_7 = V_0;
+			int32_t L_8 = V_2;
+			List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7* L_9 = ___2_points;
+			int32_t L_10 = V_2;
+			NullCheck(L_9);
+			DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* L_11;
+			L_11 = List_1_get_Item_m1E3E02F8E3D829A6B2A87379F9BF11A6FDE90319(L_9, L_10, List_1_get_Item_m1E3E02F8E3D829A6B2A87379F9BF11A6FDE90319_RuntimeMethod_var);
+			NullCheck(L_11);
+			int32_t L_12;
+			L_12 = DotPoint_get_Index_m633D59299ED59D6254D7CC8667EB024D087A7574_inline(L_11, NULL);
+			NullCheck(L_7);
+			(L_7)->SetAt(static_cast<il2cpp_array_size_t>(L_8), (int32_t)L_12);
+			// intensity[i] = points[i].Intensity;
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_13 = V_1;
+			int32_t L_14 = V_2;
+			List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7* L_15 = ___2_points;
+			int32_t L_16 = V_2;
+			NullCheck(L_15);
+			DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* L_17;
+			L_17 = List_1_get_Item_m1E3E02F8E3D829A6B2A87379F9BF11A6FDE90319(L_15, L_16, List_1_get_Item_m1E3E02F8E3D829A6B2A87379F9BF11A6FDE90319_RuntimeMethod_var);
+			NullCheck(L_17);
+			int32_t L_18;
+			L_18 = DotPoint_get_Intensity_m8C6D8B150CCE0A547E1B3C7124AC4380D5A3016C_inline(L_17, NULL);
+			NullCheck(L_13);
+			(L_13)->SetAt(static_cast<il2cpp_array_size_t>(L_14), (int32_t)L_18);
+			// for (var i = 0; i < points.Count; i++)
+			int32_t L_19 = V_2;
+			V_2 = ((int32_t)il2cpp_codegen_add(L_19, 1));
+		}
+
+IL_0047_1:
+		{
+			// for (var i = 0; i < points.Count; i++)
+			int32_t L_20 = V_2;
+			List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7* L_21 = ___2_points;
+			NullCheck(L_21);
+			int32_t L_22;
+			L_22 = List_1_get_Count_mA6E8E551DC8B567A0F1BEA949DBFEAF141BC307F_inline(L_21, List_1_get_Count_mA6E8E551DC8B567A0F1BEA949DBFEAF141BC307F_RuntimeMethod_var);
+			if ((((int32_t)L_20) < ((int32_t)L_22)))
+			{
+				goto IL_0025_1;
+			}
+		}
+		{
+			// androidJavaObject.Call("submitDot",
+			//     key, position.ToString(), indexes, intensity, durationMillis);
+			il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+			AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_23 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_24 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)5);
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_25 = L_24;
+			String_t* L_26 = ___0_key;
+			NullCheck(L_25);
+			ArrayElementTypeCheck (L_25, L_26);
+			(L_25)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_26);
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_27 = L_25;
+			Il2CppFakeBox<int32_t> L_28(PositionType_tD1C4BFED25BC51F45D95DDEC6629B96BB5D18B53_il2cpp_TypeInfo_var, (&___1_position));
+			String_t* L_29;
+			L_29 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_28), NULL);
+			NullCheck(L_27);
+			ArrayElementTypeCheck (L_27, L_29);
+			(L_27)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_29);
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_30 = L_27;
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_31 = V_0;
+			NullCheck(L_30);
+			ArrayElementTypeCheck (L_30, L_31);
+			(L_30)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject*)L_31);
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_32 = L_30;
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_33 = V_1;
+			NullCheck(L_32);
+			ArrayElementTypeCheck (L_32, L_33);
+			(L_32)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject*)L_33);
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_34 = L_32;
+			int32_t L_35 = ___3_durationMillis;
+			int32_t L_36 = L_35;
+			RuntimeObject* L_37 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_36);
+			NullCheck(L_34);
+			ArrayElementTypeCheck (L_34, L_37);
+			(L_34)->SetAt(static_cast<il2cpp_array_size_t>(4), (RuntimeObject*)L_37);
+			NullCheck(L_23);
+			AndroidJavaObject_Call_mDEF7846E2AB1C5379069BB21049ED55A9D837B1C(L_23, _stringLiteral52DA1A9AB57410CB78F94ED8D633B7E7D2776678, L_34, NULL);
+			// }
+			goto IL_00a9;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_008d;
+		}
+		throw e;
+	}
+
+CATCH_008d:
+	{// begin catch(System.Exception)
+		// catch (Exception e)
+		V_3 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		// BhapticsLogger.LogError("submitDot() : {0}", e.Message);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_38 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var)), (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_39 = L_38;
+		Exception_t* L_40 = V_3;
+		NullCheck(L_40);
+		String_t* L_41;
+		L_41 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_40);
+		NullCheck(L_39);
+		ArrayElementTypeCheck (L_39, L_41);
+		(L_39)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_41);
+		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&BhapticsLogger_t3A2740F5DBA63ECA7B30DD351ADE5D030CE0C645_il2cpp_TypeInfo_var)));
+		BhapticsLogger_LogError_m3CDDC648847F1E3DB8695FB80FEC30430BAF701E(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral49CA2AACD7A3F1D84342065C74703FD43DC9A881)), L_39, NULL);
+		// }
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_00a9;
+	}// end catch (depth: 1)
+
+IL_00a9:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::Submit(System.String,Bhaptics.Tact.PositionType,System.Collections.Generic.List`1<Bhaptics.Tact.PathPoint>,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_Submit_mE21FBEE8EE2A6DC474E69C3F258883822485AEE6 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_key, int32_t ___1_position, List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* ___2_points, int32_t ___3_durationMillis, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PositionType_tD1C4BFED25BC51F45D95DDEC6629B96BB5D18B53_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral32B1B5BC31D44B18AA1644A3D65D62E49574C1C9);
+		s_Il2CppMethodInitialized = true;
+	}
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* V_0 = NULL;
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* V_1 = NULL;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* V_2 = NULL;
+	int32_t V_3 = 0;
+	Exception_t* V_4 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0008:
+	{
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			// float[] x = new float[points.Count];
+			List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_1 = ___2_points;
+			NullCheck(L_1);
+			int32_t L_2;
+			L_2 = List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_inline(L_1, List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_RuntimeMethod_var);
+			SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)L_2);
+			V_0 = L_3;
+			// float[] y = new float[points.Count];
+			List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_4 = ___2_points;
+			NullCheck(L_4);
+			int32_t L_5;
+			L_5 = List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_inline(L_4, List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_RuntimeMethod_var);
+			SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_6 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)L_5);
+			V_1 = L_6;
+			// int[] intensity = new int[points.Count];
+			List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_7 = ___2_points;
+			NullCheck(L_7);
+			int32_t L_8;
+			L_8 = List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_inline(L_7, List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_RuntimeMethod_var);
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_9 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)L_8);
+			V_2 = L_9;
+			// for (var i = 0; i < points.Count; i++)
+			V_3 = 0;
+			goto IL_0062_1;
+		}
+
+IL_0031_1:
+		{
+			// x[i] = points[i].X;
+			SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_10 = V_0;
+			int32_t L_11 = V_3;
+			List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_12 = ___2_points;
+			int32_t L_13 = V_3;
+			NullCheck(L_12);
+			PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* L_14;
+			L_14 = List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A(L_12, L_13, List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A_RuntimeMethod_var);
+			NullCheck(L_14);
+			float L_15;
+			L_15 = PathPoint_get_X_mC6D8AD1FC8309504340DEEF64E8F78FF6F4658D2_inline(L_14, NULL);
+			NullCheck(L_10);
+			(L_10)->SetAt(static_cast<il2cpp_array_size_t>(L_11), (float)L_15);
+			// y[i] = points[i].Y;
+			SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_16 = V_1;
+			int32_t L_17 = V_3;
+			List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_18 = ___2_points;
+			int32_t L_19 = V_3;
+			NullCheck(L_18);
+			PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* L_20;
+			L_20 = List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A(L_18, L_19, List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A_RuntimeMethod_var);
+			NullCheck(L_20);
+			float L_21;
+			L_21 = PathPoint_get_Y_m222EBAB437A3BB6D31690746927433FB7EA5283C_inline(L_20, NULL);
+			NullCheck(L_16);
+			(L_16)->SetAt(static_cast<il2cpp_array_size_t>(L_17), (float)L_21);
+			// intensity[i] = points[i].Intensity;
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_22 = V_2;
+			int32_t L_23 = V_3;
+			List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_24 = ___2_points;
+			int32_t L_25 = V_3;
+			NullCheck(L_24);
+			PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* L_26;
+			L_26 = List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A(L_24, L_25, List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A_RuntimeMethod_var);
+			NullCheck(L_26);
+			int32_t L_27;
+			L_27 = PathPoint_get_Intensity_mD87D87612D1B2B24FF1F6AF055689F274E08288B_inline(L_26, NULL);
+			NullCheck(L_22);
+			(L_22)->SetAt(static_cast<il2cpp_array_size_t>(L_23), (int32_t)L_27);
+			// for (var i = 0; i < points.Count; i++)
+			int32_t L_28 = V_3;
+			V_3 = ((int32_t)il2cpp_codegen_add(L_28, 1));
+		}
+
+IL_0062_1:
+		{
+			// for (var i = 0; i < points.Count; i++)
+			int32_t L_29 = V_3;
+			List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_30 = ___2_points;
+			NullCheck(L_30);
+			int32_t L_31;
+			L_31 = List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_inline(L_30, List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_RuntimeMethod_var);
+			if ((((int32_t)L_29) < ((int32_t)L_31)))
+			{
+				goto IL_0031_1;
+			}
+		}
+		{
+			// androidJavaObject.Call("submitPath",
+			//     key, position.ToString(), x, y, intensity, durationMillis);
+			il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+			AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_32 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_33 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)6);
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_34 = L_33;
+			String_t* L_35 = ___0_key;
+			NullCheck(L_34);
+			ArrayElementTypeCheck (L_34, L_35);
+			(L_34)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_35);
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_36 = L_34;
+			Il2CppFakeBox<int32_t> L_37(PositionType_tD1C4BFED25BC51F45D95DDEC6629B96BB5D18B53_il2cpp_TypeInfo_var, (&___1_position));
+			String_t* L_38;
+			L_38 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_37), NULL);
+			NullCheck(L_36);
+			ArrayElementTypeCheck (L_36, L_38);
+			(L_36)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_38);
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_39 = L_36;
+			SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_40 = V_0;
+			NullCheck(L_39);
+			ArrayElementTypeCheck (L_39, L_40);
+			(L_39)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject*)L_40);
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_41 = L_39;
+			SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_42 = V_1;
+			NullCheck(L_41);
+			ArrayElementTypeCheck (L_41, L_42);
+			(L_41)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject*)L_42);
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_43 = L_41;
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_44 = V_2;
+			NullCheck(L_43);
+			ArrayElementTypeCheck (L_43, L_44);
+			(L_43)->SetAt(static_cast<il2cpp_array_size_t>(4), (RuntimeObject*)L_44);
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_45 = L_43;
+			int32_t L_46 = ___3_durationMillis;
+			int32_t L_47 = L_46;
+			RuntimeObject* L_48 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_47);
+			NullCheck(L_45);
+			ArrayElementTypeCheck (L_45, L_48);
+			(L_45)->SetAt(static_cast<il2cpp_array_size_t>(5), (RuntimeObject*)L_48);
+			NullCheck(L_32);
+			AndroidJavaObject_Call_mDEF7846E2AB1C5379069BB21049ED55A9D837B1C(L_32, _stringLiteral32B1B5BC31D44B18AA1644A3D65D62E49574C1C9, L_45, NULL);
+			// }
+			goto IL_00ca;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_00ac;
+		}
+		throw e;
+	}
+
+CATCH_00ac:
+	{// begin catch(System.Exception)
+		// catch (Exception e)
+		V_4 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		// BhapticsLogger.LogError("submitPath() : {0}", e.Message);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_49 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var)), (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_50 = L_49;
+		Exception_t* L_51 = V_4;
+		NullCheck(L_51);
+		String_t* L_52;
+		L_52 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_51);
+		NullCheck(L_50);
+		ArrayElementTypeCheck (L_50, L_52);
+		(L_50)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_52);
+		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&BhapticsLogger_t3A2740F5DBA63ECA7B30DD351ADE5D030CE0C645_il2cpp_TypeInfo_var)));
+		BhapticsLogger_LogError_m3CDDC648847F1E3DB8695FB80FEC30430BAF701E(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral5C5762698C6D3C8DECF127042026A9EE1CF8A258)), L_50, NULL);
+		// }
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_00ca;
+	}// end catch (depth: 1)
+
+IL_00ca:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::SubmitRegistered(System.String,System.String,Bhaptics.Tact.ScaleOption)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_SubmitRegistered_mC30B83C7E103F7E745A41DEB84DFAA8FD3C7D9AD (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_key, String_t* ___1_altKey, ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* ___2_option, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// SubmitRegistered(key, altKey, DefaultRotationOption, option);
+		String_t* L_0 = ___0_key;
+		String_t* L_1 = ___1_altKey;
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* L_2 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___DefaultRotationOption_6;
+		ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* L_3 = ___2_option;
+		AndroidHaptic_SubmitRegistered_m7BB2E3A47D4A4306B7C7A41AACF938BC7B9C33EB(__this, L_0, L_1, L_2, L_3, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::SubmitRegistered(System.String,System.String,Bhaptics.Tact.RotationOption,Bhaptics.Tact.ScaleOption)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_SubmitRegistered_m7BB2E3A47D4A4306B7C7A41AACF938BC7B9C33EB (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_key, String_t* ___1_altKey, RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* ___2_rOption, ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* ___3_sOption, const RuntimeMethod* method) 
+{
+	{
+		// SubmitRequest(key, altKey, sOption.Intensity, sOption.Duration, rOption.OffsetAngleX, rOption.OffsetY);
+		String_t* L_0 = ___0_key;
+		String_t* L_1 = ___1_altKey;
+		ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* L_2 = ___3_sOption;
+		NullCheck(L_2);
+		float L_3;
+		L_3 = ScaleOption_get_Intensity_mE8C2586F37BE648417F6C735CCCF5B3D75AC4559_inline(L_2, NULL);
+		ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* L_4 = ___3_sOption;
+		NullCheck(L_4);
+		float L_5;
+		L_5 = ScaleOption_get_Duration_m60FA7C23E16DAA58D396627DDA93749ED0ECAA12_inline(L_4, NULL);
+		RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* L_6 = ___2_rOption;
+		NullCheck(L_6);
+		float L_7;
+		L_7 = RotationOption_get_OffsetAngleX_m2502A84A2ABDBB567D9E75C521FE2D11540C5834_inline(L_6, NULL);
+		RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* L_8 = ___2_rOption;
+		NullCheck(L_8);
+		float L_9;
+		L_9 = RotationOption_get_OffsetY_m8CC6564773B11D0765E3D3EC08315356CEFF0184_inline(L_8, NULL);
+		AndroidHaptic_SubmitRequest_m0E1374682508C6E3FADB7070C42B69548849FAC6(__this, L_0, L_1, L_3, L_5, L_7, L_9, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::SubmitRegistered(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_SubmitRegistered_m2BC165EACDE0C9D575882E30A4AF6CA7A43B16D8 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_key, const RuntimeMethod* method) 
+{
+	{
+		// SubmitRequest(key, key, 1, 1, 0, 0);
+		String_t* L_0 = ___0_key;
+		String_t* L_1 = ___0_key;
+		AndroidHaptic_SubmitRequest_m0E1374682508C6E3FADB7070C42B69548849FAC6(__this, L_0, L_1, (1.0f), (1.0f), (0.0f), (0.0f), NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::SubmitRegistered(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_SubmitRegistered_mAA81EA216D972C8F1B0056E1F1D26CAA416C5154 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_key, int32_t ___1_startTimeMillis, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0008:
+	{
+		// CallNativeVoidMethod(SubmitRegisteredWithTimePtr, new object[] {startTimeMillis});
+		intptr_t L_1 = __this->___SubmitRegisteredWithTimePtr_11;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = L_2;
+		int32_t L_4 = ___1_startTimeMillis;
+		int32_t L_5 = L_4;
+		RuntimeObject* L_6 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_5);
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_6);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_6);
+		AndroidHaptic_CallNativeVoidMethod_m70ABE25624420F60DA12C75A880780B9D8C9C476(__this, L_1, L_3, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::TurnOff(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_TurnOff_m17378EE5C879724F7C5EA9D529553BBA9E78EC87 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_key, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB2300EA83FF633A1B69AC0C39454E4CA42EAF493);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* V_0 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		// if (androidJavaObject != null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (!L_0)
+		{
+			goto IL_003e;
+		}
+	}
+	try
+	{// begin try (depth: 1)
+		// androidJavaObject.Call("turnOff",
+		//     key);
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_1 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = L_2;
+		String_t* L_4 = ___0_key;
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_4);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_4);
+		NullCheck(L_1);
+		AndroidJavaObject_Call_mDEF7846E2AB1C5379069BB21049ED55A9D837B1C(L_1, _stringLiteralB2300EA83FF633A1B69AC0C39454E4CA42EAF493, L_3, NULL);
+		// }
+		goto IL_003e;
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_0022;
+		}
+		throw e;
+	}
+
+CATCH_0022:
+	{// begin catch(System.Exception)
+		// catch (Exception e)
+		V_0 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		// BhapticsLogger.LogError("TurnOff() : {0}", e.Message);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var)), (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = L_5;
+		Exception_t* L_7 = V_0;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_7);
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, L_8);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_8);
+		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&BhapticsLogger_t3A2740F5DBA63ECA7B30DD351ADE5D030CE0C645_il2cpp_TypeInfo_var)));
+		BhapticsLogger_LogError_m3CDDC648847F1E3DB8695FB80FEC30430BAF701E(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral838972E650CA3FD4D675F87D16F99140CA031238)), L_6, NULL);
+		// }
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_003e;
+	}// end catch (depth: 1)
+
+IL_003e:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::TurnOff()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_TurnOff_mA9265E45BCDE62555B60DA40069F088E085B865E (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1ED0A90C7B9D3B7DE2E7BA200E806BEB45FC687F);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* V_0 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		// if (androidJavaObject != null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (!L_0)
+		{
+			goto IL_0039;
+		}
+	}
+	try
+	{// begin try (depth: 1)
+		// androidJavaObject.Call("turnOffAll");
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_1 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2;
+		L_2 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_1);
+		AndroidJavaObject_Call_mDEF7846E2AB1C5379069BB21049ED55A9D837B1C(L_1, _stringLiteral1ED0A90C7B9D3B7DE2E7BA200E806BEB45FC687F, L_2, NULL);
+		// }
+		goto IL_0039;
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_001d;
+		}
+		throw e;
+	}
+
+CATCH_001d:
+	{// begin catch(System.Exception)
+		// catch (Exception e)
+		V_0 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+		// BhapticsLogger.LogError("turnOffAll() : {0}", e.Message);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var)), (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = L_3;
+		Exception_t* L_5 = V_0;
+		NullCheck(L_5);
+		String_t* L_6;
+		L_6 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_5);
+		NullCheck(L_4);
+		ArrayElementTypeCheck (L_4, L_6);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_6);
+		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&BhapticsLogger_t3A2740F5DBA63ECA7B30DD351ADE5D030CE0C645_il2cpp_TypeInfo_var)));
+		BhapticsLogger_LogError_m3CDDC648847F1E3DB8695FB80FEC30430BAF701E(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral2C64D2F0E9FD6EBA8D616B686F625B2CC7B6EF9C)), L_4, NULL);
+		// }
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_0039;
+	}// end catch (depth: 1)
+
+IL_0039:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_Dispose_mB083C5ACD7EA12E752584C2CC70241E8A7F265B1 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA8045E997F6A30602D5147099A2B221E2F630869);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (androidJavaObject != null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (!L_0)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		// androidJavaObject.Call("quit");
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_1 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2;
+		L_2 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_1);
+		AndroidJavaObject_Call_mDEF7846E2AB1C5379069BB21049ED55A9D837B1C(L_1, _stringLiteralA8045E997F6A30602D5147099A2B221E2F630869, L_2, NULL);
+		// androidJavaObject = null;
+		((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0 = (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0), (void*)(AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*)NULL);
+	}
+
+IL_0021:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::SubmitRequest(System.String,System.String,System.Single,System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_SubmitRequest_m0E1374682508C6E3FADB7070C42B69548849FAC6 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_key, String_t* ___1_altKey, float ___2_intensity, float ___3_duration, float ___4_offsetAngleX, float ___5_offsetY, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0008:
+	{
+		// SubmitRegisteredParams[0] = key;
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___SubmitRegisteredParams_3;
+		String_t* L_2 = ___0_key;
+		NullCheck(L_1);
+		ArrayElementTypeCheck (L_1, L_2);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_2);
+		// SubmitRegisteredParams[1] = altKey;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___SubmitRegisteredParams_3;
+		String_t* L_4 = ___1_altKey;
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_4);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_4);
+		// SubmitRegisteredParams[2] = intensity;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___SubmitRegisteredParams_3;
+		float L_6 = ___2_intensity;
+		float L_7 = L_6;
+		RuntimeObject* L_8 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_7);
+		NullCheck(L_5);
+		ArrayElementTypeCheck (L_5, L_8);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject*)L_8);
+		// SubmitRegisteredParams[3] = duration;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_9 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___SubmitRegisteredParams_3;
+		float L_10 = ___3_duration;
+		float L_11 = L_10;
+		RuntimeObject* L_12 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_11);
+		NullCheck(L_9);
+		ArrayElementTypeCheck (L_9, L_12);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject*)L_12);
+		// SubmitRegisteredParams[4] = offsetAngleX;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_13 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___SubmitRegisteredParams_3;
+		float L_14 = ___4_offsetAngleX;
+		float L_15 = L_14;
+		RuntimeObject* L_16 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_15);
+		NullCheck(L_13);
+		ArrayElementTypeCheck (L_13, L_16);
+		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(4), (RuntimeObject*)L_16);
+		// SubmitRegisteredParams[5] = offsetY;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_17 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___SubmitRegisteredParams_3;
+		float L_18 = ___5_offsetY;
+		float L_19 = L_18;
+		RuntimeObject* L_20 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_19);
+		NullCheck(L_17);
+		ArrayElementTypeCheck (L_17, L_20);
+		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(5), (RuntimeObject*)L_20);
+		// CallNativeVoidMethod(SubmitRegisteredPtr, SubmitRegisteredParams);
+		intptr_t L_21 = __this->___SubmitRegisteredPtr_10;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_22 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___SubmitRegisteredParams_3;
+		AndroidHaptic_CallNativeVoidMethod_m70ABE25624420F60DA12C75A880780B9D8C9C476(__this, L_21, L_22, NULL);
+		// }
+		return;
+	}
+}
+// System.Int32[] Bhaptics.Tact.Unity.AndroidHaptic::GetCurrentFeedback(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* AndroidHaptic_GetCurrentFeedback_m16D9F861A3479AFA76B890EFFD18292A93432FD8 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, int32_t ___0_pos, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_mA0C075B9F98F168BBD9A6C0C926437671132FB1C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_ConvertAll_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m604AA5FBDA330F676A256966E40970E613C3A703_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Convert_ToInt32_mD8869793A34ED86D38EFDF4BFCDD8D03FBBCCAB6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m10468F6EE34A8E09441845957DCB42E407A1C3BC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PositionType_tD1C4BFED25BC51F45D95DDEC6629B96BB5D18B53_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral45D31A3E5A0FB09EFB727F4AE69681F65421C263);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	bool V_1 = false;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* V_2 = NULL;
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* V_3 = NULL;
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		// return Empty;
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_1 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___Empty_4;
+		return L_1;
+	}
+
+IL_000d:
+	{
+		// lock (syncLock)
+		RuntimeObject* L_2 = __this->___syncLock_7;
+		V_0 = L_2;
+		V_1 = (bool)0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0066:
+			{// begin finally (depth: 1)
+				{
+					bool L_3 = V_1;
+					if (!L_3)
+					{
+						goto IL_006f;
+					}
+				}
+				{
+					RuntimeObject* L_4 = V_0;
+					Monitor_Exit_m05B2CF037E2214B3208198C282490A2A475653FA(L_4, NULL);
+				}
+
+IL_006f:
+				{
+					return;
+				}
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			RuntimeObject* L_5 = V_0;
+			Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_5, (&V_1), NULL);
+			// byte[] result = androidJavaObject.Call<byte[]>("getPositionStatus", pos.ToString());
+			il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+			AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_6 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_7 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+			ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_8 = L_7;
+			Il2CppFakeBox<int32_t> L_9(PositionType_tD1C4BFED25BC51F45D95DDEC6629B96BB5D18B53_il2cpp_TypeInfo_var, (&___0_pos));
+			String_t* L_10;
+			L_10 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_9), NULL);
+			NullCheck(L_8);
+			ArrayElementTypeCheck (L_8, L_10);
+			(L_8)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_10);
+			NullCheck(L_6);
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_11;
+			L_11 = AndroidJavaObject_Call_TisByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_mA0C075B9F98F168BBD9A6C0C926437671132FB1C(L_6, _stringLiteral45D31A3E5A0FB09EFB727F4AE69681F65421C263, L_8, AndroidJavaObject_Call_TisByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_mA0C075B9F98F168BBD9A6C0C926437671132FB1C_RuntimeMethod_var);
+			// int[] res = Array.ConvertAll(result, System.Convert.ToInt32);
+			Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A* L_12 = (Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A*)il2cpp_codegen_object_new(Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A_il2cpp_TypeInfo_var);
+			NullCheck(L_12);
+			Converter_2__ctor_m321A02D2EB18FBD95CE3EFFDA2E875971C6E1DEE(L_12, NULL, (intptr_t)((void*)Convert_ToInt32_mD8869793A34ED86D38EFDF4BFCDD8D03FBBCCAB6_RuntimeMethod_var), NULL);
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_13;
+			L_13 = Array_ConvertAll_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m604AA5FBDA330F676A256966E40970E613C3A703(L_11, L_12, Array_ConvertAll_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m604AA5FBDA330F676A256966E40970E613C3A703_RuntimeMethod_var);
+			V_2 = L_13;
+			// updatedList[pos] = res;
+			Dictionary_2_tAA28B112099476AB6B27CF458644BE15FBA8EE04* L_14 = __this->___updatedList_8;
+			int32_t L_15 = ___0_pos;
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_16 = V_2;
+			NullCheck(L_14);
+			Dictionary_2_set_Item_m10468F6EE34A8E09441845957DCB42E407A1C3BC(L_14, L_15, L_16, Dictionary_2_set_Item_m10468F6EE34A8E09441845957DCB42E407A1C3BC_RuntimeMethod_var);
+			// return res;
+			Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_17 = V_2;
+			V_3 = L_17;
+			goto IL_0070;
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0070:
+	{
+		// }
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_18 = V_3;
+		return L_18;
+	}
+}
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice> Bhaptics.Tact.Unity.AndroidHaptic::GetDevices()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* AndroidHaptic_GetDevices_mF84E3F4064C8EE585CFF28B0E3463F2A74A1B6E2 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisStringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_mDB9546BEEC88451F68DCAD34A4F2E207E1C31E00_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral18E0BE74583C2EDA6F0BB6D9B879168F785D750A);
+		s_Il2CppMethodInitialized = true;
+	}
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* V_0 = NULL;
+	{
+		// string[] result = androidJavaObject.Call<string[]>("getDeviceList");
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1;
+		L_1 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		NullCheck(L_0);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2;
+		L_2 = AndroidJavaObject_Call_TisStringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_mDB9546BEEC88451F68DCAD34A4F2E207E1C31E00(L_0, _stringLiteral18E0BE74583C2EDA6F0BB6D9B879168F785D750A, L_1, AndroidJavaObject_Call_TisStringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_mDB9546BEEC88451F68DCAD34A4F2E207E1C31E00_RuntimeMethod_var);
+		V_0 = L_2;
+		// deviceList = AndroidUtils.ConvertToBhapticsDevices(result);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_3 = V_0;
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_4;
+		L_4 = AndroidUtils_ConvertToBhapticsDevices_m5CF87876108990F8A666A43560E95D134D5A4B15(L_3, NULL);
+		__this->___deviceList_1 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___deviceList_1), (void*)L_4);
+		// return deviceList;
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_5 = __this->___deviceList_1;
+		return L_5;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::TogglePosition(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_TogglePosition_m31E8A9C2AD97CE9BF266D1FC9C07B2059CA8311D (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_address, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral241CB8F68E6A171074F44FED9737EDE5BD45F4ED);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0008:
+	{
+		// if (androidJavaObject != null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_1 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (!L_1)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		// androidJavaObject.Call("togglePosition", address);
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_2 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = L_3;
+		String_t* L_5 = ___0_address;
+		NullCheck(L_4);
+		ArrayElementTypeCheck (L_4, L_5);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_5);
+		NullCheck(L_2);
+		AndroidJavaObject_Call_mDEF7846E2AB1C5379069BB21049ED55A9D837B1C(L_2, _stringLiteral241CB8F68E6A171074F44FED9737EDE5BD45F4ED, L_4, NULL);
+	}
+
+IL_0028:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::PingAll()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_PingAll_m1FB7F40D7C1A4CCA167E470603B032867FE88F65 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0008:
+	{
+		// CallNativeVoidMethod(PingAllPtr, EmptyParams);
+		intptr_t L_1 = __this->___PingAllPtr_15;
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___EmptyParams_5;
+		AndroidHaptic_CallNativeVoidMethod_m70ABE25624420F60DA12C75A880780B9D8C9C476(__this, L_1, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::Ping(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_Ping_m09BC6CC235146355469143020C95FCEDFD305913 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_address, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0008:
+	{
+		// CallNativeVoidMethod(PingPtr, new object[] {address});
+		intptr_t L_1 = __this->___PingPtr_14;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = L_2;
+		String_t* L_4 = ___0_address;
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_4);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_4);
+		AndroidHaptic_CallNativeVoidMethod_m70ABE25624420F60DA12C75A880780B9D8C9C476(__this, L_1, L_3, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::ShowBluetoothSetting()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_ShowBluetoothSetting_mDCD08FC689F36A0FB0F468595EAA03F8199A15F9 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0008:
+	{
+		// CallNativeVoidMethod(ShowBluetoothPtr, new object[] { });
+		intptr_t L_1 = __this->___ShowBluetoothPtr_22;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)0);
+		AndroidHaptic_CallNativeVoidMethod_m70ABE25624420F60DA12C75A880780B9D8C9C476(__this, L_1, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::EnableDevice(System.String,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_EnableDevice_mE4AE10A0DA1048EC1E8CAE0D5E9CE8F6A8FF6699 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, String_t* ___0_address, bool ___1_boo, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t G_B4_0 = 0;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* G_B4_1 = NULL;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* G_B4_2 = NULL;
+	intptr_t G_B4_3;
+	memset((&G_B4_3), 0, sizeof(G_B4_3));
+	AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* G_B4_4 = NULL;
+	int32_t G_B3_0 = 0;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* G_B3_1 = NULL;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* G_B3_2 = NULL;
+	intptr_t G_B3_3;
+	memset((&G_B3_3), 0, sizeof(G_B3_3));
+	AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* G_B3_4 = NULL;
+	int32_t G_B5_0 = 0;
+	int32_t G_B5_1 = 0;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* G_B5_2 = NULL;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* G_B5_3 = NULL;
+	intptr_t G_B5_4;
+	memset((&G_B5_4), 0, sizeof(G_B5_4));
+	AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* G_B5_5 = NULL;
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0008:
+	{
+		// CallNativeVoidMethod(EnableDevicePtr, new object[] { address, boo ? 1 : 0 });
+		intptr_t L_1 = __this->___EnableDevicePtr_24;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)2);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = L_2;
+		String_t* L_4 = ___0_address;
+		NullCheck(L_3);
+		ArrayElementTypeCheck (L_3, L_4);
+		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_4);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5 = L_3;
+		bool L_6 = ___1_boo;
+		G_B3_0 = 1;
+		G_B3_1 = L_5;
+		G_B3_2 = L_5;
+		G_B3_3 = L_1;
+		G_B3_4 = __this;
+		if (L_6)
+		{
+			G_B4_0 = 1;
+			G_B4_1 = L_5;
+			G_B4_2 = L_5;
+			G_B4_3 = L_1;
+			G_B4_4 = __this;
+			goto IL_0021;
+		}
+	}
+	{
+		G_B5_0 = 0;
+		G_B5_1 = G_B3_0;
+		G_B5_2 = G_B3_1;
+		G_B5_3 = G_B3_2;
+		G_B5_4 = G_B3_3;
+		G_B5_5 = G_B3_4;
+		goto IL_0022;
+	}
+
+IL_0021:
+	{
+		G_B5_0 = 1;
+		G_B5_1 = G_B4_0;
+		G_B5_2 = G_B4_1;
+		G_B5_3 = G_B4_2;
+		G_B5_4 = G_B4_3;
+		G_B5_5 = G_B4_4;
+	}
+
+IL_0022:
+	{
+		int32_t L_7 = G_B5_0;
+		RuntimeObject* L_8 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_7);
+		NullCheck(G_B5_2);
+		ArrayElementTypeCheck (G_B5_2, L_8);
+		(G_B5_2)->SetAt(static_cast<il2cpp_array_size_t>(G_B5_1), (RuntimeObject*)L_8);
+		NullCheck(G_B5_5);
+		AndroidHaptic_CallNativeVoidMethod_m70ABE25624420F60DA12C75A880780B9D8C9C476(G_B5_5, G_B5_4, G_B5_3, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::RefreshPairingInfo()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_RefreshPairingInfo_mC003281870C13EBE61AFF9C730730D60994C563A (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0008:
+	{
+		// CallNativeVoidMethod(RefreshPairingInfoPtr, new object[] { });
+		intptr_t L_1 = __this->___RefreshPairingInfoPtr_23;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)0);
+		AndroidHaptic_CallNativeVoidMethod_m70ABE25624420F60DA12C75A880780B9D8C9C476(__this, L_1, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::CallNativeVoidMethod(System.IntPtr,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic_CallNativeVoidMethod_m70ABE25624420F60DA12C75A880780B9D8C9C476 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, intptr_t ___0_methodPtr, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_param, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0008:
+	{
+		// AndroidUtils.CallNativeVoidMethod(AndroidJavaObjectPtr, methodPtr, param);
+		intptr_t L_1 = __this->___AndroidJavaObjectPtr_9;
+		intptr_t L_2 = ___0_methodPtr;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = ___1_param;
+		AndroidUtils_CallNativeVoidMethod_m8173C7919C79F990E20524CC697286F944183593(L_1, L_2, L_3, NULL);
+		// }
+		return;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.AndroidHaptic::CallNativeBoolMethod(System.IntPtr,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidHaptic_CallNativeBoolMethod_mAE8135FDB6AE4D9A8BA81465A0A9AD4DAA073FD4 (AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* __this, intptr_t ___0_methodPtr, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_param, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (androidJavaObject == null)
+		il2cpp_codegen_runtime_class_init_inline(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___androidJavaObject_0;
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		// return false;
+		return (bool)0;
+	}
+
+IL_0009:
+	{
+		// return AndroidUtils.CallNativeBoolMethod(AndroidJavaObjectPtr, methodPtr, param);
+		intptr_t L_1 = __this->___AndroidJavaObjectPtr_9;
+		intptr_t L_2 = ___0_methodPtr;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3 = ___1_param;
+		bool L_4;
+		L_4 = AndroidUtils_CallNativeBoolMethod_m558252FF8D4E0B0234DCDE8D35FBD4A160126F5E(L_1, L_2, L_3, NULL);
+		return L_4;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidHaptic::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidHaptic__cctor_m865F0F09E069F1423F1BE45462FA3405F67D8C09 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// private static readonly object[] SubmitRegisteredParams = new object[6];
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_0 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)6);
+		((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___SubmitRegisteredParams_3 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___SubmitRegisteredParams_3), (void*)L_0);
+		// private static readonly int[] Empty = new int[20];
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_1 = (Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, (uint32_t)((int32_t)20));
+		((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___Empty_4 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___Empty_4), (void*)L_1);
+		// private static readonly object[] EmptyParams = new object[0];
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)0);
+		((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___EmptyParams_5 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___EmptyParams_5), (void*)L_2);
+		// private static readonly RotationOption DefaultRotationOption = new RotationOption(0, 0);
+		RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* L_3 = (RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B*)il2cpp_codegen_object_new(RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		RotationOption__ctor_mDD99255B3A8363D09F908335260F164FCB5B3EE7(L_3, (0.0f), (0.0f), NULL);
+		((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___DefaultRotationOption_6 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields*)il2cpp_codegen_static_fields_for(AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var))->___DefaultRotationOption_6), (void*)L_3);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.HapticDevice::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticDevice__ctor_mAAE9D272968DD2A9158286A348120F4B9F205426 (HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Bhaptics.Tact.PositionType Bhaptics.Tact.Unity.AndroidUtils::ToDeviceType(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t AndroidUtils_ToDeviceType_m37C5D428CEF7E7E421A93ABDE24F154603582194 (int32_t ___0_type, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_type;
+		switch (L_0)
+		{
+			case 0:
+			{
+				goto IL_0032;
+			}
+			case 1:
+			{
+				goto IL_0034;
+			}
+			case 2:
+			{
+				goto IL_0037;
+			}
+			case 3:
+			{
+				goto IL_0030;
+			}
+			case 4:
+			{
+				goto IL_003a;
+			}
+			case 5:
+			{
+				goto IL_003c;
+			}
+			case 6:
+			{
+				goto IL_003e;
+			}
+			case 7:
+			{
+				goto IL_0040;
+			}
+			case 8:
+			{
+				goto IL_0043;
+			}
+			case 9:
+			{
+				goto IL_0049;
+			}
+		}
+	}
+	{
+		goto IL_004f;
+	}
+
+IL_0030:
+	{
+		// return PositionType.Head;
+		return (int32_t)(4);
+	}
+
+IL_0032:
+	{
+		// return PositionType.Vest;
+		return (int32_t)(3);
+	}
+
+IL_0034:
+	{
+		// return PositionType.ForearmL;
+		return (int32_t)(((int32_t)10));
+	}
+
+IL_0037:
+	{
+		// return PositionType.ForearmR;
+		return (int32_t)(((int32_t)11));
+	}
+
+IL_003a:
+	{
+		// return PositionType.HandL;
+		return (int32_t)(6);
+	}
+
+IL_003c:
+	{
+		// return PositionType.HandR;
+		return (int32_t)(7);
+	}
+
+IL_003e:
+	{
+		// return PositionType.FootL;
+		return (int32_t)(8);
+	}
+
+IL_0040:
+	{
+		// return PositionType.FootR;
+		return (int32_t)(((int32_t)9));
+	}
+
+IL_0043:
+	{
+		// return PositionType.GloveL;
+		return (int32_t)(((int32_t)203));
+	}
+
+IL_0049:
+	{
+		// return PositionType.GloveR;
+		return (int32_t)(((int32_t)204));
+	}
+
+IL_004f:
+	{
+		// return PositionType.Vest;
+		return (int32_t)(3);
+	}
+}
+// Bhaptics.Tact.PositionType[] Bhaptics.Tact.Unity.AndroidUtils::ToCandidates(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* AndroidUtils_ToCandidates_mF67BD4CD435844A1CA8F60BDB19096C8F515A62B (int32_t ___0_type, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		int32_t L_0 = ___0_type;
+		switch (L_0)
+		{
+			case 0:
+			{
+				goto IL_003e;
+			}
+			case 1:
+			{
+				goto IL_0049;
+			}
+			case 2:
+			{
+				goto IL_005a;
+			}
+			case 3:
+			{
+				goto IL_0033;
+			}
+			case 4:
+			{
+				goto IL_006b;
+			}
+			case 5:
+			{
+				goto IL_007a;
+			}
+			case 6:
+			{
+				goto IL_0089;
+			}
+			case 7:
+			{
+				goto IL_0099;
+			}
+			case 8:
+			{
+				goto IL_00a9;
+			}
+			case 9:
+			{
+				goto IL_00b8;
+			}
+		}
+	}
+	{
+		goto IL_00c7;
+	}
+
+IL_0033:
+	{
+		// return new PositionType[] { PositionType.Head };
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_1 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)1);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_2 = L_1;
+		NullCheck(L_2);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)4);
+		return L_2;
+	}
+
+IL_003e:
+	{
+		// return new PositionType[] { PositionType.Vest };
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_3 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)1);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_4 = L_3;
+		NullCheck(L_4);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)3);
+		return L_4;
+	}
+
+IL_0049:
+	{
+		// return new PositionType[] { PositionType.ForearmL, PositionType.ForearmR };
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_5 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)2);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_6 = L_5;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)10));
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_7 = L_6;
+		NullCheck(L_7);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)11));
+		return L_7;
+	}
+
+IL_005a:
+	{
+		// return new PositionType[] { PositionType.ForearmL, PositionType.ForearmR };
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_8 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)2);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_9 = L_8;
+		NullCheck(L_9);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)10));
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_10 = L_9;
+		NullCheck(L_10);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)11));
+		return L_10;
+	}
+
+IL_006b:
+	{
+		// return new PositionType[] { PositionType.HandL, PositionType.HandR };
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_11 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)2);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_12 = L_11;
+		NullCheck(L_12);
+		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)6);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_13 = L_12;
+		NullCheck(L_13);
+		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)7);
+		return L_13;
+	}
+
+IL_007a:
+	{
+		// return new PositionType[] { PositionType.HandL, PositionType.HandR };
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_14 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)2);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_15 = L_14;
+		NullCheck(L_15);
+		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)6);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_16 = L_15;
+		NullCheck(L_16);
+		(L_16)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)7);
+		return L_16;
+	}
+
+IL_0089:
+	{
+		// return new PositionType[] { PositionType.FootR, PositionType.FootL };
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_17 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)2);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_18 = L_17;
+		NullCheck(L_18);
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)9));
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_19 = L_18;
+		NullCheck(L_19);
+		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)8);
+		return L_19;
+	}
+
+IL_0099:
+	{
+		// return new PositionType[] { PositionType.FootR, PositionType.FootL };
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_20 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)2);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_21 = L_20;
+		NullCheck(L_21);
+		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)9));
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_22 = L_21;
+		NullCheck(L_22);
+		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)8);
+		return L_22;
+	}
+
+IL_00a9:
+	{
+		// return new PositionType[] { PositionType.GloveL};
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_23 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)1);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_24 = L_23;
+		NullCheck(L_24);
+		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)203));
+		return L_24;
+	}
+
+IL_00b8:
+	{
+		// return new PositionType[] { PositionType.GloveL};
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_25 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)1);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_26 = L_25;
+		NullCheck(L_26);
+		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)203));
+		return L_26;
+	}
+
+IL_00c7:
+	{
+		// return new PositionType[0];
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_27 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)0);
+		return L_27;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.AndroidUtils::IsLeft(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidUtils_IsLeft_mFDF16B67864EEC0E92DD16AB863DDD8FB3A1F202 (int32_t ___0_pos, const RuntimeMethod* method) 
+{
+	{
+		// return pos == PositionType.ForearmL
+		//        || pos == PositionType.FootL
+		//        || pos == PositionType.HandL;
+		int32_t L_0 = ___0_pos;
+		if ((((int32_t)L_0) == ((int32_t)((int32_t)10))))
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		int32_t L_1 = ___0_pos;
+		if ((((int32_t)L_1) == ((int32_t)8)))
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		int32_t L_2 = ___0_pos;
+		return (bool)((((int32_t)L_2) == ((int32_t)6))? 1 : 0);
+	}
+
+IL_000e:
+	{
+		return (bool)1;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.AndroidUtils::CanChangePosition(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidUtils_CanChangePosition_m19CD746A3405C260FBF2EF5AB859F8F38639B03A (int32_t ___0_pos, const RuntimeMethod* method) 
+{
+	{
+		// return !(pos == PositionType.Head || pos == PositionType.Vest);
+		int32_t L_0 = ___0_pos;
+		if ((((int32_t)L_0) == ((int32_t)4)))
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		int32_t L_1 = ___0_pos;
+		return (bool)((((int32_t)((((int32_t)L_1) == ((int32_t)3))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+	}
+
+IL_000c:
+	{
+		return (bool)0;
+	}
+}
+// Bhaptics.Tact.Unity.HapticDevice Bhaptics.Tact.Unity.AndroidUtils::Convert(Bhaptics.Tact.Unity.AndroidUtils/Device)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* AndroidUtils_Convert_m564A40220106F1FA2CCD2D9168AFD2796D233067 (Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* ___0_d, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		// var isConnected = d.connected;
+		Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* L_0 = ___0_d;
+		NullCheck(L_0);
+		bool L_1 = L_0->___connected_3;
+		V_0 = L_1;
+		// return new HapticDevice()
+		// {
+		//     IsPaired = d.paired,
+		//     IsConnected = isConnected,
+		//     Address = d.address,
+		//     Position = ToDeviceType(d.position),
+		//     DeviceName = d.deviceName,
+		//     Candidates = ToCandidates(d.position),
+		//     Battery = d.battery,
+		//     IsAudioJack = d.audioJackIn,
+		//     IsEnable = d.enable
+		// };
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_2 = (HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029*)il2cpp_codegen_object_new(HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		HapticDevice__ctor_mAAE9D272968DD2A9158286A348120F4B9F205426(L_2, NULL);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_3 = L_2;
+		Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* L_4 = ___0_d;
+		NullCheck(L_4);
+		bool L_5 = L_4->___paired_0;
+		NullCheck(L_3);
+		L_3->___IsPaired_0 = L_5;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_6 = L_3;
+		bool L_7 = V_0;
+		NullCheck(L_6);
+		L_6->___IsConnected_1 = L_7;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_8 = L_6;
+		Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* L_9 = ___0_d;
+		NullCheck(L_9);
+		String_t* L_10 = L_9->___address_4;
+		NullCheck(L_8);
+		L_8->___Address_4 = L_10;
+		Il2CppCodeGenWriteBarrier((void**)(&L_8->___Address_4), (void*)L_10);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_11 = L_8;
+		Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* L_12 = ___0_d;
+		NullCheck(L_12);
+		int32_t L_13 = L_12->___position_2;
+		int32_t L_14;
+		L_14 = AndroidUtils_ToDeviceType_m37C5D428CEF7E7E421A93ABDE24F154603582194(L_13, NULL);
+		NullCheck(L_11);
+		L_11->___Position_3 = L_14;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_15 = L_11;
+		Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* L_16 = ___0_d;
+		NullCheck(L_16);
+		String_t* L_17 = L_16->___deviceName_1;
+		NullCheck(L_15);
+		L_15->___DeviceName_2 = L_17;
+		Il2CppCodeGenWriteBarrier((void**)(&L_15->___DeviceName_2), (void*)L_17);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_18 = L_15;
+		Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* L_19 = ___0_d;
+		NullCheck(L_19);
+		int32_t L_20 = L_19->___position_2;
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_21;
+		L_21 = AndroidUtils_ToCandidates_mF67BD4CD435844A1CA8F60BDB19096C8F515A62B(L_20, NULL);
+		NullCheck(L_18);
+		L_18->___Candidates_5 = L_21;
+		Il2CppCodeGenWriteBarrier((void**)(&L_18->___Candidates_5), (void*)L_21);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_22 = L_18;
+		Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* L_23 = ___0_d;
+		NullCheck(L_23);
+		int32_t L_24 = L_23->___battery_5;
+		NullCheck(L_22);
+		L_22->___Battery_8 = L_24;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_25 = L_22;
+		Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* L_26 = ___0_d;
+		NullCheck(L_26);
+		bool L_27 = L_26->___audioJackIn_7;
+		NullCheck(L_25);
+		L_25->___IsAudioJack_7 = L_27;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_28 = L_25;
+		Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* L_29 = ___0_d;
+		NullCheck(L_29);
+		bool L_30 = L_29->___enable_6;
+		NullCheck(L_28);
+		L_28->___IsEnable_6 = L_30;
+		return L_28;
+	}
+}
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice> Bhaptics.Tact.Unity.AndroidUtils::ConvertToBhapticsDevices(System.String[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* AndroidUtils_ConvertToBhapticsDevices_m5CF87876108990F8A666A43560E95D134D5A4B15 (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___0_deviceJson, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonUtility_FromJson_TisDevice_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F_m25AA6438982B9C944F4C51C553E348E406950EC9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mC2DF5232ABF0B0204C6270D8ADA13950F86EC7C5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* V_0 = NULL;
+	int32_t V_1 = 0;
+	Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* V_2 = NULL;
+	{
+		// var res = new List<HapticDevice>();
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_0 = (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21*)il2cpp_codegen_object_new(List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1(L_0, List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1_RuntimeMethod_var);
+		V_0 = L_0;
+		// for (var i = 0; i < deviceJson.Length; i++)
+		V_1 = 0;
+		goto IL_0023;
+	}
+
+IL_000a:
+	{
+		// var device = JsonUtility.FromJson<Device>(deviceJson[i]);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = ___0_deviceJson;
+		int32_t L_2 = V_1;
+		NullCheck(L_1);
+		int32_t L_3 = L_2;
+		String_t* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
+		Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* L_5;
+		L_5 = JsonUtility_FromJson_TisDevice_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F_m25AA6438982B9C944F4C51C553E348E406950EC9(L_4, JsonUtility_FromJson_TisDevice_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F_m25AA6438982B9C944F4C51C553E348E406950EC9_RuntimeMethod_var);
+		V_2 = L_5;
+		// res.Add(Convert(device));
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_6 = V_0;
+		Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* L_7 = V_2;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_8;
+		L_8 = AndroidUtils_Convert_m564A40220106F1FA2CCD2D9168AFD2796D233067(L_7, NULL);
+		NullCheck(L_6);
+		List_1_Add_mC2DF5232ABF0B0204C6270D8ADA13950F86EC7C5_inline(L_6, L_8, List_1_Add_mC2DF5232ABF0B0204C6270D8ADA13950F86EC7C5_RuntimeMethod_var);
+		// for (var i = 0; i < deviceJson.Length; i++)
+		int32_t L_9 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_9, 1));
+	}
+
+IL_0023:
+	{
+		// for (var i = 0; i < deviceJson.Length; i++)
+		int32_t L_10 = V_1;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_11 = ___0_deviceJson;
+		NullCheck(L_11);
+		if ((((int32_t)L_10) < ((int32_t)((int32_t)(((RuntimeArray*)L_11)->max_length)))))
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		// return res;
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_12 = V_0;
+		return L_12;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidUtils::CallNativeVoidMethod(System.IntPtr,System.IntPtr,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidUtils_CallNativeVoidMethod_m8173C7919C79F990E20524CC697286F944183593 (intptr_t ___0_androidObjPtr, intptr_t ___1_methodPtr, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___2_param, const RuntimeMethod* method) 
+{
+	jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F* V_0 = NULL;
+	Exception_t* V_1 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		// jvalue[] args = AndroidJNIHelper.CreateJNIArgArray(param);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_0 = ___2_param;
+		jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F* L_1;
+		L_1 = AndroidJNIHelper_CreateJNIArgArray_mC12C279EEB43D740F42C5E90301DC54F6E04B876(L_0, NULL);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_002d:
+			{// begin finally (depth: 1)
+				// AndroidJNIHelper.DeleteJNIArgArray(param, args);
+				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = ___2_param;
+				jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F* L_3 = V_0;
+				AndroidJNIHelper_DeleteJNIArgArray_mBDC874B32FF09E6B48E18B2A58794C0A4DE2FA23(L_2, L_3, NULL);
+				// }
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			try
+			{// begin try (depth: 2)
+				// AndroidJNI.CallVoidMethod(androidObjPtr, methodPtr, args);
+				intptr_t L_4 = ___0_androidObjPtr;
+				intptr_t L_5 = ___1_methodPtr;
+				jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F* L_6 = V_0;
+				AndroidJNI_CallVoidMethod_mFCFF6A5FF4A51305C3D2DBFB3A0699617EF40D48(L_4, L_5, L_6, NULL);
+				// }
+				goto IL_0035;
+			}// end try (depth: 2)
+			catch(Il2CppExceptionWrapper& e)
+			{
+				if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto CATCH_0011_1;
+				}
+				throw e;
+			}
+
+CATCH_0011_1:
+			{// begin catch(System.Exception)
+				// catch (Exception e)
+				V_1 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+				// BhapticsLogger.LogError("CallNativeVoidMethod() : {0}", e.Message);
+				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_7 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var)), (uint32_t)1);
+				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_8 = L_7;
+				Exception_t* L_9 = V_1;
+				NullCheck(L_9);
+				String_t* L_10;
+				L_10 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_9);
+				NullCheck(L_8);
+				ArrayElementTypeCheck (L_8, L_10);
+				(L_8)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_10);
+				il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&BhapticsLogger_t3A2740F5DBA63ECA7B30DD351ADE5D030CE0C645_il2cpp_TypeInfo_var)));
+				BhapticsLogger_LogError_m3CDDC648847F1E3DB8695FB80FEC30430BAF701E(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral13A4747C63089446596A49FB9959B98B26D7F1E7)), L_8, NULL);
+				// }
+				IL2CPP_POP_ACTIVE_EXCEPTION();
+				goto IL_0035;
+			}// end catch (depth: 2)
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0035:
+	{
+		// }
+		return;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.AndroidUtils::CallNativeBoolMethod(System.IntPtr,System.IntPtr,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidUtils_CallNativeBoolMethod_m558252FF8D4E0B0234DCDE8D35FBD4A160126F5E (intptr_t ___0_androidObjPtr, intptr_t ___1_methodPtr, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___2_param, const RuntimeMethod* method) 
+{
+	jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F* V_0 = NULL;
+	bool V_1 = false;
+	Exception_t* V_2 = NULL;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		// jvalue[] args = AndroidJNIHelper.CreateJNIArgArray(param);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_0 = ___2_param;
+		jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F* L_1;
+		L_1 = AndroidJNIHelper_CreateJNIArgArray_mC12C279EEB43D740F42C5E90301DC54F6E04B876(L_0, NULL);
+		V_0 = L_1;
+		// bool res = false;
+		V_1 = (bool)0;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0030:
+			{// begin finally (depth: 1)
+				// AndroidJNIHelper.DeleteJNIArgArray(param, args);
+				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = ___2_param;
+				jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F* L_3 = V_0;
+				AndroidJNIHelper_DeleteJNIArgArray_mBDC874B32FF09E6B48E18B2A58794C0A4DE2FA23(L_2, L_3, NULL);
+				// }
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			try
+			{// begin try (depth: 2)
+				// res = AndroidJNI.CallBooleanMethod(androidObjPtr, methodPtr, args);
+				intptr_t L_4 = ___0_androidObjPtr;
+				intptr_t L_5 = ___1_methodPtr;
+				jvalueU5BU5D_t2232DC04C2D2643358141038962889D92D3B5E6F* L_6 = V_0;
+				bool L_7;
+				L_7 = AndroidJNI_CallBooleanMethod_m78FC31B29854285F1164C75974AB463FE5716F84(L_4, L_5, L_6, NULL);
+				V_1 = L_7;
+				// }
+				goto IL_0038;
+			}// end try (depth: 2)
+			catch(Il2CppExceptionWrapper& e)
+			{
+				if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+				{
+					IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+					goto CATCH_0014_1;
+				}
+				throw e;
+			}
+
+CATCH_0014_1:
+			{// begin catch(System.Exception)
+				// catch (Exception e)
+				V_2 = ((Exception_t*)IL2CPP_GET_ACTIVE_EXCEPTION(Exception_t*));
+				// BhapticsLogger.LogError("CallNativeBoolMethod() : {0}", e.Message);
+				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_8 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var)), (uint32_t)1);
+				ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_9 = L_8;
+				Exception_t* L_10 = V_2;
+				NullCheck(L_10);
+				String_t* L_11;
+				L_11 = VirtualFuncInvoker0< String_t* >::Invoke(5 /* System.String System.Exception::get_Message() */, L_10);
+				NullCheck(L_9);
+				ArrayElementTypeCheck (L_9, L_11);
+				(L_9)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_11);
+				il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&BhapticsLogger_t3A2740F5DBA63ECA7B30DD351ADE5D030CE0C645_il2cpp_TypeInfo_var)));
+				BhapticsLogger_LogError_m3CDDC648847F1E3DB8695FB80FEC30430BAF701E(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralDB09044921B59E41E8633E1318451E988AFE2BDD)), L_9, NULL);
+				// }
+				IL2CPP_POP_ACTIVE_EXCEPTION();
+				goto IL_0038;
+			}// end catch (depth: 2)
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0038:
+	{
+		// return res;
+		bool L_12 = V_1;
+		return L_12;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.AndroidUtils/Device::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Device__ctor_m1246B4A547E0599AF18F08BAF1CBEF2782EE7188 (Device_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.AndroidUtils/StreamHost::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamHost__ctor_m5222C56A5265C710B160F9D358336B60111D4377 (StreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_ControlButton::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_ControlButton_Awake_m68CA5FFC65568E777CCC504539CE41AEE5696C47 (AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidWidget_ControlButton_OnClickDevice_m6C93174B1EBF75CA13A72AEBF371CA2E18ED568B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mFF8BA4CA5D7158D1D6249559A3289E7A6DF0A2BB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// button = GetComponent<Button>();
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0;
+		L_0 = Component_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mFF8BA4CA5D7158D1D6249559A3289E7A6DF0A2BB(__this, Component_GetComponent_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_mFF8BA4CA5D7158D1D6249559A3289E7A6DF0A2BB_RuntimeMethod_var);
+		__this->___button_10 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___button_10), (void*)L_0);
+		// button.onClick.AddListener(OnClickDevice);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_1 = __this->___button_10;
+		NullCheck(L_1);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_2;
+		L_2 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_1, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_3 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_3, __this, (intptr_t)((void*)AndroidWidget_ControlButton_OnClickDevice_m6C93174B1EBF75CA13A72AEBF371CA2E18ED568B_RuntimeMethod_var), NULL);
+		NullCheck(L_2);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_2, L_3, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_ControlButton::Refresh()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_ControlButton_Refresh_m7AF22716BB9A849EA9C88752C49DF0BC996CE24E (AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsLogger_t3A2740F5DBA63ECA7B30DD351ADE5D030CE0C645_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PositionType_tD1C4BFED25BC51F45D95DDEC6629B96BB5D18B53_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral598F6BDC1DE4AF4534F357D9B662B61D7B78EAFC);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9A04AD09CED8218F534F56ED2DC908890C2490A7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA1803F65AD973EE8D06624989A0CFFA68EBBC242);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE70CB4024B22F0B327478FD74DC02C05EF38A443);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* V_0 = NULL;
+	SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	int32_t V_5 = 0;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* G_B14_0 = NULL;
+	String_t* G_B14_1 = NULL;
+	String_t* G_B14_2 = NULL;
+	String_t* G_B14_3 = NULL;
+	int32_t G_B14_4 = 0;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* G_B14_5 = NULL;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* G_B14_6 = NULL;
+	String_t* G_B14_7 = NULL;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* G_B13_0 = NULL;
+	String_t* G_B13_1 = NULL;
+	String_t* G_B13_2 = NULL;
+	String_t* G_B13_3 = NULL;
+	int32_t G_B13_4 = 0;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* G_B13_5 = NULL;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* G_B13_6 = NULL;
+	String_t* G_B13_7 = NULL;
+	String_t* G_B15_0 = NULL;
+	String_t* G_B15_1 = NULL;
+	String_t* G_B15_2 = NULL;
+	String_t* G_B15_3 = NULL;
+	int32_t G_B15_4 = 0;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* G_B15_5 = NULL;
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* G_B15_6 = NULL;
+	String_t* G_B15_7 = NULL;
+	{
+		// if (button == null)
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = __this->___button_10;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		// Debug.LogFormat("not ready.");
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2;
+		L_2 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogFormat_mD555556327B42AA3482D077EFAEB16B0AFDF72C7(_stringLiteral9A04AD09CED8218F534F56ED2DC908890C2490A7, L_2, NULL);
+		// return;
+		return;
+	}
+
+IL_001e:
+	{
+		// BhapticsLogger.LogDebug("Refresh()");
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_3;
+		L_3 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(BhapticsLogger_t3A2740F5DBA63ECA7B30DD351ADE5D030CE0C645_il2cpp_TypeInfo_var);
+		BhapticsLogger_LogDebug_m093D44ACACD234A93650107B06766A504677D172(_stringLiteralE70CB4024B22F0B327478FD74DC02C05EF38A443, L_3, NULL);
+		// var connectedDevices = BhapticsAndroidManager.GetConnectedDevices(DeviceType);
+		int32_t L_4 = __this->___DeviceType_4;
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_5;
+		L_5 = BhapticsAndroidManager_GetConnectedDevices_mC6FBA187E1CB7DDD8776572A85455DCDD92127FF(L_4, NULL);
+		V_0 = L_5;
+		// if (connectedDevices.Count > 0)
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_6 = V_0;
+		NullCheck(L_6);
+		int32_t L_7;
+		L_7 = List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_inline(L_6, List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_RuntimeMethod_var);
+		if ((((int32_t)L_7) <= ((int32_t)0)))
+		{
+			goto IL_0105;
+		}
+	}
+	{
+		// button.image.sprite = pairImage;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_8 = __this->___button_10;
+		NullCheck(L_8);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_9;
+		L_9 = Selectable_get_image_m88664022F6BC90E7B8D4BFCBA7FE24B48E90C639(L_8, NULL);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_10 = __this->___pairImage_6;
+		NullCheck(L_9);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_9, L_10, NULL);
+		// var spriteState = button.spriteState;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_11 = __this->___button_10;
+		NullCheck(L_11);
+		SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD L_12;
+		L_12 = Selectable_get_spriteState_m7388F8F08AB8A03CB56516A7C9713733A737629A_inline(L_11, NULL);
+		V_1 = L_12;
+		// spriteState.highlightedSprite = pairHoverImage;
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_13 = __this->___pairHoverImage_8;
+		SpriteState_set_highlightedSprite_mEECDB7C62DE0C6A0B2A7D5D7ADF54EB8CDDB20B0_inline((&V_1), L_13, NULL);
+		// button.spriteState = spriteState;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_14 = __this->___button_10;
+		SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD L_15 = V_1;
+		NullCheck(L_14);
+		Selectable_set_spriteState_mE0E2CDA8757045FE0D35BC4D9E827857F64E19ED(L_14, L_15, NULL);
+		// for (int i = 0; i < pairDeviceCount.childCount; i++)
+		V_2 = 0;
+		goto IL_00b7;
+	}
+
+IL_0084:
+	{
+		// if (!pairDeviceCount.GetChild(i).gameObject.activeSelf)
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16 = __this->___pairDeviceCount_9;
+		int32_t L_17 = V_2;
+		NullCheck(L_16);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
+		L_18 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_16, L_17, NULL);
+		NullCheck(L_18);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19;
+		L_19 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_18, NULL);
+		NullCheck(L_19);
+		bool L_20;
+		L_20 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_19, NULL);
+		if (!L_20)
+		{
+			goto IL_00c5;
+		}
+	}
+	{
+		// pairDeviceCount.GetChild(i).gameObject.SetActive(false);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_21 = __this->___pairDeviceCount_9;
+		int32_t L_22 = V_2;
+		NullCheck(L_21);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_23;
+		L_23 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_21, L_22, NULL);
+		NullCheck(L_23);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24;
+		L_24 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_23, NULL);
+		NullCheck(L_24);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_24, (bool)0, NULL);
+		// for (int i = 0; i < pairDeviceCount.childCount; i++)
+		int32_t L_25 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_25, 1));
+	}
+
+IL_00b7:
+	{
+		// for (int i = 0; i < pairDeviceCount.childCount; i++)
+		int32_t L_26 = V_2;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_27 = __this->___pairDeviceCount_9;
+		NullCheck(L_27);
+		int32_t L_28;
+		L_28 = Transform_get_childCount_mE9C29C702AB662CC540CA053EDE48BDAFA35B4B0(L_27, NULL);
+		if ((((int32_t)L_26) < ((int32_t)L_28)))
+		{
+			goto IL_0084;
+		}
+	}
+
+IL_00c5:
+	{
+		// for (int i = 0; i < connectedDevices.Count; i++)
+		V_3 = 0;
+		goto IL_00fb;
+	}
+
+IL_00c9:
+	{
+		// if (pairDeviceCount.GetChild(i) != null)
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_29 = __this->___pairDeviceCount_9;
+		int32_t L_30 = V_3;
+		NullCheck(L_29);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31;
+		L_31 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_29, L_30, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_32;
+		L_32 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_31, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_32)
+		{
+			goto IL_01b9;
+		}
+	}
+	{
+		// pairDeviceCount.GetChild(i).gameObject.SetActive(true);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_33 = __this->___pairDeviceCount_9;
+		int32_t L_34 = V_3;
+		NullCheck(L_33);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35;
+		L_35 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_33, L_34, NULL);
+		NullCheck(L_35);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36;
+		L_36 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_35, NULL);
+		NullCheck(L_36);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_36, (bool)1, NULL);
+		// for (int i = 0; i < connectedDevices.Count; i++)
+		int32_t L_37 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_37, 1));
+	}
+
+IL_00fb:
+	{
+		// for (int i = 0; i < connectedDevices.Count; i++)
+		int32_t L_38 = V_3;
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_39 = V_0;
+		NullCheck(L_39);
+		int32_t L_40;
+		L_40 = List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_inline(L_39, List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_RuntimeMethod_var);
+		if ((((int32_t)L_38) < ((int32_t)L_40)))
+		{
+			goto IL_00c9;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0105:
+	{
+		// BhapticsLogger.LogDebug("button + ", " + defaultImage " + DeviceType + ", " + button);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_41 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_42 = L_41;
+		int32_t* L_43 = (&__this->___DeviceType_4);
+		Il2CppFakeBox<int32_t> L_44(PositionType_tD1C4BFED25BC51F45D95DDEC6629B96BB5D18B53_il2cpp_TypeInfo_var, L_43);
+		String_t* L_45;
+		L_45 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_44), NULL);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_46 = __this->___button_10;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_47 = L_46;
+		G_B13_0 = L_47;
+		G_B13_1 = _stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D;
+		G_B13_2 = L_45;
+		G_B13_3 = _stringLiteralA1803F65AD973EE8D06624989A0CFFA68EBBC242;
+		G_B13_4 = 0;
+		G_B13_5 = L_42;
+		G_B13_6 = L_42;
+		G_B13_7 = _stringLiteral598F6BDC1DE4AF4534F357D9B662B61D7B78EAFC;
+		if (L_47)
+		{
+			G_B14_0 = L_47;
+			G_B14_1 = _stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D;
+			G_B14_2 = L_45;
+			G_B14_3 = _stringLiteralA1803F65AD973EE8D06624989A0CFFA68EBBC242;
+			G_B14_4 = 0;
+			G_B14_5 = L_42;
+			G_B14_6 = L_42;
+			G_B14_7 = _stringLiteral598F6BDC1DE4AF4534F357D9B662B61D7B78EAFC;
+			goto IL_013a;
+		}
+	}
+	{
+		G_B15_0 = ((String_t*)(NULL));
+		G_B15_1 = G_B13_1;
+		G_B15_2 = G_B13_2;
+		G_B15_3 = G_B13_3;
+		G_B15_4 = G_B13_4;
+		G_B15_5 = G_B13_5;
+		G_B15_6 = G_B13_6;
+		G_B15_7 = G_B13_7;
+		goto IL_013f;
+	}
+
+IL_013a:
+	{
+		NullCheck(G_B14_0);
+		String_t* L_48;
+		L_48 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, G_B14_0);
+		G_B15_0 = L_48;
+		G_B15_1 = G_B14_1;
+		G_B15_2 = G_B14_2;
+		G_B15_3 = G_B14_3;
+		G_B15_4 = G_B14_4;
+		G_B15_5 = G_B14_5;
+		G_B15_6 = G_B14_6;
+		G_B15_7 = G_B14_7;
+	}
+
+IL_013f:
+	{
+		String_t* L_49;
+		L_49 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(G_B15_3, G_B15_2, G_B15_1, G_B15_0, NULL);
+		NullCheck(G_B15_5);
+		ArrayElementTypeCheck (G_B15_5, L_49);
+		(G_B15_5)->SetAt(static_cast<il2cpp_array_size_t>(G_B15_4), (RuntimeObject*)L_49);
+		il2cpp_codegen_runtime_class_init_inline(BhapticsLogger_t3A2740F5DBA63ECA7B30DD351ADE5D030CE0C645_il2cpp_TypeInfo_var);
+		BhapticsLogger_LogDebug_m093D44ACACD234A93650107B06766A504677D172(G_B15_7, G_B15_6, NULL);
+		// button.image.sprite = defaultImage;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_50 = __this->___button_10;
+		NullCheck(L_50);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_51;
+		L_51 = Selectable_get_image_m88664022F6BC90E7B8D4BFCBA7FE24B48E90C639(L_50, NULL);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_52 = __this->___defaultImage_5;
+		NullCheck(L_51);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_51, L_52, NULL);
+		// var spriteState = button.spriteState;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_53 = __this->___button_10;
+		NullCheck(L_53);
+		SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD L_54;
+		L_54 = Selectable_get_spriteState_m7388F8F08AB8A03CB56516A7C9713733A737629A_inline(L_53, NULL);
+		V_4 = L_54;
+		// spriteState.highlightedSprite = defaultHoverImage;
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_55 = __this->___defaultHoverImage_7;
+		SpriteState_set_highlightedSprite_mEECDB7C62DE0C6A0B2A7D5D7ADF54EB8CDDB20B0_inline((&V_4), L_55, NULL);
+		// button.spriteState = spriteState;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_56 = __this->___button_10;
+		SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD L_57 = V_4;
+		NullCheck(L_56);
+		Selectable_set_spriteState_mE0E2CDA8757045FE0D35BC4D9E827857F64E19ED(L_56, L_57, NULL);
+		// for (int i = 0; i < pairDeviceCount.childCount; i++)
+		V_5 = 0;
+		goto IL_01aa;
+	}
+
+IL_018c:
+	{
+		// pairDeviceCount.GetChild(i).gameObject.SetActive(false);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_58 = __this->___pairDeviceCount_9;
+		int32_t L_59 = V_5;
+		NullCheck(L_58);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_60;
+		L_60 = Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF(L_58, L_59, NULL);
+		NullCheck(L_60);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_61;
+		L_61 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_60, NULL);
+		NullCheck(L_61);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_61, (bool)0, NULL);
+		// for (int i = 0; i < pairDeviceCount.childCount; i++)
+		int32_t L_62 = V_5;
+		V_5 = ((int32_t)il2cpp_codegen_add(L_62, 1));
+	}
+
+IL_01aa:
+	{
+		// for (int i = 0; i < pairDeviceCount.childCount; i++)
+		int32_t L_63 = V_5;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_64 = __this->___pairDeviceCount_9;
+		NullCheck(L_64);
+		int32_t L_65;
+		L_65 = Transform_get_childCount_mE9C29C702AB662CC540CA053EDE48BDAFA35B4B0(L_64, NULL);
+		if ((((int32_t)L_63) < ((int32_t)L_65)))
+		{
+			goto IL_018c;
+		}
+	}
+
+IL_01b9:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_ControlButton::OnPingDevice()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_ControlButton_OnPingDevice_mF5D833F79FF7F53591E946567E0EB552714B438F (AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// BhapticsAndroidManager.Ping(DeviceType);
+		int32_t L_0 = __this->___DeviceType_4;
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		BhapticsAndroidManager_Ping_mE9A7A6DA840C91665602E9CAC22FD02AB003E5EB(L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_ControlButton::OnClickDevice()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_ControlButton_OnClickDevice_m6C93174B1EBF75CA13A72AEBF371CA2E18ED568B (AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// var connectedDevices = BhapticsAndroidManager.GetConnectedDevices(DeviceType);
+		int32_t L_0 = __this->___DeviceType_4;
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_1;
+		L_1 = BhapticsAndroidManager_GetConnectedDevices_mC6FBA187E1CB7DDD8776572A85455DCDD92127FF(L_0, NULL);
+		// if (connectedDevices.Count > 0)
+		NullCheck(L_1);
+		int32_t L_2;
+		L_2 = List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_inline(L_1, List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_RuntimeMethod_var);
+		if ((((int32_t)L_2) <= ((int32_t)0)))
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		// OnPingDevice();
+		AndroidWidget_ControlButton_OnPingDevice_mF5D833F79FF7F53591E946567E0EB552714B438F(__this, NULL);
+	}
+
+IL_0019:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_ControlButton::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_ControlButton__ctor_m316D9B7629B2837543D7FB5E64643799F5D542C5 (AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_ObjectPool::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_ObjectPool_Awake_m205666B5E8137C792E55B7F7A706644783F084BE (AndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m41B83FFA140FAECC46735D613830E944B0C31DD1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m0B7AF9FD4A9CF0CDDB278C3862B1B266A4D9FEF2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m958095FD9590D93606AE823DA4A459A0E172E2EF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t4BB714C32C63320E15F9BE811510151332419557_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisAndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2_mEAA2DBC2455BF4D6097DEE0E122F70E5B730A0A6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// pairedUIList = new List<AndroidWidget_PairedDeviceUI>();
+		List_1_t4BB714C32C63320E15F9BE811510151332419557* L_0 = (List_1_t4BB714C32C63320E15F9BE811510151332419557*)il2cpp_codegen_object_new(List_1_t4BB714C32C63320E15F9BE811510151332419557_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		List_1__ctor_m0B7AF9FD4A9CF0CDDB278C3862B1B266A4D9FEF2(L_0, List_1__ctor_m0B7AF9FD4A9CF0CDDB278C3862B1B266A4D9FEF2_RuntimeMethod_var);
+		__this->___pairedUIList_7 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___pairedUIList_7), (void*)L_0);
+		// for (int i = 0; i < objectCount; i++)
+		V_0 = 0;
+		goto IL_004b;
+	}
+
+IL_000f:
+	{
+		// pairedUIList.Add(Instantiate(pairedDeviceUIGameObject, pariedDeviceScrollrect.content) as AndroidWidget_PairedDeviceUI);
+		List_1_t4BB714C32C63320E15F9BE811510151332419557* L_1 = __this->___pairedUIList_7;
+		AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* L_2 = __this->___pairedDeviceUIGameObject_5;
+		ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* L_3 = __this->___pariedDeviceScrollrect_4;
+		NullCheck(L_3);
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_4;
+		L_4 = ScrollRect_get_content_m7878BCA28A96B7FBA02DC466A1ED2C9E191C6996_inline(L_3, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* L_5;
+		L_5 = Object_Instantiate_TisAndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2_mEAA2DBC2455BF4D6097DEE0E122F70E5B730A0A6(L_2, L_4, Object_Instantiate_TisAndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2_mEAA2DBC2455BF4D6097DEE0E122F70E5B730A0A6_RuntimeMethod_var);
+		NullCheck(L_1);
+		List_1_Add_m41B83FFA140FAECC46735D613830E944B0C31DD1_inline(L_1, L_5, List_1_Add_m41B83FFA140FAECC46735D613830E944B0C31DD1_RuntimeMethod_var);
+		// pairedUIList[i].gameObject.SetActive(false);
+		List_1_t4BB714C32C63320E15F9BE811510151332419557* L_6 = __this->___pairedUIList_7;
+		int32_t L_7 = V_0;
+		NullCheck(L_6);
+		AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* L_8;
+		L_8 = List_1_get_Item_m958095FD9590D93606AE823DA4A459A0E172E2EF(L_6, L_7, List_1_get_Item_m958095FD9590D93606AE823DA4A459A0E172E2EF_RuntimeMethod_var);
+		NullCheck(L_8);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9;
+		L_9 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_8, NULL);
+		NullCheck(L_9);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)0, NULL);
+		// for (int i = 0; i < objectCount; i++)
+		int32_t L_10 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_10, 1));
+	}
+
+IL_004b:
+	{
+		// for (int i = 0; i < objectCount; i++)
+		int32_t L_11 = V_0;
+		int32_t L_12 = __this->___objectCount_6;
+		if ((((int32_t)L_11) < ((int32_t)L_12)))
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI Bhaptics.Tact.Unity.AndroidWidget_ObjectPool::GetPairedDeviceUI()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* AndroidWidget_ObjectPool_GetPairedDeviceUI_m02E6FC22CE3D5F38D9AFC704447D0EF2A44E87F7 (AndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m7E8776B1EB9BBB2344F8E108C1F50CF657F1C2F2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m958095FD9590D93606AE823DA4A459A0E172E2EF_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// for (int i = 0; i < pairedUIList.Count; i++)
+		V_0 = 0;
+		goto IL_002d;
+	}
+
+IL_0004:
+	{
+		// if (pairedUIList[i].gameObject.activeSelf)
+		List_1_t4BB714C32C63320E15F9BE811510151332419557* L_0 = __this->___pairedUIList_7;
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* L_2;
+		L_2 = List_1_get_Item_m958095FD9590D93606AE823DA4A459A0E172E2EF(L_0, L_1, List_1_get_Item_m958095FD9590D93606AE823DA4A459A0E172E2EF_RuntimeMethod_var);
+		NullCheck(L_2);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_2, NULL);
+		NullCheck(L_3);
+		bool L_4;
+		L_4 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_3, NULL);
+		if (L_4)
+		{
+			goto IL_0029;
+		}
+	}
+	{
+		// return pairedUIList[i];
+		List_1_t4BB714C32C63320E15F9BE811510151332419557* L_5 = __this->___pairedUIList_7;
+		int32_t L_6 = V_0;
+		NullCheck(L_5);
+		AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* L_7;
+		L_7 = List_1_get_Item_m958095FD9590D93606AE823DA4A459A0E172E2EF(L_5, L_6, List_1_get_Item_m958095FD9590D93606AE823DA4A459A0E172E2EF_RuntimeMethod_var);
+		return L_7;
+	}
+
+IL_0029:
+	{
+		// for (int i = 0; i < pairedUIList.Count; i++)
+		int32_t L_8 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_8, 1));
+	}
+
+IL_002d:
+	{
+		// for (int i = 0; i < pairedUIList.Count; i++)
+		int32_t L_9 = V_0;
+		List_1_t4BB714C32C63320E15F9BE811510151332419557* L_10 = __this->___pairedUIList_7;
+		NullCheck(L_10);
+		int32_t L_11;
+		L_11 = List_1_get_Count_m7E8776B1EB9BBB2344F8E108C1F50CF657F1C2F2_inline(L_10, List_1_get_Count_m7E8776B1EB9BBB2344F8E108C1F50CF657F1C2F2_RuntimeMethod_var);
+		if ((((int32_t)L_9) < ((int32_t)L_11)))
+		{
+			goto IL_0004;
+		}
+	}
+	{
+		// return null;
+		return (AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2*)NULL;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_ObjectPool::DisableAll()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_ObjectPool_DisableAll_mA75D44A82610B270A35046010F16EB0FCD1006FD (AndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m7E8776B1EB9BBB2344F8E108C1F50CF657F1C2F2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m958095FD9590D93606AE823DA4A459A0E172E2EF_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		// for (int i = 0; i < pairedUIList.Count; i++)
+		V_0 = 0;
+		goto IL_001f;
+	}
+
+IL_0004:
+	{
+		// pairedUIList[i].gameObject.SetActive(false);
+		List_1_t4BB714C32C63320E15F9BE811510151332419557* L_0 = __this->___pairedUIList_7;
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* L_2;
+		L_2 = List_1_get_Item_m958095FD9590D93606AE823DA4A459A0E172E2EF(L_0, L_1, List_1_get_Item_m958095FD9590D93606AE823DA4A459A0E172E2EF_RuntimeMethod_var);
+		NullCheck(L_2);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_2, NULL);
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
+		// for (int i = 0; i < pairedUIList.Count; i++)
+		int32_t L_4 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_4, 1));
+	}
+
+IL_001f:
+	{
+		// for (int i = 0; i < pairedUIList.Count; i++)
+		int32_t L_5 = V_0;
+		List_1_t4BB714C32C63320E15F9BE811510151332419557* L_6 = __this->___pairedUIList_7;
+		NullCheck(L_6);
+		int32_t L_7;
+		L_7 = List_1_get_Count_m7E8776B1EB9BBB2344F8E108C1F50CF657F1C2F2_inline(L_6, List_1_get_Count_m7E8776B1EB9BBB2344F8E108C1F50CF657F1C2F2_RuntimeMethod_var);
+		if ((((int32_t)L_5) < ((int32_t)L_7)))
+		{
+			goto IL_0004;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_ObjectPool::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_ObjectPool__ctor_m2CC86B86D701CF20301ED649D43441BCDF1BF60C (AndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_PairedDeviceUI_Start_mF5D00C2E7C4F41BA486C4D46131D2C9F7E7A843C (AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidWidget_PairedDeviceUI_OnPing_mB3EBAAB7A5BC58F52D2E9A434E4C931887720A19_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidWidget_PairedDeviceUI_OnSwap_m46081CC3D208EAB673127DFF438BD9DD6DFD6A82_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// pingButton.onClick.AddListener(OnPing);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = __this->___pingButton_6;
+		NullCheck(L_0);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_1;
+		L_1 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_0, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_2 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_2, __this, (intptr_t)((void*)AndroidWidget_PairedDeviceUI_OnPing_mB3EBAAB7A5BC58F52D2E9A434E4C931887720A19_RuntimeMethod_var), NULL);
+		NullCheck(L_1);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_1, L_2, NULL);
+		// toggleButton.onClick.AddListener(OnSwap);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_3 = __this->___toggleButton_7;
+		NullCheck(L_3);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_4;
+		L_4 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_3, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_5 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_5, __this, (intptr_t)((void*)AndroidWidget_PairedDeviceUI_OnSwap_m46081CC3D208EAB673127DFF438BD9DD6DFD6A82_RuntimeMethod_var), NULL);
+		NullCheck(L_4);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_4, L_5, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI::Refresh(Bhaptics.Tact.Unity.HapticDevice,Bhaptics.Tact.Unity.Bhaptics_Widget_Setting)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_PairedDeviceUI_Refresh_mE7EC9A860F7DAC998EE5773D6A5E4D205025C06C (AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* __this, HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* ___0_tactDevice, Bhaptics_Widget_Setting_t161D157DE26028AEFEDCA2A862E8748B281671EA* ___1_setting, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// device = tactDevice;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_0 = ___0_tactDevice;
+		__this->___device_10 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___device_10), (void*)L_0);
+		// deviceName.text = device.DeviceName;
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_1 = __this->___deviceName_5;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_2 = __this->___device_10;
+		NullCheck(L_2);
+		String_t* L_3 = L_2->___DeviceName_2;
+		NullCheck(L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_1, L_3);
+		// toggleButton.interactable = tactDevice.IsConnected;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_4 = __this->___toggleButton_7;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_5 = ___0_tactDevice;
+		NullCheck(L_5);
+		bool L_6 = L_5->___IsConnected_1;
+		NullCheck(L_4);
+		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_4, L_6, NULL);
+		// if (!AndroidUtils.CanChangePosition(tactDevice.Position))
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_7 = ___0_tactDevice;
+		NullCheck(L_7);
+		int32_t L_8 = L_7->___Position_3;
+		bool L_9;
+		L_9 = AndroidUtils_CanChangePosition_m19CD746A3405C260FBF2EF5AB859F8F38639B03A(L_8, NULL);
+		if (L_9)
+		{
+			goto IL_004e;
+		}
+	}
+	{
+		// toggleButton.gameObject.SetActive(false);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_10 = __this->___toggleButton_7;
+		NullCheck(L_10);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11;
+		L_11 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_10, NULL);
+		NullCheck(L_11);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)0, NULL);
+		goto IL_00a7;
+	}
+
+IL_004e:
+	{
+		// if (tactDevice.IsConnected)
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_12 = ___0_tactDevice;
+		NullCheck(L_12);
+		bool L_13 = L_12->___IsConnected_1;
+		if (!L_13)
+		{
+			goto IL_0096;
+		}
+	}
+	{
+		// if (AndroidUtils.IsLeft(device.Position))
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_14 = __this->___device_10;
+		NullCheck(L_14);
+		int32_t L_15 = L_14->___Position_3;
+		bool L_16;
+		L_16 = AndroidUtils_IsLeft_mFDF16B67864EEC0E92DD16AB863DDD8FB3A1F202(L_15, NULL);
+		if (!L_16)
+		{
+			goto IL_0080;
+		}
+	}
+	{
+		// toggleButton.image.sprite = leftSide;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_17 = __this->___toggleButton_7;
+		NullCheck(L_17);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_18;
+		L_18 = Selectable_get_image_m88664022F6BC90E7B8D4BFCBA7FE24B48E90C639(L_17, NULL);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_19 = __this->___leftSide_8;
+		NullCheck(L_18);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_18, L_19, NULL);
+		goto IL_0096;
+	}
+
+IL_0080:
+	{
+		// toggleButton.image.sprite = rightSide;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_20 = __this->___toggleButton_7;
+		NullCheck(L_20);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_21;
+		L_21 = Selectable_get_image_m88664022F6BC90E7B8D4BFCBA7FE24B48E90C639(L_20, NULL);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_22 = __this->___rightSide_9;
+		NullCheck(L_21);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_21, L_22, NULL);
+	}
+
+IL_0096:
+	{
+		// toggleButton.gameObject.SetActive(true);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_23 = __this->___toggleButton_7;
+		NullCheck(L_23);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_24;
+		L_24 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_23, NULL);
+		NullCheck(L_24);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_24, (bool)1, NULL);
+	}
+
+IL_00a7:
+	{
+		// if (setting != null)
+		Bhaptics_Widget_Setting_t161D157DE26028AEFEDCA2A862E8748B281671EA* L_25 = ___1_setting;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_26;
+		L_26 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_25, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_26)
+		{
+			goto IL_00c7;
+		}
+	}
+	{
+		// deviceImage.sprite = setting.GetPairedDeviceSprite(device);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_27 = __this->___deviceImage_4;
+		Bhaptics_Widget_Setting_t161D157DE26028AEFEDCA2A862E8748B281671EA* L_28 = ___1_setting;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_29 = __this->___device_10;
+		NullCheck(L_28);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_30;
+		L_30 = Bhaptics_Widget_Setting_GetPairedDeviceSprite_m26FF74D377A3363EE2A1F3E16791745BB5A10479(L_28, L_29, NULL);
+		NullCheck(L_27);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_27, L_30, NULL);
+	}
+
+IL_00c7:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI::OnPing()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_PairedDeviceUI_OnPing_mB3EBAAB7A5BC58F52D2E9A434E4C931887720A19 (AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (device.IsConnected)
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_0 = __this->___device_10;
+		NullCheck(L_0);
+		bool L_1 = L_0->___IsConnected_1;
+		if (!L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		// BhapticsAndroidManager.Ping(device);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_2 = __this->___device_10;
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		BhapticsAndroidManager_Ping_mFBEF3D6E86FD47D89FB718BC2424BAA2B008EF53(L_2, NULL);
+	}
+
+IL_0018:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI::OnSwap()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_PairedDeviceUI_OnSwap_m46081CC3D208EAB673127DFF438BD9DD6DFD6A82 (AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (device.IsConnected)
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_0 = __this->___device_10;
+		NullCheck(L_0);
+		bool L_1 = L_0->___IsConnected_1;
+		if (!L_1)
+		{
+			goto IL_005c;
+		}
+	}
+	{
+		// BhapticsAndroidManager.TogglePosition(device.Address);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_2 = __this->___device_10;
+		NullCheck(L_2);
+		String_t* L_3 = L_2->___Address_4;
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		BhapticsAndroidManager_TogglePosition_mF0CE4FAF0A39F831012CF8EA4160C03D2C3FAA6F(L_3, NULL);
+		// if (AndroidUtils.IsLeft(device.Position))
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_4 = __this->___device_10;
+		NullCheck(L_4);
+		int32_t L_5 = L_4->___Position_3;
+		bool L_6;
+		L_6 = AndroidUtils_IsLeft_mFDF16B67864EEC0E92DD16AB863DDD8FB3A1F202(L_5, NULL);
+		if (!L_6)
+		{
+			goto IL_0046;
+		}
+	}
+	{
+		// toggleButton.image.sprite = leftSide;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_7 = __this->___toggleButton_7;
+		NullCheck(L_7);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_8;
+		L_8 = Selectable_get_image_m88664022F6BC90E7B8D4BFCBA7FE24B48E90C639(L_7, NULL);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_9 = __this->___leftSide_8;
+		NullCheck(L_8);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_8, L_9, NULL);
+		return;
+	}
+
+IL_0046:
+	{
+		// toggleButton.image.sprite = rightSide;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_10 = __this->___toggleButton_7;
+		NullCheck(L_10);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_11;
+		L_11 = Selectable_get_image_m88664022F6BC90E7B8D4BFCBA7FE24B48E90C639(L_10, NULL);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_12 = __this->___rightSide_9;
+		NullCheck(L_11);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_11, L_12, NULL);
+	}
+
+IL_005c:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_PairedDeviceUI__ctor_m5A92F058BB6A115620CB94B0B30ACD2D302067C5 (AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_SettingUIAnimation::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_SettingUIAnimation_Start_m22634A26AFB8667B9F21CC9A862033A1B4ED6069 (AndroidWidget_SettingUIAnimation_t9781087DBDCBFEA803DB6A32BF193B7A5F16D742* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m1C9FCB4BBE56BEC6BDEF6E4BA1E5DFF91614D7CE_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// animator = GetComponent<Animator>();
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_0;
+		L_0 = Component_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m1C9FCB4BBE56BEC6BDEF6E4BA1E5DFF91614D7CE(__this, Component_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m1C9FCB4BBE56BEC6BDEF6E4BA1E5DFF91614D7CE_RuntimeMethod_var);
+		__this->___animator_5 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___animator_5), (void*)L_0);
+		// SettingUI.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___SettingUI_4;
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_SettingUIAnimation::Hide()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_SettingUIAnimation_Hide_mAA29783FBCAF53DC5B9FC7E7E043C59C1FEA8E37 (AndroidWidget_SettingUIAnimation_t9781087DBDCBFEA803DB6A32BF193B7A5F16D742* __this, const RuntimeMethod* method) 
+{
+	{
+		// SettingUI.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___SettingUI_4;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_SettingUIAnimation::Show()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_SettingUIAnimation_Show_m04B97E21E55D222995F4BA5D3EDF2CC3EE449152 (AndroidWidget_SettingUIAnimation_t9781087DBDCBFEA803DB6A32BF193B7A5F16D742* __this, const RuntimeMethod* method) 
+{
+	{
+		// SettingUI.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___SettingUI_4;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_SettingUIAnimation::ToggleSettingButton()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_SettingUIAnimation_ToggleSettingButton_m2348DA27B06199DB41A86669739A95C2DFB57020 (AndroidWidget_SettingUIAnimation_t9781087DBDCBFEA803DB6A32BF193B7A5F16D742* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral002D677C331359A7FD36DC2DB9A416553AEB95E8);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4255BDDB287905DDB2F8F92AF8C726E57614987B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCCCDD19BAC8E228E10128C1D017E557BF3B69BEA);
+		s_Il2CppMethodInitialized = true;
+	}
+	AnimatorStateInfo_t1F47379289C7CE7FD588FBC3BBD79A777243B6B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_0 = __this->___animator_5;
+		NullCheck(L_0);
+		AnimatorStateInfo_t1F47379289C7CE7FD588FBC3BBD79A777243B6B2 L_1;
+		L_1 = Animator_GetCurrentAnimatorStateInfo_mD5B526FA605F6CFBC31B7DE36740F6AD1E534CAD(L_0, 0, NULL);
+		V_0 = L_1;
+		bool L_2;
+		L_2 = AnimatorStateInfo_IsName_mB936F493D6BDDB9372C8E9D813CE0416B002C4D0((&V_0), _stringLiteralCCCDD19BAC8E228E10128C1D017E557BF3B69BEA, NULL);
+		if (L_2)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_001c:
+	{
+		// if (!settingPanelEnable)
+		bool L_3 = __this->___settingPanelEnable_6;
+		if (L_3)
+		{
+			goto IL_004e;
+		}
+	}
+	{
+		// animator.Play("ShowSettingPanel");
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_4 = __this->___animator_5;
+		NullCheck(L_4);
+		Animator_Play_m0F6A9F84B2E256E644D56C34A7A9BD622CB00FF9(L_4, _stringLiteral002D677C331359A7FD36DC2DB9A416553AEB95E8, NULL);
+		// SettingUI.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___SettingUI_4;
+		NullCheck(L_5);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)1, NULL);
+		// SettingUI.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___SettingUI_4;
+		NullCheck(L_6);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
+		goto IL_005e;
+	}
+
+IL_004e:
+	{
+		// animator.Play("HideSettingPanel");
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_7 = __this->___animator_5;
+		NullCheck(L_7);
+		Animator_Play_m0F6A9F84B2E256E644D56C34A7A9BD622CB00FF9(L_7, _stringLiteral4255BDDB287905DDB2F8F92AF8C726E57614987B, NULL);
+	}
+
+IL_005e:
+	{
+		// settingPanelEnable = !settingPanelEnable;
+		bool L_8 = __this->___settingPanelEnable_6;
+		__this->___settingPanelEnable_6 = (bool)((((int32_t)L_8) == ((int32_t)0))? 1 : 0);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_SettingUIAnimation::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_SettingUIAnimation__ctor_mB0AF99824280AC8785D6617BF0D0E051D86F06C6 (AndroidWidget_SettingUIAnimation_t9781087DBDCBFEA803DB6A32BF193B7A5F16D742* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_UI::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_UI_Awake_m2B2A841B420ECFC88250D60D6A627DA26A9DED95 (AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidWidget_UI_Refresh_m75CE0CE3B0FEDD4AB257C03B80E1155CEE77C29F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisAndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD_m7C18455D334406A4D39F0F3CDDF69C69A59615BF_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m1C9FCB4BBE56BEC6BDEF6E4BA1E5DFF91614D7CE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m209BA4F663AB98A4504995B5BD3EADEDEFB92BF2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentsInChildren_TisAndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE_m938DDEC4507771E85D84C27B4F930F646DEFA27A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// InitializeButtons();
+		AndroidWidget_UI_InitializeButtons_mF0CF5229B5CA29DBC2177A68A91423A98D4FDC6D(__this, NULL);
+		// buttonClickAudio = GetComponent<AudioSource>();
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_0;
+		L_0 = Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B(__this, Component_GetComponent_TisAudioSource_t871AC2272F896738252F04EE949AEF5B241D3299_m42DA4DEA19EB60D80CBED7413ADEB27FA033C77B_RuntimeMethod_var);
+		__this->___buttonClickAudio_8 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___buttonClickAudio_8), (void*)L_0);
+		// settingObjectPool = GetComponent<AndroidWidget_ObjectPool>();
+		AndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD* L_1;
+		L_1 = Component_GetComponent_TisAndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD_m7C18455D334406A4D39F0F3CDDF69C69A59615BF(__this, Component_GetComponent_TisAndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD_m7C18455D334406A4D39F0F3CDDF69C69A59615BF_RuntimeMethod_var);
+		__this->___settingObjectPool_7 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___settingObjectPool_7), (void*)L_1);
+		// controllButtons = GetComponentsInChildren<AndroidWidget_ControlButton>(true);
+		AndroidWidget_ControlButtonU5BU5D_tDAB320020613CB967B0C2A8082DA23B2E9816A38* L_2;
+		L_2 = Component_GetComponentsInChildren_TisAndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE_m938DDEC4507771E85D84C27B4F930F646DEFA27A(__this, (bool)1, Component_GetComponentsInChildren_TisAndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE_m938DDEC4507771E85D84C27B4F930F646DEFA27A_RuntimeMethod_var);
+		__this->___controllButtons_11 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___controllButtons_11), (void*)L_2);
+		// animator = GetComponent<Animator>();
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_3;
+		L_3 = Component_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m1C9FCB4BBE56BEC6BDEF6E4BA1E5DFF91614D7CE(__this, Component_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m1C9FCB4BBE56BEC6BDEF6E4BA1E5DFF91614D7CE_RuntimeMethod_var);
+		__this->___animator_9 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___animator_9), (void*)L_3);
+		// GetComponent<Canvas>().worldCamera = Camera.main;
+		Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* L_4;
+		L_4 = Component_GetComponent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m209BA4F663AB98A4504995B5BD3EADEDEFB92BF2(__this, Component_GetComponent_TisCanvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_m209BA4F663AB98A4504995B5BD3EADEDEFB92BF2_RuntimeMethod_var);
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_5;
+		L_5 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
+		NullCheck(L_4);
+		Canvas_set_worldCamera_m007F7DABDB5A3A6BFB043E3500DA82A4D936EDD4(L_4, L_5, NULL);
+		// Instance = this;
+		((AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0_StaticFields*)il2cpp_codegen_static_fields_for(AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0_il2cpp_TypeInfo_var))->___Instance_12 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&((AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0_StaticFields*)il2cpp_codegen_static_fields_for(AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0_il2cpp_TypeInfo_var))->___Instance_12), (void*)__this);
+		// BhapticsAndroidManager.AddRefreshAction(Refresh);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_6 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_6, __this, (intptr_t)((void*)AndroidWidget_UI_Refresh_m75CE0CE3B0FEDD4AB257C03B80E1155CEE77C29F_RuntimeMethod_var), NULL);
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		BhapticsAndroidManager_AddRefreshAction_m28C3B7D6677BC3B50E3A3E8FA9E2472A370B78FD(L_6, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_UI::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_UI_Start_mB9E16CBE2B06D52CCDABF734B02E216F35AC1898 (AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsLogger_t3A2740F5DBA63ECA7B30DD351ADE5D030CE0C645_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA5B5B6A1E33D2841FFE94060CB6309AB2E865B85);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (WidgetSetting == null)
+		Bhaptics_Widget_Setting_t161D157DE26028AEFEDCA2A862E8748B281671EA* L_0 = __this->___WidgetSetting_6;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		// BhapticsLogger.LogError("[bhaptics] WidgetSetting is null");
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2;
+		L_2 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(BhapticsLogger_t3A2740F5DBA63ECA7B30DD351ADE5D030CE0C645_il2cpp_TypeInfo_var);
+		BhapticsLogger_LogError_m3CDDC648847F1E3DB8695FB80FEC30430BAF701E(_stringLiteralA5B5B6A1E33D2841FFE94060CB6309AB2E865B85, L_2, NULL);
+	}
+
+IL_001d:
+	{
+		// Refresh();
+		AndroidWidget_UI_Refresh_m75CE0CE3B0FEDD4AB257C03B80E1155CEE77C29F(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_UI::InitializeButtons()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_UI_InitializeButtons_mF0CF5229B5CA29DBC2177A68A91423A98D4FDC6D (AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidWidget_UI_ButtonClickSound_mD0DDD702302A2A265429C3FC327AD29E2B39B7B7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_PingAll_m243880100D9A9961145BE391E30F00C0E92819F2_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m820398EDBF1D3766C3166A0C323A127662A29A14_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentsInChildren_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_m7A1316B78CB597034F354DE4BF82C98424AE0DAC_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_AddComponent_TisBoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23_m655518C8454E418FE8CF0E4770881B7A2B12BB23_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ButtonU5BU5D_t0D512FF2FF5A72DAC04754F2C10182F850328BEF* V_0 = NULL;
+	int32_t V_1 = 0;
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* V_2 = NULL;
+	BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* V_3 = NULL;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* V_4 = NULL;
+	{
+		// var buttons = GetComponentsInChildren<Button>(true);
+		ButtonU5BU5D_t0D512FF2FF5A72DAC04754F2C10182F850328BEF* L_0;
+		L_0 = Component_GetComponentsInChildren_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_m7A1316B78CB597034F354DE4BF82C98424AE0DAC(__this, (bool)1, Component_GetComponentsInChildren_TisButton_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098_m7A1316B78CB597034F354DE4BF82C98424AE0DAC_RuntimeMethod_var);
+		// foreach (var btn in buttons)
+		V_0 = L_0;
+		V_1 = 0;
+		goto IL_0075;
+	}
+
+IL_000c:
+	{
+		// foreach (var btn in buttons)
+		ButtonU5BU5D_t0D512FF2FF5A72DAC04754F2C10182F850328BEF* L_1 = V_0;
+		int32_t L_2 = V_1;
+		NullCheck(L_1);
+		int32_t L_3 = L_2;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_4 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_3));
+		V_2 = L_4;
+		// if (btn.GetComponent<Collider>() == null)
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_5 = V_2;
+		NullCheck(L_5);
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_6;
+		L_6 = Component_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m820398EDBF1D3766C3166A0C323A127662A29A14(L_5, Component_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m820398EDBF1D3766C3166A0C323A127662A29A14_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_7;
+		L_7 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_6, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_7)
+		{
+			goto IL_005a;
+		}
+	}
+	{
+		// var col = btn.gameObject.AddComponent<BoxCollider>();
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_8 = V_2;
+		NullCheck(L_8);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9;
+		L_9 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_8, NULL);
+		NullCheck(L_9);
+		BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* L_10;
+		L_10 = GameObject_AddComponent_TisBoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23_m655518C8454E418FE8CF0E4770881B7A2B12BB23(L_9, GameObject_AddComponent_TisBoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23_m655518C8454E418FE8CF0E4770881B7A2B12BB23_RuntimeMethod_var);
+		V_3 = L_10;
+		// var rect = btn.GetComponent<RectTransform>();
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_11 = V_2;
+		NullCheck(L_11);
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_12;
+		L_12 = Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4(L_11, Component_GetComponent_TisRectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_m0640480E7E38BB88B0D1F6AD59E697C8EE6AAFA4_RuntimeMethod_var);
+		V_4 = L_12;
+		// col.size = new Vector3(rect.sizeDelta.x, rect.sizeDelta.y, 0f);
+		BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* L_13 = V_3;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_14 = V_4;
+		NullCheck(L_14);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_15;
+		L_15 = RectTransform_get_sizeDelta_m822A8493F2035677384F1540A2E9E5ACE63010BB(L_14, NULL);
+		float L_16 = L_15.___x_0;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_17 = V_4;
+		NullCheck(L_17);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_18;
+		L_18 = RectTransform_get_sizeDelta_m822A8493F2035677384F1540A2E9E5ACE63010BB(L_17, NULL);
+		float L_19 = L_18.___y_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
+		memset((&L_20), 0, sizeof(L_20));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_20), L_16, L_19, (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_13);
+		BoxCollider_set_size_m8374267FDE5DD628973E0E5E1331E781552B855A(L_13, L_20, NULL);
+	}
+
+IL_005a:
+	{
+		// btn.onClick.AddListener(ButtonClickSound);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_21 = V_2;
+		NullCheck(L_21);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_22;
+		L_22 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_21, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_23 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_23);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_23, __this, (intptr_t)((void*)AndroidWidget_UI_ButtonClickSound_mD0DDD702302A2A265429C3FC327AD29E2B39B7B7_RuntimeMethod_var), NULL);
+		NullCheck(L_22);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_22, L_23, NULL);
+		int32_t L_24 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_24, 1));
+	}
+
+IL_0075:
+	{
+		// foreach (var btn in buttons)
+		int32_t L_25 = V_1;
+		ButtonU5BU5D_t0D512FF2FF5A72DAC04754F2C10182F850328BEF* L_26 = V_0;
+		NullCheck(L_26);
+		if ((((int32_t)L_25) < ((int32_t)((int32_t)(((RuntimeArray*)L_26)->max_length)))))
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		// pingAllButton.onClick.AddListener(BhapticsAndroidManager.PingAll);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_27 = __this->___pingAllButton_5;
+		NullCheck(L_27);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_28;
+		L_28 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_27, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_29 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_29);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_29, NULL, (intptr_t)((void*)BhapticsAndroidManager_PingAll_m243880100D9A9961145BE391E30F00C0E92819F2_RuntimeMethod_var), NULL);
+		NullCheck(L_28);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_28, L_29, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_UI::ToggleWidgetButton()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_UI_ToggleWidgetButton_m37A7074C5A41B73D4C34B4F267CEE65B634B9223 (AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral38018D780185B892C3BD624FEE65FADF400FFAE4);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral968BCC925729104400F6833A0BF2314988E79A99);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// widgetActive = !widgetActive;
+		bool L_0 = __this->___widgetActive_10;
+		__this->___widgetActive_10 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		// if (widgetActive)
+		bool L_1 = __this->___widgetActive_10;
+		if (!L_1)
+		{
+			goto IL_002e;
+		}
+	}
+	{
+		// animator.Play("ShowWidget");
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_2 = __this->___animator_9;
+		NullCheck(L_2);
+		Animator_Play_m0F6A9F84B2E256E644D56C34A7A9BD622CB00FF9(L_2, _stringLiteral968BCC925729104400F6833A0BF2314988E79A99, NULL);
+		// ShowWidget();
+		AndroidWidget_UI_ShowWidget_mBCDA65F3A6F9895F922322E7B7CF72F88A0F1AEC(__this, NULL);
+		return;
+	}
+
+IL_002e:
+	{
+		// animator.Play("HideWidget");
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_3 = __this->___animator_9;
+		NullCheck(L_3);
+		Animator_Play_m0F6A9F84B2E256E644D56C34A7A9BD622CB00FF9(L_3, _stringLiteral38018D780185B892C3BD624FEE65FADF400FFAE4, NULL);
+		// HideWidget();
+		AndroidWidget_UI_HideWidget_mBC11D7742FEC259841313F87A8048DC33D79E8F5(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_UI::ShowWidget()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_UI_ShowWidget_mBCDA65F3A6F9895F922322E7B7CF72F88A0F1AEC (AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* __this, const RuntimeMethod* method) 
+{
+	{
+		// uiContainer.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___uiContainer_4;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_UI::HideWidget()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_UI_HideWidget_mBC11D7742FEC259841313F87A8048DC33D79E8F5 (AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* __this, const RuntimeMethod* method) 
+{
+	{
+		// uiContainer.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___uiContainer_4;
+		NullCheck(L_0);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_UI::ButtonClickSound()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_UI_ButtonClickSound_mD0DDD702302A2A265429C3FC327AD29E2B39B7B7 (AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* __this, const RuntimeMethod* method) 
+{
+	{
+		// buttonClickAudio.Play();
+		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_0 = __this->___buttonClickAudio_8;
+		NullCheck(L_0);
+		AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3(L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_UI::RefreshPairedDevices(System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_UI_RefreshPairedDevices_m08FB224DD06EF2540316519E0481B7DE357E50DE (AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* __this, List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* ___0_devices, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t261861876184B54ED984B2385428914934E16B5B V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* V_1 = NULL;
+	AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* V_2 = NULL;
+	{
+		// foreach (var device in devices)
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_0 = ___0_devices;
+		NullCheck(L_0);
+		Enumerator_t261861876184B54ED984B2385428914934E16B5B L_1;
+		L_1 = List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A(L_0, List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0052:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409((&V_0), Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0047_1;
+			}
+
+IL_0009_1:
+			{
+				// foreach (var device in devices)
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_2;
+				L_2 = Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_inline((&V_0), Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_RuntimeMethod_var);
+				V_1 = L_2;
+				// if (device.IsPaired)
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_3 = V_1;
+				NullCheck(L_3);
+				bool L_4 = L_3->___IsPaired_0;
+				if (!L_4)
+				{
+					goto IL_0047_1;
+				}
+			}
+			{
+				// var ui = settingObjectPool.GetPairedDeviceUI();
+				AndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD* L_5 = __this->___settingObjectPool_7;
+				NullCheck(L_5);
+				AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* L_6;
+				L_6 = AndroidWidget_ObjectPool_GetPairedDeviceUI_m02E6FC22CE3D5F38D9AFC704447D0EF2A44E87F7(L_5, NULL);
+				V_2 = L_6;
+				// if (ui == null)
+				AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* L_7 = V_2;
+				il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+				bool L_8;
+				L_8 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+				if (L_8)
+				{
+					goto IL_0047_1;
+				}
+			}
+			{
+				// ui.Refresh(device, WidgetSetting);
+				AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* L_9 = V_2;
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_10 = V_1;
+				Bhaptics_Widget_Setting_t161D157DE26028AEFEDCA2A862E8748B281671EA* L_11 = __this->___WidgetSetting_6;
+				NullCheck(L_9);
+				AndroidWidget_PairedDeviceUI_Refresh_mE7EC9A860F7DAC998EE5773D6A5E4D205025C06C(L_9, L_10, L_11, NULL);
+				// ui.gameObject.SetActive(true);
+				AndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2* L_12 = V_2;
+				NullCheck(L_12);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13;
+				L_13 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_12, NULL);
+				NullCheck(L_13);
+				GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_13, (bool)1, NULL);
+			}
+
+IL_0047_1:
+			{
+				// foreach (var device in devices)
+				bool L_14;
+				L_14 = Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907((&V_0), Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907_RuntimeMethod_var);
+				if (L_14)
+				{
+					goto IL_0009_1;
+				}
+			}
+			{
+				goto IL_0060;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0060:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_UI::Refresh()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_UI_Refresh_m75CE0CE3B0FEDD4AB257C03B80E1155CEE77C29F (AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* V_0 = NULL;
+	AndroidWidget_ControlButtonU5BU5D_tDAB320020613CB967B0C2A8082DA23B2E9816A38* V_1 = NULL;
+	int32_t V_2 = 0;
+	{
+		// var devices = BhapticsAndroidManager.GetDevices();
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_0;
+		L_0 = BhapticsAndroidManager_GetDevices_m3E091E55A5D8FDA7E6F5F314EE64150952546899(NULL);
+		V_0 = L_0;
+		// if (settingObjectPool != null)
+		AndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD* L_1 = __this->___settingObjectPool_7;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_2;
+		L_2 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_1, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_2)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		// settingObjectPool.DisableAll();
+		AndroidWidget_ObjectPool_t9D40760D1DB7793422F35561DB4F2BD1F0C70CAD* L_3 = __this->___settingObjectPool_7;
+		NullCheck(L_3);
+		AndroidWidget_ObjectPool_DisableAll_mA75D44A82610B270A35046010F16EB0FCD1006FD(L_3, NULL);
+	}
+
+IL_001f:
+	{
+		// RefreshPairedDevices(devices);
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_4 = V_0;
+		AndroidWidget_UI_RefreshPairedDevices_m08FB224DD06EF2540316519E0481B7DE357E50DE(__this, L_4, NULL);
+		// foreach (var controlButton in controllButtons)
+		AndroidWidget_ControlButtonU5BU5D_tDAB320020613CB967B0C2A8082DA23B2E9816A38* L_5 = __this->___controllButtons_11;
+		V_1 = L_5;
+		V_2 = 0;
+		goto IL_003d;
+	}
+
+IL_0031:
+	{
+		// foreach (var controlButton in controllButtons)
+		AndroidWidget_ControlButtonU5BU5D_tDAB320020613CB967B0C2A8082DA23B2E9816A38* L_6 = V_1;
+		int32_t L_7 = V_2;
+		NullCheck(L_6);
+		int32_t L_8 = L_7;
+		AndroidWidget_ControlButton_t9BCDA2AB7B5A13817635E6B0AA1775F496B42EAE* L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
+		// controlButton.Refresh();
+		NullCheck(L_9);
+		AndroidWidget_ControlButton_Refresh_m7AF22716BB9A849EA9C88752C49DF0BC996CE24E(L_9, NULL);
+		int32_t L_10 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_10, 1));
+	}
+
+IL_003d:
+	{
+		// foreach (var controlButton in controllButtons)
+		int32_t L_11 = V_2;
+		AndroidWidget_ControlButtonU5BU5D_tDAB320020613CB967B0C2A8082DA23B2E9816A38* L_12 = V_1;
+		NullCheck(L_12);
+		if ((((int32_t)L_11) < ((int32_t)((int32_t)(((RuntimeArray*)L_12)->max_length)))))
+		{
+			goto IL_0031;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.AndroidWidget_UI::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidWidget_UI__ctor_mEAEF5A8CBB8997CB64DBB3C7C221F74A068F9FC1 (AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0D42382C0* __this, const RuntimeMethod* method) 
+{
+	{
+		// private bool widgetActive = true;
+		__this->___widgetActive_10 = (bool)1;
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.PositonIconSetting::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PositonIconSetting__ctor_mA17CDB71EF142AFE5E2A21B3F9764D00CAB15F5C (PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.IconSetting::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IconSetting__ctor_m2852D21E0E01E25589F6895828CC43342AAAD8EF (IconSetting_t870A56F9950D91A50903F32FC2AA9660C7DEF95D* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_Awake_m00C84E884EE87403CBE1079D371E954A0425D453 (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Android_DeviceController_Ping_mAF7ED8708F4DA8CBDF34996F1C90E33514926B0B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Android_DeviceController_ToLeft_mBF80F1AF95724B8566D2011AADB9DBF56F392ADA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Android_DeviceController_ToRight_m79A43062C1BFC6CDFFA5BBD82180BADF69D73DE4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (pingButton != null)
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_0 = __this->___pingButton_9;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		// pingButton.onClick.AddListener(Ping);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_2 = __this->___pingButton_9;
+		NullCheck(L_2);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_3;
+		L_3 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_2, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_4 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_4, __this, (intptr_t)((void*)Android_DeviceController_Ping_mAF7ED8708F4DA8CBDF34996F1C90E33514926B0B_RuntimeMethod_var), NULL);
+		NullCheck(L_3);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_3, L_4, NULL);
+	}
+
+IL_002a:
+	{
+		// if (lButton != null)
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_5 = __this->___lButton_10;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_6;
+		L_6 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_5, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_6)
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		// lButton.onClick.AddListener(ToLeft);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_7 = __this->___lButton_10;
+		NullCheck(L_7);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_8;
+		L_8 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_7, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_9 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_9, __this, (intptr_t)((void*)Android_DeviceController_ToLeft_mBF80F1AF95724B8566D2011AADB9DBF56F392ADA_RuntimeMethod_var), NULL);
+		NullCheck(L_8);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_8, L_9, NULL);
+	}
+
+IL_0054:
+	{
+		// if (rButton != null)
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_10 = __this->___rButton_11;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_11;
+		L_11 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_10, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_11)
+		{
+			goto IL_007e;
+		}
+	}
+	{
+		// rButton.onClick.AddListener(ToRight);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_12 = __this->___rButton_11;
+		NullCheck(L_12);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_13;
+		L_13 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_12, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_14 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_14);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_14, __this, (intptr_t)((void*)Android_DeviceController_ToRight_m79A43062C1BFC6CDFFA5BBD82180BADF69D73DE4_RuntimeMethod_var), NULL);
+		NullCheck(L_13);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_13, L_14, NULL);
+	}
+
+IL_007e:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::RefreshDevice(Bhaptics.Tact.Unity.HapticDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_RefreshDevice_m09161A779EC3F62E826A0CD4C03FAE35D070FEDF (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* ___0_d, const RuntimeMethod* method) 
+{
+	{
+		// device = d;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_0 = ___0_d;
+		__this->___device_18 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___device_18), (void*)L_0);
+		// if (device == null)
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_1 = __this->___device_18;
+		if (L_1)
+		{
+			goto IL_001c;
+		}
+	}
+	{
+		// gameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+		L_2 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
+		// return;
+		return;
+	}
+
+IL_001c:
+	{
+		// if (!gameObject.activeSelf)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_3);
+		bool L_4;
+		L_4 = GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368(L_3, NULL);
+		if (L_4)
+		{
+			goto IL_0035;
+		}
+	}
+	{
+		// gameObject.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
+		L_5 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_5);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)1, NULL);
+	}
+
+IL_0035:
+	{
+		// UpdateIcon(d);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_6 = ___0_d;
+		Android_DeviceController_UpdateIcon_mCF4925BB9A45CD95FD4BD5A5BB405C35DE9268EA(__this, L_6, NULL);
+		// if (d.IsConnected)
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_7 = ___0_d;
+		NullCheck(L_7);
+		bool L_8 = L_7->___IsConnected_1;
+		if (!L_8)
+		{
+			goto IL_004b;
+		}
+	}
+	{
+		// RenderConnectMenu();
+		Android_DeviceController_RenderConnectMenu_m454A6914A90B82E32957DA0D330BA1561A0E2FD7(__this, NULL);
+		return;
+	}
+
+IL_004b:
+	{
+		// RenderDisconnectMenu();
+		Android_DeviceController_RenderDisconnectMenu_mAEDD179F73C956A6090AE24FFCB7EFC77C0D2008(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::RenderConnectMenu()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_RenderConnectMenu_m454A6914A90B82E32957DA0D330BA1561A0E2FD7 (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, const RuntimeMethod* method) 
+{
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* G_B2_0 = NULL;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* G_B1_0 = NULL;
+	int32_t G_B3_0 = 0;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* G_B3_1 = NULL;
+	{
+		// ConnectMenu.gameObject.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___ConnectMenu_8;
+		NullCheck(L_0);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
+		L_1 = GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC(L_0, NULL);
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)1, NULL);
+		// DisconnectMenu.gameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___DisconnectMenu_13;
+		NullCheck(L_2);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC(L_2, NULL);
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
+		// batteryLowImage.gameObject.SetActive(device.Battery < 20 && device.Battery >= 0);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_4 = __this->___batteryLowImage_7;
+		NullCheck(L_4);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
+		L_5 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_4, NULL);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_6 = __this->___device_18;
+		NullCheck(L_6);
+		int32_t L_7 = L_6->___Battery_8;
+		G_B1_0 = L_5;
+		if ((((int32_t)L_7) >= ((int32_t)((int32_t)20))))
+		{
+			G_B2_0 = L_5;
+			goto IL_004f;
+		}
+	}
+	{
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_8 = __this->___device_18;
+		NullCheck(L_8);
+		int32_t L_9 = L_8->___Battery_8;
+		G_B3_0 = ((((int32_t)((((int32_t)L_9) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		G_B3_1 = G_B1_0;
+		goto IL_0050;
+	}
+
+IL_004f:
+	{
+		G_B3_0 = 0;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_0050:
+	{
+		NullCheck(G_B3_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(G_B3_1, (bool)G_B3_0, NULL);
+		// UpdateButtons();
+		Android_DeviceController_UpdateButtons_m05A8DD528AEB0B93974ED3047B870BDD3B462672(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::RenderDisconnectMenu()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_RenderDisconnectMenu_mAEDD179F73C956A6090AE24FFCB7EFC77C0D2008 (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, const RuntimeMethod* method) 
+{
+	{
+		// ConnectMenu.gameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___ConnectMenu_8;
+		NullCheck(L_0);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
+		L_1 = GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC(L_0, NULL);
+		NullCheck(L_1);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_1, (bool)0, NULL);
+		// DisconnectMenu.gameObject.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___DisconnectMenu_13;
+		NullCheck(L_2);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+		L_3 = GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC(L_2, NULL);
+		NullCheck(L_3);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)1, NULL);
+		// batteryLowImage.gameObject.SetActive(false);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_4 = __this->___batteryLowImage_7;
+		NullCheck(L_4);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
+		L_5 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_4, NULL);
+		NullCheck(L_5);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::UpdateButtons()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_UpdateButtons_m05A8DD528AEB0B93974ED3047B870BDD3B462672 (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		// if (device.IsAudioJack)
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_0 = __this->___device_18;
+		NullCheck(L_0);
+		bool L_1 = L_0->___IsAudioJack_7;
+		if (!L_1)
+		{
+			goto IL_004d;
+		}
+	}
+	{
+		// wiredNotification.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___wiredNotification_12;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
+		// pingButton.gameObject.SetActive(false);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_3 = __this->___pingButton_9;
+		NullCheck(L_3);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
+		L_4 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_3, NULL);
+		NullCheck(L_4);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_4, (bool)0, NULL);
+		// rButton.gameObject.SetActive(false);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_5 = __this->___rButton_11;
+		NullCheck(L_5);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
+		L_6 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_5, NULL);
+		NullCheck(L_6);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)0, NULL);
+		// lButton.gameObject.SetActive(false);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_7 = __this->___lButton_10;
+		NullCheck(L_7);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8;
+		L_8 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_7, NULL);
+		NullCheck(L_8);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_8, (bool)0, NULL);
+		// return;
+		return;
+	}
+
+IL_004d:
+	{
+		// wiredNotification.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___wiredNotification_12;
+		NullCheck(L_9);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)0, NULL);
+		// if (IsLeft(device.Position) || IsRight(device.Position))
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_10 = __this->___device_18;
+		NullCheck(L_10);
+		int32_t L_11 = L_10->___Position_3;
+		il2cpp_codegen_runtime_class_init_inline(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var);
+		bool L_12;
+		L_12 = Android_DeviceController_IsLeft_m0D5801EDF5796CC727920C7869D8084DD85CABF4(L_11, NULL);
+		if (L_12)
+		{
+			goto IL_007d;
+		}
+	}
+	{
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_13 = __this->___device_18;
+		NullCheck(L_13);
+		int32_t L_14 = L_13->___Position_3;
+		il2cpp_codegen_runtime_class_init_inline(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var);
+		bool L_15;
+		L_15 = Android_DeviceController_IsRight_m873756CCE67A073F592CA8289ABBC5BBF59325EF(L_14, NULL);
+		if (!L_15)
+		{
+			goto IL_00df;
+		}
+	}
+
+IL_007d:
+	{
+		// pingButton.gameObject.SetActive(false);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_16 = __this->___pingButton_9;
+		NullCheck(L_16);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17;
+		L_17 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_16, NULL);
+		NullCheck(L_17);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_17, (bool)0, NULL);
+		// lButton.gameObject.SetActive(true);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_18 = __this->___lButton_10;
+		NullCheck(L_18);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19;
+		L_19 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_18, NULL);
+		NullCheck(L_19);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_19, (bool)1, NULL);
+		// rButton.gameObject.SetActive(true);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_20 = __this->___rButton_11;
+		NullCheck(L_20);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21;
+		L_21 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_20, NULL);
+		NullCheck(L_21);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_21, (bool)1, NULL);
+		// var isLeft = IsLeft(device.Position);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_22 = __this->___device_18;
+		NullCheck(L_22);
+		int32_t L_23 = L_22->___Position_3;
+		il2cpp_codegen_runtime_class_init_inline(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var);
+		bool L_24;
+		L_24 = Android_DeviceController_IsLeft_m0D5801EDF5796CC727920C7869D8084DD85CABF4(L_23, NULL);
+		V_0 = L_24;
+		// ChangeButtonColor(lButton, isLeft);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_25 = __this->___lButton_10;
+		bool L_26 = V_0;
+		Android_DeviceController_ChangeButtonColor_mBD1D13D0075A0C945AE4EB6449268844DB3656FB(__this, L_25, L_26, NULL);
+		// ChangeButtonColor(rButton, !isLeft);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_27 = __this->___rButton_11;
+		bool L_28 = V_0;
+		Android_DeviceController_ChangeButtonColor_mBD1D13D0075A0C945AE4EB6449268844DB3656FB(__this, L_27, (bool)((((int32_t)L_28) == ((int32_t)0))? 1 : 0), NULL);
+		return;
+	}
+
+IL_00df:
+	{
+		// pingButton.gameObject.SetActive(true);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_29 = __this->___pingButton_9;
+		NullCheck(L_29);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_30;
+		L_30 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_29, NULL);
+		NullCheck(L_30);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_30, (bool)1, NULL);
+		// lButton.gameObject.SetActive(false);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_31 = __this->___lButton_10;
+		NullCheck(L_31);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_32;
+		L_32 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_31, NULL);
+		NullCheck(L_32);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_32, (bool)0, NULL);
+		// rButton.gameObject.SetActive(false);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_33 = __this->___rButton_11;
+		NullCheck(L_33);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_34;
+		L_34 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_33, NULL);
+		NullCheck(L_34);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_34, (bool)0, NULL);
+		// ChangeButtonColor(pingButton, true);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_35 = __this->___pingButton_9;
+		Android_DeviceController_ChangeButtonColor_mBD1D13D0075A0C945AE4EB6449268844DB3656FB(__this, L_35, (bool)1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::UpdateIcon(Bhaptics.Tact.Unity.HapticDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_UpdateIcon_mCF4925BB9A45CD95FD4BD5A5BB405C35DE9268EA (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* ___0_d, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		// switch (d.Position)
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_0 = ___0_d;
+		NullCheck(L_0);
+		int32_t L_1 = L_0->___Position_3;
+		V_0 = L_1;
+		int32_t L_2 = V_0;
+		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_2, 3)))
+		{
+			case 0:
+			{
+				goto IL_004e;
+			}
+			case 1:
+			{
+				goto IL_013a;
+			}
+			case 2:
+			{
+				goto IL_015d;
+			}
+			case 3:
+			{
+				goto IL_00ae;
+			}
+			case 4:
+			{
+				goto IL_00ae;
+			}
+			case 5:
+			{
+				goto IL_008b;
+			}
+			case 6:
+			{
+				goto IL_008b;
+			}
+			case 7:
+			{
+				goto IL_00d1;
+			}
+			case 8:
+			{
+				goto IL_00d1;
+			}
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)((int32_t)203))))
+		{
+			goto IL_00f4;
+		}
+	}
+	{
+		int32_t L_4 = V_0;
+		if ((((int32_t)L_4) == ((int32_t)((int32_t)204))))
+		{
+			goto IL_0117;
+		}
+	}
+	{
+		goto IL_015d;
+	}
+
+IL_004e:
+	{
+		// if (d.IsAudioJack)
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_5 = ___0_d;
+		NullCheck(L_5);
+		bool L_6 = L_5->___IsAudioJack_7;
+		if (!L_6)
+		{
+			goto IL_0068;
+		}
+	}
+	{
+		// icon.sprite = TactsuitWiredIcon;
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_7 = __this->___icon_4;
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_8 = __this->___TactsuitWiredIcon_6;
+		NullCheck(L_7);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_7, L_8, NULL);
+		// return;
+		return;
+	}
+
+IL_0068:
+	{
+		// icon.sprite = GetSprite(widgetSetting.Vest, d.IsConnected);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_9 = __this->___icon_4;
+		IconSetting_t870A56F9950D91A50903F32FC2AA9660C7DEF95D* L_10 = __this->___widgetSetting_5;
+		NullCheck(L_10);
+		PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* L_11 = L_10->___Vest_0;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_12 = ___0_d;
+		NullCheck(L_12);
+		bool L_13 = L_12->___IsConnected_1;
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_14;
+		L_14 = Android_DeviceController_GetSprite_m85774A8C2238D99B35629E7215E3DFC664D5930D(__this, L_11, L_13, NULL);
+		NullCheck(L_9);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_9, L_14, NULL);
+		// break;
+		return;
+	}
+
+IL_008b:
+	{
+		// icon.sprite = GetSprite(widgetSetting.Foot, d.IsConnected);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_15 = __this->___icon_4;
+		IconSetting_t870A56F9950D91A50903F32FC2AA9660C7DEF95D* L_16 = __this->___widgetSetting_5;
+		NullCheck(L_16);
+		PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* L_17 = L_16->___Foot_3;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_18 = ___0_d;
+		NullCheck(L_18);
+		bool L_19 = L_18->___IsConnected_1;
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_20;
+		L_20 = Android_DeviceController_GetSprite_m85774A8C2238D99B35629E7215E3DFC664D5930D(__this, L_17, L_19, NULL);
+		NullCheck(L_15);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_15, L_20, NULL);
+		// break;
+		return;
+	}
+
+IL_00ae:
+	{
+		// icon.sprite = GetSprite(widgetSetting.Hand, d.IsConnected);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_21 = __this->___icon_4;
+		IconSetting_t870A56F9950D91A50903F32FC2AA9660C7DEF95D* L_22 = __this->___widgetSetting_5;
+		NullCheck(L_22);
+		PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* L_23 = L_22->___Hand_4;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_24 = ___0_d;
+		NullCheck(L_24);
+		bool L_25 = L_24->___IsConnected_1;
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_26;
+		L_26 = Android_DeviceController_GetSprite_m85774A8C2238D99B35629E7215E3DFC664D5930D(__this, L_23, L_25, NULL);
+		NullCheck(L_21);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_21, L_26, NULL);
+		// break;
+		return;
+	}
+
+IL_00d1:
+	{
+		// icon.sprite = GetSprite(widgetSetting.Arm, d.IsConnected);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_27 = __this->___icon_4;
+		IconSetting_t870A56F9950D91A50903F32FC2AA9660C7DEF95D* L_28 = __this->___widgetSetting_5;
+		NullCheck(L_28);
+		PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* L_29 = L_28->___Arm_2;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_30 = ___0_d;
+		NullCheck(L_30);
+		bool L_31 = L_30->___IsConnected_1;
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_32;
+		L_32 = Android_DeviceController_GetSprite_m85774A8C2238D99B35629E7215E3DFC664D5930D(__this, L_29, L_31, NULL);
+		NullCheck(L_27);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_27, L_32, NULL);
+		// break;
+		return;
+	}
+
+IL_00f4:
+	{
+		// icon.sprite = GetSprite(widgetSetting.GloveL, d.IsConnected);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_33 = __this->___icon_4;
+		IconSetting_t870A56F9950D91A50903F32FC2AA9660C7DEF95D* L_34 = __this->___widgetSetting_5;
+		NullCheck(L_34);
+		PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* L_35 = L_34->___GloveL_5;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_36 = ___0_d;
+		NullCheck(L_36);
+		bool L_37 = L_36->___IsConnected_1;
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_38;
+		L_38 = Android_DeviceController_GetSprite_m85774A8C2238D99B35629E7215E3DFC664D5930D(__this, L_35, L_37, NULL);
+		NullCheck(L_33);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_33, L_38, NULL);
+		// break;
+		return;
+	}
+
+IL_0117:
+	{
+		// icon.sprite = GetSprite(widgetSetting.GloveR, d.IsConnected);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_39 = __this->___icon_4;
+		IconSetting_t870A56F9950D91A50903F32FC2AA9660C7DEF95D* L_40 = __this->___widgetSetting_5;
+		NullCheck(L_40);
+		PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* L_41 = L_40->___GloveR_6;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_42 = ___0_d;
+		NullCheck(L_42);
+		bool L_43 = L_42->___IsConnected_1;
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_44;
+		L_44 = Android_DeviceController_GetSprite_m85774A8C2238D99B35629E7215E3DFC664D5930D(__this, L_41, L_43, NULL);
+		NullCheck(L_39);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_39, L_44, NULL);
+		// break;
+		return;
+	}
+
+IL_013a:
+	{
+		// icon.sprite = GetSprite(widgetSetting.Head, d.IsConnected);
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_45 = __this->___icon_4;
+		IconSetting_t870A56F9950D91A50903F32FC2AA9660C7DEF95D* L_46 = __this->___widgetSetting_5;
+		NullCheck(L_46);
+		PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* L_47 = L_46->___Head_1;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_48 = ___0_d;
+		NullCheck(L_48);
+		bool L_49 = L_48->___IsConnected_1;
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_50;
+		L_50 = Android_DeviceController_GetSprite_m85774A8C2238D99B35629E7215E3DFC664D5930D(__this, L_47, L_49, NULL);
+		NullCheck(L_45);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_45, L_50, NULL);
+		// break;
+		return;
+	}
+
+IL_015d:
+	{
+		// icon.sprite = null;
+		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_51 = __this->___icon_4;
+		NullCheck(L_51);
+		Image_set_sprite_mC0C248340BA27AAEE56855A3FAFA0D8CA12956DE(L_51, (Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99*)NULL, NULL);
+		// }
+		return;
+	}
+}
+// UnityEngine.Sprite Bhaptics.Tact.Unity.Android_DeviceController::GetSprite(Bhaptics.Tact.Unity.PositonIconSetting,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* Android_DeviceController_GetSprite_m85774A8C2238D99B35629E7215E3DFC664D5930D (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* ___0_icon, bool ___1_connected, const RuntimeMethod* method) 
+{
+	{
+		// if (icon == null)
+		PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* L_0 = ___0_icon;
+		if (L_0)
+		{
+			goto IL_0005;
+		}
+	}
+	{
+		// return null;
+		return (Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99*)NULL;
+	}
+
+IL_0005:
+	{
+		// return connected ? icon.connect : icon.disconnect;
+		bool L_1 = ___1_connected;
+		if (L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* L_2 = ___0_icon;
+		NullCheck(L_2);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_3 = L_2->___disconnect_1;
+		return L_3;
+	}
+
+IL_000f:
+	{
+		PositonIconSetting_t2332E7DD596C68B1165AD4FFE048CE64C8BC563F* L_4 = ___0_icon;
+		NullCheck(L_4);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_5 = L_4->___connect_0;
+		return L_5;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::Ping()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_Ping_mAF7ED8708F4DA8CBDF34996F1C90E33514926B0B (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (device == null)
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_0 = __this->___device_18;
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0009:
+	{
+		// BhapticsAndroidManager.Ping(device);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_1 = __this->___device_18;
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		BhapticsAndroidManager_Ping_mFBEF3D6E86FD47D89FB718BC2424BAA2B008EF53(L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::ToLeft()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_ToLeft_mBF80F1AF95724B8566D2011AADB9DBF56F392ADA (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (device == null)
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_0 = __this->___device_18;
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0009:
+	{
+		// if (IsRight(device.Position))
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_1 = __this->___device_18;
+		NullCheck(L_1);
+		int32_t L_2 = L_1->___Position_3;
+		il2cpp_codegen_runtime_class_init_inline(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Android_DeviceController_IsRight_m873756CCE67A073F592CA8289ABBC5BBF59325EF(L_2, NULL);
+		if (!L_3)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		// BhapticsAndroidManager.TogglePosition(device.Address);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_4 = __this->___device_18;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___Address_4;
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		BhapticsAndroidManager_TogglePosition_mF0CE4FAF0A39F831012CF8EA4160C03D2C3FAA6F(L_5, NULL);
+		return;
+	}
+
+IL_002c:
+	{
+		// Ping();
+		Android_DeviceController_Ping_mAF7ED8708F4DA8CBDF34996F1C90E33514926B0B(__this, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::ToRight()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_ToRight_m79A43062C1BFC6CDFFA5BBD82180BADF69D73DE4 (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (device == null)
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_0 = __this->___device_18;
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0009:
+	{
+		// if (IsLeft(device.Position))
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_1 = __this->___device_18;
+		NullCheck(L_1);
+		int32_t L_2 = L_1->___Position_3;
+		il2cpp_codegen_runtime_class_init_inline(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Android_DeviceController_IsLeft_m0D5801EDF5796CC727920C7869D8084DD85CABF4(L_2, NULL);
+		if (!L_3)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		// BhapticsAndroidManager.TogglePosition(device.Address);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_4 = __this->___device_18;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___Address_4;
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		BhapticsAndroidManager_TogglePosition_mF0CE4FAF0A39F831012CF8EA4160C03D2C3FAA6F(L_5, NULL);
+		return;
+	}
+
+IL_002c:
+	{
+		// Ping();
+		Android_DeviceController_Ping_mAF7ED8708F4DA8CBDF34996F1C90E33514926B0B(__this, NULL);
+		// }
+		return;
+	}
+}
+// UnityEngine.Color Bhaptics.Tact.Unity.Android_DeviceController::ToColor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Android_DeviceController_ToColor_m6437453B8B4B0067020E5F8EE8D2FB45D7DB822C (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, String_t* ___0_hex, const RuntimeMethod* method) 
+{
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// Color res = Color.white;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
+		L_0 = Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline(NULL);
+		V_0 = L_0;
+		// if (ColorUtility.TryParseHtmlString(hex, out res))
+		String_t* L_1 = ___0_hex;
+		bool L_2;
+		L_2 = ColorUtility_TryParseHtmlString_m8E4DF912AF247EE6893655537CDF0FB47BFE563D(L_1, (&V_0), NULL);
+		// return res;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3 = V_0;
+		return L_3;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::ChangeButtonColor(UnityEngine.UI.Button,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController_ChangeButtonColor_mBD1D13D0075A0C945AE4EB6449268844DB3656FB (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___0_targetButton, bool ___1_isSelect, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* G_B2_0 = NULL;
+	Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* G_B1_0 = NULL;
+	String_t* G_B3_0 = NULL;
+	Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* G_B3_1 = NULL;
+	Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* G_B5_0 = NULL;
+	Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* G_B4_0 = NULL;
+	String_t* G_B6_0 = NULL;
+	Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* G_B6_1 = NULL;
+	{
+		// var defaultColor = ToColor(isSelect ? SelectHexColor : DisableHexColor);
+		bool L_0 = ___1_isSelect;
+		G_B1_0 = __this;
+		if (L_0)
+		{
+			G_B2_0 = __this;
+			goto IL_000b;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var);
+		String_t* L_1 = ((Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_StaticFields*)il2cpp_codegen_static_fields_for(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var))->___DisableHexColor_16;
+		G_B3_0 = L_1;
+		G_B3_1 = G_B1_0;
+		goto IL_0010;
+	}
+
+IL_000b:
+	{
+		il2cpp_codegen_runtime_class_init_inline(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var);
+		String_t* L_2 = ((Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_StaticFields*)il2cpp_codegen_static_fields_for(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var))->___SelectHexColor_14;
+		G_B3_0 = L_2;
+		G_B3_1 = G_B2_0;
+	}
+
+IL_0010:
+	{
+		NullCheck(G_B3_1);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_3;
+		L_3 = Android_DeviceController_ToColor_m6437453B8B4B0067020E5F8EE8D2FB45D7DB822C(G_B3_1, G_B3_0, NULL);
+		V_0 = L_3;
+		// var hoverColor = ToColor(isSelect ? SelectHoverHexColor : DisableHoverHexColor);
+		bool L_4 = ___1_isSelect;
+		G_B4_0 = __this;
+		if (L_4)
+		{
+			G_B5_0 = __this;
+			goto IL_0021;
+		}
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var);
+		String_t* L_5 = ((Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_StaticFields*)il2cpp_codegen_static_fields_for(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var))->___DisableHoverHexColor_17;
+		G_B6_0 = L_5;
+		G_B6_1 = G_B4_0;
+		goto IL_0026;
+	}
+
+IL_0021:
+	{
+		il2cpp_codegen_runtime_class_init_inline(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var);
+		String_t* L_6 = ((Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_StaticFields*)il2cpp_codegen_static_fields_for(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var))->___SelectHoverHexColor_15;
+		G_B6_0 = L_6;
+		G_B6_1 = G_B5_0;
+	}
+
+IL_0026:
+	{
+		NullCheck(G_B6_1);
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_7;
+		L_7 = Android_DeviceController_ToColor_m6437453B8B4B0067020E5F8EE8D2FB45D7DB822C(G_B6_1, G_B6_0, NULL);
+		V_1 = L_7;
+		// var buttonColors = targetButton.colors;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_8 = ___0_targetButton;
+		NullCheck(L_8);
+		ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11 L_9;
+		L_9 = Selectable_get_colors_mB53E365D02351D4B64084295C4B2A7AF2DEC4750_inline(L_8, NULL);
+		V_2 = L_9;
+		// buttonColors.normalColor = defaultColor;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_10 = V_0;
+		ColorBlock_set_normalColor_m3EBF594F6FA2C6494ACA9FCB9B458807D85B96F8_inline((&V_2), L_10, NULL);
+		// buttonColors.highlightedColor = hoverColor;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = V_1;
+		ColorBlock_set_highlightedColor_m04E97DF2CCE7CAC47120D8F486E18BF62F16FF86_inline((&V_2), L_11, NULL);
+		// buttonColors.pressedColor = defaultColor;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_12 = V_0;
+		ColorBlock_set_pressedColor_m644C938090857AB07C57B25FE53F6DC2BB0DD5A8_inline((&V_2), L_12, NULL);
+		// targetButton.colors = buttonColors;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_13 = ___0_targetButton;
+		ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11 L_14 = V_2;
+		NullCheck(L_13);
+		Selectable_set_colors_m0A49ED3ACD6647B7E5A2DA10B3D417E8FE1BE55A(L_13, L_14, NULL);
+		// }
+		return;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.Android_DeviceController::IsLeft(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Android_DeviceController_IsLeft_m0D5801EDF5796CC727920C7869D8084DD85CABF4 (int32_t ___0_pos, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_pos;
+		if ((((int32_t)L_0) == ((int32_t)1)))
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		int32_t L_1 = ___0_pos;
+		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_1, 6)))
+		{
+			case 0:
+			{
+				goto IL_0022;
+			}
+			case 1:
+			{
+				goto IL_0024;
+			}
+			case 2:
+			{
+				goto IL_0022;
+			}
+			case 3:
+			{
+				goto IL_0024;
+			}
+			case 4:
+			{
+				goto IL_0022;
+			}
+		}
+	}
+	{
+		goto IL_0024;
+	}
+
+IL_0022:
+	{
+		// return true;
+		return (bool)1;
+	}
+
+IL_0024:
+	{
+		// return false;
+		return (bool)0;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.Android_DeviceController::IsRight(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Android_DeviceController_IsRight_m873756CCE67A073F592CA8289ABBC5BBF59325EF (int32_t ___0_pos, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_pos;
+		if ((((int32_t)L_0) == ((int32_t)2)))
+		{
+			goto IL_0022;
+		}
+	}
+	{
+		int32_t L_1 = ___0_pos;
+		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_1, 7)))
+		{
+			case 0:
+			{
+				goto IL_0022;
+			}
+			case 1:
+			{
+				goto IL_0024;
+			}
+			case 2:
+			{
+				goto IL_0022;
+			}
+			case 3:
+			{
+				goto IL_0024;
+			}
+			case 4:
+			{
+				goto IL_0022;
+			}
+		}
+	}
+	{
+		goto IL_0024;
+	}
+
+IL_0022:
+	{
+		// return true;
+		return (bool)1;
+	}
+
+IL_0024:
+	{
+		// return false;
+		return (bool)0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController__ctor_m31A65F30CA33C8ADB4A87471E213DFC05239E193 (Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_DeviceController::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_DeviceController__cctor_m06CF6CF8360B692B852387EE9352F5A72664B560 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral332EB1CE470981513721D7B46A5736A11902C33C);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3AF9AEDF456482BD9FF1FC3C194BFE6189E4D52A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF0086625FC01AC0161E43904A94043C121704B2A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF64A2350393A3C6F7071EB4703EDF3F0841F5264);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// private static string SelectHexColor = "#5267F9FF";
+		((Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_StaticFields*)il2cpp_codegen_static_fields_for(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var))->___SelectHexColor_14 = _stringLiteralF0086625FC01AC0161E43904A94043C121704B2A;
+		Il2CppCodeGenWriteBarrier((void**)(&((Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_StaticFields*)il2cpp_codegen_static_fields_for(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var))->___SelectHexColor_14), (void*)_stringLiteralF0086625FC01AC0161E43904A94043C121704B2A);
+		// private static string SelectHoverHexColor = "#697CFFFF";
+		((Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_StaticFields*)il2cpp_codegen_static_fields_for(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var))->___SelectHoverHexColor_15 = _stringLiteral332EB1CE470981513721D7B46A5736A11902C33C;
+		Il2CppCodeGenWriteBarrier((void**)(&((Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_StaticFields*)il2cpp_codegen_static_fields_for(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var))->___SelectHoverHexColor_15), (void*)_stringLiteral332EB1CE470981513721D7B46A5736A11902C33C);
+		// private static string DisableHexColor = "#525466FF";
+		((Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_StaticFields*)il2cpp_codegen_static_fields_for(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var))->___DisableHexColor_16 = _stringLiteralF64A2350393A3C6F7071EB4703EDF3F0841F5264;
+		Il2CppCodeGenWriteBarrier((void**)(&((Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_StaticFields*)il2cpp_codegen_static_fields_for(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var))->___DisableHexColor_16), (void*)_stringLiteralF64A2350393A3C6F7071EB4703EDF3F0841F5264);
+		// private static string DisableHoverHexColor = "#63646FFF";
+		((Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_StaticFields*)il2cpp_codegen_static_fields_for(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var))->___DisableHoverHexColor_17 = _stringLiteral3AF9AEDF456482BD9FF1FC3C194BFE6189E4D52A;
+		Il2CppCodeGenWriteBarrier((void**)(&((Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_StaticFields*)il2cpp_codegen_static_fields_for(Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var))->___DisableHoverHexColor_17), (void*)_stringLiteral3AF9AEDF456482BD9FF1FC3C194BFE6189E4D52A);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.Android_UIController::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_UIController_Awake_m934ACB7D46540C301F8071F59C7BDFF125E50045 (Android_UIController_tE2FCA9B09C445E64061C16692B2C7D1A42635BDB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Android_UIController_BackPage_m6F137BC1524634461104A7BE895168E68E0A4378_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Android_UIController_CloseHelpNotification_mE66FE60FFE435D533C26F053B619EF822550B105_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Android_UIController_NextPage_mEC3E176184A869D72F66704DEE21BE6234C93B54_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Android_UIController_OnHelp_m8CCE88D39439AFB8F42F1561EFB8411419503B11_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Android_UIController_OpenLink_m570004CFEAF93D5F635FF74A7D32A68A5A823DE1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Android_UIController_Refresh_m2E15D0E893D71239399995112C58B7CB7018E340_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisBoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23_m59698092F1230C6FB7F40D0F58F643A931A732D7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mC65A1F3381C6A430BF849270CBFD574D6DF4420B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisAndroid_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_m918BF1EF25916A3CB76952D9E373B9C553FCFDDB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* V_1 = NULL;
+	{
+		// for (int i = 0; i < deviceListSize; i++)
+		V_0 = 0;
+		goto IL_0037;
+	}
+
+IL_0004:
+	{
+		// var go = Instantiate(devicePrefab, devicesContainer.transform);
+		Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* L_0 = __this->___devicePrefab_10;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = __this->___devicesContainer_5;
+		NullCheck(L_1);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_1, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* L_3;
+		L_3 = Object_Instantiate_TisAndroid_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_m918BF1EF25916A3CB76952D9E373B9C553FCFDDB(L_0, L_2, Object_Instantiate_TisAndroid_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_m918BF1EF25916A3CB76952D9E373B9C553FCFDDB_RuntimeMethod_var);
+		V_1 = L_3;
+		// go.gameObject.SetActive(false);
+		Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* L_4 = V_1;
+		NullCheck(L_4);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
+		L_5 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_4, NULL);
+		NullCheck(L_5);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
+		// controllers.Add(go);
+		List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC* L_6 = __this->___controllers_16;
+		Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* L_7 = V_1;
+		NullCheck(L_6);
+		List_1_Add_mC65A1F3381C6A430BF849270CBFD574D6DF4420B_inline(L_6, L_7, List_1_Add_mC65A1F3381C6A430BF849270CBFD574D6DF4420B_RuntimeMethod_var);
+		// for (int i = 0; i < deviceListSize; i++)
+		int32_t L_8 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_8, 1));
+	}
+
+IL_0037:
+	{
+		// for (int i = 0; i < deviceListSize; i++)
+		int32_t L_9 = V_0;
+		int32_t L_10 = __this->___deviceListSize_20;
+		if ((((int32_t)L_9) < ((int32_t)L_10)))
+		{
+			goto IL_0004;
+		}
+	}
+	{
+		// BhapticsAndroidManager.AddRefreshAction(Refresh);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_11 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_11);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_11, __this, (intptr_t)((void*)Android_UIController_Refresh_m2E15D0E893D71239399995112C58B7CB7018E340_RuntimeMethod_var), NULL);
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		BhapticsAndroidManager_AddRefreshAction_m28C3B7D6677BC3B50E3A3E8FA9E2472A370B78FD(L_11, NULL);
+		// if (helpButton != null)
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_12 = __this->___helpButton_12;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_13;
+		L_13 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_12, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_13)
+		{
+			goto IL_007b;
+		}
+	}
+	{
+		// helpButton.onClick.AddListener(OnHelp);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_14 = __this->___helpButton_12;
+		NullCheck(L_14);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_15;
+		L_15 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_14, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_16 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_16);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_16, __this, (intptr_t)((void*)Android_UIController_OnHelp_m8CCE88D39439AFB8F42F1561EFB8411419503B11_RuntimeMethod_var), NULL);
+		NullCheck(L_15);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_15, L_16, NULL);
+	}
+
+IL_007b:
+	{
+		// if (helpCloseButton != null)
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_17 = __this->___helpCloseButton_15;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_18;
+		L_18 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_17, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_18)
+		{
+			goto IL_00a5;
+		}
+	}
+	{
+		// helpCloseButton.onClick.AddListener(CloseHelpNotification);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_19 = __this->___helpCloseButton_15;
+		NullCheck(L_19);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_20;
+		L_20 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_19, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_21 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_21);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_21, __this, (intptr_t)((void*)Android_UIController_CloseHelpNotification_mE66FE60FFE435D533C26F053B619EF822550B105_RuntimeMethod_var), NULL);
+		NullCheck(L_20);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_20, L_21, NULL);
+	}
+
+IL_00a5:
+	{
+		// if (bHpaticsLinkButton != null)
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_22 = __this->___bHpaticsLinkButton_13;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_23;
+		L_23 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_22, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_23)
+		{
+			goto IL_00cf;
+		}
+	}
+	{
+		// bHpaticsLinkButton.onClick.AddListener(OpenLink);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_24 = __this->___bHpaticsLinkButton_13;
+		NullCheck(L_24);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_25;
+		L_25 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_24, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_26 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_26);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_26, __this, (intptr_t)((void*)Android_UIController_OpenLink_m570004CFEAF93D5F635FF74A7D32A68A5A823DE1_RuntimeMethod_var), NULL);
+		NullCheck(L_25);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_25, L_26, NULL);
+	}
+
+IL_00cf:
+	{
+		// if (deviceListNextPageButton != null)
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_27 = __this->___deviceListNextPageButton_7;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_28;
+		L_28 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_27, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_28)
+		{
+			goto IL_00f9;
+		}
+	}
+	{
+		// deviceListNextPageButton.onClick.AddListener(NextPage);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_29 = __this->___deviceListNextPageButton_7;
+		NullCheck(L_29);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_30;
+		L_30 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_29, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_31 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_31);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_31, __this, (intptr_t)((void*)Android_UIController_NextPage_mEC3E176184A869D72F66704DEE21BE6234C93B54_RuntimeMethod_var), NULL);
+		NullCheck(L_30);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_30, L_31, NULL);
+	}
+
+IL_00f9:
+	{
+		// if (deviceListBackPageButton != null)
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_32 = __this->___deviceListBackPageButton_8;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_33;
+		L_33 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_32, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_33)
+		{
+			goto IL_0123;
+		}
+	}
+	{
+		// deviceListBackPageButton.onClick.AddListener(BackPage);
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_34 = __this->___deviceListBackPageButton_8;
+		NullCheck(L_34);
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_35;
+		L_35 = Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline(L_34, NULL);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_36 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_36);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_36, __this, (intptr_t)((void*)Android_UIController_BackPage_m6F137BC1524634461104A7BE895168E68E0A4378_RuntimeMethod_var), NULL);
+		NullCheck(L_35);
+		UnityEvent_AddListener_m8AA4287C16628486B41DA41CA5E7A856A706D302(L_35, L_36, NULL);
+	}
+
+IL_0123:
+	{
+		// if (mainPanel != null)
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_37 = __this->___mainPanel_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_38;
+		L_38 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_37, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_38)
+		{
+			goto IL_0153;
+		}
+	}
+	{
+		// defaultMainPanelSize = mainPanel.sizeDelta;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_39 = __this->___mainPanel_4;
+		NullCheck(L_39);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_40;
+		L_40 = RectTransform_get_sizeDelta_m822A8493F2035677384F1540A2E9E5ACE63010BB(L_39, NULL);
+		__this->___defaultMainPanelSize_18 = L_40;
+		// mainPanelCollider = mainPanel.GetComponent<BoxCollider>();
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_41 = __this->___mainPanel_4;
+		NullCheck(L_41);
+		BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* L_42;
+		L_42 = Component_GetComponent_TisBoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23_m59698092F1230C6FB7F40D0F58F643A931A732D7(L_41, Component_GetComponent_TisBoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23_m59698092F1230C6FB7F40D0F58F643A931A732D7_RuntimeMethod_var);
+		__this->___mainPanelCollider_17 = L_42;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___mainPanelCollider_17), (void*)L_42);
+	}
+
+IL_0153:
+	{
+		// if (devicesContainer != null)
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_43 = __this->___devicesContainer_5;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_44;
+		L_44 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_43, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_44)
+		{
+			goto IL_016d;
+		}
+	}
+	{
+		// defaultDeviceContainerSize = defaultMainPanelSize;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_45 = __this->___defaultMainPanelSize_18;
+		__this->___defaultDeviceContainerSize_19 = L_45;
+	}
+
+IL_016d:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_UIController::OnDestroy()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_UIController_OnDestroy_mAEC0DC3B1E280A8C14621F32248263EC89796FDC (Android_UIController_tE2FCA9B09C445E64061C16692B2C7D1A42635BDB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Android_UIController_Refresh_m2E15D0E893D71239399995112C58B7CB7018E340_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// BhapticsAndroidManager.RemoveRefreshAction(Refresh);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_0 = (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7*)il2cpp_codegen_object_new(UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		UnityAction__ctor_mC53E20D6B66E0D5688CD81B88DBB34F5A58B7131(L_0, __this, (intptr_t)((void*)Android_UIController_Refresh_m2E15D0E893D71239399995112C58B7CB7018E340_RuntimeMethod_var), NULL);
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		BhapticsAndroidManager_RemoveRefreshAction_mB5B150D8174F5981310DCB556FE5FB23C5A0F8B5(L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_UIController::Refresh()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_UIController_Refresh_m2E15D0E893D71239399995112C58B7CB7018E340 (Android_UIController_tE2FCA9B09C445E64061C16692B2C7D1A42635BDB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mBCA183A7F112CB3A0F1FBD7BA9E2CEB601F5753A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mEBAD153627C85633E6EBA6E3F67EB5B3E3290F89_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8F8BFCFC439A636B20C06C334A493AB7004843ED);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* V_0 = NULL;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
+	{
+		// var devices = BhapticsAndroidManager.GetDevices();
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_0;
+		L_0 = BhapticsAndroidManager_GetDevices_m3E091E55A5D8FDA7E6F5F314EE64150952546899(NULL);
+		V_0 = L_0;
+		// maxPageIndex = Mathf.FloorToInt(devices.Count / (float)deviceListSize);
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_1 = V_0;
+		NullCheck(L_1);
+		int32_t L_2;
+		L_2 = List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_inline(L_1, List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_RuntimeMethod_var);
+		int32_t L_3 = __this->___deviceListSize_20;
+		int32_t L_4;
+		L_4 = Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline(((float)(((float)L_2)/((float)L_3))), NULL);
+		__this->___maxPageIndex_26 = L_4;
+		// if (devices.Count == 0)
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_5 = V_0;
+		NullCheck(L_5);
+		int32_t L_6;
+		L_6 = List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_inline(L_5, List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_RuntimeMethod_var);
+		if (L_6)
+		{
+			goto IL_00e1;
+		}
+	}
+	{
+		// noPairedDeviceUi.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___noPairedDeviceUi_11;
+		NullCheck(L_7);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)1, NULL);
+		// var deviceContainerRect = devicesContainer as RectTransform;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8 = __this->___devicesContainer_5;
+		// deviceContainerRect.sizeDelta = defaultDeviceContainerSize;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9 = __this->___defaultDeviceContainerSize_19;
+		NullCheck(((RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5*)IsInstSealed((RuntimeObject*)L_8, RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_il2cpp_TypeInfo_var)));
+		RectTransform_set_sizeDelta_mC9A980EA6036E6725EF24CEDF3EE80A9B2B50EE5(((RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5*)IsInstSealed((RuntimeObject*)L_8, RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_il2cpp_TypeInfo_var)), L_9, NULL);
+		// mainPanel.sizeDelta = defaultMainPanelSize;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_10 = __this->___mainPanel_4;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_11 = __this->___defaultMainPanelSize_18;
+		NullCheck(L_10);
+		RectTransform_set_sizeDelta_mC9A980EA6036E6725EF24CEDF3EE80A9B2B50EE5(L_10, L_11, NULL);
+		// mainPanelCollider.center = new Vector3(0f, -mainPanel.sizeDelta.y * 0.5f, 0f);
+		BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* L_12 = __this->___mainPanelCollider_17;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_13 = __this->___mainPanel_4;
+		NullCheck(L_13);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_14;
+		L_14 = RectTransform_get_sizeDelta_m822A8493F2035677384F1540A2E9E5ACE63010BB(L_13, NULL);
+		float L_15 = L_14.___y_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
+		memset((&L_16), 0, sizeof(L_16));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_16), (0.0f), ((float)il2cpp_codegen_multiply(((-L_15)), (0.5f))), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_12);
+		BoxCollider_set_center_m0AB0482699735FEE8306A7FCAAE66A76C479F0F0(L_12, L_16, NULL);
+		// mainPanelCollider.size = new Vector3(mainPanel.sizeDelta.x, mainPanel.sizeDelta.y, 1f);
+		BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* L_17 = __this->___mainPanelCollider_17;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_18 = __this->___mainPanel_4;
+		NullCheck(L_18);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_19;
+		L_19 = RectTransform_get_sizeDelta_m822A8493F2035677384F1540A2E9E5ACE63010BB(L_18, NULL);
+		float L_20 = L_19.___x_0;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_21 = __this->___mainPanel_4;
+		NullCheck(L_21);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_22;
+		L_22 = RectTransform_get_sizeDelta_m822A8493F2035677384F1540A2E9E5ACE63010BB(L_21, NULL);
+		float L_23 = L_22.___y_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24;
+		memset((&L_24), 0, sizeof(L_24));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_24), L_20, L_23, (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_17);
+		BoxCollider_set_size_m8374267FDE5DD628973E0E5E1331E781552B855A(L_17, L_24, NULL);
+		// deviceListPageIndex = 0;
+		__this->___deviceListPageIndex_21 = 0;
+		// deviceListPageUi.gameObject.SetActive(false);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_25 = __this->___deviceListPageUi_6;
+		NullCheck(L_25);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26;
+		L_26 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_25, NULL);
+		NullCheck(L_26);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_26, (bool)0, NULL);
+		goto IL_02ac;
+	}
+
+IL_00e1:
+	{
+		// Vector2 currentExpandSize = Vector2.zero;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_27;
+		L_27 = Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline(NULL);
+		V_1 = L_27;
+		// if (devices.Count >= pageActivateDeviceCount)
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_28 = V_0;
+		NullCheck(L_28);
+		int32_t L_29;
+		L_29 = List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_inline(L_28, List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_RuntimeMethod_var);
+		int32_t L_30 = __this->___pageActivateDeviceCount_24;
+		if ((((int32_t)L_29) < ((int32_t)L_30)))
+		{
+			goto IL_01ad;
+		}
+	}
+	{
+		// currentExpandSize = new Vector2(0f, expandHeight * (pageActivateDeviceCount - expandDeviceCount) + pageExpandHeight);
+		int32_t L_31 = __this->___expandHeight_22;
+		int32_t L_32 = __this->___pageActivateDeviceCount_24;
+		int32_t L_33 = __this->___expandDeviceCount_23;
+		int32_t L_34 = __this->___pageExpandHeight_25;
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_1), (0.0f), ((float)((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_31, ((int32_t)il2cpp_codegen_subtract(L_32, L_33)))), L_34))), NULL);
+		// deviceListPageUi.gameObject.SetActive(true);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_35 = __this->___deviceListPageUi_6;
+		NullCheck(L_35);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_36;
+		L_36 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_35, NULL);
+		NullCheck(L_36);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_36, (bool)1, NULL);
+		// deviceListPageText.text = (deviceListPageIndex + 1) + " / " + (maxPageIndex + 1);
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_37 = __this->___deviceListPageText_9;
+		int32_t L_38 = __this->___deviceListPageIndex_21;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_38, 1));
+		String_t* L_39;
+		L_39 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_2), NULL);
+		int32_t L_40 = __this->___maxPageIndex_26;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_40, 1));
+		String_t* L_41;
+		L_41 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_2), NULL);
+		String_t* L_42;
+		L_42 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_39, _stringLiteral8F8BFCFC439A636B20C06C334A493AB7004843ED, L_41, NULL);
+		NullCheck(L_37);
+		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_37, L_42);
+		// deviceListBackPageButton.interactable = deviceListPageIndex != 0;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_43 = __this->___deviceListBackPageButton_8;
+		int32_t L_44 = __this->___deviceListPageIndex_21;
+		NullCheck(L_43);
+		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_43, (bool)((!(((uint32_t)L_44) <= ((uint32_t)0)))? 1 : 0), NULL);
+		// deviceListNextPageButton.interactable = deviceListPageIndex != maxPageIndex;
+		Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* L_45 = __this->___deviceListNextPageButton_7;
+		int32_t L_46 = __this->___deviceListPageIndex_21;
+		int32_t L_47 = __this->___maxPageIndex_26;
+		NullCheck(L_45);
+		Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492(L_45, (bool)((((int32_t)((((int32_t)L_46) == ((int32_t)L_47))? 1 : 0)) == ((int32_t)0))? 1 : 0), NULL);
+		// if (deviceListPageIndex > maxPageIndex)
+		int32_t L_48 = __this->___deviceListPageIndex_21;
+		int32_t L_49 = __this->___maxPageIndex_26;
+		if ((((int32_t)L_48) <= ((int32_t)L_49)))
+		{
+			goto IL_01f6;
+		}
+	}
+	{
+		// deviceListPageIndex = 0;
+		__this->___deviceListPageIndex_21 = 0;
+		goto IL_01f6;
+	}
+
+IL_01ad:
+	{
+		// if (devices.Count >= expandDeviceCount)
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_50 = V_0;
+		NullCheck(L_50);
+		int32_t L_51;
+		L_51 = List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_inline(L_50, List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_RuntimeMethod_var);
+		int32_t L_52 = __this->___expandDeviceCount_23;
+		if ((((int32_t)L_51) < ((int32_t)L_52)))
+		{
+			goto IL_01de;
+		}
+	}
+	{
+		// currentExpandSize = new Vector2(0f, expandHeight * (1 + devices.Count - expandDeviceCount));
+		int32_t L_53 = __this->___expandHeight_22;
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_54 = V_0;
+		NullCheck(L_54);
+		int32_t L_55;
+		L_55 = List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_inline(L_54, List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_RuntimeMethod_var);
+		int32_t L_56 = __this->___expandDeviceCount_23;
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_1), (0.0f), ((float)((int32_t)il2cpp_codegen_multiply(L_53, ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_add(1, L_55)), L_56))))), NULL);
+	}
+
+IL_01de:
+	{
+		// deviceListPageIndex = 0;
+		__this->___deviceListPageIndex_21 = 0;
+		// deviceListPageUi.gameObject.SetActive(false);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_57 = __this->___deviceListPageUi_6;
+		NullCheck(L_57);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_58;
+		L_58 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_57, NULL);
+		NullCheck(L_58);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_58, (bool)0, NULL);
+	}
+
+IL_01f6:
+	{
+		// var deviceContainerRect = devicesContainer as RectTransform;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_59 = __this->___devicesContainer_5;
+		// deviceContainerRect.sizeDelta = defaultDeviceContainerSize + currentExpandSize;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_60 = __this->___defaultDeviceContainerSize_19;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_61 = V_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_62;
+		L_62 = Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline(L_60, L_61, NULL);
+		NullCheck(((RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5*)IsInstSealed((RuntimeObject*)L_59, RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_il2cpp_TypeInfo_var)));
+		RectTransform_set_sizeDelta_mC9A980EA6036E6725EF24CEDF3EE80A9B2B50EE5(((RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5*)IsInstSealed((RuntimeObject*)L_59, RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_il2cpp_TypeInfo_var)), L_62, NULL);
+		// mainPanel.sizeDelta = defaultMainPanelSize + currentExpandSize;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_63 = __this->___mainPanel_4;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_64 = __this->___defaultMainPanelSize_18;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_65 = V_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_66;
+		L_66 = Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline(L_64, L_65, NULL);
+		NullCheck(L_63);
+		RectTransform_set_sizeDelta_mC9A980EA6036E6725EF24CEDF3EE80A9B2B50EE5(L_63, L_66, NULL);
+		// mainPanelCollider.center = new Vector3(0f, -mainPanel.sizeDelta.y * 0.5f, 0f);
+		BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* L_67 = __this->___mainPanelCollider_17;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_68 = __this->___mainPanel_4;
+		NullCheck(L_68);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_69;
+		L_69 = RectTransform_get_sizeDelta_m822A8493F2035677384F1540A2E9E5ACE63010BB(L_68, NULL);
+		float L_70 = L_69.___y_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_71;
+		memset((&L_71), 0, sizeof(L_71));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_71), (0.0f), ((float)il2cpp_codegen_multiply(((-L_70)), (0.5f))), (0.0f), /*hidden argument*/NULL);
+		NullCheck(L_67);
+		BoxCollider_set_center_m0AB0482699735FEE8306A7FCAAE66A76C479F0F0(L_67, L_71, NULL);
+		// mainPanelCollider.size = new Vector3(mainPanel.sizeDelta.x, mainPanel.sizeDelta.y, 1f);
+		BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* L_72 = __this->___mainPanelCollider_17;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_73 = __this->___mainPanel_4;
+		NullCheck(L_73);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_74;
+		L_74 = RectTransform_get_sizeDelta_m822A8493F2035677384F1540A2E9E5ACE63010BB(L_73, NULL);
+		float L_75 = L_74.___x_0;
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_76 = __this->___mainPanel_4;
+		NullCheck(L_76);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_77;
+		L_77 = RectTransform_get_sizeDelta_m822A8493F2035677384F1540A2E9E5ACE63010BB(L_76, NULL);
+		float L_78 = L_77.___y_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_79;
+		memset((&L_79), 0, sizeof(L_79));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_79), L_75, L_78, (1.0f), /*hidden argument*/NULL);
+		NullCheck(L_72);
+		BoxCollider_set_size_m8374267FDE5DD628973E0E5E1331E781552B855A(L_72, L_79, NULL);
+		// noPairedDeviceUi.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_80 = __this->___noPairedDeviceUi_11;
+		NullCheck(L_80);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_80, (bool)0, NULL);
+		// helpUi.gameObject.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_81 = __this->___helpUi_14;
+		NullCheck(L_81);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_82;
+		L_82 = GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC(L_81, NULL);
+		NullCheck(L_82);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_82, (bool)0, NULL);
+	}
+
+IL_02ac:
+	{
+		// for (int i = 0; i < deviceListSize; i++)
+		V_3 = 0;
+		goto IL_031b;
+	}
+
+IL_02b0:
+	{
+	}
+	try
+	{// begin try (depth: 1)
+		{
+			// if (i <= devices.Count - 1)
+			int32_t L_83 = V_3;
+			List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_84 = V_0;
+			NullCheck(L_84);
+			int32_t L_85;
+			L_85 = List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_inline(L_84, List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_RuntimeMethod_var);
+			if ((((int32_t)L_83) > ((int32_t)((int32_t)il2cpp_codegen_subtract(L_85, 1)))))
+			{
+				goto IL_02e4_1;
+			}
+		}
+		{
+			// controllers[i].RefreshDevice(devices[i + deviceListPageIndex * deviceListSize]);
+			List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC* L_86 = __this->___controllers_16;
+			int32_t L_87 = V_3;
+			NullCheck(L_86);
+			Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* L_88;
+			L_88 = List_1_get_Item_mBCA183A7F112CB3A0F1FBD7BA9E2CEB601F5753A(L_86, L_87, List_1_get_Item_mBCA183A7F112CB3A0F1FBD7BA9E2CEB601F5753A_RuntimeMethod_var);
+			List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_89 = V_0;
+			int32_t L_90 = V_3;
+			int32_t L_91 = __this->___deviceListPageIndex_21;
+			int32_t L_92 = __this->___deviceListSize_20;
+			NullCheck(L_89);
+			HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_93;
+			L_93 = List_1_get_Item_mEBAD153627C85633E6EBA6E3F67EB5B3E3290F89(L_89, ((int32_t)il2cpp_codegen_add(L_90, ((int32_t)il2cpp_codegen_multiply(L_91, L_92)))), List_1_get_Item_mEBAD153627C85633E6EBA6E3F67EB5B3E3290F89_RuntimeMethod_var);
+			NullCheck(L_88);
+			Android_DeviceController_RefreshDevice_m09161A779EC3F62E826A0CD4C03FAE35D070FEDF(L_88, L_93, NULL);
+			goto IL_02fb_1;
+		}
+
+IL_02e4_1:
+		{
+			// controllers[i].gameObject.SetActive(false);
+			List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC* L_94 = __this->___controllers_16;
+			int32_t L_95 = V_3;
+			NullCheck(L_94);
+			Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* L_96;
+			L_96 = List_1_get_Item_mBCA183A7F112CB3A0F1FBD7BA9E2CEB601F5753A(L_94, L_95, List_1_get_Item_mBCA183A7F112CB3A0F1FBD7BA9E2CEB601F5753A_RuntimeMethod_var);
+			NullCheck(L_96);
+			GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_97;
+			L_97 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_96, NULL);
+			NullCheck(L_97);
+			GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_97, (bool)0, NULL);
+		}
+
+IL_02fb_1:
+		{
+			// }
+			goto IL_0317;
+		}
+	}// end try (depth: 1)
+	catch(Il2CppExceptionWrapper& e)
+	{
+		if(il2cpp_codegen_class_is_assignable_from (((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Exception_t_il2cpp_TypeInfo_var)), il2cpp_codegen_object_class(e.ex)))
+		{
+			IL2CPP_PUSH_ACTIVE_EXCEPTION(e.ex);
+			goto CATCH_02fd;
+		}
+		throw e;
+	}
+
+CATCH_02fd:
+	{// begin catch(System.Exception)
+		// catch (System.Exception e)
+		// controllers[i].gameObject.SetActive(false);
+		List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC* L_98 = __this->___controllers_16;
+		int32_t L_99 = V_3;
+		NullCheck(L_98);
+		Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8* L_100;
+		L_100 = List_1_get_Item_mBCA183A7F112CB3A0F1FBD7BA9E2CEB601F5753A(L_98, L_99, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&List_1_get_Item_mBCA183A7F112CB3A0F1FBD7BA9E2CEB601F5753A_RuntimeMethod_var)));
+		NullCheck(L_100);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_101;
+		L_101 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_100, NULL);
+		NullCheck(L_101);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_101, (bool)0, NULL);
+		// }
+		IL2CPP_POP_ACTIVE_EXCEPTION();
+		goto IL_0317;
+	}// end catch (depth: 1)
+
+IL_0317:
+	{
+		// for (int i = 0; i < deviceListSize; i++)
+		int32_t L_102 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_102, 1));
+	}
+
+IL_031b:
+	{
+		// for (int i = 0; i < deviceListSize; i++)
+		int32_t L_103 = V_3;
+		int32_t L_104 = __this->___deviceListSize_20;
+		if ((((int32_t)L_103) < ((int32_t)L_104)))
+		{
+			goto IL_02b0;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_UIController::OnHelp()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_UIController_OnHelp_m8CCE88D39439AFB8F42F1561EFB8411419503B11 (Android_UIController_tE2FCA9B09C445E64061C16692B2C7D1A42635BDB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (helpUi != null)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___helpUi_14;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		// helpUi.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___helpUi_14;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
+	}
+
+IL_001a:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_UIController::CloseHelpNotification()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_UIController_CloseHelpNotification_mE66FE60FFE435D533C26F053B619EF822550B105 (Android_UIController_tE2FCA9B09C445E64061C16692B2C7D1A42635BDB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (helpUi != null)
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___helpUi_14;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		// helpUi.SetActive(false);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___helpUi_14;
+		NullCheck(L_2);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)0, NULL);
+	}
+
+IL_001a:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_UIController::OpenLink()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_UIController_OpenLink_m570004CFEAF93D5F635FF74A7D32A68A5A823DE1 (Android_UIController_tE2FCA9B09C445E64061C16692B2C7D1A42635BDB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral21AF401D54A069E066A9313533E7CF143D7B97E0);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Application.OpenURL("https://www.bhaptics.com/support/download");
+		Application_OpenURL_mE748FA4D503715DEE12BCA4BDD8A5305AE41DB89(_stringLiteral21AF401D54A069E066A9313533E7CF143D7B97E0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_UIController::NextPage()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_UIController_NextPage_mEC3E176184A869D72F66704DEE21BE6234C93B54 (Android_UIController_tE2FCA9B09C445E64061C16692B2C7D1A42635BDB* __this, const RuntimeMethod* method) 
+{
+	{
+		// deviceListPageIndex = Mathf.Clamp(deviceListPageIndex + 1, 0, maxPageIndex);
+		int32_t L_0 = __this->___deviceListPageIndex_21;
+		int32_t L_1 = __this->___maxPageIndex_26;
+		int32_t L_2;
+		L_2 = Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline(((int32_t)il2cpp_codegen_add(L_0, 1)), 0, L_1, NULL);
+		__this->___deviceListPageIndex_21 = L_2;
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_UIController::BackPage()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_UIController_BackPage_m6F137BC1524634461104A7BE895168E68E0A4378 (Android_UIController_tE2FCA9B09C445E64061C16692B2C7D1A42635BDB* __this, const RuntimeMethod* method) 
+{
+	{
+		// deviceListPageIndex = Mathf.Clamp(deviceListPageIndex - 1, 0, maxPageIndex);
+		int32_t L_0 = __this->___deviceListPageIndex_21;
+		int32_t L_1 = __this->___maxPageIndex_26;
+		int32_t L_2;
+		L_2 = Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline(((int32_t)il2cpp_codegen_subtract(L_0, 1)), 0, L_1, NULL);
+		__this->___deviceListPageIndex_21 = L_2;
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Android_UIController::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Android_UIController__ctor_m3EB480762D52CC27453EAAD16AE0DEA03636913B (Android_UIController_tE2FCA9B09C445E64061C16692B2C7D1A42635BDB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mFC1BDB339D9BF587ACFC0328ADF82046EBF00385_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// private List<Android_DeviceController> controllers = new List<Android_DeviceController>();
+		List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC* L_0 = (List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC*)il2cpp_codegen_object_new(List_1_tF565FFB5F9A71D4F5B4A9AB2A2A41865836082FC_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		List_1__ctor_mFC1BDB339D9BF587ACFC0328ADF82046EBF00385(L_0, List_1__ctor_mFC1BDB339D9BF587ACFC0328ADF82046EBF00385_RuntimeMethod_var);
+		__this->___controllers_16 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___controllers_16), (void*)L_0);
+		// private int deviceListSize = 5;
+		__this->___deviceListSize_20 = 5;
+		// private int expandHeight = 78;
+		__this->___expandHeight_22 = ((int32_t)78);
+		// private int expandDeviceCount = 4;
+		__this->___expandDeviceCount_23 = 4;
+		// private int pageActivateDeviceCount = 6;
+		__this->___pageActivateDeviceCount_24 = 6;
+		// private int pageExpandHeight = 28;
+		__this->___pageExpandHeight_25 = ((int32_t)28);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_Awake_m9FB9E136F69A3C090D4E0B6C7003FC4453A3774E (BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4608FE87101D22BE8C4DEB6889237BF7C534CF19);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Instance != null)
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422* L_0 = ((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___Instance_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// DestroyImmediate(this);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_DestroyImmediate_m6336EBC83591A5DB64EC70C92132824C6E258705(__this, NULL);
+		// return;
+		return;
+	}
+
+IL_0014:
+	{
+		// Instance = this;
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___Instance_4 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___Instance_4), (void*)__this);
+		// name = "[bHapticsAndroidManager]";
+		Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47(__this, _stringLiteral4608FE87101D22BE8C4DEB6889237BF7C534CF19, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_Start_m85F92CF02246A01E62C615649BC9587350781840 (BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAAE7996AEBD1E7547D27971F45D26AAB78DA8974);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Application.platform != RuntimePlatform.Android)
+		int32_t L_0;
+		L_0 = Application_get_platform_m59EF7D6155D18891B24767F83F388160B1FF2138(NULL);
+		if ((((int32_t)L_0) == ((int32_t)((int32_t)11))))
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// pcAndoidTestMode = true;
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___pcAndoidTestMode_5 = (bool)1;
+	}
+
+IL_000f:
+	{
+		// InvokeRepeating("RefreshDevices", 1f, 1f);
+		MonoBehaviour_InvokeRepeating_mF208501E0E4918F9168BBBA5FC50D8F80D01514D(__this, _stringLiteralAAE7996AEBD1E7547D27971F45D26AAB78DA8974, (1.0f), (1.0f), NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::RefreshDevices()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_RefreshDevices_m3EA5B323616AE7BA4424B521FB94AF4962EA3E90 (BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m2235CDCD234718681BDBD928B5695B70869CFDF7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m28EDEA4B6A9DF285910079B34B540331FFE727F6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAAEBEE338DAD4D6AAEA13759AF249D8B75C3005E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAB1DF493E6BF8DE49A74F5D9EA8F32266343FB1D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEBE25ECBA8EC59517B5872227BC62813DA59F539);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEE5B11901E1FFD2A68EE46A0CB37A1CEFE3D8B68);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFC41D4D571C981EFBE0C1CE06EE3E858A5C19B2C);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* V_0 = NULL;
+	HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* V_1 = NULL;
+	int32_t V_2 = 0;
+	int32_t V_3 = 0;
+	{
+		// if (refreshActions.Count == 0)
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* L_0 = ((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___refreshActions_7;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = List_1_get_Count_m2235CDCD234718681BDBD928B5695B70869CFDF7_inline(L_0, List_1_get_Count_m2235CDCD234718681BDBD928B5695B70869CFDF7_RuntimeMethod_var);
+		if (L_1)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_000d:
+	{
+		// var androidHapticPlayer = BhapticsManager.GetHaptic() as AndroidHaptic;
+		RuntimeObject* L_2;
+		L_2 = BhapticsManager_GetHaptic_m307D5434386E8ABB1F232FBD10FB87EE4CD04E63(NULL);
+		V_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1*)IsInstClass((RuntimeObject*)L_2, AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var));
+		// if (androidHapticPlayer == null)
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_3 = V_0;
+		if (L_3)
+		{
+			goto IL_01b3;
+		}
+	}
+	{
+		// if (Devices.Count == 0)
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_4 = __this->___Devices_6;
+		NullCheck(L_4);
+		int32_t L_5;
+		L_5 = List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_inline(L_4, List_1_get_Count_m725A76F4698AD7D6FCAD050547EB8BCC2D5B54DB_RuntimeMethod_var);
+		if (L_5)
+		{
+			goto IL_018d;
+		}
+	}
+	{
+		// var device = new HapticDevice()
+		// {
+		//     Position = PositionType.Vest,
+		//     IsConnected = true,
+		//     IsPaired = true,
+		//     Address = "aaaa",
+		//     DeviceName = "Tactot",
+		//     Candidates = new PositionType[] { PositionType.Vest },
+		// };
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_6 = (HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029*)il2cpp_codegen_object_new(HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		HapticDevice__ctor_mAAE9D272968DD2A9158286A348120F4B9F205426(L_6, NULL);
+		V_1 = L_6;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_7 = V_1;
+		NullCheck(L_7);
+		L_7->___Position_3 = 3;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_8 = V_1;
+		NullCheck(L_8);
+		L_8->___IsConnected_1 = (bool)1;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_9 = V_1;
+		NullCheck(L_9);
+		L_9->___IsPaired_0 = (bool)1;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_10 = V_1;
+		NullCheck(L_10);
+		L_10->___Address_4 = _stringLiteralAB1DF493E6BF8DE49A74F5D9EA8F32266343FB1D;
+		Il2CppCodeGenWriteBarrier((void**)(&L_10->___Address_4), (void*)_stringLiteralAB1DF493E6BF8DE49A74F5D9EA8F32266343FB1D);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_11 = V_1;
+		NullCheck(L_11);
+		L_11->___DeviceName_2 = _stringLiteralFC41D4D571C981EFBE0C1CE06EE3E858A5C19B2C;
+		Il2CppCodeGenWriteBarrier((void**)(&L_11->___DeviceName_2), (void*)_stringLiteralFC41D4D571C981EFBE0C1CE06EE3E858A5C19B2C);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_12 = V_1;
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_13 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)1);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_14 = L_13;
+		NullCheck(L_14);
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)3);
+		NullCheck(L_12);
+		L_12->___Candidates_5 = L_14;
+		Il2CppCodeGenWriteBarrier((void**)(&L_12->___Candidates_5), (void*)L_14);
+		// var device2 = new HapticDevice()
+		// {
+		//     Position = PositionType.ForearmL,
+		//     IsConnected = false,
+		//     IsPaired = true,
+		//     Address = "aaaa22",
+		//     DeviceName = "Tactosy",
+		//     Candidates = new PositionType[] { PositionType.ForearmR, PositionType.ForearmL },
+		// };
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_15 = (HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029*)il2cpp_codegen_object_new(HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029_il2cpp_TypeInfo_var);
+		NullCheck(L_15);
+		HapticDevice__ctor_mAAE9D272968DD2A9158286A348120F4B9F205426(L_15, NULL);
+		V_1 = L_15;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_16 = V_1;
+		NullCheck(L_16);
+		L_16->___Position_3 = ((int32_t)10);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_17 = V_1;
+		NullCheck(L_17);
+		L_17->___IsConnected_1 = (bool)0;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_18 = V_1;
+		NullCheck(L_18);
+		L_18->___IsPaired_0 = (bool)1;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_19 = V_1;
+		NullCheck(L_19);
+		L_19->___Address_4 = _stringLiteralEBE25ECBA8EC59517B5872227BC62813DA59F539;
+		Il2CppCodeGenWriteBarrier((void**)(&L_19->___Address_4), (void*)_stringLiteralEBE25ECBA8EC59517B5872227BC62813DA59F539);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_20 = V_1;
+		NullCheck(L_20);
+		L_20->___DeviceName_2 = _stringLiteralAAEBEE338DAD4D6AAEA13759AF249D8B75C3005E;
+		Il2CppCodeGenWriteBarrier((void**)(&L_20->___DeviceName_2), (void*)_stringLiteralAAEBEE338DAD4D6AAEA13759AF249D8B75C3005E);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_21 = V_1;
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_22 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)2);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_23 = L_22;
+		NullCheck(L_23);
+		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)((int32_t)11));
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_24 = L_23;
+		NullCheck(L_24);
+		(L_24)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)((int32_t)10));
+		NullCheck(L_21);
+		L_21->___Candidates_5 = L_24;
+		Il2CppCodeGenWriteBarrier((void**)(&L_21->___Candidates_5), (void*)L_24);
+		// var device3 = new HapticDevice()
+		// {
+		//     Position = PositionType.HandL,
+		//     IsConnected = true,
+		//     IsPaired = true,
+		//     Address = "aaaa22",
+		//     DeviceName = "Tactosy",
+		//     Candidates = new PositionType[] { PositionType.HandL, PositionType.HandR},
+		// };
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_25 = (HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029*)il2cpp_codegen_object_new(HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029_il2cpp_TypeInfo_var);
+		NullCheck(L_25);
+		HapticDevice__ctor_mAAE9D272968DD2A9158286A348120F4B9F205426(L_25, NULL);
+		V_1 = L_25;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_26 = V_1;
+		NullCheck(L_26);
+		L_26->___Position_3 = 6;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_27 = V_1;
+		NullCheck(L_27);
+		L_27->___IsConnected_1 = (bool)1;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_28 = V_1;
+		NullCheck(L_28);
+		L_28->___IsPaired_0 = (bool)1;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_29 = V_1;
+		NullCheck(L_29);
+		L_29->___Address_4 = _stringLiteralEBE25ECBA8EC59517B5872227BC62813DA59F539;
+		Il2CppCodeGenWriteBarrier((void**)(&L_29->___Address_4), (void*)_stringLiteralEBE25ECBA8EC59517B5872227BC62813DA59F539);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_30 = V_1;
+		NullCheck(L_30);
+		L_30->___DeviceName_2 = _stringLiteralAAEBEE338DAD4D6AAEA13759AF249D8B75C3005E;
+		Il2CppCodeGenWriteBarrier((void**)(&L_30->___DeviceName_2), (void*)_stringLiteralAAEBEE338DAD4D6AAEA13759AF249D8B75C3005E);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_31 = V_1;
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_32 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)2);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_33 = L_32;
+		NullCheck(L_33);
+		(L_33)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)6);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_34 = L_33;
+		NullCheck(L_34);
+		(L_34)->SetAt(static_cast<il2cpp_array_size_t>(1), (int32_t)7);
+		NullCheck(L_31);
+		L_31->___Candidates_5 = L_34;
+		Il2CppCodeGenWriteBarrier((void**)(&L_31->___Candidates_5), (void*)L_34);
+		// var device4 = new HapticDevice()
+		// {
+		//     Position = PositionType.Head,
+		//     IsConnected = true,
+		//     IsPaired = true,
+		//     Address = "aaaa22",
+		//     DeviceName = "Tactal",
+		//     Candidates = new PositionType[] { PositionType.Head},
+		// };
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_35 = (HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029*)il2cpp_codegen_object_new(HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029_il2cpp_TypeInfo_var);
+		NullCheck(L_35);
+		HapticDevice__ctor_mAAE9D272968DD2A9158286A348120F4B9F205426(L_35, NULL);
+		V_1 = L_35;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_36 = V_1;
+		NullCheck(L_36);
+		L_36->___Position_3 = 4;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_37 = V_1;
+		NullCheck(L_37);
+		L_37->___IsConnected_1 = (bool)1;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_38 = V_1;
+		NullCheck(L_38);
+		L_38->___IsPaired_0 = (bool)1;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_39 = V_1;
+		NullCheck(L_39);
+		L_39->___Address_4 = _stringLiteralEBE25ECBA8EC59517B5872227BC62813DA59F539;
+		Il2CppCodeGenWriteBarrier((void**)(&L_39->___Address_4), (void*)_stringLiteralEBE25ECBA8EC59517B5872227BC62813DA59F539);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_40 = V_1;
+		NullCheck(L_40);
+		L_40->___DeviceName_2 = _stringLiteralEE5B11901E1FFD2A68EE46A0CB37A1CEFE3D8B68;
+		Il2CppCodeGenWriteBarrier((void**)(&L_40->___DeviceName_2), (void*)_stringLiteralEE5B11901E1FFD2A68EE46A0CB37A1CEFE3D8B68);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_41 = V_1;
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_42 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)1);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_43 = L_42;
+		NullCheck(L_43);
+		(L_43)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)4);
+		NullCheck(L_41);
+		L_41->___Candidates_5 = L_43;
+		Il2CppCodeGenWriteBarrier((void**)(&L_41->___Candidates_5), (void*)L_43);
+		// var device5 = new HapticDevice()
+		// {
+		//     Position = PositionType.Vest,
+		//     IsConnected = true,
+		//     IsPaired = true,
+		//     IsAudioJack = true,
+		//     Address = "aaaa",
+		//     DeviceName = "Tactot",
+		//     Battery = 10,
+		//     Candidates = new PositionType[] { PositionType.Vest },
+		// };
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_44 = (HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029*)il2cpp_codegen_object_new(HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029_il2cpp_TypeInfo_var);
+		NullCheck(L_44);
+		HapticDevice__ctor_mAAE9D272968DD2A9158286A348120F4B9F205426(L_44, NULL);
+		V_1 = L_44;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_45 = V_1;
+		NullCheck(L_45);
+		L_45->___Position_3 = 3;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_46 = V_1;
+		NullCheck(L_46);
+		L_46->___IsConnected_1 = (bool)1;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_47 = V_1;
+		NullCheck(L_47);
+		L_47->___IsPaired_0 = (bool)1;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_48 = V_1;
+		NullCheck(L_48);
+		L_48->___IsAudioJack_7 = (bool)1;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_49 = V_1;
+		NullCheck(L_49);
+		L_49->___Address_4 = _stringLiteralAB1DF493E6BF8DE49A74F5D9EA8F32266343FB1D;
+		Il2CppCodeGenWriteBarrier((void**)(&L_49->___Address_4), (void*)_stringLiteralAB1DF493E6BF8DE49A74F5D9EA8F32266343FB1D);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_50 = V_1;
+		NullCheck(L_50);
+		L_50->___DeviceName_2 = _stringLiteralFC41D4D571C981EFBE0C1CE06EE3E858A5C19B2C;
+		Il2CppCodeGenWriteBarrier((void**)(&L_50->___DeviceName_2), (void*)_stringLiteralFC41D4D571C981EFBE0C1CE06EE3E858A5C19B2C);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_51 = V_1;
+		NullCheck(L_51);
+		L_51->___Battery_8 = ((int32_t)10);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_52 = V_1;
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_53 = (PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7*)SZArrayNew(PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7_il2cpp_TypeInfo_var, (uint32_t)1);
+		PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7* L_54 = L_53;
+		NullCheck(L_54);
+		(L_54)->SetAt(static_cast<il2cpp_array_size_t>(0), (int32_t)3);
+		NullCheck(L_52);
+		L_52->___Candidates_5 = L_54;
+		Il2CppCodeGenWriteBarrier((void**)(&L_52->___Candidates_5), (void*)L_54);
+	}
+
+IL_018d:
+	{
+		// for (var i = 0; i < refreshActions.Count; i++)
+		V_2 = 0;
+		goto IL_01a5;
+	}
+
+IL_0191:
+	{
+		// refreshActions[i].Invoke();
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* L_55 = ((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___refreshActions_7;
+		int32_t L_56 = V_2;
+		NullCheck(L_55);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_57;
+		L_57 = List_1_get_Item_m28EDEA4B6A9DF285910079B34B540331FFE727F6(L_55, L_56, List_1_get_Item_m28EDEA4B6A9DF285910079B34B540331FFE727F6_RuntimeMethod_var);
+		NullCheck(L_57);
+		UnityAction_Invoke_m5CB9EE17CCDF64D00DE5D96DF3553CDB20D66F70_inline(L_57, NULL);
+		// for (var i = 0; i < refreshActions.Count; i++)
+		int32_t L_58 = V_2;
+		V_2 = ((int32_t)il2cpp_codegen_add(L_58, 1));
+	}
+
+IL_01a5:
+	{
+		// for (var i = 0; i < refreshActions.Count; i++)
+		int32_t L_59 = V_2;
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* L_60 = ((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___refreshActions_7;
+		NullCheck(L_60);
+		int32_t L_61;
+		L_61 = List_1_get_Count_m2235CDCD234718681BDBD928B5695B70869CFDF7_inline(L_60, List_1_get_Count_m2235CDCD234718681BDBD928B5695B70869CFDF7_RuntimeMethod_var);
+		if ((((int32_t)L_59) < ((int32_t)L_61)))
+		{
+			goto IL_0191;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_01b3:
+	{
+		// Devices = androidHapticPlayer.GetDevices();
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_62 = V_0;
+		NullCheck(L_62);
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_63;
+		L_63 = AndroidHaptic_GetDevices_mF84E3F4064C8EE585CFF28B0E3463F2A74A1B6E2(L_62, NULL);
+		__this->___Devices_6 = L_63;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___Devices_6), (void*)L_63);
+		// for (var i = 0; i < refreshActions.Count; i++)
+		V_3 = 0;
+		goto IL_01d7;
+	}
+
+IL_01c3:
+	{
+		// refreshActions[i].Invoke();
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* L_64 = ((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___refreshActions_7;
+		int32_t L_65 = V_3;
+		NullCheck(L_64);
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_66;
+		L_66 = List_1_get_Item_m28EDEA4B6A9DF285910079B34B540331FFE727F6(L_64, L_65, List_1_get_Item_m28EDEA4B6A9DF285910079B34B540331FFE727F6_RuntimeMethod_var);
+		NullCheck(L_66);
+		UnityAction_Invoke_m5CB9EE17CCDF64D00DE5D96DF3553CDB20D66F70_inline(L_66, NULL);
+		// for (var i = 0; i < refreshActions.Count; i++)
+		int32_t L_67 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_67, 1));
+	}
+
+IL_01d7:
+	{
+		// for (var i = 0; i < refreshActions.Count; i++)
+		int32_t L_68 = V_3;
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* L_69 = ((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___refreshActions_7;
+		NullCheck(L_69);
+		int32_t L_70;
+		L_70 = List_1_get_Count_m2235CDCD234718681BDBD928B5695B70869CFDF7_inline(L_69, List_1_get_Count_m2235CDCD234718681BDBD928B5695B70869CFDF7_RuntimeMethod_var);
+		if ((((int32_t)L_68) < ((int32_t)L_70)))
+		{
+			goto IL_01c3;
+		}
+	}
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::Ping(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_Ping_mE9A7A6DA840C91665602E9CAC22FD02AB003E5EB (int32_t ___0_pos, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEEF0656DAC77BA0682D559BA060D3A098D973083);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t261861876184B54ED984B2385428914934E16B5B V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// Debug.LogFormat("PING  ...");
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_0;
+		L_0 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogFormat_mD555556327B42AA3482D077EFAEB16B0AFDF72C7(_stringLiteralEEF0656DAC77BA0682D559BA060D3A098D973083, L_0, NULL);
+		// var connectedDevices = GetConnectedDevices(pos);
+		int32_t L_1 = ___0_pos;
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_2;
+		L_2 = BhapticsAndroidManager_GetConnectedDevices_mC6FBA187E1CB7DDD8776572A85455DCDD92127FF(L_1, NULL);
+		// foreach (var pairedDevice in connectedDevices)
+		NullCheck(L_2);
+		Enumerator_t261861876184B54ED984B2385428914934E16B5B L_3;
+		L_3 = List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A(L_2, List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A_RuntimeMethod_var);
+		V_0 = L_3;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0034:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409((&V_0), Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0029_1;
+			}
+
+IL_001d_1:
+			{
+				// foreach (var pairedDevice in connectedDevices)
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_4;
+				L_4 = Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_inline((&V_0), Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_RuntimeMethod_var);
+				// Ping(pairedDevice);
+				il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+				BhapticsAndroidManager_Ping_mFBEF3D6E86FD47D89FB718BC2424BAA2B008EF53(L_4, NULL);
+			}
+
+IL_0029_1:
+			{
+				// foreach (var pairedDevice in connectedDevices)
+				bool L_5;
+				L_5 = Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907((&V_0), Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907_RuntimeMethod_var);
+				if (L_5)
+				{
+					goto IL_001d_1;
+				}
+			}
+			{
+				goto IL_0042;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0042:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::TogglePosition(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_TogglePosition_mF0CE4FAF0A39F831012CF8EA4160C03D2C3FAA6F (String_t* ___0_address, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* V_0 = NULL;
+	{
+		// var androidHapticPlayer = BhapticsManager.GetHaptic() as AndroidHaptic;
+		RuntimeObject* L_0;
+		L_0 = BhapticsManager_GetHaptic_m307D5434386E8ABB1F232FBD10FB87EE4CD04E63(NULL);
+		V_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1*)IsInstClass((RuntimeObject*)L_0, AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var));
+		// if (androidHapticPlayer == null)
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_1 = V_0;
+		if (L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_000f:
+	{
+		// androidHapticPlayer.TogglePosition(address);
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_2 = V_0;
+		String_t* L_3 = ___0_address;
+		NullCheck(L_2);
+		AndroidHaptic_TogglePosition_m31E8A9C2AD97CE9BF266D1FC9C07B2059CA8311D(L_2, L_3, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::Ping(Bhaptics.Tact.Unity.HapticDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_Ping_mFBEF3D6E86FD47D89FB718BC2424BAA2B008EF53 (HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* ___0_device, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEEF0656DAC77BA0682D559BA060D3A098D973083);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* V_0 = NULL;
+	{
+		// var androidHapticPlayer = BhapticsManager.GetHaptic() as AndroidHaptic;
+		RuntimeObject* L_0;
+		L_0 = BhapticsManager_GetHaptic_m307D5434386E8ABB1F232FBD10FB87EE4CD04E63(NULL);
+		V_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1*)IsInstClass((RuntimeObject*)L_0, AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var));
+		// if (androidHapticPlayer == null)
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_1 = V_0;
+		if (L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_000f:
+	{
+		// Debug.LogFormat("PING  ..." + device.Address);
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_2 = ___0_device;
+		NullCheck(L_2);
+		String_t* L_3 = L_2->___Address_4;
+		String_t* L_4;
+		L_4 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralEEF0656DAC77BA0682D559BA060D3A098D973083, L_3, NULL);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5;
+		L_5 = Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_inline(Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_LogFormat_mD555556327B42AA3482D077EFAEB16B0AFDF72C7(L_4, L_5, NULL);
+		// androidHapticPlayer.Ping(device.Address);
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_6 = V_0;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_7 = ___0_device;
+		NullCheck(L_7);
+		String_t* L_8 = L_7->___Address_4;
+		NullCheck(L_6);
+		AndroidHaptic_Ping_m09BC6CC235146355469143020C95FCEDFD305913(L_6, L_8, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::PingAll()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_PingAll_m243880100D9A9961145BE391E30F00C0E92819F2 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* V_0 = NULL;
+	{
+		// var androidHapticPlayer = BhapticsManager.GetHaptic() as AndroidHaptic;
+		RuntimeObject* L_0;
+		L_0 = BhapticsManager_GetHaptic_m307D5434386E8ABB1F232FBD10FB87EE4CD04E63(NULL);
+		V_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1*)IsInstClass((RuntimeObject*)L_0, AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var));
+		// if (androidHapticPlayer == null)
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_1 = V_0;
+		if (L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_000f:
+	{
+		// androidHapticPlayer.PingAll();
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_2 = V_0;
+		NullCheck(L_2);
+		AndroidHaptic_PingAll_m1FB7F40D7C1A4CCA167E470603B032867FE88F65(L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice> Bhaptics.Tact.Unity.BhapticsAndroidManager::GetDevices()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* BhapticsAndroidManager_GetDevices_m3E091E55A5D8FDA7E6F5F314EE64150952546899 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (Instance != null)
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422* L_0 = ((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___Instance_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		// return Instance.Devices;
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422* L_2 = ((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___Instance_4;
+		NullCheck(L_2);
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_3 = L_2->___Devices_6;
+		return L_3;
+	}
+
+IL_0018:
+	{
+		// return new List<HapticDevice>();
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_4 = (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21*)il2cpp_codegen_object_new(List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1(L_4, List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1_RuntimeMethod_var);
+		return L_4;
+	}
+}
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice> Bhaptics.Tact.Unity.BhapticsAndroidManager::GetConnectedDevices(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* BhapticsAndroidManager_GetConnectedDevices_mC6FBA187E1CB7DDD8776572A85455DCDD92127FF (int32_t ___0_pos, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mC2DF5232ABF0B0204C6270D8ADA13950F86EC7C5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* V_0 = NULL;
+	Enumerator_t261861876184B54ED984B2385428914934E16B5B V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* V_2 = NULL;
+	{
+		// var pairedDeviceList = new List<HapticDevice>();
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_0 = (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21*)il2cpp_codegen_object_new(List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1(L_0, List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1_RuntimeMethod_var);
+		V_0 = L_0;
+		// var devices = GetDevices();
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_1;
+		L_1 = BhapticsAndroidManager_GetDevices_m3E091E55A5D8FDA7E6F5F314EE64150952546899(NULL);
+		// foreach (var device in devices)
+		NullCheck(L_1);
+		Enumerator_t261861876184B54ED984B2385428914934E16B5B L_2;
+		L_2 = List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A(L_1, List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A_RuntimeMethod_var);
+		V_1 = L_2;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0046:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409((&V_1), Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_003b_1;
+			}
+
+IL_0013_1:
+			{
+				// foreach (var device in devices)
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_3;
+				L_3 = Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_inline((&V_1), Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_RuntimeMethod_var);
+				V_2 = L_3;
+				// if (device.IsPaired && device.Position == pos && device.IsConnected)
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_4 = V_2;
+				NullCheck(L_4);
+				bool L_5 = L_4->___IsPaired_0;
+				if (!L_5)
+				{
+					goto IL_003b_1;
+				}
+			}
+			{
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_6 = V_2;
+				NullCheck(L_6);
+				int32_t L_7 = L_6->___Position_3;
+				int32_t L_8 = ___0_pos;
+				if ((!(((uint32_t)L_7) == ((uint32_t)L_8))))
+				{
+					goto IL_003b_1;
+				}
+			}
+			{
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_9 = V_2;
+				NullCheck(L_9);
+				bool L_10 = L_9->___IsConnected_1;
+				if (!L_10)
+				{
+					goto IL_003b_1;
+				}
+			}
+			{
+				// pairedDeviceList.Add(device);
+				List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_11 = V_0;
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_12 = V_2;
+				NullCheck(L_11);
+				List_1_Add_mC2DF5232ABF0B0204C6270D8ADA13950F86EC7C5_inline(L_11, L_12, List_1_Add_mC2DF5232ABF0B0204C6270D8ADA13950F86EC7C5_RuntimeMethod_var);
+			}
+
+IL_003b_1:
+			{
+				// foreach (var device in devices)
+				bool L_13;
+				L_13 = Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907((&V_1), Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907_RuntimeMethod_var);
+				if (L_13)
+				{
+					goto IL_0013_1;
+				}
+			}
+			{
+				goto IL_0054;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0054:
+	{
+		// return pairedDeviceList;
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_14 = V_0;
+		return L_14;
+	}
+}
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.HapticDevice> Bhaptics.Tact.Unity.BhapticsAndroidManager::GetPairedDevices(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* BhapticsAndroidManager_GetPairedDevices_m9191DB630EEB4487A6D74068B6EC2A8C3008D6FF (int32_t ___0_pos, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mC2DF5232ABF0B0204C6270D8ADA13950F86EC7C5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* V_0 = NULL;
+	Enumerator_t261861876184B54ED984B2385428914934E16B5B V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* V_2 = NULL;
+	{
+		// var res = new List<HapticDevice>();
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_0 = (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21*)il2cpp_codegen_object_new(List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1(L_0, List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1_RuntimeMethod_var);
+		V_0 = L_0;
+		// var devices = GetDevices();
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_1;
+		L_1 = BhapticsAndroidManager_GetDevices_m3E091E55A5D8FDA7E6F5F314EE64150952546899(NULL);
+		// foreach (var device in devices)
+		NullCheck(L_1);
+		Enumerator_t261861876184B54ED984B2385428914934E16B5B L_2;
+		L_2 = List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A(L_1, List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA10B007DC809B450416A_RuntimeMethod_var);
+		V_1 = L_2;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_003e:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409((&V_1), Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0033_1;
+			}
+
+IL_0013_1:
+			{
+				// foreach (var device in devices)
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_3;
+				L_3 = Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_inline((&V_1), Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_RuntimeMethod_var);
+				V_2 = L_3;
+				// if (device.IsPaired && device.Position == pos)
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_4 = V_2;
+				NullCheck(L_4);
+				bool L_5 = L_4->___IsPaired_0;
+				if (!L_5)
+				{
+					goto IL_0033_1;
+				}
+			}
+			{
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_6 = V_2;
+				NullCheck(L_6);
+				int32_t L_7 = L_6->___Position_3;
+				int32_t L_8 = ___0_pos;
+				if ((!(((uint32_t)L_7) == ((uint32_t)L_8))))
+				{
+					goto IL_0033_1;
+				}
+			}
+			{
+				// res.Add(device);
+				List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_9 = V_0;
+				HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_10 = V_2;
+				NullCheck(L_9);
+				List_1_Add_mC2DF5232ABF0B0204C6270D8ADA13950F86EC7C5_inline(L_9, L_10, List_1_Add_mC2DF5232ABF0B0204C6270D8ADA13950F86EC7C5_RuntimeMethod_var);
+			}
+
+IL_0033_1:
+			{
+				// foreach (var device in devices)
+				bool L_11;
+				L_11 = Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907((&V_1), Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907_RuntimeMethod_var);
+				if (L_11)
+				{
+					goto IL_0013_1;
+				}
+			}
+			{
+				goto IL_004c;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_004c:
+	{
+		// return res;
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_12 = V_0;
+		return L_12;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::AddRefreshAction(UnityEngine.Events.UnityAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_AddRefreshAction_m28C3B7D6677BC3B50E3A3E8FA9E2472A370B78FD (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___0_action, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m323BA24FD0DE9D93F9DA4067FA613B338AABC76B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Contains_m0C5FCCCBE548A92296B0533DE7EA8052A1BB4078_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (!refreshActions.Contains(action))
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* L_0 = ((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___refreshActions_7;
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_1 = ___0_action;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = List_1_Contains_m0C5FCCCBE548A92296B0533DE7EA8052A1BB4078(L_0, L_1, List_1_Contains_m0C5FCCCBE548A92296B0533DE7EA8052A1BB4078_RuntimeMethod_var);
+		if (L_2)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		// refreshActions.Add(action);
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* L_3 = ((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___refreshActions_7;
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_4 = ___0_action;
+		NullCheck(L_3);
+		List_1_Add_m323BA24FD0DE9D93F9DA4067FA613B338AABC76B_inline(L_3, L_4, List_1_Add_m323BA24FD0DE9D93F9DA4067FA613B338AABC76B_RuntimeMethod_var);
+	}
+
+IL_0018:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::RemoveRefreshAction(UnityEngine.Events.UnityAction)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_RemoveRefreshAction_mB5B150D8174F5981310DCB556FE5FB23C5A0F8B5 (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___0_action, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Contains_m0C5FCCCBE548A92296B0533DE7EA8052A1BB4078_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Remove_mB10D46FB6ED1EA7AB7DFC1780F9572FD316A251D_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (refreshActions.Contains(action))
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* L_0 = ((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___refreshActions_7;
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_1 = ___0_action;
+		NullCheck(L_0);
+		bool L_2;
+		L_2 = List_1_Contains_m0C5FCCCBE548A92296B0533DE7EA8052A1BB4078(L_0, L_1, List_1_Contains_m0C5FCCCBE548A92296B0533DE7EA8052A1BB4078_RuntimeMethod_var);
+		if (!L_2)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		// refreshActions.Remove(action);
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* L_3 = ((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___refreshActions_7;
+		UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* L_4 = ___0_action;
+		NullCheck(L_3);
+		bool L_5;
+		L_5 = List_1_Remove_mB10D46FB6ED1EA7AB7DFC1780F9572FD316A251D(L_3, L_4, List_1_Remove_mB10D46FB6ED1EA7AB7DFC1780F9572FD316A251D_RuntimeMethod_var);
+	}
+
+IL_0019:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::ClearRefreshAction()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_ClearRefreshAction_m57FA6EDFE2C1DBA056E14927AD9170B60CE4A99B (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Clear_m0444A69F2E16C517FEDBEB99B58E0F8D853E4073_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// refreshActions.Clear();
+		il2cpp_codegen_runtime_class_init_inline(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* L_0 = ((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___refreshActions_7;
+		NullCheck(L_0);
+		List_1_Clear_m0444A69F2E16C517FEDBEB99B58E0F8D853E4073_inline(L_0, List_1_Clear_m0444A69F2E16C517FEDBEB99B58E0F8D853E4073_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.BhapticsAndroidManager::IsStreaming()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BhapticsAndroidManager_IsStreaming_m20CF15A1E693FD2E019EC596FA0A9F43D542D18D (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* V_0 = NULL;
+	{
+		// var androidHapticPlayer = BhapticsManager.GetHaptic() as AndroidHaptic;
+		RuntimeObject* L_0;
+		L_0 = BhapticsManager_GetHaptic_m307D5434386E8ABB1F232FBD10FB87EE4CD04E63(NULL);
+		V_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1*)IsInstClass((RuntimeObject*)L_0, AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var));
+		// if (androidHapticPlayer == null)
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_1 = V_0;
+		if (L_1)
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		// return false;
+		return (bool)0;
+	}
+
+IL_0010:
+	{
+		// return androidHapticPlayer.IsStreamingEnable();
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_2 = V_0;
+		NullCheck(L_2);
+		bool L_3;
+		L_3 = AndroidHaptic_IsStreamingEnable_mB29EBBED7167244050F59200AE303CD9EAB4D62B(L_2, NULL);
+		return L_3;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::ToggleStreaming()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_ToggleStreaming_m5ED19A0DADDC5A47449FA1DFE6182077E30D4E23 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* V_0 = NULL;
+	{
+		// var androidHapticPlayer = BhapticsManager.GetHaptic() as AndroidHaptic;
+		RuntimeObject* L_0;
+		L_0 = BhapticsManager_GetHaptic_m307D5434386E8ABB1F232FBD10FB87EE4CD04E63(NULL);
+		V_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1*)IsInstClass((RuntimeObject*)L_0, AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var));
+		// if (androidHapticPlayer == null)
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_1 = V_0;
+		if (L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_000f:
+	{
+		// androidHapticPlayer.ToggleStreaming();
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_2 = V_0;
+		NullCheck(L_2);
+		AndroidHaptic_ToggleStreaming_m10D27D02296C021AB193E5483DDA762E2D16CB96(L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.AndroidUtils/StreamHost> Bhaptics.Tact.Unity.BhapticsAndroidManager::GetStreamingHosts()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF* BhapticsAndroidManager_GetStreamingHosts_m8820A35CD57E57034A06F99778A85F93593DA978 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mB146B188E8D323468B9EB6643271CCA4794A00F8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* V_0 = NULL;
+	{
+		// var androidHapticPlayer = BhapticsManager.GetHaptic() as AndroidHaptic;
+		RuntimeObject* L_0;
+		L_0 = BhapticsManager_GetHaptic_m307D5434386E8ABB1F232FBD10FB87EE4CD04E63(NULL);
+		V_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1*)IsInstClass((RuntimeObject*)L_0, AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var));
+		// if (androidHapticPlayer == null)
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_1 = V_0;
+		if (L_1)
+		{
+			goto IL_0014;
+		}
+	}
+	{
+		// return new List<AndroidUtils.StreamHost>();
+		List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF* L_2 = (List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF*)il2cpp_codegen_object_new(List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		List_1__ctor_mB146B188E8D323468B9EB6643271CCA4794A00F8(L_2, List_1__ctor_mB146B188E8D323468B9EB6643271CCA4794A00F8_RuntimeMethod_var);
+		return L_2;
+	}
+
+IL_0014:
+	{
+		// return androidHapticPlayer.GetStreamingHosts();
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_3 = V_0;
+		NullCheck(L_3);
+		List_1_tEFAB141BD7B4BAFE36C20E7DC7050BA9D376E7FF* L_4;
+		L_4 = AndroidHaptic_GetStreamingHosts_mDEAFC21035282974DDB9F077E0455A091E8D0795(L_3, NULL);
+		return L_4;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::ShowBluetoothSetting()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_ShowBluetoothSetting_mCCD0A739A241B73B9AC2649515BC427739D59C7B (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* V_0 = NULL;
+	{
+		// var androidHapticPlayer = BhapticsManager.GetHaptic() as AndroidHaptic;
+		RuntimeObject* L_0;
+		L_0 = BhapticsManager_GetHaptic_m307D5434386E8ABB1F232FBD10FB87EE4CD04E63(NULL);
+		V_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1*)IsInstClass((RuntimeObject*)L_0, AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var));
+		// if (androidHapticPlayer == null)
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_1 = V_0;
+		if (L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_000f:
+	{
+		// androidHapticPlayer.ShowBluetoothSetting();
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_2 = V_0;
+		NullCheck(L_2);
+		AndroidHaptic_ShowBluetoothSetting_mDCD08FC689F36A0FB0F468595EAA03F8199A15F9(L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::ToggleEnableDevice(Bhaptics.Tact.Unity.HapticDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_ToggleEnableDevice_mE8BB3A077D4DC97683752F1F0D7907640B2B1A9B (HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* ___0_device, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* V_0 = NULL;
+	{
+		// var androidHapticPlayer = BhapticsManager.GetHaptic() as AndroidHaptic;
+		RuntimeObject* L_0;
+		L_0 = BhapticsManager_GetHaptic_m307D5434386E8ABB1F232FBD10FB87EE4CD04E63(NULL);
+		V_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1*)IsInstClass((RuntimeObject*)L_0, AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var));
+		// if (androidHapticPlayer == null)
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_1 = V_0;
+		if (L_1)
+		{
+			goto IL_000f;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_000f:
+	{
+		// androidHapticPlayer.EnableDevice(device.Address, !device.IsEnable);
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_2 = V_0;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_3 = ___0_device;
+		NullCheck(L_3);
+		String_t* L_4 = L_3->___Address_4;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_5 = ___0_device;
+		NullCheck(L_5);
+		bool L_6 = L_5->___IsEnable_6;
+		NullCheck(L_2);
+		AndroidHaptic_EnableDevice_mE4AE10A0DA1048EC1E8CAE0D5E9CE8F6A8FF6699(L_2, L_4, (bool)((((int32_t)L_6) == ((int32_t)0))? 1 : 0), NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::OnApplicationFocus(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager_OnApplicationFocus_m8575402755B8D276AE8720667B1D82926488335E (BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422* __this, bool ___0_pauseStatus, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* V_0 = NULL;
+	{
+		// if (pauseStatus)
+		bool L_0 = ___0_pauseStatus;
+		if (!L_0)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		// var androidHapticPlayer = BhapticsManager.GetHaptic() as AndroidHaptic;
+		RuntimeObject* L_1;
+		L_1 = BhapticsManager_GetHaptic_m307D5434386E8ABB1F232FBD10FB87EE4CD04E63(NULL);
+		V_0 = ((AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1*)IsInstClass((RuntimeObject*)L_1, AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_il2cpp_TypeInfo_var));
+		// if (androidHapticPlayer == null)
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_2 = V_0;
+		if (L_2)
+		{
+			goto IL_0012;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0012:
+	{
+		// androidHapticPlayer.RefreshPairingInfo();
+		AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1* L_3 = V_0;
+		NullCheck(L_3);
+		AndroidHaptic_RefreshPairingInfo_mC003281870C13EBE61AFF9C730730D60994C563A(L_3, NULL);
+	}
+
+IL_0018:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager__ctor_mEFEBE6CBB2CC28BFD09B512CB6E6C6A8F4BF79A4 (BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// private List<HapticDevice> Devices = new List<HapticDevice>();
+		List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21* L_0 = (List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21*)il2cpp_codegen_object_new(List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1(L_0, List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1_RuntimeMethod_var);
+		__this->___Devices_6 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___Devices_6), (void*)L_0);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsAndroidManager::.cctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsAndroidManager__cctor_mC4AF8A1F19BF785C3F41AA76D5E355BDE1132973 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m1FB770381C3A129AD86880AAA4F631C28565CC93_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public static bool pcAndoidTestMode = false;
+		((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___pcAndoidTestMode_5 = (bool)0;
+		// private static List<UnityAction> refreshActions = new List<UnityAction>();
+		List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D* L_0 = (List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D*)il2cpp_codegen_object_new(List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		List_1__ctor_m1FB770381C3A129AD86880AAA4F631C28565CC93(L_0, List_1__ctor_m1FB770381C3A129AD86880AAA4F631C28565CC93_RuntimeMethod_var);
+		((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___refreshActions_7 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&((BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var))->___refreshActions_7), (void*)L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.SettingDeviceIcon::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SettingDeviceIcon__ctor_m43DE00525BA83F646ABA86CA3CA2483A2DA88123 (SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// UnityEngine.Sprite Bhaptics.Tact.Unity.Bhaptics_Widget_Setting::GetPairedDeviceSprite(Bhaptics.Tact.Unity.HapticDevice)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* Bhaptics_Widget_Setting_GetPairedDeviceSprite_m26FF74D377A3363EE2A1F3E16791745BB5A10479 (Bhaptics_Widget_Setting_t161D157DE26028AEFEDCA2A862E8748B281671EA* __this, HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* ___0_device, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral403BCFE0001F9C86FF3A19E3672B56F4E7606F3D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral67956624C8A0DB393DE7946FDC10919F77D06DB1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAAEBEE338DAD4D6AAEA13759AF249D8B75C3005E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEE5B11901E1FFD2A68EE46A0CB37A1CEFE3D8B68);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFC41D4D571C981EFBE0C1CE06EE3E858A5C19B2C);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	bool V_1 = false;
+	{
+		// string deviceType = device.DeviceName;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_0 = ___0_device;
+		NullCheck(L_0);
+		String_t* L_1 = L_0->___DeviceName_2;
+		V_0 = L_1;
+		// var isConnect = device.IsConnected;
+		HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029* L_2 = ___0_device;
+		NullCheck(L_2);
+		bool L_3 = L_2->___IsConnected_1;
+		V_1 = L_3;
+		// if (deviceType.StartsWith("TactosyH"))
+		String_t* L_4 = V_0;
+		NullCheck(L_4);
+		bool L_5;
+		L_5 = String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0(L_4, _stringLiteral403BCFE0001F9C86FF3A19E3672B56F4E7606F3D, NULL);
+		if (!L_5)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		// return isConnect ? SettingTactosyHand.pairImage : SettingTactosyHand.unpairImage;
+		bool L_6 = V_1;
+		if (L_6)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* L_7 = __this->___SettingTactosyHand_8;
+		NullCheck(L_7);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_8 = L_7->___unpairImage_1;
+		return L_8;
+	}
+
+IL_002a:
+	{
+		SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* L_9 = __this->___SettingTactosyHand_8;
+		NullCheck(L_9);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_10 = L_9->___pairImage_0;
+		return L_10;
+	}
+
+IL_0036:
+	{
+		// if (deviceType.StartsWith("TactosyF"))
+		String_t* L_11 = V_0;
+		NullCheck(L_11);
+		bool L_12;
+		L_12 = String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0(L_11, _stringLiteral67956624C8A0DB393DE7946FDC10919F77D06DB1, NULL);
+		if (!L_12)
+		{
+			goto IL_005e;
+		}
+	}
+	{
+		// return isConnect ? SettingTactosyFoot.pairImage : SettingTactosyFoot.unpairImage;
+		bool L_13 = V_1;
+		if (L_13)
+		{
+			goto IL_0052;
+		}
+	}
+	{
+		SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* L_14 = __this->___SettingTactosyFoot_7;
+		NullCheck(L_14);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_15 = L_14->___unpairImage_1;
+		return L_15;
+	}
+
+IL_0052:
+	{
+		SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* L_16 = __this->___SettingTactosyFoot_7;
+		NullCheck(L_16);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_17 = L_16->___pairImage_0;
+		return L_17;
+	}
+
+IL_005e:
+	{
+		// if (deviceType.StartsWith("Tactosy"))
+		String_t* L_18 = V_0;
+		NullCheck(L_18);
+		bool L_19;
+		L_19 = String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0(L_18, _stringLiteralAAEBEE338DAD4D6AAEA13759AF249D8B75C3005E, NULL);
+		if (!L_19)
+		{
+			goto IL_0086;
+		}
+	}
+	{
+		// return isConnect ? SettingTactosyArm.pairImage : SettingTactosyArm.unpairImage;
+		bool L_20 = V_1;
+		if (L_20)
+		{
+			goto IL_007a;
+		}
+	}
+	{
+		SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* L_21 = __this->___SettingTactosyArm_6;
+		NullCheck(L_21);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_22 = L_21->___unpairImage_1;
+		return L_22;
+	}
+
+IL_007a:
+	{
+		SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* L_23 = __this->___SettingTactosyArm_6;
+		NullCheck(L_23);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_24 = L_23->___pairImage_0;
+		return L_24;
+	}
+
+IL_0086:
+	{
+		// if (deviceType.StartsWith("Tactal"))
+		String_t* L_25 = V_0;
+		NullCheck(L_25);
+		bool L_26;
+		L_26 = String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0(L_25, _stringLiteralEE5B11901E1FFD2A68EE46A0CB37A1CEFE3D8B68, NULL);
+		if (!L_26)
+		{
+			goto IL_00ae;
+		}
+	}
+	{
+		// return isConnect ? SettingTactal.pairImage : SettingTactal.unpairImage;
+		bool L_27 = V_1;
+		if (L_27)
+		{
+			goto IL_00a2;
+		}
+	}
+	{
+		SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* L_28 = __this->___SettingTactal_5;
+		NullCheck(L_28);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_29 = L_28->___unpairImage_1;
+		return L_29;
+	}
+
+IL_00a2:
+	{
+		SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* L_30 = __this->___SettingTactal_5;
+		NullCheck(L_30);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_31 = L_30->___pairImage_0;
+		return L_31;
+	}
+
+IL_00ae:
+	{
+		// if (deviceType.StartsWith("Tactot"))
+		String_t* L_32 = V_0;
+		NullCheck(L_32);
+		bool L_33;
+		L_33 = String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0(L_32, _stringLiteralFC41D4D571C981EFBE0C1CE06EE3E858A5C19B2C, NULL);
+		if (!L_33)
+		{
+			goto IL_00d6;
+		}
+	}
+	{
+		// return isConnect ? SettingTactot.pairImage : SettingTactot.unpairImage;
+		bool L_34 = V_1;
+		if (L_34)
+		{
+			goto IL_00ca;
+		}
+	}
+	{
+		SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* L_35 = __this->___SettingTactot_4;
+		NullCheck(L_35);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_36 = L_35->___unpairImage_1;
+		return L_36;
+	}
+
+IL_00ca:
+	{
+		SettingDeviceIcon_t7198A2117FBB3B4D526BA3D2001B81E3FE817EDC* L_37 = __this->___SettingTactot_4;
+		NullCheck(L_37);
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_38 = L_37->___pairImage_0;
+		return L_38;
+	}
+
+IL_00d6:
+	{
+		// return null;
+		return (Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99*)NULL;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Bhaptics_Widget_Setting::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Bhaptics_Widget_Setting__ctor_mDBAEAE8021DC8764C8BD02288D8F0907AE16C573 (Bhaptics_Widget_Setting_t161D157DE26028AEFEDCA2A862E8748B281671EA* __this, const RuntimeMethod* method) 
+{
+	{
+		ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Boolean Bhaptics.Tact.Unity.HapticApi::TryGetExePath(System.Byte[],System.Int32&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_TryGetExePath_m0752C02F2358A061F6C27D842C714457B8F35C83 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buf, int32_t* ___1_size, const RuntimeMethod* method) 
+{
+	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (uint8_t*, int32_t*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(void*) + sizeof(int32_t*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "TryGetExePath", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_buf' to native representation
+	uint8_t* ____0_buf_marshaled = NULL;
+	if (___0_buf != NULL)
+	{
+		____0_buf_marshaled = reinterpret_cast<uint8_t*>((___0_buf)->GetAddressAtUnchecked(0));
+	}
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(TryGetExePath)(____0_buf_marshaled, ___1_size);
+	#else
+	int32_t returnValue = il2cppPInvokeFunc(____0_buf_marshaled, ___1_size);
+	#endif
+
+	return static_cast<bool>(returnValue);
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::Initialise(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_Initialise_m30D4F8BBC6D0967EA925219946F6F9F60BDA4580 (String_t* ___0_appId, String_t* ___1_appName, const RuntimeMethod* method) 
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (char*, char*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(char*) + sizeof(char*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "Initialise", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_appId' to native representation
+	char* ____0_appId_marshaled = NULL;
+	____0_appId_marshaled = il2cpp_codegen_marshal_string(___0_appId);
+
+	// Marshaling of parameter '___1_appName' to native representation
+	char* ____1_appName_marshaled = NULL;
+	____1_appName_marshaled = il2cpp_codegen_marshal_string(___1_appName);
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	reinterpret_cast<PInvokeFunc>(Initialise)(____0_appId_marshaled, ____1_appName_marshaled);
+	#else
+	il2cppPInvokeFunc(____0_appId_marshaled, ____1_appName_marshaled);
+	#endif
+
+	// Marshaling cleanup of parameter '___0_appId' native representation
+	il2cpp_codegen_marshal_free(____0_appId_marshaled);
+	____0_appId_marshaled = NULL;
+
+	// Marshaling cleanup of parameter '___1_appName' native representation
+	il2cpp_codegen_marshal_free(____1_appName_marshaled);
+	____1_appName_marshaled = NULL;
+
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::Destroy()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_Destroy_m63DA8F469337114CEC06561FA468D2B1BA2EE1AD (const RuntimeMethod* method) 
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) ();
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "Destroy", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	reinterpret_cast<PInvokeFunc>(Destroy)();
+	#else
+	il2cppPInvokeFunc();
+	#endif
+
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::RegisterFeedback(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_RegisterFeedback_m9E71276C6EA807422FBABCED4C1D13B8CE558A1D (String_t* ___0_str, String_t* ___1_projectJson, const RuntimeMethod* method) 
+{
+	typedef void (CDECL *PInvokeFunc) (char*, char*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(char*) + sizeof(char*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "RegisterFeedback", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_str' to native representation
+	char* ____0_str_marshaled = NULL;
+	____0_str_marshaled = il2cpp_codegen_marshal_string(___0_str);
+
+	// Marshaling of parameter '___1_projectJson' to native representation
+	char* ____1_projectJson_marshaled = NULL;
+	____1_projectJson_marshaled = il2cpp_codegen_marshal_string(___1_projectJson);
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	reinterpret_cast<PInvokeFunc>(RegisterFeedback)(____0_str_marshaled, ____1_projectJson_marshaled);
+	#else
+	il2cppPInvokeFunc(____0_str_marshaled, ____1_projectJson_marshaled);
+	#endif
+
+	// Marshaling cleanup of parameter '___0_str' native representation
+	il2cpp_codegen_marshal_free(____0_str_marshaled);
+	____0_str_marshaled = NULL;
+
+	// Marshaling cleanup of parameter '___1_projectJson' native representation
+	il2cpp_codegen_marshal_free(____1_projectJson_marshaled);
+	____1_projectJson_marshaled = NULL;
+
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::RegisterFeedbackFromTactFile(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_RegisterFeedbackFromTactFile_mC25BB735EDF86310F2BE279BE77B7A6814525B4F (String_t* ___0_str, String_t* ___1_tactFileStr, const RuntimeMethod* method) 
+{
+	typedef void (CDECL *PInvokeFunc) (char*, char*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(char*) + sizeof(char*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "RegisterFeedbackFromTactFile", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_str' to native representation
+	char* ____0_str_marshaled = NULL;
+	____0_str_marshaled = il2cpp_codegen_marshal_string(___0_str);
+
+	// Marshaling of parameter '___1_tactFileStr' to native representation
+	char* ____1_tactFileStr_marshaled = NULL;
+	____1_tactFileStr_marshaled = il2cpp_codegen_marshal_string(___1_tactFileStr);
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	reinterpret_cast<PInvokeFunc>(RegisterFeedbackFromTactFile)(____0_str_marshaled, ____1_tactFileStr_marshaled);
+	#else
+	il2cppPInvokeFunc(____0_str_marshaled, ____1_tactFileStr_marshaled);
+	#endif
+
+	// Marshaling cleanup of parameter '___0_str' native representation
+	il2cpp_codegen_marshal_free(____0_str_marshaled);
+	____0_str_marshaled = NULL;
+
+	// Marshaling cleanup of parameter '___1_tactFileStr' native representation
+	il2cpp_codegen_marshal_free(____1_tactFileStr_marshaled);
+	____1_tactFileStr_marshaled = NULL;
+
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::RegisterFeedbackFromTactFileReflected(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_RegisterFeedbackFromTactFileReflected_m5AA03F02CA80F09FD972FDEE27CB9D0EDF5A4235 (String_t* ___0_str, String_t* ___1_tactFileStr, const RuntimeMethod* method) 
+{
+	typedef void (CDECL *PInvokeFunc) (char*, char*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(char*) + sizeof(char*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "RegisterFeedbackFromTactFileReflected", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_str' to native representation
+	char* ____0_str_marshaled = NULL;
+	____0_str_marshaled = il2cpp_codegen_marshal_string(___0_str);
+
+	// Marshaling of parameter '___1_tactFileStr' to native representation
+	char* ____1_tactFileStr_marshaled = NULL;
+	____1_tactFileStr_marshaled = il2cpp_codegen_marshal_string(___1_tactFileStr);
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	reinterpret_cast<PInvokeFunc>(RegisterFeedbackFromTactFileReflected)(____0_str_marshaled, ____1_tactFileStr_marshaled);
+	#else
+	il2cppPInvokeFunc(____0_str_marshaled, ____1_tactFileStr_marshaled);
+	#endif
+
+	// Marshaling cleanup of parameter '___0_str' native representation
+	il2cpp_codegen_marshal_free(____0_str_marshaled);
+	____0_str_marshaled = NULL;
+
+	// Marshaling cleanup of parameter '___1_tactFileStr' native representation
+	il2cpp_codegen_marshal_free(____1_tactFileStr_marshaled);
+	____1_tactFileStr_marshaled = NULL;
+
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::SubmitRegistered(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_SubmitRegistered_m93F146E48AC24FAC9A2C74D4892E9F021731BD67 (String_t* ___0_key, const RuntimeMethod* method) 
+{
+	typedef void (CDECL *PInvokeFunc) (char*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(char*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "SubmitRegistered", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_key' to native representation
+	char* ____0_key_marshaled = NULL;
+	____0_key_marshaled = il2cpp_codegen_marshal_string(___0_key);
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	reinterpret_cast<PInvokeFunc>(SubmitRegistered)(____0_key_marshaled);
+	#else
+	il2cppPInvokeFunc(____0_key_marshaled);
+	#endif
+
+	// Marshaling cleanup of parameter '___0_key' native representation
+	il2cpp_codegen_marshal_free(____0_key_marshaled);
+	____0_key_marshaled = NULL;
+
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::SubmitRegisteredStartMillis(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_SubmitRegisteredStartMillis_m4FAF75C81B874CC719A377F06696C26961BB391F (String_t* ___0_key, int32_t ___1_startTimeMillis, const RuntimeMethod* method) 
+{
+	typedef void (CDECL *PInvokeFunc) (char*, int32_t);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(char*) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "SubmitRegisteredStartMillis", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_key' to native representation
+	char* ____0_key_marshaled = NULL;
+	____0_key_marshaled = il2cpp_codegen_marshal_string(___0_key);
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	reinterpret_cast<PInvokeFunc>(SubmitRegisteredStartMillis)(____0_key_marshaled, ___1_startTimeMillis);
+	#else
+	il2cppPInvokeFunc(____0_key_marshaled, ___1_startTimeMillis);
+	#endif
+
+	// Marshaling cleanup of parameter '___0_key' native representation
+	il2cpp_codegen_marshal_free(____0_key_marshaled);
+	____0_key_marshaled = NULL;
+
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::SubmitRegisteredWithOption(System.String,System.String,System.Single,System.Single,System.Single,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_SubmitRegisteredWithOption_m5E975859E85185123D34871863B497090FFAC63D (String_t* ___0_key, String_t* ___1_altKey, float ___2_intensity, float ___3_duration, float ___4_offsetX, float ___5_offsetY, const RuntimeMethod* method) 
+{
+	typedef void (CDECL *PInvokeFunc) (char*, char*, float, float, float, float);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(char*) + sizeof(char*) + sizeof(float) + sizeof(float) + sizeof(float) + sizeof(float);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "SubmitRegisteredWithOption", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_key' to native representation
+	char* ____0_key_marshaled = NULL;
+	____0_key_marshaled = il2cpp_codegen_marshal_string(___0_key);
+
+	// Marshaling of parameter '___1_altKey' to native representation
+	char* ____1_altKey_marshaled = NULL;
+	____1_altKey_marshaled = il2cpp_codegen_marshal_string(___1_altKey);
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	reinterpret_cast<PInvokeFunc>(SubmitRegisteredWithOption)(____0_key_marshaled, ____1_altKey_marshaled, ___2_intensity, ___3_duration, ___4_offsetX, ___5_offsetY);
+	#else
+	il2cppPInvokeFunc(____0_key_marshaled, ____1_altKey_marshaled, ___2_intensity, ___3_duration, ___4_offsetX, ___5_offsetY);
+	#endif
+
+	// Marshaling cleanup of parameter '___0_key' native representation
+	il2cpp_codegen_marshal_free(____0_key_marshaled);
+	____0_key_marshaled = NULL;
+
+	// Marshaling cleanup of parameter '___1_altKey' native representation
+	il2cpp_codegen_marshal_free(____1_altKey_marshaled);
+	____1_altKey_marshaled = NULL;
+
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::SubmitByteArray(System.String,Bhaptics.Tact.PositionType,System.Byte[],System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_SubmitByteArray_m0B314566F8054EC2304B09DFA06A0063A469DC5B (String_t* ___0_key, int32_t ___1_pos, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___2_charPtr, int32_t ___3_length, int32_t ___4_durationMillis, const RuntimeMethod* method) 
+{
+	typedef void (CDECL *PInvokeFunc) (char*, int32_t, uint8_t*, int32_t, int32_t);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(char*) + sizeof(int32_t) + sizeof(void*) + sizeof(int32_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "SubmitByteArray", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_key' to native representation
+	char* ____0_key_marshaled = NULL;
+	____0_key_marshaled = il2cpp_codegen_marshal_string(___0_key);
+
+	// Marshaling of parameter '___2_charPtr' to native representation
+	uint8_t* ____2_charPtr_marshaled = NULL;
+	if (___2_charPtr != NULL)
+	{
+		____2_charPtr_marshaled = reinterpret_cast<uint8_t*>((___2_charPtr)->GetAddressAtUnchecked(0));
+	}
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	reinterpret_cast<PInvokeFunc>(SubmitByteArray)(____0_key_marshaled, ___1_pos, ____2_charPtr_marshaled, ___3_length, ___4_durationMillis);
+	#else
+	il2cppPInvokeFunc(____0_key_marshaled, ___1_pos, ____2_charPtr_marshaled, ___3_length, ___4_durationMillis);
+	#endif
+
+	// Marshaling cleanup of parameter '___0_key' native representation
+	il2cpp_codegen_marshal_free(____0_key_marshaled);
+	____0_key_marshaled = NULL;
+
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::SubmitPathArray(System.String,Bhaptics.Tact.PositionType,Bhaptics.Tact.Unity.HapticApi/point[],System.Int32,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_SubmitPathArray_m5332744B2A4F7674045BF625BF85CC6E912E8F36 (String_t* ___0_key, int32_t ___1_pos, pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* ___2_charPtr, int32_t ___3_length, int32_t ___4_durationMillis, const RuntimeMethod* method) 
+{
+	typedef void (CDECL *PInvokeFunc) (char*, int32_t, point_tFD793B132EE65A0C93FD921353591DA6B9A89CA9*, int32_t, int32_t);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(char*) + sizeof(int32_t) + sizeof(void*) + sizeof(int32_t) + sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "SubmitPathArray", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_key' to native representation
+	char* ____0_key_marshaled = NULL;
+	____0_key_marshaled = il2cpp_codegen_marshal_string(___0_key);
+
+	// Marshaling of parameter '___2_charPtr' to native representation
+	point_tFD793B132EE65A0C93FD921353591DA6B9A89CA9* ____2_charPtr_marshaled = NULL;
+	if (___2_charPtr != NULL)
+	{
+		____2_charPtr_marshaled = reinterpret_cast<point_tFD793B132EE65A0C93FD921353591DA6B9A89CA9*>((___2_charPtr)->GetAddressAtUnchecked(0));
+	}
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	reinterpret_cast<PInvokeFunc>(SubmitPathArray)(____0_key_marshaled, ___1_pos, ____2_charPtr_marshaled, ___3_length, ___4_durationMillis);
+	#else
+	il2cppPInvokeFunc(____0_key_marshaled, ___1_pos, ____2_charPtr_marshaled, ___3_length, ___4_durationMillis);
+	#endif
+
+	// Marshaling cleanup of parameter '___0_key' native representation
+	il2cpp_codegen_marshal_free(____0_key_marshaled);
+	____0_key_marshaled = NULL;
+
+}
+// System.Boolean Bhaptics.Tact.Unity.HapticApi::IsFeedbackRegistered(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_IsFeedbackRegistered_mDA2BBCBF485E8D5EB42B390AF8326C30D45E0801 (String_t* ___0_key, const RuntimeMethod* method) 
+{
+	typedef int32_t (CDECL *PInvokeFunc) (char*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(char*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "IsFeedbackRegistered", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_key' to native representation
+	char* ____0_key_marshaled = NULL;
+	____0_key_marshaled = il2cpp_codegen_marshal_string(___0_key);
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(IsFeedbackRegistered)(____0_key_marshaled);
+	#else
+	int32_t returnValue = il2cppPInvokeFunc(____0_key_marshaled);
+	#endif
+
+	// Marshaling cleanup of parameter '___0_key' native representation
+	il2cpp_codegen_marshal_free(____0_key_marshaled);
+	____0_key_marshaled = NULL;
+
+	return static_cast<bool>(returnValue);
+}
+// System.Boolean Bhaptics.Tact.Unity.HapticApi::IsPlaying()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_IsPlaying_m1D25CFEA0AA7DE886069B542E10EACC244A66598 (const RuntimeMethod* method) 
+{
+	typedef int32_t (CDECL *PInvokeFunc) ();
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "IsPlaying", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(IsPlaying)();
+	#else
+	int32_t returnValue = il2cppPInvokeFunc();
+	#endif
+
+	return static_cast<bool>(returnValue);
+}
+// System.Boolean Bhaptics.Tact.Unity.HapticApi::IsPlayingKey(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_IsPlayingKey_mAB4DE5D6E4D4435F879F0BC791E24D70ACBAFC4F (String_t* ___0_key, const RuntimeMethod* method) 
+{
+	typedef int32_t (CDECL *PInvokeFunc) (char*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(char*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "IsPlayingKey", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_key' to native representation
+	char* ____0_key_marshaled = NULL;
+	____0_key_marshaled = il2cpp_codegen_marshal_string(___0_key);
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(IsPlayingKey)(____0_key_marshaled);
+	#else
+	int32_t returnValue = il2cppPInvokeFunc(____0_key_marshaled);
+	#endif
+
+	// Marshaling cleanup of parameter '___0_key' native representation
+	il2cpp_codegen_marshal_free(____0_key_marshaled);
+	____0_key_marshaled = NULL;
+
+	return static_cast<bool>(returnValue);
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::TurnOff()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_TurnOff_m37F3E663CD0A64C3EB9626423D112992D8258FF7 (const RuntimeMethod* method) 
+{
+	typedef void (CDECL *PInvokeFunc) ();
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "TurnOff", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	reinterpret_cast<PInvokeFunc>(TurnOff)();
+	#else
+	il2cppPInvokeFunc();
+	#endif
+
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::TurnOffKey(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_TurnOffKey_m1F8EADFB4E136612F575B2103820B5EE8CCD0A4E (String_t* ___0_key, const RuntimeMethod* method) 
+{
+	typedef void (CDECL *PInvokeFunc) (char*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(char*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "TurnOffKey", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_key' to native representation
+	char* ____0_key_marshaled = NULL;
+	____0_key_marshaled = il2cpp_codegen_marshal_string(___0_key);
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	reinterpret_cast<PInvokeFunc>(TurnOffKey)(____0_key_marshaled);
+	#else
+	il2cppPInvokeFunc(____0_key_marshaled);
+	#endif
+
+	// Marshaling cleanup of parameter '___0_key' native representation
+	il2cpp_codegen_marshal_free(____0_key_marshaled);
+	____0_key_marshaled = NULL;
+
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::EnableFeedback()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_EnableFeedback_m7D0C4B8FA72EFD04A8F9899259C9206F6E28C245 (const RuntimeMethod* method) 
+{
+	typedef void (CDECL *PInvokeFunc) ();
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "EnableFeedback", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	reinterpret_cast<PInvokeFunc>(EnableFeedback)();
+	#else
+	il2cppPInvokeFunc();
+	#endif
+
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::DisableFeedback()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_DisableFeedback_mE161D0E0103D2ADBF5241D60BBE2B429A1782E4B (const RuntimeMethod* method) 
+{
+	typedef void (CDECL *PInvokeFunc) ();
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "DisableFeedback", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	reinterpret_cast<PInvokeFunc>(DisableFeedback)();
+	#else
+	il2cppPInvokeFunc();
+	#endif
+
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::ToggleFeedback()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_ToggleFeedback_m82C83880B58C7B40ED35E847D2733BB4BAAA9F62 (const RuntimeMethod* method) 
+{
+	typedef void (CDECL *PInvokeFunc) ();
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = 0;
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "ToggleFeedback", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	reinterpret_cast<PInvokeFunc>(ToggleFeedback)();
+	#else
+	il2cppPInvokeFunc();
+	#endif
+
+}
+// System.Boolean Bhaptics.Tact.Unity.HapticApi::IsDevicePlaying(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_IsDevicePlaying_mFE21A3F7D83EE049003C294F212D634B95E1876A (int32_t ___0_pos, const RuntimeMethod* method) 
+{
+	typedef int32_t (CDECL *PInvokeFunc) (int32_t);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(int32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "IsDevicePlaying", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(IsDevicePlaying)(___0_pos);
+	#else
+	int32_t returnValue = il2cppPInvokeFunc(___0_pos);
+	#endif
+
+	return static_cast<bool>(returnValue);
+}
+// System.Boolean Bhaptics.Tact.Unity.HapticApi::TryGetResponseForPosition(Bhaptics.Tact.PositionType,Bhaptics.Tact.Unity.HapticApi/status&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_TryGetResponseForPosition_m410F26B76DD2A379A5CE70ADBA7D7BF6175173E5 (int32_t ___0_pos, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576* ___1_status, const RuntimeMethod* method) 
+{
+
+
+	typedef int32_t (CDECL *PInvokeFunc) (int32_t, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke*);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_haptic_library_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(int32_t) + sizeof(status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke*);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("haptic_library"), "TryGetResponseForPosition", IL2CPP_CALL_C, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___1_status' to native representation
+	status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke ____1_status_empty = {};
+	status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke* ____1_status_marshaled = &____1_status_empty;
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(TryGetResponseForPosition)(___0_pos, ____1_status_marshaled);
+	#else
+	int32_t returnValue = il2cppPInvokeFunc(___0_pos, ____1_status_marshaled);
+	#endif
+
+	// Marshaling of parameter '___1_status' back from native representation
+	status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576 _____1_status_marshaled_unmarshaled_dereferenced;
+	memset((&_____1_status_marshaled_unmarshaled_dereferenced), 0, sizeof(_____1_status_marshaled_unmarshaled_dereferenced));
+	status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_pinvoke_back(*____1_status_marshaled, _____1_status_marshaled_unmarshaled_dereferenced);
+	*___1_status = _____1_status_marshaled_unmarshaled_dereferenced;
+	Il2CppCodeGenWriteBarrier((void**)&((___1_status)->___values_0), (void*)NULL);
+
+	// Marshaling cleanup of parameter '___1_status' native representation
+	status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_pinvoke_cleanup(*____1_status_marshaled);
+
+	return static_cast<bool>(returnValue);
+}
+// System.Void Bhaptics.Tact.Unity.HapticApi::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi__ctor_m6EBE07812D3F0A3512D2281A8A09F9DAB7A8AD07 (HapticApi_t87B1593645D295452798ECC1F695B512A12DEB65* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -16999,6 +29619,2216 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TouchController__ctor_mFEC6542E29C9A7062
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Conversion methods for marshalling of: Bhaptics.Tact.Unity.HapticApi/status
+IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_pinvoke(const status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576& unmarshaled, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke& marshaled)
+{
+	if (unmarshaled.___values_0 != NULL)
+	{
+		if (20 > (unmarshaled.___values_0)->max_length)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_argument_exception("", "Type could not be marshaled because the length of an embedded array instance does not match the declared length in the layout."), NULL);
+		}
+
+		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(20); i++)
+		{
+			(marshaled.___values_0)[i] = (unmarshaled.___values_0)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(i));
+		}
+	}
+}
+IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_pinvoke_back(const status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke& marshaled, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	unmarshaled.___values_0 = reinterpret_cast<Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*>((Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, 20));
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___values_0), (void*)reinterpret_cast<Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*>((Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, 20)));
+	for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(20); i++)
+	{
+		(unmarshaled.___values_0)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(i), (marshaled.___values_0)[i]);
+	}
+}
+// Conversion method for clean up from marshalling of: Bhaptics.Tact.Unity.HapticApi/status
+IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_pinvoke_cleanup(status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke& marshaled)
+{
+}
+// Conversion methods for marshalling of: Bhaptics.Tact.Unity.HapticApi/status
+IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_com(const status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576& unmarshaled, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_com& marshaled)
+{
+	if (unmarshaled.___values_0 != NULL)
+	{
+		if (20 > (unmarshaled.___values_0)->max_length)
+		{
+			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_argument_exception("", "Type could not be marshaled because the length of an embedded array instance does not match the declared length in the layout."), NULL);
+		}
+
+		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(20); i++)
+		{
+			(marshaled.___values_0)[i] = (unmarshaled.___values_0)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(i));
+		}
+	}
+}
+IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_com_back(const status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_com& marshaled, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	unmarshaled.___values_0 = reinterpret_cast<Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*>((Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, 20));
+	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___values_0), (void*)reinterpret_cast<Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*>((Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, 20)));
+	for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(20); i++)
+	{
+		(unmarshaled.___values_0)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(i), (marshaled.___values_0)[i]);
+	}
+}
+// Conversion method for clean up from marshalling of: Bhaptics.Tact.Unity.HapticApi/status
+IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_com_cleanup(status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_com& marshaled)
+{
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.ArmsHapticClip::Play(System.Single,System.Single,System.Single,System.Single,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArmsHapticClip_Play_m60DA4DDC43344E74A32D125D6EF8DD671DDCDB4E (ArmsHapticClip_t147D7B1D9FA2AEB6F4001D52E83C485D05738DE7* __this, float ___0_intensity, float ___1_duration, float ___2_vestRotationAngleX, float ___3_vestRotationOffsetY, String_t* ___4_identifier, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsManager_t7514043B74A443B9EBEDDCEF5CFF974ABD6055B9_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral53EF00C5C787F29C2FC919E385A5882E802CCA7E);
+		s_Il2CppMethodInitialized = true;
+	}
+	RuntimeObject* V_0 = NULL;
+	String_t* V_1 = NULL;
+	{
+		// if (!BhapticsManager.Init)
+		bool L_0 = ((BhapticsManager_t7514043B74A443B9EBEDDCEF5CFF974ABD6055B9_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsManager_t7514043B74A443B9EBEDDCEF5CFF974ABD6055B9_il2cpp_TypeInfo_var))->___Init_1;
+		if (L_0)
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		// BhapticsManager.Initialize();
+		BhapticsManager_Initialize_mA7BA8260AEF4B5583FF11466F5216CEF1B230266(NULL);
+	}
+
+IL_000c:
+	{
+		// var haptic = BhapticsManager.GetHaptic();
+		RuntimeObject* L_1;
+		L_1 = BhapticsManager_GetHaptic_m307D5434386E8ABB1F232FBD10FB87EE4CD04E63(NULL);
+		V_0 = L_1;
+		// if (haptic == null)
+		RuntimeObject* L_2 = V_0;
+		if (L_2)
+		{
+			goto IL_0016;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_0016:
+	{
+		// if (IsReflect)
+		bool L_3 = __this->___IsReflect_11;
+		if (!L_3)
+		{
+			goto IL_0061;
+		}
+	}
+	{
+		// var reflectIdentifier = assetId + "Reflect";
+		String_t* L_4 = ((HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E*)__this)->___assetId_4;
+		String_t* L_5;
+		L_5 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_4, _stringLiteral53EF00C5C787F29C2FC919E385A5882E802CCA7E, NULL);
+		V_1 = L_5;
+		// if (!haptic.IsFeedbackRegistered(reflectIdentifier))
+		RuntimeObject* L_6 = V_0;
+		String_t* L_7 = V_1;
+		NullCheck(L_6);
+		bool L_8;
+		L_8 = InterfaceFuncInvoker1< bool, String_t* >::Invoke(3 /* System.Boolean Bhaptics.Tact.Unity.IHaptic::IsFeedbackRegistered(System.String) */, IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var, L_6, L_7);
+		if (L_8)
+		{
+			goto IL_0045;
+		}
+	}
+	{
+		// haptic.RegisterTactFileStrReflected(reflectIdentifier, JsonValue);
+		RuntimeObject* L_9 = V_0;
+		String_t* L_10 = V_1;
+		String_t* L_11 = ((FileHapticClip_t48EC83EE51B9DE69C85D3DC520865AA88CB0F9D9*)__this)->___JsonValue_9;
+		NullCheck(L_9);
+		InterfaceActionInvoker2< String_t*, String_t* >::Invoke(6 /* System.Void Bhaptics.Tact.Unity.IHaptic::RegisterTactFileStrReflected(System.String,System.String) */, IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var, L_9, L_10, L_11);
+	}
+
+IL_0045:
+	{
+		// haptic.SubmitRegistered(reflectIdentifier, keyId + identifier, new ScaleOption(intensity, duration));
+		RuntimeObject* L_12 = V_0;
+		String_t* L_13 = V_1;
+		String_t* L_14 = ((HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E*)__this)->___keyId_5;
+		String_t* L_15 = ___4_identifier;
+		String_t* L_16;
+		L_16 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_14, L_15, NULL);
+		float L_17 = ___0_intensity;
+		float L_18 = ___1_duration;
+		ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* L_19 = (ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A*)il2cpp_codegen_object_new(ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A_il2cpp_TypeInfo_var);
+		NullCheck(L_19);
+		ScaleOption__ctor_m6B6E52F1920EF1A6A6173DBA40373A2EB89EBA97(L_19, L_17, L_18, NULL);
+		NullCheck(L_12);
+		InterfaceActionInvoker3< String_t*, String_t*, ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* >::Invoke(9 /* System.Void Bhaptics.Tact.Unity.IHaptic::SubmitRegistered(System.String,System.String,Bhaptics.Tact.ScaleOption) */, IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var, L_12, L_13, L_16, L_19);
+		return;
+	}
+
+IL_0061:
+	{
+		// if (!haptic.IsFeedbackRegistered(assetId))
+		RuntimeObject* L_20 = V_0;
+		String_t* L_21 = ((HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E*)__this)->___assetId_4;
+		NullCheck(L_20);
+		bool L_22;
+		L_22 = InterfaceFuncInvoker1< bool, String_t* >::Invoke(3 /* System.Boolean Bhaptics.Tact.Unity.IHaptic::IsFeedbackRegistered(System.String) */, IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var, L_20, L_21);
+		if (L_22)
+		{
+			goto IL_0081;
+		}
+	}
+	{
+		// haptic.RegisterTactFileStr(assetId, JsonValue);
+		RuntimeObject* L_23 = V_0;
+		String_t* L_24 = ((HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E*)__this)->___assetId_4;
+		String_t* L_25 = ((FileHapticClip_t48EC83EE51B9DE69C85D3DC520865AA88CB0F9D9*)__this)->___JsonValue_9;
+		NullCheck(L_23);
+		InterfaceActionInvoker2< String_t*, String_t* >::Invoke(5 /* System.Void Bhaptics.Tact.Unity.IHaptic::RegisterTactFileStr(System.String,System.String) */, IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var, L_23, L_24, L_25);
+	}
+
+IL_0081:
+	{
+		// haptic.SubmitRegistered(assetId, keyId + identifier, new ScaleOption(intensity, duration));
+		RuntimeObject* L_26 = V_0;
+		String_t* L_27 = ((HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E*)__this)->___assetId_4;
+		String_t* L_28 = ((HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E*)__this)->___keyId_5;
+		String_t* L_29 = ___4_identifier;
+		String_t* L_30;
+		L_30 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_28, L_29, NULL);
+		float L_31 = ___0_intensity;
+		float L_32 = ___1_duration;
+		ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* L_33 = (ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A*)il2cpp_codegen_object_new(ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A_il2cpp_TypeInfo_var);
+		NullCheck(L_33);
+		ScaleOption__ctor_m6B6E52F1920EF1A6A6173DBA40373A2EB89EBA97(L_33, L_31, L_32, NULL);
+		NullCheck(L_26);
+		InterfaceActionInvoker3< String_t*, String_t*, ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* >::Invoke(9 /* System.Void Bhaptics.Tact.Unity.IHaptic::SubmitRegistered(System.String,System.String,Bhaptics.Tact.ScaleOption) */, IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var, L_26, L_27, L_30, L_33);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.ArmsHapticClip::ResetValues()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArmsHapticClip_ResetValues_mA54DDE5DF3BC842D4BC3CA59C99EB38D977929D4 (ArmsHapticClip_t147D7B1D9FA2AEB6F4001D52E83C485D05738DE7* __this, const RuntimeMethod* method) 
+{
+	{
+		// base.ResetValues();
+		FileHapticClip_ResetValues_m24A047517C36F0D208AE4721F32BD256F042D927(__this, NULL);
+		// IsReflect = false;
+		__this->___IsReflect_11 = (bool)0;
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.ArmsHapticClip::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArmsHapticClip__ctor_mDC970DE44CAFE5F3D46A983FD36FA135B4086B3D (ArmsHapticClip_t147D7B1D9FA2AEB6F4001D52E83C485D05738DE7* __this, const RuntimeMethod* method) 
+{
+	{
+		FileHapticClip__ctor_mEA03B5953AAC12B4F4F765FD7AAB8CB821CCD6B7(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic__ctor_mBF9C697F33CE6DC357630717AA13612632452722 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, const RuntimeMethod* method) 
+{
+	{
+		// public BhapticsHaptic()
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// HapticApi.Initialise(Application.identifier, Application.productName);
+		String_t* L_0;
+		L_0 = Application_get_identifier_mEA3314E50D44FB3CE2C2E78B336ACF4AD97BA056(NULL);
+		String_t* L_1;
+		L_1 = Application_get_productName_m9314FB94C4DE1F1731084FF30B9555F44BA477EB(NULL);
+		HapticApi_Initialise_m30D4F8BBC6D0967EA925219946F6F9F60BDA4580(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.BhapticsHaptic::IsConnect(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BhapticsHaptic_IsConnect_m8A53ADB473647BC17635A489336C5FE073C5F7C3 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, int32_t ___0_type, const RuntimeMethod* method) 
+{
+	{
+		// return HapticApi.IsDevicePlaying(type);
+		int32_t L_0 = ___0_type;
+		bool L_1;
+		L_1 = HapticApi_IsDevicePlaying_mFE21A3F7D83EE049003C294F212D634B95E1876A(L_0, NULL);
+		return L_1;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.BhapticsHaptic::IsConnect(Bhaptics.Tact.Unity.HapticDeviceType,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BhapticsHaptic_IsConnect_m378F1728017BFB0CFEFD4E1D20FB061025515BA7 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, int32_t ___0_type, bool ___1_isLeft, const RuntimeMethod* method) 
+{
+	{
+		// return HapticApi.IsDevicePlaying(BhapticsUtils.ToPositionType(type, isLeft));
+		int32_t L_0 = ___0_type;
+		bool L_1 = ___1_isLeft;
+		int32_t L_2;
+		L_2 = BhapticsUtils_ToPositionType_mD7153937883C07B4A9F78AEB48006E06FD686A3B(L_0, L_1, NULL);
+		bool L_3;
+		L_3 = HapticApi_IsDevicePlaying_mFE21A3F7D83EE049003C294F212D634B95E1876A(L_2, NULL);
+		return L_3;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.BhapticsHaptic::IsPlaying(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BhapticsHaptic_IsPlaying_mD8F46DC52793DC0D3C63B79E281F5DEFC27C9EB2 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, const RuntimeMethod* method) 
+{
+	{
+		// return HapticApi.IsPlayingKey(key);
+		String_t* L_0 = ___0_key;
+		bool L_1;
+		L_1 = HapticApi_IsPlayingKey_mAB4DE5D6E4D4435F879F0BC791E24D70ACBAFC4F(L_0, NULL);
+		return L_1;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.BhapticsHaptic::IsFeedbackRegistered(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BhapticsHaptic_IsFeedbackRegistered_m77423899CDB1921594749EF624609C2F9D77B63C (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, const RuntimeMethod* method) 
+{
+	{
+		// return HapticApi.IsFeedbackRegistered(key);
+		String_t* L_0 = ___0_key;
+		bool L_1;
+		L_1 = HapticApi_IsFeedbackRegistered_mDA2BBCBF485E8D5EB42B390AF8326C30D45E0801(L_0, NULL);
+		return L_1;
+	}
+}
+// System.Boolean Bhaptics.Tact.Unity.BhapticsHaptic::IsPlaying()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BhapticsHaptic_IsPlaying_m01B62C7A76562787DCF7C49DD76BB167E04C6698 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, const RuntimeMethod* method) 
+{
+	{
+		// return HapticApi.IsPlaying();
+		bool L_0;
+		L_0 = HapticApi_IsPlaying_m1D25CFEA0AA7DE886069B542E10EACC244A66598(NULL);
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::RegisterTactFileStr(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_RegisterTactFileStr_m66F69A2C582926FB30344193BFBF88A61BF6B9E2 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, String_t* ___1_tactFileStr, const RuntimeMethod* method) 
+{
+	{
+		// HapticApi.RegisterFeedbackFromTactFile(key, tactFileStr);
+		String_t* L_0 = ___0_key;
+		String_t* L_1 = ___1_tactFileStr;
+		HapticApi_RegisterFeedbackFromTactFile_mC25BB735EDF86310F2BE279BE77B7A6814525B4F(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::RegisterTactFileStrReflected(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_RegisterTactFileStrReflected_mE231D8E542C04591034249A35764F15BF6E3A53D (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, String_t* ___1_tactFileStr, const RuntimeMethod* method) 
+{
+	{
+		// HapticApi.RegisterFeedbackFromTactFileReflected(key, tactFileStr);
+		String_t* L_0 = ___0_key;
+		String_t* L_1 = ___1_tactFileStr;
+		HapticApi_RegisterFeedbackFromTactFileReflected_m5AA03F02CA80F09FD972FDEE27CB9D0EDF5A4235(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::Submit(System.String,Bhaptics.Tact.PositionType,System.Collections.Generic.List`1<Bhaptics.Tact.DotPoint>,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_Submit_m533B1349375C0844BE2B878B9D918FE1F468181C (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, int32_t ___1_position, List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7* ___2_points, int32_t ___3_durationMillis, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mA6E8E551DC8B567A0F1BEA949DBFEAF141BC307F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m1E3E02F8E3D829A6B2A87379F9BF11A6FDE90319_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_0 = NULL;
+	int32_t V_1 = 0;
+	DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* V_2 = NULL;
+	{
+		// byte[] bytes = new byte[20];
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)20));
+		V_0 = L_0;
+		// for (var i = 0; i < points.Count; i++)
+		V_1 = 0;
+		goto IL_0027;
+	}
+
+IL_000c:
+	{
+		// DotPoint point = points[i];
+		List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7* L_1 = ___2_points;
+		int32_t L_2 = V_1;
+		NullCheck(L_1);
+		DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* L_3;
+		L_3 = List_1_get_Item_m1E3E02F8E3D829A6B2A87379F9BF11A6FDE90319(L_1, L_2, List_1_get_Item_m1E3E02F8E3D829A6B2A87379F9BF11A6FDE90319_RuntimeMethod_var);
+		V_2 = L_3;
+		// bytes[point.Index] = (byte)point.Intensity;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = V_0;
+		DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* L_5 = V_2;
+		NullCheck(L_5);
+		int32_t L_6;
+		L_6 = DotPoint_get_Index_m633D59299ED59D6254D7CC8667EB024D087A7574_inline(L_5, NULL);
+		DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* L_7 = V_2;
+		NullCheck(L_7);
+		int32_t L_8;
+		L_8 = DotPoint_get_Intensity_m8C6D8B150CCE0A547E1B3C7124AC4380D5A3016C_inline(L_7, NULL);
+		NullCheck(L_4);
+		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_6), (uint8_t)((int32_t)(uint8_t)L_8));
+		// for (var i = 0; i < points.Count; i++)
+		int32_t L_9 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_9, 1));
+	}
+
+IL_0027:
+	{
+		// for (var i = 0; i < points.Count; i++)
+		int32_t L_10 = V_1;
+		List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7* L_11 = ___2_points;
+		NullCheck(L_11);
+		int32_t L_12;
+		L_12 = List_1_get_Count_mA6E8E551DC8B567A0F1BEA949DBFEAF141BC307F_inline(L_11, List_1_get_Count_mA6E8E551DC8B567A0F1BEA949DBFEAF141BC307F_RuntimeMethod_var);
+		if ((((int32_t)L_10) < ((int32_t)L_12)))
+		{
+			goto IL_000c;
+		}
+	}
+	{
+		// HapticApi.SubmitByteArray(key, position, bytes, 20, durationMillis);
+		String_t* L_13 = ___0_key;
+		int32_t L_14 = ___1_position;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_15 = V_0;
+		int32_t L_16 = ___3_durationMillis;
+		HapticApi_SubmitByteArray_m0B314566F8054EC2304B09DFA06A0063A469DC5B(L_13, L_14, L_15, ((int32_t)20), L_16, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::Submit(System.String,Bhaptics.Tact.PositionType,System.Collections.Generic.List`1<Bhaptics.Tact.PathPoint>,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_Submit_mDD612BB0542E0B24A67871D68B8DA4FAD5372A56 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, int32_t ___1_position, List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* ___2_points, int32_t ___3_durationMillis, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		// HapticApi.point[] pts = new HapticApi.point[points.Count];
+		List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_0 = ___2_points;
+		NullCheck(L_0);
+		int32_t L_1;
+		L_1 = List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_inline(L_0, List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_RuntimeMethod_var);
+		pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* L_2 = (pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723*)(pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723*)SZArrayNew(pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723_il2cpp_TypeInfo_var, (uint32_t)L_1);
+		V_0 = L_2;
+		// for (var i = 0; i < points.Count; i++)
+		V_1 = 0;
+		goto IL_0074;
+	}
+
+IL_0010:
+	{
+		// pts[i].intensity = points[i].Intensity;
+		pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* L_3 = V_0;
+		int32_t L_4 = V_1;
+		NullCheck(L_3);
+		List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_5 = ___2_points;
+		int32_t L_6 = V_1;
+		NullCheck(L_5);
+		PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* L_7;
+		L_7 = List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A(L_5, L_6, List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A_RuntimeMethod_var);
+		NullCheck(L_7);
+		int32_t L_8;
+		L_8 = PathPoint_get_Intensity_mD87D87612D1B2B24FF1F6AF055689F274E08288B_inline(L_7, NULL);
+		((L_3)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4)))->___intensity_2 = L_8;
+		// pts[i].motorCount = points[i].MotorCount;
+		pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* L_9 = V_0;
+		int32_t L_10 = V_1;
+		NullCheck(L_9);
+		List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_11 = ___2_points;
+		int32_t L_12 = V_1;
+		NullCheck(L_11);
+		PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* L_13;
+		L_13 = List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A(L_11, L_12, List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A_RuntimeMethod_var);
+		NullCheck(L_13);
+		int32_t L_14;
+		L_14 = PathPoint_get_MotorCount_mD2EB5DD17D380C9AF1B8E5C2550FF526793BFB22_inline(L_13, NULL);
+		((L_9)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_10)))->___motorCount_3 = L_14;
+		// pts[i].x = points[i].X;
+		pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* L_15 = V_0;
+		int32_t L_16 = V_1;
+		NullCheck(L_15);
+		List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_17 = ___2_points;
+		int32_t L_18 = V_1;
+		NullCheck(L_17);
+		PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* L_19;
+		L_19 = List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A(L_17, L_18, List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A_RuntimeMethod_var);
+		NullCheck(L_19);
+		float L_20;
+		L_20 = PathPoint_get_X_mC6D8AD1FC8309504340DEEF64E8F78FF6F4658D2_inline(L_19, NULL);
+		((L_15)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_16)))->___x_0 = L_20;
+		// pts[i].y = points[i].Y;
+		pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* L_21 = V_0;
+		int32_t L_22 = V_1;
+		NullCheck(L_21);
+		List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_23 = ___2_points;
+		int32_t L_24 = V_1;
+		NullCheck(L_23);
+		PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* L_25;
+		L_25 = List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A(L_23, L_24, List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A_RuntimeMethod_var);
+		NullCheck(L_25);
+		float L_26;
+		L_26 = PathPoint_get_Y_m222EBAB437A3BB6D31690746927433FB7EA5283C_inline(L_25, NULL);
+		((L_21)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_22)))->___y_1 = L_26;
+		// for (var i = 0; i < points.Count; i++)
+		int32_t L_27 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_27, 1));
+	}
+
+IL_0074:
+	{
+		// for (var i = 0; i < points.Count; i++)
+		int32_t L_28 = V_1;
+		List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_29 = ___2_points;
+		NullCheck(L_29);
+		int32_t L_30;
+		L_30 = List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_inline(L_29, List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_RuntimeMethod_var);
+		if ((((int32_t)L_28) < ((int32_t)L_30)))
+		{
+			goto IL_0010;
+		}
+	}
+	{
+		// HapticApi.SubmitPathArray(key, position, pts, pts.Length, durationMillis);
+		String_t* L_31 = ___0_key;
+		int32_t L_32 = ___1_position;
+		pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* L_33 = V_0;
+		pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* L_34 = V_0;
+		NullCheck(L_34);
+		int32_t L_35 = ___3_durationMillis;
+		HapticApi_SubmitPathArray_m5332744B2A4F7674045BF625BF85CC6E912E8F36(L_31, L_32, L_33, ((int32_t)(((RuntimeArray*)L_34)->max_length)), L_35, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::SubmitRegistered(System.String,System.String,Bhaptics.Tact.ScaleOption)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_SubmitRegistered_m1ACC5A3101F21F0B155DC78EBD1DD80365072B13 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, String_t* ___1_altKey, ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* ___2_option, const RuntimeMethod* method) 
+{
+	{
+		// HapticApi.SubmitRegisteredWithOption(key, altKey, option.Intensity, option.Duration, 0f, 0f);
+		String_t* L_0 = ___0_key;
+		String_t* L_1 = ___1_altKey;
+		ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* L_2 = ___2_option;
+		NullCheck(L_2);
+		float L_3;
+		L_3 = ScaleOption_get_Intensity_mE8C2586F37BE648417F6C735CCCF5B3D75AC4559_inline(L_2, NULL);
+		ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* L_4 = ___2_option;
+		NullCheck(L_4);
+		float L_5;
+		L_5 = ScaleOption_get_Duration_m60FA7C23E16DAA58D396627DDA93749ED0ECAA12_inline(L_4, NULL);
+		HapticApi_SubmitRegisteredWithOption_m5E975859E85185123D34871863B497090FFAC63D(L_0, L_1, L_3, L_5, (0.0f), (0.0f), NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::SubmitRegistered(System.String,System.String,Bhaptics.Tact.RotationOption,Bhaptics.Tact.ScaleOption)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_SubmitRegistered_mC52E4E9903F28019D25B11908AA2A41460FB45E5 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, String_t* ___1_altKey, RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* ___2_rOption, ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* ___3_sOption, const RuntimeMethod* method) 
+{
+	{
+		// HapticApi.SubmitRegisteredWithOption(key, altKey, sOption.Intensity, sOption.Duration, rOption.OffsetAngleX, rOption.OffsetY);
+		String_t* L_0 = ___0_key;
+		String_t* L_1 = ___1_altKey;
+		ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* L_2 = ___3_sOption;
+		NullCheck(L_2);
+		float L_3;
+		L_3 = ScaleOption_get_Intensity_mE8C2586F37BE648417F6C735CCCF5B3D75AC4559_inline(L_2, NULL);
+		ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* L_4 = ___3_sOption;
+		NullCheck(L_4);
+		float L_5;
+		L_5 = ScaleOption_get_Duration_m60FA7C23E16DAA58D396627DDA93749ED0ECAA12_inline(L_4, NULL);
+		RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* L_6 = ___2_rOption;
+		NullCheck(L_6);
+		float L_7;
+		L_7 = RotationOption_get_OffsetAngleX_m2502A84A2ABDBB567D9E75C521FE2D11540C5834_inline(L_6, NULL);
+		RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* L_8 = ___2_rOption;
+		NullCheck(L_8);
+		float L_9;
+		L_9 = RotationOption_get_OffsetY_m8CC6564773B11D0765E3D3EC08315356CEFF0184_inline(L_8, NULL);
+		HapticApi_SubmitRegisteredWithOption_m5E975859E85185123D34871863B497090FFAC63D(L_0, L_1, L_3, L_5, L_7, L_9, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::SubmitRegistered(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_SubmitRegistered_m224405166DFEBEAC52F5608F39EE91B31CCE50A5 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, const RuntimeMethod* method) 
+{
+	{
+		// HapticApi.SubmitRegistered(key);
+		String_t* L_0 = ___0_key;
+		HapticApi_SubmitRegistered_m93F146E48AC24FAC9A2C74D4892E9F021731BD67(L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::SubmitRegistered(System.String,System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_SubmitRegistered_m1C5AABCCC9D47C4340764AC323AE9F64EEB621B5 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, int32_t ___1_startTimeMillis, const RuntimeMethod* method) 
+{
+	{
+		// HapticApi.SubmitRegisteredStartMillis(key, startTimeMillis);
+		String_t* L_0 = ___0_key;
+		int32_t L_1 = ___1_startTimeMillis;
+		HapticApi_SubmitRegisteredStartMillis_m4FAF75C81B874CC719A377F06696C26961BB391F(L_0, L_1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::TurnOff(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_TurnOff_m0C5150E0E0BC26926469BB318916DD29CB7A65C6 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, const RuntimeMethod* method) 
+{
+	{
+		// HapticApi.TurnOffKey(key);
+		String_t* L_0 = ___0_key;
+		HapticApi_TurnOffKey_m1F8EADFB4E136612F575B2103820B5EE8CCD0A4E(L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::TurnOff()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_TurnOff_mC0504F9274E14C53BB073492E5C8037BCD7AE0F2 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, const RuntimeMethod* method) 
+{
+	{
+		// HapticApi.TurnOff();
+		HapticApi_TurnOff_m37F3E663CD0A64C3EB9626423D112992D8258FF7(NULL);
+		// }
+		return;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_Dispose_m76BF86BB0B6AA9599DFACA630BD24E1D2EC6F17A (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, const RuntimeMethod* method) 
+{
+	{
+		// HapticApi.Destroy();
+		HapticApi_Destroy_m63DA8F469337114CEC06561FA468D2B1BA2EE1AD(NULL);
+		// }
+		return;
+	}
+}
+// System.Int32[] Bhaptics.Tact.Unity.BhapticsHaptic::GetCurrentFeedback(Bhaptics.Tact.PositionType)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* BhapticsHaptic_GetCurrentFeedback_m06AFA4365CCCEB4A1A7F9255514B07067A34C1E1 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, int32_t ___0_pos, const RuntimeMethod* method) 
+{
+	status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		// HapticApi.TryGetResponseForPosition(pos, out status);
+		int32_t L_0 = ___0_pos;
+		bool L_1;
+		L_1 = HapticApi_TryGetResponseForPosition_m410F26B76DD2A379A5CE70ADBA7D7BF6175173E5(L_0, (&V_0), NULL);
+		// return status.values;
+		status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576 L_2 = V_0;
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_3 = L_2.___values_0;
+		return L_3;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Bhaptics.Tact.Unity.Track[] Bhaptics.Tact.Unity.BhapticsProject::get_Tracks()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* BhapticsProject_get_Tracks_mBDE0713754725739BB7910610AF20943A7CD2474 (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Track[] Tracks { get; set; }
+		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_0 = __this->___U3CTracksU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsProject::set_Tracks(Bhaptics.Tact.Unity.Track[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsProject_set_Tracks_m6623528C82AA30741BBB706531D490BD5B3F37EC (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public Track[] Tracks { get; set; }
+		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_0 = ___0_value;
+		__this->___U3CTracksU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTracksU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// Bhaptics.Tact.Unity.Layout Bhaptics.Tact.Unity.BhapticsProject::get_Layout()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* BhapticsProject_get_Layout_m1CDEA6316C9F5B45CF1FFA0E95B027DBD0988840 (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Layout Layout { get; set; }
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_0 = __this->___U3CLayoutU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsProject::set_Layout(Bhaptics.Tact.Unity.Layout)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsProject_set_Layout_m086532F448C8A6B38DFE6308CE19C76FB40F66FA (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public Layout Layout { get; set; }
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_0 = ___0_value;
+		__this->___U3CLayoutU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CLayoutU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+// Bhaptics.Tact.Unity.BhapticsProject Bhaptics.Tact.Unity.BhapticsProject::ToProject(Bhaptics.Tact.JSONObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* BhapticsProject_ToProject_m38A058D7097A24F5B37480A5F90A6F59DC2BFDE4 (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObject, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m4E39030928BF0CB15FDFD6FAEF9FAC0EEACC634B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_ToArray_m9F04218A0494C4BF91025C2252E199DE56610D9A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m6B6749012AA714828B1A6A1FABDEBDD8335FEE19_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral27604803165C6541AB273EC61FCF3B90782F0C93);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral73F1C0DB7E67894BD0991354AA6CB2DA4A3A5D88);
+		s_Il2CppMethodInitialized = true;
+	}
+	BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* V_0 = NULL;
+	List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2* V_1 = NULL;
+	JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* V_2 = NULL;
+	Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	Track_t890B55E3594EA0442464072A11DE8398FB0420E9* V_5 = NULL;
+	{
+		// BhapticsProject project = new BhapticsProject();
+		BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* L_0 = (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20*)il2cpp_codegen_object_new(BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		BhapticsProject__ctor_m97FE40ECCE0CAE2F90943DC505EF7EFF418727D1(L_0, NULL);
+		V_0 = L_0;
+		// var trackList = new List<Track>();
+		List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2* L_1 = (List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2*)il2cpp_codegen_object_new(List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		List_1__ctor_m6B6749012AA714828B1A6A1FABDEBDD8335FEE19(L_1, List_1__ctor_m6B6749012AA714828B1A6A1FABDEBDD8335FEE19_RuntimeMethod_var);
+		V_1 = L_1;
+		// var tracks = jsonObject["tracks"];
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_2 = ___0_jsonObject;
+		NullCheck(L_2);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_3;
+		L_3 = VirtualFuncInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t* >::Invoke(7 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::get_Item(System.String) */, L_2, _stringLiteral27604803165C6541AB273EC61FCF3B90782F0C93);
+		// foreach (var tJObject in tracks)
+		NullCheck(L_3);
+		Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 L_4;
+		L_4 = VirtualFuncInvoker0< Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 >::Invoke(30 /* Bhaptics.Tact.JSONNode/Enumerator Bhaptics.Tact.JSONNode::GetEnumerator() */, L_3);
+		V_3 = L_4;
+		goto IL_0043;
+	}
+
+IL_001f:
+	{
+		// foreach (var tJObject in tracks)
+		KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC L_5;
+		L_5 = Enumerator_get_Current_mADC9138A797DFFC280E40580257BD68E94BC8D5C((&V_3), NULL);
+		V_4 = L_5;
+		// var track = Track.ToTrack(tJObject.Value.AsObject);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_6;
+		L_6 = KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_inline((&V_4), KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_RuntimeMethod_var);
+		NullCheck(L_6);
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_7;
+		L_7 = VirtualFuncInvoker0< JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* >::Invoke(42 /* Bhaptics.Tact.JSONObject Bhaptics.Tact.JSONNode::get_AsObject() */, L_6);
+		Track_t890B55E3594EA0442464072A11DE8398FB0420E9* L_8;
+		L_8 = Track_ToTrack_m4CC0735436732868D3070C22B5B2304459AA808C(L_7, NULL);
+		V_5 = L_8;
+		// trackList.Add(track);
+		List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2* L_9 = V_1;
+		Track_t890B55E3594EA0442464072A11DE8398FB0420E9* L_10 = V_5;
+		NullCheck(L_9);
+		List_1_Add_m4E39030928BF0CB15FDFD6FAEF9FAC0EEACC634B_inline(L_9, L_10, List_1_Add_m4E39030928BF0CB15FDFD6FAEF9FAC0EEACC634B_RuntimeMethod_var);
+	}
+
+IL_0043:
+	{
+		// foreach (var tJObject in tracks)
+		bool L_11;
+		L_11 = Enumerator_MoveNext_m007D2FA8EE0C5EFD0F7CA354C8A9B0E49DEB4528((&V_3), NULL);
+		if (L_11)
+		{
+			goto IL_001f;
+		}
+	}
+	{
+		// var layoutValue = jsonObject["layout"];
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_12 = ___0_jsonObject;
+		NullCheck(L_12);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_13;
+		L_13 = VirtualFuncInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t* >::Invoke(7 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::get_Item(System.String) */, L_12, _stringLiteral73F1C0DB7E67894BD0991354AA6CB2DA4A3A5D88);
+		V_2 = L_13;
+		// project.Layout = Layout.ToLayout(layoutValue.AsObject);
+		BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* L_14 = V_0;
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_15 = V_2;
+		NullCheck(L_15);
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_16;
+		L_16 = VirtualFuncInvoker0< JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* >::Invoke(42 /* Bhaptics.Tact.JSONObject Bhaptics.Tact.JSONNode::get_AsObject() */, L_15);
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_17;
+		L_17 = Layout_ToLayout_m523C6596DFF6EAE08B7EF2D8AB8A3EF7AAD7A86D(L_16, NULL);
+		NullCheck(L_14);
+		BhapticsProject_set_Layout_m086532F448C8A6B38DFE6308CE19C76FB40F66FA_inline(L_14, L_17, NULL);
+		// project.Tracks = trackList.ToArray();
+		BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* L_18 = V_0;
+		List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2* L_19 = V_1;
+		NullCheck(L_19);
+		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_20;
+		L_20 = List_1_ToArray_m9F04218A0494C4BF91025C2252E199DE56610D9A(L_19, List_1_ToArray_m9F04218A0494C4BF91025C2252E199DE56610D9A_RuntimeMethod_var);
+		NullCheck(L_18);
+		BhapticsProject_set_Tracks_m6623528C82AA30741BBB706531D490BD5B3F37EC_inline(L_18, L_20, NULL);
+		// return project;
+		BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* L_21 = V_0;
+		return L_21;
+	}
+}
+// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.BhapticsProject::ToJsonObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* BhapticsProject_ToJsonObject_m1C384179D0E79BDA0B8C1D651A862B9B66C7804F (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral27604803165C6541AB273EC61FCF3B90782F0C93);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral73F1C0DB7E67894BD0991354AA6CB2DA4A3A5D88);
+		s_Il2CppMethodInitialized = true;
+	}
+	JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* V_0 = NULL;
+	JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* V_1 = NULL;
+	TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* V_2 = NULL;
+	int32_t V_3 = 0;
+	Track_t890B55E3594EA0442464072A11DE8398FB0420E9* V_4 = NULL;
+	{
+		// var jsonObject = new JSONObject();
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_0 = (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC*)il2cpp_codegen_object_new(JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B(L_0, NULL);
+		V_0 = L_0;
+		// var tracks = new JSONArray();
+		JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_1 = (JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7*)il2cpp_codegen_object_new(JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		JSONArray__ctor_m4C44395E61EC41095CE4E43B84826B6CD00CAAC5(L_1, NULL);
+		V_1 = L_1;
+		// foreach (var track in Tracks)
+		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_2;
+		L_2 = BhapticsProject_get_Tracks_mBDE0713754725739BB7910610AF20943A7CD2474_inline(__this, NULL);
+		V_2 = L_2;
+		V_3 = 0;
+		goto IL_002d;
+	}
+
+IL_0017:
+	{
+		// foreach (var track in Tracks)
+		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_3 = V_2;
+		int32_t L_4 = V_3;
+		NullCheck(L_3);
+		int32_t L_5 = L_4;
+		Track_t890B55E3594EA0442464072A11DE8398FB0420E9* L_6 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
+		V_4 = L_6;
+		// tracks.Add(track.ToJsonObject());
+		JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_7 = V_1;
+		Track_t890B55E3594EA0442464072A11DE8398FB0420E9* L_8 = V_4;
+		NullCheck(L_8);
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_9;
+		L_9 = Track_ToJsonObject_m7805509E16B067BD222D5E582892C5D30F65F6D1(L_8, NULL);
+		NullCheck(L_7);
+		VirtualActionInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(21 /* System.Void Bhaptics.Tact.JSONNode::Add(Bhaptics.Tact.JSONNode) */, L_7, L_9);
+		int32_t L_10 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_10, 1));
+	}
+
+IL_002d:
+	{
+		// foreach (var track in Tracks)
+		int32_t L_11 = V_3;
+		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_12 = V_2;
+		NullCheck(L_12);
+		if ((((int32_t)L_11) < ((int32_t)((int32_t)(((RuntimeArray*)L_12)->max_length)))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		// jsonObject["tracks"] = tracks;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_13 = V_0;
+		JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_14 = V_1;
+		NullCheck(L_13);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_13, _stringLiteral27604803165C6541AB273EC61FCF3B90782F0C93, L_14);
+		// jsonObject["layout"] = Layout.ToJsonObject();
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_15 = V_0;
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_16;
+		L_16 = BhapticsProject_get_Layout_m1CDEA6316C9F5B45CF1FFA0E95B027DBD0988840_inline(__this, NULL);
+		NullCheck(L_16);
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_17;
+		L_17 = Layout_ToJsonObject_m1BA3A0A7ACFF10366F6004D700EDF471921F3B90(L_16, NULL);
+		NullCheck(L_15);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_15, _stringLiteral73F1C0DB7E67894BD0991354AA6CB2DA4A3A5D88, L_17);
+		// return jsonObject;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_18 = V_0;
+		return L_18;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.BhapticsProject::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsProject__ctor_m97FE40ECCE0CAE2F90943DC505EF7EFF418727D1 (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Bhaptics.Tact.Unity.HapticFeedbackFile Bhaptics.Tact.Unity.HapticFeedbackFile::ToHapticFeedbackFile(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticFeedbackFile_tA8FA7E232A215E89B17E7B24B665152C52D63AF2* HapticFeedbackFile_ToHapticFeedbackFile_mF0E8A5BE3F1DDB77F9D924B831FDA4FE7A78A8F7 (String_t* ___0_jsonStr, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HapticFeedbackFile_tA8FA7E232A215E89B17E7B24B665152C52D63AF2_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1AABBEEBF70E1E44D0F04B20FAD11EAC5C78165F);
+		s_Il2CppMethodInitialized = true;
+	}
+	JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* V_0 = NULL;
+	{
+		// HapticFeedbackFile feedbackFile = new HapticFeedbackFile();
+		HapticFeedbackFile_tA8FA7E232A215E89B17E7B24B665152C52D63AF2* L_0 = (HapticFeedbackFile_tA8FA7E232A215E89B17E7B24B665152C52D63AF2*)il2cpp_codegen_object_new(HapticFeedbackFile_tA8FA7E232A215E89B17E7B24B665152C52D63AF2_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		HapticFeedbackFile__ctor_mF6D6636FB41BF7D3C78E72D641A80A27F77DCA10(L_0, NULL);
+		// JSONObject jsonObject = JSON.Parse(jsonStr).AsObject;
+		String_t* L_1 = ___0_jsonStr;
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_2;
+		L_2 = JSON_Parse_m61553DFEF69DCC5F2C7B8D41A4D44A032CEAE4DA(L_1, NULL);
+		NullCheck(L_2);
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_3;
+		L_3 = VirtualFuncInvoker0< JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* >::Invoke(42 /* Bhaptics.Tact.JSONObject Bhaptics.Tact.JSONNode::get_AsObject() */, L_2);
+		// var projectObj = jsonObject["project"];
+		NullCheck(L_3);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_4;
+		L_4 = VirtualFuncInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t* >::Invoke(7 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::get_Item(System.String) */, L_3, _stringLiteral1AABBEEBF70E1E44D0F04B20FAD11EAC5C78165F);
+		V_0 = L_4;
+		// feedbackFile.Project = BhapticsProject.ToProject(projectObj.AsObject);
+		HapticFeedbackFile_tA8FA7E232A215E89B17E7B24B665152C52D63AF2* L_5 = L_0;
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_6 = V_0;
+		NullCheck(L_6);
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_7;
+		L_7 = VirtualFuncInvoker0< JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* >::Invoke(42 /* Bhaptics.Tact.JSONObject Bhaptics.Tact.JSONNode::get_AsObject() */, L_6);
+		BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* L_8;
+		L_8 = BhapticsProject_ToProject_m38A058D7097A24F5B37480A5F90A6F59DC2BFDE4(L_7, NULL);
+		NullCheck(L_5);
+		L_5->___Project_0 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&L_5->___Project_0), (void*)L_8);
+		// return feedbackFile;
+		return L_5;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.HapticFeedbackFile::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticFeedbackFile__ctor_mF6D6636FB41BF7D3C78E72D641A80A27F77DCA10 (HapticFeedbackFile_tA8FA7E232A215E89B17E7B24B665152C52D63AF2* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Bhaptics.Tact.Unity.HapticEffect[] Bhaptics.Tact.Unity.Track::get_Effects()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* Track_get_Effects_mC21F35847118C27DB99160CFD22B7D80CE6C96B7 (Track_t890B55E3594EA0442464072A11DE8398FB0420E9* __this, const RuntimeMethod* method) 
+{
+	{
+		// public HapticEffect[] Effects { get; set; }
+		HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* L_0 = __this->___U3CEffectsU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Track::set_Effects(Bhaptics.Tact.Unity.HapticEffect[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Track_set_Effects_m15A4E8C1F80A7E795588A3E9EB59370B39B604CD (Track_t890B55E3594EA0442464072A11DE8398FB0420E9* __this, HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public HapticEffect[] Effects { get; set; }
+		HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* L_0 = ___0_value;
+		__this->___U3CEffectsU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CEffectsU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.String Bhaptics.Tact.Unity.Track::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Track_ToString_mE2D685ED273C0992E75B220501F1253ED290C73E (Track_t890B55E3594EA0442464072A11DE8398FB0420E9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4D8D9C94AC5DA5FCED2EC8A64E10E714A2515C30);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE8507000EFFD73B7527B58D20A10702778D64750);
+		s_Il2CppMethodInitialized = true;
+	}
+	HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* G_B2_0 = NULL;
+	String_t* G_B2_1 = NULL;
+	HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* G_B1_0 = NULL;
+	String_t* G_B1_1 = NULL;
+	String_t* G_B3_0 = NULL;
+	String_t* G_B3_1 = NULL;
+	{
+		// return "Track {  Effects=" + Effects + "}";
+		HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* L_0;
+		L_0 = Track_get_Effects_mC21F35847118C27DB99160CFD22B7D80CE6C96B7_inline(__this, NULL);
+		HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* L_1 = L_0;
+		G_B1_0 = L_1;
+		G_B1_1 = _stringLiteralE8507000EFFD73B7527B58D20A10702778D64750;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			G_B2_1 = _stringLiteralE8507000EFFD73B7527B58D20A10702778D64750;
+			goto IL_0012;
+		}
+	}
+	{
+		G_B3_0 = ((String_t*)(NULL));
+		G_B3_1 = G_B1_1;
+		goto IL_0017;
+	}
+
+IL_0012:
+	{
+		NullCheck((RuntimeObject*)G_B2_0);
+		String_t* L_2;
+		L_2 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, (RuntimeObject*)G_B2_0);
+		G_B3_0 = L_2;
+		G_B3_1 = G_B2_1;
+	}
+
+IL_0017:
+	{
+		String_t* L_3;
+		L_3 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(G_B3_1, G_B3_0, _stringLiteral4D8D9C94AC5DA5FCED2EC8A64E10E714A2515C30, NULL);
+		return L_3;
+	}
+}
+// Bhaptics.Tact.Unity.Track Bhaptics.Tact.Unity.Track::ToTrack(Bhaptics.Tact.JSONObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Track_t890B55E3594EA0442464072A11DE8398FB0420E9* Track_ToTrack_m4CC0735436732868D3070C22B5B2304459AA808C (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObj, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m6FE3E021596B9C8CE5FBC6BD3CFF6BFA31A7222C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_ToArray_m71C4C97E9EA541BB629B14B592863E4CB6D8A787_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mA303FBEE7FA9428CC4C53279B5497EFFBFBC621C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t7708E016E8D5714047242D10B6F8574A29C085E6_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Track_t890B55E3594EA0442464072A11DE8398FB0420E9_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA191E9A1127B5BD50FB629B3243E9F005DCF1660);
+		s_Il2CppMethodInitialized = true;
+	}
+	Track_t890B55E3594EA0442464072A11DE8398FB0420E9* V_0 = NULL;
+	List_1_t7708E016E8D5714047242D10B6F8574A29C085E6* V_1 = NULL;
+	Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	{
+		// Track track = new Track();
+		Track_t890B55E3594EA0442464072A11DE8398FB0420E9* L_0 = (Track_t890B55E3594EA0442464072A11DE8398FB0420E9*)il2cpp_codegen_object_new(Track_t890B55E3594EA0442464072A11DE8398FB0420E9_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		Track__ctor_m040C5ADFD160E9FF5757DC50C2267D04626045CA(L_0, NULL);
+		V_0 = L_0;
+		// List<HapticEffect> effectList = new List<HapticEffect>();
+		List_1_t7708E016E8D5714047242D10B6F8574A29C085E6* L_1 = (List_1_t7708E016E8D5714047242D10B6F8574A29C085E6*)il2cpp_codegen_object_new(List_1_t7708E016E8D5714047242D10B6F8574A29C085E6_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		List_1__ctor_mA303FBEE7FA9428CC4C53279B5497EFFBFBC621C(L_1, List_1__ctor_mA303FBEE7FA9428CC4C53279B5497EFFBFBC621C_RuntimeMethod_var);
+		V_1 = L_1;
+		// var effects = jsonObj.GetValueOrDefault("effects", new JSONArray());
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_2 = ___0_jsonObj;
+		JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_3 = (JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7*)il2cpp_codegen_object_new(JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		JSONArray__ctor_m4C44395E61EC41095CE4E43B84826B6CD00CAAC5(L_3, NULL);
+		NullCheck(L_2);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_4;
+		L_4 = VirtualFuncInvoker2< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(27 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::GetValueOrDefault(System.String,Bhaptics.Tact.JSONNode) */, L_2, _stringLiteralA191E9A1127B5BD50FB629B3243E9F005DCF1660, L_3);
+		// foreach (var effect in effects)
+		NullCheck(L_4);
+		Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 L_5;
+		L_5 = VirtualFuncInvoker0< Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 >::Invoke(30 /* Bhaptics.Tact.JSONNode/Enumerator Bhaptics.Tact.JSONNode::GetEnumerator() */, L_4);
+		V_2 = L_5;
+		goto IL_0043;
+	}
+
+IL_0024:
+	{
+		// foreach (var effect in effects)
+		KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC L_6;
+		L_6 = Enumerator_get_Current_mADC9138A797DFFC280E40580257BD68E94BC8D5C((&V_2), NULL);
+		V_3 = L_6;
+		// effectList.Add(HapticEffect.ToEffect(effect.Value.AsObject));
+		List_1_t7708E016E8D5714047242D10B6F8574A29C085E6* L_7 = V_1;
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_8;
+		L_8 = KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_inline((&V_3), KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_RuntimeMethod_var);
+		NullCheck(L_8);
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_9;
+		L_9 = VirtualFuncInvoker0< JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* >::Invoke(42 /* Bhaptics.Tact.JSONObject Bhaptics.Tact.JSONNode::get_AsObject() */, L_8);
+		HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* L_10;
+		L_10 = HapticEffect_ToEffect_m73F9275C43CE37A80F7C03DCA2E31B5BDB67DFEC(L_9, NULL);
+		NullCheck(L_7);
+		List_1_Add_m6FE3E021596B9C8CE5FBC6BD3CFF6BFA31A7222C_inline(L_7, L_10, List_1_Add_m6FE3E021596B9C8CE5FBC6BD3CFF6BFA31A7222C_RuntimeMethod_var);
+	}
+
+IL_0043:
+	{
+		// foreach (var effect in effects)
+		bool L_11;
+		L_11 = Enumerator_MoveNext_m007D2FA8EE0C5EFD0F7CA354C8A9B0E49DEB4528((&V_2), NULL);
+		if (L_11)
+		{
+			goto IL_0024;
+		}
+	}
+	{
+		// track.Effects = effectList.ToArray();
+		Track_t890B55E3594EA0442464072A11DE8398FB0420E9* L_12 = V_0;
+		List_1_t7708E016E8D5714047242D10B6F8574A29C085E6* L_13 = V_1;
+		NullCheck(L_13);
+		HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* L_14;
+		L_14 = List_1_ToArray_m71C4C97E9EA541BB629B14B592863E4CB6D8A787(L_13, List_1_ToArray_m71C4C97E9EA541BB629B14B592863E4CB6D8A787_RuntimeMethod_var);
+		NullCheck(L_12);
+		Track_set_Effects_m15A4E8C1F80A7E795588A3E9EB59370B39B604CD_inline(L_12, L_14, NULL);
+		// return track;
+		Track_t890B55E3594EA0442464072A11DE8398FB0420E9* L_15 = V_0;
+		return L_15;
+	}
+}
+// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.Track::ToJsonObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* Track_ToJsonObject_m7805509E16B067BD222D5E582892C5D30F65F6D1 (Track_t890B55E3594EA0442464072A11DE8398FB0420E9* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA191E9A1127B5BD50FB629B3243E9F005DCF1660);
+		s_Il2CppMethodInitialized = true;
+	}
+	JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* V_0 = NULL;
+	JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* V_1 = NULL;
+	HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* V_2 = NULL;
+	int32_t V_3 = 0;
+	HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* V_4 = NULL;
+	{
+		// var jsonObject = new JSONObject();
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_0 = (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC*)il2cpp_codegen_object_new(JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B(L_0, NULL);
+		V_0 = L_0;
+		// var effectArray = new JSONArray();
+		JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_1 = (JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7*)il2cpp_codegen_object_new(JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		JSONArray__ctor_m4C44395E61EC41095CE4E43B84826B6CD00CAAC5(L_1, NULL);
+		V_1 = L_1;
+		// foreach (var effect in Effects)
+		HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* L_2;
+		L_2 = Track_get_Effects_mC21F35847118C27DB99160CFD22B7D80CE6C96B7_inline(__this, NULL);
+		V_2 = L_2;
+		V_3 = 0;
+		goto IL_002d;
+	}
+
+IL_0017:
+	{
+		// foreach (var effect in Effects)
+		HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* L_3 = V_2;
+		int32_t L_4 = V_3;
+		NullCheck(L_3);
+		int32_t L_5 = L_4;
+		HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* L_6 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
+		V_4 = L_6;
+		// effectArray.Add(effect.ToJsonObject());
+		JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_7 = V_1;
+		HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* L_8 = V_4;
+		NullCheck(L_8);
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_9;
+		L_9 = HapticEffect_ToJsonObject_m63715314F3F7E92A1B74E8A3DDD8A7AC2EA44831(L_8, NULL);
+		NullCheck(L_7);
+		VirtualActionInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(21 /* System.Void Bhaptics.Tact.JSONNode::Add(Bhaptics.Tact.JSONNode) */, L_7, L_9);
+		int32_t L_10 = V_3;
+		V_3 = ((int32_t)il2cpp_codegen_add(L_10, 1));
+	}
+
+IL_002d:
+	{
+		// foreach (var effect in Effects)
+		int32_t L_11 = V_3;
+		HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* L_12 = V_2;
+		NullCheck(L_12);
+		if ((((int32_t)L_11) < ((int32_t)((int32_t)(((RuntimeArray*)L_12)->max_length)))))
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		// jsonObject["effects"] = effectArray;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_13 = V_0;
+		JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_14 = V_1;
+		NullCheck(L_13);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_13, _stringLiteralA191E9A1127B5BD50FB629B3243E9F005DCF1660, L_14);
+		// return jsonObject;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_15 = V_0;
+		return L_15;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Track::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Track__ctor_m040C5ADFD160E9FF5757DC50C2267D04626045CA (Track_t890B55E3594EA0442464072A11DE8398FB0420E9* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Int32 Bhaptics.Tact.Unity.HapticEffect::get_StartTime()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HapticEffect_get_StartTime_m0DC962A5FFF8E3667CBDBFE7322FC0F74F1B3867 (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int StartTime { get; set; }
+		int32_t L_0 = __this->___U3CStartTimeU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.HapticEffect::set_StartTime(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticEffect_set_StartTime_m63DE688652BF53D4992607A21A6DC9A9FC8FDEB1 (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public int StartTime { get; set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CStartTimeU3Ek__BackingField_0 = L_0;
+		return;
+	}
+}
+// System.Int32 Bhaptics.Tact.Unity.HapticEffect::get_OffsetTime()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HapticEffect_get_OffsetTime_mBACA280EC6FDCCE33C8307A54A66D0B9F22E1786 (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int OffsetTime { get; set; }
+		int32_t L_0 = __this->___U3COffsetTimeU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.HapticEffect::set_OffsetTime(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticEffect_set_OffsetTime_mAE59216F6F484E13C9D9876615DCF06C05DF602B (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public int OffsetTime { get; set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3COffsetTimeU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode> Bhaptics.Tact.Unity.HapticEffect::get_Modes()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* HapticEffect_get_Modes_m5B9239AD91F4846DD87D63132BDB1A136E007EE3 (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<string, HapticEffectMode> Modes { get; set; }
+		Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* L_0 = __this->___U3CModesU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.HapticEffect::set_Modes(System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticEffect_set_Modes_m82FE81370834ADAAAC5471FFCD244107360A66CF (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<string, HapticEffectMode> Modes { get; set; }
+		Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* L_0 = ___0_value;
+		__this->___U3CModesU3Ek__BackingField_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CModesU3Ek__BackingField_2), (void*)L_0);
+		return;
+	}
+}
+// System.String Bhaptics.Tact.Unity.HapticEffect::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HapticEffect_ToString_m6FDB67EE0180DBF7A0DF4810218CAD728A9FA2E7 (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral193F970307496CCD8E09DA5E0B5912EFAE953B69);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4C9B6052064C2DAD443B35F799CDD94393B4B844);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4D8D9C94AC5DA5FCED2EC8A64E10E714A2515C30);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB989A5DE43B63E2F14FE6ABCFF8A44D8E17E5DDD);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* G_B2_0 = NULL;
+	int32_t G_B2_1 = 0;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B2_2 = NULL;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B2_3 = NULL;
+	Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* G_B1_0 = NULL;
+	int32_t G_B1_1 = 0;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B1_2 = NULL;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B1_3 = NULL;
+	String_t* G_B3_0 = NULL;
+	int32_t G_B3_1 = 0;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B3_2 = NULL;
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* G_B3_3 = NULL;
+	{
+		// return "HapticEffect { StartTime=" + StartTime +
+		//        ", OffsetTime=" + OffsetTime +
+		//        ", Modes=" + Modes + "}";
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)7);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1 = L_0;
+		NullCheck(L_1);
+		ArrayElementTypeCheck (L_1, _stringLiteral193F970307496CCD8E09DA5E0B5912EFAE953B69);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)_stringLiteral193F970307496CCD8E09DA5E0B5912EFAE953B69);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = L_1;
+		int32_t L_3;
+		L_3 = HapticEffect_get_StartTime_m0DC962A5FFF8E3667CBDBFE7322FC0F74F1B3867_inline(__this, NULL);
+		V_0 = L_3;
+		String_t* L_4;
+		L_4 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_0), NULL);
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, L_4);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)L_4);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5 = L_2;
+		NullCheck(L_5);
+		ArrayElementTypeCheck (L_5, _stringLiteral4C9B6052064C2DAD443B35F799CDD94393B4B844);
+		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)_stringLiteral4C9B6052064C2DAD443B35F799CDD94393B4B844);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6 = L_5;
+		int32_t L_7;
+		L_7 = HapticEffect_get_OffsetTime_mBACA280EC6FDCCE33C8307A54A66D0B9F22E1786_inline(__this, NULL);
+		V_0 = L_7;
+		String_t* L_8;
+		L_8 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_0), NULL);
+		NullCheck(L_6);
+		ArrayElementTypeCheck (L_6, L_8);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)L_8);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = L_6;
+		NullCheck(L_9);
+		ArrayElementTypeCheck (L_9, _stringLiteralB989A5DE43B63E2F14FE6ABCFF8A44D8E17E5DDD);
+		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)_stringLiteralB989A5DE43B63E2F14FE6ABCFF8A44D8E17E5DDD);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_10 = L_9;
+		Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* L_11;
+		L_11 = HapticEffect_get_Modes_m5B9239AD91F4846DD87D63132BDB1A136E007EE3_inline(__this, NULL);
+		Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* L_12 = L_11;
+		G_B1_0 = L_12;
+		G_B1_1 = 5;
+		G_B1_2 = L_10;
+		G_B1_3 = L_10;
+		if (L_12)
+		{
+			G_B2_0 = L_12;
+			G_B2_1 = 5;
+			G_B2_2 = L_10;
+			G_B2_3 = L_10;
+			goto IL_004f;
+		}
+	}
+	{
+		G_B3_0 = ((String_t*)(NULL));
+		G_B3_1 = G_B1_1;
+		G_B3_2 = G_B1_2;
+		G_B3_3 = G_B1_3;
+		goto IL_0054;
+	}
+
+IL_004f:
+	{
+		NullCheck(G_B2_0);
+		String_t* L_13;
+		L_13 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, G_B2_0);
+		G_B3_0 = L_13;
+		G_B3_1 = G_B2_1;
+		G_B3_2 = G_B2_2;
+		G_B3_3 = G_B2_3;
+	}
+
+IL_0054:
+	{
+		NullCheck(G_B3_2);
+		ArrayElementTypeCheck (G_B3_2, G_B3_0);
+		(G_B3_2)->SetAt(static_cast<il2cpp_array_size_t>(G_B3_1), (String_t*)G_B3_0);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_14 = G_B3_3;
+		NullCheck(L_14);
+		ArrayElementTypeCheck (L_14, _stringLiteral4D8D9C94AC5DA5FCED2EC8A64E10E714A2515C30);
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)_stringLiteral4D8D9C94AC5DA5FCED2EC8A64E10E714A2515C30);
+		String_t* L_15;
+		L_15 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_14, NULL);
+		return L_15;
+	}
+}
+// Bhaptics.Tact.Unity.HapticEffect Bhaptics.Tact.Unity.HapticEffect::ToEffect(Bhaptics.Tact.JSONObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* HapticEffect_ToEffect_m73F9275C43CE37A80F7C03DCA2E31B5BDB67DFEC (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObj, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_m91D0ECA8F609D4B777FA36DD5EC73FD3D8E670E3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_mD41796A33BB535C677472D5041543A0BCC75D8EE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Key_mC7AFE5CE55D57ACC0FDF084330BE36D51F87EECB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0291659353D7703E088B9DCAA8272442CAC27034);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1856CB9BD6A6A229A86D3C1E1B2B3AE1C590DEFF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF69E0C8368390F2D07397A3289B401F916EAC1AB);
+		s_Il2CppMethodInitialized = true;
+	}
+	HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* V_0 = NULL;
+	Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	{
+		// var effect = new HapticEffect();
+		HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* L_0 = (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C*)il2cpp_codegen_object_new(HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		HapticEffect__ctor_m665B4337E2441E7F6D2909E619552B81405F7DF6(L_0, NULL);
+		V_0 = L_0;
+		// effect.StartTime = jsonObj.GetValueOrDefault("startTime", -1);
+		HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* L_1 = V_0;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_2 = ___0_jsonObj;
+		il2cpp_codegen_runtime_class_init_inline(JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_3;
+		L_3 = JSONNode_op_Implicit_m1963C540AD7F39DA77DD07471422D4EEE6F90510((-1), NULL);
+		NullCheck(L_2);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_4;
+		L_4 = VirtualFuncInvoker2< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(27 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::GetValueOrDefault(System.String,Bhaptics.Tact.JSONNode) */, L_2, _stringLiteral0291659353D7703E088B9DCAA8272442CAC27034, L_3);
+		int32_t L_5;
+		L_5 = JSONNode_op_Implicit_m0AE9D7686C2A476A90E423219918B0D0D26B4FAC(L_4, NULL);
+		NullCheck(L_1);
+		HapticEffect_set_StartTime_m63DE688652BF53D4992607A21A6DC9A9FC8FDEB1_inline(L_1, L_5, NULL);
+		// effect.OffsetTime = jsonObj.GetValueOrDefault("offsetTime", -1);
+		HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* L_6 = V_0;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_7 = ___0_jsonObj;
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_8;
+		L_8 = JSONNode_op_Implicit_m1963C540AD7F39DA77DD07471422D4EEE6F90510((-1), NULL);
+		NullCheck(L_7);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_9;
+		L_9 = VirtualFuncInvoker2< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(27 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::GetValueOrDefault(System.String,Bhaptics.Tact.JSONNode) */, L_7, _stringLiteral1856CB9BD6A6A229A86D3C1E1B2B3AE1C590DEFF, L_8);
+		int32_t L_10;
+		L_10 = JSONNode_op_Implicit_m0AE9D7686C2A476A90E423219918B0D0D26B4FAC(L_9, NULL);
+		NullCheck(L_6);
+		HapticEffect_set_OffsetTime_mAE59216F6F484E13C9D9876615DCF06C05DF602B_inline(L_6, L_10, NULL);
+		// effect.Modes = new Dictionary<string, HapticEffectMode>();
+		HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* L_11 = V_0;
+		Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* L_12 = (Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8*)il2cpp_codegen_object_new(Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8_il2cpp_TypeInfo_var);
+		NullCheck(L_12);
+		Dictionary_2__ctor_m91D0ECA8F609D4B777FA36DD5EC73FD3D8E670E3(L_12, Dictionary_2__ctor_m91D0ECA8F609D4B777FA36DD5EC73FD3D8E670E3_RuntimeMethod_var);
+		NullCheck(L_11);
+		HapticEffect_set_Modes_m82FE81370834ADAAAC5471FFCD244107360A66CF_inline(L_11, L_12, NULL);
+		// var modeJson = jsonObj.GetValueOrDefault("modes", new JSONObject());
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_13 = ___0_jsonObj;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_14 = (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC*)il2cpp_codegen_object_new(JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		NullCheck(L_14);
+		JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B(L_14, NULL);
+		NullCheck(L_13);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_15;
+		L_15 = VirtualFuncInvoker2< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(27 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::GetValueOrDefault(System.String,Bhaptics.Tact.JSONNode) */, L_13, _stringLiteralF69E0C8368390F2D07397A3289B401F916EAC1AB, L_14);
+		// foreach (var mode in modeJson)
+		NullCheck(L_15);
+		Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 L_16;
+		L_16 = VirtualFuncInvoker0< Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 >::Invoke(30 /* Bhaptics.Tact.JSONNode/Enumerator Bhaptics.Tact.JSONNode::GetEnumerator() */, L_15);
+		V_1 = L_16;
+		goto IL_008c;
+	}
+
+IL_0061:
+	{
+		// foreach (var mode in modeJson)
+		KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC L_17;
+		L_17 = Enumerator_get_Current_mADC9138A797DFFC280E40580257BD68E94BC8D5C((&V_1), NULL);
+		V_2 = L_17;
+		// effect.Modes[mode.Key] = HapticEffectMode.ToMode(mode.Value.AsObject);
+		HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* L_18 = V_0;
+		NullCheck(L_18);
+		Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* L_19;
+		L_19 = HapticEffect_get_Modes_m5B9239AD91F4846DD87D63132BDB1A136E007EE3_inline(L_18, NULL);
+		String_t* L_20;
+		L_20 = KeyValuePair_2_get_Key_mC7AFE5CE55D57ACC0FDF084330BE36D51F87EECB_inline((&V_2), KeyValuePair_2_get_Key_mC7AFE5CE55D57ACC0FDF084330BE36D51F87EECB_RuntimeMethod_var);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_21;
+		L_21 = KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_inline((&V_2), KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_RuntimeMethod_var);
+		NullCheck(L_21);
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_22;
+		L_22 = VirtualFuncInvoker0< JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* >::Invoke(42 /* Bhaptics.Tact.JSONObject Bhaptics.Tact.JSONNode::get_AsObject() */, L_21);
+		HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* L_23;
+		L_23 = HapticEffectMode_ToMode_m516C83440CFF5745983713825E8C63C8B9AEA82A(L_22, NULL);
+		NullCheck(L_19);
+		Dictionary_2_set_Item_mD41796A33BB535C677472D5041543A0BCC75D8EE(L_19, L_20, L_23, Dictionary_2_set_Item_mD41796A33BB535C677472D5041543A0BCC75D8EE_RuntimeMethod_var);
+	}
+
+IL_008c:
+	{
+		// foreach (var mode in modeJson)
+		bool L_24;
+		L_24 = Enumerator_MoveNext_m007D2FA8EE0C5EFD0F7CA354C8A9B0E49DEB4528((&V_1), NULL);
+		if (L_24)
+		{
+			goto IL_0061;
+		}
+	}
+	{
+		// return effect;
+		HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* L_25 = V_0;
+		return L_25;
+	}
+}
+// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.HapticEffect::ToJsonObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* HapticEffect_ToJsonObject_m63715314F3F7E92A1B74E8A3DDD8A7AC2EA44831 (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_GetEnumerator_mF714EE84D6B491403CBDDC49BC235DEA9F32B1A9_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mB424B789C3350F9B1B2E3979AA5FEE529C18F45E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m7B63C391FB3B1AC14E498DF503298EA3BF4D2E5F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m188CDEC569878737D1819C8994CC25DA6A8755DB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Key_mB131019F0E8B06EBCBD52EEBB1C2E472089494D3_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_m465F12313B09FA5CE70FEF66329BC3E69254127D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0291659353D7703E088B9DCAA8272442CAC27034);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1856CB9BD6A6A229A86D3C1E1B2B3AE1C590DEFF);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF69E0C8368390F2D07397A3289B401F916EAC1AB);
+		s_Il2CppMethodInitialized = true;
+	}
+	JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* V_0 = NULL;
+	JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* V_1 = NULL;
+	Enumerator_tB74F4FEDF1F70644A20CE16CD663367054900974 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	KeyValuePair_2_tBD50AD3A0892764218F3B61D9120EF0A919B27D1 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	{
+		// var jsonObject = new JSONObject();
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_0 = (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC*)il2cpp_codegen_object_new(JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B(L_0, NULL);
+		V_0 = L_0;
+		// jsonObject["startTime"] = StartTime;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_1 = V_0;
+		int32_t L_2;
+		L_2 = HapticEffect_get_StartTime_m0DC962A5FFF8E3667CBDBFE7322FC0F74F1B3867_inline(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_3;
+		L_3 = JSONNode_op_Implicit_m1963C540AD7F39DA77DD07471422D4EEE6F90510(L_2, NULL);
+		NullCheck(L_1);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_1, _stringLiteral0291659353D7703E088B9DCAA8272442CAC27034, L_3);
+		// jsonObject["offsetTime"] = OffsetTime;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_4 = V_0;
+		int32_t L_5;
+		L_5 = HapticEffect_get_OffsetTime_mBACA280EC6FDCCE33C8307A54A66D0B9F22E1786_inline(__this, NULL);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_6;
+		L_6 = JSONNode_op_Implicit_m1963C540AD7F39DA77DD07471422D4EEE6F90510(L_5, NULL);
+		NullCheck(L_4);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_4, _stringLiteral1856CB9BD6A6A229A86D3C1E1B2B3AE1C590DEFF, L_6);
+		// var modeObject = new JSONObject();
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_7 = (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC*)il2cpp_codegen_object_new(JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B(L_7, NULL);
+		V_1 = L_7;
+		// jsonObject["modes"] = modeObject;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_8 = V_0;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_9 = V_1;
+		NullCheck(L_8);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_8, _stringLiteralF69E0C8368390F2D07397A3289B401F916EAC1AB, L_9);
+		// foreach (var hapticEffectMode in Modes)
+		Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* L_10;
+		L_10 = HapticEffect_get_Modes_m5B9239AD91F4846DD87D63132BDB1A136E007EE3_inline(__this, NULL);
+		NullCheck(L_10);
+		Enumerator_tB74F4FEDF1F70644A20CE16CD663367054900974 L_11;
+		L_11 = Dictionary_2_GetEnumerator_mF714EE84D6B491403CBDDC49BC235DEA9F32B1A9(L_10, Dictionary_2_GetEnumerator_mF714EE84D6B491403CBDDC49BC235DEA9F32B1A9_RuntimeMethod_var);
+		V_2 = L_11;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_007e:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_mB424B789C3350F9B1B2E3979AA5FEE529C18F45E((&V_2), Enumerator_Dispose_mB424B789C3350F9B1B2E3979AA5FEE529C18F45E_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0073_1;
+			}
+
+IL_0052_1:
+			{
+				// foreach (var hapticEffectMode in Modes)
+				KeyValuePair_2_tBD50AD3A0892764218F3B61D9120EF0A919B27D1 L_12;
+				L_12 = Enumerator_get_Current_m188CDEC569878737D1819C8994CC25DA6A8755DB_inline((&V_2), Enumerator_get_Current_m188CDEC569878737D1819C8994CC25DA6A8755DB_RuntimeMethod_var);
+				V_3 = L_12;
+				// modeObject[hapticEffectMode.Key] = hapticEffectMode.Value.ToJsonObject();
+				JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_13 = V_1;
+				String_t* L_14;
+				L_14 = KeyValuePair_2_get_Key_mB131019F0E8B06EBCBD52EEBB1C2E472089494D3_inline((&V_3), KeyValuePair_2_get_Key_mB131019F0E8B06EBCBD52EEBB1C2E472089494D3_RuntimeMethod_var);
+				HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* L_15;
+				L_15 = KeyValuePair_2_get_Value_m465F12313B09FA5CE70FEF66329BC3E69254127D_inline((&V_3), KeyValuePair_2_get_Value_m465F12313B09FA5CE70FEF66329BC3E69254127D_RuntimeMethod_var);
+				NullCheck(L_15);
+				JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_16;
+				L_16 = HapticEffectMode_ToJsonObject_mC63EE8F9DAF9D2E3B1071FBE9EF71B07359AC4A5(L_15, NULL);
+				NullCheck(L_13);
+				VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_13, L_14, L_16);
+			}
+
+IL_0073_1:
+			{
+				// foreach (var hapticEffectMode in Modes)
+				bool L_17;
+				L_17 = Enumerator_MoveNext_m7B63C391FB3B1AC14E498DF503298EA3BF4D2E5F((&V_2), Enumerator_MoveNext_m7B63C391FB3B1AC14E498DF503298EA3BF4D2E5F_RuntimeMethod_var);
+				if (L_17)
+				{
+					goto IL_0052_1;
+				}
+			}
+			{
+				goto IL_008c;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_008c:
+	{
+		// return jsonObject;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_18 = V_0;
+		return L_18;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.HapticEffect::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticEffect__ctor_m665B4337E2441E7F6D2909E619552B81405F7DF6 (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.String Bhaptics.Tact.Unity.Layout::get_Type()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Layout_get_Type_mBE619D91B8B2EA797249B5CA78B045B764426283 (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string Type { get; set; }
+		String_t* L_0 = __this->___U3CTypeU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Layout::set_Type(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Layout_set_Type_mC6F3F60CACFB8872D86A13D7CC69532A467F22FC (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public string Type { get; set; }
+		String_t* L_0 = ___0_value;
+		__this->___U3CTypeU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTypeU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]> Bhaptics.Tact.Unity.Layout::get_Layouts()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* Layout_get_Layouts_m60E67CC8D7907AFE794DC4BC0616714AB3DB71FD (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<string, LayoutObject[]> Layouts { get; set; }
+		Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* L_0 = __this->___U3CLayoutsU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Layout::set_Layouts(System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Layout_set_Layouts_m04AD09245EA14233E27E00F0620C70A6DAF25DA4 (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<string, LayoutObject[]> Layouts { get; set; }
+		Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* L_0 = ___0_value;
+		__this->___U3CLayoutsU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CLayoutsU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+// Bhaptics.Tact.Unity.Layout Bhaptics.Tact.Unity.Layout::ToLayout(Bhaptics.Tact.JSONObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* Layout_ToLayout_m523C6596DFF6EAE08B7EF2D8AB8A3EF7AAD7A86D (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObj, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mE771721AC304A86F1630D0199A1B665A30B5A07E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m0A3D98FAEB0F65902D723519478843CA0B4B88B7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mDFD8A0A00B649A9483B1223FCC037C8AF4FDA1C1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_ToArray_mF15116DA6DE7656E08C99D78C17B748F4EC02E36_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mE98E867DE869699619CAC1FACC2727C677239CD4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7A3569A644A81677ECC45BFBCF217702F1D0DE07);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF3C6C902DBF80139640F6554F0C3392016A8ADF7);
+		s_Il2CppMethodInitialized = true;
+	}
+	Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* V_0 = NULL;
+	JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* V_1 = NULL;
+	JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* V_2 = NULL;
+	KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	String_t* V_5 = NULL;
+	List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8* V_6 = NULL;
+	Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 V_7;
+	memset((&V_7), 0, sizeof(V_7));
+	KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC V_8;
+	memset((&V_8), 0, sizeof(V_8));
+	{
+		// var layout = new Layout();
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_0 = (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F*)il2cpp_codegen_object_new(Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		Layout__ctor_mA9C51F3A9E360AB26821E84D39F2AB15E886511C(L_0, NULL);
+		V_0 = L_0;
+		// var type = jsonObj["type"];
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_1 = ___0_jsonObj;
+		NullCheck(L_1);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_2;
+		L_2 = VirtualFuncInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t* >::Invoke(7 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::get_Item(System.String) */, L_1, _stringLiteralF3C6C902DBF80139640F6554F0C3392016A8ADF7);
+		V_1 = L_2;
+		// layout.Type = type;
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_3 = V_0;
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_4 = V_1;
+		il2cpp_codegen_runtime_class_init_inline(JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		String_t* L_5;
+		L_5 = JSONNode_op_Implicit_mF1E8869ECBF9128BBBBDEFAA6BADBEDBD3377D13(L_4, NULL);
+		NullCheck(L_3);
+		Layout_set_Type_mC6F3F60CACFB8872D86A13D7CC69532A467F22FC_inline(L_3, L_5, NULL);
+		// layout.Layouts = new Dictionary<string, LayoutObject[]>();
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_6 = V_0;
+		Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* L_7 = (Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB*)il2cpp_codegen_object_new(Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		Dictionary_2__ctor_mE771721AC304A86F1630D0199A1B665A30B5A07E(L_7, Dictionary_2__ctor_mE771721AC304A86F1630D0199A1B665A30B5A07E_RuntimeMethod_var);
+		NullCheck(L_6);
+		Layout_set_Layouts_m04AD09245EA14233E27E00F0620C70A6DAF25DA4_inline(L_6, L_7, NULL);
+		// var layouts = jsonObj["layouts"];
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_8 = ___0_jsonObj;
+		NullCheck(L_8);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_9;
+		L_9 = VirtualFuncInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t* >::Invoke(7 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::get_Item(System.String) */, L_8, _stringLiteral7A3569A644A81677ECC45BFBCF217702F1D0DE07);
+		V_2 = L_9;
+		// foreach (var key in layouts.Keys)
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_10 = V_2;
+		NullCheck(L_10);
+		KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE L_11;
+		L_11 = JSONNode_get_Keys_m5AA9857B54A50BCCFC1A3CD00C13FD7E7C4D03FD(L_10, NULL);
+		V_4 = L_11;
+		KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE L_12;
+		L_12 = KeyEnumerator_GetEnumerator_m5E500FE5C9123A63956B2BBC44C92471A46BE585((&V_4), NULL);
+		V_3 = L_12;
+		goto IL_00ab;
+	}
+
+IL_0047:
+	{
+		// foreach (var key in layouts.Keys)
+		String_t* L_13;
+		L_13 = KeyEnumerator_get_Current_mC0EFD70B348C797A9097FC3591604248B5E8D9EB((&V_3), NULL);
+		V_5 = L_13;
+		// var arr = layouts.GetValueOrDefault(key, new JSONArray());
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_14 = V_2;
+		String_t* L_15 = V_5;
+		JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_16 = (JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7*)il2cpp_codegen_object_new(JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
+		NullCheck(L_16);
+		JSONArray__ctor_m4C44395E61EC41095CE4E43B84826B6CD00CAAC5(L_16, NULL);
+		NullCheck(L_14);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_17;
+		L_17 = VirtualFuncInvoker2< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(27 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::GetValueOrDefault(System.String,Bhaptics.Tact.JSONNode) */, L_14, L_15, L_16);
+		// var layoutObjList = new List<LayoutObject>();
+		List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8* L_18 = (List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8*)il2cpp_codegen_object_new(List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8_il2cpp_TypeInfo_var);
+		NullCheck(L_18);
+		List_1__ctor_mE98E867DE869699619CAC1FACC2727C677239CD4(L_18, List_1__ctor_mE98E867DE869699619CAC1FACC2727C677239CD4_RuntimeMethod_var);
+		V_6 = L_18;
+		// foreach (var layoutObj in arr)
+		NullCheck(L_17);
+		Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 L_19;
+		L_19 = VirtualFuncInvoker0< Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 >::Invoke(30 /* Bhaptics.Tact.JSONNode/Enumerator Bhaptics.Tact.JSONNode::GetEnumerator() */, L_17);
+		V_7 = L_19;
+		goto IL_008e;
+	}
+
+IL_006d:
+	{
+		// foreach (var layoutObj in arr)
+		KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC L_20;
+		L_20 = Enumerator_get_Current_mADC9138A797DFFC280E40580257BD68E94BC8D5C((&V_7), NULL);
+		V_8 = L_20;
+		// layoutObjList.Add(LayoutObject.ToLayoutObject(layoutObj.Value.AsObject));
+		List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8* L_21 = V_6;
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_22;
+		L_22 = KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_inline((&V_8), KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_RuntimeMethod_var);
+		NullCheck(L_22);
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_23;
+		L_23 = VirtualFuncInvoker0< JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* >::Invoke(42 /* Bhaptics.Tact.JSONObject Bhaptics.Tact.JSONNode::get_AsObject() */, L_22);
+		LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* L_24;
+		L_24 = LayoutObject_ToLayoutObject_mE5EFACE1A11213D0C866C27533298F610A13CD73(L_23, NULL);
+		NullCheck(L_21);
+		List_1_Add_mDFD8A0A00B649A9483B1223FCC037C8AF4FDA1C1_inline(L_21, L_24, List_1_Add_mDFD8A0A00B649A9483B1223FCC037C8AF4FDA1C1_RuntimeMethod_var);
+	}
+
+IL_008e:
+	{
+		// foreach (var layoutObj in arr)
+		bool L_25;
+		L_25 = Enumerator_MoveNext_m007D2FA8EE0C5EFD0F7CA354C8A9B0E49DEB4528((&V_7), NULL);
+		if (L_25)
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		// layout.Layouts[key] = layoutObjList.ToArray();
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_26 = V_0;
+		NullCheck(L_26);
+		Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* L_27;
+		L_27 = Layout_get_Layouts_m60E67CC8D7907AFE794DC4BC0616714AB3DB71FD_inline(L_26, NULL);
+		String_t* L_28 = V_5;
+		List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8* L_29 = V_6;
+		NullCheck(L_29);
+		LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* L_30;
+		L_30 = List_1_ToArray_mF15116DA6DE7656E08C99D78C17B748F4EC02E36(L_29, List_1_ToArray_mF15116DA6DE7656E08C99D78C17B748F4EC02E36_RuntimeMethod_var);
+		NullCheck(L_27);
+		Dictionary_2_set_Item_m0A3D98FAEB0F65902D723519478843CA0B4B88B7(L_27, L_28, L_30, Dictionary_2_set_Item_m0A3D98FAEB0F65902D723519478843CA0B4B88B7_RuntimeMethod_var);
+	}
+
+IL_00ab:
+	{
+		// foreach (var key in layouts.Keys)
+		bool L_31;
+		L_31 = KeyEnumerator_MoveNext_mC987ED757BC0CC6842850F7A80E4F52C304D8A65((&V_3), NULL);
+		if (L_31)
+		{
+			goto IL_0047;
+		}
+	}
+	{
+		// return layout;
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_32 = V_0;
+		return L_32;
+	}
+}
+// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.Layout::ToJsonObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* Layout_ToJsonObject_m1BA3A0A7ACFF10366F6004D700EDF471921F3B90 (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_GetEnumerator_mF12F10866C45A0B1B8A3EE0D58859B460B82C1DD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m5D6360F15AE7100C86563BB29E250064F31BDB7D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m4B76B8D6B70D42385525A1DB6EC4923B8087B84A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mCA6B86088D2DF3206509B44DE3E97DC1FCED2982_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Key_mF07391A7439D788E88A3B2B2DCB7CE9EACE9E5D4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_m8EC4293E0EFA757EBA2C4D4493C4A6D6B41296D5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7A3569A644A81677ECC45BFBCF217702F1D0DE07);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF3C6C902DBF80139640F6554F0C3392016A8ADF7);
+		s_Il2CppMethodInitialized = true;
+	}
+	JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* V_0 = NULL;
+	JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* V_1 = NULL;
+	Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* V_4 = NULL;
+	LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* V_5 = NULL;
+	int32_t V_6 = 0;
+	LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* V_7 = NULL;
+	{
+		// var jsonObject = new JSONObject();
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_0 = (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC*)il2cpp_codegen_object_new(JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B(L_0, NULL);
+		V_0 = L_0;
+		// jsonObject["type"] = Type;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_1 = V_0;
+		String_t* L_2;
+		L_2 = Layout_get_Type_mBE619D91B8B2EA797249B5CA78B045B764426283_inline(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_3;
+		L_3 = JSONNode_op_Implicit_m6D2AC5725D426909C3669AC277D5EEC9C78F3257(L_2, NULL);
+		NullCheck(L_1);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_1, _stringLiteralF3C6C902DBF80139640F6554F0C3392016A8ADF7, L_3);
+		// var layoutsObject = new JSONObject();
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_4 = (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC*)il2cpp_codegen_object_new(JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B(L_4, NULL);
+		V_1 = L_4;
+		// foreach (var layout in Layouts)
+		Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* L_5;
+		L_5 = Layout_get_Layouts_m60E67CC8D7907AFE794DC4BC0616714AB3DB71FD_inline(__this, NULL);
+		NullCheck(L_5);
+		Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4 L_6;
+		L_6 = Dictionary_2_GetEnumerator_mF12F10866C45A0B1B8A3EE0D58859B460B82C1DD(L_5, Dictionary_2_GetEnumerator_mF12F10866C45A0B1B8A3EE0D58859B460B82C1DD_RuntimeMethod_var);
+		V_2 = L_6;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_008a:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m5D6360F15AE7100C86563BB29E250064F31BDB7D((&V_2), Enumerator_Dispose_m5D6360F15AE7100C86563BB29E250064F31BDB7D_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_007f_1;
+			}
+
+IL_0030_1:
+			{
+				// foreach (var layout in Layouts)
+				KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535 L_7;
+				L_7 = Enumerator_get_Current_mCA6B86088D2DF3206509B44DE3E97DC1FCED2982_inline((&V_2), Enumerator_get_Current_mCA6B86088D2DF3206509B44DE3E97DC1FCED2982_RuntimeMethod_var);
+				V_3 = L_7;
+				// var objArray = new JSONArray();
+				JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_8 = (JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7*)il2cpp_codegen_object_new(JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
+				NullCheck(L_8);
+				JSONArray__ctor_m4C44395E61EC41095CE4E43B84826B6CD00CAAC5(L_8, NULL);
+				V_4 = L_8;
+				// foreach (var val in layout.Value)
+				LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* L_9;
+				L_9 = KeyValuePair_2_get_Value_m8EC4293E0EFA757EBA2C4D4493C4A6D6B41296D5_inline((&V_3), KeyValuePair_2_get_Value_m8EC4293E0EFA757EBA2C4D4493C4A6D6B41296D5_RuntimeMethod_var);
+				V_5 = L_9;
+				V_6 = 0;
+				goto IL_0068_1;
+			}
+
+IL_004d_1:
+			{
+				// foreach (var val in layout.Value)
+				LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* L_10 = V_5;
+				int32_t L_11 = V_6;
+				NullCheck(L_10);
+				int32_t L_12 = L_11;
+				LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
+				V_7 = L_13;
+				// objArray.Add(val.ToJsonObject());
+				JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_14 = V_4;
+				LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* L_15 = V_7;
+				NullCheck(L_15);
+				JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_16;
+				L_16 = LayoutObject_ToJsonObject_mDF2FFCB5A75E71B954FC7BB6BD5F10AC436CF1D8(L_15, NULL);
+				NullCheck(L_14);
+				VirtualActionInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(21 /* System.Void Bhaptics.Tact.JSONNode::Add(Bhaptics.Tact.JSONNode) */, L_14, L_16);
+				int32_t L_17 = V_6;
+				V_6 = ((int32_t)il2cpp_codegen_add(L_17, 1));
+			}
+
+IL_0068_1:
+			{
+				// foreach (var val in layout.Value)
+				int32_t L_18 = V_6;
+				LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* L_19 = V_5;
+				NullCheck(L_19);
+				if ((((int32_t)L_18) < ((int32_t)((int32_t)(((RuntimeArray*)L_19)->max_length)))))
+				{
+					goto IL_004d_1;
+				}
+			}
+			{
+				// layoutsObject[layout.Key] = objArray;
+				JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_20 = V_1;
+				String_t* L_21;
+				L_21 = KeyValuePair_2_get_Key_mF07391A7439D788E88A3B2B2DCB7CE9EACE9E5D4_inline((&V_3), KeyValuePair_2_get_Key_mF07391A7439D788E88A3B2B2DCB7CE9EACE9E5D4_RuntimeMethod_var);
+				JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_22 = V_4;
+				NullCheck(L_20);
+				VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_20, L_21, L_22);
+			}
+
+IL_007f_1:
+			{
+				// foreach (var layout in Layouts)
+				bool L_23;
+				L_23 = Enumerator_MoveNext_m4B76B8D6B70D42385525A1DB6EC4923B8087B84A((&V_2), Enumerator_MoveNext_m4B76B8D6B70D42385525A1DB6EC4923B8087B84A_RuntimeMethod_var);
+				if (L_23)
+				{
+					goto IL_0030_1;
+				}
+			}
+			{
+				goto IL_0098;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0098:
+	{
+		// jsonObject["layouts"] = layoutsObject;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_24 = V_0;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_25 = V_1;
+		NullCheck(L_24);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_24, _stringLiteral7A3569A644A81677ECC45BFBCF217702F1D0DE07, L_25);
+		// return jsonObject;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_26 = V_0;
+		return L_26;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Layout::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Layout__ctor_mA9C51F3A9E360AB26821E84D39F2AB15E886511C (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Int32 Bhaptics.Tact.Unity.LayoutObject::get_Index()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LayoutObject_get_Index_mAC697E34411D251A3D2D364954962063BD0B4A86 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int Index { get; set; }
+		int32_t L_0 = __this->___U3CIndexU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.LayoutObject::set_Index(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutObject_set_Index_m4823B428685425779BCDA95301365BFF9FDF93AF (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public int Index { get; set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CIndexU3Ek__BackingField_0 = L_0;
+		return;
+	}
+}
+// System.Single Bhaptics.Tact.Unity.LayoutObject::get_X()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LayoutObject_get_X_m3B474C29C3506E8B8DFDB46CD52EE46DA90039B7 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	{
+		// public float X { get; set; }
+		float L_0 = __this->___U3CXU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.LayoutObject::set_X(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutObject_set_X_mED3EBFFCF1FF5840EA1949A4BC85416E33BAA4C4 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public float X { get; set; }
+		float L_0 = ___0_value;
+		__this->___U3CXU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+// System.Single Bhaptics.Tact.Unity.LayoutObject::get_Y()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LayoutObject_get_Y_mD54E06DF5DAA79AC7723D518ADD3DF17B576EDF2 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	{
+		// public float Y { get; set; }
+		float L_0 = __this->___U3CYU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.LayoutObject::set_Y(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutObject_set_Y_mADC9A8BF0AC0DADA023D9ADB0308C5DC41BE0E80 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public float Y { get; set; }
+		float L_0 = ___0_value;
+		__this->___U3CYU3Ek__BackingField_2 = L_0;
+		return;
+	}
+}
+// Bhaptics.Tact.Unity.LayoutObject Bhaptics.Tact.Unity.LayoutObject::ToLayoutObject(Bhaptics.Tact.JSONObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* LayoutObject_ToLayoutObject_mE5EFACE1A11213D0C866C27533298F610A13CD73 (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObj, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral062DB096C728515E033CF8C48A1C1F0B9A79384B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9384C6EF2DA5C0BD5274A0DACFF291D0ABBFD8B1);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// LayoutObject layoutObject = new LayoutObject();
+		LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* L_0 = (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4*)il2cpp_codegen_object_new(LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		LayoutObject__ctor_mD41074C142B2FD7BEAD06B58FDB8F6CCEE2A7054(L_0, NULL);
+		// layoutObject.Index = jsonObj["index"];
+		LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* L_1 = L_0;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_2 = ___0_jsonObj;
+		NullCheck(L_2);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_3;
+		L_3 = VirtualFuncInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t* >::Invoke(7 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::get_Item(System.String) */, L_2, _stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1);
+		il2cpp_codegen_runtime_class_init_inline(JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		int32_t L_4;
+		L_4 = JSONNode_op_Implicit_m0AE9D7686C2A476A90E423219918B0D0D26B4FAC(L_3, NULL);
+		NullCheck(L_1);
+		LayoutObject_set_Index_m4823B428685425779BCDA95301365BFF9FDF93AF_inline(L_1, L_4, NULL);
+		// layoutObject.X = jsonObj["x"];
+		LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* L_5 = L_1;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_6 = ___0_jsonObj;
+		NullCheck(L_6);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_7;
+		L_7 = VirtualFuncInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t* >::Invoke(7 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::get_Item(System.String) */, L_6, _stringLiteral062DB096C728515E033CF8C48A1C1F0B9A79384B);
+		float L_8;
+		L_8 = JSONNode_op_Implicit_m13111A524086020853C383F698ACDE0BE8B94711(L_7, NULL);
+		NullCheck(L_5);
+		LayoutObject_set_X_mED3EBFFCF1FF5840EA1949A4BC85416E33BAA4C4_inline(L_5, L_8, NULL);
+		// layoutObject.Y = jsonObj["y"];
+		LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* L_9 = L_5;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_10 = ___0_jsonObj;
+		NullCheck(L_10);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_11;
+		L_11 = VirtualFuncInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t* >::Invoke(7 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::get_Item(System.String) */, L_10, _stringLiteral9384C6EF2DA5C0BD5274A0DACFF291D0ABBFD8B1);
+		float L_12;
+		L_12 = JSONNode_op_Implicit_m13111A524086020853C383F698ACDE0BE8B94711(L_11, NULL);
+		NullCheck(L_9);
+		LayoutObject_set_Y_mADC9A8BF0AC0DADA023D9ADB0308C5DC41BE0E80_inline(L_9, L_12, NULL);
+		// return layoutObject;
+		return L_9;
+	}
+}
+// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.LayoutObject::ToJsonObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* LayoutObject_ToJsonObject_mDF2FFCB5A75E71B954FC7BB6BD5F10AC436CF1D8 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral062DB096C728515E033CF8C48A1C1F0B9A79384B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9384C6EF2DA5C0BD5274A0DACFF291D0ABBFD8B1);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// var jsonObject = new JSONObject();
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_0 = (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC*)il2cpp_codegen_object_new(JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B(L_0, NULL);
+		// jsonObject["index"] = Index;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_1 = L_0;
+		int32_t L_2;
+		L_2 = LayoutObject_get_Index_mAC697E34411D251A3D2D364954962063BD0B4A86_inline(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_3;
+		L_3 = JSONNode_op_Implicit_m1963C540AD7F39DA77DD07471422D4EEE6F90510(L_2, NULL);
+		NullCheck(L_1);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_1, _stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1, L_3);
+		// jsonObject["x"] = X;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_4 = L_1;
+		float L_5;
+		L_5 = LayoutObject_get_X_m3B474C29C3506E8B8DFDB46CD52EE46DA90039B7_inline(__this, NULL);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_6;
+		L_6 = JSONNode_op_Implicit_mDD64E71A06EF02278E9AEAF16C3B5F6A80D088D5(L_5, NULL);
+		NullCheck(L_4);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_4, _stringLiteral062DB096C728515E033CF8C48A1C1F0B9A79384B, L_6);
+		// jsonObject["y"] = Y;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_7 = L_4;
+		float L_8;
+		L_8 = LayoutObject_get_Y_mD54E06DF5DAA79AC7723D518ADD3DF17B576EDF2_inline(__this, NULL);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_9;
+		L_9 = JSONNode_op_Implicit_mDD64E71A06EF02278E9AEAF16C3B5F6A80D088D5(L_8, NULL);
+		NullCheck(L_7);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_7, _stringLiteral9384C6EF2DA5C0BD5274A0DACFF291D0ABBFD8B1, L_9);
+		// return jsonObject;
+		return L_7;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.LayoutObject::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutObject__ctor_mD41074C142B2FD7BEAD06B58FDB8F6CCEE2A7054 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -18183,6 +33013,447 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool HandPose_get_AllowThumbsUp_m
 		return L_0;
 	}
 }
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t DotPoint_get_Index_m633D59299ED59D6254D7CC8667EB024D087A7574_inline (DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___U3CIndexU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t DotPoint_get_Intensity_m8C6D8B150CCE0A547E1B3C7124AC4380D5A3016C_inline (DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___U3CIntensityU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float PathPoint_get_X_mC6D8AD1FC8309504340DEEF64E8F78FF6F4658D2_inline (PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___U3CXU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float PathPoint_get_Y_m222EBAB437A3BB6D31690746927433FB7EA5283C_inline (PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___U3CYU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PathPoint_get_Intensity_mD87D87612D1B2B24FF1F6AF055689F274E08288B_inline (PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___U3CIntensityU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float ScaleOption_get_Intensity_mE8C2586F37BE648417F6C735CCCF5B3D75AC4559_inline (ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___U3CIntensityU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float ScaleOption_get_Duration_m60FA7C23E16DAA58D396627DDA93749ED0ECAA12_inline (ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___U3CDurationU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float RotationOption_get_OffsetAngleX_m2502A84A2ABDBB567D9E75C521FE2D11540C5834_inline (RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___U3COffsetAngleXU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float RotationOption_get_OffsetY_m8CC6564773B11D0765E3D3EC08315356CEFF0184_inline (RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* __this, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = __this->___U3COffsetYU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* Button_get_onClick_m701712A7F7F000CC80D517C4510697E15722C35C_inline (Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* __this, const RuntimeMethod* method) 
+{
+	{
+		// get { return m_OnClick; }
+		ButtonClickedEvent_t8EA72E90B3BD1392FB3B3EF167D5121C23569E4C* L_0 = __this->___m_OnClick_20;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD Selectable_get_spriteState_m7388F8F08AB8A03CB56516A7C9713733A737629A_inline (Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* __this, const RuntimeMethod* method) 
+{
+	{
+		// public SpriteState       spriteState       { get { return m_SpriteState; } set { if (SetPropertyUtility.SetStruct(ref m_SpriteState, value))       OnSetProperty(); } }
+		SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD L_0 = __this->___m_SpriteState_10;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SpriteState_set_highlightedSprite_mEECDB7C62DE0C6A0B2A7D5D7ADF54EB8CDDB20B0_inline (SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD* __this, Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public Sprite highlightedSprite    { get { return m_HighlightedSprite; } set { m_HighlightedSprite = value; } }
+		Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* L_0 = ___0_value;
+		__this->___m_HighlightedSprite_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_HighlightedSprite_0), (void*)L_0);
+		// public Sprite highlightedSprite    { get { return m_HighlightedSprite; } set { m_HighlightedSprite = value; } }
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ScrollRect_get_content_m7878BCA28A96B7FBA02DC466A1ED2C9E191C6996_inline (ScrollRect_t17D2F2939CA8953110180DF53164CFC3DC88D70E* __this, const RuntimeMethod* method) 
+{
+	{
+		// public RectTransform content { get { return m_Content; } set { m_Content = value; } }
+		RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* L_0 = __this->___m_Content_4;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_white_m068F5AF879B0FCA584E3693F762EA41BB65532C6_inline (const RuntimeMethod* method) 
+{
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_0), (1.0f), (1.0f), (1.0f), (1.0f), /*hidden argument*/NULL);
+		V_0 = L_0;
+		goto IL_001d;
+	}
+
+IL_001d:
+	{
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11 Selectable_get_colors_mB53E365D02351D4B64084295C4B2A7AF2DEC4750_inline (Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* __this, const RuntimeMethod* method) 
+{
+	{
+		// public ColorBlock        colors            { get { return m_Colors; } set { if (SetPropertyUtility.SetStruct(ref m_Colors, value))            OnSetProperty(); } }
+		ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11 L_0 = __this->___m_Colors_9;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ColorBlock_set_normalColor_m3EBF594F6FA2C6494ACA9FCB9B458807D85B96F8_inline (ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public Color normalColor       { get { return m_NormalColor; } set { m_NormalColor = value; } }
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = ___0_value;
+		__this->___m_NormalColor_0 = L_0;
+		// public Color normalColor       { get { return m_NormalColor; } set { m_NormalColor = value; } }
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ColorBlock_set_highlightedColor_m04E97DF2CCE7CAC47120D8F486E18BF62F16FF86_inline (ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public Color highlightedColor  { get { return m_HighlightedColor; } set { m_HighlightedColor = value; } }
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = ___0_value;
+		__this->___m_HighlightedColor_1 = L_0;
+		// public Color highlightedColor  { get { return m_HighlightedColor; } set { m_HighlightedColor = value; } }
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ColorBlock_set_pressedColor_m644C938090857AB07C57B25FE53F6DC2BB0DD5A8_inline (ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public Color pressedColor      { get { return m_PressedColor; } set { m_PressedColor = value; } }
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = ___0_value;
+		__this->___m_PressedColor_2 = L_0;
+		// public Color pressedColor      { get { return m_PressedColor; } set { m_PressedColor = value; } }
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_FloorToInt_m2A39AE881CAEE6B6A4B3BFEF9CA1ED40625F5AB7_inline (float ___0_f, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		float L_0 = ___0_f;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		double L_1;
+		L_1 = floor(((double)L_0));
+		V_0 = il2cpp_codegen_cast_double_to_int<int32_t>(L_1);
+		goto IL_000c;
+	}
+
+IL_000c:
+	{
+		int32_t L_2 = V_0;
+		return L_2;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ((Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields*)il2cpp_codegen_static_fields_for(Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var))->___zeroVector_2;
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1 = V_0;
+		return L_1;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_x;
+		__this->___x_0 = L_0;
+		float L_1 = ___1_y;
+		__this->___y_1 = L_1;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_b, const RuntimeMethod* method) 
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_a;
+		float L_1 = L_0.___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2 = ___1_b;
+		float L_3 = L_2.___x_0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4 = ___0_a;
+		float L_5 = L_4.___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6 = ___1_b;
+		float L_7 = L_6.___y_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8;
+		memset((&L_8), 0, sizeof(L_8));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_8), ((float)il2cpp_codegen_add(L_1, L_3)), ((float)il2cpp_codegen_add(L_5, L_7)), /*hidden argument*/NULL);
+		V_0 = L_8;
+		goto IL_0023;
+	}
+
+IL_0023:
+	{
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9 = V_0;
+		return L_9;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnityAction_Invoke_m5CB9EE17CCDF64D00DE5D96DF3553CDB20D66F70_inline (UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* __this, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PathPoint_get_MotorCount_mD2EB5DD17D380C9AF1B8E5C2550FF526793BFB22_inline (PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___U3CMotorCountU3Ek__BackingField_3;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BhapticsProject_set_Layout_m086532F448C8A6B38DFE6308CE19C76FB40F66FA_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public Layout Layout { get; set; }
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_0 = ___0_value;
+		__this->___U3CLayoutU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CLayoutU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BhapticsProject_set_Tracks_m6623528C82AA30741BBB706531D490BD5B3F37EC_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public Track[] Tracks { get; set; }
+		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_0 = ___0_value;
+		__this->___U3CTracksU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTracksU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* BhapticsProject_get_Tracks_mBDE0713754725739BB7910610AF20943A7CD2474_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Track[] Tracks { get; set; }
+		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_0 = __this->___U3CTracksU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* BhapticsProject_get_Layout_m1CDEA6316C9F5B45CF1FFA0E95B027DBD0988840_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Layout Layout { get; set; }
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_0 = __this->___U3CLayoutU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* Track_get_Effects_mC21F35847118C27DB99160CFD22B7D80CE6C96B7_inline (Track_t890B55E3594EA0442464072A11DE8398FB0420E9* __this, const RuntimeMethod* method) 
+{
+	{
+		// public HapticEffect[] Effects { get; set; }
+		HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* L_0 = __this->___U3CEffectsU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Track_set_Effects_m15A4E8C1F80A7E795588A3E9EB59370B39B604CD_inline (Track_t890B55E3594EA0442464072A11DE8398FB0420E9* __this, HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public HapticEffect[] Effects { get; set; }
+		HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* L_0 = ___0_value;
+		__this->___U3CEffectsU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CEffectsU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HapticEffect_get_StartTime_m0DC962A5FFF8E3667CBDBFE7322FC0F74F1B3867_inline (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int StartTime { get; set; }
+		int32_t L_0 = __this->___U3CStartTimeU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HapticEffect_get_OffsetTime_mBACA280EC6FDCCE33C8307A54A66D0B9F22E1786_inline (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int OffsetTime { get; set; }
+		int32_t L_0 = __this->___U3COffsetTimeU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* HapticEffect_get_Modes_m5B9239AD91F4846DD87D63132BDB1A136E007EE3_inline (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<string, HapticEffectMode> Modes { get; set; }
+		Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* L_0 = __this->___U3CModesU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HapticEffect_set_StartTime_m63DE688652BF53D4992607A21A6DC9A9FC8FDEB1_inline (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public int StartTime { get; set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CStartTimeU3Ek__BackingField_0 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HapticEffect_set_OffsetTime_mAE59216F6F484E13C9D9876615DCF06C05DF602B_inline (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public int OffsetTime { get; set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3COffsetTimeU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HapticEffect_set_Modes_m82FE81370834ADAAAC5471FFCD244107360A66CF_inline (HapticEffect_t1A3894E510DDAB35A09767206A154F6988DBA21C* __this, Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<string, HapticEffectMode> Modes { get; set; }
+		Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8* L_0 = ___0_value;
+		__this->___U3CModesU3Ek__BackingField_2 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CModesU3Ek__BackingField_2), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Layout_set_Type_mC6F3F60CACFB8872D86A13D7CC69532A467F22FC_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public string Type { get; set; }
+		String_t* L_0 = ___0_value;
+		__this->___U3CTypeU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTypeU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Layout_set_Layouts_m04AD09245EA14233E27E00F0620C70A6DAF25DA4_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<string, LayoutObject[]> Layouts { get; set; }
+		Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* L_0 = ___0_value;
+		__this->___U3CLayoutsU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CLayoutsU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* Layout_get_Layouts_m60E67CC8D7907AFE794DC4BC0616714AB3DB71FD_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<string, LayoutObject[]> Layouts { get; set; }
+		Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* L_0 = __this->___U3CLayoutsU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* Layout_get_Type_mBE619D91B8B2EA797249B5CA78B045B764426283_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string Type { get; set; }
+		String_t* L_0 = __this->___U3CTypeU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutObject_set_Index_m4823B428685425779BCDA95301365BFF9FDF93AF_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public int Index { get; set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CIndexU3Ek__BackingField_0 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutObject_set_X_mED3EBFFCF1FF5840EA1949A4BC85416E33BAA4C4_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public float X { get; set; }
+		float L_0 = ___0_value;
+		__this->___U3CXU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutObject_set_Y_mADC9A8BF0AC0DADA023D9ADB0308C5DC41BE0E80_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public float Y { get; set; }
+		float L_0 = ___0_value;
+		__this->___U3CYU3Ek__BackingField_2 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LayoutObject_get_Index_mAC697E34411D251A3D2D364954962063BD0B4A86_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int Index { get; set; }
+		int32_t L_0 = __this->___U3CIndexU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float LayoutObject_get_X_m3B474C29C3506E8B8DFDB46CD52EE46DA90039B7_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	{
+		// public float X { get; set; }
+		float L_0 = __this->___U3CXU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float LayoutObject_get_Y_mD54E06DF5DAA79AC7723D518ADD3DF17B576EDF2_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	{
+		// public float Y { get; set; }
+		float L_0 = __this->___U3CYU3Ek__BackingField_2;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -18276,6 +33547,35 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C
 {
 	{
 		int32_t L_0 = (int32_t)__this->____size_2;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_gshared_inline (const RuntimeMethod* method) 
+{
+	{
+		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->rgctx_data, 0));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_0 = ((EmptyArray_1_tDF0DD7256B115243AA6BD5558417387A734240EE_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->rgctx_data, 0)))->___Value_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___value_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___key_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 Enumerator_get_Current_mE3475384B761E1C7971D3639BD09117FE8363422_gshared_inline (Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9* __this, const RuntimeMethod* method) 
+{
+	{
+		KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 L_0 = (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230)__this->____current_3;
 		return L_0;
 	}
 }

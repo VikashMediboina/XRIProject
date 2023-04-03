@@ -13,7 +13,7 @@ public class SubmitQuery : MonoBehaviour
     private string Scene_No;
     private double Err_Rate;
     private int user_Rating;
-    private string url;
+    private string url="https://neu.co1.qualtrics.com/jfe/form/SV_3fT8qgIOPUgibki";
     private static Timer Avg_timer;
     private static int Total_Timer;
     

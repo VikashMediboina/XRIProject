@@ -16,6 +16,90 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Bhaptics.Tact.Unity.ArmsHapticClip",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Bhaptics.Tact.Unity.Bhaptics_Widget_Setting",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Bhaptics.Tact.Unity.BhapticsAndroidManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Bhaptics.Tact.Unity.FeetHapticClip",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Bhaptics.Tact.Unity.GloveHapticClip",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Bhaptics.Tact.Unity.HandsHapticClip",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Bhaptics.Tact.Unity.HapticSource",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Bhaptics.Tact.Unity.HeadHapticClip",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Bhaptics.Tact.Unity.VestHapticClip",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Bhaptics_Setup",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "BhapticsConfig",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "BluetoothPermissionScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "BuildSettings",
             "fullManagedTypeName": "",
@@ -49,7 +133,11 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -58,7 +146,11 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -69,13 +161,38 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "IntroButton",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "IntroNumpad",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "LevelGameManager",
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "LocalizedHaptics",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "",
@@ -83,7 +200,11 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -99,7 +220,11 @@
             "fullManagedTypeName": "",
             "moduleName": "AI",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -113,6 +238,13 @@
             "managedAssemblyName": "Oculus.Interaction.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Oculus.Interaction.ActiveStateTracker",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.OVR.Samples.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.AudioTrigger",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -315,6 +447,13 @@
         {
             "managedAssemblyName": "Oculus.Interaction.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.PointableUnityEventWrapper",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "Oculus.Interaction.PokeInteractable",
             "moduleName": "",
             "usedInScenes": []
@@ -472,7 +611,11 @@
             "fullManagedTypeName": "",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -490,23 +633,9 @@
             "usedInScenes": []
         },
         {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "SubmitQuery",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
             "managedAssemblyName": "Unity.TextMeshPro.dll",
             "nativeClass": "",
             "fullManagedTypeName": "TMPro.TextMeshPro",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Unity.TextMeshPro.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "TMPro.TextMeshProUGUI",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -558,7 +687,11 @@
             "fullManagedTypeName": "UnityEditor.Animations.AnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -588,7 +721,11 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -639,7 +776,11 @@
             "fullManagedTypeName": "UnityEngine.AnimationClip",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -648,7 +789,11 @@
             "fullManagedTypeName": "UnityEngine.Animator",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -657,7 +802,11 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -666,7 +815,11 @@
             "fullManagedTypeName": "UnityEngine.AudioClip",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -675,7 +828,11 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -684,7 +841,11 @@
             "fullManagedTypeName": "UnityEngine.AudioSource",
             "moduleName": "Audio",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -693,7 +854,11 @@
             "fullManagedTypeName": "UnityEngine.Avatar",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -702,7 +867,11 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -711,7 +880,11 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -720,16 +893,20 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "CanvasRenderer",
-            "fullManagedTypeName": "UnityEngine.CanvasRenderer",
+            "nativeClass": "Canvas",
+            "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity"
             ]
         },
         {
@@ -738,7 +915,11 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -747,7 +928,11 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -756,7 +941,11 @@
             "fullManagedTypeName": "UnityEngine.Cubemap",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -779,7 +968,7 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity"
             ]
         },
         {
@@ -788,7 +977,11 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -797,7 +990,11 @@
             "fullManagedTypeName": "UnityEngine.Light",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -806,7 +1003,11 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -815,7 +1016,11 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -824,7 +1029,11 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -833,7 +1042,11 @@
             "fullManagedTypeName": "UnityEngine.MeshCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -842,7 +1055,11 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -851,7 +1068,11 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -860,7 +1081,11 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -869,7 +1094,11 @@
             "fullManagedTypeName": "UnityEngine.Motion",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -878,7 +1107,11 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -894,7 +1127,11 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -903,7 +1140,11 @@
             "fullManagedTypeName": "UnityEngine.ReflectionProbe",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -912,7 +1153,11 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -928,7 +1173,11 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -937,7 +1186,11 @@
             "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -946,7 +1199,11 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -955,7 +1212,11 @@
             "fullManagedTypeName": "UnityEngine.SkinnedMeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -964,7 +1225,11 @@
             "fullManagedTypeName": "UnityEngine.SphereCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -973,7 +1238,7 @@
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity"
             ]
         },
         {
@@ -982,7 +1247,11 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -991,7 +1260,11 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -1000,7 +1273,11 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
@@ -1009,20 +1286,24 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/SphericalSceneController.unity"
+                "Assets/Scenes/IntroScene.unity",
+                "Assets/Scenes/QwertySceneController.unity",
+                "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SphericalSceneController.unity",
+                "Assets/Scenes/SphericalScenePoke.unity"
             ]
         },
         {
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.UI.Button",
+            "fullManagedTypeName": "UnityEngine.UI.CanvasScaler",
             "moduleName": "",
             "usedInScenes": []
         },
         {
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.UI.Image",
+            "fullManagedTypeName": "UnityEngine.UI.GraphicRaycaster",
             "moduleName": "",
             "usedInScenes": []
         },

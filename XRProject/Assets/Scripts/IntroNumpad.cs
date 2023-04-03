@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class IntroNumpad : MonoBehaviour
 {
-    public Button button;
+    public TextMeshPro button;
     public TextMeshPro outputText;
     // Start is called before the first frame update
     void Start()
@@ -25,17 +25,17 @@ public class IntroNumpad : MonoBehaviour
         if(outputText.text == "Enter PID")
         {
             outputText.text = "";
-            outputText.text += button.ToString().Substring(0, 1);
+            outputText.text += button.text;
         }
         else if(outputText.text == "")
         {
             outputText.text = "Enter PID";
         }
-        else if(button.ToString().Substring(0, 5) == "Clear")
+        else if(button.text == "Clear")
         {
             outputText.text = "Enter PID";
         }
-        else if(button.ToString().Substring(0, 2) == "<-")
+        else if(button.text == "<-")
         {
             outputText.text = outputText.text.Remove(outputText.text.Length - 1, 1);
             if (outputText.text == "")
@@ -45,7 +45,7 @@ public class IntroNumpad : MonoBehaviour
         }
         else
         {
-            outputText.text += button.ToString().Substring(0,1);
+            outputText.text += button.text;
         }
     }
 }

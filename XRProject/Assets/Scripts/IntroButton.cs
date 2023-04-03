@@ -9,7 +9,7 @@ public class IntroButton : MonoBehaviour
     public TextMeshPro typedText;
     public TextMeshPro buttonText;
     public TextMeshPro displayText;
-    public Canvas numpad;
+    public GameObject numpad;
     public TextMeshPro outputText;
     public static string PID;
     private int index;
@@ -30,17 +30,22 @@ public class IntroButton : MonoBehaviour
         if(index != 1)
         {
             index = 1;
-            displayText.enabled = false;
+            displayText.enabled =false;
             outputText.enabled = true; 
             typedText.text = "Please enter the participant ID provided to you";
             typedText.enabled = true;
-            numpad.enabled = true;
+            numpad.SetActive(true);
             buttonText.text = "Start";
         }
         else
         {
-            PID = "FP3" + outputText.text;
-            SceneManager.LoadScene("SphericalSceneController");
+            if (outputText.text != "" && outputText.text != "Enter PID")
+            {
+                PID = "FP3" + outputText.text;
+                PlayerPrefs.SetString("PID", PID);
+                SceneManager.LoadScene("SphericalSceneController");
+            }
+
         }
     }
 }
