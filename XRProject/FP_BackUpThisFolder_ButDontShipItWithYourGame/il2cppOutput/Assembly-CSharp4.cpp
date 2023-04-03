@@ -314,6 +314,8 @@ struct JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D;
 struct JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC;
 // Bhaptics.Tact.Unity.Layout
 struct Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F;
+// Bhaptics.Tact.Unity.LayoutObject
+struct LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4;
 // UnityEngine.Material
 struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
 // UnityEngine.Mesh
@@ -404,6 +406,7 @@ IL2CPP_EXTERN_C RuntimeClass* Int32U5BU5D_t19C97395396A72ECAF310612F0760F1650603
 IL2CPP_EXTERN_C RuntimeClass* JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t5247CF671836C50C5349432C558524CCB14F5E35_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7_il2cpp_TypeInfo_var;
@@ -736,6 +739,17 @@ struct HapticFeedbackFile_tA8FA7E232A215E89B17E7B24B665152C52D63AF2  : public Ru
 // Bhaptics.Tact.JSONNode
 struct JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D  : public RuntimeObject
 {
+};
+
+// Bhaptics.Tact.Unity.LayoutObject
+struct LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4  : public RuntimeObject
+{
+	// System.Int32 Bhaptics.Tact.Unity.LayoutObject::<Index>k__BackingField
+	int32_t ___U3CIndexU3Ek__BackingField_0;
+	// System.Single Bhaptics.Tact.Unity.LayoutObject::<X>k__BackingField
+	float ___U3CXU3Ek__BackingField_1;
+	// System.Single Bhaptics.Tact.Unity.LayoutObject::<Y>k__BackingField
+	float ___U3CYU3Ek__BackingField_2;
 };
 
 // Bhaptics.Tact.Unity.ParseUtil
@@ -1967,6 +1981,10 @@ struct JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_ThreadStaticFields
 	StringBuilder_t* ___m_EscapeBuilder_3;
 };
 
+// Bhaptics.Tact.Unity.LayoutObject
+
+// Bhaptics.Tact.Unity.LayoutObject
+
 // Bhaptics.Tact.Unity.ParseUtil
 
 // Bhaptics.Tact.Unity.ParseUtil
@@ -3006,6 +3024,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Converter_2__ctor_m321A02D2EB18FBD95CE3E
 // TOutput[] System.Array::ConvertAll<System.Byte,System.Int32>(TInput[],System.Converter`2<TInput,TOutput>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* Array_ConvertAll_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m604AA5FBDA330F676A256966E40970E613C3A703_gshared (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_array, Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A* ___1_converter, const RuntimeMethod* method) ;
 
+// System.Void Bhaptics.Tact.Unity.LayoutObject::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutObject__ctor_mD41074C142B2FD7BEAD06B58FDB8F6CCEE2A7054 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) ;
+// System.Int32 Bhaptics.Tact.JSONNode::op_Implicit(Bhaptics.Tact.JSONNode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t JSONNode_op_Implicit_m0AE9D7686C2A476A90E423219918B0D0D26B4FAC (JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* ___0_d, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.LayoutObject::set_Index(System.Int32)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutObject_set_Index_m4823B428685425779BCDA95301365BFF9FDF93AF_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+// System.Single Bhaptics.Tact.JSONNode::op_Implicit(Bhaptics.Tact.JSONNode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float JSONNode_op_Implicit_m13111A524086020853C383F698ACDE0BE8B94711 (JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* ___0_d, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.LayoutObject::set_X(System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutObject_set_X_mED3EBFFCF1FF5840EA1949A4BC85416E33BAA4C4_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, float ___0_value, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.LayoutObject::set_Y(System.Single)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutObject_set_Y_mADC9A8BF0AC0DADA023D9ADB0308C5DC41BE0E80_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, float ___0_value, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.JSONObject::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* __this, const RuntimeMethod* method) ;
+// System.Int32 Bhaptics.Tact.Unity.LayoutObject::get_Index()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LayoutObject_get_Index_mAC697E34411D251A3D2D364954962063BD0B4A86_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::op_Implicit(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* JSONNode_op_Implicit_m1963C540AD7F39DA77DD07471422D4EEE6F90510 (int32_t ___0_n, const RuntimeMethod* method) ;
+// System.Single Bhaptics.Tact.Unity.LayoutObject::get_X()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float LayoutObject_get_X_m3B474C29C3506E8B8DFDB46CD52EE46DA90039B7_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::op_Implicit(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* JSONNode_op_Implicit_mDD64E71A06EF02278E9AEAF16C3B5F6A80D088D5 (float ___0_n, const RuntimeMethod* method) ;
+// System.Single Bhaptics.Tact.Unity.LayoutObject::get_Y()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float LayoutObject_get_Y_mD54E06DF5DAA79AC7723D518ADD3DF17B576EDF2_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) ;
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void Bhaptics.Tact.Unity.HapticEffectMode::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticEffectMode__ctor_m9FC29F7783B175F9F282EB18A9E094A7F3A535C4 (HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* __this, const RuntimeMethod* method) ;
 // System.String Bhaptics.Tact.JSONNode::op_Implicit(Bhaptics.Tact.JSONNode)
@@ -3022,8 +3066,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HapticEffectMode_set_DotMode
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PathMode_tA48CEF708F5F4EEC562B34F54FB07DF30A100000* PathMode_ToPathMode_mA5003E9C858C362E05E5B7BF3E6BD1E2DD8701BF (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObject, const RuntimeMethod* method) ;
 // System.Void Bhaptics.Tact.Unity.HapticEffectMode::set_PathMode(Bhaptics.Tact.Unity.PathMode)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HapticEffectMode_set_PathMode_mEDA164CCCFD1CA8030CEB3EB3C937C459848C69F_inline (HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* __this, PathMode_tA48CEF708F5F4EEC562B34F54FB07DF30A100000* ___0_value, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.JSONObject::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* __this, const RuntimeMethod* method) ;
 // Bhaptics.Tact.FeedbackMode Bhaptics.Tact.Unity.HapticEffectMode::get_Mode()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HapticEffectMode_get_Mode_m96E1120C64153E685A6C23F8C2AA53E81FAEE141_inline (HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* __this, const RuntimeMethod* method) ;
 // System.String System.Enum::ToString()
@@ -3038,8 +3080,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR PathMode_tA48CEF708F5F4EEC562B34F54FB07DF30A100000* HapticEffectMode_get_PathMode_mA26F296A45D4BCD348E23F3887296A57B6DC6D74_inline (HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* __this, const RuntimeMethod* method) ;
 // Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.PathMode::ToJsonObject()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* PathMode_ToJsonObject_m6D0AD627972F3DBD9D4EE37BA4DB2C60BBDB8EDC (PathMode_tA48CEF708F5F4EEC562B34F54FB07DF30A100000* __this, const RuntimeMethod* method) ;
-// System.Void System.Object::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void Bhaptics.Tact.Unity.DotMode::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DotMode__ctor_mFF18C7762A0674CE2ACAF12CE8667B89FB7153D6 (DotMode_t2634A7C409754F2F57C67CC419D8F645DAF1AFA0* __this, const RuntimeMethod* method) ;
 // System.Boolean Bhaptics.Tact.JSONNode::op_Implicit(Bhaptics.Tact.JSONNode)
@@ -3115,8 +3155,6 @@ inline DotModeObjectU5BU5D_tDF33BF144FF2408A8ED1C8A2ADFCB04B64A868A2* List_1_ToA
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DotModeObjectCollection_set_PointList_mF3B7515B8E469D3B43EA8EB3F7BE9151906552DD_inline (DotModeObjectCollection_tDA91C0C16B592ECCB09DEBE98EE25BBB9EA08822* __this, DotModeObjectU5BU5D_tDF33BF144FF2408A8ED1C8A2ADFCB04B64A868A2* ___0_value, const RuntimeMethod* method) ;
 // System.Int32 Bhaptics.Tact.Unity.DotModeObjectCollection::get_StartTime()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t DotModeObjectCollection_get_StartTime_mD205DB73A966A72973A03F8C8B5FBC452C69B6EC_inline (DotModeObjectCollection_tDA91C0C16B592ECCB09DEBE98EE25BBB9EA08822* __this, const RuntimeMethod* method) ;
-// Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::op_Implicit(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* JSONNode_op_Implicit_m1963C540AD7F39DA77DD07471422D4EEE6F90510 (int32_t ___0_n, const RuntimeMethod* method) ;
 // System.Int32 Bhaptics.Tact.Unity.DotModeObjectCollection::get_EndTime()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t DotModeObjectCollection_get_EndTime_m2C371A24D54ED982B8C25036908065847717A8CA_inline (DotModeObjectCollection_tDA91C0C16B592ECCB09DEBE98EE25BBB9EA08822* __this, const RuntimeMethod* method) ;
 // Bhaptics.Tact.Unity.DotModeObject[] Bhaptics.Tact.Unity.DotModeObjectCollection::get_PointList()
@@ -3135,8 +3173,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DotModeObject_set_Intensity_
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t DotModeObject_get_Index_m3EBCBF4761F71F6940174C1C6E82B46094EA3A4B_inline (DotModeObject_tBCFB5C1871FE88703ED80C190F98256F42FE541B* __this, const RuntimeMethod* method) ;
 // System.Single Bhaptics.Tact.Unity.DotModeObject::get_Intensity()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float DotModeObject_get_Intensity_m8D9E658D203E731D88E248690568EC80F0D73759_inline (DotModeObject_tBCFB5C1871FE88703ED80C190F98256F42FE541B* __this, const RuntimeMethod* method) ;
-// Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::op_Implicit(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* JSONNode_op_Implicit_mDD64E71A06EF02278E9AEAF16C3B5F6A80D088D5 (float ___0_n, const RuntimeMethod* method) ;
 // System.Void Bhaptics.Tact.Unity.PathMode::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PathMode__ctor_m0F5B56BCEF7B85440A5EB154C172B0E197B78E96 (PathMode_tA48CEF708F5F4EEC562B34F54FB07DF30A100000* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.PathModeObjectCollection>::.ctor()
@@ -3485,6 +3521,179 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Mathf::Clamp(System.Single,System.Single,System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Int32 Bhaptics.Tact.Unity.LayoutObject::get_Index()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LayoutObject_get_Index_mAC697E34411D251A3D2D364954962063BD0B4A86 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int Index { get; set; }
+		int32_t L_0 = __this->___U3CIndexU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.LayoutObject::set_Index(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutObject_set_Index_m4823B428685425779BCDA95301365BFF9FDF93AF (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public int Index { get; set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CIndexU3Ek__BackingField_0 = L_0;
+		return;
+	}
+}
+// System.Single Bhaptics.Tact.Unity.LayoutObject::get_X()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LayoutObject_get_X_m3B474C29C3506E8B8DFDB46CD52EE46DA90039B7 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	{
+		// public float X { get; set; }
+		float L_0 = __this->___U3CXU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.LayoutObject::set_X(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutObject_set_X_mED3EBFFCF1FF5840EA1949A4BC85416E33BAA4C4 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public float X { get; set; }
+		float L_0 = ___0_value;
+		__this->___U3CXU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+// System.Single Bhaptics.Tact.Unity.LayoutObject::get_Y()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LayoutObject_get_Y_mD54E06DF5DAA79AC7723D518ADD3DF17B576EDF2 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	{
+		// public float Y { get; set; }
+		float L_0 = __this->___U3CYU3Ek__BackingField_2;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.LayoutObject::set_Y(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutObject_set_Y_mADC9A8BF0AC0DADA023D9ADB0308C5DC41BE0E80 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public float Y { get; set; }
+		float L_0 = ___0_value;
+		__this->___U3CYU3Ek__BackingField_2 = L_0;
+		return;
+	}
+}
+// Bhaptics.Tact.Unity.LayoutObject Bhaptics.Tact.Unity.LayoutObject::ToLayoutObject(Bhaptics.Tact.JSONObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* LayoutObject_ToLayoutObject_mE5EFACE1A11213D0C866C27533298F610A13CD73 (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObj, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral062DB096C728515E033CF8C48A1C1F0B9A79384B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9384C6EF2DA5C0BD5274A0DACFF291D0ABBFD8B1);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// LayoutObject layoutObject = new LayoutObject();
+		LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* L_0 = (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4*)il2cpp_codegen_object_new(LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		LayoutObject__ctor_mD41074C142B2FD7BEAD06B58FDB8F6CCEE2A7054(L_0, NULL);
+		// layoutObject.Index = jsonObj["index"];
+		LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* L_1 = L_0;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_2 = ___0_jsonObj;
+		NullCheck(L_2);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_3;
+		L_3 = VirtualFuncInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t* >::Invoke(7 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::get_Item(System.String) */, L_2, _stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1);
+		il2cpp_codegen_runtime_class_init_inline(JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		int32_t L_4;
+		L_4 = JSONNode_op_Implicit_m0AE9D7686C2A476A90E423219918B0D0D26B4FAC(L_3, NULL);
+		NullCheck(L_1);
+		LayoutObject_set_Index_m4823B428685425779BCDA95301365BFF9FDF93AF_inline(L_1, L_4, NULL);
+		// layoutObject.X = jsonObj["x"];
+		LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* L_5 = L_1;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_6 = ___0_jsonObj;
+		NullCheck(L_6);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_7;
+		L_7 = VirtualFuncInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t* >::Invoke(7 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::get_Item(System.String) */, L_6, _stringLiteral062DB096C728515E033CF8C48A1C1F0B9A79384B);
+		float L_8;
+		L_8 = JSONNode_op_Implicit_m13111A524086020853C383F698ACDE0BE8B94711(L_7, NULL);
+		NullCheck(L_5);
+		LayoutObject_set_X_mED3EBFFCF1FF5840EA1949A4BC85416E33BAA4C4_inline(L_5, L_8, NULL);
+		// layoutObject.Y = jsonObj["y"];
+		LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* L_9 = L_5;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_10 = ___0_jsonObj;
+		NullCheck(L_10);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_11;
+		L_11 = VirtualFuncInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t* >::Invoke(7 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::get_Item(System.String) */, L_10, _stringLiteral9384C6EF2DA5C0BD5274A0DACFF291D0ABBFD8B1);
+		float L_12;
+		L_12 = JSONNode_op_Implicit_m13111A524086020853C383F698ACDE0BE8B94711(L_11, NULL);
+		NullCheck(L_9);
+		LayoutObject_set_Y_mADC9A8BF0AC0DADA023D9ADB0308C5DC41BE0E80_inline(L_9, L_12, NULL);
+		// return layoutObject;
+		return L_9;
+	}
+}
+// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.LayoutObject::ToJsonObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* LayoutObject_ToJsonObject_mDF2FFCB5A75E71B954FC7BB6BD5F10AC436CF1D8 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral062DB096C728515E033CF8C48A1C1F0B9A79384B);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9384C6EF2DA5C0BD5274A0DACFF291D0ABBFD8B1);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// var jsonObject = new JSONObject();
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_0 = (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC*)il2cpp_codegen_object_new(JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B(L_0, NULL);
+		// jsonObject["index"] = Index;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_1 = L_0;
+		int32_t L_2;
+		L_2 = LayoutObject_get_Index_mAC697E34411D251A3D2D364954962063BD0B4A86_inline(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_3;
+		L_3 = JSONNode_op_Implicit_m1963C540AD7F39DA77DD07471422D4EEE6F90510(L_2, NULL);
+		NullCheck(L_1);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_1, _stringLiteral2B6D6F48C27C60C3B55391AB377D9DC8F5639AA1, L_3);
+		// jsonObject["x"] = X;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_4 = L_1;
+		float L_5;
+		L_5 = LayoutObject_get_X_m3B474C29C3506E8B8DFDB46CD52EE46DA90039B7_inline(__this, NULL);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_6;
+		L_6 = JSONNode_op_Implicit_mDD64E71A06EF02278E9AEAF16C3B5F6A80D088D5(L_5, NULL);
+		NullCheck(L_4);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_4, _stringLiteral062DB096C728515E033CF8C48A1C1F0B9A79384B, L_6);
+		// jsonObject["y"] = Y;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_7 = L_4;
+		float L_8;
+		L_8 = LayoutObject_get_Y_mD54E06DF5DAA79AC7723D518ADD3DF17B576EDF2_inline(__this, NULL);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_9;
+		L_9 = JSONNode_op_Implicit_mDD64E71A06EF02278E9AEAF16C3B5F6A80D088D5(L_8, NULL);
+		NullCheck(L_7);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_7, _stringLiteral9384C6EF2DA5C0BD5274A0DACFF291D0ABBFD8B1, L_9);
+		// return jsonObject;
+		return L_7;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.LayoutObject::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutObject__ctor_mD41074C142B2FD7BEAD06B58FDB8F6CCEE2A7054 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -8858,6 +9067,57 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VisualFeedback__ctor_m0FA7EADEAC0E9E0617
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutObject_set_Index_m4823B428685425779BCDA95301365BFF9FDF93AF_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, int32_t ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public int Index { get; set; }
+		int32_t L_0 = ___0_value;
+		__this->___U3CIndexU3Ek__BackingField_0 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutObject_set_X_mED3EBFFCF1FF5840EA1949A4BC85416E33BAA4C4_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public float X { get; set; }
+		float L_0 = ___0_value;
+		__this->___U3CXU3Ek__BackingField_1 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutObject_set_Y_mADC9A8BF0AC0DADA023D9ADB0308C5DC41BE0E80_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, float ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public float Y { get; set; }
+		float L_0 = ___0_value;
+		__this->___U3CYU3Ek__BackingField_2 = L_0;
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LayoutObject_get_Index_mAC697E34411D251A3D2D364954962063BD0B4A86_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	{
+		// public int Index { get; set; }
+		int32_t L_0 = __this->___U3CIndexU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float LayoutObject_get_X_m3B474C29C3506E8B8DFDB46CD52EE46DA90039B7_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	{
+		// public float X { get; set; }
+		float L_0 = __this->___U3CXU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float LayoutObject_get_Y_mD54E06DF5DAA79AC7723D518ADD3DF17B576EDF2_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) 
+{
+	{
+		// public float Y { get; set; }
+		float L_0 = __this->___U3CYU3Ek__BackingField_2;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HapticEffectMode_set_Mode_m984C3CFCCFCD07CB6106212A5F13FA070459C168_inline (HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
