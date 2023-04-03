@@ -32,7 +32,6 @@ public class IntroButton : MonoBehaviour
             index = 1;
             displayText.enabled = false;
             outputText.enabled = true; 
-            typedText.text = "Please enter the participant ID provided to you";
             typedText.enabled = true;
             numpad.enabled = true;
             buttonText.text = "Start";

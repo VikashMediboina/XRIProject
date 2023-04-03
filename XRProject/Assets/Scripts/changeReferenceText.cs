@@ -71,9 +71,7 @@ private static int Total_Timer;
     // Start is called before the first frame update
     void Start()
     {
-        
-        
-        PID = "FPG31";
+        PID = IntroButton.PID;
         Scene_No = "SPH01";
         Err_Rate = 0;
         user_Rating = 9;
@@ -112,10 +110,9 @@ private static int Total_Timer;
     public void TaskOnClick()
     {
         Avg_timer.Stop();
-        sendQualtricsData();
-         Total_Timer = 0;
-         this.timerHandler();
-         index+=1;
+        Total_Timer = 0;
+        this.timerHandler();
+        index+=1;
         textToEnter.text=textArray[index];
         typedText.text="Enter Text...";
     }
