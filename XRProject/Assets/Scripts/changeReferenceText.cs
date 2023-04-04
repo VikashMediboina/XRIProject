@@ -154,8 +154,8 @@ public TextMeshPro buttons;
        
         survey.AddField("PID", PID);
         survey.AddField("Scene_No", Scene_No);
-        survey.AddField("Avg_Type_Time",calculateTime().ToString());
-        survey.AddField("Avg_Error_Rate", calculateError().ToString());
+        survey.AddField("Avg_Type_Time",CalculateWpm(typedText.text,Total_Timer).ToString());
+        survey.AddField("Avg_Error_Rate", CalculateErrorRate(textArray[index],typedText.text).ToString());
         survey.AddField("User_Access_Rating", user_Rating);
         Debug.Log(url);
         UnityWebRequest form = UnityWebRequest.Post(url, survey);
@@ -164,4 +164,47 @@ public TextMeshPro buttons;
         //  Err_Rate=0;
         yield return form.SendWebRequest();
     }
+   
+   public static float CalculateErrorRate(string presentedText, string transcribedText)
+   {
+       int msd = CalculateMsd(presentedText, transcribedText);
+       int maxLen = Mathf.Max(presentedText.Length, transcribedText.Length);
+       float errorRate = 100f * (float)msd / (float)maxLen;
+       return errorRate;
+   }
+
+   private static int CalculateMsd(string str1, string str2)
+   {
+       int[,] d = new int[str1.Length + 1, str2.Length + 1];
+       for (int i = 0; i <= str1.Length; i++)
+       {
+           d[i, 0] = i;
+       }
+       for (int j = 0; j <= str2.Length; j++)
+       {
+           d[0, j] = j;
+       }
+       for (int j = 1; j <= str2.Length; j++)
+       {
+           for (int i = 1; i <= str1.Length; i++)
+           {
+               if (str1[i - 1] == str2[j - 1])
+               {
+                   d[i, j] = d[i - 1, j - 1];
+               }
+               else
+               {
+                   d[i, j] = Mathf.Min(Mathf.Min(d[i - 1, j], d[i, j - 1]), d[i - 1, j - 1]) + 1;
+               }
+           }
+       }
+       return d[str1.Length, str2.Length];
+   }
+    
+   public static float CalculateWpm(string text, float time)
+   {
+       int numChars = text.Length;
+       float wpm = (numChars - 1) / time * 60f * 0.2f;
+       return wpm;
+   }
 }
