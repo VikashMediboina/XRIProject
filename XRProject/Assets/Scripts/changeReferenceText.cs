@@ -111,11 +111,8 @@ public TextMeshPro buttons;
     {
         if (typedText.text!="" && typedText.text != "Enter Text...")
         {
-            OVRInput.SetControllerLocalizedVibration(OVRInput.HapticsLocation.Index, 0f, 0.5f, OVRInput.Controller.Active);
-            if (textToEnter.text != typedText.text)
-            {
-                Err_Rate += 1;
-            }
+            OVRInput.SetControllerLocalizedVibration(OVRInput.HapticsLocation.Index, 0f, 0.1f, OVRInput.Controller.Active);
+        
             if (index% 6 == 4)
             {
                 buttons.text = "Submit";
@@ -128,7 +125,9 @@ public TextMeshPro buttons;
                 Avg_timer.Stop();
                 StartCoroutine(sendQualtricsData());
                 index += 1;
-                SceneManager.LoadScene("QwertySceneController");
+                Debug.Log(index);
+                GetComponent<SceneSelector>().LoadNextScene();
+                //SceneManager.LoadScene("SelectSeen");
             }
             else
             {

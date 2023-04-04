@@ -610,6 +610,19 @@ MonoBehaviour:
   playOnAwake: 1
   loop: 1
   loopDelaySeconds: 0
+--- !u!114 &65284407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65284395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6179f36bbe59548abbc884cbed0131f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endScene: SampleScene
 --- !u!4 &78337891 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400046, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
