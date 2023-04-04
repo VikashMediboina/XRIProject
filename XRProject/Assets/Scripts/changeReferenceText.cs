@@ -110,8 +110,8 @@ public TextMeshPro buttons;
             if (index% 6 == 4)
             {
                 buttons.text = "Submit";
-                Wpm[index] = CalculateWpm(typedText.text, Total_Timer);
-                ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
+                //Wpm[index] = CalculateWpm(typedText.text, Total_Timer);
+                //ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
                 index += 1;
                 textToEnter.text = textArray[index];
                 typedText.text = "Enter Text...";
@@ -121,14 +121,13 @@ public TextMeshPro buttons;
                 Avg_timer.Stop();
                 StartCoroutine(sendQualtricsData());
                 index += 1;
-                Debug.Log(index);
                 GetComponent<SceneSelector>().LoadNextScene();
                 //SceneManager.LoadScene("SelectSeen");
             }
             else
             {
-                Wpm[index] = CalculateWpm(typedText.text, Total_Timer);
-                ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
+                //Wpm[index] = CalculateWpm(typedText.text, Total_Timer);
+                //ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
                 index += 1;
                 textToEnter.text = textArray[index];
                 typedText.text = "Enter Text...";

@@ -496,7 +496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typedText: {fileID: 1064246965}
   textToEnter: {fileID: 3358267794594308147}
-  Scene_No: SPH01
+  Scene_No: SPH02
   buttons: {fileID: 65284396}
 --- !u!82 &65284402
 AudioSource:
@@ -622,7 +622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6179f36bbe59548abbc884cbed0131f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endScene: SampleScene
+  endScene: EndScene
 --- !u!4 &78337891 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400046, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}

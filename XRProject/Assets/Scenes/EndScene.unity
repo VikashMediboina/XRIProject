@@ -505,7 +505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8595834173231793253, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 979361798645836330, guid: b142a82e757184091b598576d499d393, type: 3}
@@ -1674,9 +1674,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Welcome to the Group 3 XR Expirement App. This app will walk you through
-    our latest keyboard creation in VR. Please click or poke the next sphere in front
-    of you '
+  m_text: Thank You Participating
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b8f5aeb9c6de7614db2631011b869bc3, type: 2}
   m_sharedMaterial: {fileID: -5839354330806206608, guid: b8f5aeb9c6de7614db2631011b869bc3, type: 2}

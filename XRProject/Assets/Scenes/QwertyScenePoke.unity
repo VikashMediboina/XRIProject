@@ -247,7 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typedText: {fileID: 8231328469269034601}
   textToEnter: {fileID: 3358267794594308147}
-  Scene_No: QW01
+  Scene_No: QW02
   buttons: {fileID: 20470363}
 --- !u!114 &20470366
 MonoBehaviour:
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6179f36bbe59548abbc884cbed0131f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endScene: SampleScene
+  endScene: EndScene
 --- !u!1001 &40919614
 PrefabInstance:
   m_ObjectHideFlags: 0

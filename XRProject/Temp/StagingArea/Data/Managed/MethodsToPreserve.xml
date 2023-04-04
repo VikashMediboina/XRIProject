@@ -4,6 +4,7 @@
 			<method name="Play"/>
 			<method name="Play"/>
 			<method name="Play"/>
+			<method name="Play"/>
 		</type>
 		<type fullname="changeReferenceText">
 			<method name="TaskOnClick"/>
@@ -13,8 +14,21 @@
 		</type>
 		<type fullname="IntroButton">
 			<method name="TaskOnClick"/>
+			<method name="TaskOnClick"/>
 		</type>
 		<type fullname="IntroNumpad">
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
 			<method name="taskOnClick"/>
 			<method name="taskOnClick"/>
 			<method name="taskOnClick"/>
@@ -88,12 +102,6 @@
 			<method name="NewTextEntry"/>
 			<method name="NewTextEntry"/>
 			<method name="NewTextEntry"/>
-		</type>
-		<type fullname="SceneSelectors">
-			<method name="SelectScene"/>
-			<method name="SelectScene"/>
-			<method name="SelectScene"/>
-			<method name="SelectScene"/>
 		</type>
 	</assembly>
 	<assembly fullname="Oculus.Interaction.OVR.Samples" ignoreIfMissing="1">
@@ -246,10 +254,28 @@
 			<method name="PlayAudio"/>
 			<method name="PlayAudio"/>
 			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
 		</type>
 	</assembly>
 	<assembly fullname="UnityEngine.AudioModule" ignoreIfMissing="1">
 		<type fullname="UnityEngine.AudioSource">
+			<method name="Play"/>
+			<method name="Play"/>
 			<method name="Play"/>
 			<method name="Play"/>
 			<method name="Play"/>

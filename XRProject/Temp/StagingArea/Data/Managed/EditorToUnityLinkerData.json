@@ -133,10 +133,10 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -147,10 +147,10 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -182,10 +182,10 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -203,10 +203,10 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -224,10 +224,10 @@
             "fullManagedTypeName": "",
             "moduleName": "AI",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -557,13 +557,6 @@
         {
             "managedAssemblyName": "Oculus.VR.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "OVRCustomSkeleton",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Oculus.VR.dll",
-            "nativeClass": "",
             "fullManagedTypeName": "OVRHand",
             "moduleName": "",
             "usedInScenes": []
@@ -623,10 +616,10 @@
             "fullManagedTypeName": "",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -635,13 +628,6 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "SceneSelector",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "SceneSelectors",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -714,10 +700,10 @@
             "fullManagedTypeName": "UnityEditor.Animations.AnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -749,10 +735,10 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -805,10 +791,10 @@
             "fullManagedTypeName": "UnityEngine.AnimationClip",
             "moduleName": "Animation",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -819,10 +805,10 @@
             "fullManagedTypeName": "UnityEngine.Animator",
             "moduleName": "Animation",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -833,10 +819,10 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -847,10 +833,10 @@
             "fullManagedTypeName": "UnityEngine.AudioClip",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -861,10 +847,10 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -875,10 +861,10 @@
             "fullManagedTypeName": "UnityEngine.AudioSource",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -889,10 +875,10 @@
             "fullManagedTypeName": "UnityEngine.Avatar",
             "moduleName": "Animation",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -903,10 +889,10 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -917,10 +903,10 @@
             "fullManagedTypeName": "UnityEngine.BoxCollider",
             "moduleName": "Physics",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -931,10 +917,10 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -945,6 +931,7 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity"
@@ -956,10 +943,10 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -970,10 +957,10 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -984,10 +971,10 @@
             "fullManagedTypeName": "UnityEngine.Cubemap",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1021,10 +1008,10 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1035,10 +1022,10 @@
             "fullManagedTypeName": "UnityEngine.Light",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1049,10 +1036,10 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1063,10 +1050,10 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1077,10 +1064,10 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1091,10 +1078,10 @@
             "fullManagedTypeName": "UnityEngine.MeshCollider",
             "moduleName": "Physics",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1105,10 +1092,10 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1119,10 +1106,10 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1133,10 +1120,10 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1147,10 +1134,10 @@
             "fullManagedTypeName": "UnityEngine.Motion",
             "moduleName": "Animation",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1161,10 +1148,10 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1182,10 +1169,10 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1196,10 +1183,10 @@
             "fullManagedTypeName": "UnityEngine.ReflectionProbe",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1210,10 +1197,10 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1231,10 +1218,10 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1245,10 +1232,10 @@
             "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1259,10 +1246,10 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1273,10 +1260,10 @@
             "fullManagedTypeName": "UnityEngine.SkinnedMeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1287,6 +1274,7 @@
             "fullManagedTypeName": "UnityEngine.SphereCollider",
             "moduleName": "Physics",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
@@ -1307,10 +1295,10 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1321,10 +1309,10 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1335,10 +1323,10 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1349,10 +1337,10 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/EndScene.unity",
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
-                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
