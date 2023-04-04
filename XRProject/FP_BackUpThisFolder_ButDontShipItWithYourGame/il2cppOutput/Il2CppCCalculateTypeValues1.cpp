@@ -27914,8 +27914,6 @@ struct changeReferenceText_tE76D98B90EC3CF001ADC9788DCF22B61CE9F770D  : public M
 	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___typedText_4;
 	// TMPro.TextMeshPro changeReferenceText::textToEnter
 	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___textToEnter_5;
-	// System.Int32 changeReferenceText::index
-	int32_t ___index_6;
 	// System.Collections.Generic.List`1<System.String> changeReferenceText::textArray
 	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___textArray_7;
 	// System.String changeReferenceText::PID
@@ -27928,6 +27926,8 @@ struct changeReferenceText_tE76D98B90EC3CF001ADC9788DCF22B61CE9F770D  : public M
 	int32_t ___user_Rating_11;
 	// System.String changeReferenceText::url
 	String_t* ___url_12;
+	// System.Timers.Timer changeReferenceText::Avg_timer
+	Timer_t10D85D58F4AC0CF80C625D0124B12098CE540A8B* ___Avg_timer_13;
 	// TMPro.TextMeshPro changeReferenceText::buttons
 	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___buttons_15;
 };
@@ -40333,8 +40333,8 @@ struct WaterSpray_t4E8AF030E35D15C0F005E2C881180A2E4FB0212B_StaticFields
 // changeReferenceText
 struct changeReferenceText_tE76D98B90EC3CF001ADC9788DCF22B61CE9F770D_StaticFields
 {
-	// System.Timers.Timer changeReferenceText::Avg_timer
-	Timer_t10D85D58F4AC0CF80C625D0124B12098CE540A8B* ___Avg_timer_13;
+	// System.Int32 changeReferenceText::index
+	int32_t ___index_6;
 	// System.Int32 changeReferenceText::Total_Timer
 	int32_t ___Total_Timer_14;
 };

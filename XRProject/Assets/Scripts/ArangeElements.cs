@@ -13,15 +13,15 @@ public class ArangeElements : MonoBehaviour
         if(textElement){
             Debug.Log(transform.localScale.x);
             Debug.Log(GetComponent<SphereCollider>().radius);
-        CreateEnemiesAroundPoint(28,transform.position,GetComponent<SphereCollider>().radius);
+        CreateEnemiesAroundPoint(27,transform.position,GetComponent<SphereCollider>().radius);
         }
     }
 
  
  public void CreateEnemiesAroundPoint (int num, Vector3 point, float radius) {
-    List<string> alphabets =new List<string>(new string[] {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","Space","Clear"});
-            
-    List<Vector3> upts = new List<Vector3>();
+    List<string> alphabets =new List<string>(new string[] {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","Clear"});//Space
+
+        List<Vector3> upts = new List<Vector3>();
             float inc = Mathf.PI * (3 - Mathf.Sqrt(5));
             float off = 2.0f / num;
             float x = 0;

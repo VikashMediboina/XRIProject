@@ -931,7 +931,6 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
-                "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity"
             ]
         },
@@ -995,7 +994,6 @@
             "moduleName": "TextRendering",
             "usedInScenes": [
                 "Assets/Scenes/IntroScene.unity",
-                "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity"
             ]
         },
@@ -1254,7 +1252,6 @@
             "moduleName": "Physics",
             "usedInScenes": [
                 "Assets/Scenes/IntroScene.unity",
-                "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
@@ -1267,7 +1264,6 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/IntroScene.unity",
-                "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity"
             ]
         },
