@@ -33,17 +33,13 @@ public void RotateLeft(){
 transform.Rotate (Vector3.up , rotateSpeed * Time.deltaTime);
 }
 
-private void translateVertical(){
-    if (OVRInput.Get(OVRInput.Axis1D.PrimaryHandTrigger, OVRInput.Controller.LTouch) > 0)
-    {
-        //transform.Rotate (Vector3.up , rotateSpeed * Time.deltaTime);   
-    }
-}
+
 
     // Update is called once per frame
     void Update()
     {
         RotateSphere ();
+       
         
     }
 }

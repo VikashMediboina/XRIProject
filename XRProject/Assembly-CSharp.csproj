@@ -267,6 +267,7 @@
     <Compile Include="Assets/Scripts/QwertyKeyoboard.cs" />
     <Compile Include="Assets/SceneSelector.cs" />
     <Compile Include="Assets/SceneSelectors.cs" />
+    <Compile Include="Assets/Translate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Shaders/XingLightShader.shader" />

@@ -681,6 +681,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Translate",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "Unity.XR.Oculus.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Unity.XR.Oculus.OculusLoader",

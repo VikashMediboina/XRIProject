@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.1188571, g: 0.18339978, b: 0.3297099, a: 1}
+  m_IndirectSpecularColor: {r: 0.11865245, g: 0.18313052, b: 0.32949406, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6855,6 +6855,38 @@ MonoBehaviour:
   _headPoseRelativeOffsetRotation: {x: 0, y: 0, z: 0}
   _headPoseRelativeOffsetTranslation: {x: 0, y: 0, z: 0}
   profilerTcpPort: 32419
+  expandMixedRealityCapturePropertySheet: 0
+  enableMixedReality: 0
+  compositionMethod: 0
+  extraHiddenLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  extraVisibleLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  dynamicCullingMask: 1
+  externalCompositionBackdropColorRift: {r: 0, g: 1, b: 0, a: 1}
+  externalCompositionBackdropColorQuest: {r: 0, g: 0, b: 0, a: 0}
+  capturingCameraDevice: 0
+  flipCameraFrameHorizontally: 0
+  flipCameraFrameVertically: 0
+  handPoseStateLatency: 0
+  sandwichCompositionRenderLatency: 0
+  sandwichCompositionBufferedFrames: 8
+  chromaKeyColor: {r: 0, g: 1, b: 0, a: 1}
+  chromaKeySimilarity: 0.6
+  chromaKeySmoothRange: 0.03
+  chromaKeySpillRange: 0.06
+  useDynamicLighting: 0
+  depthQuality: 1
+  dynamicLightingSmoothFactor: 8
+  dynamicLightingDepthVariationClampingValue: 0.001
+  virtualGreenScreenType: 0
+  virtualGreenScreenTopY: 10
+  virtualGreenScreenBottomY: -10
+  virtualGreenScreenApplyDepthCulling: 0
+  virtualGreenScreenDepthTolerance: 0.2
+  mrcActivationMode: 0
   isInsightPassthroughEnabled: 0
   requestBodyTrackingPermissionOnStartup: 0
   requestFaceTrackingPermissionOnStartup: 0
@@ -10311,12 +10343,58 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 883418420056345998, guid: 96a709b07e0a74ef98d9bfdbe5f19076, type: 3}
+      propertyPath: _whenRelease.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 4600893390998332566}
+    - target: {fileID: 883418420056345998, guid: 96a709b07e0a74ef98d9bfdbe5f19076, type: 3}
+      propertyPath: _whenRelease.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: taskOnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 883418420056345998, guid: 96a709b07e0a74ef98d9bfdbe5f19076, type: 3}
+      propertyPath: _whenRelease.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: IntroNumpad, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 883418420056345998, guid: 96a709b07e0a74ef98d9bfdbe5f19076, type: 3}
+      propertyPath: _whenRelease.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4600893390736903792, guid: 96a709b07e0a74ef98d9bfdbe5f19076, type: 3}
       propertyPath: outputText
       value: 
       objectReference: {fileID: 1342702091}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96a709b07e0a74ef98d9bfdbe5f19076, type: 3}
+--- !u!114 &4600893390998332564 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7628833288332721027, guid: 96a709b07e0a74ef98d9bfdbe5f19076, type: 3}
+  m_PrefabInstance: {fileID: 4600893390998332563}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &4600893390998332565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 448870976619272966, guid: 96a709b07e0a74ef98d9bfdbe5f19076, type: 3}
+  m_PrefabInstance: {fileID: 4600893390998332563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4600893390998332566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4600893390998332565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5db35223680a9904cb5bbeb2cb7e43a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 4600893390998332564}
+  outputText: {fileID: 1342702091}
 --- !u!114 &4625356659471554950
 MonoBehaviour:
   m_ObjectHideFlags: 0
