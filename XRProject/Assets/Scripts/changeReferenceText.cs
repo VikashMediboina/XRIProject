@@ -58,12 +58,14 @@ private List<string> textArray =new List<string>(new string[] { "Just playing wi
 "I vote for the latter",
 "Both of us are still here",
 "Just wanted to touch base",
-"It will probably be tomorrow"});    
+"It will probably be tomorrow"});
 
+private double[] Wpm;
+private double[] ErrorRate;
 
 private string PID;
 public string Scene_No;
-private double Err_Rate;
+//private double Err_Rate;
 private int user_Rating;
 private string url="https://neu.co1.qualtrics.com/jfe/form/SV_3fT8qgIOPUgibki";
 private Timer Avg_timer;
@@ -73,7 +75,7 @@ public TextMeshPro buttons;
     void Start()
     {
         PID = PlayerPrefs.GetString("PID");
-        Err_Rate = 0;
+        //Err_Rate = 0;
         user_Rating = 9;
         url = "https://neu.co1.qualtrics.com/jfe/form/SV_3fT8qgIOPUgibki";
         textToEnter.text=textArray[index];
@@ -97,15 +99,7 @@ public TextMeshPro buttons;
         theTimer.Interval += 1000;
         theTimer.Enabled = true;
     }
-
-
     
-    private double calculateTime()
-    {
-        //Avg Time = Total Time / Total Sentences;
-        return Total_Timer/6 ;/// 6
-    }
-
 
     public void TaskOnClick()
     {
@@ -116,6 +110,8 @@ public TextMeshPro buttons;
             if (index% 6 == 4)
             {
                 buttons.text = "Submit";
+                Wpm[index] = CalculateWpm(typedText.text, Total_Timer);
+                ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
                 index += 1;
                 textToEnter.text = textArray[index];
                 typedText.text = "Enter Text...";
@@ -131,6 +127,8 @@ public TextMeshPro buttons;
             }
             else
             {
+                Wpm[index] = CalculateWpm(typedText.text, Total_Timer);
+                ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
                 index += 1;
                 textToEnter.text = textArray[index];
                 typedText.text = "Enter Text...";
@@ -140,21 +138,15 @@ public TextMeshPro buttons;
         }
 
     }
-
-    private double calculateError()
-    {
-        //Error Rate = Total Error / Total Time;
-        return Err_Rate*100/6;
-    }
-
+    
    public IEnumerator sendQualtricsData()
     {
         WWWForm survey = new WWWForm();
        
         survey.AddField("PID", PID);
         survey.AddField("Scene_No", Scene_No);
-        survey.AddField("Avg_Type_Time",CalculateWpm(typedText.text,Total_Timer).ToString());
-        survey.AddField("Avg_Error_Rate", CalculateErrorRate(textArray[index],typedText.text).ToString());
+        survey.AddField("Avg_Type_Time",CalculateAverage(Wpm).ToString());
+        survey.AddField("Avg_Error_Rate", CalculateAverage(ErrorRate).ToString());
         survey.AddField("User_Access_Rating", user_Rating);
         Debug.Log(url);
         UnityWebRequest form = UnityWebRequest.Post(url, survey);
@@ -164,7 +156,7 @@ public TextMeshPro buttons;
         yield return form.SendWebRequest();
     }
    
-   public static float CalculateErrorRate(string presentedText, string transcribedText)
+   private static float CalculateErrorRate(string presentedText, string transcribedText)
    {
        int msd = CalculateMsd(presentedText, transcribedText);
        int maxLen = Mathf.Max(presentedText.Length, transcribedText.Length);
@@ -200,10 +192,23 @@ public TextMeshPro buttons;
        return d[str1.Length, str2.Length];
    }
     
-   public static float CalculateWpm(string text, float time)
+   private static float CalculateWpm(string text, float time)
    {
        int numChars = text.Length;
        float wpm = (numChars - 1) / time * 60f * 0.2f;
        return wpm;
+   }
+   private static double CalculateAverage(double[] values)
+   {
+       int numValues = values.Length;
+       double sum = 0;
+
+       for (int i = 0; i < numValues; i++)
+       {
+           sum += values[i];
+       }
+
+       double average = sum / numValues;
+       return average;
    }
 }

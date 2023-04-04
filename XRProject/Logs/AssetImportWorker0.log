@@ -257,3 +257,126 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 7023.001937 seconds.
+  path: Assets/Scripts/changeReferenceText.cs
+  artifactKey: Guid(807c38153604f4b2e951fe6bb493e420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/changeReferenceText.cs using Guid(807c38153604f4b2e951fe6bb493e420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7247156a49afaaeccd8b2146855900c9') in 0.218399 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002936 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16c09f000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/aneesh/VR development/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/aneesh/VR development/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.22 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  0.838 seconds
+Domain Reload Profiling:
+	ReloadAssembly (839ms)
+		BeginReloadAssembly (197ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (76ms)
+		EndReloadAssembly (584ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (215ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (256ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (43ms)
+				ProcessInitializeOnLoadAttributes (186ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on WitService
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 2.78 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 4965 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (133.3 KB). Loaded Objects now: 5505.
+Memory consumption went from 173.5 MB to 173.4 MB.
+Total: 2.833208 ms (FindLiveObjects: 0.191667 ms CreateObjectMapping: 0.062541 ms MarkObjects: 2.491708 ms  DeleteObjects: 0.086625 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 9.344976 seconds.
+  path: Assets/Scripts/ChangeText.cs
+  artifactKey: Guid(d8ed9c967b44f4641b01ad38c189b024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/ChangeText.cs using Guid(d8ed9c967b44f4641b01ad38c189b024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e5762e80a00ad0bb032ff3b3ff0f7df') in 0.008646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 265.521306 seconds.
+  path: Assets/Scenes/SphericalScenePoke.unity
+  artifactKey: Guid(bba46e4b3db2b5f47b3b00cf57b96606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SphericalScenePoke.unity using Guid(bba46e4b3db2b5f47b3b00cf57b96606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1300e2601a595d0112d45a8a933450a9') in 0.002433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.169358 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d5cb52f6731ab6f8574842f938f0d94') in 0.001242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.713664 seconds.
+  path: Assets/Scenes/QwertyScenePoke.unity
+  artifactKey: Guid(fbe957de5d61a6d4fa40315f7a39ca9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/QwertyScenePoke.unity using Guid(fbe957de5d61a6d4fa40315f7a39ca9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f596f8509edda09473fb1dbda529717') in 0.001807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.638283 seconds.
+  path: Assets/Scenes/SphericalSceneController.unity
+  artifactKey: Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SphericalSceneController.unity using Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f70605da54e4dc1827ef08ad2c539c') in 0.001261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.249940 seconds.
+  path: Assets/Scenes/IntroScene.unity
+  artifactKey: Guid(022bc269538676a41ac4f35739b05a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/IntroScene.unity using Guid(022bc269538676a41ac4f35739b05a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec77b1c35fc1a5f854433df67f4e09cf') in 0.007573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.207583 seconds.
+  path: Assets/Scenes/QwertySceneController.unity
+  artifactKey: Guid(e155669f1323fd341a1e607eeffb1f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/QwertySceneController.unity using Guid(e155669f1323fd341a1e607eeffb1f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e54d93791fd909c6997d400591bf1657') in 0.003946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.846895 seconds.
+  path: Assets/Scenes/IntroScene 1.unity
+  artifactKey: Guid(d3afdd78158eb421b8fb05db919be4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/IntroScene 1.unity using Guid(d3afdd78158eb421b8fb05db919be4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b9d23c25d43b0dcef3984b8f83cee3') in 0.001441 seconds 
