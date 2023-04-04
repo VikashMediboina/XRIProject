@@ -42,7 +42,8 @@ public class IntroButton : MonoBehaviour
             {
                 PID = "FP3" + outputText.text;
                 PlayerPrefs.SetString("PID", PID);
-                SceneManager.LoadScene("SphericalSceneController");
+                GetComponent<SceneSelector>().LoadNextScene();
+                //SceneManager.LoadScene("SelectSeen");
             }
 
         }

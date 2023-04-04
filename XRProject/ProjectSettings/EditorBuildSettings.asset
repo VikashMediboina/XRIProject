@@ -20,11 +20,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QwertySceneController.unity
     guid: e155669f1323fd341a1e607eeffb1f50
-  - enabled: 1
-    path: Assets/Scenes/QwertyScenePoke.unity
+  - enabled: 0
+    path: Assets/Scenes/QwertyScenePoke1.unity
     guid: fbe957de5d61a6d4fa40315f7a39ca9d
-  - enabled: 1
-    path: Assets/Scenes/SphericalScenePoke.unity
+  - enabled: 0
+    path: Assets/Scenes/SphericalScenePoke1.unity
     guid: bba46e4b3db2b5f47b3b00cf57b96606
   - enabled: 0
     path: Assets/Bhaptics/SDK/Examples/Scenes/Android/1_Android_Widget.unity
@@ -32,6 +32,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/BhapticsIntegration/QuestIntegration/Scenes/1. Collision Example.unity
     guid: e280f86a25a794940a9bc956059fac7f
+  - enabled: 1
+    path: Assets/Scenes/SphericalScenePoke.unity
+    guid: fa9388e86dc5e40d49b430f34303a654
+  - enabled: 1
+    path: Assets/Scenes/QwertyScenePoke.unity
+    guid: e487fd038a7c0411499a6c4d391f89e9
+  - enabled: 1
+    path: Assets/Scenes/SelectSeen.unity
+    guid: 2965d8b722035440a8f8482b5d50b26c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b388f64be808a4148959663512302929, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 22a4ba6d095754c00b577db9fd2f5405, type: 2}

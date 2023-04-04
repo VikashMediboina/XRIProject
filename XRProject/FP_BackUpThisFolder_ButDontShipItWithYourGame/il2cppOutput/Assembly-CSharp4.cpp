@@ -154,10 +154,18 @@ struct InterfaceFuncInvoker1
 
 // System.Converter`2<System.Byte,System.Int32>
 struct Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A;
+// System.Collections.Generic.Dictionary`2<System.Object,System.Object>
+struct Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA;
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+struct Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB;
 // System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.HapticEffectMode>
 struct Dictionary_2_tBF59EC8B3FBB1460E3F4C6242BA3643A21ABBAD8;
 // System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.JSONNode>
 struct Dictionary_2_t0A6C52FDA88C212B6330382F49C67477ACE2E50A;
+// System.Collections.Generic.IEqualityComparer`1<System.String>
+struct IEqualityComparer_1_tAE94C8F24AD5B94D4EE85CA9FC59E3409D41CAF7;
+// System.Collections.Generic.Dictionary`2/KeyCollection<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+struct KeyCollection_t3DDC6358C4BEF99324F23BFACCC48F54B79886F8;
 // System.Collections.Generic.List`1<Bhaptics.Tact.Unity.DotModeObject>
 struct List_1_t9789ED2627589BAFF792A076BE708FCCCC7BA834;
 // System.Collections.Generic.List`1<Bhaptics.Tact.Unity.DotModeObjectCollection>
@@ -168,6 +176,8 @@ struct List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7;
 struct List_1_tE6BB71ABF15905EFA2BE92C38A2716547AEADB19;
 // System.Collections.Generic.List`1<Bhaptics.Tact.JSONNode>
 struct List_1_t6E24A931558F3D2261E2EF5388D74DD216130B74;
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.LayoutObject>
+struct List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8;
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
 // System.Collections.Generic.List`1<Bhaptics.Tact.Unity.PathModeObject>
@@ -180,6 +190,10 @@ struct List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD;
 struct List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D;
 // UnityEngine.UI.CoroutineTween.TweenRunner`1<UnityEngine.UI.CoroutineTween.ColorTween>
 struct TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4;
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+struct ValueCollection_t5B2731ECFF0D7A5A15044C710DAB0B9984A2C896;
+// System.Collections.Generic.Dictionary`2/Entry<System.String,Bhaptics.Tact.Unity.LayoutObject[]>[]
+struct EntryU5BU5D_t1CDED48B5B0624A305A269044D3080031E49033A;
 // Bhaptics.Tact.Unity.ArmsHapticClip[]
 struct ArmsHapticClipU5BU5D_t663B9C1451CDA51A7984FED1334F451BD92545B5;
 // System.Byte[]
@@ -206,6 +220,8 @@ struct HeadHapticClipU5BU5D_tB72726F88173E915687FC7B4F7B7B4C4AF3394C0;
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 // System.IntPtr[]
 struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+// Bhaptics.Tact.Unity.LayoutObject[]
+struct LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1;
 // System.Object[]
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 // Bhaptics.Tact.Unity.PathModeObject[]
@@ -392,6 +408,7 @@ IL2CPP_EXTERN_C RuntimeClass* BhapticsManager_t7514043B74A443B9EBEDDCEF5CFF974AB
 IL2CPP_EXTERN_C RuntimeClass* Bhaptics_Setup_tFB463374D8C663E68DF7E660D2C7C1191FF3156E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DotModeObjectCollection_tDA91C0C16B592ECCB09DEBE98EE25BBB9EA08822_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DotModeObject_tBCFB5C1871FE88703ED80C190F98256F42FE541B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DotMode_t2634A7C409754F2F57C67CC419D8F645DAF1AFA0_il2cpp_TypeInfo_var;
@@ -407,11 +424,13 @@ IL2CPP_EXTERN_C RuntimeClass* JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA
 IL2CPP_EXTERN_C RuntimeClass* JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t5247CF671836C50C5349432C558524CCB14F5E35_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t9789ED2627589BAFF792A076BE708FCCCC7BA834_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tA7302B0A121CEF886B25ACA36910F33CCF649186_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tF8819D9082AB73ADFB4EBEEDAD5398D8FB6B8AC1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
@@ -442,6 +461,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral3590AA98975C93A40FFDB2528526DC62C197B38E
 IL2CPP_EXTERN_C String_t* _stringLiteral40B9968876DFBA959A505AA3EC0E9D9D26C14E45;
 IL2CPP_EXTERN_C String_t* _stringLiteral4435EA84D2D734E249956574CA2A1B7D73769C0C;
 IL2CPP_EXTERN_C String_t* _stringLiteral51C6279E31F7483126B79E3000116001A915B690;
+IL2CPP_EXTERN_C String_t* _stringLiteral7A3569A644A81677ECC45BFBCF217702F1D0DE07;
 IL2CPP_EXTERN_C String_t* _stringLiteral8054BA9EDF290099D7A3F936933A0483B8832468;
 IL2CPP_EXTERN_C String_t* _stringLiteral82670A05FAAC91C85403FC04AD5F3E1507E0157E;
 IL2CPP_EXTERN_C String_t* _stringLiteral881E6174E383D781E1514CCE79D258DA5F2D6745;
@@ -458,6 +478,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709
 IL2CPP_EXTERN_C String_t* _stringLiteralE0CEC70A3CC6EA40E6BA4ACBFDDCEACDCD073C35;
 IL2CPP_EXTERN_C String_t* _stringLiteralE1282EAC0C4012BB0F87FEAD5CC608B04737395C;
 IL2CPP_EXTERN_C String_t* _stringLiteralE224EB3822E0C6F07142074391593139AF8EF544;
+IL2CPP_EXTERN_C String_t* _stringLiteralF3C6C902DBF80139640F6554F0C3392016A8ADF7;
 IL2CPP_EXTERN_C String_t* _stringLiteralF60BBC53AFAB63700D2D6770444756B4490851B0;
 IL2CPP_EXTERN_C String_t* _stringLiteralFE4A99C35DB609AFE3FDE44EB05F367946EB5884;
 IL2CPP_EXTERN_C const RuntimeMethod* Array_ConvertAll_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m604AA5FBDA330F676A256966E40970E613C3A703_RuntimeMethod_var;
@@ -466,8 +487,16 @@ IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisCollider_t1CC3163
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisHapticSender_t7474A9DA8B7E3504677429254A74793588C9CCAF_m8B6E525A7F7FD8982811A97273F2254708F0F84C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisImage_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_mE74EE63C85A63FC34DCFC631BC229207B420BC79_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Convert_ToInt32_mD8869793A34ED86D38EFDF4BFCDD8D03FBBCCAB6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_GetEnumerator_mF12F10866C45A0B1B8A3EE0D58859B460B82C1DD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2__ctor_mE771721AC304A86F1630D0199A1B665A30B5A07E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_set_Item_m0A3D98FAEB0F65902D723519478843CA0B4B88B7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m5D6360F15AE7100C86563BB29E250064F31BDB7D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m4B76B8D6B70D42385525A1DB6EC4923B8087B84A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mCA6B86088D2DF3206509B44DE3E97DC1FCED2982_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisBhaptics_Setup_tFB463374D8C663E68DF7E660D2C7C1191FF3156E_m9AB79CF27CD968975064FAFC86F0762C248BD05B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisHapticSender_t7474A9DA8B7E3504677429254A74793588C9CCAF_m4524A15AEB17D2705CE2FECB60658B8AA463F566_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Key_mF07391A7439D788E88A3B2B2DCB7CE9EACE9E5D4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Value_m8EC4293E0EFA757EBA2C4D4493C4A6D6B41296D5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m10BCEC00C22F29CCE7D79A662E9DC5B0596BEB34_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m36829EC89855C8C23CEDA8C5F5B12B76ADFE2248_RuntimeMethod_var;
@@ -476,11 +505,13 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m5F46D5FCD0A34E04B01C40659754844
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m6360780C460AEBC058D50D7337696052A0168EDD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m8E7D548A19365F9270EFF31F779D691ED5200688_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mC08F6F3143A292A21DA48840CB00C96827F92C13_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mDFD8A0A00B649A9483B1223FCC037C8AF4FDA1C1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_m00A0E3B6A26F6FE0F46522D0187B4166DD145CEE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_m235F09B46567EB1AC05F7B7E7972EBF47C10EBE8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_m28A2C47EB8FA0062329AEC24B54A82ED9492A925_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_m5925CCD2844741E30EB14EDD03DD79F169BBFA80_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_mDD3A135C567F1645CEFC639195A86C8AEA8D4B3C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_mF15116DA6DE7656E08C99D78C17B748F4EC02E36_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m62F907A3852F2D47D52F82D11AE55249EBC4A1D8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m7141027AE8FE01C35B15B4BD3CB18C429F90992E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m770174D8CE1E629C582BC32A61693BE19709C444_RuntimeMethod_var;
@@ -488,6 +519,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m80C9E0EC498973778A8C293852754
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mAE544377F9C47D150F855C9724E2048168CA3736_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mDC3E95DC5C927A867B9B42EDE1945F909B894268_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mE8696F6383A59063E6A2D073404CF159360B87FD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mE98E867DE869699619CAC1FACC2727C677239CD4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectOfType_TisBhaptics_Setup_tFB463374D8C663E68DF7E660D2C7C1191FF3156E_m7CE705983CADD83410064A207EAE0393B2EAC4EF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisTransform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_m2E2C8E63B5A6D0A40ADCE97453E32B95C7E1842C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Resources_Load_TisBhapticsConfig_tFD9F04A5D3A8547A1FC5B5A2BC1109CC19F0251E_m8F92C21239C5E2B9D7B74719AF3CCB717C497A7E_RuntimeMethod_var;
@@ -508,6 +540,7 @@ struct HapticClipU5BU5D_t51371125E186EB190C3F15DE712867320021B9DB;
 struct HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743;
 struct HeadHapticClipU5BU5D_tB72726F88173E915687FC7B4F7B7B4C4AF3394C0;
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
+struct LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct PathModeObjectU5BU5D_t3A44D78F62E314CECA5B881186F49BB0E51B8571;
 struct PathModeObjectCollectionU5BU5D_t31FF3E8520A255DA67D42396F70F228322F5290E;
@@ -524,6 +557,31 @@ IL2CPP_EXTERN_C_END
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+struct Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.Dictionary`2::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_0;
+	// System.Collections.Generic.Dictionary`2/Entry<TKey,TValue>[] System.Collections.Generic.Dictionary`2::_entries
+	EntryU5BU5D_t1CDED48B5B0624A305A269044D3080031E49033A* ____entries_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_count
+	int32_t ____count_2;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeList
+	int32_t ____freeList_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_freeCount
+	int32_t ____freeCount_4;
+	// System.Int32 System.Collections.Generic.Dictionary`2::_version
+	int32_t ____version_5;
+	// System.Collections.Generic.IEqualityComparer`1<TKey> System.Collections.Generic.Dictionary`2::_comparer
+	RuntimeObject* ____comparer_6;
+	// System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_keys
+	KeyCollection_t3DDC6358C4BEF99324F23BFACCC48F54B79886F8* ____keys_7;
+	// System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2::_values
+	ValueCollection_t5B2731ECFF0D7A5A15044C710DAB0B9984A2C896* ____values_8;
+	// System.Object System.Collections.Generic.Dictionary`2::_syncRoot
+	RuntimeObject* ____syncRoot_9;
+};
 
 // System.EmptyArray`1<System.Object>
 struct EmptyArray_1_tDF0DD7256B115243AA6BD5558417387A734240EE  : public RuntimeObject
@@ -561,6 +619,19 @@ struct List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7  : public RuntimeObject
 {
 	// T[] System.Collections.Generic.List`1::_items
 	DotPointU5BU5D_t92A20976F3335DB9E9E434016016B030EFB51A31* ____items_1;
+	// System.Int32 System.Collections.Generic.List`1::_size
+	int32_t ____size_2;
+	// System.Int32 System.Collections.Generic.List`1::_version
+	int32_t ____version_3;
+	// System.Object System.Collections.Generic.List`1::_syncRoot
+	RuntimeObject* ____syncRoot_4;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.LayoutObject>
+struct List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8  : public RuntimeObject
+{
+	// T[] System.Collections.Generic.List`1::_items
+	LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* ____items_1;
 	// System.Int32 System.Collections.Generic.List`1::_size
 	int32_t ____size_2;
 	// System.Int32 System.Collections.Generic.List`1::_version
@@ -741,6 +812,15 @@ struct JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D  : public RuntimeObjec
 {
 };
 
+// Bhaptics.Tact.Unity.Layout
+struct Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F  : public RuntimeObject
+{
+	// System.String Bhaptics.Tact.Unity.Layout::<Type>k__BackingField
+	String_t* ___U3CTypeU3Ek__BackingField_0;
+	// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]> Bhaptics.Tact.Unity.Layout::<Layouts>k__BackingField
+	Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* ___U3CLayoutsU3Ek__BackingField_1;
+};
+
 // Bhaptics.Tact.Unity.LayoutObject
 struct LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4  : public RuntimeObject
 {
@@ -918,6 +998,15 @@ struct KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230
 	RuntimeObject* ___key_0;
 	// TValue System.Collections.Generic.KeyValuePair`2::value
 	RuntimeObject* ___value_1;
+};
+
+// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+struct KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535 
+{
+	// TKey System.Collections.Generic.KeyValuePair`2::key
+	String_t* ___key_0;
+	// TValue System.Collections.Generic.KeyValuePair`2::value
+	LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* ___value_1;
 };
 
 // System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode>
@@ -1145,6 +1234,36 @@ struct __StaticArrayInitTypeSizeU3D32_tC3894D25C1E879699FE1C9BAB1BBF2787B405069
 		};
 		uint8_t __StaticArrayInitTypeSizeU3D32_tC3894D25C1E879699FE1C9BAB1BBF2787B405069__padding[32];
 	};
+};
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>
+struct Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9 
+{
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_dictionary
+	Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* ____dictionary_0;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_version
+	int32_t ____version_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_index
+	int32_t ____index_2;
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_current
+	KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 ____current_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_getEnumeratorRetType
+	int32_t ____getEnumeratorRetType_4;
+};
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+struct Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4 
+{
+	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_dictionary
+	Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* ____dictionary_0;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_version
+	int32_t ____version_1;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_index
+	int32_t ____index_2;
+	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_current
+	KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535 ____current_3;
+	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_getEnumeratorRetType
+	int32_t ____getEnumeratorRetType_4;
 };
 
 // System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.JSONNode>
@@ -1557,6 +1676,23 @@ struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t
 {
 };
 
+// Bhaptics.Tact.JSONNode/KeyEnumerator
+struct KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE 
+{
+	// Bhaptics.Tact.JSONNode/Enumerator Bhaptics.Tact.JSONNode/KeyEnumerator::m_Enumerator
+	Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 ___m_Enumerator_0;
+};
+// Native definition for P/Invoke marshalling of Bhaptics.Tact.JSONNode/KeyEnumerator
+struct KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE_marshaled_pinvoke
+{
+	Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6_marshaled_pinvoke ___m_Enumerator_0;
+};
+// Native definition for COM marshalling of Bhaptics.Tact.JSONNode/KeyEnumerator
+struct KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE_marshaled_com
+{
+	Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6_marshaled_com ___m_Enumerator_0;
+};
+
 // Bhaptics.Tact.Unity.FileHapticClip
 struct FileHapticClip_t48EC83EE51B9DE69C85D3DC520865AA88CB0F9D9  : public HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E
 {
@@ -1807,6 +1943,10 @@ struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E  : public MaskableGraphic
 	float ___m_CachedReferencePixelsPerUnit_51;
 };
 
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+
 // System.EmptyArray`1<System.Object>
 struct EmptyArray_1_tDF0DD7256B115243AA6BD5558417387A734240EE_StaticFields
 {
@@ -1842,6 +1982,15 @@ struct List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7_StaticFields
 };
 
 // System.Collections.Generic.List`1<Bhaptics.Tact.DotPoint>
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.LayoutObject>
+struct List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.LayoutObject>
 
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
@@ -1981,6 +2130,10 @@ struct JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_ThreadStaticFields
 	StringBuilder_t* ___m_EscapeBuilder_3;
 };
 
+// Bhaptics.Tact.Unity.Layout
+
+// Bhaptics.Tact.Unity.Layout
+
 // Bhaptics.Tact.Unity.LayoutObject
 
 // Bhaptics.Tact.Unity.LayoutObject
@@ -2053,6 +2206,10 @@ struct String_t_StaticFields
 // System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>
 
 // System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>
+
+// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+
+// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
 
 // System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode>
 
@@ -2214,6 +2371,14 @@ struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=32
 
+// System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+
+// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
+
 // System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.JSONNode>
 
 // System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.JSONNode>
@@ -2329,6 +2494,10 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 
 // UnityEngine.Transform
 
+// Bhaptics.Tact.JSONNode/KeyEnumerator
+
+// Bhaptics.Tact.JSONNode/KeyEnumerator
+
 // Bhaptics.Tact.Unity.FileHapticClip
 
 // Bhaptics.Tact.Unity.FileHapticClip
@@ -2441,6 +2610,41 @@ struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_StaticFields
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+// Bhaptics.Tact.Unity.LayoutObject[]
+struct LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1  : public RuntimeArray
+{
+	ALIGN_FIELD (8) LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* m_Items[1];
+
+	inline LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
 // Bhaptics.Tact.Unity.DotModeObjectCollection[]
 struct DotModeObjectCollectionU5BU5D_t94C33FADCED9080041458D5F60E7DEAA64941F39  : public RuntimeArray
 {
@@ -2997,6 +3201,8 @@ struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArr
 };
 
 
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // TValue System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>::get_Value()
@@ -3005,6 +3211,18 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
 // T[] System.Collections.Generic.List`1<System.Object>::ToArray()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* List_1_ToArray_mD7E4F8E7C11C3C67CB5739FCC0A6E86106A6291F_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::set_Item(TKey,TValue)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___0_key, RuntimeObject* ___1_value, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9 Dictionary_2_GetEnumerator_m52AB12790B0B9B46B1DFB1F861C9DBEAB07C1FDA_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mEA5E01B81EB943B7003D87CEC1B6040524F0402C_gshared (Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>::get_Current()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 Enumerator_get_Current_mE3475384B761E1C7971D3639BD09117FE8363422_gshared_inline (Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9* __this, const RuntimeMethod* method) ;
+// TKey System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>::get_Key()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Object>::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mCD4950A75FFADD54AF354D48C6C0DB0B5A22A5F4_gshared (Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9* __this, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // T[] System.Array::Empty<System.Object>()
@@ -3024,6 +3242,102 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Converter_2__ctor_m321A02D2EB18FBD95CE3E
 // TOutput[] System.Array::ConvertAll<System.Byte,System.Int32>(TInput[],System.Converter`2<TInput,TOutput>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* Array_ConvertAll_TisByte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m604AA5FBDA330F676A256966E40970E613C3A703_gshared (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_array, Converter_2_tE6516076959FCB94E4F882B5589CE249B21AC94A* ___1_converter, const RuntimeMethod* method) ;
 
+// System.Void Bhaptics.Tact.Unity.Layout::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Layout__ctor_mA9C51F3A9E360AB26821E84D39F2AB15E886511C (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) ;
+// System.String Bhaptics.Tact.JSONNode::op_Implicit(Bhaptics.Tact.JSONNode)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* JSONNode_op_Implicit_mF1E8869ECBF9128BBBBDEFAA6BADBEDBD3377D13 (JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* ___0_d, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.Unity.Layout::set_Type(System.String)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Layout_set_Type_mC6F3F60CACFB8872D86A13D7CC69532A467F22FC_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, String_t* ___0_value, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::.ctor()
+inline void Dictionary_2__ctor_mE771721AC304A86F1630D0199A1B665A30B5A07E (Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB*, const RuntimeMethod*))Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared)(__this, method);
+}
+// System.Void Bhaptics.Tact.Unity.Layout::set_Layouts(System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Layout_set_Layouts_m04AD09245EA14233E27E00F0620C70A6DAF25DA4_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* ___0_value, const RuntimeMethod* method) ;
+// Bhaptics.Tact.JSONNode/KeyEnumerator Bhaptics.Tact.JSONNode::get_Keys()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE JSONNode_get_Keys_m5AA9857B54A50BCCFC1A3CD00C13FD7E7C4D03FD (JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.JSONNode/KeyEnumerator Bhaptics.Tact.JSONNode/KeyEnumerator::GetEnumerator()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE KeyEnumerator_GetEnumerator_m5E500FE5C9123A63956B2BBC44C92471A46BE585 (KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE* __this, const RuntimeMethod* method) ;
+// System.String Bhaptics.Tact.JSONNode/KeyEnumerator::get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyEnumerator_get_Current_mC0EFD70B348C797A9097FC3591604248B5E8D9EB (KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.JSONArray::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JSONArray__ctor_m4C44395E61EC41095CE4E43B84826B6CD00CAAC5 (JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.LayoutObject>::.ctor()
+inline void List_1__ctor_mE98E867DE869699619CAC1FACC2727C677239CD4 (List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode> Bhaptics.Tact.JSONNode/Enumerator::get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC Enumerator_get_Current_mADC9138A797DFFC280E40580257BD68E94BC8D5C (Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6* __this, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode>::get_Value()
+inline JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_inline (KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC* __this, const RuntimeMethod* method)
+{
+	return ((  JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* (*) (KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC*, const RuntimeMethod*))KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline)(__this, method);
+}
+// Bhaptics.Tact.Unity.LayoutObject Bhaptics.Tact.Unity.LayoutObject::ToLayoutObject(Bhaptics.Tact.JSONObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* LayoutObject_ToLayoutObject_mE5EFACE1A11213D0C866C27533298F610A13CD73 (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObj, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.LayoutObject>::Add(T)
+inline void List_1_Add_mDFD8A0A00B649A9483B1223FCC037C8AF4FDA1C1_inline (List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8* __this, LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8*, LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+// System.Boolean Bhaptics.Tact.JSONNode/Enumerator::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m007D2FA8EE0C5EFD0F7CA354C8A9B0E49DEB4528 (Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6* __this, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]> Bhaptics.Tact.Unity.Layout::get_Layouts()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* Layout_get_Layouts_m60E67CC8D7907AFE794DC4BC0616714AB3DB71FD_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) ;
+// T[] System.Collections.Generic.List`1<Bhaptics.Tact.Unity.LayoutObject>::ToArray()
+inline LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* List_1_ToArray_mF15116DA6DE7656E08C99D78C17B748F4EC02E36 (List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8* __this, const RuntimeMethod* method)
+{
+	return ((  LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* (*) (List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8*, const RuntimeMethod*))List_1_ToArray_mD7E4F8E7C11C3C67CB5739FCC0A6E86106A6291F_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::set_Item(TKey,TValue)
+inline void Dictionary_2_set_Item_m0A3D98FAEB0F65902D723519478843CA0B4B88B7 (Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* __this, String_t* ___0_key, LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* ___1_value, const RuntimeMethod* method)
+{
+	((  void (*) (Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB*, String_t*, LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1*, const RuntimeMethod*))Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared)(__this, ___0_key, ___1_value, method);
+}
+// System.Boolean Bhaptics.Tact.JSONNode/KeyEnumerator::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyEnumerator_MoveNext_mC987ED757BC0CC6842850F7A80E4F52C304D8A65 (KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE* __this, const RuntimeMethod* method) ;
+// System.Void Bhaptics.Tact.JSONObject::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* __this, const RuntimeMethod* method) ;
+// System.String Bhaptics.Tact.Unity.Layout::get_Type()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* Layout_get_Type_mBE619D91B8B2EA797249B5CA78B045B764426283_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) ;
+// Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::op_Implicit(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* JSONNode_op_Implicit_m6D2AC5725D426909C3669AC277D5EEC9C78F3257 (String_t* ___0_s, const RuntimeMethod* method) ;
+// System.Collections.Generic.Dictionary`2/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::GetEnumerator()
+inline Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4 Dictionary_2_GetEnumerator_mF12F10866C45A0B1B8A3EE0D58859B460B82C1DD (Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4 (*) (Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB*, const RuntimeMethod*))Dictionary_2_GetEnumerator_m52AB12790B0B9B46B1DFB1F861C9DBEAB07C1FDA_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::Dispose()
+inline void Enumerator_Dispose_m5D6360F15AE7100C86563BB29E250064F31BDB7D (Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4*, const RuntimeMethod*))Enumerator_Dispose_mEA5E01B81EB943B7003D87CEC1B6040524F0402C_gshared)(__this, method);
+}
+// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::get_Current()
+inline KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535 Enumerator_get_Current_mCA6B86088D2DF3206509B44DE3E97DC1FCED2982_inline (Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4* __this, const RuntimeMethod* method)
+{
+	return ((  KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535 (*) (Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4*, const RuntimeMethod*))Enumerator_get_Current_mE3475384B761E1C7971D3639BD09117FE8363422_gshared_inline)(__this, method);
+}
+// TValue System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::get_Value()
+inline LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* KeyValuePair_2_get_Value_m8EC4293E0EFA757EBA2C4D4493C4A6D6B41296D5_inline (KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535* __this, const RuntimeMethod* method)
+{
+	return ((  LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* (*) (KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535*, const RuntimeMethod*))KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline)(__this, method);
+}
+// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.LayoutObject::ToJsonObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* LayoutObject_ToJsonObject_mDF2FFCB5A75E71B954FC7BB6BD5F10AC436CF1D8 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) ;
+// TKey System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::get_Key()
+inline String_t* KeyValuePair_2_get_Key_mF07391A7439D788E88A3B2B2DCB7CE9EACE9E5D4_inline (KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535* __this, const RuntimeMethod* method)
+{
+	return ((  String_t* (*) (KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535*, const RuntimeMethod*))KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline)(__this, method);
+}
+// System.Boolean System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.Unity.LayoutObject[]>::MoveNext()
+inline bool Enumerator_MoveNext_m4B76B8D6B70D42385525A1DB6EC4923B8087B84A (Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4*, const RuntimeMethod*))Enumerator_MoveNext_mCD4950A75FFADD54AF354D48C6C0DB0B5A22A5F4_gshared)(__this, method);
+}
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void Bhaptics.Tact.Unity.LayoutObject::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutObject__ctor_mD41074C142B2FD7BEAD06B58FDB8F6CCEE2A7054 (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) ;
 // System.Int32 Bhaptics.Tact.JSONNode::op_Implicit(Bhaptics.Tact.JSONNode)
@@ -3036,8 +3350,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float JSONNode_op_Implicit_m13111A52408602085
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutObject_set_X_mED3EBFFCF1FF5840EA1949A4BC85416E33BAA4C4_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, float ___0_value, const RuntimeMethod* method) ;
 // System.Void Bhaptics.Tact.Unity.LayoutObject::set_Y(System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutObject_set_Y_mADC9A8BF0AC0DADA023D9ADB0308C5DC41BE0E80_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, float ___0_value, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.JSONObject::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* __this, const RuntimeMethod* method) ;
 // System.Int32 Bhaptics.Tact.Unity.LayoutObject::get_Index()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t LayoutObject_get_Index_mAC697E34411D251A3D2D364954962063BD0B4A86_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) ;
 // Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::op_Implicit(System.Int32)
@@ -3048,12 +3360,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float LayoutObject_get_X_m3B474C2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* JSONNode_op_Implicit_mDD64E71A06EF02278E9AEAF16C3B5F6A80D088D5 (float ___0_n, const RuntimeMethod* method) ;
 // System.Single Bhaptics.Tact.Unity.LayoutObject::get_Y()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float LayoutObject_get_Y_mD54E06DF5DAA79AC7723D518ADD3DF17B576EDF2_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, const RuntimeMethod* method) ;
-// System.Void System.Object::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void Bhaptics.Tact.Unity.HapticEffectMode::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticEffectMode__ctor_m9FC29F7783B175F9F282EB18A9E094A7F3A535C4 (HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* __this, const RuntimeMethod* method) ;
-// System.String Bhaptics.Tact.JSONNode::op_Implicit(Bhaptics.Tact.JSONNode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* JSONNode_op_Implicit_mF1E8869ECBF9128BBBBDEFAA6BADBEDBD3377D13 (JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* ___0_d, const RuntimeMethod* method) ;
 // Bhaptics.Tact.FeedbackMode Bhaptics.Tact.EnumParser::ToMode(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t EnumParser_ToMode_mA3F752E94C847D0BDE477A9DAB3DF3CF4B229747 (String_t* ___0_str, const RuntimeMethod* method) ;
 // System.Void Bhaptics.Tact.Unity.HapticEffectMode::set_Mode(Bhaptics.Tact.FeedbackMode)
@@ -3070,8 +3378,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HapticEffectMode_set_PathMod
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HapticEffectMode_get_Mode_m96E1120C64153E685A6C23F8C2AA53E81FAEE141_inline (HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* __this, const RuntimeMethod* method) ;
 // System.String System.Enum::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741 (RuntimeObject* __this, const RuntimeMethod* method) ;
-// Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::op_Implicit(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* JSONNode_op_Implicit_m6D2AC5725D426909C3669AC277D5EEC9C78F3257 (String_t* ___0_s, const RuntimeMethod* method) ;
 // Bhaptics.Tact.Unity.DotMode Bhaptics.Tact.Unity.HapticEffectMode::get_DotMode()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DotMode_t2634A7C409754F2F57C67CC419D8F645DAF1AFA0* HapticEffectMode_get_DotMode_mF7A771BE46C68673460B5CB360D3406A92D194B5_inline (HapticEffectMode_t967951BEFF1FA04D89E51936C24BB8114E99BCF8* __this, const RuntimeMethod* method) ;
 // Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.DotMode::ToJsonObject()
@@ -3091,13 +3397,6 @@ inline void List_1__ctor_m62F907A3852F2D47D52F82D11AE55249EBC4A1D8 (List_1_t5247
 {
 	((  void (*) (List_1_t5247CF671836C50C5349432C558524CCB14F5E35*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
-// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode> Bhaptics.Tact.JSONNode/Enumerator::get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC Enumerator_get_Current_mADC9138A797DFFC280E40580257BD68E94BC8D5C (Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6* __this, const RuntimeMethod* method) ;
-// TValue System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode>::get_Value()
-inline JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_inline (KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC* __this, const RuntimeMethod* method)
-{
-	return ((  JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* (*) (KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC*, const RuntimeMethod*))KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline)(__this, method);
-}
 // Bhaptics.Tact.Unity.DotModeObjectCollection Bhaptics.Tact.Unity.DotModeObjectCollection::ToObject(Bhaptics.Tact.JSONObject)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DotModeObjectCollection_tDA91C0C16B592ECCB09DEBE98EE25BBB9EA08822* DotModeObjectCollection_ToObject_m4B39277B6B18CDC198585E66625D58A309E39759 (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_val, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.DotModeObjectCollection>::Add(T)
@@ -3105,8 +3404,6 @@ inline void List_1_Add_m40057C27DEF3FA1D6523E8C5AD912D04E6996A80_inline (List_1_
 {
 	((  void (*) (List_1_t5247CF671836C50C5349432C558524CCB14F5E35*, DotModeObjectCollection_tDA91C0C16B592ECCB09DEBE98EE25BBB9EA08822*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
 }
-// System.Boolean Bhaptics.Tact.JSONNode/Enumerator::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m007D2FA8EE0C5EFD0F7CA354C8A9B0E49DEB4528 (Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6* __this, const RuntimeMethod* method) ;
 // T[] System.Collections.Generic.List`1<Bhaptics.Tact.Unity.DotModeObjectCollection>::ToArray()
 inline DotModeObjectCollectionU5BU5D_t94C33FADCED9080041458D5F60E7DEAA64941F39* List_1_ToArray_m28A2C47EB8FA0062329AEC24B54A82ED9492A925 (List_1_t5247CF671836C50C5349432C558524CCB14F5E35* __this, const RuntimeMethod* method)
 {
@@ -3118,8 +3415,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DotMode_set_Feedback_m5CE52C
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool DotMode_get_DotConnected_m83495FEB1AAC52CCFA0395E192462E1CA1CD4C1B_inline (DotMode_t2634A7C409754F2F57C67CC419D8F645DAF1AFA0* __this, const RuntimeMethod* method) ;
 // Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::op_Implicit(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* JSONNode_op_Implicit_mB737FC157A3F60740311A6BCD44D5D56E7BF27D8 (bool ___0_b, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.JSONArray::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JSONArray__ctor_m4C44395E61EC41095CE4E43B84826B6CD00CAAC5 (JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* __this, const RuntimeMethod* method) ;
 // Bhaptics.Tact.Unity.DotModeObjectCollection[] Bhaptics.Tact.Unity.DotMode::get_Feedback()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DotModeObjectCollectionU5BU5D_t94C33FADCED9080041458D5F60E7DEAA64941F39* DotMode_get_Feedback_m77282F87B3F0DA0E3F1BF3EACA61DCA47268437F_inline (DotMode_t2634A7C409754F2F57C67CC419D8F645DAF1AFA0* __this, const RuntimeMethod* method) ;
 // Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.DotModeObjectCollection::ToJsonObject()
@@ -3521,6 +3816,395 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Mathf::Clamp(System.Single,System.Single,System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.String Bhaptics.Tact.Unity.Layout::get_Type()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Layout_get_Type_mBE619D91B8B2EA797249B5CA78B045B764426283 (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string Type { get; set; }
+		String_t* L_0 = __this->___U3CTypeU3Ek__BackingField_0;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Layout::set_Type(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Layout_set_Type_mC6F3F60CACFB8872D86A13D7CC69532A467F22FC (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public string Type { get; set; }
+		String_t* L_0 = ___0_value;
+		__this->___U3CTypeU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTypeU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]> Bhaptics.Tact.Unity.Layout::get_Layouts()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* Layout_get_Layouts_m60E67CC8D7907AFE794DC4BC0616714AB3DB71FD (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<string, LayoutObject[]> Layouts { get; set; }
+		Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* L_0 = __this->___U3CLayoutsU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Layout::set_Layouts(System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Layout_set_Layouts_m04AD09245EA14233E27E00F0620C70A6DAF25DA4 (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<string, LayoutObject[]> Layouts { get; set; }
+		Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* L_0 = ___0_value;
+		__this->___U3CLayoutsU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CLayoutsU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+// Bhaptics.Tact.Unity.Layout Bhaptics.Tact.Unity.Layout::ToLayout(Bhaptics.Tact.JSONObject)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* Layout_ToLayout_m523C6596DFF6EAE08B7EF2D8AB8A3EF7AAD7A86D (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObj, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mE771721AC304A86F1630D0199A1B665A30B5A07E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m0A3D98FAEB0F65902D723519478843CA0B4B88B7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mDFD8A0A00B649A9483B1223FCC037C8AF4FDA1C1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_ToArray_mF15116DA6DE7656E08C99D78C17B748F4EC02E36_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_mE98E867DE869699619CAC1FACC2727C677239CD4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7A3569A644A81677ECC45BFBCF217702F1D0DE07);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF3C6C902DBF80139640F6554F0C3392016A8ADF7);
+		s_Il2CppMethodInitialized = true;
+	}
+	Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* V_0 = NULL;
+	JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* V_1 = NULL;
+	JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* V_2 = NULL;
+	KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	String_t* V_5 = NULL;
+	List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8* V_6 = NULL;
+	Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 V_7;
+	memset((&V_7), 0, sizeof(V_7));
+	KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC V_8;
+	memset((&V_8), 0, sizeof(V_8));
+	{
+		// var layout = new Layout();
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_0 = (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F*)il2cpp_codegen_object_new(Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		Layout__ctor_mA9C51F3A9E360AB26821E84D39F2AB15E886511C(L_0, NULL);
+		V_0 = L_0;
+		// var type = jsonObj["type"];
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_1 = ___0_jsonObj;
+		NullCheck(L_1);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_2;
+		L_2 = VirtualFuncInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t* >::Invoke(7 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::get_Item(System.String) */, L_1, _stringLiteralF3C6C902DBF80139640F6554F0C3392016A8ADF7);
+		V_1 = L_2;
+		// layout.Type = type;
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_3 = V_0;
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_4 = V_1;
+		il2cpp_codegen_runtime_class_init_inline(JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		String_t* L_5;
+		L_5 = JSONNode_op_Implicit_mF1E8869ECBF9128BBBBDEFAA6BADBEDBD3377D13(L_4, NULL);
+		NullCheck(L_3);
+		Layout_set_Type_mC6F3F60CACFB8872D86A13D7CC69532A467F22FC_inline(L_3, L_5, NULL);
+		// layout.Layouts = new Dictionary<string, LayoutObject[]>();
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_6 = V_0;
+		Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* L_7 = (Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB*)il2cpp_codegen_object_new(Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		Dictionary_2__ctor_mE771721AC304A86F1630D0199A1B665A30B5A07E(L_7, Dictionary_2__ctor_mE771721AC304A86F1630D0199A1B665A30B5A07E_RuntimeMethod_var);
+		NullCheck(L_6);
+		Layout_set_Layouts_m04AD09245EA14233E27E00F0620C70A6DAF25DA4_inline(L_6, L_7, NULL);
+		// var layouts = jsonObj["layouts"];
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_8 = ___0_jsonObj;
+		NullCheck(L_8);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_9;
+		L_9 = VirtualFuncInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t* >::Invoke(7 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::get_Item(System.String) */, L_8, _stringLiteral7A3569A644A81677ECC45BFBCF217702F1D0DE07);
+		V_2 = L_9;
+		// foreach (var key in layouts.Keys)
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_10 = V_2;
+		NullCheck(L_10);
+		KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE L_11;
+		L_11 = JSONNode_get_Keys_m5AA9857B54A50BCCFC1A3CD00C13FD7E7C4D03FD(L_10, NULL);
+		V_4 = L_11;
+		KeyEnumerator_t2A2F742947D7237A24D208C30C51549BAB9550DE L_12;
+		L_12 = KeyEnumerator_GetEnumerator_m5E500FE5C9123A63956B2BBC44C92471A46BE585((&V_4), NULL);
+		V_3 = L_12;
+		goto IL_00ab;
+	}
+
+IL_0047:
+	{
+		// foreach (var key in layouts.Keys)
+		String_t* L_13;
+		L_13 = KeyEnumerator_get_Current_mC0EFD70B348C797A9097FC3591604248B5E8D9EB((&V_3), NULL);
+		V_5 = L_13;
+		// var arr = layouts.GetValueOrDefault(key, new JSONArray());
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_14 = V_2;
+		String_t* L_15 = V_5;
+		JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_16 = (JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7*)il2cpp_codegen_object_new(JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
+		NullCheck(L_16);
+		JSONArray__ctor_m4C44395E61EC41095CE4E43B84826B6CD00CAAC5(L_16, NULL);
+		NullCheck(L_14);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_17;
+		L_17 = VirtualFuncInvoker2< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(27 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::GetValueOrDefault(System.String,Bhaptics.Tact.JSONNode) */, L_14, L_15, L_16);
+		// var layoutObjList = new List<LayoutObject>();
+		List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8* L_18 = (List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8*)il2cpp_codegen_object_new(List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8_il2cpp_TypeInfo_var);
+		NullCheck(L_18);
+		List_1__ctor_mE98E867DE869699619CAC1FACC2727C677239CD4(L_18, List_1__ctor_mE98E867DE869699619CAC1FACC2727C677239CD4_RuntimeMethod_var);
+		V_6 = L_18;
+		// foreach (var layoutObj in arr)
+		NullCheck(L_17);
+		Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 L_19;
+		L_19 = VirtualFuncInvoker0< Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 >::Invoke(30 /* Bhaptics.Tact.JSONNode/Enumerator Bhaptics.Tact.JSONNode::GetEnumerator() */, L_17);
+		V_7 = L_19;
+		goto IL_008e;
+	}
+
+IL_006d:
+	{
+		// foreach (var layoutObj in arr)
+		KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC L_20;
+		L_20 = Enumerator_get_Current_mADC9138A797DFFC280E40580257BD68E94BC8D5C((&V_7), NULL);
+		V_8 = L_20;
+		// layoutObjList.Add(LayoutObject.ToLayoutObject(layoutObj.Value.AsObject));
+		List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8* L_21 = V_6;
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_22;
+		L_22 = KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_inline((&V_8), KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_RuntimeMethod_var);
+		NullCheck(L_22);
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_23;
+		L_23 = VirtualFuncInvoker0< JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* >::Invoke(42 /* Bhaptics.Tact.JSONObject Bhaptics.Tact.JSONNode::get_AsObject() */, L_22);
+		LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* L_24;
+		L_24 = LayoutObject_ToLayoutObject_mE5EFACE1A11213D0C866C27533298F610A13CD73(L_23, NULL);
+		NullCheck(L_21);
+		List_1_Add_mDFD8A0A00B649A9483B1223FCC037C8AF4FDA1C1_inline(L_21, L_24, List_1_Add_mDFD8A0A00B649A9483B1223FCC037C8AF4FDA1C1_RuntimeMethod_var);
+	}
+
+IL_008e:
+	{
+		// foreach (var layoutObj in arr)
+		bool L_25;
+		L_25 = Enumerator_MoveNext_m007D2FA8EE0C5EFD0F7CA354C8A9B0E49DEB4528((&V_7), NULL);
+		if (L_25)
+		{
+			goto IL_006d;
+		}
+	}
+	{
+		// layout.Layouts[key] = layoutObjList.ToArray();
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_26 = V_0;
+		NullCheck(L_26);
+		Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* L_27;
+		L_27 = Layout_get_Layouts_m60E67CC8D7907AFE794DC4BC0616714AB3DB71FD_inline(L_26, NULL);
+		String_t* L_28 = V_5;
+		List_1_t9DFEE9EF6FA2279B286B7E412F9FF9FD91E6D3C8* L_29 = V_6;
+		NullCheck(L_29);
+		LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* L_30;
+		L_30 = List_1_ToArray_mF15116DA6DE7656E08C99D78C17B748F4EC02E36(L_29, List_1_ToArray_mF15116DA6DE7656E08C99D78C17B748F4EC02E36_RuntimeMethod_var);
+		NullCheck(L_27);
+		Dictionary_2_set_Item_m0A3D98FAEB0F65902D723519478843CA0B4B88B7(L_27, L_28, L_30, Dictionary_2_set_Item_m0A3D98FAEB0F65902D723519478843CA0B4B88B7_RuntimeMethod_var);
+	}
+
+IL_00ab:
+	{
+		// foreach (var key in layouts.Keys)
+		bool L_31;
+		L_31 = KeyEnumerator_MoveNext_mC987ED757BC0CC6842850F7A80E4F52C304D8A65((&V_3), NULL);
+		if (L_31)
+		{
+			goto IL_0047;
+		}
+	}
+	{
+		// return layout;
+		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_32 = V_0;
+		return L_32;
+	}
+}
+// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.Layout::ToJsonObject()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* Layout_ToJsonObject_m1BA3A0A7ACFF10366F6004D700EDF471921F3B90 (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_GetEnumerator_mF12F10866C45A0B1B8A3EE0D58859B460B82C1DD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m5D6360F15AE7100C86563BB29E250064F31BDB7D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m4B76B8D6B70D42385525A1DB6EC4923B8087B84A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mCA6B86088D2DF3206509B44DE3E97DC1FCED2982_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Key_mF07391A7439D788E88A3B2B2DCB7CE9EACE9E5D4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_m8EC4293E0EFA757EBA2C4D4493C4A6D6B41296D5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7A3569A644A81677ECC45BFBCF217702F1D0DE07);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF3C6C902DBF80139640F6554F0C3392016A8ADF7);
+		s_Il2CppMethodInitialized = true;
+	}
+	JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* V_0 = NULL;
+	JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* V_1 = NULL;
+	Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* V_4 = NULL;
+	LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* V_5 = NULL;
+	int32_t V_6 = 0;
+	LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* V_7 = NULL;
+	{
+		// var jsonObject = new JSONObject();
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_0 = (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC*)il2cpp_codegen_object_new(JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B(L_0, NULL);
+		V_0 = L_0;
+		// jsonObject["type"] = Type;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_1 = V_0;
+		String_t* L_2;
+		L_2 = Layout_get_Type_mBE619D91B8B2EA797249B5CA78B045B764426283_inline(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_il2cpp_TypeInfo_var);
+		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_3;
+		L_3 = JSONNode_op_Implicit_m6D2AC5725D426909C3669AC277D5EEC9C78F3257(L_2, NULL);
+		NullCheck(L_1);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_1, _stringLiteralF3C6C902DBF80139640F6554F0C3392016A8ADF7, L_3);
+		// var layoutsObject = new JSONObject();
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_4 = (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC*)il2cpp_codegen_object_new(JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
+		NullCheck(L_4);
+		JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B(L_4, NULL);
+		V_1 = L_4;
+		// foreach (var layout in Layouts)
+		Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* L_5;
+		L_5 = Layout_get_Layouts_m60E67CC8D7907AFE794DC4BC0616714AB3DB71FD_inline(__this, NULL);
+		NullCheck(L_5);
+		Enumerator_tB8F87C0791B7018BA00D624C0F09D382E12D01F4 L_6;
+		L_6 = Dictionary_2_GetEnumerator_mF12F10866C45A0B1B8A3EE0D58859B460B82C1DD(L_5, Dictionary_2_GetEnumerator_mF12F10866C45A0B1B8A3EE0D58859B460B82C1DD_RuntimeMethod_var);
+		V_2 = L_6;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_008a:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m5D6360F15AE7100C86563BB29E250064F31BDB7D((&V_2), Enumerator_Dispose_m5D6360F15AE7100C86563BB29E250064F31BDB7D_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_007f_1;
+			}
+
+IL_0030_1:
+			{
+				// foreach (var layout in Layouts)
+				KeyValuePair_2_t02646FAC349C1633ADA5A56AAC338FABB5F69535 L_7;
+				L_7 = Enumerator_get_Current_mCA6B86088D2DF3206509B44DE3E97DC1FCED2982_inline((&V_2), Enumerator_get_Current_mCA6B86088D2DF3206509B44DE3E97DC1FCED2982_RuntimeMethod_var);
+				V_3 = L_7;
+				// var objArray = new JSONArray();
+				JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_8 = (JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7*)il2cpp_codegen_object_new(JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
+				NullCheck(L_8);
+				JSONArray__ctor_m4C44395E61EC41095CE4E43B84826B6CD00CAAC5(L_8, NULL);
+				V_4 = L_8;
+				// foreach (var val in layout.Value)
+				LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* L_9;
+				L_9 = KeyValuePair_2_get_Value_m8EC4293E0EFA757EBA2C4D4493C4A6D6B41296D5_inline((&V_3), KeyValuePair_2_get_Value_m8EC4293E0EFA757EBA2C4D4493C4A6D6B41296D5_RuntimeMethod_var);
+				V_5 = L_9;
+				V_6 = 0;
+				goto IL_0068_1;
+			}
+
+IL_004d_1:
+			{
+				// foreach (var val in layout.Value)
+				LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* L_10 = V_5;
+				int32_t L_11 = V_6;
+				NullCheck(L_10);
+				int32_t L_12 = L_11;
+				LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
+				V_7 = L_13;
+				// objArray.Add(val.ToJsonObject());
+				JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_14 = V_4;
+				LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* L_15 = V_7;
+				NullCheck(L_15);
+				JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_16;
+				L_16 = LayoutObject_ToJsonObject_mDF2FFCB5A75E71B954FC7BB6BD5F10AC436CF1D8(L_15, NULL);
+				NullCheck(L_14);
+				VirtualActionInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(21 /* System.Void Bhaptics.Tact.JSONNode::Add(Bhaptics.Tact.JSONNode) */, L_14, L_16);
+				int32_t L_17 = V_6;
+				V_6 = ((int32_t)il2cpp_codegen_add(L_17, 1));
+			}
+
+IL_0068_1:
+			{
+				// foreach (var val in layout.Value)
+				int32_t L_18 = V_6;
+				LayoutObjectU5BU5D_t114BD7C96E1C5ABB80557071F2D8BA7F8D6A36B1* L_19 = V_5;
+				NullCheck(L_19);
+				if ((((int32_t)L_18) < ((int32_t)((int32_t)(((RuntimeArray*)L_19)->max_length)))))
+				{
+					goto IL_004d_1;
+				}
+			}
+			{
+				// layoutsObject[layout.Key] = objArray;
+				JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_20 = V_1;
+				String_t* L_21;
+				L_21 = KeyValuePair_2_get_Key_mF07391A7439D788E88A3B2B2DCB7CE9EACE9E5D4_inline((&V_3), KeyValuePair_2_get_Key_mF07391A7439D788E88A3B2B2DCB7CE9EACE9E5D4_RuntimeMethod_var);
+				JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_22 = V_4;
+				NullCheck(L_20);
+				VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_20, L_21, L_22);
+			}
+
+IL_007f_1:
+			{
+				// foreach (var layout in Layouts)
+				bool L_23;
+				L_23 = Enumerator_MoveNext_m4B76B8D6B70D42385525A1DB6EC4923B8087B84A((&V_2), Enumerator_MoveNext_m4B76B8D6B70D42385525A1DB6EC4923B8087B84A_RuntimeMethod_var);
+				if (L_23)
+				{
+					goto IL_0030_1;
+				}
+			}
+			{
+				goto IL_0098;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0098:
+	{
+		// jsonObject["layouts"] = layoutsObject;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_24 = V_0;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_25 = V_1;
+		NullCheck(L_24);
+		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_24, _stringLiteral7A3569A644A81677ECC45BFBCF217702F1D0DE07, L_25);
+		// return jsonObject;
+		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_26 = V_0;
+		return L_26;
+	}
+}
+// System.Void Bhaptics.Tact.Unity.Layout::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Layout__ctor_mA9C51F3A9E360AB26821E84D39F2AB15E886511C (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -9067,6 +9751,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VisualFeedback__ctor_m0FA7EADEAC0E9E0617
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Layout_set_Type_mC6F3F60CACFB8872D86A13D7CC69532A467F22FC_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public string Type { get; set; }
+		String_t* L_0 = ___0_value;
+		__this->___U3CTypeU3Ek__BackingField_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTypeU3Ek__BackingField_0), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Layout_set_Layouts_m04AD09245EA14233E27E00F0620C70A6DAF25DA4_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<string, LayoutObject[]> Layouts { get; set; }
+		Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* L_0 = ___0_value;
+		__this->___U3CLayoutsU3Ek__BackingField_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CLayoutsU3Ek__BackingField_1), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* Layout_get_Layouts_m60E67CC8D7907AFE794DC4BC0616714AB3DB71FD_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) 
+{
+	{
+		// public Dictionary<string, LayoutObject[]> Layouts { get; set; }
+		Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* L_0 = __this->___U3CLayoutsU3Ek__BackingField_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* Layout_get_Type_mBE619D91B8B2EA797249B5CA78B045B764426283_inline (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) 
+{
+	{
+		// public string Type { get; set; }
+		String_t* L_0 = __this->___U3CTypeU3Ek__BackingField_0;
+		return L_0;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void LayoutObject_set_Index_m4823B428685425779BCDA95301365BFF9FDF93AF_inline (LayoutObject_t63431165677593BD44E6B820A81DE803AA4E8CC4* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
@@ -9748,6 +10468,20 @@ IL_0034:
 		RuntimeObject* L_9 = ___0_item;
 		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 Enumerator_get_Current_mE3475384B761E1C7971D3639BD09117FE8363422_gshared_inline (Enumerator_tEA93FE2B778D098F590CA168BEFC4CD85D73A6B9* __this, const RuntimeMethod* method) 
+{
+	{
+		KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230 L_0 = (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230)__this->____current_3;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___key_0;
+		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_gshared_inline (const RuntimeMethod* method) 

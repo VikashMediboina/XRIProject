@@ -12,7 +12,7 @@ public class changeReferenceText : MonoBehaviour
 {
 public TextMeshPro typedText; 
 public TextMeshPro textToEnter; 
-int index=0;
+static int  index=0;
 private List<string> textArray =new List<string>(new string[] { "Just playing with you","I did not think we had","Please coordinate with him","On the plane doors closing",
 "Thanks for checking with me",
 "Take what you can get",
@@ -68,14 +68,12 @@ public string Scene_No;
 //private double Err_Rate;
 private int user_Rating;
 private string url="https://neu.co1.qualtrics.com/jfe/form/SV_3fT8qgIOPUgibki";
-private static Timer Avg_timer;
+private Timer Avg_timer;
 private static int Total_Timer;
 public TextMeshPro buttons;
     // Start is called before the first frame update
     void Start()
     {
-
-
         PID = PlayerPrefs.GetString("PID");
         //Err_Rate = 0;
         user_Rating = 9;
@@ -107,12 +105,9 @@ public TextMeshPro buttons;
     {
         if (typedText.text!="" && typedText.text != "Enter Text...")
         {
-            OVRInput.SetControllerLocalizedVibration(OVRInput.HapticsLocation.Index, 0f, 0.5f, OVRInput.Controller.Active);
-            // if (textToEnter.text != typedText.text)
-            // {
-            //     Err_Rate += 1;
-            // }
-            if (index == 4)
+            OVRInput.SetControllerLocalizedVibration(OVRInput.HapticsLocation.Index, 0f, 0.1f, OVRInput.Controller.Active);
+        
+            if (index% 6 == 4)
             {
                 buttons.text = "Submit";
                 Wpm[index] = CalculateWpm(typedText.text, Total_Timer);
@@ -121,11 +116,14 @@ public TextMeshPro buttons;
                 textToEnter.text = textArray[index];
                 typedText.text = "Enter Text...";
             }
-            else if (index == 5)
+            else if (index%6 == 5)
             {
                 Avg_timer.Stop();
                 StartCoroutine(sendQualtricsData());
-                SceneManager.LoadScene("QwertySceneController");
+                index += 1;
+                Debug.Log(index);
+                GetComponent<SceneSelector>().LoadNextScene();
+                //SceneManager.LoadScene("SelectSeen");
             }
             else
             {
