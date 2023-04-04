@@ -338,3 +338,45 @@ Received Import Request.
   path: Assets/Scripts/ChangeText.cs
   artifactKey: Guid(d8ed9c967b44f4641b01ad38c189b024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scripts/ChangeText.cs using Guid(d8ed9c967b44f4641b01ad38c189b024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e5762e80a00ad0bb032ff3b3ff0f7df') in 0.008646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 265.521306 seconds.
+  path: Assets/Scenes/SphericalScenePoke.unity
+  artifactKey: Guid(bba46e4b3db2b5f47b3b00cf57b96606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SphericalScenePoke.unity using Guid(bba46e4b3db2b5f47b3b00cf57b96606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1300e2601a595d0112d45a8a933450a9') in 0.002433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.169358 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d5cb52f6731ab6f8574842f938f0d94') in 0.001242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.713664 seconds.
+  path: Assets/Scenes/QwertyScenePoke.unity
+  artifactKey: Guid(fbe957de5d61a6d4fa40315f7a39ca9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/QwertyScenePoke.unity using Guid(fbe957de5d61a6d4fa40315f7a39ca9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f596f8509edda09473fb1dbda529717') in 0.001807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.638283 seconds.
+  path: Assets/Scenes/SphericalSceneController.unity
+  artifactKey: Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SphericalSceneController.unity using Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f70605da54e4dc1827ef08ad2c539c') in 0.001261 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.249940 seconds.
+  path: Assets/Scenes/IntroScene.unity
+  artifactKey: Guid(022bc269538676a41ac4f35739b05a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/IntroScene.unity using Guid(022bc269538676a41ac4f35739b05a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec77b1c35fc1a5f854433df67f4e09cf') in 0.007573 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.207583 seconds.
+  path: Assets/Scenes/QwertySceneController.unity
+  artifactKey: Guid(e155669f1323fd341a1e607eeffb1f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/QwertySceneController.unity using Guid(e155669f1323fd341a1e607eeffb1f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e54d93791fd909c6997d400591bf1657') in 0.003946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.846895 seconds.
+  path: Assets/Scenes/IntroScene 1.unity
+  artifactKey: Guid(d3afdd78158eb421b8fb05db919be4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/IntroScene 1.unity using Guid(d3afdd78158eb421b8fb05db919be4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b9d23c25d43b0dcef3984b8f83cee3') in 0.001441 seconds 
