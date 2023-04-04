@@ -3,7 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="4641183e-9211-42a4-ad1d-f2cab80fc27f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.XRProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.XRProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/changeReferenceText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/changeReferenceText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Prefabs/Grab/ControllerGrabInteractor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Prefabs/Grab/ControllerGrabInteractor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Prefabs/UseGrab/HandGrabUseInteractor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Prefabs/UseGrab/HandGrabUseInteractor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Prefabs/VelocityCalculators/ControllerVelocityCalculator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Prefabs/VelocityCalculators/ControllerVelocityCalculator.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Prefabs/VelocityCalculators/HandVelocityCalculator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Prefabs/VelocityCalculators/HandVelocityCalculator.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Scripts/Input/Controllers/ControllerRef.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Scripts/Input/Controllers/ControllerRef.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/IntroScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/IntroScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RotateObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RotateObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker1.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/FSTimeGet-9141329a9af2b4378bc000fd9bb35685" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/FSTimeGet-9141329a9af2b4378bc000fd9bb35685" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Temp/FSTimeGet-f4f9c1978ce234c7c977c8fcda11f643" beforeDir="false" afterPath="$PROJECT_DIR$/Temp/FSTimeGet-f4f9c1978ce234c7c977c8fcda11f643" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680549020437</updated>
       <workItem from="1680549022317" duration="3001000" />
-      <workItem from="1680569875325" duration="3217000" />
+      <workItem from="1680569875325" duration="6448000" />
     </task>
     <servers />
   </component>

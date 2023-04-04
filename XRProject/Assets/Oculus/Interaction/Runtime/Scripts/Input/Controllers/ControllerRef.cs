@@ -42,6 +42,7 @@ namespace Oculus.Interaction.Input
         protected virtual void Start()
         {
             this.AssertField(Controller, nameof(Controller));
+            
         }
 
         public Handedness Handedness => Controller.Handedness;
