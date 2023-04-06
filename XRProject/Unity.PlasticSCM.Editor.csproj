@@ -205,8 +205,8 @@
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/Views/Changesets/ChangesetsTab_Operations.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/PlasticPlugin.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/UI/EnumPopupSetting.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/Configuration/CloudEdition/Welcome/CloudEditionWelcomeWindow.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/Views/CreateWorkspace/Dialogs/RepositoryListViewItem.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/Configuration/CloudEdition/Welcome/CloudEditionWelcomeWindow.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/Help/HelpPanel.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/Views/IncomingChanges/Gluon/IncomingChangesTreeHeaderState.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/Views/PendingChanges/DrawCommentTextArea.cs" />
@@ -239,8 +239,8 @@
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/AssetMenu/Dialogs/CheckinDialogOperations.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/Views/PendingChanges/ChangelistTreeViewItem.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/UI/Progress/DrawProgressForViews.cs" />
-    <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/SwitchModeConfirmationDialog.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/UI/Tree/DrawTreeViewItem.cs" />
+    <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/SwitchModeConfirmationDialog.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/UI/UnityMenuItem.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/UI/OverlayRect.cs" />
     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/PlasticSCM/UI/Tree/ListViewItemIds.cs" />
@@ -1042,11 +1042,11 @@
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/Facades/netstandard.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

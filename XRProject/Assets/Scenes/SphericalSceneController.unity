@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OVRControllers
       objectReference: {fileID: 0}
+    - target: {fileID: 6277978437605224438, guid: 8d3da9e25b6da4fff811b4d6cda7d250, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6809774526711940772, guid: 8d3da9e25b6da4fff811b4d6cda7d250, type: 3}
       propertyPath: _cameraRigRef
       value: 
@@ -245,7 +249,7 @@ PrefabInstance:
     - target: {fileID: 3010799801618535434, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6498d4298a35c5c44894b5f194468896, type: 2}
+      objectReference: {fileID: 2100000, guid: 3f0f5f09bae3c400c9653266052ef91f, type: 2}
     - target: {fileID: 3611824376671866732, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -388,15 +392,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8595834173231793252, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.14999999
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 8595834173231793252, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.14999999
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 8595834173231793252, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.14999999
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 8595834173231793252, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_LocalPosition.x
@@ -408,7 +412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8595834173231793252, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.064
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 8595834173231793252, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_LocalRotation.w
@@ -893,7 +897,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.15
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &243478399
 MeshRenderer:
@@ -953,8 +957,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 243478395}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.26700002, y: 1.122, z: 0.06400001}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalPosition: {x: -0.26700002, y: 1.122, z: 0.02}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 576314221}
@@ -1064,7 +1068,7 @@ PrefabInstance:
     - target: {fileID: 3010799801618535434, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6498d4298a35c5c44894b5f194468896, type: 2}
+      objectReference: {fileID: 2100000, guid: 3f0f5f09bae3c400c9653266052ef91f, type: 2}
     - target: {fileID: 3611824376671866732, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -1183,15 +1187,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8595834173231793252, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.24999999
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 8595834173231793252, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.24999999
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 8595834173231793252, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.24999999
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 8595834173231793252, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2089,7 +2093,7 @@ PrefabInstance:
     - target: {fileID: 3010799801618535434, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 6498d4298a35c5c44894b5f194468896, type: 2}
+      objectReference: {fileID: 2100000, guid: 3f0f5f09bae3c400c9653266052ef91f, type: 2}
     - target: {fileID: 3611824376671866732, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -2988,7 +2992,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &3073126221602742591
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,7 +3008,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &3073230320027265489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3061,11 +3065,11 @@ MonoBehaviour:
   requestFaceTrackingPermissionOnStartup: 0
   requestEyeTrackingPermissionOnStartup: 0
   _localDimming: 1
-  _trackingOriginType: 1
+  _trackingOriginType: 0
   usePositionTracking: 1
   useRotationTracking: 1
   useIPDInPositionTracking: 1
-  resetTrackerOnLoad: 0
+  resetTrackerOnLoad: 1
   AllowRecenter: 1
   LateControllerUpdate: 1
   LateLatching: 0
@@ -3257,7 +3261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3073230320032750645}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.566, z: -0.269}
+  m_LocalPosition: {x: 0, y: 1.23, z: -0.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4179,7 +4183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1001 &4055664252456645773
 PrefabInstance:
   m_ObjectHideFlags: 0
