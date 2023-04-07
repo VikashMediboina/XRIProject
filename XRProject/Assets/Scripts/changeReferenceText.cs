@@ -4,16 +4,14 @@ using UnityEngine;
 using TMPro;
 using System.Timers;
 using UnityEngine.Networking;
-using UnityEngine.UI;
-// using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.SceneManagement;
+using Timer = System.Timers.Timer;
 
 public class changeReferenceText : MonoBehaviour
 {
 public TextMeshPro typedText; 
 public TextMeshPro textToEnter; 
 static int  index=0;
-private List<string> textArray =new List<string>(new string[] { "Just playing with you","I did not think we had","Please coordinate with him","On the plane doors closing",
+private List<string> textArray =new List<string>(new string[] { "I did not think we had","Just playing with you","Please coordinate with him","On the plane doors closing",
 "Thanks for checking with me",
 "Take what you can get",
 "I heard it was at noon",
@@ -60,46 +58,36 @@ private List<string> textArray =new List<string>(new string[] { "Just playing wi
 "Just wanted to touch base",
 "It will probably be tomorrow"});
 
-private double[] Wpm;
-private double[] ErrorRate;
+private float[] Wpm = new float[6];
+private float[] ErrorRate = new float[6];
+private float TimeTaken;
+private float StartTime;
+private bool TimeBool=true;
+
 
 private string PID;
 public string Scene_No;
-//private double Err_Rate;
 private int user_Rating;
 private string url="https://neu.co1.qualtrics.com/jfe/form/SV_3fT8qgIOPUgibki";
-private Timer Avg_timer;
-private static int Total_Timer;
 public TextMeshPro buttons;
+
     // Start is called before the first frame update
     void Start()
     {
         PID = PlayerPrefs.GetString("PID");
-        //Err_Rate = 0;
         user_Rating = 9;
         url = "https://neu.co1.qualtrics.com/jfe/form/SV_3fT8qgIOPUgibki";
         textToEnter.text=textArray[index];
-        Total_Timer = 0;
-        this.timerHandler();
     }
-
-    private void timerHandler()
+    void Update()
     {
-        Avg_timer = new Timer(1000);
-        Avg_timer.Elapsed += new ElapsedEventHandler(OnTimer);
-        Avg_timer.Enabled = true;
-        Avg_timer.AutoReset = false;
+        if (typedText.text != "Enter Text..." && TimeBool)
+        {
+            StartTime = Time.deltaTime;
+            TimeBool = false;
+        }
         
     }
-
-    public static void OnTimer(object source, ElapsedEventArgs e)
-    {
-        Total_Timer += Total_Timer;
-        Timer theTimer = (Timer)source;
-        theTimer.Interval += 1000;
-        theTimer.Enabled = true;
-    }
-    
 
     public void TaskOnClick()
     {
@@ -110,35 +98,36 @@ public TextMeshPro buttons;
             if (index% 6 == 4)
             {
                 buttons.text = "Submit";
-                Avg_timer.Stop();
-                //Wpm[index] = CalculateWpm(typedText.text, Total_Timer);
-                //ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
-                Total_Timer = 0;
+                
+                TimeTaken=Time.deltaTime-StartTime;
+                Wpm[index] = CalculateWpm(typedText.text, TimeTaken);
+                ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
+
                 index += 1;
                 textToEnter.text = textArray[index];
                 typedText.text = "Enter Text...";
-                Avg_timer.Start();
+                TimeBool = true;
+
             }
             else if (index%6 == 5)
             {
-                Avg_timer.Stop(); 
-                //Wpm[index] = CalculateWpm(typedText.text, Total_Timer);
-                //ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
+                TimeTaken=Time.deltaTime-StartTime;
+                Wpm[index] = CalculateWpm(typedText.text, TimeTaken);
+                ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
                 StartCoroutine(sendQualtricsData());
                 index += 1;
                 GetComponent<SceneSelector>().LoadNextScene();
-                //SceneManager.LoadScene("SelectSeen");
             }
             else
             {
-                Avg_timer.Stop();
-                //Wpm[index] = CalculateWpm(typedText.text, Total_Timer);
-                //ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
-                Total_Timer = 0;
+                TimeTaken=Time.deltaTime-StartTime;
+                Wpm[index] = CalculateWpm(typedText.text, TimeTaken);
+                ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
+
                 index += 1;
                 textToEnter.text = textArray[index];
                 typedText.text = "Enter Text...";
-                Avg_timer.Start();
+                TimeBool = true;
             }
 
 
@@ -155,11 +144,10 @@ public TextMeshPro buttons;
         survey.AddField("Avg_Type_Time",CalculateAverage(Wpm).ToString());
         survey.AddField("Avg_Error_Rate", CalculateAverage(ErrorRate).ToString());
         survey.AddField("User_Access_Rating", user_Rating);
-        Debug.Log(url);
+        //Debug.Log(url);
         UnityWebRequest form = UnityWebRequest.Post(url, survey);
-        Debug.Log(form.ToString());
-        //  Total_Timer = 0;
-        //  Err_Rate=0;
+        //Debug.Log(form.ToString());
+
         yield return form.SendWebRequest();
     }
    
@@ -198,24 +186,24 @@ public TextMeshPro buttons;
        }
        return d[str1.Length, str2.Length];
    }
-    
+   
    private static float CalculateWpm(string text, float time)
    {
        int numChars = text.Length;
        float wpm = (numChars - 1) / time * 60f * 0.2f;
        return wpm;
    }
-   private static double CalculateAverage(double[] values)
+   private static float CalculateAverage(float[] values)
    {
        int numValues = values.Length;
-       double sum = 0;
+       float sum = 0;
 
        for (int i = 0; i < numValues; i++)
        {
            sum += values[i];
        }
 
-       double average = sum / numValues;
+       float average = sum / numValues;
        return average;
    }
 }
