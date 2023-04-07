@@ -104,9 +104,28 @@
 			<method name="NewTextEntry"/>
 			<method name="NewTextEntry"/>
 		</type>
+		<type fullname="RotateObject">
+			<method name="RotateLeft"/>
+			<method name="RotateRight"/>
+		</type>
+		<type fullname="SceneSelectors">
+			<method name="SelectScene"/>
+			<method name="SelectScene"/>
+			<method name="SelectScene"/>
+			<method name="SelectScene"/>
+		</type>
 	</assembly>
 	<assembly fullname="Oculus.Interaction.OVR.Samples" ignoreIfMissing="1">
 		<type fullname="Oculus.Interaction.AudioTrigger">
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
 			<method name="PlayAudio"/>
 			<method name="PlayAudio"/>
 			<method name="PlayAudio"/>
@@ -285,6 +304,12 @@
 			<method name="Play"/>
 			<method name="Play"/>
 			<method name="Play"/>
+		</type>
+	</assembly>
+	<assembly fullname="UnityEngine.CoreModule" ignoreIfMissing="1">
+		<type fullname="UnityEngine.Renderer">
+			<method name="set_enabled"/>
+			<method name="set_enabled"/>
 		</type>
 	</assembly>
 </linker>

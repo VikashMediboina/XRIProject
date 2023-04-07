@@ -12,6 +12,18 @@
 		<type fullname="Oculus.Interaction.PoseDetection.FingerFeatureStateProvider/FingerStateThresholds" preserve="nothing" serialized="true"/>
 		<type fullname="Oculus.Interaction.PoseDetection.FingerFeatureStateThreshold" preserve="nothing" serialized="true"/>
 		<type fullname="Oculus.Interaction.PoseDetection.FingerFeatureThresholds" preserve="nothing" serialized="true"/>
+		<type fullname="Oculus.Interaction.PoseDetection.JointRotationActiveState/JointRotationFeatureConfig" preserve="nothing" serialized="true"/>
+		<type fullname="Oculus.Interaction.PoseDetection.JointRotationActiveState/JointRotationFeatureConfigList" preserve="nothing" serialized="true"/>
+		<type fullname="Oculus.Interaction.PoseDetection.JointVelocityActiveState/JointVelocityFeatureConfig" preserve="nothing" serialized="true"/>
+		<type fullname="Oculus.Interaction.PoseDetection.JointVelocityActiveState/JointVelocityFeatureConfigList" preserve="nothing" serialized="true"/>
+		<type fullname="Oculus.Interaction.PoseDetection.Sequence/ActivationStep" preserve="nothing" serialized="true"/>
+		<type fullname="Oculus.Interaction.PoseDetection.ShapeRecognizer/FingerFeatureConfig" preserve="nothing" serialized="true"/>
+		<type fullname="Oculus.Interaction.PoseDetection.ShapeRecognizer/FingerFeatureConfigList" preserve="nothing" serialized="true"/>
+		<type fullname="Oculus.Interaction.PoseDetection.TransformConfig" preserve="nothing" serialized="true"/>
+		<type fullname="Oculus.Interaction.PoseDetection.TransformFeatureConfig" preserve="nothing" serialized="true"/>
+		<type fullname="Oculus.Interaction.PoseDetection.TransformFeatureConfigList" preserve="nothing" serialized="true"/>
+		<type fullname="Oculus.Interaction.PoseDetection.TransformFeatureStateThreshold" preserve="nothing" serialized="true"/>
+		<type fullname="Oculus.Interaction.PoseDetection.TransformFeatureThresholds" preserve="nothing" serialized="true"/>
 		<type fullname="Oculus.Interaction.ProgressCurve" preserve="nothing" serialized="true"/>
 	</assembly>
 	<assembly fullname="Oculus.Interaction.OVR.Samples">

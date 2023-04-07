@@ -22,13 +22,18 @@
 		<type fullname="NewText" preserve="nothing"/>
 		<type fullname="RotateObject" preserve="nothing"/>
 		<type fullname="SceneSelector" preserve="nothing"/>
+		<type fullname="SceneSelectors" preserve="nothing"/>
 		<type fullname="Translate" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Oculus.Interaction">
+		<type fullname="Oculus.Interaction.ActiveStateGroup" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.ActiveStateSelector" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.ActiveStateTracker" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.ActiveStateUnityEventWrapper" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.BestHoverInteractorGroup" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.ControllerActiveState" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.ControllerPointerPose" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.FingerFeatureStateProviderRef" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.HandActiveState" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.HandJoint" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.HandPokeLimiterVisual" preserve="nothing"/>
@@ -44,19 +49,31 @@
 		<type fullname="Oculus.Interaction.Input.SyntheticHand" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.InteractableColorVisual" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.InteractableUnityEventWrapper" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.JointDeltaProviderRef" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.MaterialPropertyBlockEditor" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.PointableUnityEventWrapper" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.PokeInteractable" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.PokeInteractableVisual" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.PokeInteractor" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.PoseDetection.ColliderContainsHandJointActiveState" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.PoseDetection.FingerFeatureStateProvider" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.PoseDetection.FingerFeatureStateThresholds" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.PoseDetection.JointDeltaProvider" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.PoseDetection.JointRotationActiveState" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.PoseDetection.JointVelocityActiveState" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.PoseDetection.Sequence" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.PoseDetection.SequenceActiveState" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.PoseDetection.ShapeRecognizer" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.PoseDetection.ShapeRecognizerActiveState" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.PoseDetection.TransformFeatureStateProvider" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.PoseDetection.TransformFeatureStateThresholds" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.PoseDetection.TransformRecognizerActiveState" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.RoundedBoxProperties" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.SelectorUnityEventWrapper" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.Surfaces.BoundsClipper" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.Surfaces.ClippedPlaneSurface" preserve="nothing"/>
 		<type fullname="Oculus.Interaction.Surfaces.PlaneSurface" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.TransformFeatureStateProviderRef" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Oculus.Interaction.OVR">
 		<type fullname="Oculus.Interaction.Input.AnimatedHandOVR" preserve="nothing"/>
@@ -71,6 +88,7 @@
 	</assembly>
 	<assembly fullname="Oculus.Interaction.OVR.Samples">
 		<type fullname="Oculus.Interaction.AudioTrigger" preserve="nothing"/>
+		<type fullname="Oculus.Interaction.Samples.LookAtTarget" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Oculus.Spatializer">
 		<type fullname="ONSPSettings" preserve="nothing"/>
@@ -78,6 +96,7 @@
 	<assembly fullname="Oculus.VR">
 		<type fullname="OVRCameraRig" preserve="nothing"/>
 		<type fullname="OVRControllerHelper" preserve="nothing"/>
+		<type fullname="OVRCustomSkeleton" preserve="nothing"/>
 		<type fullname="OVRHand" preserve="nothing"/>
 		<type fullname="OVRHeadsetEmulator" preserve="nothing"/>
 		<type fullname="OVRManager" preserve="nothing"/>
@@ -86,6 +105,7 @@
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro">
 		<type fullname="TMPro.TextMeshPro" preserve="nothing"/>
+		<type fullname="TMPro.TextMeshProUGUI" preserve="nothing"/>
 		<type fullname="TMPro.TMP_FontAsset" preserve="nothing"/>
 		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
 		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>
@@ -157,6 +177,9 @@
 		<type fullname="UnityEngine.EventSystems.EventSystem" preserve="nothing"/>
 		<type fullname="UnityEngine.EventSystems.StandaloneInputModule" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.CanvasScaler" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.ContentSizeFitter" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.GraphicRaycaster" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.Image" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="nothing"/>
 	</assembly>
 </linker>

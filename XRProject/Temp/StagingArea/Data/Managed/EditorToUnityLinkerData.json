@@ -137,6 +137,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -151,6 +152,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -186,6 +188,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -207,6 +210,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -228,6 +232,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -242,7 +247,28 @@
         {
             "managedAssemblyName": "Oculus.Interaction.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.ActiveStateGroup",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.ActiveStateSelector",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "Oculus.Interaction.ActiveStateTracker",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.ActiveStateUnityEventWrapper",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -271,6 +297,13 @@
             "managedAssemblyName": "Oculus.Interaction.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Oculus.Interaction.ControllerPointerPose",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.FingerFeatureStateProviderRef",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -445,6 +478,13 @@
         {
             "managedAssemblyName": "Oculus.Interaction.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.JointDeltaProviderRef",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "Oculus.Interaction.MaterialPropertyBlockEditor",
             "moduleName": "",
             "usedInScenes": []
@@ -480,6 +520,13 @@
         {
             "managedAssemblyName": "Oculus.Interaction.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.PoseDetection.ColliderContainsHandJointActiveState",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "Oculus.Interaction.PoseDetection.FingerFeatureStateProvider",
             "moduleName": "",
             "usedInScenes": []
@@ -501,6 +548,48 @@
         {
             "managedAssemblyName": "Oculus.Interaction.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.PoseDetection.JointRotationActiveState",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.PoseDetection.JointVelocityActiveState",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.PoseDetection.Sequence",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.PoseDetection.SequenceActiveState",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.PoseDetection.ShapeRecognizer",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.PoseDetection.ShapeRecognizerActiveState",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "Oculus.Interaction.PoseDetection.TransformFeatureStateProvider",
             "moduleName": "",
             "usedInScenes": []
@@ -508,7 +597,35 @@
         {
             "managedAssemblyName": "Oculus.Interaction.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.PoseDetection.TransformFeatureStateThresholds",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.PoseDetection.TransformRecognizerActiveState",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "Oculus.Interaction.RoundedBoxProperties",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.OVR.Samples.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.Samples.LookAtTarget",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.SelectorUnityEventWrapper",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -534,6 +651,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Oculus.Interaction.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Oculus.Interaction.TransformFeatureStateProviderRef",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "Oculus.Spatializer.dll",
             "nativeClass": "",
             "fullManagedTypeName": "ONSPSettings",
@@ -551,6 +675,13 @@
             "managedAssemblyName": "Oculus.VR.dll",
             "nativeClass": "",
             "fullManagedTypeName": "OVRControllerHelper",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Oculus.VR.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "OVRCustomSkeleton",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -620,6 +751,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -628,6 +760,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "SceneSelector",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "SceneSelectors",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -649,6 +788,13 @@
             "managedAssemblyName": "Unity.TextMeshPro.dll",
             "nativeClass": "",
             "fullManagedTypeName": "TMPro.TextMeshPro",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.TextMeshPro.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "TMPro.TextMeshProUGUI",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -711,6 +857,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -746,6 +893,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -802,6 +950,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -816,6 +965,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -830,6 +980,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -844,6 +995,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -858,6 +1010,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -872,6 +1025,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -886,6 +1040,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -900,6 +1055,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -914,6 +1070,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -928,6 +1085,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -954,6 +1112,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -968,6 +1127,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -982,6 +1142,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1019,6 +1180,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1033,6 +1195,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1047,6 +1210,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1061,6 +1225,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1075,6 +1240,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1089,6 +1255,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1103,6 +1270,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1117,6 +1285,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1131,6 +1300,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1145,6 +1315,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1159,6 +1330,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1180,6 +1352,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1194,6 +1367,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1208,6 +1382,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1229,6 +1404,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1243,6 +1419,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1257,6 +1434,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1271,6 +1449,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1306,6 +1485,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1320,6 +1500,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1334,6 +1515,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1348,6 +1530,7 @@
                 "Assets/Scenes/IntroScene.unity",
                 "Assets/Scenes/QwertySceneController.unity",
                 "Assets/Scenes/QwertyScenePoke.unity",
+                "Assets/Scenes/SelectSeen.unity",
                 "Assets/Scenes/SphericalSceneController.unity",
                 "Assets/Scenes/SphericalScenePoke.unity"
             ]
@@ -1362,7 +1545,28 @@
         {
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.ContentSizeFitter",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.GraphicRaycaster",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Image",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.VerticalLayoutGroup",
             "moduleName": "",
             "usedInScenes": []
         },
