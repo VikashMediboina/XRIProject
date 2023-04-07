@@ -3387,5 +3387,318 @@ Received Import Request.
   path: Assets/Scenes/QwertyScenePoke.unity
   artifactKey: Guid(e487fd038a7c0411499a6c4d391f89e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/QwertyScenePoke.unity using Guid(e487fd038a7c0411499a6c4d391f89e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c74f525fc59d76ded7bafcc001b962af') in 0.001976 seconds 
+<<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
+=======
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 10.48 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Unloading 57 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (22.9 KB). Loaded Objects now: 5654.
+Memory consumption went from 106.7 MB to 106.6 MB.
+Total: 2.945750 ms (FindLiveObjects: 0.183083 ms CreateObjectMapping: 0.061000 ms MarkObjects: 2.671042 ms  DeleteObjects: 0.030500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 151.461938 seconds.
+  path: Assets/Prefab/ButtonPoke.prefab
+  artifactKey: Guid(96a709b07e0a74ef98d9bfdbe5f19076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/ButtonPoke.prefab using Guid(96a709b07e0a74ef98d9bfdbe5f19076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d455eac67b66e5d704210fadc02977c') in 0.080453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 867.538147 seconds.
+  path: Assets/Translate.cs
+  artifactKey: Guid(4c2188936acb34eeabb163b68ab0803a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Translate.cs using Guid(4c2188936acb34eeabb163b68ab0803a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77afe0f82f457c6c562b5f908ddf497d') in 0.128719 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002544 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x17fb87000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  0.785 seconds
+Domain Reload Profiling:
+	ReloadAssembly (785ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (608ms)
+			LoadAssemblies (41ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (272ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (234ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (42ms)
+				ProcessInitializeOnLoadAttributes (159ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on WitService
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 2.81 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Unloading 4967 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (23.0 KB). Loaded Objects now: 5657.
+Memory consumption went from 208.6 MB to 208.6 MB.
+Total: 2.493792 ms (FindLiveObjects: 0.159583 ms CreateObjectMapping: 0.061625 ms MarkObjects: 2.246917 ms  DeleteObjects: 0.025541 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002258 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x17fb87000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  0.730 seconds
+Domain Reload Profiling:
+	ReloadAssembly (730ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (567ms)
+			LoadAssemblies (58ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (209ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (236ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (43ms)
+				ProcessInitializeOnLoadAttributes (162ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+OnLevelWasLoaded was found on WitService
+This message has been deprecated and will be removed in a later version of Unity.
+Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 2.09 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 4967 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (23.0 KB). Loaded Objects now: 5661.
+Memory consumption went from 208.6 MB to 208.6 MB.
+Total: 2.568791 ms (FindLiveObjects: 0.187416 ms CreateObjectMapping: 0.063959 ms MarkObjects: 2.287458 ms  DeleteObjects: 0.029416 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 946.468159 seconds.
+  path: Assets/Prefab/Empty.prefab
+  artifactKey: Guid(3cd8335823f28428d842606c22e2ce92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Empty.prefab using Guid(3cd8335823f28428d842606c22e2ce92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7cc407b72934b5daa4d8bf48d0eeefe') in 0.093362 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.183896 seconds.
+  path: Assets/Scenes/SphericalSceneController.unity
+  artifactKey: Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SphericalSceneController.unity using Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7112952ad2eeb3d76cf0f743eaa1ae4') in 0.000950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 318.833797 seconds.
+  path: Assets/Scenes/SphericalScenePoke.unity
+  artifactKey: Guid(6b034a661217f46cda838946851d1d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SphericalScenePoke.unity using Guid(6b034a661217f46cda838946851d1d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d73420e6e052657db7ee677f99a3d12') in 0.001453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46.292108 seconds.
+  path: Assets/Scenes/SphericalSceneController.unity
+  artifactKey: Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SphericalSceneController.unity using Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90b9308f10e27ba28ba9ffb676a236fa') in 0.001350 seconds 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 15.36 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Unloading 57 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (22.9 KB). Loaded Objects now: 5662.
+Memory consumption went from 110.3 MB to 110.3 MB.
+Total: 14.216750 ms (FindLiveObjects: 0.181250 ms CreateObjectMapping: 0.060416 ms MarkObjects: 13.916167 ms  DeleteObjects: 0.057958 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 463.334500 seconds.
+  path: Assets/Scenes/SphericalScenePoke.unity
+  artifactKey: Guid(6b034a661217f46cda838946851d1d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SphericalScenePoke.unity using Guid(6b034a661217f46cda838946851d1d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97f4429158809e935734d885c9349de4') in 0.002095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.673418 seconds.
+  path: Assets/Scenes/SphericalSceneController.unity
+  artifactKey: Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SphericalSceneController.unity using Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b70b95d25a4bfb62571d08b0bb2457f') in 0.000864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 118.721183 seconds.
+  path: Assets/Scenes/SphericalScenePoke.unity
+  artifactKey: Guid(6b034a661217f46cda838946851d1d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SphericalScenePoke.unity using Guid(6b034a661217f46cda838946851d1d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19f3b752c26a8fb79a293a4080c23087') in 0.001068 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.747190 seconds.
+  path: Assets/Scenes/SphericalSceneController.unity
+  artifactKey: Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SphericalSceneController.unity using Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '996366153ee69b642aa100c7499d369b') in 0.001569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 99.281554 seconds.
+  path: Assets/Scenes/QwertySceneController.unity
+  artifactKey: Guid(e155669f1323fd341a1e607eeffb1f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/QwertySceneController.unity using Guid(e155669f1323fd341a1e607eeffb1f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e5e7830af2a09a827187af14ca33d44') in 0.000707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 190.295867 seconds.
+  path: Assets/Scenes/SphericalScenePoke.unity
+  artifactKey: Guid(6b034a661217f46cda838946851d1d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SphericalScenePoke.unity using Guid(6b034a661217f46cda838946851d1d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc52aa2f20f4c7acb691ba8c1971746d') in 0.001163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 98.022982 seconds.
+  path: Assets/Prefab/Text (TMP).prefab
+  artifactKey: Guid(f21847ce1bd65463bb04b6055d6c94fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Text (TMP).prefab using Guid(f21847ce1bd65463bb04b6055d6c94fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '229183a4668a9e1a424a678a36be3d5e') in 0.022797 seconds 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 11.83 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Unloading 57 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (22.9 KB). Loaded Objects now: 5662.
+Memory consumption went from 110.3 MB to 110.3 MB.
+Total: 8.322542 ms (FindLiveObjects: 0.182084 ms CreateObjectMapping: 0.060416 ms MarkObjects: 8.035542 ms  DeleteObjects: 0.043750 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 188.815269 seconds.
+  path: Assets/Scenes/SphericalSceneController.unity
+  artifactKey: Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SphericalSceneController.unity using Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ae623cb053b0c1692dd7e948bfe27f4') in 0.002082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.253078 seconds.
+  path: Assets/Prefab/Sphere (1).prefab
+  artifactKey: Guid(d98d22e5c7e71435bb76beab0ec47588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/Sphere (1).prefab using Guid(d98d22e5c7e71435bb76beab0ec47588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '420f0a3568f61290df8c1bb673eb8a9b') in 0.010966 seconds 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 3.50 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 57 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (22.9 KB). Loaded Objects now: 5663.
+Memory consumption went from 110.4 MB to 110.3 MB.
+Total: 2.965417 ms (FindLiveObjects: 0.156583 ms CreateObjectMapping: 0.056875 ms MarkObjects: 2.715834 ms  DeleteObjects: 0.035792 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+>>>>>>> 11d004a (added keyboard movment script)

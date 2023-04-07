@@ -12,8 +12,12 @@
 			<method name="TaskOnClick"/>
 			<method name="TaskOnClick"/>
 		</type>
+		<type fullname="GenderChoice">
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+		</type>
 		<type fullname="IntroButton">
-			<method name="TaskOnClick"/>
 			<method name="TaskOnClick"/>
 		</type>
 		<type fullname="IntroNumpad">
@@ -39,6 +43,10 @@
 			<method name="taskOnClick"/>
 			<method name="taskOnClick"/>
 			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+		</type>
+		<type fullname="KeyboardChoice">
 			<method name="taskOnClick"/>
 			<method name="taskOnClick"/>
 		</type>
@@ -106,6 +114,10 @@
 		</type>
 		<type fullname="RotateObject">
 			<method name="RotateLeft"/>
+			<method name="RotateLeft"/>
+			<method name="RotateLeft"/>
+			<method name="RotateRight"/>
+			<method name="RotateRight"/>
 			<method name="RotateRight"/>
 		</type>
 		<type fullname="SceneSelectors">
@@ -114,9 +126,67 @@
 			<method name="SelectScene"/>
 			<method name="SelectScene"/>
 		</type>
+		<type fullname="Translate">
+			<method name="translateForward"/>
+			<method name="translateForward"/>
+			<method name="translateForward"/>
+			<method name="translateForward"/>
+			<method name="translateForward"/>
+			<method name="translateForward"/>
+			<method name="translateForward"/>
+			<method name="translateForward"/>
+		</type>
+		<type fullname="VRChoice">
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+			<method name="taskOnClick"/>
+		</type>
 	</assembly>
 	<assembly fullname="Oculus.Interaction.OVR.Samples" ignoreIfMissing="1">
 		<type fullname="Oculus.Interaction.AudioTrigger">
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
+			<method name="PlayAudio"/>
 			<method name="PlayAudio"/>
 			<method name="PlayAudio"/>
 			<method name="PlayAudio"/>
