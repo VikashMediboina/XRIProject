@@ -460,7 +460,7 @@ PrefabInstance:
     - target: {fileID: 4689976321360835397, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: _whenHover.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 65284408}
     - target: {fileID: 4689976321360835397, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: _whenHover.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -491,7 +491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4689976321360835397, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: _whenHover.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: IntroButton, Assembly-CSharp
+      value: EndButton, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4689976321360835397, guid: b142a82e757184091b598576d499d393, type: 3}
       propertyPath: _whenHover.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument

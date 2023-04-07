@@ -8,55 +8,60 @@ using Timer = System.Timers.Timer;
 
 public class changeReferenceText : MonoBehaviour
 {
-public TextMeshPro typedText; 
-public TextMeshPro textToEnter; 
-static int  index=0;
-private List<string> textArray =new List<string>(new string[] { "I did not think we had","Just playing with you","Please coordinate with him","On the plane doors closing",
-"Thanks for checking with me",
-"Take what you can get",
-"I heard it was at noon",
-"Good to know it exists",
-"Thanks again for your help",
-"I will handle this afternoon",
-"I have ten minutes then",
-"I would like to discuss",
-"Let me know if I can help",
-"It is not working very well",
-"I am glad she likes her tree",
-"I am monitoring email",
-"I will send you minutes",
-"Need before board meeting",
-"Please revise accordingly",
-"I have never worked with her",
-"Email the consent to me",
-"It reads like she is in",
-"Perhaps there was a glitch",
-"I would like to attend if so",
-"Pressure to finish my review",
-"Please set something up",
-"Probably will be working",
-"I was planning to attend",
-"I will be thinking of you",
-"Hope you had a good weekend",
-"No need to send to FL",
-"I am glad you liked it",
-"I am glad you are involved",
-"Make sure they are current",
-"Thus have nothing to destroy",
-"I am not aware of any",
-"We will keep you posted",
-"You can reply via email",
-"I am on a conference call",
-"A letter is being sent today",
-"Need to watch closely",
-"Your voice cheered me up",
-"I will email later tonight",
-"We have lots of paper stuff",
-"I am out of town on business",
-"I vote for the latter",
-"Both of us are still here",
-"Just wanted to touch base",
-"It will probably be tomorrow"});
+    public TextMeshPro typedText; 
+    public TextMeshPro textToEnter;
+    public GameObject outputBoard;
+    public GameObject numpad;
+    public GameObject direction;
+    public GameObject keyboard;
+    public TextMeshPro infoText;
+    static int  index=0;
+    private List<string> textArray =new List<string>(new string[] { "I did not think we had","Just playing with you","Please coordinate with him","On the plane doors closing",
+    "Thanks for checking with me",
+    "Take what you can get",
+    "I heard it was at noon",
+    "Good to know it exists",
+    "Thanks again for your help",
+    "I will handle this afternoon",
+    "I have ten minutes then",
+    "I would like to discuss",
+    "Let me know if I can help",
+    "It is not working very well",
+    "I am glad she likes her tree",
+    "I am monitoring email",
+    "I will send you minutes",
+    "Need before board meeting",
+    "Please revise accordingly",
+    "I have never worked with her",
+    "Email the consent to me",
+    "It reads like she is in",
+    "Perhaps there was a glitch",
+    "I would like to attend if so",
+    "Pressure to finish my review",
+    "Please set something up",
+    "Probably will be working",
+    "I was planning to attend",
+    "I will be thinking of you",
+    "Hope you had a good weekend",
+    "No need to send to FL",
+    "I am glad you liked it",
+    "I am glad you are involved",
+    "Make sure they are current",
+    "Thus have nothing to destroy",
+    "I am not aware of any",
+    "We will keep you posted",
+    "You can reply via email",
+    "I am on a conference call",
+    "A letter is being sent today",
+    "Need to watch closely",
+    "Your voice cheered me up",
+    "I will email later tonight",
+    "We have lots of paper stuff",
+    "I am out of town on business",
+    "I vote for the latter",
+    "Both of us are still here",
+    "Just wanted to touch base",
+    "It will probably be tomorrow"});
 
 private float[] Wpm = new float[6];
 private float[] ErrorRate = new float[6];
@@ -67,7 +72,6 @@ private bool TimeBool=true;
 
 private string PID;
 public string Scene_No;
-private int user_Rating;
 private string url="https://neu.co1.qualtrics.com/jfe/form/SV_3fT8qgIOPUgibki";
 public TextMeshPro buttons;
 
@@ -75,7 +79,6 @@ public TextMeshPro buttons;
     void Start()
     {
         PID = PlayerPrefs.GetString("PID");
-        user_Rating = 9;
         url = "https://neu.co1.qualtrics.com/jfe/form/SV_3fT8qgIOPUgibki";
         textToEnter.text=textArray[index];
     }
@@ -95,27 +98,37 @@ public TextMeshPro buttons;
         {
             OVRInput.SetControllerLocalizedVibration(OVRInput.HapticsLocation.Index, 0f, 0.1f, OVRInput.Controller.Active);
         
-            if (index% 6 == 4)
+            if (index % 7 == 4)
             {
                 buttons.text = "Submit";
                 
                 TimeTaken=Time.deltaTime-StartTime;
                 Wpm[index] = CalculateWpm(typedText.text, TimeTaken);
                 ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
-
                 index += 1;
                 textToEnter.text = textArray[index];
                 typedText.text = "Enter Text...";
                 TimeBool = true;
 
             }
-            else if (index%6 == 5)
+            else if (index % 7 == 5)
             {
                 TimeTaken=Time.deltaTime-StartTime;
                 Wpm[index] = CalculateWpm(typedText.text, TimeTaken);
                 ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
-                StartCoroutine(sendQualtricsData());
+                numpad.SetActive(true);
+                infoText.text = "Kindly rest for 2-3 mintues before submission";
+                textToEnter.text = "On the sacle of 1-9 Please rate how accessible was the keyboard?";
+                textToEnter.fontSize = 12;
+                typedText.enabled = false;
+                outputBoard.SetActive(false);
+                direction.SetActive(false);
+                keyboard.SetActive(false);
                 index += 1;
+            }
+            else if(index % 7 == 6)
+            {
+                StartCoroutine(sendQualtricsData());
                 GetComponent<SceneSelector>().LoadNextScene();
             }
             else
@@ -123,7 +136,6 @@ public TextMeshPro buttons;
                 TimeTaken=Time.deltaTime-StartTime;
                 Wpm[index] = CalculateWpm(typedText.text, TimeTaken);
                 ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
-
                 index += 1;
                 textToEnter.text = textArray[index];
                 typedText.text = "Enter Text...";
@@ -143,7 +155,7 @@ public TextMeshPro buttons;
         survey.AddField("Scene_No", Scene_No);
         survey.AddField("Avg_Type_Time",CalculateAverage(Wpm).ToString());
         survey.AddField("Avg_Error_Rate", CalculateAverage(ErrorRate).ToString());
-        survey.AddField("User_Access_Rating", user_Rating);
+        survey.AddField("User_Access_Rating", SceneNumpad.selection);
         //Debug.Log(url);
         UnityWebRequest form = UnityWebRequest.Post(url, survey);
         //Debug.Log(form.ToString());
