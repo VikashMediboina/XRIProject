@@ -5,6 +5,7 @@ using TMPro;
 using System.Timers;
 using UnityEngine.Networking;
 using Timer = System.Timers.Timer;
+using UnityEngine.SceneManagement;
 
 public class changeReferenceText : MonoBehaviour
 {
@@ -86,7 +87,7 @@ public TextMeshPro buttons;
     {
         if (typedText.text != "Enter Text..." && TimeBool)
         {
-            StartTime = Time.deltaTime;
+            StartTime = Time.time;
             TimeBool = false;
         }
         
@@ -96,15 +97,15 @@ public TextMeshPro buttons;
     {
         if (typedText.text!="" && typedText.text != "Enter Text...")
         {
-            OVRInput.SetControllerLocalizedVibration(OVRInput.HapticsLocation.Index, 0f, 0.1f, OVRInput.Controller.Active);
+            OVRInput.SetControllerLocalizedVibration(OVRInput.HapticsLocation.Index, 0f, 0.03f, OVRInput.Controller.Active);
         
             if (index % 7 == 4)
             {
                 buttons.text = "Submit";
                 
-                TimeTaken=Time.deltaTime-StartTime;
-                Wpm[index] = CalculateWpm(typedText.text, TimeTaken);
-                ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
+                TimeTaken=Time.time-StartTime;
+                Wpm[index%7] = CalculateWpm(typedText.text, TimeTaken);
+                ErrorRate[index%7] = CalculateErrorRate(textArray[index], typedText.text);
                 index += 1;
                 textToEnter.text = textArray[index];
                 typedText.text = "Enter Text...";
@@ -113,9 +114,9 @@ public TextMeshPro buttons;
             }
             else if (index % 7 == 5)
             {
-                TimeTaken=Time.deltaTime-StartTime;
-                Wpm[index] = CalculateWpm(typedText.text, TimeTaken);
-                ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
+                TimeTaken = Time.time - StartTime;
+                Wpm[index%7] = CalculateWpm(typedText.text, TimeTaken);
+                ErrorRate[index%7] = CalculateErrorRate(textArray[index], typedText.text);
                 numpad.SetActive(true);
                 infoText.text = "Kindly rest for 2-3 mintues before submission";
                 textToEnter.text = "On the sacle of 1-9 Please rate how accessible was the keyboard?";
@@ -129,13 +130,15 @@ public TextMeshPro buttons;
             else if(index % 7 == 6)
             {
                 StartCoroutine(sendQualtricsData());
-                GetComponent<SceneSelector>().LoadNextScene();
+                index += 1;
+                //GetComponent<SceneSelector>().LoadNextScene();
+                SceneManager.LoadScene("SceneManagment");
             }
             else
             {
-                TimeTaken=Time.deltaTime-StartTime;
-                Wpm[index] = CalculateWpm(typedText.text, TimeTaken);
-                ErrorRate[index] = CalculateErrorRate(textArray[index], typedText.text);
+                TimeTaken = Time.time - StartTime;
+                Wpm[index%7] = CalculateWpm(typedText.text, TimeTaken);
+                ErrorRate[index%7] = CalculateErrorRate(textArray[index], typedText.text);
                 index += 1;
                 textToEnter.text = textArray[index];
                 typedText.text = "Enter Text...";

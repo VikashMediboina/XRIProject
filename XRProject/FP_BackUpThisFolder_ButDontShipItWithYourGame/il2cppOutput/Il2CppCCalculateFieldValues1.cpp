@@ -25165,6 +25165,15 @@ struct DotGridProperties_t01389AEE2D79A5F50ED60250ADA887D3804F8A6F  : public Mon
 	int32_t ____dimensionsShaderID_11;
 };
 
+// EndNumpad
+struct EndNumpad_t0A5A1F96E103BDBC5F393C1D60348831D4C0D107  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// TMPro.TextMeshPro EndNumpad::button
+	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___button_4;
+	// TMPro.TextMeshPro EndNumpad::outputText
+	TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* ___outputText_5;
+};
+
 // Oculus.Platform.Samples.EntitlementCheck.EntitlementCheck
 struct EntitlementCheck_tB040EAF15EA94AEE91DC479969A1284415FF613D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -39016,6 +39025,10 @@ struct DebugUIBuilder_tC18B19AE08445BA1378C7DABB0E4858217E02E71_StaticFields
 
 // Oculus.Interaction.DotGridProperties
 
+// EndNumpad
+
+// EndNumpad
+
 // Oculus.Platform.Samples.EntitlementCheck.EntitlementCheck
 struct EntitlementCheck_tB040EAF15EA94AEE91DC479969A1284415FF613D_StaticFields
 {
@@ -46034,6 +46047,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5912[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5914[8] = 
 {
 	static_cast<int32_t>(offsetof(BhapticsOculusPointing_tFAFA44CE17BBCD045CD5787FD334EF81E0917EC8, ___shootPoint_4)),static_cast<int32_t>(offsetof(BhapticsOculusPointing_tFAFA44CE17BBCD045CD5787FD334EF81E0917EC8, ___rayLayerMask_5)),static_cast<int32_t>(offsetof(BhapticsOculusPointing_tFAFA44CE17BBCD045CD5787FD334EF81E0917EC8, ___button_6)),static_cast<int32_t>(offsetof(BhapticsOculusPointing_tFAFA44CE17BBCD045CD5787FD334EF81E0917EC8, ___laserMaterial_7)),static_cast<int32_t>(offsetof(BhapticsOculusPointing_tFAFA44CE17BBCD045CD5787FD334EF81E0917EC8, ___laser_8)),static_cast<int32_t>(offsetof(BhapticsOculusPointing_tFAFA44CE17BBCD045CD5787FD334EF81E0917EC8, ___destinationPoint_9)),static_cast<int32_t>(offsetof(BhapticsOculusPointing_tFAFA44CE17BBCD045CD5787FD334EF81E0917EC8, ___rayDistance_10)),static_cast<int32_t>(offsetof(BhapticsOculusPointing_tFAFA44CE17BBCD045CD5787FD334EF81E0917EC8, ___hitSomething_11)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5915[2] = 
+{
+	static_cast<int32_t>(offsetof(EndNumpad_t0A5A1F96E103BDBC5F393C1D60348831D4C0D107, ___button_4)),static_cast<int32_t>(offsetof(EndNumpad_t0A5A1F96E103BDBC5F393C1D60348831D4C0D107, ___outputText_5)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5920[1] = 
 {
 	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass41_0_tD03998B72130E379210125F837D005B365C1708B, ___handler_0)),};

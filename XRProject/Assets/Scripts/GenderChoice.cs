@@ -6,8 +6,9 @@ using UnityEngine;
 public class GenderChoice : MonoBehaviour
 {
     public TextMeshPro button;
-    public static string selection;
-    // Start is called before the first frame update
+    TextMeshPro selectedButton;
+    Color normalColor;
+    public static string selection = "";
     void Start()
     {
         selection = "Male";
@@ -20,6 +21,15 @@ public class GenderChoice : MonoBehaviour
     }
     public void taskOnClick()
     {
+        if (selectedButton != null)
+        {
+            selectedButton.color = normalColor;
+        }
+        normalColor = button.color;
+        button.color = Color.red;
+        button.outlineWidth = 0.2f;
+        button.outlineColor = Color.red;
         selection = button.text;
+        selectedButton = button;
     }
 }

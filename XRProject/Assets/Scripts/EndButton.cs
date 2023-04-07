@@ -3,21 +3,24 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class EndButton : MonoBehaviour
 {
-    public TextMeshPro keyboardQ;
-    public TextMeshPro ageQ;
-    public TextMeshPro genderQ;
-    public TextMeshPro vrQ;
-    public TextMeshPro displayText;
+    public GameObject keyboardQ;
+    public GameObject ageQ;
+    public GameObject genderQ;
+    public GameObject vrQ;
+    public GameObject displayText;
     public TextMeshPro outputText;
+    public GameObject endText;
     public TextMeshPro buttonText;
     public GameObject ageNumpad;
     public GameObject keyboardButtons;
     public GameObject genderButtons;
     public GameObject vrButtons;
     public GameObject nextButton;
+
     private string url;
     private int index;
     // Start is called before the first frame update
@@ -30,7 +33,7 @@ public class EndButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
     public void TaskOnClick()
@@ -38,47 +41,53 @@ public class EndButton : MonoBehaviour
         if(index == 0)
         {
             index += 1;
-            keyboardQ.enabled = false;
+            keyboardQ.SetActive(false);
             keyboardButtons.SetActive(false);
-            ageQ.enabled = true;
+            ageQ.SetActive(true);
             ageNumpad.SetActive(true);
-            outputText.enabled = true;
+            outputText.enabled=true;
         }
         else if(index == 1)
         {
             index += 1;
-            ageQ.enabled = false;
+            ageQ.SetActive(false);
             ageNumpad.SetActive(false);
             outputText.enabled = false;
-            genderQ.enabled = true;
+            genderQ.SetActive(true);
             genderButtons.SetActive(true);
         }
         else if(index == 2)
         {
             index += 1;
-            genderQ.enabled = false;
+            genderQ.SetActive(false);
             genderButtons.SetActive(false);
-            vrQ.enabled = true;
+            vrQ.SetActive(true);
             vrButtons.SetActive(true);
             buttonText.text = "End";
         }
         else if(index == 3)
         {
-            index += 1;
-            vrQ.enabled = false;
+           
+            vrQ.SetActive(false);
             vrButtons.SetActive(false);
+            StartCoroutine(sendQualtricsData());
+            index += 1;
             nextButton.SetActive(false);
-            displayText.enabled = true;
-            sendQualtricsData();
+            displayText.SetActive(true);
         }
     }
 
     public IEnumerator sendQualtricsData()
     {
+    
+
+
+
         WWWForm survey = new WWWForm();
+        //Debug.Log("PID:");
         survey.AddField("PID", PlayerPrefs.GetString("PID"));
         survey.AddField("Key_Type", KeyboardChoice.selection);
-        if(outputText.text == "Enter Age")
+        if (outputText.text == "Enter Age")
         {
             survey.AddField("Age", "0");
         }

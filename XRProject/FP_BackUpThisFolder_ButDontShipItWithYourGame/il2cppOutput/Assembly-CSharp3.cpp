@@ -64,39 +64,6 @@ struct VirtualFuncInvoker0
 		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
 	}
 };
-template <typename R, typename T1>
-struct VirtualFuncInvoker1
-{
-	typedef R (*Func)(void*, T1, const RuntimeMethod*);
-
-	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
-	{
-		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
-		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
-	}
-};
-template <typename T1, typename T2>
-struct InterfaceActionInvoker2
-{
-	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
-
-	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2)
-	{
-		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
-		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
-	}
-};
-template <typename T1, typename T2, typename T3>
-struct InterfaceActionInvoker3
-{
-	typedef void (*Action)(void*, T1, T2, T3, const RuntimeMethod*);
-
-	static inline void Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
-	{
-		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
-		((Action)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
-	}
-};
 template <typename R>
 struct InterfaceFuncInvoker0
 {
@@ -106,17 +73,6 @@ struct InterfaceFuncInvoker0
 	{
 		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
 		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
-	}
-};
-template <typename R, typename T1>
-struct InterfaceFuncInvoker1
-{
-	typedef R (*Func)(void*, T1, const RuntimeMethod*);
-
-	static inline R Invoke (Il2CppMethodSlot slot, RuntimeClass* declaringInterface, RuntimeObject* obj, T1 p1)
-	{
-		const VirtualInvokeData& invokeData = il2cpp_codegen_get_interface_invoke_data(slot, obj, declaringInterface);
-		return ((Func)invokeData.methodPtr)(obj, p1, invokeData.method);
 	}
 };
 
@@ -162,10 +118,6 @@ struct Dictionary_2_t749E8D446C2E8EE6FF423979EE55DB04E3E91EBD;
 struct Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA;
 // System.Collections.Generic.Dictionary`2<Bhaptics.Tact.PositionType,System.Int32[]>
 struct Dictionary_2_tAA28B112099476AB6B27CF458644BE15FBA8EE04;
-// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]>
-struct Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB;
-// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.JSONNode>
-struct Dictionary_2_t0A6C52FDA88C212B6330382F49C67477ACE2E50A;
 // System.Collections.Generic.Dictionary`2<System.String,UnityEngine.UI.ToggleGroup>
 struct Dictionary_2_t4D32AB7B38D14EB24A56141DC52CF5643FDF9834;
 // System.Func`2<UnityEngine.Collider,System.Boolean>
@@ -196,6 +148,8 @@ struct IEnumerable_1_tF95C9E01A913DD50575531C8305932628663D9E9;
 struct IEqualityComparer_1_tDC949A9D424ED6E9928FAADF5093F2452B728FD2;
 // System.Collections.Generic.IEqualityComparer`1<OculusSampleFramework.Interactable>
 struct IEqualityComparer_1_tFC484D969B74D81BF4622C484B76203AF4F61DBC;
+// System.Collections.Generic.IEqualityComparer`1<OculusSampleFramework.InteractableTool>
+struct IEqualityComparer_1_t6BFC7BAAE1E41B40A231C87E2521D37F0E6AC894;
 // System.Collections.Generic.IEqualityComparer`1<Bhaptics.Tact.PositionType>
 struct IEqualityComparer_1_t90B302C147CB93C1C47380E71F6B9026DA392024;
 // System.Collections.Generic.IList`1<OVRBone>
@@ -230,8 +184,6 @@ struct List_1_tE6BB71ABF15905EFA2BE92C38A2716547AEADB19;
 struct List_1_tE24BA6DEA09B928DD057B20C565CD199D7E9050D;
 // System.Collections.Generic.List`1<OculusSampleFramework.InteractableCollisionInfo>
 struct List_1_t490A09E30860203F317F45478EF4A90AE431CAEE;
-// System.Collections.Generic.List`1<Bhaptics.Tact.JSONNode>
-struct List_1_t6E24A931558F3D2261E2EF5388D74DD216130B74;
 // System.Collections.Generic.List`1<OVRBone>
 struct List_1_t47D92D044BD6BE23DD66F86497A9FB0EB0BB3A71;
 // System.Collections.Generic.List`1<OVRBoneCapsule>
@@ -244,8 +196,6 @@ struct List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD;
 struct List_1_tD435DCC2A88E36DFC551EA5392CE0182F0C50E93;
 // System.Collections.Generic.List`1<System.String>
 struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD;
-// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Track>
-struct List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2;
 // System.Collections.Generic.List`1<UnityEngine.Events.UnityAction>
 struct List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D;
 // System.Collections.Generic.List`1<UnityEngine.XR.XRDisplaySubsystem>
@@ -280,6 +230,8 @@ struct EntryU5BU5D_t28645F3745D5E74A04128706BCA2A27457C48811;
 struct List_1U5BU5D_t826337C0A88A91A3DE75521974962C2C682A3865;
 // System.Collections.Generic.HashSet`1/Slot<OculusSampleFramework.ColliderZone>[]
 struct SlotU5BU5D_t640B56A7581BE00AFE92681CE58B9F990CC7C1F8;
+// System.Collections.Generic.HashSet`1/Slot<OculusSampleFramework.InteractableTool>[]
+struct SlotU5BU5D_tFAF8D676C983C44E48B166AAED58AA9933BEE999;
 // Bhaptics.Tact.Unity.AndroidWidget_ControlButton[]
 struct AndroidWidget_ControlButtonU5BU5D_tDAB320020613CB967B0C2A8082DA23B2E9816A38;
 // Bhaptics.Tact.Unity.AndroidWidget_PairedDeviceUI[]
@@ -316,8 +268,6 @@ struct GradientAlphaKeyU5BU5D_tA5D7ED787780B5C01635C8C59B15B2BC01AEC50E;
 struct GradientColorKeyU5BU5D_tB8929E6EE130CA1F3C1664B300BE83A95A642C18;
 // Bhaptics.Tact.Unity.HapticDevice[]
 struct HapticDeviceU5BU5D_t71D49B864EBC3494C31023BD28A989471D3E302E;
-// Bhaptics.Tact.Unity.HapticEffect[]
-struct HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743;
 // System.Int32[]
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
 // System.IntPtr[]
@@ -328,6 +278,8 @@ struct InteractableU5BU5D_t1A363494C6DF3F058E67C5C347A7D33046E02435;
 struct InteractableCollisionInfoU5BU5D_t9ADD08F1E3BD32560EB9E44D0D3BBF0EE496949E;
 // OculusSampleFramework.InteractableToolTags[]
 struct InteractableToolTagsU5BU5D_t9691CC6F71F873F7CCADD2EFE97DC96C689B7DBA;
+// OculusSampleFramework.InteractableToolsInputRouter[]
+struct InteractableToolsInputRouterU5BU5D_tE6E9A718D1FF258FF67C1187B54639FD056CC135;
 // UnityEngine.Material[]
 struct MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D;
 // OVRBoneCapsule[]
@@ -368,8 +320,6 @@ struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 // UnityEngine.Texture[]
 struct TextureU5BU5D_t0C3F884241E8243E791A31B920CAA89212888E46;
-// Bhaptics.Tact.Unity.Track[]
-struct TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78;
 // OculusSampleFramework.TrackSegment[]
 struct TrackSegmentU5BU5D_tD84AF9120F4019904C24BA6A699C67DEBFCE9295;
 // OculusSampleFramework.TrainCar[]
@@ -440,8 +390,6 @@ struct Animation_t6593B06C39E3B139808B19F2C719C860F3F61040;
 struct AnimationTriggers_tA0DC06F89C5280C6DD972F6F4C8A56D7F4F79074;
 // UnityEngine.Animator
 struct Animator_t8A52E42AE54F76681838FE9E632683EF3952E883;
-// Bhaptics.Tact.Unity.ArmsHapticClip
-struct ArmsHapticClip_t147D7B1D9FA2AEB6F4001D52E83C485D05738DE7;
 // System.AsyncCallback
 struct AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C;
 // UnityEngine.AudioClip
@@ -452,10 +400,6 @@ struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
 // Bhaptics.Tact.Unity.BhapticsAndroidManager
 struct BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422;
-// Bhaptics.Tact.Unity.BhapticsHaptic
-struct BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4;
-// Bhaptics.Tact.Unity.BhapticsProject
-struct BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20;
 // Bhaptics.Tact.Unity.Bhaptics_Widget_Setting
 struct Bhaptics_Widget_Setting_t161D157DE26028AEFEDCA2A862E8748B281671EA;
 // OculusSampleFramework.BoneCapsuleTriggerLogic
@@ -502,8 +446,6 @@ struct DistanceGrabberSample_tF65500593830D7A0811EE927DE6F3AAF2E0241B3;
 struct DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0;
 // System.Enum
 struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2;
-// Bhaptics.Tact.Unity.FileHapticClip
-struct FileHapticClip_t48EC83EE51B9DE69C85D3DC520865AA88CB0F9D9;
 // OculusSampleFramework.FingerTipPokeTool
 struct FingerTipPokeTool_tF8F1D513CF670D3324A14781FBE360D410307327;
 // OculusSampleFramework.FingerTipPokeToolView
@@ -552,16 +494,8 @@ struct InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED;
 struct InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0;
 // UnityEngine.Events.InvokableCallList
 struct InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382;
-// Bhaptics.Tact.JSONArray
-struct JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7;
-// Bhaptics.Tact.JSONNode
-struct JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D;
-// Bhaptics.Tact.JSONObject
-struct JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC;
 // LaserPointer
 struct LaserPointer_t0E77E38E488CC0E97D2E29F61CA3422430FEB874;
-// Bhaptics.Tact.Unity.Layout
-struct Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F;
 // UnityEngine.LineRenderer
 struct LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D;
 // UnityEngine.Material
@@ -662,8 +596,6 @@ struct SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E;
 struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
 // System.String
 struct String_t;
-// System.Text.StringBuilder
-struct StringBuilder_t;
 // UnityEngine.UI.Text
 struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62;
 // UnityEngine.TextGenerator
@@ -678,8 +610,6 @@ struct Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F;
 struct ToggleGroup_tF2E6FE7D4B17BDBF82462715CFB57C4FDE0A2A2C;
 // OVRTouchSample.TouchController
 struct TouchController_t1BCC5F911D1E7987E5DA9A4654DD05D585C32A03;
-// Bhaptics.Tact.Unity.Track
-struct Track_t890B55E3594EA0442464072A11DE8398FB0420E9;
 // OculusSampleFramework.TrackSegment
 struct TrackSegment_t564FB15D19598A8A893D0EB2ACBF5EA66BCF5680;
 // OculusSampleFramework.TrainButtonVisualController
@@ -778,9 +708,6 @@ IL2CPP_EXTERN_C RuntimeClass* AndroidWidget_UI_t4EBC5B626F528653C7BAAC3E92F357A0
 IL2CPP_EXTERN_C RuntimeClass* Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BhapticsAndroidManager_tC170FAA4FFFCA1CC1C465380E9C75D7826727422_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BhapticsLogger_t3A2740F5DBA63ECA7B30DD351ADE5D030CE0C645_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* BhapticsManager_t7514043B74A443B9EBEDDCEF5CFF974ABD6055B9_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ColliderZone_tA9DAAD7F9B3FDEC5B607DB97A934B1081CCF7E19_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ColorU5BU5D_t612261CF293F6FFC3D80AB52259FF0DC2B2CC389_il2cpp_TypeInfo_var;
@@ -797,18 +724,16 @@ IL2CPP_EXTERN_C RuntimeClass* GradientColorKeyU5BU5D_tB8929E6EE130CA1F3C1664B300
 IL2CPP_EXTERN_C RuntimeClass* Gradient_tA7FEBE2FDB4929FFF6C997134841046F713DAC1E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* HapticDevice_t1723D7677528E846AA5818B35375C1EFF29DC029_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* InteractableCollisionInfo_t0706183E9D28BE08640A9C78564FB7098214E3E3_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t490A09E30860203F317F45478EF4A90AE431CAEE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t4BB714C32C63320E15F9BE811510151332419557_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t5307A4794C99C977D90D92E76BFCE6BCEBF0FF21_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tD435DCC2A88E36DFC551EA5392CE0182F0C50E93_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tE24BA6DEA09B928DD057B20C565CD199D7E9050D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tE7E45C3121BC238F02D1BB71D8374B3B6248F10B_il2cpp_TypeInfo_var;
@@ -834,7 +759,6 @@ IL2CPP_EXTERN_C RuntimeClass* RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E
 IL2CPP_EXTERN_C RuntimeClass* RenderTexture_tBA90C4C3AD9EECCFDDCC632D97C29FAB80D60D27_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RuntimeObject_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SelectionCylinder_tB79C20E28823E6A7C8933C2A86C953A990F4480E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var;
@@ -854,7 +778,6 @@ IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_
 IL2CPP_EXTERN_C RuntimeClass* Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral002D677C331359A7FD36DC2DB9A416553AEB95E8;
 IL2CPP_EXTERN_C String_t* _stringLiteral01793EF08F35461796EA0A5F4E67477C7FF077C5;
 IL2CPP_EXTERN_C String_t* _stringLiteral0D58C254A6B34D95CA1A2DAB761F42AD1EE1A371;
@@ -870,7 +793,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral20825170D1B0DA2A733E78D5B035FF14697DA12B
 IL2CPP_EXTERN_C String_t* _stringLiteral21AF401D54A069E066A9313533E7CF143D7B97E0;
 IL2CPP_EXTERN_C String_t* _stringLiteral241CB8F68E6A171074F44FED9737EDE5BD45F4ED;
 IL2CPP_EXTERN_C String_t* _stringLiteral2752A64BA712F6F13A300028AB018ACD9A80434C;
-IL2CPP_EXTERN_C String_t* _stringLiteral27604803165C6541AB273EC61FCF3B90782F0C93;
 IL2CPP_EXTERN_C String_t* _stringLiteral2C64D2F0E9FD6EBA8D616B686F625B2CC7B6EF9C;
 IL2CPP_EXTERN_C String_t* _stringLiteral2F3C67FF0314F3C94FF7278A2AF1C6B55C36D01B;
 IL2CPP_EXTERN_C String_t* _stringLiteral32B1B5BC31D44B18AA1644A3D65D62E49574C1C9;
@@ -890,7 +812,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral4D4EA719DB7D4D715ADBA2AFD3A8B297C1D8AADF
 IL2CPP_EXTERN_C String_t* _stringLiteral4D613657609485AE586A3379BA0E3FC13C1E1078;
 IL2CPP_EXTERN_C String_t* _stringLiteral51B065FCE4F717615DF020D641986901AC7DA270;
 IL2CPP_EXTERN_C String_t* _stringLiteral52DA1A9AB57410CB78F94ED8D633B7E7D2776678;
-IL2CPP_EXTERN_C String_t* _stringLiteral53EF00C5C787F29C2FC919E385A5882E802CCA7E;
 IL2CPP_EXTERN_C String_t* _stringLiteral548D93DDB2AC6B24373148B19D9A625571AB2318;
 IL2CPP_EXTERN_C String_t* _stringLiteral570253F88E90C7BA74C253F223E308E59B6BDBB8;
 IL2CPP_EXTERN_C String_t* _stringLiteral598F6BDC1DE4AF4534F357D9B662B61D7B78EAFC;
@@ -901,7 +822,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral604773D3DBC620869237443189180C03C02206AE
 IL2CPP_EXTERN_C String_t* _stringLiteral67956624C8A0DB393DE7946FDC10919F77D06DB1;
 IL2CPP_EXTERN_C String_t* _stringLiteral686B62DC85A76B4D986AD7F54097517BC28F71E3;
 IL2CPP_EXTERN_C String_t* _stringLiteral6B973FB601C693F2F934EF8531CAB44A3EAB9943;
-IL2CPP_EXTERN_C String_t* _stringLiteral73F1C0DB7E67894BD0991354AA6CB2DA4A3A5D88;
 IL2CPP_EXTERN_C String_t* _stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D;
 IL2CPP_EXTERN_C String_t* _stringLiteral75AB8BCFD46EFD61011E81C209870785F7C0429A;
 IL2CPP_EXTERN_C String_t* _stringLiteral761CAF2881EC72215DE6C3BFBC1BEEEC0E195109;
@@ -1013,12 +933,14 @@ IL2CPP_EXTERN_C const RuntimeMethod* Enumerable_Where_TisCollider_t1CC3163924FCD
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m32557A15BABB5337B8335F97F81AD6FEF8CF6964_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m5E6D662E2B950C99B4F5815DB2A8BFF487522409_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m8B501F5CC306AB22C3B20E2A0292E9689DE72A3C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m95A61A8CD2D1C4B8BBE6141DFA41B692E897B738_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m9755C3C1093C597000443095B75A455FBF0ACFD8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_mCC9A1E5F4BDFB868096B30068742864C016C9767_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_mF44A749CAD40EDA9B6081E0ADF65A2E15DE7C967_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m2E1AF652D6A72C24DAAE7766C54257741F9C8B5A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m39BCE47EC1D45BE81E2611AC04645E1068A79907_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m6C3C607FD4E9958AB10F34D55329467F27751E35_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m6F1B5FC96929708FE87FEE5F232C2F2639015C78_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m8EC0B64D6543C2195EC5408BA4AD3721F9EE6A63_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_mCBD968FA687BF393B13D9B679357F7887CF80C7D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_mEAA7C6293BF470D52DF93D7DB43EAA9F8B2B5F48_RuntimeMethod_var;
@@ -1026,6 +948,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m04F8D7B43D8F3A71533
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m28A4F941F2F5D45BDCE028EA8656B6872DBE5DFE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m3BF6B353C35CEB48BB6A4731E48C24CE45BFF093_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m46AD6166313DB38D9B4A28CDE9D4031B92FB2E1F_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m5B3BF8002AD9DB86BDFF65444A24A5B77257B10E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mBBB36CD9C8AC48D9C2201FAA6D00557B96308E8B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mC3E738AE05FAA9BF8A0532B9F3FB3EDE50EB08CD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisBoneCapsuleTriggerLogic_tD4D51F420091F829BEE215AB6FD960BF83FBB2D4_mBB916B33F9D87AF86B388EBD9E75A175FA9B02BF_RuntimeMethod_var;
@@ -1034,16 +957,20 @@ IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisCamera_tA92CC927
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisInteractable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2_m0CDEA8EF47A15EFA3EB104C354E834030C56E3D3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Hand_OnInputFocusAcquired_m0812ABDFE30CE9348919181D77BB8F5E4F5A3490_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Hand_OnInputFocusLost_mD3FFDE39026F3EEFDFE8212B6E1FE3B064EB8C52_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* HashSet_1_Add_m056A0905BB83E17A3DE8B8F4C8D01021DC300D30_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* HashSet_1_GetEnumerator_m47C5ECD626F51920BFC19E08FDB6394547CB5876_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* HashSet_1_GetEnumerator_mB5F01D90B9398690337CBF40EB6EC5656A7A83FD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* HashSet_1_Remove_m9CF9A3235781FA5EA09A34486DDC72EACE9C99DB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* HashSet_1__ctor_m50F8840C8E08EBA548833E417EC829C89672DC46_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* JsonUtility_FromJson_TisDevice_t38945E45470D98CA3A96E2DF5297BA2D5A519F5F_m25AA6438982B9C944F4C51C553E348E406950EC9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* JsonUtility_FromJson_TisStreamHost_tB26B2BFEE53715C93D24E3955DC2AA724DEF8509_m640FDC7E26DD3A75A00E7399BAAB965E626E9134_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* KeyCollection_GetEnumerator_mA15F8F46DF83A9020DBC9406D588286860F54A2D_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Key_mDF7D1A309EA41964DF6AC023542B3938F6358084_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* KeyValuePair_2_get_Value_m8E86102626D06BABC5C55A51B7121090202E5C75_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m259096A378ED94C3F677ABBBEF65E991ED99825F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m323BA24FD0DE9D93F9DA4067FA613B338AABC76B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m41B83FFA140FAECC46735D613830E944B0C31DD1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m43FBF207375C6E06B8C45ECE614F9B8008FB686E_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m4E39030928BF0CB15FDFD6FAEF9FAC0EEACC634B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m65A4366A70D351BA1DA1C40B08E29FF12A4EB581_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mB608316C3D0F44AB60BB05CC6676E509D51F7AC2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mC2DF5232ABF0B0204C6270D8ADA13950F86EC7C5_RuntimeMethod_var;
@@ -1063,7 +990,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m3AA285A5EFE0389BFC0DA
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_mE5352A85CD278A63E5412CDCF8B1BED6FF7BE949_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_mF7725E97FD02143B1832493CB2BA1C1DEE898F5C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Remove_mB10D46FB6ED1EA7AB7DFC1780F9572FD316A251D_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_m9F04218A0494C4BF91025C2252E199DE56610D9A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_ToArray_mA894731AFEF9DB5E14DB0202E09AD7BFB80691C2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m0B7AF9FD4A9CF0CDDB278C3862B1B266A4D9FEF2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m173CBA10D23C6D0AF363140EA3153D6A2BEDFFF1_RuntimeMethod_var;
@@ -1071,7 +997,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m1FB770381C3A129AD86880AAA4F63
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m447372C1EF7141193B93090A77395B786C72C7BC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m4F9EEE5EA8FBFC5379626AEF2C9DE714F6ED34C1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m5C8558CF51B2FB07D5D5481E2C43FB2C237E6D0F_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m6B6749012AA714828B1A6A1FABDEBDD8335FEE19_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m803E10F7A50EB22BF82C0C1AB251D5407B4496DE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mB146B188E8D323468B9EB6643271CCA4794A00F8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E_RuntimeMethod_var;
@@ -1102,6 +1027,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* OVROverlaySample_U3CStartU3Eb__24_0_mBF39A5
 IL2CPP_EXTERN_C const RuntimeMethod* OVROverlaySample_U3CStartU3Eb__24_1_m1970159E2C8C7043DBC6797017C840EA7A9429FE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* OVROverlaySample_U3CStartU3Eb__24_2_m9DCDFEF1326B4909B69D2FE1E754D18C7C289EB4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectOfType_TisOVRCameraRig_t7FC2BB0D30DED2B7F0C8914AF2B66E9F4CF891A9_m1564DCD77DA806C8E84BE6808F00823EBCA88234_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectsOfType_TisInteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0_mCE48D46CED648F905DBD42CAB5F873408C452818_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisAndroidWidget_PairedDeviceUI_t010415E8E001C9314C5526FA74862289ED98F0B2_mEAA2DBC2455BF4D6097DEE0E122F70E5B730A0A6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisAndroid_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_m918BF1EF25916A3CB76952D9E373B9C553FCFDDB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3_RuntimeMethod_var;
@@ -1146,6 +1072,7 @@ struct DistanceGrabberU5BU5D_tA4B9B85AE5B4C46A4C35AAD085E1A989C38A7982;
 struct GradientAlphaKeyU5BU5D_tA5D7ED787780B5C01635C8C59B15B2BC01AEC50E;
 struct GradientColorKeyU5BU5D_tB8929E6EE130CA1F3C1664B300BE83A95A642C18;
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
+struct InteractableToolsInputRouterU5BU5D_tE6E9A718D1FF258FF67C1187B54639FD056CC135;
 struct MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct PositionTypeU5BU5D_tA99B53E8C3DA5641C0AD9389FB7EF72BE93A30B7;
@@ -1154,7 +1081,6 @@ struct RendererU5BU5D_t32FDD782F67917B2291EA4FF242719877440A02A;
 struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
 struct StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248;
 struct TextureU5BU5D_t0C3F884241E8243E791A31B920CAA89212888E46;
-struct TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78;
 struct TrackSegmentU5BU5D_tD84AF9120F4019904C24BA6A699C67DEBFCE9295;
 struct TrainCarU5BU5D_t7CFF4CCAF90716935B7C8324466A6326DB2414DD;
 struct TrainCarBaseU5BU5D_t6F8E5463CC2FF62ADD249184806D420B00F70B8A;
@@ -1234,6 +1160,27 @@ struct HashSet_1_t8D90B5E7B806F749B7205357916DDB46CA01D418  : public RuntimeObje
 	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_7;
 	// System.Collections.Generic.HashSet`1/Slot<T>[] System.Collections.Generic.HashSet`1::_slots
 	SlotU5BU5D_t640B56A7581BE00AFE92681CE58B9F990CC7C1F8* ____slots_8;
+	// System.Int32 System.Collections.Generic.HashSet`1::_count
+	int32_t ____count_9;
+	// System.Int32 System.Collections.Generic.HashSet`1::_lastIndex
+	int32_t ____lastIndex_10;
+	// System.Int32 System.Collections.Generic.HashSet`1::_freeList
+	int32_t ____freeList_11;
+	// System.Collections.Generic.IEqualityComparer`1<T> System.Collections.Generic.HashSet`1::_comparer
+	RuntimeObject* ____comparer_12;
+	// System.Int32 System.Collections.Generic.HashSet`1::_version
+	int32_t ____version_13;
+	// System.Runtime.Serialization.SerializationInfo System.Collections.Generic.HashSet`1::_siInfo
+	SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ____siInfo_14;
+};
+
+// System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool>
+struct HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614  : public RuntimeObject
+{
+	// System.Int32[] System.Collections.Generic.HashSet`1::_buckets
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ____buckets_7;
+	// System.Collections.Generic.HashSet`1/Slot<T>[] System.Collections.Generic.HashSet`1::_slots
+	SlotU5BU5D_tFAF8D676C983C44E48B166AAED58AA9933BEE999* ____slots_8;
 	// System.Int32 System.Collections.Generic.HashSet`1::_count
 	int32_t ____count_9;
 	// System.Int32 System.Collections.Generic.HashSet`1::_lastIndex
@@ -1424,19 +1371,6 @@ struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Track>
-struct List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2  : public RuntimeObject
-{
-	// T[] System.Collections.Generic.List`1::_items
-	TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* ____items_1;
-	// System.Int32 System.Collections.Generic.List`1::_size
-	int32_t ____size_2;
-	// System.Int32 System.Collections.Generic.List`1::_version
-	int32_t ____version_3;
-	// System.Object System.Collections.Generic.List`1::_syncRoot
-	RuntimeObject* ____syncRoot_4;
-};
-
 // System.Collections.Generic.List`1<UnityEngine.Events.UnityAction>
 struct List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D  : public RuntimeObject
 {
@@ -1475,25 +1409,6 @@ struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0  : public Run
 // Bhaptics.Tact.Unity.AndroidUtils
 struct AndroidUtils_t025A4FBB048EC7858EF2E45D09D6790D7C2AAC30  : public RuntimeObject
 {
-};
-
-// Bhaptics.Tact.Unity.BhapticsHaptic
-struct BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4  : public RuntimeObject
-{
-};
-
-// BhapticsManager
-struct BhapticsManager_t7514043B74A443B9EBEDDCEF5CFF974ABD6055B9  : public RuntimeObject
-{
-};
-
-// Bhaptics.Tact.Unity.BhapticsProject
-struct BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20  : public RuntimeObject
-{
-	// Bhaptics.Tact.Unity.Track[] Bhaptics.Tact.Unity.BhapticsProject::<Tracks>k__BackingField
-	TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* ___U3CTracksU3Ek__BackingField_0;
-	// Bhaptics.Tact.Unity.Layout Bhaptics.Tact.Unity.BhapticsProject::<Layout>k__BackingField
-	Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* ___U3CLayoutU3Ek__BackingField_1;
 };
 
 // System.Convert
@@ -1571,20 +1486,6 @@ struct InteractableCollisionInfo_t0706183E9D28BE08640A9C78564FB7098214E3E3  : pu
 	int32_t ___CollisionDepth_1;
 	// OculusSampleFramework.InteractableTool OculusSampleFramework.InteractableCollisionInfo::CollidingTool
 	InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* ___CollidingTool_2;
-};
-
-// Bhaptics.Tact.JSONNode
-struct JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D  : public RuntimeObject
-{
-};
-
-// Bhaptics.Tact.Unity.Layout
-struct Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F  : public RuntimeObject
-{
-	// System.String Bhaptics.Tact.Unity.Layout::<Type>k__BackingField
-	String_t* ___U3CTypeU3Ek__BackingField_0;
-	// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.Unity.LayoutObject[]> Bhaptics.Tact.Unity.Layout::<Layouts>k__BackingField
-	Dictionary_2_tED75DE52E931A3120A646A9A5465D41A6A539BDB* ___U3CLayoutsU3Ek__BackingField_1;
 };
 
 // OVRBoneCapsule
@@ -1680,13 +1581,6 @@ struct String_t  : public RuntimeObject
 	int32_t ____stringLength_4;
 	// System.Char System.String::_firstChar
 	Il2CppChar ____firstChar_5;
-};
-
-// Bhaptics.Tact.Unity.Track
-struct Track_t890B55E3594EA0442464072A11DE8398FB0420E9  : public RuntimeObject
-{
-	// Bhaptics.Tact.Unity.HapticEffect[] Bhaptics.Tact.Unity.Track::<Effects>k__BackingField
-	HapticEffectU5BU5D_tD3CCD64DDF2134C7E712862015C53BF01846B743* ___U3CEffectsU3Ek__BackingField_0;
 };
 
 // UnityEngine.Events.UnityEventBase
@@ -1907,17 +1801,17 @@ struct Enumerator_tDA87C83C820B90FDAA5CA9DF87D139E0C4A79646
 	InteractableCollisionInfo_t0706183E9D28BE08640A9C78564FB7098214E3E3* ____current_3;
 };
 
-// System.Collections.Generic.List`1/Enumerator<Bhaptics.Tact.JSONNode>
-struct Enumerator_tEAB3CE491E0AC0D57C08F1FB30CA5FB86AB63907 
+// System.Collections.Generic.HashSet`1/Enumerator<OculusSampleFramework.InteractableTool>
+struct Enumerator_t505582CD1811145766F30940FA1F3D36F1D9FC57 
 {
-	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator::_list
-	List_1_t6E24A931558F3D2261E2EF5388D74DD216130B74* ____list_0;
-	// System.Int32 System.Collections.Generic.List`1/Enumerator::_index
+	// System.Collections.Generic.HashSet`1<T> System.Collections.Generic.HashSet`1/Enumerator::_set
+	HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* ____set_0;
+	// System.Int32 System.Collections.Generic.HashSet`1/Enumerator::_index
 	int32_t ____index_1;
-	// System.Int32 System.Collections.Generic.List`1/Enumerator::_version
+	// System.Int32 System.Collections.Generic.HashSet`1/Enumerator::_version
 	int32_t ____version_2;
-	// T System.Collections.Generic.List`1/Enumerator::_current
-	JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* ____current_3;
+	// T System.Collections.Generic.HashSet`1/Enumerator::_current
+	InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* ____current_3;
 };
 
 // System.Collections.Generic.List`1/Enumerator<OVRBoneCapsule>
@@ -2001,15 +1895,6 @@ struct KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230
 	RuntimeObject* ___key_0;
 	// TValue System.Collections.Generic.KeyValuePair`2::value
 	RuntimeObject* ___value_1;
-};
-
-// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode>
-struct KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC 
-{
-	// TKey System.Collections.Generic.KeyValuePair`2::key
-	String_t* ___key_0;
-	// TValue System.Collections.Generic.KeyValuePair`2::value
-	JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* ___value_1;
 };
 
 // UnityEngine.Events.UnityEvent`1<OculusSampleFramework.InteractableStateArgs>
@@ -2155,24 +2040,6 @@ struct InteractableStateArgs_t21F5AD383C32E6D8656D9EBAE447A111F6188906  : public
 	int32_t ___NewInteractableState_4;
 	// OculusSampleFramework.ColliderZoneArgs OculusSampleFramework.InteractableStateArgs::ColliderArgs
 	ColliderZoneArgs_tC7431174FDF0C6002A554118B81A5E6096D41087* ___ColliderArgs_5;
-};
-
-// Bhaptics.Tact.JSONArray
-struct JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7  : public JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D
-{
-	// System.Collections.Generic.List`1<Bhaptics.Tact.JSONNode> Bhaptics.Tact.JSONArray::m_List
-	List_1_t6E24A931558F3D2261E2EF5388D74DD216130B74* ___m_List_4;
-	// System.Boolean Bhaptics.Tact.JSONArray::inline
-	bool ___inline_5;
-};
-
-// Bhaptics.Tact.JSONObject
-struct JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC  : public JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D
-{
-	// System.Collections.Generic.Dictionary`2<System.String,Bhaptics.Tact.JSONNode> Bhaptics.Tact.JSONObject::m_Dict
-	Dictionary_2_t0A6C52FDA88C212B6330382F49C67477ACE2E50A* ___m_Dict_4;
-	// System.Boolean Bhaptics.Tact.JSONObject::inline
-	bool ___inline_5;
 };
 
 // UnityEngine.LayerMask
@@ -2510,21 +2377,6 @@ struct MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshaled_pinvoke
 struct MainModule_tC7ECD8330C14B0808478A748048988A6085CE2A9_marshaled_com
 {
 	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___m_ParticleSystem_0;
-};
-
-// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.JSONNode>
-struct Enumerator_tAE42FB017EB3BDF9C14D44ACAFBC3B53DE5A4D53 
-{
-	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_dictionary
-	Dictionary_2_t0A6C52FDA88C212B6330382F49C67477ACE2E50A* ____dictionary_0;
-	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_version
-	int32_t ____version_1;
-	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_index
-	int32_t ____index_2;
-	// System.Collections.Generic.KeyValuePair`2<TKey,TValue> System.Collections.Generic.Dictionary`2/Enumerator::_current
-	KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC ____current_3;
-	// System.Int32 System.Collections.Generic.Dictionary`2/Enumerator::_getEnumeratorRetType
-	int32_t ____getEnumeratorRetType_4;
 };
 
 // Bhaptics.Tact.Unity.AndroidHaptic
@@ -3406,31 +3258,6 @@ struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700  : public Object_tC12DE
 {
 };
 
-// Bhaptics.Tact.JSONNode/Enumerator
-struct Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 
-{
-	// Bhaptics.Tact.JSONNode/Enumerator/Type Bhaptics.Tact.JSONNode/Enumerator::type
-	int32_t ___type_0;
-	// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.JSONNode> Bhaptics.Tact.JSONNode/Enumerator::m_Object
-	Enumerator_tAE42FB017EB3BDF9C14D44ACAFBC3B53DE5A4D53 ___m_Object_1;
-	// System.Collections.Generic.List`1/Enumerator<Bhaptics.Tact.JSONNode> Bhaptics.Tact.JSONNode/Enumerator::m_Array
-	Enumerator_tEAB3CE491E0AC0D57C08F1FB30CA5FB86AB63907 ___m_Array_2;
-};
-// Native definition for P/Invoke marshalling of Bhaptics.Tact.JSONNode/Enumerator
-struct Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6_marshaled_pinvoke
-{
-	int32_t ___type_0;
-	Enumerator_tAE42FB017EB3BDF9C14D44ACAFBC3B53DE5A4D53 ___m_Object_1;
-	Enumerator_tEAB3CE491E0AC0D57C08F1FB30CA5FB86AB63907 ___m_Array_2;
-};
-// Native definition for COM marshalling of Bhaptics.Tact.JSONNode/Enumerator
-struct Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6_marshaled_com
-{
-	int32_t ___type_0;
-	Enumerator_tAE42FB017EB3BDF9C14D44ACAFBC3B53DE5A4D53 ___m_Object_1;
-	Enumerator_tEAB3CE491E0AC0D57C08F1FB30CA5FB86AB63907 ___m_Array_2;
-};
-
 // OVRPlugin/HandState
 struct HandState_tBF8DBB131D6A5677B70CACE42D72161A261AA552 
 {
@@ -3538,15 +3365,6 @@ struct Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76  : public Component_t3
 {
 };
 
-// Bhaptics.Tact.Unity.HapticClip
-struct HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E  : public ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A
-{
-	// System.String Bhaptics.Tact.Unity.HapticClip::assetId
-	String_t* ___assetId_4;
-	// System.String Bhaptics.Tact.Unity.HapticClip::keyId
-	String_t* ___keyId_5;
-};
-
 // UnityEngine.MeshFilter
 struct MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
@@ -3630,21 +3448,6 @@ struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26  : public Behaviour_t019
 // UnityEngine.CapsuleCollider
 struct CapsuleCollider_t3A1671C74F0836ABEF5D01A7470B5B2BE290A808  : public Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76
 {
-};
-
-// Bhaptics.Tact.Unity.FileHapticClip
-struct FileHapticClip_t48EC83EE51B9DE69C85D3DC520865AA88CB0F9D9  : public HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E
-{
-	// System.Single Bhaptics.Tact.Unity.FileHapticClip::Intensity
-	float ___Intensity_6;
-	// System.Single Bhaptics.Tact.Unity.FileHapticClip::Duration
-	float ___Duration_7;
-	// Bhaptics.Tact.Unity.HapticDeviceType Bhaptics.Tact.Unity.FileHapticClip::ClipType
-	int32_t ___ClipType_8;
-	// System.String Bhaptics.Tact.Unity.FileHapticClip::JsonValue
-	String_t* ___JsonValue_9;
-	// System.Int32 Bhaptics.Tact.Unity.FileHapticClip::_clipDurationTime
-	int32_t ____clipDurationTime_10;
 };
 
 // UnityEngine.LineRenderer
@@ -3826,13 +3629,6 @@ struct Android_UIController_tE2FCA9B09C445E64061C16692B2C7D1A42635BDB  : public 
 	int32_t ___pageExpandHeight_25;
 	// System.Int32 Bhaptics.Tact.Unity.Android_UIController::maxPageIndex
 	int32_t ___maxPageIndex_26;
-};
-
-// Bhaptics.Tact.Unity.ArmsHapticClip
-struct ArmsHapticClip_t147D7B1D9FA2AEB6F4001D52E83C485D05738DE7  : public FileHapticClip_t48EC83EE51B9DE69C85D3DC520865AA88CB0F9D9
-{
-	// System.Boolean Bhaptics.Tact.Unity.ArmsHapticClip::IsReflect
-	bool ___IsReflect_11;
 };
 
 // UnityEngine.AudioSource
@@ -5258,6 +5054,10 @@ struct EmptyArray_1_tDF0DD7256B115243AA6BD5558417387A734240EE_StaticFields
 
 // System.Collections.Generic.HashSet`1<OculusSampleFramework.ColliderZone>
 
+// System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool>
+
+// System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool>
+
 // System.Collections.Generic.Dictionary`2/KeyCollection<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo>
 
 // System.Collections.Generic.Dictionary`2/KeyCollection<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo>
@@ -5379,15 +5179,6 @@ struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_StaticFields
 
 // System.Collections.Generic.List`1<System.String>
 
-// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Track>
-struct List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* ___s_emptyArray_5;
-};
-
-// System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Track>
-
 // System.Collections.Generic.List`1<UnityEngine.Events.UnityAction>
 struct List_1_t81DD6D8E3F2D498C5E128E9488F7CC05E1881C4D_StaticFields
 {
@@ -5418,25 +5209,6 @@ struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_StaticFields
 // Bhaptics.Tact.Unity.AndroidUtils
 
 // Bhaptics.Tact.Unity.AndroidUtils
-
-// Bhaptics.Tact.Unity.BhapticsHaptic
-
-// Bhaptics.Tact.Unity.BhapticsHaptic
-
-// BhapticsManager
-struct BhapticsManager_t7514043B74A443B9EBEDDCEF5CFF974ABD6055B9_StaticFields
-{
-	// Bhaptics.Tact.Unity.IHaptic BhapticsManager::Haptic
-	RuntimeObject* ___Haptic_0;
-	// System.Boolean BhapticsManager::Init
-	bool ___Init_1;
-};
-
-// BhapticsManager
-
-// Bhaptics.Tact.Unity.BhapticsProject
-
-// Bhaptics.Tact.Unity.BhapticsProject
 
 // System.Convert
 struct Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_StaticFields
@@ -5484,28 +5256,6 @@ struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_StaticFields
 
 // OculusSampleFramework.InteractableCollisionInfo
 
-// Bhaptics.Tact.JSONNode
-struct JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_StaticFields
-{
-	// System.Boolean Bhaptics.Tact.JSONNode::forceASCII
-	bool ___forceASCII_0;
-	// System.Boolean Bhaptics.Tact.JSONNode::longAsString
-	bool ___longAsString_1;
-	// System.Boolean Bhaptics.Tact.JSONNode::allowLineComments
-	bool ___allowLineComments_2;
-};
-
-// Bhaptics.Tact.JSONNode
-struct JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D_ThreadStaticFields
-{
-	// System.Text.StringBuilder Bhaptics.Tact.JSONNode::m_EscapeBuilder
-	StringBuilder_t* ___m_EscapeBuilder_3;
-};
-
-// Bhaptics.Tact.Unity.Layout
-
-// Bhaptics.Tact.Unity.Layout
-
 // OVRBoneCapsule
 
 // OVRBoneCapsule
@@ -5546,10 +5296,6 @@ struct String_t_StaticFields
 };
 
 // System.String
-
-// Bhaptics.Tact.Unity.Track
-
-// Bhaptics.Tact.Unity.Track
 
 // UnityEngine.Events.UnityEventBase
 
@@ -5622,9 +5368,9 @@ struct U3CU3Ec_tADB0E95203F0A090B7A367EF6CE374F2A78D832F_StaticFields
 
 // System.Collections.Generic.List`1/Enumerator<OculusSampleFramework.InteractableCollisionInfo>
 
-// System.Collections.Generic.List`1/Enumerator<Bhaptics.Tact.JSONNode>
+// System.Collections.Generic.HashSet`1/Enumerator<OculusSampleFramework.InteractableTool>
 
-// System.Collections.Generic.List`1/Enumerator<Bhaptics.Tact.JSONNode>
+// System.Collections.Generic.HashSet`1/Enumerator<OculusSampleFramework.InteractableTool>
 
 // System.Collections.Generic.List`1/Enumerator<OVRBoneCapsule>
 
@@ -5653,10 +5399,6 @@ struct U3CU3Ec_tADB0E95203F0A090B7A367EF6CE374F2A78D832F_StaticFields
 // System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>
 
 // System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>
-
-// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode>
-
-// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode>
 
 // UnityEngine.Events.UnityEvent`1<OculusSampleFramework.InteractableStateArgs>
 
@@ -5730,14 +5472,6 @@ struct IntPtr_t_StaticFields
 // OculusSampleFramework.InteractableStateArgs
 
 // OculusSampleFramework.InteractableStateArgs
-
-// Bhaptics.Tact.JSONArray
-
-// Bhaptics.Tact.JSONArray
-
-// Bhaptics.Tact.JSONObject
-
-// Bhaptics.Tact.JSONObject
 
 // UnityEngine.LayerMask
 
@@ -5907,10 +5641,6 @@ struct Vector3f_t232AF83B4642C67BE8EFF85D8E1599D3B06BD562_StaticFields
 // UnityEngine.ParticleSystem/MainModule
 
 // UnityEngine.ParticleSystem/MainModule
-
-// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.JSONNode>
-
-// System.Collections.Generic.Dictionary`2/Enumerator<System.String,Bhaptics.Tact.JSONNode>
 
 // Bhaptics.Tact.Unity.AndroidHaptic
 struct AndroidHaptic_tF274A66C4A3B6E2B08D2C6BE264F84B755CB96B1_StaticFields
@@ -6087,10 +5817,6 @@ struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700_StaticFields
 
 // UnityEngine.Texture
 
-// Bhaptics.Tact.JSONNode/Enumerator
-
-// Bhaptics.Tact.JSONNode/Enumerator
-
 // OVRPlugin/HandState
 
 // OVRPlugin/HandState
@@ -6126,10 +5852,6 @@ struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700_StaticFields
 // UnityEngine.Collider
 
 // UnityEngine.Collider
-
-// Bhaptics.Tact.Unity.HapticClip
-
-// Bhaptics.Tact.Unity.HapticClip
 
 // UnityEngine.MeshFilter
 
@@ -6221,10 +5943,6 @@ struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_StaticFields
 
 // UnityEngine.CapsuleCollider
 
-// Bhaptics.Tact.Unity.FileHapticClip
-
-// Bhaptics.Tact.Unity.FileHapticClip
-
 // UnityEngine.LineRenderer
 
 // UnityEngine.LineRenderer
@@ -6289,10 +6007,6 @@ struct Android_DeviceController_tFB5DDAF42AEA5F07DC651B0DE54CF6D43868DBA8_Static
 // Bhaptics.Tact.Unity.Android_UIController
 
 // Bhaptics.Tact.Unity.Android_UIController
-
-// Bhaptics.Tact.Unity.ArmsHapticClip
-
-// Bhaptics.Tact.Unity.ArmsHapticClip
 
 // UnityEngine.AudioSource
 
@@ -6712,6 +6426,41 @@ struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_StaticFields
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+// OculusSampleFramework.InteractableToolsInputRouter[]
+struct InteractableToolsInputRouterU5BU5D_tE6E9A718D1FF258FF67C1187B54639FD056CC135  : public RuntimeArray
+{
+	ALIGN_FIELD (8) InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* m_Items[1];
+
+	inline InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
 // UnityEngine.Vector3[]
 struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C  : public RuntimeArray
 {
@@ -7600,58 +7349,37 @@ struct pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723  : public RuntimeAr
 		m_Items[index] = value;
 	}
 };
-// Bhaptics.Tact.Unity.Track[]
-struct TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78  : public RuntimeArray
-{
-	ALIGN_FIELD (8) Track_t890B55E3594EA0442464072A11DE8398FB0420E9* m_Items[1];
-
-	inline Track_t890B55E3594EA0442464072A11DE8398FB0420E9* GetAt(il2cpp_array_size_t index) const
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items[index];
-	}
-	inline Track_t890B55E3594EA0442464072A11DE8398FB0420E9** GetAddressAt(il2cpp_array_size_t index)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		return m_Items + index;
-	}
-	inline void SetAt(il2cpp_array_size_t index, Track_t890B55E3594EA0442464072A11DE8398FB0420E9* value)
-	{
-		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-	inline Track_t890B55E3594EA0442464072A11DE8398FB0420E9* GetAtUnchecked(il2cpp_array_size_t index) const
-	{
-		return m_Items[index];
-	}
-	inline Track_t890B55E3594EA0442464072A11DE8398FB0420E9** GetAddressAtUnchecked(il2cpp_array_size_t index)
-	{
-		return m_Items + index;
-	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Track_t890B55E3594EA0442464072A11DE8398FB0420E9* value)
-	{
-		m_Items[index] = value;
-		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
-	}
-};
 
 IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_pinvoke(const status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576& unmarshaled, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke& marshaled);
 IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_pinvoke_back(const status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke& marshaled, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576& unmarshaled);
 IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_pinvoke_cleanup(status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke& marshaled);
 
-// System.Void System.Collections.Generic.List`1<System.Object>::Clear()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// T[] UnityEngine.Object::FindObjectsOfType<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Object_FindObjectsOfType_TisRuntimeObject_m0B4DF4B8AB4C71E0F471BC9D0440B40844DA221D_gshared (const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.HashSet`1<System.Object>::Add(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_Add_m2CD7657B3459B61DD4BBA47024AC71F7D319658B_gshared (HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.HashSet`1<System.Object>::Remove(T)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HashSet_1_Remove_mF1D84C0A2829DDA2A0CEE1D82A5B999B5F6627CB_gshared (HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
 // System.Collections.Generic.HashSet`1/Enumerator<T> System.Collections.Generic.HashSet`1<System.Object>::GetEnumerator()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t72556E98D7DDBE118A973D782D523D15A96461C8 HashSet_1_GetEnumerator_m143B98FEED7E9CABA2C494AB2F04DAD60A504635_gshared (HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.HashSet`1/Enumerator<System.Object>::Dispose()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mFB582AEAA2E73F3128B5571197BEDE256A83F657_gshared (Enumerator_t72556E98D7DDBE118A973D782D523D15A96461C8* __this, const RuntimeMethod* method) ;
 // T System.Collections.Generic.HashSet`1/Enumerator<System.Object>::get_Current()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m139A176CD271A0532D75BE08DA7831C8C45CE28F_gshared_inline (Enumerator_t72556E98D7DDBE118A973D782D523D15A96461C8* __this, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+// System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>::get_Value()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) ;
+// TKey System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>::get_Key()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.HashSet`1/Enumerator<System.Object>::MoveNext()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m27565F5ACCCC75C3DD34CC4CAE3E6AEFEB9144A6_gshared (Enumerator_t72556E98D7DDBE118A973D782D523D15A96461C8* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.HashSet`1<System.Object>::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HashSet_1__ctor_m9132EE1422BAA45E44B7FFF495F378790D36D90E_gshared (HashSet_1_t2F33BEB06EEA4A872E2FAF464382422AA39AE885* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::Clear()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+// System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<System.Object>::GetEnumerator()
@@ -7666,8 +7394,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_AddComponent_TisRun
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
 // T[] System.Collections.Generic.List`1<System.Object>::ToArray()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* List_1_ToArray_mD7E4F8E7C11C3C67CB5739FCC0A6E86106A6291F_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
-// System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // T System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 // TSource System.Linq.Enumerable::First<System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>>(System.Collections.Generic.IEnumerable`1<TSource>)
@@ -7750,11 +7476,100 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeO
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Component_GetComponentsInChildren_TisRuntimeObject_m90734C3A39A158985239CB90DE2F0792F1D99926_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, bool ___0_includeInactive, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1<System.Object>::Remove(T)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Remove_m4DFA48F4CEB9169601E75FC28517C5C06EFA5AD7_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
-// TValue System.Collections.Generic.KeyValuePair`2<System.Object,System.Object>::get_Value()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) ;
 
+// System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+// T[] UnityEngine.Object::FindObjectsOfType<OculusSampleFramework.InteractableToolsInputRouter>()
+inline InteractableToolsInputRouterU5BU5D_tE6E9A718D1FF258FF67C1187B54639FD056CC135* Object_FindObjectsOfType_TisInteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0_mCE48D46CED648F905DBD42CAB5F873408C452818 (const RuntimeMethod* method)
+{
+	return ((  InteractableToolsInputRouterU5BU5D_tE6E9A718D1FF258FF67C1187B54639FD056CC135* (*) (const RuntimeMethod*))Object_FindObjectsOfType_TisRuntimeObject_m0B4DF4B8AB4C71E0F471BC9D0440B40844DA221D_gshared)(method);
+}
 // UnityEngine.GameObject UnityEngine.Component::get_gameObject()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) ;
+// System.Boolean OculusSampleFramework.InteractableTool::get_IsRightHandedTool()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool InteractableTool_get_IsRightHandedTool_m7A3D91A89574DBCF908090A93C9F414CC2E6F6F7_inline (InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool>::Add(T)
+inline bool HashSet_1_Add_m056A0905BB83E17A3DE8B8F4C8D01021DC300D30 (HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* __this, InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* ___0_item, const RuntimeMethod* method)
+{
+	return ((  bool (*) (HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614*, InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED*, const RuntimeMethod*))HashSet_1_Add_m2CD7657B3459B61DD4BBA47024AC71F7D319658B_gshared)(__this, ___0_item, method);
+}
+// System.Boolean System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool>::Remove(T)
+inline bool HashSet_1_Remove_m9CF9A3235781FA5EA09A34486DDC72EACE9C99DB (HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* __this, InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* ___0_item, const RuntimeMethod* method)
+{
+	return ((  bool (*) (HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614*, InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED*, const RuntimeMethod*))HashSet_1_Remove_mF1D84C0A2829DDA2A0CEE1D82A5B999B5F6627CB_gshared)(__this, ___0_item, method);
+}
+// OculusSampleFramework.HandsManager OculusSampleFramework.HandsManager::get_Instance()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* HandsManager_get_Instance_m18B92A0D065988A64D1C7E0745E385DDAA74A4C9_inline (const RuntimeMethod* method) ;
+// System.Boolean OculusSampleFramework.HandsManager::IsInitialized()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HandsManager_IsInitialized_m0DB811AC655C76E25374950343C1580C9B8823A3 (HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* __this, const RuntimeMethod* method) ;
+// OVRHand OculusSampleFramework.HandsManager::get_LeftHand()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* HandsManager_get_LeftHand_mEA5732CCB39AA6CF833546AE2C486B02C7B508A2 (HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* __this, const RuntimeMethod* method) ;
+// System.Boolean OVRHand::get_IsTracked()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool OVRHand_get_IsTracked_m869AA41C7CC8F224F1CD5A10FF6CD62E6F6BDFDA_inline (OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* __this, const RuntimeMethod* method) ;
+// OVRHand/TrackingConfidence OVRHand::get_HandConfidence()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t OVRHand_get_HandConfidence_m3B3B593995730923512B402CD57FC7D5E01D458F_inline (OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* __this, const RuntimeMethod* method) ;
+// OVRHand OculusSampleFramework.HandsManager::get_RightHand()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* HandsManager_get_RightHand_m2665862A46B12189D49D72814C79347B6CEDC069 (HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* __this, const RuntimeMethod* method) ;
+// System.Boolean OVRHand::get_IsPointerPoseValid()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool OVRHand_get_IsPointerPoseValid_m675548AD3E51E67A3F5EF6C47345775E5B1C8B5F_inline (OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* __this, const RuntimeMethod* method) ;
+// System.Boolean OculusSampleFramework.InteractableToolsInputRouter::UpdateToolsAndEnableState(System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InteractableToolsInputRouter_UpdateToolsAndEnableState_mD124C2C4D3A70AFAB31938A43C8FD85D2922634A (InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* __this, HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* ___0_tools, bool ___1_toolsAreEnabledThisFrame, const RuntimeMethod* method) ;
+// System.Boolean OculusSampleFramework.InteractableToolsInputRouter::UpdateTools(System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InteractableToolsInputRouter_UpdateTools_mA87BC74E2F876624039145047943DEAB309E0BE2 (InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* __this, HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* ___0_tools, bool ___1_resetCollisionData, const RuntimeMethod* method) ;
+// System.Void OculusSampleFramework.InteractableToolsInputRouter::ToggleToolsEnableState(System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractableToolsInputRouter_ToggleToolsEnableState_m58E4E398B8C62E2848F87CF38CC9A567BB3EFB4B (InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* __this, HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* ___0_tools, bool ___1_enableState, const RuntimeMethod* method) ;
+// System.Collections.Generic.HashSet`1/Enumerator<T> System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool>::GetEnumerator()
+inline Enumerator_t505582CD1811145766F30940FA1F3D36F1D9FC57 HashSet_1_GetEnumerator_m47C5ECD626F51920BFC19E08FDB6394547CB5876 (HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t505582CD1811145766F30940FA1F3D36F1D9FC57 (*) (HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614*, const RuntimeMethod*))HashSet_1_GetEnumerator_m143B98FEED7E9CABA2C494AB2F04DAD60A504635_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.HashSet`1/Enumerator<OculusSampleFramework.InteractableTool>::Dispose()
+inline void Enumerator_Dispose_m95A61A8CD2D1C4B8BBE6141DFA41B692E897B738 (Enumerator_t505582CD1811145766F30940FA1F3D36F1D9FC57* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t505582CD1811145766F30940FA1F3D36F1D9FC57*, const RuntimeMethod*))Enumerator_Dispose_mFB582AEAA2E73F3128B5571197BEDE256A83F657_gshared)(__this, method);
+}
+// T System.Collections.Generic.HashSet`1/Enumerator<OculusSampleFramework.InteractableTool>::get_Current()
+inline InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* Enumerator_get_Current_m5B3BF8002AD9DB86BDFF65444A24A5B77257B10E_inline (Enumerator_t505582CD1811145766F30940FA1F3D36F1D9FC57* __this, const RuntimeMethod* method)
+{
+	return ((  InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* (*) (Enumerator_t505582CD1811145766F30940FA1F3D36F1D9FC57*, const RuntimeMethod*))Enumerator_get_Current_m139A176CD271A0532D75BE08DA7831C8C45CE28F_gshared_inline)(__this, method);
+}
+// System.Int32 System.Collections.Generic.List`1<OculusSampleFramework.InteractableCollisionInfo>::get_Count()
+inline int32_t List_1_get_Count_mD2BCC5BF6F66FB7D76954B86923CDDB834FA5E95_inline (List_1_t490A09E30860203F317F45478EF4A90AE431CAEE* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t490A09E30860203F317F45478EF4A90AE431CAEE*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+// System.Collections.Generic.KeyValuePair`2<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo> OculusSampleFramework.InteractableTool::GetFirstCurrentCollisionInfo()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyValuePair_2_t714F012033B118070D84D2FE7ADCC4A01632B564 InteractableTool_GetFirstCurrentCollisionInfo_m414B33C232165FB5630AF0A3B6847B61057AADBB (InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* __this, const RuntimeMethod* method) ;
+// TValue System.Collections.Generic.KeyValuePair`2<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo>::get_Value()
+inline InteractableCollisionInfo_t0706183E9D28BE08640A9C78564FB7098214E3E3* KeyValuePair_2_get_Value_m8E86102626D06BABC5C55A51B7121090202E5C75_inline (KeyValuePair_2_t714F012033B118070D84D2FE7ADCC4A01632B564* __this, const RuntimeMethod* method)
+{
+	return ((  InteractableCollisionInfo_t0706183E9D28BE08640A9C78564FB7098214E3E3* (*) (KeyValuePair_2_t714F012033B118070D84D2FE7ADCC4A01632B564*, const RuntimeMethod*))KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline)(__this, method);
+}
+// TKey System.Collections.Generic.KeyValuePair`2<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo>::get_Key()
+inline Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2* KeyValuePair_2_get_Key_mDF7D1A309EA41964DF6AC023542B3938F6358084_inline (KeyValuePair_2_t714F012033B118070D84D2FE7ADCC4A01632B564* __this, const RuntimeMethod* method)
+{
+	return ((  Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2* (*) (KeyValuePair_2_t714F012033B118070D84D2FE7ADCC4A01632B564*, const RuntimeMethod*))KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline)(__this, method);
+}
+// OculusSampleFramework.ColliderZone OculusSampleFramework.Interactable::get_ActionCollider()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Interactable_get_ActionCollider_m8ADADA886C2AA8E7BA9BC7E2AE63E41326B3F3C0_inline (Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2* __this, const RuntimeMethod* method) ;
+// OculusSampleFramework.ColliderZone OculusSampleFramework.Interactable::get_ContactCollider()
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Interactable_get_ContactCollider_m187C64AE846A7EEEE77770867DE43B9C66765A21_inline (Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2* __this, const RuntimeMethod* method) ;
+// System.Void OculusSampleFramework.InteractableTool::ClearAllCurrentCollisionInfos()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractableTool_ClearAllCurrentCollisionInfos_m40F945534629095531D0E410F3829D6B309A29C4 (InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Collections.Generic.HashSet`1/Enumerator<OculusSampleFramework.InteractableTool>::MoveNext()
+inline bool Enumerator_MoveNext_m6F1B5FC96929708FE87FEE5F232C2F2639015C78 (Enumerator_t505582CD1811145766F30940FA1F3D36F1D9FC57* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t505582CD1811145766F30940FA1F3D36F1D9FC57*, const RuntimeMethod*))Enumerator_MoveNext_m27565F5ACCCC75C3DD34CC4CAE3E6AEFEB9144A6_gshared)(__this, method);
+}
+// System.Void System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool>::.ctor()
+inline void HashSet_1__ctor_m50F8840C8E08EBA548833E417EC829C89672DC46 (HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* __this, const RuntimeMethod* method)
+{
+	((  void (*) (HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614*, const RuntimeMethod*))HashSet_1__ctor_m9132EE1422BAA45E44B7FFF495F378790D36D90E_gshared)(__this, method);
+}
+// System.Void UnityEngine.MonoBehaviour::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.GameObject::get_activeSelf()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_get_activeSelf_m4F3E5240E138B66AAA080EA30759A3D0517DA368 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.GameObject::SetActive(System.Boolean)
@@ -7773,18 +7588,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FingerTipPokeTool_AttachTrigge
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
 // System.Void OculusSampleFramework.FingerTipPokeTool/<AttachTriggerLogic>d__21::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAttachTriggerLogicU3Ed__21__ctor_m8D5A513F37967116B41D3ED0398CF2FE213B7B34 (U3CAttachTriggerLogicU3Ed__21_t7407F3611D3E9321CE715B194B83607E4304D8B3* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
-// OculusSampleFramework.HandsManager OculusSampleFramework.HandsManager::get_Instance()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* HandsManager_get_Instance_m18B92A0D065988A64D1C7E0745E385DDAA74A4C9_inline (const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Object::op_Implicit(UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_exists, const RuntimeMethod* method) ;
-// System.Boolean OculusSampleFramework.HandsManager::IsInitialized()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HandsManager_IsInitialized_m0DB811AC655C76E25374950343C1580C9B8823A3 (HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* __this, const RuntimeMethod* method) ;
-// System.Boolean OculusSampleFramework.InteractableTool::get_IsRightHandedTool()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool InteractableTool_get_IsRightHandedTool_m7A3D91A89574DBCF908090A93C9F414CC2E6F6F7_inline (InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* __this, const RuntimeMethod* method) ;
-// OVRHand OculusSampleFramework.HandsManager::get_LeftHand()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* HandsManager_get_LeftHand_mEA5732CCB39AA6CF833546AE2C486B02C7B508A2 (HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* __this, const RuntimeMethod* method) ;
-// OVRHand OculusSampleFramework.HandsManager::get_RightHand()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* HandsManager_get_RightHand_m2665862A46B12189D49D72814C79347B6CEDC069 (HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* __this, const RuntimeMethod* method) ;
 // System.Single OVRHand::get_HandScale()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float OVRHand_get_HandScale_mF8A57EFEAA517331FBA93803439620C8EE94CE52_inline (OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* __this, const RuntimeMethod* method) ;
 // UnityEngine.CapsuleCollider OVRBoneCapsule::get_CapsuleCollider()
@@ -7937,8 +7742,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_enabled_m015E6D7B825528A311
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 // System.Void OculusSampleFramework.FingerTipPokeToolView::set_SphereRadius(System.Single)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FingerTipPokeToolView_set_SphereRadius_m14F90949F823F1C5F599DE694E9758579D64C22C_inline (FingerTipPokeToolView_t3D2D7DCEA0E6690414A5F66E4DD64362549CB667* __this, float ___0_value, const RuntimeMethod* method) ;
-// System.Void UnityEngine.MonoBehaviour::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // TSource System.Linq.Enumerable::First<System.Collections.Generic.KeyValuePair`2<OculusSampleFramework.Interactable,OculusSampleFramework.InteractableCollisionInfo>>(System.Collections.Generic.IEnumerable`1<TSource>)
 inline KeyValuePair_2_t714F012033B118070D84D2FE7ADCC4A01632B564 Enumerable_First_TisKeyValuePair_2_t714F012033B118070D84D2FE7ADCC4A01632B564_m1C93238B0708C9985123DF4B993F8B3C7AF62CD5 (RuntimeObject* ___0_source, const RuntimeMethod* method)
 {
@@ -8094,8 +7897,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RayToolView_set_ToolActivateState_m0A8B7
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 // System.Boolean OculusSampleFramework.RayTool::HasRayReleasedInteractable(OculusSampleFramework.Interactable)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool RayTool_HasRayReleasedInteractable_m40D1943C1390F761380064D8EEFE724DB9EB2A26 (RayTool_t0DE40836B7440F04FA3DEB39E1F5B2D27BA87941* __this, Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2* ___0_focusedInteractable, const RuntimeMethod* method) ;
-// System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 // OculusSampleFramework.Interactable OculusSampleFramework.RayTool::FindTargetInteractable()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2* RayTool_FindTargetInteractable_mE568809119993380E85D1B5F3516B712A2DB3164 (RayTool_t0DE40836B7440F04FA3DEB39E1F5B2D27BA87941* __this, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.Physics::OverlapSphereNonAlloc(UnityEngine.Vector3,System.Single,UnityEngine.Collider[])
@@ -8104,11 +7905,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Physics_OverlapSphereNonAlloc_m48E30D
 inline RuntimeObject* Component_GetComponent_TisColliderZone_tA9DAAD7F9B3FDEC5B607DB97A934B1081CCF7E19_m5FD81D5298881EED18EE5FCFCFEE886CD181ACE8 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
 {
 	return ((  RuntimeObject* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
-}
-// System.Int32 System.Collections.Generic.List`1<OculusSampleFramework.InteractableCollisionInfo>::get_Count()
-inline int32_t List_1_get_Count_mD2BCC5BF6F66FB7D76954B86923CDDB834FA5E95_inline (List_1_t490A09E30860203F317F45478EF4A90AE431CAEE* __this, const RuntimeMethod* method)
-{
-	return ((  int32_t (*) (List_1_t490A09E30860203F317F45478EF4A90AE431CAEE*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
 }
 // System.Void UnityEngine.Vector3::Normalize()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3_Normalize_mC749B887A4C74BA0A2E13E6377F17CCAEB0AADA8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) ;
@@ -8245,8 +8041,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) ;
 // System.Void OculusSampleFramework.SelectionCylinder::set_CurrSelectionState(OculusSampleFramework.SelectionCylinder/SelectionState)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SelectionCylinder_set_CurrSelectionState_m6A22A6076B7C0F359A67BB3F92C5F44891F88546 (SelectionCylinder_tB79C20E28823E6A7C8933C2A86C953A990F4480E* __this, int32_t ___0_value, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Material::SetColor(System.Int32,UnityEngine.Color)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetColor_m573C88F2FB1B5A978C53A197B414F9E9C6AC5B9A (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___0_nameID, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___1_value, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.Shader::PropertyToID(System.String)
@@ -9254,98 +9048,6 @@ inline void List_1__ctor_m1FB770381C3A129AD86880AAA4F631C28565CC93 (List_1_t81DD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0 (String_t* __this, String_t* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.ScriptableObject::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScriptableObject__ctor_mD037FDB0B487295EA47F79A4DB1BF1846C9087FF (ScriptableObject_tB3BFDB921A1B1795B38A5417D3B97A89A140436A* __this, const RuntimeMethod* method) ;
-// System.Void BhapticsManager::Initialize()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsManager_Initialize_mA7BA8260AEF4B5583FF11466F5216CEF1B230266 (const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.ScaleOption::.ctor(System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScaleOption__ctor_m6B6E52F1920EF1A6A6173DBA40373A2EB89EBA97 (ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* __this, float ___0_intensity, float ___1_duration, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.Unity.FileHapticClip::ResetValues()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileHapticClip_ResetValues_m24A047517C36F0D208AE4721F32BD256F042D927 (FileHapticClip_t48EC83EE51B9DE69C85D3DC520865AA88CB0F9D9* __this, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.Unity.FileHapticClip::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileHapticClip__ctor_mEA03B5953AAC12B4F4F765FD7AAB8CB821CCD6B7 (FileHapticClip_t48EC83EE51B9DE69C85D3DC520865AA88CB0F9D9* __this, const RuntimeMethod* method) ;
-// System.String UnityEngine.Application::get_identifier()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_identifier_mEA3314E50D44FB3CE2C2E78B336ACF4AD97BA056 (const RuntimeMethod* method) ;
-// System.String UnityEngine.Application::get_productName()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Application_get_productName_m9314FB94C4DE1F1731084FF30B9555F44BA477EB (const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.Unity.HapticApi::Initialise(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_Initialise_m30D4F8BBC6D0967EA925219946F6F9F60BDA4580 (String_t* ___0_appId, String_t* ___1_appName, const RuntimeMethod* method) ;
-// System.Boolean Bhaptics.Tact.Unity.HapticApi::IsDevicePlaying(Bhaptics.Tact.PositionType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_IsDevicePlaying_mFE21A3F7D83EE049003C294F212D634B95E1876A (int32_t ___0_pos, const RuntimeMethod* method) ;
-// System.Boolean Bhaptics.Tact.Unity.HapticApi::IsPlayingKey(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_IsPlayingKey_mAB4DE5D6E4D4435F879F0BC791E24D70ACBAFC4F (String_t* ___0_key, const RuntimeMethod* method) ;
-// System.Boolean Bhaptics.Tact.Unity.HapticApi::IsFeedbackRegistered(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_IsFeedbackRegistered_mDA2BBCBF485E8D5EB42B390AF8326C30D45E0801 (String_t* ___0_key, const RuntimeMethod* method) ;
-// System.Boolean Bhaptics.Tact.Unity.HapticApi::IsPlaying()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_IsPlaying_m1D25CFEA0AA7DE886069B542E10EACC244A66598 (const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.Unity.HapticApi::RegisterFeedbackFromTactFile(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_RegisterFeedbackFromTactFile_mC25BB735EDF86310F2BE279BE77B7A6814525B4F (String_t* ___0_str, String_t* ___1_tactFileStr, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.Unity.HapticApi::RegisterFeedbackFromTactFileReflected(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_RegisterFeedbackFromTactFileReflected_m5AA03F02CA80F09FD972FDEE27CB9D0EDF5A4235 (String_t* ___0_str, String_t* ___1_tactFileStr, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.Unity.HapticApi::SubmitByteArray(System.String,Bhaptics.Tact.PositionType,System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_SubmitByteArray_m0B314566F8054EC2304B09DFA06A0063A469DC5B (String_t* ___0_key, int32_t ___1_pos, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___2_charPtr, int32_t ___3_length, int32_t ___4_durationMillis, const RuntimeMethod* method) ;
-// System.Int32 Bhaptics.Tact.PathPoint::get_MotorCount()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PathPoint_get_MotorCount_mD2EB5DD17D380C9AF1B8E5C2550FF526793BFB22_inline (PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* __this, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.Unity.HapticApi::SubmitPathArray(System.String,Bhaptics.Tact.PositionType,Bhaptics.Tact.Unity.HapticApi/point[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_SubmitPathArray_m5332744B2A4F7674045BF625BF85CC6E912E8F36 (String_t* ___0_key, int32_t ___1_pos, pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* ___2_charPtr, int32_t ___3_length, int32_t ___4_durationMillis, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.Unity.HapticApi::SubmitRegisteredWithOption(System.String,System.String,System.Single,System.Single,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_SubmitRegisteredWithOption_m5E975859E85185123D34871863B497090FFAC63D (String_t* ___0_key, String_t* ___1_altKey, float ___2_intensity, float ___3_duration, float ___4_offsetX, float ___5_offsetY, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.Unity.HapticApi::SubmitRegistered(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_SubmitRegistered_m93F146E48AC24FAC9A2C74D4892E9F021731BD67 (String_t* ___0_key, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.Unity.HapticApi::SubmitRegisteredStartMillis(System.String,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_SubmitRegisteredStartMillis_m4FAF75C81B874CC719A377F06696C26961BB391F (String_t* ___0_key, int32_t ___1_startTimeMillis, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.Unity.HapticApi::TurnOffKey(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_TurnOffKey_m1F8EADFB4E136612F575B2103820B5EE8CCD0A4E (String_t* ___0_key, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.Unity.HapticApi::TurnOff()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_TurnOff_m37F3E663CD0A64C3EB9626423D112992D8258FF7 (const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.Unity.HapticApi::Destroy()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi_Destroy_m63DA8F469337114CEC06561FA468D2B1BA2EE1AD (const RuntimeMethod* method) ;
-// System.Boolean Bhaptics.Tact.Unity.HapticApi::TryGetResponseForPosition(Bhaptics.Tact.PositionType,Bhaptics.Tact.Unity.HapticApi/status&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HapticApi_TryGetResponseForPosition_m410F26B76DD2A379A5CE70ADBA7D7BF6175173E5 (int32_t ___0_pos, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576* ___1_status, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.Unity.BhapticsProject::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsProject__ctor_m97FE40ECCE0CAE2F90943DC505EF7EFF418727D1 (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Track>::.ctor()
-inline void List_1__ctor_m6B6749012AA714828B1A6A1FABDEBDD8335FEE19 (List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2* __this, const RuntimeMethod* method)
-{
-	((  void (*) (List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
-}
-// System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode> Bhaptics.Tact.JSONNode/Enumerator::get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC Enumerator_get_Current_mADC9138A797DFFC280E40580257BD68E94BC8D5C (Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6* __this, const RuntimeMethod* method) ;
-// TValue System.Collections.Generic.KeyValuePair`2<System.String,Bhaptics.Tact.JSONNode>::get_Value()
-inline JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_inline (KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC* __this, const RuntimeMethod* method)
-{
-	return ((  JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* (*) (KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC*, const RuntimeMethod*))KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline)(__this, method);
-}
-// Bhaptics.Tact.Unity.Track Bhaptics.Tact.Unity.Track::ToTrack(Bhaptics.Tact.JSONObject)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Track_t890B55E3594EA0442464072A11DE8398FB0420E9* Track_ToTrack_m4CC0735436732868D3070C22B5B2304459AA808C (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObj, const RuntimeMethod* method) ;
-// System.Void System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Track>::Add(T)
-inline void List_1_Add_m4E39030928BF0CB15FDFD6FAEF9FAC0EEACC634B_inline (List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2* __this, Track_t890B55E3594EA0442464072A11DE8398FB0420E9* ___0_item, const RuntimeMethod* method)
-{
-	((  void (*) (List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2*, Track_t890B55E3594EA0442464072A11DE8398FB0420E9*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
-}
-// System.Boolean Bhaptics.Tact.JSONNode/Enumerator::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m007D2FA8EE0C5EFD0F7CA354C8A9B0E49DEB4528 (Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6* __this, const RuntimeMethod* method) ;
-// Bhaptics.Tact.Unity.Layout Bhaptics.Tact.Unity.Layout::ToLayout(Bhaptics.Tact.JSONObject)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* Layout_ToLayout_m523C6596DFF6EAE08B7EF2D8AB8A3EF7AAD7A86D (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObj, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.Unity.BhapticsProject::set_Layout(Bhaptics.Tact.Unity.Layout)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BhapticsProject_set_Layout_m086532F448C8A6B38DFE6308CE19C76FB40F66FA_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* ___0_value, const RuntimeMethod* method) ;
-// T[] System.Collections.Generic.List`1<Bhaptics.Tact.Unity.Track>::ToArray()
-inline TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* List_1_ToArray_m9F04218A0494C4BF91025C2252E199DE56610D9A (List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2* __this, const RuntimeMethod* method)
-{
-	return ((  TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* (*) (List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2*, const RuntimeMethod*))List_1_ToArray_mD7E4F8E7C11C3C67CB5739FCC0A6E86106A6291F_gshared)(__this, method);
-}
-// System.Void Bhaptics.Tact.Unity.BhapticsProject::set_Tracks(Bhaptics.Tact.Unity.Track[])
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BhapticsProject_set_Tracks_m6623528C82AA30741BBB706531D490BD5B3F37EC_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* ___0_value, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.JSONObject::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* __this, const RuntimeMethod* method) ;
-// System.Void Bhaptics.Tact.JSONArray::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JSONArray__ctor_m4C44395E61EC41095CE4E43B84826B6CD00CAAC5 (JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* __this, const RuntimeMethod* method) ;
-// Bhaptics.Tact.Unity.Track[] Bhaptics.Tact.Unity.BhapticsProject::get_Tracks()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* BhapticsProject_get_Tracks_mBDE0713754725739BB7910610AF20943A7CD2474_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) ;
-// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.Track::ToJsonObject()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* Track_ToJsonObject_m7805509E16B067BD222D5E582892C5D30F65F6D1 (Track_t890B55E3594EA0442464072A11DE8398FB0420E9* __this, const RuntimeMethod* method) ;
-// Bhaptics.Tact.Unity.Layout Bhaptics.Tact.Unity.BhapticsProject::get_Layout()
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* BhapticsProject_get_Layout_m1CDEA6316C9F5B45CF1FFA0E95B027DBD0988840_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) ;
-// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.Layout::ToJsonObject()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* Layout_ToJsonObject_m1BA3A0A7ACFF10366F6004D700EDF471921F3B90 (Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Vector3::Magnitude(UnityEngine.Vector3)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Magnitude_m21652D951393A3D7CE92CE40049A0E7F76544D1B_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Quaternion::Internal_FromEulerRad(UnityEngine.Vector3)
@@ -9418,6 +9120,805 @@ IL2CPP_EXTERN_C int32_t CDECL IsDevicePlaying(int32_t);
 #endif
 #if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_haptic_library_INTERNAL
 IL2CPP_EXTERN_C int32_t CDECL TryGetResponseForPosition(int32_t, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke*);
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// OculusSampleFramework.InteractableToolsInputRouter OculusSampleFramework.InteractableToolsInputRouter::get_Instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* InteractableToolsInputRouter_get_Instance_m3B60F168E77BD4FDE23CEBE2094C408E34C61A32 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_FindObjectsOfType_TisInteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0_mCE48D46CED648F905DBD42CAB5F873408C452818_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	InteractableToolsInputRouterU5BU5D_tE6E9A718D1FF258FF67C1187B54639FD056CC135* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		// if (_instance == null)
+		InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* L_0 = ((InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0_StaticFields*)il2cpp_codegen_static_fields_for(InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0_il2cpp_TypeInfo_var))->____instance_4;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_003a;
+		}
+	}
+	{
+		// var instances = FindObjectsOfType<InteractableToolsInputRouter>();
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		InteractableToolsInputRouterU5BU5D_tE6E9A718D1FF258FF67C1187B54639FD056CC135* L_2;
+		L_2 = Object_FindObjectsOfType_TisInteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0_mCE48D46CED648F905DBD42CAB5F873408C452818(Object_FindObjectsOfType_TisInteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0_mCE48D46CED648F905DBD42CAB5F873408C452818_RuntimeMethod_var);
+		V_0 = L_2;
+		// if (instances.Length > 0)
+		InteractableToolsInputRouterU5BU5D_tE6E9A718D1FF258FF67C1187B54639FD056CC135* L_3 = V_0;
+		NullCheck(L_3);
+		if (!(((RuntimeArray*)L_3)->max_length))
+		{
+			goto IL_003a;
+		}
+	}
+	{
+		// _instance = instances[0];
+		InteractableToolsInputRouterU5BU5D_tE6E9A718D1FF258FF67C1187B54639FD056CC135* L_4 = V_0;
+		NullCheck(L_4);
+		int32_t L_5 = 0;
+		InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* L_6 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
+		((InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0_StaticFields*)il2cpp_codegen_static_fields_for(InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0_il2cpp_TypeInfo_var))->____instance_4 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&((InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0_StaticFields*)il2cpp_codegen_static_fields_for(InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0_il2cpp_TypeInfo_var))->____instance_4), (void*)L_6);
+		// for (int i = 1; i < instances.Length; i++)
+		V_1 = 1;
+		goto IL_0034;
+	}
+
+IL_0023:
+	{
+		// GameObject.Destroy(instances[i].gameObject);
+		InteractableToolsInputRouterU5BU5D_tE6E9A718D1FF258FF67C1187B54639FD056CC135* L_7 = V_0;
+		int32_t L_8 = V_1;
+		NullCheck(L_7);
+		int32_t L_9 = L_8;
+		InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* L_10 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_9));
+		NullCheck(L_10);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11;
+		L_11 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_10, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_11, NULL);
+		// for (int i = 1; i < instances.Length; i++)
+		int32_t L_12 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_12, 1));
+	}
+
+IL_0034:
+	{
+		// for (int i = 1; i < instances.Length; i++)
+		int32_t L_13 = V_1;
+		InteractableToolsInputRouterU5BU5D_tE6E9A718D1FF258FF67C1187B54639FD056CC135* L_14 = V_0;
+		NullCheck(L_14);
+		if ((((int32_t)L_13) < ((int32_t)((int32_t)(((RuntimeArray*)L_14)->max_length)))))
+		{
+			goto IL_0023;
+		}
+	}
+
+IL_003a:
+	{
+		// return _instance;
+		InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* L_15 = ((InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0_StaticFields*)il2cpp_codegen_static_fields_for(InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0_il2cpp_TypeInfo_var))->____instance_4;
+		return L_15;
+	}
+}
+// System.Void OculusSampleFramework.InteractableToolsInputRouter::RegisterInteractableTool(OculusSampleFramework.InteractableTool)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractableToolsInputRouter_RegisterInteractableTool_m884F4D317030DB7D3E0C46C762E9ED100FDF2228 (InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* __this, InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* ___0_interactableTool, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1_Add_m056A0905BB83E17A3DE8B8F4C8D01021DC300D30_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (interactableTool.IsRightHandedTool)
+		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_0 = ___0_interactableTool;
+		NullCheck(L_0);
+		bool L_1;
+		L_1 = InteractableTool_get_IsRightHandedTool_m7A3D91A89574DBCF908090A93C9F414CC2E6F6F7_inline(L_0, NULL);
+		if (!L_1)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		// if (interactableTool.IsFarFieldTool)
+		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_2 = ___0_interactableTool;
+		NullCheck(L_2);
+		bool L_3;
+		L_3 = VirtualFuncInvoker0< bool >::Invoke(6 /* System.Boolean OculusSampleFramework.InteractableTool::get_IsFarFieldTool() */, L_2);
+		if (!L_3)
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		// _rightHandFarTools.Add(interactableTool);
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_4 = __this->____rightHandFarTools_10;
+		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_5 = ___0_interactableTool;
+		NullCheck(L_4);
+		bool L_6;
+		L_6 = HashSet_1_Add_m056A0905BB83E17A3DE8B8F4C8D01021DC300D30(L_4, L_5, HashSet_1_Add_m056A0905BB83E17A3DE8B8F4C8D01021DC300D30_RuntimeMethod_var);
+		return;
+	}
+
+IL_001e:
+	{
+		// _rightHandNearTools.Add(interactableTool);
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_7 = __this->____rightHandNearTools_9;
+		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_8 = ___0_interactableTool;
+		NullCheck(L_7);
+		bool L_9;
+		L_9 = HashSet_1_Add_m056A0905BB83E17A3DE8B8F4C8D01021DC300D30(L_7, L_8, HashSet_1_Add_m056A0905BB83E17A3DE8B8F4C8D01021DC300D30_RuntimeMethod_var);
+		return;
+	}
+
+IL_002c:
+	{
+		// if (interactableTool.IsFarFieldTool)
+		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_10 = ___0_interactableTool;
+		NullCheck(L_10);
+		bool L_11;
+		L_11 = VirtualFuncInvoker0< bool >::Invoke(6 /* System.Boolean OculusSampleFramework.InteractableTool::get_IsFarFieldTool() */, L_10);
+		if (!L_11)
+		{
+			goto IL_0042;
+		}
+	}
+	{
+		// _leftHandFarTools.Add(interactableTool);
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_12 = __this->____leftHandFarTools_8;
+		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_13 = ___0_interactableTool;
+		NullCheck(L_12);
+		bool L_14;
+		L_14 = HashSet_1_Add_m056A0905BB83E17A3DE8B8F4C8D01021DC300D30(L_12, L_13, HashSet_1_Add_m056A0905BB83E17A3DE8B8F4C8D01021DC300D30_RuntimeMethod_var);
+		return;
+	}
+
+IL_0042:
+	{
+		// _leftHandNearTools.Add(interactableTool);
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_15 = __this->____leftHandNearTools_7;
+		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_16 = ___0_interactableTool;
+		NullCheck(L_15);
+		bool L_17;
+		L_17 = HashSet_1_Add_m056A0905BB83E17A3DE8B8F4C8D01021DC300D30(L_15, L_16, HashSet_1_Add_m056A0905BB83E17A3DE8B8F4C8D01021DC300D30_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void OculusSampleFramework.InteractableToolsInputRouter::UnregisterInteractableTool(OculusSampleFramework.InteractableTool)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractableToolsInputRouter_UnregisterInteractableTool_mBA318F772B5CE62F412F620AF88CB05CA3C0C2AA (InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* __this, InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* ___0_interactableTool, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1_Remove_m9CF9A3235781FA5EA09A34486DDC72EACE9C99DB_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// if (interactableTool.IsRightHandedTool)
+		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_0 = ___0_interactableTool;
+		NullCheck(L_0);
+		bool L_1;
+		L_1 = InteractableTool_get_IsRightHandedTool_m7A3D91A89574DBCF908090A93C9F414CC2E6F6F7_inline(L_0, NULL);
+		if (!L_1)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		// if (interactableTool.IsFarFieldTool)
+		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_2 = ___0_interactableTool;
+		NullCheck(L_2);
+		bool L_3;
+		L_3 = VirtualFuncInvoker0< bool >::Invoke(6 /* System.Boolean OculusSampleFramework.InteractableTool::get_IsFarFieldTool() */, L_2);
+		if (!L_3)
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		// _rightHandFarTools.Remove(interactableTool);
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_4 = __this->____rightHandFarTools_10;
+		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_5 = ___0_interactableTool;
+		NullCheck(L_4);
+		bool L_6;
+		L_6 = HashSet_1_Remove_m9CF9A3235781FA5EA09A34486DDC72EACE9C99DB(L_4, L_5, HashSet_1_Remove_m9CF9A3235781FA5EA09A34486DDC72EACE9C99DB_RuntimeMethod_var);
+		return;
+	}
+
+IL_001e:
+	{
+		// _rightHandNearTools.Remove(interactableTool);
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_7 = __this->____rightHandNearTools_9;
+		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_8 = ___0_interactableTool;
+		NullCheck(L_7);
+		bool L_9;
+		L_9 = HashSet_1_Remove_m9CF9A3235781FA5EA09A34486DDC72EACE9C99DB(L_7, L_8, HashSet_1_Remove_m9CF9A3235781FA5EA09A34486DDC72EACE9C99DB_RuntimeMethod_var);
+		return;
+	}
+
+IL_002c:
+	{
+		// if (interactableTool.IsFarFieldTool)
+		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_10 = ___0_interactableTool;
+		NullCheck(L_10);
+		bool L_11;
+		L_11 = VirtualFuncInvoker0< bool >::Invoke(6 /* System.Boolean OculusSampleFramework.InteractableTool::get_IsFarFieldTool() */, L_10);
+		if (!L_11)
+		{
+			goto IL_0042;
+		}
+	}
+	{
+		// _leftHandFarTools.Remove(interactableTool);
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_12 = __this->____leftHandFarTools_8;
+		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_13 = ___0_interactableTool;
+		NullCheck(L_12);
+		bool L_14;
+		L_14 = HashSet_1_Remove_m9CF9A3235781FA5EA09A34486DDC72EACE9C99DB(L_12, L_13, HashSet_1_Remove_m9CF9A3235781FA5EA09A34486DDC72EACE9C99DB_RuntimeMethod_var);
+		return;
+	}
+
+IL_0042:
+	{
+		// _leftHandNearTools.Remove(interactableTool);
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_15 = __this->____leftHandNearTools_7;
+		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_16 = ___0_interactableTool;
+		NullCheck(L_15);
+		bool L_17;
+		L_17 = HashSet_1_Remove_m9CF9A3235781FA5EA09A34486DDC72EACE9C99DB(L_15, L_16, HashSet_1_Remove_m9CF9A3235781FA5EA09A34486DDC72EACE9C99DB_RuntimeMethod_var);
+		// }
+		return;
+	}
+}
+// System.Void OculusSampleFramework.InteractableToolsInputRouter::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractableToolsInputRouter_Update_mE0022009CE16EDCCCADA38F8D596B3E1B09EFD51 (InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* __this, const RuntimeMethod* method) 
+{
+	bool V_0 = false;
+	bool V_1 = false;
+	bool V_2 = false;
+	bool V_3 = false;
+	bool V_4 = false;
+	bool V_5 = false;
+	int32_t G_B5_0 = 0;
+	int32_t G_B8_0 = 0;
+	{
+		// if (!HandsManager.Instance.IsInitialized())
+		HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* L_0;
+		L_0 = HandsManager_get_Instance_m18B92A0D065988A64D1C7E0745E385DDAA74A4C9_inline(NULL);
+		NullCheck(L_0);
+		bool L_1;
+		L_1 = HandsManager_IsInitialized_m0DB811AC655C76E25374950343C1580C9B8823A3(L_0, NULL);
+		if (L_1)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		// return;
+		return;
+	}
+
+IL_000d:
+	{
+		// bool leftHandIsReliable = HandsManager.Instance.LeftHand.IsTracked &&
+		//     HandsManager.Instance.LeftHand.HandConfidence == OVRHand.TrackingConfidence.High;
+		HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* L_2;
+		L_2 = HandsManager_get_Instance_m18B92A0D065988A64D1C7E0745E385DDAA74A4C9_inline(NULL);
+		NullCheck(L_2);
+		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_3;
+		L_3 = HandsManager_get_LeftHand_mEA5732CCB39AA6CF833546AE2C486B02C7B508A2(L_2, NULL);
+		NullCheck(L_3);
+		bool L_4;
+		L_4 = OVRHand_get_IsTracked_m869AA41C7CC8F224F1CD5A10FF6CD62E6F6BDFDA_inline(L_3, NULL);
+		if (!L_4)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* L_5;
+		L_5 = HandsManager_get_Instance_m18B92A0D065988A64D1C7E0745E385DDAA74A4C9_inline(NULL);
+		NullCheck(L_5);
+		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_6;
+		L_6 = HandsManager_get_LeftHand_mEA5732CCB39AA6CF833546AE2C486B02C7B508A2(L_5, NULL);
+		NullCheck(L_6);
+		int32_t L_7;
+		L_7 = OVRHand_get_HandConfidence_m3B3B593995730923512B402CD57FC7D5E01D458F_inline(L_6, NULL);
+		G_B5_0 = ((((int32_t)L_7) == ((int32_t)((int32_t)1065353216)))? 1 : 0);
+		goto IL_0037;
+	}
+
+IL_0036:
+	{
+		G_B5_0 = 0;
+	}
+
+IL_0037:
+	{
+		V_0 = (bool)G_B5_0;
+		// bool rightHandIsReliable = HandsManager.Instance.RightHand.IsTracked &&
+		//     HandsManager.Instance.RightHand.HandConfidence == OVRHand.TrackingConfidence.High;
+		HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* L_8;
+		L_8 = HandsManager_get_Instance_m18B92A0D065988A64D1C7E0745E385DDAA74A4C9_inline(NULL);
+		NullCheck(L_8);
+		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_9;
+		L_9 = HandsManager_get_RightHand_m2665862A46B12189D49D72814C79347B6CEDC069(L_8, NULL);
+		NullCheck(L_9);
+		bool L_10;
+		L_10 = OVRHand_get_IsTracked_m869AA41C7CC8F224F1CD5A10FF6CD62E6F6BDFDA_inline(L_9, NULL);
+		if (!L_10)
+		{
+			goto IL_0061;
+		}
+	}
+	{
+		HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* L_11;
+		L_11 = HandsManager_get_Instance_m18B92A0D065988A64D1C7E0745E385DDAA74A4C9_inline(NULL);
+		NullCheck(L_11);
+		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_12;
+		L_12 = HandsManager_get_RightHand_m2665862A46B12189D49D72814C79347B6CEDC069(L_11, NULL);
+		NullCheck(L_12);
+		int32_t L_13;
+		L_13 = OVRHand_get_HandConfidence_m3B3B593995730923512B402CD57FC7D5E01D458F_inline(L_12, NULL);
+		G_B8_0 = ((((int32_t)L_13) == ((int32_t)((int32_t)1065353216)))? 1 : 0);
+		goto IL_0062;
+	}
+
+IL_0061:
+	{
+		G_B8_0 = 0;
+	}
+
+IL_0062:
+	{
+		V_1 = (bool)G_B8_0;
+		// bool leftHandProperlyTracked = HandsManager.Instance.LeftHand.IsPointerPoseValid;
+		HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* L_14;
+		L_14 = HandsManager_get_Instance_m18B92A0D065988A64D1C7E0745E385DDAA74A4C9_inline(NULL);
+		NullCheck(L_14);
+		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_15;
+		L_15 = HandsManager_get_LeftHand_mEA5732CCB39AA6CF833546AE2C486B02C7B508A2(L_14, NULL);
+		NullCheck(L_15);
+		bool L_16;
+		L_16 = OVRHand_get_IsPointerPoseValid_m675548AD3E51E67A3F5EF6C47345775E5B1C8B5F_inline(L_15, NULL);
+		V_2 = L_16;
+		// bool rightHandProperlyTracked = HandsManager.Instance.RightHand.IsPointerPoseValid;
+		HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* L_17;
+		L_17 = HandsManager_get_Instance_m18B92A0D065988A64D1C7E0745E385DDAA74A4C9_inline(NULL);
+		NullCheck(L_17);
+		OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* L_18;
+		L_18 = HandsManager_get_RightHand_m2665862A46B12189D49D72814C79347B6CEDC069(L_17, NULL);
+		NullCheck(L_18);
+		bool L_19;
+		L_19 = OVRHand_get_IsPointerPoseValid_m675548AD3E51E67A3F5EF6C47345775E5B1C8B5F_inline(L_18, NULL);
+		V_3 = L_19;
+		// bool encounteredNearObjectsLeftHand = UpdateToolsAndEnableState(_leftHandNearTools, leftHandIsReliable);
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_20 = __this->____leftHandNearTools_7;
+		bool L_21 = V_0;
+		bool L_22;
+		L_22 = InteractableToolsInputRouter_UpdateToolsAndEnableState_mD124C2C4D3A70AFAB31938A43C8FD85D2922634A(__this, L_20, L_21, NULL);
+		V_4 = L_22;
+		// UpdateToolsAndEnableState(_leftHandFarTools, !encounteredNearObjectsLeftHand && leftHandIsReliable &&
+		//   leftHandProperlyTracked);
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_23 = __this->____leftHandFarTools_8;
+		bool L_24 = V_4;
+		bool L_25 = V_0;
+		bool L_26 = V_2;
+		bool L_27;
+		L_27 = InteractableToolsInputRouter_UpdateToolsAndEnableState_mD124C2C4D3A70AFAB31938A43C8FD85D2922634A(__this, L_23, (bool)((int32_t)(((int32_t)(((((int32_t)L_24) == ((int32_t)0))? 1 : 0)&(int32_t)L_25))&(int32_t)L_26)), NULL);
+		// bool encounteredNearObjectsRightHand = UpdateToolsAndEnableState(_rightHandNearTools, rightHandIsReliable);
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_28 = __this->____rightHandNearTools_9;
+		bool L_29 = V_1;
+		bool L_30;
+		L_30 = InteractableToolsInputRouter_UpdateToolsAndEnableState_mD124C2C4D3A70AFAB31938A43C8FD85D2922634A(__this, L_28, L_29, NULL);
+		V_5 = L_30;
+		// UpdateToolsAndEnableState(_rightHandFarTools, !encounteredNearObjectsRightHand && rightHandIsReliable &&
+		//   rightHandProperlyTracked);
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_31 = __this->____rightHandFarTools_10;
+		bool L_32 = V_5;
+		bool L_33 = V_1;
+		bool L_34 = V_3;
+		bool L_35;
+		L_35 = InteractableToolsInputRouter_UpdateToolsAndEnableState_mD124C2C4D3A70AFAB31938A43C8FD85D2922634A(__this, L_31, (bool)((int32_t)(((int32_t)(((((int32_t)L_32) == ((int32_t)0))? 1 : 0)&(int32_t)L_33))&(int32_t)L_34)), NULL);
+		// }
+		return;
+	}
+}
+// System.Boolean OculusSampleFramework.InteractableToolsInputRouter::UpdateToolsAndEnableState(System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InteractableToolsInputRouter_UpdateToolsAndEnableState_mD124C2C4D3A70AFAB31938A43C8FD85D2922634A (InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* __this, HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* ___0_tools, bool ___1_toolsAreEnabledThisFrame, const RuntimeMethod* method) 
+{
+	{
+		// bool encounteredObjects = UpdateTools(tools, resetCollisionData: !toolsAreEnabledThisFrame);
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_0 = ___0_tools;
+		bool L_1 = ___1_toolsAreEnabledThisFrame;
+		bool L_2;
+		L_2 = InteractableToolsInputRouter_UpdateTools_mA87BC74E2F876624039145047943DEAB309E0BE2(__this, L_0, (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0), NULL);
+		// ToggleToolsEnableState(tools, toolsAreEnabledThisFrame);
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_3 = ___0_tools;
+		bool L_4 = ___1_toolsAreEnabledThisFrame;
+		InteractableToolsInputRouter_ToggleToolsEnableState_m58E4E398B8C62E2848F87CF38CC9A567BB3EFB4B(__this, L_3, L_4, NULL);
+		// return encounteredObjects;
+		return L_2;
+	}
+}
+// System.Boolean OculusSampleFramework.InteractableToolsInputRouter::UpdateTools(System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool InteractableToolsInputRouter_UpdateTools_mA87BC74E2F876624039145047943DEAB309E0BE2 (InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* __this, HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* ___0_tools, bool ___1_resetCollisionData, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m95A61A8CD2D1C4B8BBE6141DFA41B692E897B738_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m6F1B5FC96929708FE87FEE5F232C2F2639015C78_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m5B3BF8002AD9DB86BDFF65444A24A5B77257B10E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1_GetEnumerator_m47C5ECD626F51920BFC19E08FDB6394547CB5876_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Key_mDF7D1A309EA41964DF6AC023542B3938F6358084_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_m8E86102626D06BABC5C55A51B7121090202E5C75_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mD2BCC5BF6F66FB7D76954B86923CDDB834FA5E95_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	Enumerator_t505582CD1811145766F30940FA1F3D36F1D9FC57 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* V_2 = NULL;
+	List_1_t490A09E30860203F317F45478EF4A90AE431CAEE* V_3 = NULL;
+	KeyValuePair_2_t714F012033B118070D84D2FE7ADCC4A01632B564 V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	{
+		// bool toolsEncounteredObjects = false;
+		V_0 = (bool)0;
+		// foreach (InteractableTool currentInteractableTool in tools)
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_0 = ___0_tools;
+		NullCheck(L_0);
+		Enumerator_t505582CD1811145766F30940FA1F3D36F1D9FC57 L_1;
+		L_1 = HashSet_1_GetEnumerator_m47C5ECD626F51920BFC19E08FDB6394547CB5876(L_0, HashSet_1_GetEnumerator_m47C5ECD626F51920BFC19E08FDB6394547CB5876_RuntimeMethod_var);
+		V_1 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_00e5:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m95A61A8CD2D1C4B8BBE6141DFA41B692E897B738((&V_1), Enumerator_Dispose_m95A61A8CD2D1C4B8BBE6141DFA41B692E897B738_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_00d7_1;
+			}
+
+IL_000e_1:
+			{
+				// foreach (InteractableTool currentInteractableTool in tools)
+				InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_2;
+				L_2 = Enumerator_get_Current_m5B3BF8002AD9DB86BDFF65444A24A5B77257B10E_inline((&V_1), Enumerator_get_Current_m5B3BF8002AD9DB86BDFF65444A24A5B77257B10E_RuntimeMethod_var);
+				V_2 = L_2;
+				// List<InteractableCollisionInfo> intersectingObjectsFound =
+				//     currentInteractableTool.GetNextIntersectingObjects();
+				InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_3 = V_2;
+				NullCheck(L_3);
+				List_1_t490A09E30860203F317F45478EF4A90AE431CAEE* L_4;
+				L_4 = VirtualFuncInvoker0< List_1_t490A09E30860203F317F45478EF4A90AE431CAEE* >::Invoke(7 /* System.Collections.Generic.List`1<OculusSampleFramework.InteractableCollisionInfo> OculusSampleFramework.InteractableTool::GetNextIntersectingObjects() */, L_3);
+				V_3 = L_4;
+				// if (intersectingObjectsFound.Count > 0 && !resetCollisionData)
+				List_1_t490A09E30860203F317F45478EF4A90AE431CAEE* L_5 = V_3;
+				NullCheck(L_5);
+				int32_t L_6;
+				L_6 = List_1_get_Count_mD2BCC5BF6F66FB7D76954B86923CDDB834FA5E95_inline(L_5, List_1_get_Count_mD2BCC5BF6F66FB7D76954B86923CDDB834FA5E95_RuntimeMethod_var);
+				if ((((int32_t)L_6) <= ((int32_t)0)))
+				{
+					goto IL_00c5_1;
+				}
+			}
+			{
+				bool L_7 = ___1_resetCollisionData;
+				if (L_7)
+				{
+					goto IL_00c5_1;
+				}
+			}
+			{
+				// if (!toolsEncounteredObjects)
+				bool L_8 = V_0;
+				if (L_8)
+				{
+					goto IL_003c_1;
+				}
+			}
+			{
+				// toolsEncounteredObjects = intersectingObjectsFound.Count > 0;
+				List_1_t490A09E30860203F317F45478EF4A90AE431CAEE* L_9 = V_3;
+				NullCheck(L_9);
+				int32_t L_10;
+				L_10 = List_1_get_Count_mD2BCC5BF6F66FB7D76954B86923CDDB834FA5E95_inline(L_9, List_1_get_Count_mD2BCC5BF6F66FB7D76954B86923CDDB834FA5E95_RuntimeMethod_var);
+				V_0 = (bool)((((int32_t)L_10) > ((int32_t)0))? 1 : 0);
+			}
+
+IL_003c_1:
+			{
+				// currentInteractableTool.UpdateCurrentCollisionsBasedOnDepth();
+				InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_11 = V_2;
+				NullCheck(L_11);
+				VirtualActionInvoker0::Invoke(13 /* System.Void OculusSampleFramework.InteractableTool::UpdateCurrentCollisionsBasedOnDepth() */, L_11);
+				// if (currentInteractableTool.IsFarFieldTool)
+				InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_12 = V_2;
+				NullCheck(L_12);
+				bool L_13;
+				L_13 = VirtualFuncInvoker0< bool >::Invoke(6 /* System.Boolean OculusSampleFramework.InteractableTool::get_IsFarFieldTool() */, L_12);
+				if (!L_13)
+				{
+					goto IL_00d1_1;
+				}
+			}
+			{
+				// var firstInteractable = currentInteractableTool.GetFirstCurrentCollisionInfo();
+				InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_14 = V_2;
+				NullCheck(L_14);
+				KeyValuePair_2_t714F012033B118070D84D2FE7ADCC4A01632B564 L_15;
+				L_15 = InteractableTool_GetFirstCurrentCollisionInfo_m414B33C232165FB5630AF0A3B6847B61057AADBB(L_14, NULL);
+				V_4 = L_15;
+				// if (currentInteractableTool.ToolInputState == ToolInputState.PrimaryInputUp)
+				InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_16 = V_2;
+				NullCheck(L_16);
+				int32_t L_17;
+				L_17 = VirtualFuncInvoker0< int32_t >::Invoke(5 /* OculusSampleFramework.ToolInputState OculusSampleFramework.InteractableTool::get_ToolInputState() */, L_16);
+				if ((!(((uint32_t)L_17) == ((uint32_t)3))))
+				{
+					goto IL_0085_1;
+				}
+			}
+			{
+				// firstInteractable.Value.InteractableCollider = firstInteractable.Key.ActionCollider;
+				InteractableCollisionInfo_t0706183E9D28BE08640A9C78564FB7098214E3E3* L_18;
+				L_18 = KeyValuePair_2_get_Value_m8E86102626D06BABC5C55A51B7121090202E5C75_inline((&V_4), KeyValuePair_2_get_Value_m8E86102626D06BABC5C55A51B7121090202E5C75_RuntimeMethod_var);
+				Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2* L_19;
+				L_19 = KeyValuePair_2_get_Key_mDF7D1A309EA41964DF6AC023542B3938F6358084_inline((&V_4), KeyValuePair_2_get_Key_mDF7D1A309EA41964DF6AC023542B3938F6358084_RuntimeMethod_var);
+				NullCheck(L_19);
+				RuntimeObject* L_20;
+				L_20 = Interactable_get_ActionCollider_m8ADADA886C2AA8E7BA9BC7E2AE63E41326B3F3C0_inline(L_19, NULL);
+				NullCheck(L_18);
+				L_18->___InteractableCollider_0 = L_20;
+				Il2CppCodeGenWriteBarrier((void**)(&L_18->___InteractableCollider_0), (void*)L_20);
+				// firstInteractable.Value.CollisionDepth = InteractableCollisionDepth.Action;
+				InteractableCollisionInfo_t0706183E9D28BE08640A9C78564FB7098214E3E3* L_21;
+				L_21 = KeyValuePair_2_get_Value_m8E86102626D06BABC5C55A51B7121090202E5C75_inline((&V_4), KeyValuePair_2_get_Value_m8E86102626D06BABC5C55A51B7121090202E5C75_RuntimeMethod_var);
+				NullCheck(L_21);
+				L_21->___CollisionDepth_1 = 3;
+				goto IL_00aa_1;
+			}
+
+IL_0085_1:
+			{
+				// firstInteractable.Value.InteractableCollider = firstInteractable.Key.ContactCollider;
+				InteractableCollisionInfo_t0706183E9D28BE08640A9C78564FB7098214E3E3* L_22;
+				L_22 = KeyValuePair_2_get_Value_m8E86102626D06BABC5C55A51B7121090202E5C75_inline((&V_4), KeyValuePair_2_get_Value_m8E86102626D06BABC5C55A51B7121090202E5C75_RuntimeMethod_var);
+				Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2* L_23;
+				L_23 = KeyValuePair_2_get_Key_mDF7D1A309EA41964DF6AC023542B3938F6358084_inline((&V_4), KeyValuePair_2_get_Key_mDF7D1A309EA41964DF6AC023542B3938F6358084_RuntimeMethod_var);
+				NullCheck(L_23);
+				RuntimeObject* L_24;
+				L_24 = Interactable_get_ContactCollider_m187C64AE846A7EEEE77770867DE43B9C66765A21_inline(L_23, NULL);
+				NullCheck(L_22);
+				L_22->___InteractableCollider_0 = L_24;
+				Il2CppCodeGenWriteBarrier((void**)(&L_22->___InteractableCollider_0), (void*)L_24);
+				// firstInteractable.Value.CollisionDepth = InteractableCollisionDepth.Contact;
+				InteractableCollisionInfo_t0706183E9D28BE08640A9C78564FB7098214E3E3* L_25;
+				L_25 = KeyValuePair_2_get_Value_m8E86102626D06BABC5C55A51B7121090202E5C75_inline((&V_4), KeyValuePair_2_get_Value_m8E86102626D06BABC5C55A51B7121090202E5C75_RuntimeMethod_var);
+				NullCheck(L_25);
+				L_25->___CollisionDepth_1 = 2;
+			}
+
+IL_00aa_1:
+			{
+				// currentInteractableTool.FocusOnInteractable(firstInteractable.Key,
+				//     firstInteractable.Value.InteractableCollider);
+				InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_26 = V_2;
+				Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2* L_27;
+				L_27 = KeyValuePair_2_get_Key_mDF7D1A309EA41964DF6AC023542B3938F6358084_inline((&V_4), KeyValuePair_2_get_Key_mDF7D1A309EA41964DF6AC023542B3938F6358084_RuntimeMethod_var);
+				InteractableCollisionInfo_t0706183E9D28BE08640A9C78564FB7098214E3E3* L_28;
+				L_28 = KeyValuePair_2_get_Value_m8E86102626D06BABC5C55A51B7121090202E5C75_inline((&V_4), KeyValuePair_2_get_Value_m8E86102626D06BABC5C55A51B7121090202E5C75_RuntimeMethod_var);
+				NullCheck(L_28);
+				RuntimeObject* L_29 = L_28->___InteractableCollider_0;
+				NullCheck(L_26);
+				VirtualActionInvoker2< Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2*, RuntimeObject* >::Invoke(8 /* System.Void OculusSampleFramework.InteractableTool::FocusOnInteractable(OculusSampleFramework.Interactable,OculusSampleFramework.ColliderZone) */, L_26, L_27, L_29);
+				goto IL_00d1_1;
+			}
+
+IL_00c5_1:
+			{
+				// currentInteractableTool.DeFocus();
+				InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_30 = V_2;
+				NullCheck(L_30);
+				VirtualActionInvoker0::Invoke(9 /* System.Void OculusSampleFramework.InteractableTool::DeFocus() */, L_30);
+				// currentInteractableTool.ClearAllCurrentCollisionInfos();
+				InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_31 = V_2;
+				NullCheck(L_31);
+				InteractableTool_ClearAllCurrentCollisionInfos_m40F945534629095531D0E410F3829D6B309A29C4(L_31, NULL);
+			}
+
+IL_00d1_1:
+			{
+				// currentInteractableTool.UpdateLatestCollisionData();
+				InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_32 = V_2;
+				NullCheck(L_32);
+				VirtualActionInvoker0::Invoke(14 /* System.Void OculusSampleFramework.InteractableTool::UpdateLatestCollisionData() */, L_32);
+			}
+
+IL_00d7_1:
+			{
+				// foreach (InteractableTool currentInteractableTool in tools)
+				bool L_33;
+				L_33 = Enumerator_MoveNext_m6F1B5FC96929708FE87FEE5F232C2F2639015C78((&V_1), Enumerator_MoveNext_m6F1B5FC96929708FE87FEE5F232C2F2639015C78_RuntimeMethod_var);
+				if (L_33)
+				{
+					goto IL_000e_1;
+				}
+			}
+			{
+				goto IL_00f3;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_00f3:
+	{
+		// return toolsEncounteredObjects;
+		bool L_34 = V_0;
+		return L_34;
+	}
+}
+// System.Void OculusSampleFramework.InteractableToolsInputRouter::ToggleToolsEnableState(System.Collections.Generic.HashSet`1<OculusSampleFramework.InteractableTool>,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractableToolsInputRouter_ToggleToolsEnableState_m58E4E398B8C62E2848F87CF38CC9A567BB3EFB4B (InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* __this, HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* ___0_tools, bool ___1_enableState, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m95A61A8CD2D1C4B8BBE6141DFA41B692E897B738_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m6F1B5FC96929708FE87FEE5F232C2F2639015C78_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m5B3BF8002AD9DB86BDFF65444A24A5B77257B10E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1_GetEnumerator_m47C5ECD626F51920BFC19E08FDB6394547CB5876_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t505582CD1811145766F30940FA1F3D36F1D9FC57 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* V_1 = NULL;
+	{
+		// foreach (InteractableTool tool in tools)
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_0 = ___0_tools;
+		NullCheck(L_0);
+		Enumerator_t505582CD1811145766F30940FA1F3D36F1D9FC57 L_1;
+		L_1 = HashSet_1_GetEnumerator_m47C5ECD626F51920BFC19E08FDB6394547CB5876(L_0, HashSet_1_GetEnumerator_m47C5ECD626F51920BFC19E08FDB6394547CB5876_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_002c:
+			{// begin finally (depth: 1)
+				Enumerator_Dispose_m95A61A8CD2D1C4B8BBE6141DFA41B692E897B738((&V_0), Enumerator_Dispose_m95A61A8CD2D1C4B8BBE6141DFA41B692E897B738_RuntimeMethod_var);
+				return;
+			}// end finally (depth: 1)
+		});
+		try
+		{// begin try (depth: 1)
+			{
+				goto IL_0021_1;
+			}
+
+IL_0009_1:
+			{
+				// foreach (InteractableTool tool in tools)
+				InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_2;
+				L_2 = Enumerator_get_Current_m5B3BF8002AD9DB86BDFF65444A24A5B77257B10E_inline((&V_0), Enumerator_get_Current_m5B3BF8002AD9DB86BDFF65444A24A5B77257B10E_RuntimeMethod_var);
+				V_1 = L_2;
+				// if (tool.EnableState != enableState)
+				InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_3 = V_1;
+				NullCheck(L_3);
+				bool L_4;
+				L_4 = VirtualFuncInvoker0< bool >::Invoke(10 /* System.Boolean OculusSampleFramework.InteractableTool::get_EnableState() */, L_3);
+				bool L_5 = ___1_enableState;
+				if ((((int32_t)L_4) == ((int32_t)L_5)))
+				{
+					goto IL_0021_1;
+				}
+			}
+			{
+				// tool.EnableState = enableState;
+				InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_6 = V_1;
+				bool L_7 = ___1_enableState;
+				NullCheck(L_6);
+				VirtualActionInvoker1< bool >::Invoke(11 /* System.Void OculusSampleFramework.InteractableTool::set_EnableState(System.Boolean) */, L_6, L_7);
+			}
+
+IL_0021_1:
+			{
+				// foreach (InteractableTool tool in tools)
+				bool L_8;
+				L_8 = Enumerator_MoveNext_m6F1B5FC96929708FE87FEE5F232C2F2639015C78((&V_0), Enumerator_MoveNext_m6F1B5FC96929708FE87FEE5F232C2F2639015C78_RuntimeMethod_var);
+				if (L_8)
+				{
+					goto IL_0009_1;
+				}
+			}
+			{
+				goto IL_003a;
+			}
+		}// end try (depth: 1)
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_003a:
+	{
+		// }
+		return;
+	}
+}
+// System.Void OculusSampleFramework.InteractableToolsInputRouter::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InteractableToolsInputRouter__ctor_m962A2A6E8F17FB9DB01ED945E35AB0EB713C64B3 (InteractableToolsInputRouter_tAA6166C88C5AA0E1F0039E01BF88CCBA4D8B63D0* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1__ctor_m50F8840C8E08EBA548833E417EC829C89672DC46_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// private HashSet<InteractableTool> _leftHandNearTools = new HashSet<InteractableTool>();
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_0 = (HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614*)il2cpp_codegen_object_new(HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		HashSet_1__ctor_m50F8840C8E08EBA548833E417EC829C89672DC46(L_0, HashSet_1__ctor_m50F8840C8E08EBA548833E417EC829C89672DC46_RuntimeMethod_var);
+		__this->____leftHandNearTools_7 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____leftHandNearTools_7), (void*)L_0);
+		// private HashSet<InteractableTool> _leftHandFarTools = new HashSet<InteractableTool>();
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_1 = (HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614*)il2cpp_codegen_object_new(HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		HashSet_1__ctor_m50F8840C8E08EBA548833E417EC829C89672DC46(L_1, HashSet_1__ctor_m50F8840C8E08EBA548833E417EC829C89672DC46_RuntimeMethod_var);
+		__this->____leftHandFarTools_8 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____leftHandFarTools_8), (void*)L_1);
+		// private HashSet<InteractableTool> _rightHandNearTools = new HashSet<InteractableTool>();
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_2 = (HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614*)il2cpp_codegen_object_new(HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614_il2cpp_TypeInfo_var);
+		NullCheck(L_2);
+		HashSet_1__ctor_m50F8840C8E08EBA548833E417EC829C89672DC46(L_2, HashSet_1__ctor_m50F8840C8E08EBA548833E417EC829C89672DC46_RuntimeMethod_var);
+		__this->____rightHandNearTools_9 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____rightHandNearTools_9), (void*)L_2);
+		// private HashSet<InteractableTool> _rightHandFarTools = new HashSet<InteractableTool>();
+		HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614* L_3 = (HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614*)il2cpp_codegen_object_new(HashSet_1_t6E773C658CF5CD59C20F425AFDAABC499A623614_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		HashSet_1__ctor_m50F8840C8E08EBA548833E417EC829C89672DC46(L_3, HashSet_1__ctor_m50F8840C8E08EBA548833E417EC829C89672DC46_RuntimeMethod_var);
+		__this->____rightHandFarTools_10 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____rightHandFarTools_10), (void*)L_3);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
 #endif
 #ifdef __clang__
 #pragma clang diagnostic push
@@ -30714,930 +31215,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HapticApi__ctor_m6EBE07812D3F0A3512D2281
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// Conversion methods for marshalling of: Bhaptics.Tact.Unity.HapticApi/status
-IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_pinvoke(const status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576& unmarshaled, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke& marshaled)
-{
-	if (unmarshaled.___values_0 != NULL)
-	{
-		if (20 > (unmarshaled.___values_0)->max_length)
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_argument_exception("", "Type could not be marshaled because the length of an embedded array instance does not match the declared length in the layout."), NULL);
-		}
-
-		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(20); i++)
-		{
-			(marshaled.___values_0)[i] = (unmarshaled.___values_0)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(i));
-		}
-	}
-}
-IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_pinvoke_back(const status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke& marshaled, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576& unmarshaled)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	unmarshaled.___values_0 = reinterpret_cast<Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*>((Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, 20));
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___values_0), (void*)reinterpret_cast<Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*>((Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, 20)));
-	for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(20); i++)
-	{
-		(unmarshaled.___values_0)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(i), (marshaled.___values_0)[i]);
-	}
-}
-// Conversion method for clean up from marshalling of: Bhaptics.Tact.Unity.HapticApi/status
-IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_pinvoke_cleanup(status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_pinvoke& marshaled)
-{
-}
-// Conversion methods for marshalling of: Bhaptics.Tact.Unity.HapticApi/status
-IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_com(const status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576& unmarshaled, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_com& marshaled)
-{
-	if (unmarshaled.___values_0 != NULL)
-	{
-		if (20 > (unmarshaled.___values_0)->max_length)
-		{
-			IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_argument_exception("", "Type could not be marshaled because the length of an embedded array instance does not match the declared length in the layout."), NULL);
-		}
-
-		for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(20); i++)
-		{
-			(marshaled.___values_0)[i] = (unmarshaled.___values_0)->GetAtUnchecked(static_cast<il2cpp_array_size_t>(i));
-		}
-	}
-}
-IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_com_back(const status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_com& marshaled, status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576& unmarshaled)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	unmarshaled.___values_0 = reinterpret_cast<Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*>((Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, 20));
-	Il2CppCodeGenWriteBarrier((void**)(&unmarshaled.___values_0), (void*)reinterpret_cast<Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*>((Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*)SZArrayNew(Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C_il2cpp_TypeInfo_var, 20)));
-	for (int32_t i = 0; i < ARRAY_LENGTH_AS_INT32(20); i++)
-	{
-		(unmarshaled.___values_0)->SetAtUnchecked(static_cast<il2cpp_array_size_t>(i), (marshaled.___values_0)[i]);
-	}
-}
-// Conversion method for clean up from marshalling of: Bhaptics.Tact.Unity.HapticApi/status
-IL2CPP_EXTERN_C void status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshal_com_cleanup(status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576_marshaled_com& marshaled)
-{
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void Bhaptics.Tact.Unity.ArmsHapticClip::Play(System.Single,System.Single,System.Single,System.Single,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArmsHapticClip_Play_m60DA4DDC43344E74A32D125D6EF8DD671DDCDB4E (ArmsHapticClip_t147D7B1D9FA2AEB6F4001D52E83C485D05738DE7* __this, float ___0_intensity, float ___1_duration, float ___2_vestRotationAngleX, float ___3_vestRotationOffsetY, String_t* ___4_identifier, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsManager_t7514043B74A443B9EBEDDCEF5CFF974ABD6055B9_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral53EF00C5C787F29C2FC919E385A5882E802CCA7E);
-		s_Il2CppMethodInitialized = true;
-	}
-	RuntimeObject* V_0 = NULL;
-	String_t* V_1 = NULL;
-	{
-		// if (!BhapticsManager.Init)
-		bool L_0 = ((BhapticsManager_t7514043B74A443B9EBEDDCEF5CFF974ABD6055B9_StaticFields*)il2cpp_codegen_static_fields_for(BhapticsManager_t7514043B74A443B9EBEDDCEF5CFF974ABD6055B9_il2cpp_TypeInfo_var))->___Init_1;
-		if (L_0)
-		{
-			goto IL_000c;
-		}
-	}
-	{
-		// BhapticsManager.Initialize();
-		BhapticsManager_Initialize_mA7BA8260AEF4B5583FF11466F5216CEF1B230266(NULL);
-	}
-
-IL_000c:
-	{
-		// var haptic = BhapticsManager.GetHaptic();
-		RuntimeObject* L_1;
-		L_1 = BhapticsManager_GetHaptic_m307D5434386E8ABB1F232FBD10FB87EE4CD04E63(NULL);
-		V_0 = L_1;
-		// if (haptic == null)
-		RuntimeObject* L_2 = V_0;
-		if (L_2)
-		{
-			goto IL_0016;
-		}
-	}
-	{
-		// return;
-		return;
-	}
-
-IL_0016:
-	{
-		// if (IsReflect)
-		bool L_3 = __this->___IsReflect_11;
-		if (!L_3)
-		{
-			goto IL_0061;
-		}
-	}
-	{
-		// var reflectIdentifier = assetId + "Reflect";
-		String_t* L_4 = ((HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E*)__this)->___assetId_4;
-		String_t* L_5;
-		L_5 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_4, _stringLiteral53EF00C5C787F29C2FC919E385A5882E802CCA7E, NULL);
-		V_1 = L_5;
-		// if (!haptic.IsFeedbackRegistered(reflectIdentifier))
-		RuntimeObject* L_6 = V_0;
-		String_t* L_7 = V_1;
-		NullCheck(L_6);
-		bool L_8;
-		L_8 = InterfaceFuncInvoker1< bool, String_t* >::Invoke(3 /* System.Boolean Bhaptics.Tact.Unity.IHaptic::IsFeedbackRegistered(System.String) */, IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var, L_6, L_7);
-		if (L_8)
-		{
-			goto IL_0045;
-		}
-	}
-	{
-		// haptic.RegisterTactFileStrReflected(reflectIdentifier, JsonValue);
-		RuntimeObject* L_9 = V_0;
-		String_t* L_10 = V_1;
-		String_t* L_11 = ((FileHapticClip_t48EC83EE51B9DE69C85D3DC520865AA88CB0F9D9*)__this)->___JsonValue_9;
-		NullCheck(L_9);
-		InterfaceActionInvoker2< String_t*, String_t* >::Invoke(6 /* System.Void Bhaptics.Tact.Unity.IHaptic::RegisterTactFileStrReflected(System.String,System.String) */, IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var, L_9, L_10, L_11);
-	}
-
-IL_0045:
-	{
-		// haptic.SubmitRegistered(reflectIdentifier, keyId + identifier, new ScaleOption(intensity, duration));
-		RuntimeObject* L_12 = V_0;
-		String_t* L_13 = V_1;
-		String_t* L_14 = ((HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E*)__this)->___keyId_5;
-		String_t* L_15 = ___4_identifier;
-		String_t* L_16;
-		L_16 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_14, L_15, NULL);
-		float L_17 = ___0_intensity;
-		float L_18 = ___1_duration;
-		ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* L_19 = (ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A*)il2cpp_codegen_object_new(ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A_il2cpp_TypeInfo_var);
-		NullCheck(L_19);
-		ScaleOption__ctor_m6B6E52F1920EF1A6A6173DBA40373A2EB89EBA97(L_19, L_17, L_18, NULL);
-		NullCheck(L_12);
-		InterfaceActionInvoker3< String_t*, String_t*, ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* >::Invoke(9 /* System.Void Bhaptics.Tact.Unity.IHaptic::SubmitRegistered(System.String,System.String,Bhaptics.Tact.ScaleOption) */, IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var, L_12, L_13, L_16, L_19);
-		return;
-	}
-
-IL_0061:
-	{
-		// if (!haptic.IsFeedbackRegistered(assetId))
-		RuntimeObject* L_20 = V_0;
-		String_t* L_21 = ((HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E*)__this)->___assetId_4;
-		NullCheck(L_20);
-		bool L_22;
-		L_22 = InterfaceFuncInvoker1< bool, String_t* >::Invoke(3 /* System.Boolean Bhaptics.Tact.Unity.IHaptic::IsFeedbackRegistered(System.String) */, IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var, L_20, L_21);
-		if (L_22)
-		{
-			goto IL_0081;
-		}
-	}
-	{
-		// haptic.RegisterTactFileStr(assetId, JsonValue);
-		RuntimeObject* L_23 = V_0;
-		String_t* L_24 = ((HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E*)__this)->___assetId_4;
-		String_t* L_25 = ((FileHapticClip_t48EC83EE51B9DE69C85D3DC520865AA88CB0F9D9*)__this)->___JsonValue_9;
-		NullCheck(L_23);
-		InterfaceActionInvoker2< String_t*, String_t* >::Invoke(5 /* System.Void Bhaptics.Tact.Unity.IHaptic::RegisterTactFileStr(System.String,System.String) */, IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var, L_23, L_24, L_25);
-	}
-
-IL_0081:
-	{
-		// haptic.SubmitRegistered(assetId, keyId + identifier, new ScaleOption(intensity, duration));
-		RuntimeObject* L_26 = V_0;
-		String_t* L_27 = ((HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E*)__this)->___assetId_4;
-		String_t* L_28 = ((HapticClip_tC284B1DD037DC93232D477857C74FF1E447E5A2E*)__this)->___keyId_5;
-		String_t* L_29 = ___4_identifier;
-		String_t* L_30;
-		L_30 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(L_28, L_29, NULL);
-		float L_31 = ___0_intensity;
-		float L_32 = ___1_duration;
-		ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* L_33 = (ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A*)il2cpp_codegen_object_new(ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A_il2cpp_TypeInfo_var);
-		NullCheck(L_33);
-		ScaleOption__ctor_m6B6E52F1920EF1A6A6173DBA40373A2EB89EBA97(L_33, L_31, L_32, NULL);
-		NullCheck(L_26);
-		InterfaceActionInvoker3< String_t*, String_t*, ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* >::Invoke(9 /* System.Void Bhaptics.Tact.Unity.IHaptic::SubmitRegistered(System.String,System.String,Bhaptics.Tact.ScaleOption) */, IHaptic_t5615E39CB354BB974CC337A2D32D1570D7E75362_il2cpp_TypeInfo_var, L_26, L_27, L_30, L_33);
-		// }
-		return;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.ArmsHapticClip::ResetValues()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArmsHapticClip_ResetValues_mA54DDE5DF3BC842D4BC3CA59C99EB38D977929D4 (ArmsHapticClip_t147D7B1D9FA2AEB6F4001D52E83C485D05738DE7* __this, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool InteractableTool_get_IsRightHandedTool_m7A3D91A89574DBCF908090A93C9F414CC2E6F6F7_inline (InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* __this, const RuntimeMethod* method) 
 {
 	{
-		// base.ResetValues();
-		FileHapticClip_ResetValues_m24A047517C36F0D208AE4721F32BD256F042D927(__this, NULL);
-		// IsReflect = false;
-		__this->___IsReflect_11 = (bool)0;
-		// }
-		return;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.ArmsHapticClip::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArmsHapticClip__ctor_mDC970DE44CAFE5F3D46A983FD36FA135B4086B3D (ArmsHapticClip_t147D7B1D9FA2AEB6F4001D52E83C485D05738DE7* __this, const RuntimeMethod* method) 
-{
-	{
-		FileHapticClip__ctor_mEA03B5953AAC12B4F4F765FD7AAB8CB821CCD6B7(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic__ctor_mBF9C697F33CE6DC357630717AA13612632452722 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, const RuntimeMethod* method) 
-{
-	{
-		// public BhapticsHaptic()
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		// HapticApi.Initialise(Application.identifier, Application.productName);
-		String_t* L_0;
-		L_0 = Application_get_identifier_mEA3314E50D44FB3CE2C2E78B336ACF4AD97BA056(NULL);
-		String_t* L_1;
-		L_1 = Application_get_productName_m9314FB94C4DE1F1731084FF30B9555F44BA477EB(NULL);
-		HapticApi_Initialise_m30D4F8BBC6D0967EA925219946F6F9F60BDA4580(L_0, L_1, NULL);
-		// }
-		return;
-	}
-}
-// System.Boolean Bhaptics.Tact.Unity.BhapticsHaptic::IsConnect(Bhaptics.Tact.PositionType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BhapticsHaptic_IsConnect_m8A53ADB473647BC17635A489336C5FE073C5F7C3 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, int32_t ___0_type, const RuntimeMethod* method) 
-{
-	{
-		// return HapticApi.IsDevicePlaying(type);
-		int32_t L_0 = ___0_type;
-		bool L_1;
-		L_1 = HapticApi_IsDevicePlaying_mFE21A3F7D83EE049003C294F212D634B95E1876A(L_0, NULL);
-		return L_1;
-	}
-}
-// System.Boolean Bhaptics.Tact.Unity.BhapticsHaptic::IsConnect(Bhaptics.Tact.Unity.HapticDeviceType,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BhapticsHaptic_IsConnect_m378F1728017BFB0CFEFD4E1D20FB061025515BA7 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, int32_t ___0_type, bool ___1_isLeft, const RuntimeMethod* method) 
-{
-	{
-		// return HapticApi.IsDevicePlaying(BhapticsUtils.ToPositionType(type, isLeft));
-		int32_t L_0 = ___0_type;
-		bool L_1 = ___1_isLeft;
-		int32_t L_2;
-		L_2 = BhapticsUtils_ToPositionType_mD7153937883C07B4A9F78AEB48006E06FD686A3B(L_0, L_1, NULL);
-		bool L_3;
-		L_3 = HapticApi_IsDevicePlaying_mFE21A3F7D83EE049003C294F212D634B95E1876A(L_2, NULL);
-		return L_3;
-	}
-}
-// System.Boolean Bhaptics.Tact.Unity.BhapticsHaptic::IsPlaying(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BhapticsHaptic_IsPlaying_mD8F46DC52793DC0D3C63B79E281F5DEFC27C9EB2 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, const RuntimeMethod* method) 
-{
-	{
-		// return HapticApi.IsPlayingKey(key);
-		String_t* L_0 = ___0_key;
-		bool L_1;
-		L_1 = HapticApi_IsPlayingKey_mAB4DE5D6E4D4435F879F0BC791E24D70ACBAFC4F(L_0, NULL);
-		return L_1;
-	}
-}
-// System.Boolean Bhaptics.Tact.Unity.BhapticsHaptic::IsFeedbackRegistered(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BhapticsHaptic_IsFeedbackRegistered_m77423899CDB1921594749EF624609C2F9D77B63C (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, const RuntimeMethod* method) 
-{
-	{
-		// return HapticApi.IsFeedbackRegistered(key);
-		String_t* L_0 = ___0_key;
-		bool L_1;
-		L_1 = HapticApi_IsFeedbackRegistered_mDA2BBCBF485E8D5EB42B390AF8326C30D45E0801(L_0, NULL);
-		return L_1;
-	}
-}
-// System.Boolean Bhaptics.Tact.Unity.BhapticsHaptic::IsPlaying()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool BhapticsHaptic_IsPlaying_m01B62C7A76562787DCF7C49DD76BB167E04C6698 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, const RuntimeMethod* method) 
-{
-	{
-		// return HapticApi.IsPlaying();
-		bool L_0;
-		L_0 = HapticApi_IsPlaying_m1D25CFEA0AA7DE886069B542E10EACC244A66598(NULL);
+		// public bool IsRightHandedTool { get; set; }
+		bool L_0 = __this->___U3CIsRightHandedToolU3Ek__BackingField_4;
 		return L_0;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::RegisterTactFileStr(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_RegisterTactFileStr_m66F69A2C582926FB30344193BFBF88A61BF6B9E2 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, String_t* ___1_tactFileStr, const RuntimeMethod* method) 
-{
-	{
-		// HapticApi.RegisterFeedbackFromTactFile(key, tactFileStr);
-		String_t* L_0 = ___0_key;
-		String_t* L_1 = ___1_tactFileStr;
-		HapticApi_RegisterFeedbackFromTactFile_mC25BB735EDF86310F2BE279BE77B7A6814525B4F(L_0, L_1, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::RegisterTactFileStrReflected(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_RegisterTactFileStrReflected_mE231D8E542C04591034249A35764F15BF6E3A53D (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, String_t* ___1_tactFileStr, const RuntimeMethod* method) 
-{
-	{
-		// HapticApi.RegisterFeedbackFromTactFileReflected(key, tactFileStr);
-		String_t* L_0 = ___0_key;
-		String_t* L_1 = ___1_tactFileStr;
-		HapticApi_RegisterFeedbackFromTactFileReflected_m5AA03F02CA80F09FD972FDEE27CB9D0EDF5A4235(L_0, L_1, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::Submit(System.String,Bhaptics.Tact.PositionType,System.Collections.Generic.List`1<Bhaptics.Tact.DotPoint>,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_Submit_m533B1349375C0844BE2B878B9D918FE1F468181C (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, int32_t ___1_position, List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7* ___2_points, int32_t ___3_durationMillis, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mA6E8E551DC8B567A0F1BEA949DBFEAF141BC307F_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m1E3E02F8E3D829A6B2A87379F9BF11A6FDE90319_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_0 = NULL;
-	int32_t V_1 = 0;
-	DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* V_2 = NULL;
-	{
-		// byte[] bytes = new byte[20];
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)20));
-		V_0 = L_0;
-		// for (var i = 0; i < points.Count; i++)
-		V_1 = 0;
-		goto IL_0027;
-	}
-
-IL_000c:
-	{
-		// DotPoint point = points[i];
-		List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7* L_1 = ___2_points;
-		int32_t L_2 = V_1;
-		NullCheck(L_1);
-		DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* L_3;
-		L_3 = List_1_get_Item_m1E3E02F8E3D829A6B2A87379F9BF11A6FDE90319(L_1, L_2, List_1_get_Item_m1E3E02F8E3D829A6B2A87379F9BF11A6FDE90319_RuntimeMethod_var);
-		V_2 = L_3;
-		// bytes[point.Index] = (byte)point.Intensity;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = V_0;
-		DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* L_5 = V_2;
-		NullCheck(L_5);
-		int32_t L_6;
-		L_6 = DotPoint_get_Index_m633D59299ED59D6254D7CC8667EB024D087A7574_inline(L_5, NULL);
-		DotPoint_t36D271003C9A2D401C0CA4ED28884095C95BBDF0* L_7 = V_2;
-		NullCheck(L_7);
-		int32_t L_8;
-		L_8 = DotPoint_get_Intensity_m8C6D8B150CCE0A547E1B3C7124AC4380D5A3016C_inline(L_7, NULL);
-		NullCheck(L_4);
-		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(L_6), (uint8_t)((int32_t)(uint8_t)L_8));
-		// for (var i = 0; i < points.Count; i++)
-		int32_t L_9 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_9, 1));
-	}
-
-IL_0027:
-	{
-		// for (var i = 0; i < points.Count; i++)
-		int32_t L_10 = V_1;
-		List_1_t5D96D1F31EB91EC29AA8029FDDE4504506140BE7* L_11 = ___2_points;
-		NullCheck(L_11);
-		int32_t L_12;
-		L_12 = List_1_get_Count_mA6E8E551DC8B567A0F1BEA949DBFEAF141BC307F_inline(L_11, List_1_get_Count_mA6E8E551DC8B567A0F1BEA949DBFEAF141BC307F_RuntimeMethod_var);
-		if ((((int32_t)L_10) < ((int32_t)L_12)))
-		{
-			goto IL_000c;
-		}
-	}
-	{
-		// HapticApi.SubmitByteArray(key, position, bytes, 20, durationMillis);
-		String_t* L_13 = ___0_key;
-		int32_t L_14 = ___1_position;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_15 = V_0;
-		int32_t L_16 = ___3_durationMillis;
-		HapticApi_SubmitByteArray_m0B314566F8054EC2304B09DFA06A0063A469DC5B(L_13, L_14, L_15, ((int32_t)20), L_16, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::Submit(System.String,Bhaptics.Tact.PositionType,System.Collections.Generic.List`1<Bhaptics.Tact.PathPoint>,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_Submit_mDD612BB0542E0B24A67871D68B8DA4FAD5372A56 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, int32_t ___1_position, List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* ___2_points, int32_t ___3_durationMillis, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* V_0 = NULL;
-	int32_t V_1 = 0;
-	{
-		// HapticApi.point[] pts = new HapticApi.point[points.Count];
-		List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_0 = ___2_points;
-		NullCheck(L_0);
-		int32_t L_1;
-		L_1 = List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_inline(L_0, List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_RuntimeMethod_var);
-		pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* L_2 = (pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723*)(pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723*)SZArrayNew(pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723_il2cpp_TypeInfo_var, (uint32_t)L_1);
-		V_0 = L_2;
-		// for (var i = 0; i < points.Count; i++)
-		V_1 = 0;
-		goto IL_0074;
-	}
-
-IL_0010:
-	{
-		// pts[i].intensity = points[i].Intensity;
-		pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* L_3 = V_0;
-		int32_t L_4 = V_1;
-		NullCheck(L_3);
-		List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_5 = ___2_points;
-		int32_t L_6 = V_1;
-		NullCheck(L_5);
-		PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* L_7;
-		L_7 = List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A(L_5, L_6, List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A_RuntimeMethod_var);
-		NullCheck(L_7);
-		int32_t L_8;
-		L_8 = PathPoint_get_Intensity_mD87D87612D1B2B24FF1F6AF055689F274E08288B_inline(L_7, NULL);
-		((L_3)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_4)))->___intensity_2 = L_8;
-		// pts[i].motorCount = points[i].MotorCount;
-		pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* L_9 = V_0;
-		int32_t L_10 = V_1;
-		NullCheck(L_9);
-		List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_11 = ___2_points;
-		int32_t L_12 = V_1;
-		NullCheck(L_11);
-		PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* L_13;
-		L_13 = List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A(L_11, L_12, List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A_RuntimeMethod_var);
-		NullCheck(L_13);
-		int32_t L_14;
-		L_14 = PathPoint_get_MotorCount_mD2EB5DD17D380C9AF1B8E5C2550FF526793BFB22_inline(L_13, NULL);
-		((L_9)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_10)))->___motorCount_3 = L_14;
-		// pts[i].x = points[i].X;
-		pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* L_15 = V_0;
-		int32_t L_16 = V_1;
-		NullCheck(L_15);
-		List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_17 = ___2_points;
-		int32_t L_18 = V_1;
-		NullCheck(L_17);
-		PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* L_19;
-		L_19 = List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A(L_17, L_18, List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A_RuntimeMethod_var);
-		NullCheck(L_19);
-		float L_20;
-		L_20 = PathPoint_get_X_mC6D8AD1FC8309504340DEEF64E8F78FF6F4658D2_inline(L_19, NULL);
-		((L_15)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_16)))->___x_0 = L_20;
-		// pts[i].y = points[i].Y;
-		pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* L_21 = V_0;
-		int32_t L_22 = V_1;
-		NullCheck(L_21);
-		List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_23 = ___2_points;
-		int32_t L_24 = V_1;
-		NullCheck(L_23);
-		PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* L_25;
-		L_25 = List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A(L_23, L_24, List_1_get_Item_m3229CD45470B9F04B98079381150F3258A54576A_RuntimeMethod_var);
-		NullCheck(L_25);
-		float L_26;
-		L_26 = PathPoint_get_Y_m222EBAB437A3BB6D31690746927433FB7EA5283C_inline(L_25, NULL);
-		((L_21)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_22)))->___y_1 = L_26;
-		// for (var i = 0; i < points.Count; i++)
-		int32_t L_27 = V_1;
-		V_1 = ((int32_t)il2cpp_codegen_add(L_27, 1));
-	}
-
-IL_0074:
-	{
-		// for (var i = 0; i < points.Count; i++)
-		int32_t L_28 = V_1;
-		List_1_t058DC9462B9FA6AC13EC3A9042486268CAF653FD* L_29 = ___2_points;
-		NullCheck(L_29);
-		int32_t L_30;
-		L_30 = List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_inline(L_29, List_1_get_Count_mE5729F867A6A301E548939F14362FD50BFA8D9F8_RuntimeMethod_var);
-		if ((((int32_t)L_28) < ((int32_t)L_30)))
-		{
-			goto IL_0010;
-		}
-	}
-	{
-		// HapticApi.SubmitPathArray(key, position, pts, pts.Length, durationMillis);
-		String_t* L_31 = ___0_key;
-		int32_t L_32 = ___1_position;
-		pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* L_33 = V_0;
-		pointU5BU5D_t918E84FA01515AB0FB9211B1C30C36E0ACB87723* L_34 = V_0;
-		NullCheck(L_34);
-		int32_t L_35 = ___3_durationMillis;
-		HapticApi_SubmitPathArray_m5332744B2A4F7674045BF625BF85CC6E912E8F36(L_31, L_32, L_33, ((int32_t)(((RuntimeArray*)L_34)->max_length)), L_35, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::SubmitRegistered(System.String,System.String,Bhaptics.Tact.ScaleOption)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_SubmitRegistered_m1ACC5A3101F21F0B155DC78EBD1DD80365072B13 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, String_t* ___1_altKey, ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* ___2_option, const RuntimeMethod* method) 
-{
-	{
-		// HapticApi.SubmitRegisteredWithOption(key, altKey, option.Intensity, option.Duration, 0f, 0f);
-		String_t* L_0 = ___0_key;
-		String_t* L_1 = ___1_altKey;
-		ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* L_2 = ___2_option;
-		NullCheck(L_2);
-		float L_3;
-		L_3 = ScaleOption_get_Intensity_mE8C2586F37BE648417F6C735CCCF5B3D75AC4559_inline(L_2, NULL);
-		ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* L_4 = ___2_option;
-		NullCheck(L_4);
-		float L_5;
-		L_5 = ScaleOption_get_Duration_m60FA7C23E16DAA58D396627DDA93749ED0ECAA12_inline(L_4, NULL);
-		HapticApi_SubmitRegisteredWithOption_m5E975859E85185123D34871863B497090FFAC63D(L_0, L_1, L_3, L_5, (0.0f), (0.0f), NULL);
-		// }
-		return;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::SubmitRegistered(System.String,System.String,Bhaptics.Tact.RotationOption,Bhaptics.Tact.ScaleOption)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_SubmitRegistered_mC52E4E9903F28019D25B11908AA2A41460FB45E5 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, String_t* ___1_altKey, RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* ___2_rOption, ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* ___3_sOption, const RuntimeMethod* method) 
-{
-	{
-		// HapticApi.SubmitRegisteredWithOption(key, altKey, sOption.Intensity, sOption.Duration, rOption.OffsetAngleX, rOption.OffsetY);
-		String_t* L_0 = ___0_key;
-		String_t* L_1 = ___1_altKey;
-		ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* L_2 = ___3_sOption;
-		NullCheck(L_2);
-		float L_3;
-		L_3 = ScaleOption_get_Intensity_mE8C2586F37BE648417F6C735CCCF5B3D75AC4559_inline(L_2, NULL);
-		ScaleOption_tB68D63D83F90C1F3513D2162FD3680B6DF1FEC6A* L_4 = ___3_sOption;
-		NullCheck(L_4);
-		float L_5;
-		L_5 = ScaleOption_get_Duration_m60FA7C23E16DAA58D396627DDA93749ED0ECAA12_inline(L_4, NULL);
-		RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* L_6 = ___2_rOption;
-		NullCheck(L_6);
-		float L_7;
-		L_7 = RotationOption_get_OffsetAngleX_m2502A84A2ABDBB567D9E75C521FE2D11540C5834_inline(L_6, NULL);
-		RotationOption_tB3584B210CFB1ADCC6A394FB1017AE1000EFC40B* L_8 = ___2_rOption;
-		NullCheck(L_8);
-		float L_9;
-		L_9 = RotationOption_get_OffsetY_m8CC6564773B11D0765E3D3EC08315356CEFF0184_inline(L_8, NULL);
-		HapticApi_SubmitRegisteredWithOption_m5E975859E85185123D34871863B497090FFAC63D(L_0, L_1, L_3, L_5, L_7, L_9, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::SubmitRegistered(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_SubmitRegistered_m224405166DFEBEAC52F5608F39EE91B31CCE50A5 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, const RuntimeMethod* method) 
-{
-	{
-		// HapticApi.SubmitRegistered(key);
-		String_t* L_0 = ___0_key;
-		HapticApi_SubmitRegistered_m93F146E48AC24FAC9A2C74D4892E9F021731BD67(L_0, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::SubmitRegistered(System.String,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_SubmitRegistered_m1C5AABCCC9D47C4340764AC323AE9F64EEB621B5 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, int32_t ___1_startTimeMillis, const RuntimeMethod* method) 
-{
-	{
-		// HapticApi.SubmitRegisteredStartMillis(key, startTimeMillis);
-		String_t* L_0 = ___0_key;
-		int32_t L_1 = ___1_startTimeMillis;
-		HapticApi_SubmitRegisteredStartMillis_m4FAF75C81B874CC719A377F06696C26961BB391F(L_0, L_1, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::TurnOff(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_TurnOff_m0C5150E0E0BC26926469BB318916DD29CB7A65C6 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, String_t* ___0_key, const RuntimeMethod* method) 
-{
-	{
-		// HapticApi.TurnOffKey(key);
-		String_t* L_0 = ___0_key;
-		HapticApi_TurnOffKey_m1F8EADFB4E136612F575B2103820B5EE8CCD0A4E(L_0, NULL);
-		// }
-		return;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::TurnOff()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_TurnOff_mC0504F9274E14C53BB073492E5C8037BCD7AE0F2 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, const RuntimeMethod* method) 
-{
-	{
-		// HapticApi.TurnOff();
-		HapticApi_TurnOff_m37F3E663CD0A64C3EB9626423D112992D8258FF7(NULL);
-		// }
-		return;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.BhapticsHaptic::Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsHaptic_Dispose_m76BF86BB0B6AA9599DFACA630BD24E1D2EC6F17A (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, const RuntimeMethod* method) 
-{
-	{
-		// HapticApi.Destroy();
-		HapticApi_Destroy_m63DA8F469337114CEC06561FA468D2B1BA2EE1AD(NULL);
-		// }
-		return;
-	}
-}
-// System.Int32[] Bhaptics.Tact.Unity.BhapticsHaptic::GetCurrentFeedback(Bhaptics.Tact.PositionType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* BhapticsHaptic_GetCurrentFeedback_m06AFA4365CCCEB4A1A7F9255514B07067A34C1E1 (BhapticsHaptic_t465958F0F7FAE30C77A64973FFBF9341D87811E4* __this, int32_t ___0_pos, const RuntimeMethod* method) 
-{
-	status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576 V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		// HapticApi.TryGetResponseForPosition(pos, out status);
-		int32_t L_0 = ___0_pos;
-		bool L_1;
-		L_1 = HapticApi_TryGetResponseForPosition_m410F26B76DD2A379A5CE70ADBA7D7BF6175173E5(L_0, (&V_0), NULL);
-		// return status.values;
-		status_t8FB7A0945759452B102DBB6ED4B2C098B5FE4576 L_2 = V_0;
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_3 = L_2.___values_0;
-		return L_3;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// Bhaptics.Tact.Unity.Track[] Bhaptics.Tact.Unity.BhapticsProject::get_Tracks()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* BhapticsProject_get_Tracks_mBDE0713754725739BB7910610AF20943A7CD2474 (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Track[] Tracks { get; set; }
-		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_0 = __this->___U3CTracksU3Ek__BackingField_0;
-		return L_0;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.BhapticsProject::set_Tracks(Bhaptics.Tact.Unity.Track[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsProject_set_Tracks_m6623528C82AA30741BBB706531D490BD5B3F37EC (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Track[] Tracks { get; set; }
-		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_0 = ___0_value;
-		__this->___U3CTracksU3Ek__BackingField_0 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTracksU3Ek__BackingField_0), (void*)L_0);
-		return;
-	}
-}
-// Bhaptics.Tact.Unity.Layout Bhaptics.Tact.Unity.BhapticsProject::get_Layout()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* BhapticsProject_get_Layout_m1CDEA6316C9F5B45CF1FFA0E95B027DBD0988840 (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Layout Layout { get; set; }
-		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_0 = __this->___U3CLayoutU3Ek__BackingField_1;
-		return L_0;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.BhapticsProject::set_Layout(Bhaptics.Tact.Unity.Layout)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsProject_set_Layout_m086532F448C8A6B38DFE6308CE19C76FB40F66FA (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Layout Layout { get; set; }
-		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_0 = ___0_value;
-		__this->___U3CLayoutU3Ek__BackingField_1 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CLayoutU3Ek__BackingField_1), (void*)L_0);
-		return;
-	}
-}
-// Bhaptics.Tact.Unity.BhapticsProject Bhaptics.Tact.Unity.BhapticsProject::ToProject(Bhaptics.Tact.JSONObject)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* BhapticsProject_ToProject_m38A058D7097A24F5B37480A5F90A6F59DC2BFDE4 (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* ___0_jsonObject, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m4E39030928BF0CB15FDFD6FAEF9FAC0EEACC634B_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_ToArray_m9F04218A0494C4BF91025C2252E199DE56610D9A_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m6B6749012AA714828B1A6A1FABDEBDD8335FEE19_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral27604803165C6541AB273EC61FCF3B90782F0C93);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral73F1C0DB7E67894BD0991354AA6CB2DA4A3A5D88);
-		s_Il2CppMethodInitialized = true;
-	}
-	BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* V_0 = NULL;
-	List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2* V_1 = NULL;
-	JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* V_2 = NULL;
-	Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 V_3;
-	memset((&V_3), 0, sizeof(V_3));
-	KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC V_4;
-	memset((&V_4), 0, sizeof(V_4));
-	Track_t890B55E3594EA0442464072A11DE8398FB0420E9* V_5 = NULL;
-	{
-		// BhapticsProject project = new BhapticsProject();
-		BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* L_0 = (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20*)il2cpp_codegen_object_new(BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20_il2cpp_TypeInfo_var);
-		NullCheck(L_0);
-		BhapticsProject__ctor_m97FE40ECCE0CAE2F90943DC505EF7EFF418727D1(L_0, NULL);
-		V_0 = L_0;
-		// var trackList = new List<Track>();
-		List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2* L_1 = (List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2*)il2cpp_codegen_object_new(List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2_il2cpp_TypeInfo_var);
-		NullCheck(L_1);
-		List_1__ctor_m6B6749012AA714828B1A6A1FABDEBDD8335FEE19(L_1, List_1__ctor_m6B6749012AA714828B1A6A1FABDEBDD8335FEE19_RuntimeMethod_var);
-		V_1 = L_1;
-		// var tracks = jsonObject["tracks"];
-		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_2 = ___0_jsonObject;
-		NullCheck(L_2);
-		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_3;
-		L_3 = VirtualFuncInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t* >::Invoke(7 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::get_Item(System.String) */, L_2, _stringLiteral27604803165C6541AB273EC61FCF3B90782F0C93);
-		// foreach (var tJObject in tracks)
-		NullCheck(L_3);
-		Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 L_4;
-		L_4 = VirtualFuncInvoker0< Enumerator_t085FC381168400C5AD8DD210BA9B6E08EA7FC4D6 >::Invoke(30 /* Bhaptics.Tact.JSONNode/Enumerator Bhaptics.Tact.JSONNode::GetEnumerator() */, L_3);
-		V_3 = L_4;
-		goto IL_0043;
-	}
-
-IL_001f:
-	{
-		// foreach (var tJObject in tracks)
-		KeyValuePair_2_t5E76A00CD5779043AA5A277FBF09E97FE28336BC L_5;
-		L_5 = Enumerator_get_Current_mADC9138A797DFFC280E40580257BD68E94BC8D5C((&V_3), NULL);
-		V_4 = L_5;
-		// var track = Track.ToTrack(tJObject.Value.AsObject);
-		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_6;
-		L_6 = KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_inline((&V_4), KeyValuePair_2_get_Value_mC4428AAC31DF626E1D66833E972908E38F67DF69_RuntimeMethod_var);
-		NullCheck(L_6);
-		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_7;
-		L_7 = VirtualFuncInvoker0< JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* >::Invoke(42 /* Bhaptics.Tact.JSONObject Bhaptics.Tact.JSONNode::get_AsObject() */, L_6);
-		Track_t890B55E3594EA0442464072A11DE8398FB0420E9* L_8;
-		L_8 = Track_ToTrack_m4CC0735436732868D3070C22B5B2304459AA808C(L_7, NULL);
-		V_5 = L_8;
-		// trackList.Add(track);
-		List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2* L_9 = V_1;
-		Track_t890B55E3594EA0442464072A11DE8398FB0420E9* L_10 = V_5;
-		NullCheck(L_9);
-		List_1_Add_m4E39030928BF0CB15FDFD6FAEF9FAC0EEACC634B_inline(L_9, L_10, List_1_Add_m4E39030928BF0CB15FDFD6FAEF9FAC0EEACC634B_RuntimeMethod_var);
-	}
-
-IL_0043:
-	{
-		// foreach (var tJObject in tracks)
-		bool L_11;
-		L_11 = Enumerator_MoveNext_m007D2FA8EE0C5EFD0F7CA354C8A9B0E49DEB4528((&V_3), NULL);
-		if (L_11)
-		{
-			goto IL_001f;
-		}
-	}
-	{
-		// var layoutValue = jsonObject["layout"];
-		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_12 = ___0_jsonObject;
-		NullCheck(L_12);
-		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_13;
-		L_13 = VirtualFuncInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D*, String_t* >::Invoke(7 /* Bhaptics.Tact.JSONNode Bhaptics.Tact.JSONNode::get_Item(System.String) */, L_12, _stringLiteral73F1C0DB7E67894BD0991354AA6CB2DA4A3A5D88);
-		V_2 = L_13;
-		// project.Layout = Layout.ToLayout(layoutValue.AsObject);
-		BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* L_14 = V_0;
-		JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* L_15 = V_2;
-		NullCheck(L_15);
-		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_16;
-		L_16 = VirtualFuncInvoker0< JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* >::Invoke(42 /* Bhaptics.Tact.JSONObject Bhaptics.Tact.JSONNode::get_AsObject() */, L_15);
-		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_17;
-		L_17 = Layout_ToLayout_m523C6596DFF6EAE08B7EF2D8AB8A3EF7AAD7A86D(L_16, NULL);
-		NullCheck(L_14);
-		BhapticsProject_set_Layout_m086532F448C8A6B38DFE6308CE19C76FB40F66FA_inline(L_14, L_17, NULL);
-		// project.Tracks = trackList.ToArray();
-		BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* L_18 = V_0;
-		List_1_tC1D5A377295D3007F678B1437A4CA810AB63C1C2* L_19 = V_1;
-		NullCheck(L_19);
-		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_20;
-		L_20 = List_1_ToArray_m9F04218A0494C4BF91025C2252E199DE56610D9A(L_19, List_1_ToArray_m9F04218A0494C4BF91025C2252E199DE56610D9A_RuntimeMethod_var);
-		NullCheck(L_18);
-		BhapticsProject_set_Tracks_m6623528C82AA30741BBB706531D490BD5B3F37EC_inline(L_18, L_20, NULL);
-		// return project;
-		BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* L_21 = V_0;
-		return L_21;
-	}
-}
-// Bhaptics.Tact.JSONObject Bhaptics.Tact.Unity.BhapticsProject::ToJsonObject()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* BhapticsProject_ToJsonObject_m1C384179D0E79BDA0B8C1D651A862B9B66C7804F (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral27604803165C6541AB273EC61FCF3B90782F0C93);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral73F1C0DB7E67894BD0991354AA6CB2DA4A3A5D88);
-		s_Il2CppMethodInitialized = true;
-	}
-	JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* V_0 = NULL;
-	JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* V_1 = NULL;
-	TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* V_2 = NULL;
-	int32_t V_3 = 0;
-	Track_t890B55E3594EA0442464072A11DE8398FB0420E9* V_4 = NULL;
-	{
-		// var jsonObject = new JSONObject();
-		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_0 = (JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC*)il2cpp_codegen_object_new(JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC_il2cpp_TypeInfo_var);
-		NullCheck(L_0);
-		JSONObject__ctor_mBECC6BA979F88130CABDE381090CC10F2195E40B(L_0, NULL);
-		V_0 = L_0;
-		// var tracks = new JSONArray();
-		JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_1 = (JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7*)il2cpp_codegen_object_new(JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7_il2cpp_TypeInfo_var);
-		NullCheck(L_1);
-		JSONArray__ctor_m4C44395E61EC41095CE4E43B84826B6CD00CAAC5(L_1, NULL);
-		V_1 = L_1;
-		// foreach (var track in Tracks)
-		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_2;
-		L_2 = BhapticsProject_get_Tracks_mBDE0713754725739BB7910610AF20943A7CD2474_inline(__this, NULL);
-		V_2 = L_2;
-		V_3 = 0;
-		goto IL_002d;
-	}
-
-IL_0017:
-	{
-		// foreach (var track in Tracks)
-		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_3 = V_2;
-		int32_t L_4 = V_3;
-		NullCheck(L_3);
-		int32_t L_5 = L_4;
-		Track_t890B55E3594EA0442464072A11DE8398FB0420E9* L_6 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_5));
-		V_4 = L_6;
-		// tracks.Add(track.ToJsonObject());
-		JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_7 = V_1;
-		Track_t890B55E3594EA0442464072A11DE8398FB0420E9* L_8 = V_4;
-		NullCheck(L_8);
-		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_9;
-		L_9 = Track_ToJsonObject_m7805509E16B067BD222D5E582892C5D30F65F6D1(L_8, NULL);
-		NullCheck(L_7);
-		VirtualActionInvoker1< JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(21 /* System.Void Bhaptics.Tact.JSONNode::Add(Bhaptics.Tact.JSONNode) */, L_7, L_9);
-		int32_t L_10 = V_3;
-		V_3 = ((int32_t)il2cpp_codegen_add(L_10, 1));
-	}
-
-IL_002d:
-	{
-		// foreach (var track in Tracks)
-		int32_t L_11 = V_3;
-		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_12 = V_2;
-		NullCheck(L_12);
-		if ((((int32_t)L_11) < ((int32_t)((int32_t)(((RuntimeArray*)L_12)->max_length)))))
-		{
-			goto IL_0017;
-		}
-	}
-	{
-		// jsonObject["tracks"] = tracks;
-		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_13 = V_0;
-		JSONArray_tF7395F255C4CF841C9586B47297400FC64985BA7* L_14 = V_1;
-		NullCheck(L_13);
-		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_13, _stringLiteral27604803165C6541AB273EC61FCF3B90782F0C93, L_14);
-		// jsonObject["layout"] = Layout.ToJsonObject();
-		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_15 = V_0;
-		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_16;
-		L_16 = BhapticsProject_get_Layout_m1CDEA6316C9F5B45CF1FFA0E95B027DBD0988840_inline(__this, NULL);
-		NullCheck(L_16);
-		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_17;
-		L_17 = Layout_ToJsonObject_m1BA3A0A7ACFF10366F6004D700EDF471921F3B90(L_16, NULL);
-		NullCheck(L_15);
-		VirtualActionInvoker2< String_t*, JSONNode_t3231ABEC372A803629DD680B0C591981126C3A6D* >::Invoke(8 /* System.Void Bhaptics.Tact.JSONNode::set_Item(System.String,Bhaptics.Tact.JSONNode) */, L_15, _stringLiteral73F1C0DB7E67894BD0991354AA6CB2DA4A3A5D88, L_17);
-		// return jsonObject;
-		JSONObject_t5F3D7D99DDF12ADCCA23C8E9DE37196A4FBAB2BC* L_18 = V_0;
-		return L_18;
-	}
-}
-// System.Void Bhaptics.Tact.Unity.BhapticsProject::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BhapticsProject__ctor_m97FE40ECCE0CAE2F90943DC505EF7EFF418727D1 (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FingerTipPokeToolView_set_InteractableTool_m3A41FF79AA75EB9A6E26B533FBAB3804E7045AD1_inline (FingerTipPokeToolView_t3D2D7DCEA0E6690414A5F66E4DD64362549CB667* __this, InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public InteractableTool InteractableTool { get; set; }
-		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_0 = ___0_value;
-		__this->___U3CInteractableToolU3Ek__BackingField_5 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CInteractableToolU3Ek__BackingField_5), (void*)L_0);
-		return;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HandsManager_t0737DB8A771E2BC516413E349E0CDBBC8E5189C7* HandsManager_get_Instance_m18B92A0D065988A64D1C7E0745E385DDAA74A4C9_inline (const RuntimeMethod* method) 
@@ -31654,12 +31237,54 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HandsManager_t0737DB8A771E2BC5164
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool InteractableTool_get_IsRightHandedTool_m7A3D91A89574DBCF908090A93C9F414CC2E6F6F7_inline (InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* __this, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool OVRHand_get_IsTracked_m869AA41C7CC8F224F1CD5A10FF6CD62E6F6BDFDA_inline (OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* __this, const RuntimeMethod* method) 
 {
 	{
-		// public bool IsRightHandedTool { get; set; }
-		bool L_0 = __this->___U3CIsRightHandedToolU3Ek__BackingField_4;
+		// public bool IsTracked { get; private set; }
+		bool L_0 = __this->___U3CIsTrackedU3Ek__BackingField_10;
 		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t OVRHand_get_HandConfidence_m3B3B593995730923512B402CD57FC7D5E01D458F_inline (OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* __this, const RuntimeMethod* method) 
+{
+	{
+		// public TrackingConfidence HandConfidence { get; private set; }
+		int32_t L_0 = __this->___U3CHandConfidenceU3Ek__BackingField_15;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool OVRHand_get_IsPointerPoseValid_m675548AD3E51E67A3F5EF6C47345775E5B1C8B5F_inline (OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* __this, const RuntimeMethod* method) 
+{
+	{
+		// public bool IsPointerPoseValid { get; private set; }
+		bool L_0 = __this->___U3CIsPointerPoseValidU3Ek__BackingField_12;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Interactable_get_ActionCollider_m8ADADA886C2AA8E7BA9BC7E2AE63E41326B3F3C0_inline (Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2* __this, const RuntimeMethod* method) 
+{
+	{
+		// return _actionZoneCollider;
+		RuntimeObject* L_0 = __this->____actionZoneCollider_6;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Interactable_get_ContactCollider_m187C64AE846A7EEEE77770867DE43B9C66765A21_inline (Interactable_tC2DBF86B740EB02367138A8BCF634242CA3B93D2* __this, const RuntimeMethod* method) 
+{
+	{
+		// return _contactZoneCollider;
+		RuntimeObject* L_0 = __this->____contactZoneCollider_5;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FingerTipPokeToolView_set_InteractableTool_m3A41FF79AA75EB9A6E26B533FBAB3804E7045AD1_inline (FingerTipPokeToolView_t3D2D7DCEA0E6690414A5F66E4DD64362549CB667* __this, InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		// public InteractableTool InteractableTool { get; set; }
+		InteractableTool_tE776D26F7B0DC18FA2B9D288AB8ED143B98988ED* L_0 = ___0_value;
+		__this->___U3CInteractableToolU3Ek__BackingField_5 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CInteractableToolU3Ek__BackingField_5), (void*)L_0);
+		return;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float OVRHand_get_HandScale_mF8A57EFEAA517331FBA93803439620C8EE94CE52_inline (OVRHand_t2AB8992EC24012BFAB01C897FA6CF80B0A3AC509* __this, const RuntimeMethod* method) 
@@ -33111,46 +32736,31 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnityAction_Invoke_m5CB9EE17
 	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PathPoint_get_MotorCount_mD2EB5DD17D380C9AF1B8E5C2550FF526793BFB22_inline (PathPoint_t3387227BE18139BB95143995AC86B7F88730105C* __this, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m139A176CD271A0532D75BE08DA7831C8C45CE28F_gshared_inline (Enumerator_t72556E98D7DDBE118A973D782D523D15A96461C8* __this, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = __this->___U3CMotorCountU3Ek__BackingField_3;
+		RuntimeObject* L_0 = (RuntimeObject*)__this->____current_3;
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BhapticsProject_set_Layout_m086532F448C8A6B38DFE6308CE19C76FB40F66FA_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* ___0_value, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
 {
 	{
-		// public Layout Layout { get; set; }
-		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_0 = ___0_value;
-		__this->___U3CLayoutU3Ek__BackingField_1 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CLayoutU3Ek__BackingField_1), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void BhapticsProject_set_Tracks_m6623528C82AA30741BBB706531D490BD5B3F37EC_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* ___0_value, const RuntimeMethod* method) 
-{
-	{
-		// public Track[] Tracks { get; set; }
-		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_0 = ___0_value;
-		__this->___U3CTracksU3Ek__BackingField_0 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTracksU3Ek__BackingField_0), (void*)L_0);
-		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* BhapticsProject_get_Tracks_mBDE0713754725739BB7910610AF20943A7CD2474_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) 
-{
-	{
-		// public Track[] Tracks { get; set; }
-		TrackU5BU5D_t79D13AB1711D32108AD1C73006AA430211037C78* L_0 = __this->___U3CTracksU3Ek__BackingField_0;
+		int32_t L_0 = (int32_t)__this->____size_2;
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* BhapticsProject_get_Layout_m1CDEA6316C9F5B45CF1FFA0E95B027DBD0988840_inline (BhapticsProject_tB288BC73A709438C02752D09A00236E7AA710F20* __this, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) 
 {
 	{
-		// public Layout Layout { get; set; }
-		Layout_t676029EEE5D12369CDB1E3D5FDF0C11E9C3B020F* L_0 = __this->___U3CLayoutU3Ek__BackingField_1;
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___value_1;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Key_mBD8EA7557C27E6956F2AF29DA3F7499B2F51A282_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = (RuntimeObject*)__this->___key_0;
 		return L_0;
 	}
 }
@@ -33190,13 +32800,6 @@ IL_0035:
 IL_003c:
 	{
 		return;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m139A176CD271A0532D75BE08DA7831C8C45CE28F_gshared_inline (Enumerator_t72556E98D7DDBE118A973D782D523D15A96461C8* __this, const RuntimeMethod* method) 
-{
-	{
-		RuntimeObject* L_0 = (RuntimeObject*)__this->____current_3;
-		return L_0;
 	}
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) 
@@ -33243,13 +32846,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Cur
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
-{
-	{
-		int32_t L_0 = (int32_t)__this->____size_2;
-		return L_0;
-	}
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_mD6472FA27D28B9AE64A0FEF796C72ABBC2420EBF_gshared_inline (Enumerator_t65CC956745B1180C04CE6C6910FB27C5F32BB9FF* __this, const RuntimeMethod* method) 
 {
 	{
@@ -33262,13 +32858,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD
 	{
 		il2cpp_codegen_runtime_class_init_inline(il2cpp_rgctx_data(method->rgctx_data, 0));
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_0 = ((EmptyArray_1_tDF0DD7256B115243AA6BD5558417387A734240EE_StaticFields*)il2cpp_codegen_static_fields_for(il2cpp_rgctx_data(method->rgctx_data, 0)))->___Value_0;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* KeyValuePair_2_get_Value_mC6BD8075F9C9DDEF7B4D731E5C38EC19103988E7_gshared_inline (KeyValuePair_2_tFC32D2507216293851350D29B64D79F950B55230* __this, const RuntimeMethod* method) 
-{
-	{
-		RuntimeObject* L_0 = (RuntimeObject*)__this->___value_1;
 		return L_0;
 	}
 }

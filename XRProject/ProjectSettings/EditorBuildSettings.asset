@@ -38,7 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/QwertyScenePoke.unity
     guid: e487fd038a7c0411499a6c4d391f89e9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SelectSeen.unity
     guid: 2965d8b722035440a8f8482b5d50b26c
   - enabled: 1
@@ -53,6 +53,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Oculus/Interaction/Samples/Scenes/Examples/GestureExamples 1.unity
     guid: 309326a58c03e4175952b3668e2bcce8
+  - enabled: 1
+    path: Assets/Scenes/SceneManagment.unity
+    guid: 4215a9c38cc554f45a98443a01e9bb59
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b388f64be808a4148959663512302929, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 22a4ba6d095754c00b577db9fd2f5405, type: 2}

@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using Bhaptics.Tact.Unity;
 public class IntroButton : MonoBehaviour
 {
+
+
+    public OVRHand LHand;
+    public HapticSource hapticR;
+    public HapticSource hapticL;
     public TextMeshPro typedText;
     public TextMeshPro buttonText;
     public TextMeshPro displayText;
@@ -27,7 +32,20 @@ public class IntroButton : MonoBehaviour
 
     public void TaskOnClick()
     {
-        if(index != 1)
+        bool isInteracting = LHand.GetFingerIsPinching(OVRHand.HandFinger.Index) ||
+    LHand.GetFingerIsPinching(OVRHand.HandFinger.Middle) ||
+    LHand.GetFingerIsPinching(OVRHand.HandFinger.Ring) ||
+    LHand.GetFingerIsPinching(OVRHand.HandFinger.Pinky) ||
+    LHand.GetFingerIsPinching(OVRHand.HandFinger.Thumb);
+        if (isInteracting)
+        {
+            hapticL.Play();
+        }
+        else
+        {
+            hapticR.Play();
+        }
+        if (index != 1)
         {
             index = 1;
             displayText.enabled =false;
@@ -42,8 +60,8 @@ public class IntroButton : MonoBehaviour
             {
                 PID = "FP3" + outputText.text;
                 PlayerPrefs.SetString("PID", PID);
-                GetComponent<SceneSelector>().LoadNextScene();
-                //SceneManager.LoadScene("SelectSeen");
+                //GetComponent<SceneSelector>().LoadNextScene();
+                SceneManager.LoadScene("SceneManagment");
             }
 
         }
