@@ -16,7 +16,8 @@ public class changeReferenceText : MonoBehaviour
     public GameObject direction;
     public GameObject keyboard;
     public TextMeshPro infoText;
-    static int  index=0;
+    public GameObject nextButton;
+    static int index=0;
     private List<string> textArray =new List<string>(new string[] { "I did not think we had","Just playing with you","Please coordinate with him","On the plane doors closing",
     "Thanks for checking with me",
     "Take what you can get",
@@ -125,6 +126,7 @@ public TextMeshPro buttons;
                 outputBoard.SetActive(false);
                 direction.SetActive(false);
                 keyboard.SetActive(false);
+                nextButton.SetActive(false);
                 index += 1;
             }
             else if(index % 7 == 6)

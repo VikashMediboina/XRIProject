@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.11865245, g: 0.18313052, b: 0.32949406, a: 1}
+  m_IndirectSpecularColor: {r: 0.11884108, g: 0.18339348, b: 0.32976314, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -947,6 +947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1554135196}
+  nextButton: {fileID: 65284395}
 --- !u!4 &78337891 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400046, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
@@ -1170,6 +1171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 725151106}
   outputText: {fileID: 451993130}
+  nextButton: {fileID: 65284395}
 --- !u!1001 &113040262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1801,6 +1803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 918800599}
   outputText: {fileID: 451993130}
+  nextButton: {fileID: 65284395}
 --- !u!4 &200883547 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400032, guid: 442d5b4503ed83c4897ef44659446587, type: 3}
@@ -2755,6 +2758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 296133144}
   outputText: {fileID: 451993130}
+  nextButton: {fileID: 65284395}
 --- !u!1 &290731474
 GameObject:
   m_ObjectHideFlags: 0
@@ -5342,6 +5346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1339719504}
+  nextButton: {fileID: 65284395}
 --- !u!1 &418187890
 GameObject:
   m_ObjectHideFlags: 0
@@ -7153,6 +7158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1923024259}
   outputText: {fileID: 451993130}
+  nextButton: {fileID: 65284395}
 --- !u!1 &652325445
 GameObject:
   m_ObjectHideFlags: 0
@@ -7338,6 +7344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1759140114}
+  nextButton: {fileID: 65284395}
 --- !u!1 &657712147
 GameObject:
   m_ObjectHideFlags: 0
@@ -7772,6 +7779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1918422586}
+  nextButton: {fileID: 65284395}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -8585,6 +8593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 259808247}
+  nextButton: {fileID: 65284395}
 --- !u!1 &782628375
 GameObject:
   m_ObjectHideFlags: 0
@@ -8805,6 +8814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 815697665}
   outputText: {fileID: 451993130}
+  nextButton: {fileID: 65284395}
 --- !u!1 &823189162
 GameObject:
   m_ObjectHideFlags: 0
@@ -8990,6 +9000,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1955224065}
+  nextButton: {fileID: 65284395}
 --- !u!1 &829209477
 GameObject:
   m_ObjectHideFlags: 0
@@ -10739,6 +10750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1254148447}
+  nextButton: {fileID: 65284395}
 --- !u!1 &938186240
 GameObject:
   m_ObjectHideFlags: 0
@@ -11112,6 +11124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 363221366}
+  nextButton: {fileID: 65284395}
 --- !u!1 &1005315623
 GameObject:
   m_ObjectHideFlags: 0
@@ -12072,6 +12085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1638777835}
   outputText: {fileID: 451993130}
+  nextButton: {fileID: 65284395}
 --- !u!4 &1116276947 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 336358375985414315, guid: e7fbb376593cff24f9db4ecf8d465aaf, type: 3}
@@ -13004,6 +13018,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1770570783}
   outputText: {fileID: 451993130}
+  nextButton: {fileID: 65284395}
 --- !u!4 &1178104535 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400148, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
@@ -14223,6 +14238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1318243670}
   outputText: {fileID: 451993130}
+  nextButton: {fileID: 65284395}
 --- !u!1 &1318243668
 GameObject:
   m_ObjectHideFlags: 0
@@ -16768,6 +16784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1513944384}
+  nextButton: {fileID: 65284395}
 --- !u!1001 &1512263703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17656,6 +17673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 670494505}
   outputText: {fileID: 451993130}
+  nextButton: {fileID: 65284395}
 --- !u!1001 &1561258733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19454,6 +19472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 292726559}
   outputText: {fileID: 451993130}
+  nextButton: {fileID: 65284395}
 --- !u!4 &1719047246 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
@@ -20223,6 +20242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 1439696612}
   outputText: {fileID: 451993130}
+  nextButton: {fileID: 65284395}
 --- !u!1 &1770570781
 GameObject:
   m_ObjectHideFlags: 0
@@ -20829,6 +20849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 567252816}
   outputText: {fileID: 451993130}
+  nextButton: {fileID: 65284395}
 --- !u!4 &1890291544 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400028, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}

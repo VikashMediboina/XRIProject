@@ -38,7 +38,7 @@ public class IntroNumpad : MonoBehaviour
         else if(button.text == "<-")
         {
             outputText.text = outputText.text.Remove(outputText.text.Length - 1, 1);
-            if (outputText.text == "")
+            if (outputText.text == "" || outputText.text.Length == 0)
             {
                 outputText.text = "Enter PID";
             }

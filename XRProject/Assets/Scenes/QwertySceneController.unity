@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.11865245, g: 0.18313052, b: 0.32949406, a: 1}
+  m_IndirectSpecularColor: {r: 0.11884108, g: 0.18339348, b: 0.32976314, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -264,6 +264,7 @@ MonoBehaviour:
   direction: {fileID: 1825638117267938774}
   keyboard: {fileID: 847215646}
   infoText: {fileID: 697714410}
+  nextButton: {fileID: 20470364}
   Scene_No: QW01
   buttons: {fileID: 20470363}
 --- !u!1001 &36270183
@@ -672,6 +673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 59848884}
+  nextButton: {fileID: 20470364}
 --- !u!4 &62467014 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400014, guid: 88e2e1bfe11ec6c438b0ade27eaeded1, type: 3}
@@ -829,6 +831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1070070844}
+  nextButton: {fileID: 20470364}
 --- !u!114 &97792949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1971,6 +1974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 474732222}
+  nextButton: {fileID: 20470364}
 --- !u!114 &302608834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4349,6 +4353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1386191926}
+  nextButton: {fileID: 20470364}
 --- !u!114 &708816082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4578,6 +4583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 109231142}
+  nextButton: {fileID: 20470364}
 --- !u!114 &725988698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4773,6 +4779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 918860119}
+  nextButton: {fileID: 20470364}
 --- !u!114 &738186580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7201,6 +7208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1468838084}
+  nextButton: {fileID: 20470364}
 --- !u!114 &1106821351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8171,6 +8179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1451128719}
+  nextButton: {fileID: 20470364}
 --- !u!114 &1275953792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10459,6 +10468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 918585429}
+  nextButton: {fileID: 20470364}
 --- !u!114 &1644795329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14478,6 +14488,7 @@ MonoBehaviour:
   direction: {fileID: 0}
   keyboard: {fileID: 0}
   infoText: {fileID: 0}
+  nextButton: {fileID: 0}
   Scene_No: 
   buttons: {fileID: 0}
 --- !u!4 &3375029888542019716

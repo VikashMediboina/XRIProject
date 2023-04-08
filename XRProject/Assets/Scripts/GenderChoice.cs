@@ -6,6 +6,7 @@ using UnityEngine;
 public class GenderChoice : MonoBehaviour
 {
     public TextMeshPro button;
+    public GameObject nextButton;
     TextMeshPro selectedButton;
     Color normalColor;
     public static string selection = "";
@@ -21,6 +22,7 @@ public class GenderChoice : MonoBehaviour
     }
     public void taskOnClick()
     {
+        nextButton.SetActive(true);
         if (selectedButton != null)
         {
             selectedButton.color = normalColor;

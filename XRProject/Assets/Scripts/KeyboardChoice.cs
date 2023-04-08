@@ -6,6 +6,7 @@ using UnityEngine;
 public class KeyboardChoice : MonoBehaviour
 {
     public TextMeshPro button;
+    public GameObject nextButton;
     TextMeshPro selectedButton;
     Color normalColor;
     public static string selection="";
@@ -24,6 +25,7 @@ public class KeyboardChoice : MonoBehaviour
     }
     public void taskOnClick()
     {
+        nextButton.SetActive(true);
         if (selectedButton != null)
         {
             selectedButton.color = normalColor;

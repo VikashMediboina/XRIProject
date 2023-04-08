@@ -46,6 +46,7 @@ public class EndButton : MonoBehaviour
             ageQ.SetActive(true);
             ageNumpad.SetActive(true);
             outputText.enabled=true;
+            nextButton.SetActive(false);
         }
         else if(index == 1)
         {
@@ -55,6 +56,7 @@ public class EndButton : MonoBehaviour
             outputText.enabled = false;
             genderQ.SetActive(true);
             genderButtons.SetActive(true);
+            nextButton.SetActive(false);
         }
         else if(index == 2)
         {
@@ -64,6 +66,7 @@ public class EndButton : MonoBehaviour
             vrQ.SetActive(true);
             vrButtons.SetActive(true);
             buttonText.text = "End";
+            nextButton.SetActive(false);
         }
         else if(index == 3)
         {
@@ -79,10 +82,6 @@ public class EndButton : MonoBehaviour
 
     public IEnumerator sendQualtricsData()
     {
-    
-
-
-
         WWWForm survey = new WWWForm();
         //Debug.Log("PID:");
         survey.AddField("PID", PlayerPrefs.GetString("PID"));

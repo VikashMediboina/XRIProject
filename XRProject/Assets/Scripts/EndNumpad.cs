@@ -8,6 +8,7 @@ public class EndNumpad : MonoBehaviour
 {
     public TextMeshPro button;
     public TextMeshPro outputText;
+    public GameObject nextButton;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +23,7 @@ public class EndNumpad : MonoBehaviour
 
     public void taskOnClick()
     {
+        nextButton.SetActive(true);
         if (outputText.text == "Enter Age")
         {
             outputText.text = "";
@@ -38,7 +40,7 @@ public class EndNumpad : MonoBehaviour
         else if (button.text == "<-")
         {
             outputText.text = outputText.text.Remove(outputText.text.Length - 1, 1);
-            if (outputText.text == "")
+            if (outputText.text == "" || outputText.text.Length == 0)
             {
                 outputText.text = "Enter Age";
             }
