@@ -3777,7 +3777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2166185407101409810, guid: 20b834722f855480caebb7be25aa044a, type: 3}
       propertyPath: m_text
-      value: 'Please use your controllers
+      value: 'Please use your controllers to enter the text
 
 '
       objectReference: {fileID: 0}

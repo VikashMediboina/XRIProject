@@ -168,7 +168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 448870976619272967, guid: 96a709b07e0a74ef98d9bfdbe5f19076, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 448870976619272967, guid: 96a709b07e0a74ef98d9bfdbe5f19076, type: 3}
       propertyPath: m_LocalScale.x
@@ -623,8 +623,8 @@ RectTransform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 20470362}
   - {fileID: 486265527}
+  - {fileID: 20470362}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 22.261, y: 0, z: 0}
@@ -1658,6 +1658,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Instructions
       objectReference: {fileID: 0}
+    - target: {fileID: 2166185407101409810, guid: 20b834722f855480caebb7be25aa044a, type: 3}
+      propertyPath: m_text
+      value: Please remove your controllers and type using hands (poke)
+      objectReference: {fileID: 0}
     - target: {fileID: 2166185407101409820, guid: 20b834722f855480caebb7be25aa044a, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2542,7 +2546,7 @@ RectTransform:
   - {fileID: 509431171}
   - {fileID: 1346496692}
   m_Father: {fileID: 113982248}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

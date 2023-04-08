@@ -2,11 +2,11 @@ Unity Editor version:    2021.3.16f1 (4016570cf34f)
 Branch:                  2021.3/staging
 Build type:              Release
 Batch mode:              YES
-macOS version:           Version 13.1 (Build 22C65)
-Darwin version:          22.2.0
+macOS version:           Version 13.0.1 (Build 22A400)
+Darwin version:          22.1.0
 Architecture:            arm64
 Running under Rosetta:   NO
-Available memory:        32768 MB
+Available memory:        16384 MB
 Using pre-set license
 Pro License: YES
 
@@ -18,13 +18,13 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker0
 -projectPath
-/Users/vikashmediboina/XRIProject/XRProject
+/Users/aneesh/Developer/Mixed Reality/XRIProject/XRProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51133
-Successfully changed project path to: /Users/vikashmediboina/XRIProject/XRProject
-/Users/vikashmediboina/XRIProject/XRProject
+53767
+Successfully changed project path to: /Users/aneesh/Developer/Mixed Reality/XRIProject/XRProject
+/Users/aneesh/Developer/Mixed Reality/XRIProject/XRProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -54,114 +54,107 @@ Successfully changed project path to: /Users/vikashmediboina/XRIProject/XRProjec
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8831187584] Host "[IP] 10.0.0.172 [Port] 0 [Flags] 2 [Guid] 3943930847 [EditorId] 3943930847 [Version] 1048832 [Id] OSXEditor(0,vikashs-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8612832512] Host "[IP] 10.0.0.156 [Port] 0 [Flags] 2 [Guid] 2314525949 [EditorId] 2314525949 [Version] 1048832 [Id] OSXEditor(0,Aneeshs-M1-Macbook-pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8831187584] Host "[IP] 10.0.0.172 [Port] 0 [Flags] 2 [Guid] 3943930847 [EditorId] 3943930847 [Version] 1048832 [Id] OSXEditor(0,vikashs-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8612832512] Host "[IP] 10.0.0.156 [Port] 0 [Flags] 2 [Guid] 2314525949 [EditorId] 2314525949 [Version] 1048832 [Id] OSXEditor(0,Aneeshs-M1-Macbook-pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 113.60 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.38 ms.
+Refreshing native plugins compatible for Editor in 108.72 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.25 ms.
 Initialize engine version: 2021.3.16f1 (4016570cf34f)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/vikashmediboina/XRIProject/XRProject/Assets
+[Subsystems] Discovering subsystems at path /Users/aneesh/Developer/Mixed Reality/XRIProject/XRProject/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
- preferred device: Apple M1 Max (high power)
+ preferred device: Apple M1 Pro (high power)
 Metal devices available: 1
-0: Apple M1 Max (high power)
-Using device Apple M1 Max (high power)
-Initializing Metal device caps: Apple M1 Max
+0: Apple M1 Pro (high power)
+Using device Apple M1 Pro (high power)
+Initializing Metal device caps: Apple M1 Pro
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56837
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56432
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.16f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.16f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: /Applications/Unity/Hub/Editor/2021.3.16f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
-Registered in 0.000766 seconds.
-[usbmuxd] Start listen thread
-[usbmuxd] Listen thread started
-[usbmuxd] Send listen message
-Native extension for iOS target not found
+Registered in 0.003187 seconds.
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 99.42 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 110.08 ms, found 4 plugins.
 Preloading 1 native plugins for Editor in 0.19 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.563 seconds
+- Completed reload, in  0.519 seconds
 Domain Reload Profiling:
-	ReloadAssembly (563ms)
-		BeginReloadAssembly (83ms)
+	ReloadAssembly (520ms)
+		BeginReloadAssembly (64ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (404ms)
-			LoadAssemblies (82ms)
+		EndReloadAssembly (381ms)
+			LoadAssemblies (67ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (83ms)
+			SetupTypeCache (85ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (23ms)
-			SetupLoadedEditorAssemblies (268ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (238ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (81ms)
+				InitializePlatformSupportModulesInManaged (35ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (101ms)
+				RefreshPlugins (110ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (57ms)
-				ProcessInitializeOnLoadMethodAttributes (28ms)
+				ProcessInitializeOnLoadAttributes (61ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002130 seconds.
-Android Extension - Scanning For ADB Devices 553 ms
+Registered in 0.011449 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/aneesh/Developer/Mixed Reality/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/aneesh/Developer/Mixed Reality/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 OnLevelWasLoaded was found on WitService
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
+Refreshing native plugins compatible for Editor in 1.14 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.21 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  0.865 seconds
+- Completed reload, in  0.890 seconds
 Domain Reload Profiling:
-	ReloadAssembly (865ms)
-		BeginReloadAssembly (68ms)
+	ReloadAssembly (891ms)
+		BeginReloadAssembly (163ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (715ms)
-			LoadAssemblies (40ms)
+			CreateAndSetChildDomain (120ms)
+		EndReloadAssembly (654ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (258ms)
+			SetupTypeCache (206ms)
 			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (66ms)
-			SetupLoadedEditorAssemblies (317ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (294ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (66ms)
-				ProcessInitializeOnLoadAttributes (218ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (204ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -172,12 +165,12 @@ Worker process is ready to serve import requests
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Launching external process: /Applications/Unity/Hub/Editor/2021.3.16f1/Unity.app/Contents/Tools/UnityShaderCompiler
 Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.72 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
-Unloading 5079 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 66 unused Assets / (286.9 KB). Loaded Objects now: 5510.
-Memory consumption went from 178.4 MB to 178.1 MB.
-Total: 2.731750 ms (FindLiveObjects: 0.181291 ms CreateObjectMapping: 0.058084 ms MarkObjects: 2.383458 ms  DeleteObjects: 0.108667 ms)
+Refreshing native plugins compatible for Editor in 0.73 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+Unloading 5076 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 66 unused Assets / (153.6 KB). Loaded Objects now: 5503.
+Memory consumption went from 179.2 MB to 179.0 MB.
+Total: 3.263167 ms (FindLiveObjects: 0.207584 ms CreateObjectMapping: 0.058708 ms MarkObjects: 2.854417 ms  DeleteObjects: 0.141792 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -191,24 +184,53 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 376159.975935 seconds.
-  path: Assets/Scripts/EndNumpad.cs
-  artifactKey: Guid(ec21fadf19b13462bae67fda19af8847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/EndNumpad.cs using Guid(ec21fadf19b13462bae67fda19af8847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '160c416d28fd8c540ab2321b4b26046f') in 0.061536 seconds 
+  Time since last request: 971104.391488 seconds.
+  path: Assets/Scenes/IntroScene.unity
+  artifactKey: Guid(022bc269538676a41ac4f35739b05a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/IntroScene.unity using Guid(022bc269538676a41ac4f35739b05a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '909d35762a6e8bd42f62ed10756e2652') in 0.007212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 63.518666 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8193726cff86800c54781cdc6d54904') in 0.001550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 986.936260 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79842766b460edbeab6a34051e857a80') in 0.002193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.638768 seconds.
+  path: Assets/Sounds
+  artifactKey: Guid(9f0b14774e801442d8c06144dc86a1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds using Guid(9f0b14774e801442d8c06144dc86a1d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed3b76d09b5ff9245bb2cd78897d9cc1') in 0.001098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.747852 seconds.
+  path: Assets/Mystical-Ocean-Puzzle-Game_v001.mp3
+  artifactKey: Guid(19766dede16274ea4976480e18307767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mystical-Ocean-Puzzle-Game_v001.mp3 using Guid(19766dede16274ea4976480e18307767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db0ee45b0f7ab765e3fd5c3d8fe41a8e') in 0.756265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.551348 seconds.
+  path: Assets/Interaction_CameraTool_Shutter_01 (1).wav
+  artifactKey: Guid(cb9a8e531742b4d3ca106c68b6e57c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Interaction_CameraTool_Shutter_01 (1).wav using Guid(cb9a8e531742b4d3ca106c68b6e57c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '671153ec3fce0e1dc807aa10f5700c9d') in 0.510110 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002520 seconds.
+Registered in 0.002539 seconds.
 Begin MonoManager ReloadAssembly
-Thread 0x2af5c7000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
+Thread 0x2b5607000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/aneesh/Developer/Mixed Reality/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/aneesh/Developer/Mixed Reality/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.12 ms.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.29 ms.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
@@ -216,215 +238,29 @@ Preloading 1 native plugins for Editor in 0.12 ms.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  0.723 seconds
+- Completed reload, in  0.798 seconds
 Domain Reload Profiling:
-	ReloadAssembly (724ms)
-		BeginReloadAssembly (86ms)
+	ReloadAssembly (798ms)
+		BeginReloadAssembly (133ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (574ms)
-			LoadAssemblies (37ms)
+			CreateAndSetChildDomain (71ms)
+		EndReloadAssembly (600ms)
+			LoadAssemblies (42ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (231ms)
+			SetupTypeCache (223ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (240ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (263ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (40ms)
-				ProcessInitializeOnLoadAttributes (167ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on WitService
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.40 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.11 ms.
-Unloading 4974 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.6 KB). Loaded Objects now: 5514.
-Memory consumption went from 172.7 MB to 172.6 MB.
-Total: 2.605042 ms (FindLiveObjects: 0.147958 ms CreateObjectMapping: 0.057083 ms MarkObjects: 2.286209 ms  DeleteObjects: 0.113000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 16.037949 seconds.
-  path: Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/BackgroundMaterial.mat
-  artifactKey: Guid(e95c781da52e2d14fb2fba44d7476164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Materials/BackgroundMaterial.mat using Guid(e95c781da52e2d14fb2fba44d7476164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '673b64464d0c7ea333b44d14019ec581') in 0.121333 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Oculus/VR/Materials/BasicHandMaterial.mat
-  artifactKey: Guid(5ba7d209f622bb44e87b47ce27ee27b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Materials/BasicHandMaterial.mat using Guid(5ba7d209f622bb44e87b47ce27ee27b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb294b97a7840da72db27e5cfee36a6f') in 0.090416 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Oculus/SampleFramework/Usage/StartScene/Textures/BlackCubemap.png
-  artifactKey: Guid(b40a1cb5f1124ec489cc1e7a533e46e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Usage/StartScene/Textures/BlackCubemap.png using Guid(b40a1cb5f1124ec489cc1e7a533e46e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c4036f385e52fab64d5d82c21a1c83a') in 0.277311 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.401523 seconds.
-  path: Assets/Oculus/SampleFramework/Core/HandsInteraction/Prefabs/HandsManager.prefab
-  artifactKey: Guid(cbdf09e3b0f1ac246914a74904002cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/SampleFramework/Core/HandsInteraction/Prefabs/HandsManager.prefab using Guid(cbdf09e3b0f1ac246914a74904002cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06710ffae3a2f23d59dd8bdc458e0e76') in 0.052222 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Oculus/AudioManager/Scripts/Audio/Editor/Oculus.AudioManager.Audio.Editor.asmdef
-  artifactKey: Guid(e2367297a6c431949a05cf8078ad917d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/AudioManager/Scripts/Audio/Editor/Oculus.AudioManager.Audio.Editor.asmdef using Guid(e2367297a6c431949a05cf8078ad917d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf7d8437e66c585ec6dab83fb4dc3edd') in 0.022396 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.732500 seconds.
-  path: Assets/Oculus/VR/Editor/AndroidManifest.OVRSubmission.xml
-  artifactKey: Guid(7a16cc136accf1f42bdc6f71f94b50ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Editor/AndroidManifest.OVRSubmission.xml using Guid(7a16cc136accf1f42bdc6f71f94b50ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbda9e2f8cd2203fbbbbe245067ccfbc') in 0.629427 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.293662 seconds.
-  path: Assets/Bhaptics/SDK/Plugins/Android/AndroidManifest-bhaptics.xml
-  artifactKey: Guid(d5545c8721d568641b7cd633a961f60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/SDK/Plugins/Android/AndroidManifest-bhaptics.xml using Guid(d5545c8721d568641b7cd633a961f60b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7de7fdbc792ba68965a32e554c8c2bff') in 0.001448 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.171615 seconds.
-  path: Assets/Plugins/Android/AndroidManifest.xml
-  artifactKey: Guid(6ba8e489e5d709243b7ccc38d5a8afe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Android/AndroidManifest.xml using Guid(6ba8e489e5d709243b7ccc38d5a8afe8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49894371b1116b0adc4ff1c070cc5718') in 0.004309 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 35.529640 seconds.
-  path: Assets/Oculus/VR/Editor/AndroidManifest.OVRSubmission.xml
-  artifactKey: Guid(7a16cc136accf1f42bdc6f71f94b50ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Oculus/VR/Editor/AndroidManifest.OVRSubmission.xml using Guid(7a16cc136accf1f42bdc6f71f94b50ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84c8863d07c26cc6930f8f8f2730706b') in 0.001030 seconds 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 14.69 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.8 KB). Loaded Objects now: 5558.
-Memory consumption went from 97.1 MB to 96.9 MB.
-Total: 8.223166 ms (FindLiveObjects: 0.177000 ms CreateObjectMapping: 0.056542 ms MarkObjects: 7.867166 ms  DeleteObjects: 0.121708 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 4.32 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.7 KB). Loaded Objects now: 5558.
-Memory consumption went from 97.1 MB to 96.9 MB.
-Total: 4.019708 ms (FindLiveObjects: 0.241875 ms CreateObjectMapping: 0.057167 ms MarkObjects: 3.610291 ms  DeleteObjects: 0.110125 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 5.00 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.16 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.9 KB). Loaded Objects now: 5558.
-Memory consumption went from 97.1 MB to 96.9 MB.
-Total: 9.453375 ms (FindLiveObjects: 0.213750 ms CreateObjectMapping: 0.056208 ms MarkObjects: 9.048792 ms  DeleteObjects: 0.133875 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002303 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x17d8d3000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  0.897 seconds
-Domain Reload Profiling:
-	ReloadAssembly (898ms)
-		BeginReloadAssembly (230ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (162ms)
-		EndReloadAssembly (606ms)
-			LoadAssemblies (37ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (230ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (264ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (26ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (46ms)
-				ProcessInitializeOnLoadAttributes (176ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (187ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -434,158 +270,12 @@ OnLevelWasLoaded was found on WitService
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.38 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Unloading 4974 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (130.9 KB). Loaded Objects now: 5561.
-Memory consumption went from 195.6 MB to 195.5 MB.
-Total: 2.737958 ms (FindLiveObjects: 0.165042 ms CreateObjectMapping: 0.063625 ms MarkObjects: 2.415417 ms  DeleteObjects: 0.093084 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 12.59 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (131.1 KB). Loaded Objects now: 5561.
-Memory consumption went from 96.8 MB to 96.7 MB.
-Total: 2.833208 ms (FindLiveObjects: 0.190417 ms CreateObjectMapping: 0.056792 ms MarkObjects: 2.481958 ms  DeleteObjects: 0.103667 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 732.631960 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Glove/Index_touch_L.asset
-  artifactKey: Guid(642452e40e6066c4bb9bc170f56558f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Glove/Index_touch_L.asset using Guid(642452e40e6066c4bb9bc170f56558f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '945fb9916e87c7a2b2d30b60ba8bbfc3') in 0.044265 seconds 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 4.67 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.16 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.9 KB). Loaded Objects now: 5561.
-Memory consumption went from 101.0 MB to 100.9 MB.
-Total: 5.876000 ms (FindLiveObjects: 0.178125 ms CreateObjectMapping: 0.060542 ms MarkObjects: 5.479584 ms  DeleteObjects: 0.156959 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 5.14 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.7 KB). Loaded Objects now: 5561.
-Memory consumption went from 101.0 MB to 100.9 MB.
-Total: 9.045459 ms (FindLiveObjects: 0.265375 ms CreateObjectMapping: 0.065417 ms MarkObjects: 8.573833 ms  DeleteObjects: 0.140208 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 11.85 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.8 KB). Loaded Objects now: 5561.
-Memory consumption went from 101.0 MB to 100.9 MB.
-Total: 10.275208 ms (FindLiveObjects: 0.306500 ms CreateObjectMapping: 0.064000 ms MarkObjects: 9.763084 ms  DeleteObjects: 0.140875 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 12.25 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.16 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.8 KB). Loaded Objects now: 5561.
-Memory consumption went from 101.0 MB to 100.9 MB.
-Total: 11.912417 ms (FindLiveObjects: 0.258041 ms CreateObjectMapping: 0.063125 ms MarkObjects: 11.401334 ms  DeleteObjects: 0.188792 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 12.50 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.15 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.7 KB). Loaded Objects now: 5561.
-Memory consumption went from 101.0 MB to 100.9 MB.
-Total: 9.041042 ms (FindLiveObjects: 0.256625 ms CreateObjectMapping: 0.063084 ms MarkObjects: 8.551750 ms  DeleteObjects: 0.168667 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 13.56 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.18 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (139.0 KB). Loaded Objects now: 5561.
-Memory consumption went from 101.0 MB to 100.9 MB.
-Total: 5.071167 ms (FindLiveObjects: 0.216333 ms CreateObjectMapping: 0.062667 ms MarkObjects: 4.654416 ms  DeleteObjects: 0.137250 ms)
+Refreshing native plugins compatible for Editor in 3.28 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.27 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (133.0 KB). Loaded Objects now: 5518.
+Memory consumption went from 179.7 MB to 179.6 MB.
+Total: 3.242542 ms (FindLiveObjects: 0.191583 ms CreateObjectMapping: 0.075292 ms MarkObjects: 2.818584 ms  DeleteObjects: 0.155792 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -600,1208 +290,15 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002296 seconds.
+Registered in 0.003114 seconds.
 Begin MonoManager ReloadAssembly
-Thread 0x17d9b7000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
+Thread 0x16c43b000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/aneesh/Developer/Mixed Reality/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/aneesh/Developer/Mixed Reality/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.80 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  0.849 seconds
-Domain Reload Profiling:
-	ReloadAssembly (850ms)
-		BeginReloadAssembly (107ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (679ms)
-			LoadAssemblies (35ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (239ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (334ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (103ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (43ms)
-				ProcessInitializeOnLoadAttributes (171ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on WitService
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.52 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Unloading 4974 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.6 KB). Loaded Objects now: 5565.
-Memory consumption went from 199.8 MB to 199.6 MB.
-Total: 3.100792 ms (FindLiveObjects: 0.179166 ms CreateObjectMapping: 0.058417 ms MarkObjects: 2.740916 ms  DeleteObjects: 0.121792 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 18.74 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.22 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (130.8 KB). Loaded Objects now: 5565.
-Memory consumption went from 101.0 MB to 100.9 MB.
-Total: 5.507916 ms (FindLiveObjects: 0.181375 ms CreateObjectMapping: 0.060333 ms MarkObjects: 4.098583 ms  DeleteObjects: 1.167125 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002193 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x29ce8f000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.15 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  0.792 seconds
-Domain Reload Profiling:
-	ReloadAssembly (792ms)
-		BeginReloadAssembly (109ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (622ms)
-			LoadAssemblies (36ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (255ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (256ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (30ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (43ms)
-				ProcessInitializeOnLoadAttributes (168ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on WitService
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 4.85 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.15 ms.
-Unloading 4974 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (130.8 KB). Loaded Objects now: 5569.
-Memory consumption went from 199.8 MB to 199.7 MB.
-Total: 2.597167 ms (FindLiveObjects: 0.159666 ms CreateObjectMapping: 0.060625 ms MarkObjects: 2.279792 ms  DeleteObjects: 0.096417 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 11.80 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.16 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.8 KB). Loaded Objects now: 5569.
-Memory consumption went from 101.0 MB to 100.9 MB.
-Total: 2.524167 ms (FindLiveObjects: 0.151250 ms CreateObjectMapping: 0.055958 ms MarkObjects: 2.222208 ms  DeleteObjects: 0.094500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 10.59 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (131.2 KB). Loaded Objects now: 5569.
-Memory consumption went from 101.0 MB to 100.9 MB.
-Total: 7.717792 ms (FindLiveObjects: 0.229416 ms CreateObjectMapping: 0.060834 ms MarkObjects: 7.291125 ms  DeleteObjects: 0.135917 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 3059.643869 seconds.
-  path: Assets/Bhaptics/SDK/Examples/Scenes/0_Basic.unity
-  artifactKey: Guid(0dfa4aa620823d144893885572d25012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/SDK/Examples/Scenes/0_Basic.unity using Guid(0dfa4aa620823d144893885572d25012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ecfa285228cb53b08b28077edac73f7') in 0.011656 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.214844 seconds.
-  path: Assets/Bhaptics/SDK/Examples/Scenes/1_Reflect_onlyTosy.unity
-  artifactKey: Guid(13869bfb502a3c24c95e94b8c65507d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/SDK/Examples/Scenes/1_Reflect_onlyTosy.unity using Guid(13869bfb502a3c24c95e94b8c65507d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca41b00ea945bc65991f27d240474246') in 0.001374 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.687006 seconds.
-  path: Assets/Bhaptics/SDK/Examples/Scenes/2_Rotate_onlyVest.unity
-  artifactKey: Guid(cb8dd11028127e8458642097cd8a88f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/SDK/Examples/Scenes/2_Rotate_onlyVest.unity using Guid(cb8dd11028127e8458642097cd8a88f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08d5bbf12062254cd4ec80d10a0a61d4') in 0.001415 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.808038 seconds.
-  path: Assets/Bhaptics/SDK/Examples/Scenes/3_HapticSource.unity
-  artifactKey: Guid(49301851852c4514ab5ac93d38c41319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/SDK/Examples/Scenes/3_HapticSource.unity using Guid(49301851852c4514ab5ac93d38c41319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dca4e66d017044a40b76afa90c3834f0') in 0.001080 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.523308 seconds.
-  path: Assets/Bhaptics/SDK/Examples/Scenes/4_IsConnect_IsPlaying.unity
-  artifactKey: Guid(8e79803f556477e40bac81c8f9a4ae6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/SDK/Examples/Scenes/4_IsConnect_IsPlaying.unity using Guid(8e79803f556477e40bac81c8f9a4ae6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e45084b69a286543dde12ede59353a4') in 0.000900 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.956451 seconds.
-  path: Assets/Bhaptics/SDK/Examples/Scenes/5_Identifier_Play.unity
-  artifactKey: Guid(160b45e0e9c726140aa54f977569d506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/SDK/Examples/Scenes/5_Identifier_Play.unity using Guid(160b45e0e9c726140aa54f977569d506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '062cda81c8b7dcd603e109e29deafa64') in 0.001496 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.811778 seconds.
-  path: Assets/Bhaptics/SDK/Examples/Scenes/6_DotPoint_via_scriptSettings.lighting
-  artifactKey: Guid(b14eb55774d68449ab177f019416f05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/SDK/Examples/Scenes/6_DotPoint_via_scriptSettings.lighting using Guid(b14eb55774d68449ab177f019416f05d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) The Progressive CPU lightmapper is not supported on Apple silicon, switching to the Progressive GPU lightmapper.
-LightingSettings: switching bake backend from 2 to 1.
- -> (artifact id: '088b9bed039db6df088faee4f7a8c6c6') in 0.053316 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.972184 seconds.
-  path: Assets/Bhaptics/SDK/Examples/Scenes/7_Demo_Shooter.unity
-  artifactKey: Guid(c4ce510415d1962418e4d4eb2d77ce75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/SDK/Examples/Scenes/7_Demo_Shooter.unity using Guid(c4ce510415d1962418e4d4eb2d77ce75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '018cc695b80a66277f6b019b127c5f05') in 0.001633 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.147227 seconds.
-  path: Assets/Bhaptics/SDK/Examples/Scenes/8_PathPoint_via_script.unity
-  artifactKey: Guid(52b0ed5a9211e464887202e564c323a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/SDK/Examples/Scenes/8_PathPoint_via_script.unity using Guid(52b0ed5a9211e464887202e564c323a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc5c5b20a732c6b7349b8b9628a345d8') in 0.001700 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.198485 seconds.
-  path: Assets/Bhaptics/SDK/Examples/ExamplePackages/BhapticsAVProVideoExample.unitypackage
-  artifactKey: Guid(ae443990bd531b74e97765370d090aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/SDK/Examples/ExamplePackages/BhapticsAVProVideoExample.unitypackage using Guid(ae443990bd531b74e97765370d090aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4e6323254ecbe1d46e490a079607a66') in 0.005680 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.553802 seconds.
-  path: Assets/Bhaptics/SDK/Examples/ExamplePackages/BhapticsOculusExample.unitypackage
-  artifactKey: Guid(118d469a198fe7849a02895c843752a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/SDK/Examples/ExamplePackages/BhapticsOculusExample.unitypackage using Guid(118d469a198fe7849a02895c843752a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '483b4d0e8a1b27c20804829d4804e713') in 0.001526 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.597775 seconds.
-  path: Assets/BhapticsIntegration/QuestIntegration/Scenes/1. Collision Example.unity
-  artifactKey: Guid(e280f86a25a794940a9bc956059fac7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BhapticsIntegration/QuestIntegration/Scenes/1. Collision Example.unity using Guid(e280f86a25a794940a9bc956059fac7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ae0679c8b7334d586db6430533d4644') in 0.000534 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.086933 seconds.
-  path: Assets/BhapticsIntegration
-  artifactKey: Guid(02e534e1cbaae144793aba2c2c49c43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BhapticsIntegration using Guid(02e534e1cbaae144793aba2c2c49c43e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c3ea3ed9a553d7fa4798c56c6c3a2bb') in 0.001703 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 61.709903 seconds.
-  path: Assets/BhapticsIntegration/QuestIntegration/Scenes/2. pointing Example.unity
-  artifactKey: Guid(6fb44997f32924745a609e9c8767f88a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/BhapticsIntegration/QuestIntegration/Scenes/2. pointing Example.unity using Guid(6fb44997f32924745a609e9c8767f88a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5b048e144b9f9ecb4efc594360a217') in 0.001155 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 332.350046 seconds.
-  path: Assets/Scenes/IntroScene.unity
-  artifactKey: Guid(022bc269538676a41ac4f35739b05a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/IntroScene.unity using Guid(022bc269538676a41ac4f35739b05a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '062cb71fc35a873fd02a8ab5066f8fd3') in 0.002761 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 106.396767 seconds.
-  path: Assets/Bhaptics/AVProVideoSample
-  artifactKey: Guid(1090bc3966886d84f8ac6c810682758d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/AVProVideoSample using Guid(1090bc3966886d84f8ac6c810682758d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e76e15ed53870e792f84714733db60f5') in 0.002539 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.025803 seconds.
-  path: Assets/Bhaptics/AVProVideoSample/Scenes/bHapticsAVProVideo.unity
-  artifactKey: Guid(4379be92b5c925448892ea0d717e57c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/AVProVideoSample/Scenes/bHapticsAVProVideo.unity using Guid(4379be92b5c925448892ea0d717e57c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70487229cd5897493a1471e392c3125f') in 0.002019 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002510 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x17d8d3000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.15 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  0.778 seconds
-Domain Reload Profiling:
-	ReloadAssembly (779ms)
-		BeginReloadAssembly (109ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (599ms)
-			LoadAssemblies (57ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (233ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (246ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (42ms)
-				ProcessInitializeOnLoadAttributes (170ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on WitService
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 4.63 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Unloading 4970 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (138.5 KB). Loaded Objects now: 5570.
-Memory consumption went from 204.5 MB to 204.3 MB.
-Total: 2.654500 ms (FindLiveObjects: 0.180500 ms CreateObjectMapping: 0.063167 ms MarkObjects: 2.310334 ms  DeleteObjects: 0.099292 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 14.228034 seconds.
-  path: Assets/Scenes/IntroScene.unity
-  artifactKey: Guid(022bc269538676a41ac4f35739b05a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/IntroScene.unity using Guid(022bc269538676a41ac4f35739b05a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da293718440935f6d0b20c236bdc542') in 0.007486 seconds 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 4.92 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.6 KB). Loaded Objects now: 5570.
-Memory consumption went from 105.8 MB to 105.6 MB.
-Total: 3.157792 ms (FindLiveObjects: 0.171833 ms CreateObjectMapping: 0.069292 ms MarkObjects: 2.777083 ms  DeleteObjects: 0.138958 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 5.22 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.18 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (131.0 KB). Loaded Objects now: 5570.
-Memory consumption went from 105.7 MB to 105.6 MB.
-Total: 12.977541 ms (FindLiveObjects: 0.351250 ms CreateObjectMapping: 0.082875 ms MarkObjects: 12.393792 ms  DeleteObjects: 0.148833 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 4.76 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.15 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.9 KB). Loaded Objects now: 5570.
-Memory consumption went from 105.8 MB to 105.6 MB.
-Total: 2.939625 ms (FindLiveObjects: 0.185750 ms CreateObjectMapping: 0.060584 ms MarkObjects: 2.555916 ms  DeleteObjects: 0.136417 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 5.22 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.8 KB). Loaded Objects now: 5570.
-Memory consumption went from 105.8 MB to 105.6 MB.
-Total: 8.797625 ms (FindLiveObjects: 0.240792 ms CreateObjectMapping: 0.059792 ms MarkObjects: 8.327833 ms  DeleteObjects: 0.168333 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002061 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x29aef3000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  0.788 seconds
-Domain Reload Profiling:
-	ReloadAssembly (788ms)
-		BeginReloadAssembly (106ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (53ms)
-		EndReloadAssembly (616ms)
-			LoadAssemblies (37ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (237ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (269ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (183ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (2ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on WitService
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 5.68 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.18 ms.
-Unloading 4971 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.7 KB). Loaded Objects now: 5575.
-Memory consumption went from 204.5 MB to 204.4 MB.
-Total: 3.154666 ms (FindLiveObjects: 0.193791 ms CreateObjectMapping: 0.065417 ms MarkObjects: 2.766167 ms  DeleteObjects: 0.128416 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 905.624929 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Armor_T1.asset
-  artifactKey: Guid(c35ace147ea2acf499570920ac94fa05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Armor_T1.asset using Guid(c35ace147ea2acf499570920ac94fa05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c5c3e4719dd5d11a3d0aa4d57f61e3') in 0.053882 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Arms/Click_T2_L.asset
-  artifactKey: Guid(ef62149b60db9ec4db47a5fd9e5c3032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Arms/Click_T2_L.asset using Guid(ef62149b60db9ec4db47a5fd9e5c3032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baf66010c80f3a95def6774de23ea13f') in 0.001909 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Body_Shake_T3.asset
-  artifactKey: Guid(4ea1056da053e7148a51538869924d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Body_Shake_T3.asset using Guid(4ea1056da053e7148a51538869924d9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fad57e9f3a729f9a18f6806c4008a3c1') in 0.001708 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T1_L.asset
-  artifactKey: Guid(221907c45f8787c43ab884d8a1807dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T1_L.asset using Guid(221907c45f8787c43ab884d8a1807dc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af068e3f2d78c0d37ec2ca6b48768776') in 0.001931 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T6_L.asset
-  artifactKey: Guid(ba60a53ff156b134aaafe1f4ed935002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T6_L.asset using Guid(ba60a53ff156b134aaafe1f4ed935002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f27fcf968047de1486fd8ddbe8d4012e') in 0.001947 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Armor_T5.asset
-  artifactKey: Guid(c25e7ecb41de2744798a75747df15602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Armor_T5.asset using Guid(c25e7ecb41de2744798a75747df15602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9145041094bd6d7f372047b6c34bea') in 0.001204 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Arms/Click_T2_R.asset
-  artifactKey: Guid(fbed9d6f2df598f48993effd682cb183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Arms/Click_T2_R.asset using Guid(fbed9d6f2df598f48993effd682cb183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2861951c164bbd8f563f44863a3fd53f') in 0.001436 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Bhaptics/HapticClips/Special/Vest/Draw_Cross_T2.asset
-  artifactKey: Guid(ca0bc2dd46e2a544481d31d1f28cdc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Special/Vest/Draw_Cross_T2.asset using Guid(ca0bc2dd46e2a544481d31d1f28cdc04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e6a4ad2d33898ff23d808fd8f5ff0d0') in 0.001754 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Climbing_T2_R.asset
-  artifactKey: Guid(85581a41df9a6fd49bf14d738ecad92f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Climbing_T2_R.asset using Guid(85581a41df9a6fd49bf14d738ecad92f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7883a6f110f76d0cacb703c85fe17324') in 0.000937 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T2_R.asset
-  artifactKey: Guid(ac7483ede2b359d4bac417cd34a7d43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T2_R.asset using Guid(ac7483ede2b359d4bac417cd34a7d43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '602aa10d4fb72174964086c37b614c8f') in 0.001508 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Head/Bullet_Hit_T1.asset
-  artifactKey: Guid(0a42e33ee32cac84b86b857255b41cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Head/Bullet_Hit_T1.asset using Guid(0a42e33ee32cac84b86b857255b41cd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd38d7c90fe3f23dce9a1787b8eed524a') in 0.001390 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Bhaptics/HapticClips/Special/Vest/Draw_Circle_T2.asset
-  artifactKey: Guid(96788b57642029b488ccd64453167214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Special/Vest/Draw_Circle_T2.asset using Guid(96788b57642029b488ccd64453167214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '455ea45654b45e11b821420abce80def') in 0.002205 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Bhaptics/HapticClips/Attack/Vest/Charging_T3_L.asset
-  artifactKey: Guid(a49c25ba54bf5b24e8028837fea02f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Attack/Vest/Charging_T3_L.asset using Guid(a49c25ba54bf5b24e8028837fea02f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bac0321fbe99064f58f1109687eea193') in 0.001664 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Bhaptics/HapticClips/Attack/Vest/Arrow_Shooting_R.asset
-  artifactKey: Guid(70d0c905b97919b44aff85f0463bee3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Attack/Vest/Arrow_Shooting_R.asset using Guid(70d0c905b97919b44aff85f0463bee3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '133125dcdeaa01c0a5c1b7e8187477a1') in 0.001297 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T1_R.asset
-  artifactKey: Guid(0c203ea680987a143a8bc09977ccd97c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T1_R.asset using Guid(0c203ea680987a143a8bc09977ccd97c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ad8372642904eae3ddde312f31be061') in 0.001594 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T3_L.asset
-  artifactKey: Guid(0676fb249882438438bee7e533101c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T3_L.asset using Guid(0676fb249882438438bee7e533101c66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa0b9af8515f1de7d39a0081df644cd7') in 0.001871 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Arms/Click_T4_R.asset
-  artifactKey: Guid(6d6c520f60e4c254ca6a6145e85634f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Arms/Click_T4_R.asset using Guid(6d6c520f60e4c254ca6a6145e85634f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dda195646544edc3fd73265ec54711d0') in 0.001253 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T6_R.asset
-  artifactKey: Guid(a3185eb363634024b8d7bebdb550c1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T6_R.asset using Guid(a3185eb363634024b8d7bebdb550c1ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fe8fba977234fd953b6f9141bc8c0fd') in 0.001288 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Arms/Click_T1_L.asset
-  artifactKey: Guid(feb3883fade7b1a4e8e4d0df1a71147d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Arms/Click_T1_L.asset using Guid(feb3883fade7b1a4e8e4d0df1a71147d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0739cba3df89048cabedfda9ccf19631') in 0.001427 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Bhaptics/HapticClips/Attack/Arms/Charging_T3_L.asset
-  artifactKey: Guid(fdda9ce53b0561946b3ab2c72ec805fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Attack/Arms/Charging_T3_L.asset using Guid(fdda9ce53b0561946b3ab2c72ec805fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56fc5b541f910b2616fcf75cd55e2705') in 0.001361 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T5_R.asset
-  artifactKey: Guid(0a09576bf69efb84ca97b8a79679795c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T5_R.asset using Guid(0a09576bf69efb84ca97b8a79679795c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fac2d08c8e41c297e4ab11bdbc6ee293') in 0.001383 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Bhaptics/HapticClips/Special/Vest/Draw_Pinwheel_T2.asset
-  artifactKey: Guid(8eb069422b7479e4a856c2b917231e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Special/Vest/Draw_Pinwheel_T2.asset using Guid(8eb069422b7479e4a856c2b917231e4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '748ca54481b1b5ccdfaf5ee88cce0f72') in 0.001482 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Arms/Click_T3_R.asset
-  artifactKey: Guid(cae2551f419f03144bccf4a0eed26bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Arms/Click_T3_R.asset using Guid(cae2551f419f03144bccf4a0eed26bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '017ae905a1d44d73f86143435e26c4b7') in 0.001682 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Bhaptics/HapticClips/Attack/Vest/Charging_T2_L.asset
-  artifactKey: Guid(b97f4bc8c1be2dc429b61d56655f75d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Attack/Vest/Charging_T2_L.asset using Guid(b97f4bc8c1be2dc429b61d56655f75d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcf547c7f856641e4ed5af1d375555d0') in 0.001489 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Armor_T6.asset
-  artifactKey: Guid(ea635b5d27682a34688e5f86c00d8f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Armor_T6.asset using Guid(ea635b5d27682a34688e5f86c00d8f3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '213fa117d7a16ca0baf54749ce668470') in 0.001421 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Bhaptics/HapticClips/Attack/Arms/Charging_T2_R.asset
-  artifactKey: Guid(ba66f6aabb6f8b549abb35175aa7fdb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Attack/Arms/Charging_T2_R.asset using Guid(ba66f6aabb6f8b549abb35175aa7fdb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8281d81f113649dda3a06d928c6eb71a') in 0.001145 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.005363 seconds.
-  path: Assets/Bhaptics/HapticClips/Attack/Arms/Charging_T1_L.asset
-  artifactKey: Guid(a9b82750a97e1bf49aa87844905a56ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Attack/Arms/Charging_T1_L.asset using Guid(a9b82750a97e1bf49aa87844905a56ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ec1249e5fb710fe0db4abd2467b4fec') in 0.001771 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/Bhaptics/HapticClips/Attack/Arms/Charging_T1_R.asset
-  artifactKey: Guid(2e8b0d572a5d8a8418785a4f875dffa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Attack/Arms/Charging_T1_R.asset using Guid(2e8b0d572a5d8a8418785a4f875dffa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f703dc02342bbdc59e3aaad1b0335fbf') in 0.001683 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Bhaptics/HapticClips/Attack/Vest/Arrow_Pulling_R.asset
-  artifactKey: Guid(0f3db4420ffebf5479f19e407013cd99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Attack/Vest/Arrow_Pulling_R.asset using Guid(0f3db4420ffebf5479f19e407013cd99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1e8ee29591c9f132795ce1ef9de8312') in 0.001398 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Climbing_T1_R.asset
-  artifactKey: Guid(b84e522445527a7418782add7a71e687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Climbing_T1_R.asset using Guid(b84e522445527a7418782add7a71e687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69635ad4ba2878afbdd6297579918159') in 0.001734 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Bhaptics/HapticClips/Attack/Arms/Charging_T4_R.asset
-  artifactKey: Guid(646ac9c66b6a44f449de5b5c39340988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Attack/Arms/Charging_T4_R.asset using Guid(646ac9c66b6a44f449de5b5c39340988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b631fc8099a93231a4dddbd5ce909b2') in 0.001450 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Vest/Bullet_Hit_T2.asset
-  artifactKey: Guid(70ff3f2b5ecc4aa41afec8a4d0d05185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Vest/Bullet_Hit_T2.asset using Guid(70ff3f2b5ecc4aa41afec8a4d0d05185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cad5faa8abece7425eaf2190b4a59881') in 0.001505 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Dashing_T2.asset
-  artifactKey: Guid(13294248c2d77b0469e6633a59b50860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Dashing_T2.asset using Guid(13294248c2d77b0469e6633a59b50860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47f42d7f0e12e6116179bedd35f4f298') in 0.001179 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Bhaptics/HapticClips/Attack/Vest/Arrow_Charging_R.asset
-  artifactKey: Guid(d8cc1669fd9cc8d4abc1f9eb05a70fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Attack/Vest/Arrow_Charging_R.asset using Guid(d8cc1669fd9cc8d4abc1f9eb05a70fcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d07995972aa90b04c47fc75eec60a6') in 0.001211 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Arms/Click_T3_L.asset
-  artifactKey: Guid(880eceb856cdf364593abf6a186992d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Arms/Click_T3_L.asset using Guid(880eceb856cdf364593abf6a186992d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '907b87acf84eb0717e3ba936166dfc47') in 0.001226 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Body_Shake_T4.asset
-  artifactKey: Guid(a21dee406d7e74b46aa3982cdcece3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Body_Shake_T4.asset using Guid(a21dee406d7e74b46aa3982cdcece3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249b322561e2e24813912500552605cf') in 0.003353 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001848 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Body_Shake_T2.asset
-  artifactKey: Guid(f5793cb73b435924682a25f83a8d86a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Body_Shake_T2.asset using Guid(f5793cb73b435924682a25f83a8d86a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb6e49ecbce65510932a4b16e7ddd1c0') in 0.002035 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001430 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Vest/Bullet_Hit_T6.asset
-  artifactKey: Guid(32569629c96f1594286df051464d913b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Vest/Bullet_Hit_T6.asset using Guid(32569629c96f1594286df051464d913b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f76759d43c626f8e715750c000e2403') in 0.004619 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000070 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T3_R.asset
-  artifactKey: Guid(e626a7f5c892e7f4dae728334aca5343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Arms/Bullet_Hit_T3_R.asset using Guid(e626a7f5c892e7f4dae728334aca5343) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a17d6776273d6d5760b999d5a7886c9') in 0.001098 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Bhaptics/HapticClips/Special/Vest/Draw_Pinwheel_T1.asset
-  artifactKey: Guid(154a22bd9ad50b743acfdd895a337cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Special/Vest/Draw_Pinwheel_T1.asset using Guid(154a22bd9ad50b743acfdd895a337cd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd5f105b8bb971a2ce0368846ec54df') in 0.001232 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Bhaptics/HapticClips/Attack/Vest/Charging_T1_L.asset
-  artifactKey: Guid(d8c2ecc6d19b1c74f99db6790a2fd54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Attack/Vest/Charging_T1_L.asset using Guid(d8c2ecc6d19b1c74f99db6790a2fd54f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c51bdeecd9edbfcefbed1aff33301231') in 0.001275 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Arms/Click_T5_L.asset
-  artifactKey: Guid(db7ad8c439209e941a4d93467ced2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Arms/Click_T5_L.asset using Guid(db7ad8c439209e941a4d93467ced2a1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '392082f03bd558589172dacc93f66361') in 0.004276 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Body_Shake_T7.asset
-  artifactKey: Guid(2e744cdd1e343f54e9c1b8b8ad5396f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Body_Shake_T7.asset using Guid(2e744cdd1e343f54e9c1b8b8ad5396f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '910891e21d81025d6ab7b97f75eec0b3') in 0.001152 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Glove/Ball_block_L.asset
-  artifactKey: Guid(fb34e893e89f6a548a18030b055435a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Glove/Ball_block_L.asset using Guid(fb34e893e89f6a548a18030b055435a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19876436b319301f8bc07a56bc097793') in 0.001603 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Bhaptics/HapticClips/Attack/Vest/Arrow_Charging_L.asset
-  artifactKey: Guid(5d2caeaf26b36d0498458d952803c2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Attack/Vest/Arrow_Charging_L.asset using Guid(5d2caeaf26b36d0498458d952803c2e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd2ce36ec04ee7d42ab61db7a09f592') in 0.001253 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Bhaptics/HapticClips/Special/Vest/Draw_Circle_T1.asset
-  artifactKey: Guid(8c427cadcc7f37d4997f60f36d843aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Special/Vest/Draw_Circle_T1.asset using Guid(8c427cadcc7f37d4997f60f36d843aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4646caf64cda6969949f1b2335dc732e') in 0.001516 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Vest/Bullet_Hit_T1.asset
-  artifactKey: Guid(1fb3e3cd3ac583d488a33a94650d6c1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Vest/Bullet_Hit_T1.asset using Guid(1fb3e3cd3ac583d488a33a94650d6c1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda98b9da388b5797c45794e56e24d2a') in 0.001191 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.551597 seconds.
-  path: Assets/Bhaptics/HapticClips/Special/Vest/Draw_Pinwheel_T4.asset
-  artifactKey: Guid(fd3025e3a3db8694a81dcc20481a5f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Special/Vest/Draw_Pinwheel_T4.asset using Guid(fd3025e3a3db8694a81dcc20481a5f05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0326dd770f4d45487318b2e5aa50b343') in 0.002672 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Heartbeat_T2.asset
-  artifactKey: Guid(1d8cc1a1adda566478b81a4c027bc326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Heartbeat_T2.asset using Guid(1d8cc1a1adda566478b81a4c027bc326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bfe0a9555b16477c309c0f508a7d166') in 0.001698 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Arms/Electric_Hit_T1_R.asset
-  artifactKey: Guid(e1955ade81d35ad45aaa9ed73a2e3029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Arms/Electric_Hit_T1_R.asset using Guid(e1955ade81d35ad45aaa9ed73a2e3029) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9632f2a50ae0674ad04f5aa3c9f2283f') in 0.001527 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Glove/Index_touch_R.asset
-  artifactKey: Guid(4102458f9cf70ed438c2630ca1a255e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Glove/Index_touch_R.asset using Guid(4102458f9cf70ed438c2630ca1a255e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1cd805e8f8601cc3e89979b5e99d77c') in 0.001430 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Arms/Fist_Bump_T2_R.asset
-  artifactKey: Guid(d43f6e43c50c3f740be713e3761e107c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Arms/Fist_Bump_T2_R.asset using Guid(d43f6e43c50c3f740be713e3761e107c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6406dabf08e5f1ad42866f12f777730e') in 0.001473 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Glove/Electric_R.asset
-  artifactKey: Guid(751be1c9be97bfc43a5d6420347de85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Glove/Electric_R.asset using Guid(751be1c9be97bfc43a5d6420347de85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f2a2dced04876d7c7bf1eed399715ea') in 0.001650 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Glove/Electric_short_R.asset
-  artifactKey: Guid(e51ca004da9a7c5449eca39478317e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Glove/Electric_short_R.asset using Guid(e51ca004da9a7c5449eca39478317e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d1b76d61b4fb301ba8876c08574ab8e') in 0.001397 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Arms/Electric_Hit_T2_L.asset
-  artifactKey: Guid(94a8407d403b6a54abe76dad658f1ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Arms/Electric_Hit_T2_L.asset using Guid(94a8407d403b6a54abe76dad658f1ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e6f397269f7fbb1fcdb31738619aa05') in 0.001390 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Glove/Electric_short_L.asset
-  artifactKey: Guid(f60b617201e4a794089d63d246a7ff23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Glove/Electric_short_L.asset using Guid(f60b617201e4a794089d63d246a7ff23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9ca0f78bd7ab4edba914906e7af56f8') in 0.001298 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Heartbeat_T5.asset
-  artifactKey: Guid(11139ade887e6824a9d2b84a3a56eec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Heartbeat_T5.asset using Guid(11139ade887e6824a9d2b84a3a56eec2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfa9882f6f4b137f8a4cff83d6a4036d') in 0.001385 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Glove/Electric_L.asset
-  artifactKey: Guid(572bdda2ca79a924387218764f4dff1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Glove/Electric_L.asset using Guid(572bdda2ca79a924387218764f4dff1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ade5a101f3e8b62383f544727cf33eca') in 0.000954 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Glove/Grab_R.asset
-  artifactKey: Guid(db406d3301bc15a46a15176da74968dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Glove/Grab_R.asset using Guid(db406d3301bc15a46a15176da74968dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cfef33b27249dde953417af038d4497') in 0.001313 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Heartbeat_T1.asset
-  artifactKey: Guid(38506e489ae66c14287c8f3d220a518e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Heartbeat_T1.asset using Guid(38506e489ae66c14287c8f3d220a518e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b462d90234f1d91efda8a67f359859d') in 0.000975 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Heartbeat_T3.asset
-  artifactKey: Guid(cb252bb123306204a8f32a611407d277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Heartbeat_T3.asset using Guid(cb252bb123306204a8f32a611407d277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8e9ed6d92148d7e8e40ea690be1db21') in 0.001134 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Head/Electric_Hit_T2.asset
-  artifactKey: Guid(4ec7bf2f74c54d943bef63aa385ffd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Head/Electric_Hit_T2.asset using Guid(4ec7bf2f74c54d943bef63aa385ffd6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05bf681a6a7bf80ff50af735f07b5f5') in 0.001155 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Hands/High_Five_R.asset
-  artifactKey: Guid(d09f271decfde644c9a970c82731a1b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Hands/High_Five_R.asset using Guid(d09f271decfde644c9a970c82731a1b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a099e98d408f7c6f71b6c1dd48342bfc') in 0.001235 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Vest/Electric_Hit_T1.asset
-  artifactKey: Guid(4946b93dd78f54a4db7c26db7ed80d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Vest/Electric_Hit_T1.asset using Guid(4946b93dd78f54a4db7c26db7ed80d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63660c18848892f66a138795e2e7f6bb') in 0.001246 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Arms/Explosion_Hit_T1_R.asset
-  artifactKey: Guid(2db81eaa7b411ae4bb72440be805da31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Arms/Explosion_Hit_T1_R.asset using Guid(2db81eaa7b411ae4bb72440be805da31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13545930da88621ee386d37421855c16') in 0.001280 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Arms/Flame_Hit_T2_R.asset
-  artifactKey: Guid(8fded2a85980c754ba320e3751ebf38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Arms/Flame_Hit_T2_R.asset using Guid(8fded2a85980c754ba320e3751ebf38b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae740c2f3a15d9b25789746729a396a') in 0.001094 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.192235 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Falling_T1.asset
-  artifactKey: Guid(a57d8b53c0bcaa54a86a6163244f8217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Falling_T1.asset using Guid(a57d8b53c0bcaa54a86a6163244f8217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c3d1ced2406e077281a185ab2cfb8e4') in 0.001585 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Landing.asset
-  artifactKey: Guid(e21e585f5345acd44908181a49140ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Landing.asset using Guid(e21e585f5345acd44908181a49140ea3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '050c2500107dd3e1e9ddcbb6215022d6') in 0.001234 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Vest/Piercing_Hit_T2.asset
-  artifactKey: Guid(7754be4a529af144ba281c565afd40f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Vest/Piercing_Hit_T2.asset using Guid(7754be4a529af144ba281c565afd40f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e935f585fbba3889e069b4e20bcb02b5') in 0.001487 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Bhaptics/HapticClips/Special/Glove/Scanning_L.asset
-  artifactKey: Guid(b9b09762f9eb0fc4fa526e6af6a896bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Special/Glove/Scanning_L.asset using Guid(b9b09762f9eb0fc4fa526e6af6a896bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f6a910af7a12207014aacba9b73c4d5') in 0.001560 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Arms/Ping_T3_R.asset
-  artifactKey: Guid(f0dafdf63dde71f42a3f924a80cf3570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Arms/Ping_T3_R.asset using Guid(f0dafdf63dde71f42a3f924a80cf3570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '538c126ceae512a1c181970490292673') in 0.001117 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Vest/Piercing_Hit_T1.asset
-  artifactKey: Guid(87cb4e77cd336114fb74e79a610adcc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Vest/Piercing_Hit_T1.asset using Guid(87cb4e77cd336114fb74e79a610adcc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7922fa502df183017dc5900c8d91da50') in 0.001452 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Arms/Ping_T4_R.asset
-  artifactKey: Guid(e0ecafa744659e5449c2e40458e4546f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Arms/Ping_T4_R.asset using Guid(e0ecafa744659e5449c2e40458e4546f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e19af9ecd185381a68b887ad77e710') in 0.001567 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Jumping.asset
-  artifactKey: Guid(b7206cfe9579b2c488f60829884de9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Jumping.asset using Guid(b7206cfe9579b2c488f60829884de9f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02023ba7779d5838dab90bdbea2c08c2') in 0.001216 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Arms/Ping_T5_R.asset
-  artifactKey: Guid(2c59d90bea3d35042a2f9ce7b3deb499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Arms/Ping_T5_R.asset using Guid(2c59d90bea3d35042a2f9ce7b3deb499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c2195c2d5a3bf548cc0cfc81387547d') in 0.001502 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Flying_T2.asset
-  artifactKey: Guid(8457b3d1544dcd741be18af883c43b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Flying_T2.asset using Guid(8457b3d1544dcd741be18af883c43b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cf097733b1c2e0dad46d557e32cdc7d') in 0.001285 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Flying_T1.asset
-  artifactKey: Guid(7074f2998327f9f489105bc8344e310e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Flying_T1.asset using Guid(7074f2998327f9f489105bc8344e310e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3cd7496c929c9b23cfbf4ff51854bfc') in 0.001302 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Arms/Ping_T1_L.asset
-  artifactKey: Guid(168e44f3c9770b94fb19b62e8f521108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Arms/Ping_T1_L.asset using Guid(168e44f3c9770b94fb19b62e8f521108) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '985a1c3735a842d30674242135f909ce') in 0.000989 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/Bhaptics/HapticClips/Hit/Vest/Mine_Hit_T3.asset
-  artifactKey: Guid(dac62a304a5defc45b0de75e7205f9d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Hit/Vest/Mine_Hit_T3.asset using Guid(dac62a304a5defc45b0de75e7205f9d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f4a3704906348752cadd6faa8b2c392') in 0.001229 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Arms/Ping_T2_R.asset
-  artifactKey: Guid(b38624be25839724a8324396887f1d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Arms/Ping_T2_R.asset using Guid(b38624be25839724a8324396887f1d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65e86ceef8e278e332d11af57beffef5') in 0.000993 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Arms/Ping_T1_R.asset
-  artifactKey: Guid(39cee999a1005354d9993c70d6a10c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Arms/Ping_T1_R.asset using Guid(39cee999a1005354d9993c70d6a10c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c78c3e8a84563aba548c0a80182282bd') in 0.000989 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000074 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Vest/Falling_T3.asset
-  artifactKey: Guid(360e7ef965f00c04eb85b340a95db927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Vest/Falling_T3.asset using Guid(360e7ef965f00c04eb85b340a95db927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96dfaea7fa5c57b1ad75eef44d351b14') in 0.001294 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Feet/Walking_R.asset
-  artifactKey: Guid(e4e7d0e6e38c37244b8dd4cbd54375df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Feet/Walking_R.asset using Guid(e4e7d0e6e38c37244b8dd4cbd54375df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cf8d2de8e33b1062454a983ce784d90') in 0.001231 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Bhaptics/HapticClips/Interaction/Arms/Ping_T5_L.asset
-  artifactKey: Guid(8fc1180f483d51c44b8b4c514e721877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Interaction/Arms/Ping_T5_L.asset using Guid(8fc1180f483d51c44b8b4c514e721877) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0768f31a666ffaa6a3af1570d622261f') in 0.001007 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002471 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x29aef3000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  0.908 seconds
-Domain Reload Profiling:
-	ReloadAssembly (909ms)
-		BeginReloadAssembly (111ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (55ms)
-		EndReloadAssembly (726ms)
-			LoadAssemblies (73ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (302ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (276ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (193ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on WitService
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.28 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.11 ms.
-Unloading 4971 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (130.9 KB). Loaded Objects now: 5579.
-Memory consumption went from 204.5 MB to 204.4 MB.
-Total: 2.661208 ms (FindLiveObjects: 0.164917 ms CreateObjectMapping: 0.057958 ms MarkObjects: 2.339208 ms  DeleteObjects: 0.098667 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 11.64 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.16 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (130.9 KB). Loaded Objects now: 5579.
-Memory consumption went from 105.8 MB to 105.7 MB.
-Total: 2.922500 ms (FindLiveObjects: 0.186500 ms CreateObjectMapping: 0.059875 ms MarkObjects: 2.556875 ms  DeleteObjects: 0.119000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 4.36 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.15 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.7 KB). Loaded Objects now: 5579.
-Memory consumption went from 105.8 MB to 105.7 MB.
-Total: 6.245333 ms (FindLiveObjects: 0.291083 ms CreateObjectMapping: 0.060125 ms MarkObjects: 5.705959 ms  DeleteObjects: 0.187833 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 4.77 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.19 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.9 KB). Loaded Objects now: 5579.
-Memory consumption went from 105.8 MB to 105.7 MB.
-Total: 4.659750 ms (FindLiveObjects: 0.192209 ms CreateObjectMapping: 0.061542 ms MarkObjects: 4.267125 ms  DeleteObjects: 0.137417 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 523.257162 seconds.
-  path: Assets/Scenes/SceneManagment.unity
-  artifactKey: Guid(4215a9c38cc554f45a98443a01e9bb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SceneManagment.unity using Guid(4215a9c38cc554f45a98443a01e9bb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b87b29f6032ecd3283daea2a6f44aa67') in 0.004605 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.158308 seconds.
-  path: Assets/Scenes/SphericalScenePoke.unity
-  artifactKey: Guid(6b034a661217f46cda838946851d1d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SphericalScenePoke.unity using Guid(6b034a661217f46cda838946851d1d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b93888e34d9219f7ceb807f839e9575') in 0.001362 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.937548 seconds.
-  path: Assets/Scenes/SceneManagment.unity
-  artifactKey: Guid(4215a9c38cc554f45a98443a01e9bb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SceneManagment.unity using Guid(4215a9c38cc554f45a98443a01e9bb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c51386258f58bbe6de57cafbaa8b0d6c') in 0.001536 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 44.788896 seconds.
-  path: Assets/Scenes/SphericalSceneController.unity
-  artifactKey: Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SphericalSceneController.unity using Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df556eb57f702259da0442c1b6d5ab31') in 0.002039 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 158.853004 seconds.
-  path: Assets/Scenes/IntroScene.unity
-  artifactKey: Guid(022bc269538676a41ac4f35739b05a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/IntroScene.unity using Guid(022bc269538676a41ac4f35739b05a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '392b60d86f0b7cb303bef21c05d2ae23') in 0.002639 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002443 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x29f893000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 4 plugins.
 Preloading 1 native plugins for Editor in 0.23 ms.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
@@ -1810,44 +307,44 @@ Preloading 1 native plugins for Editor in 0.23 ms.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  0.901 seconds
+- Completed reload, in  0.845 seconds
 Domain Reload Profiling:
-	ReloadAssembly (901ms)
-		BeginReloadAssembly (113ms)
+	ReloadAssembly (846ms)
+		BeginReloadAssembly (130ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (57ms)
-		EndReloadAssembly (719ms)
-			LoadAssemblies (66ms)
+		EndReloadAssembly (649ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (262ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (313ms)
+			SetupTypeCache (232ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (278ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (62ms)
+				InitializePlatformSupportModulesInManaged (18ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (47ms)
-				ProcessInitializeOnLoadAttributes (188ms)
+				BeforeProcessingInitializeOnLoad (50ms)
+				ProcessInitializeOnLoadAttributes (194ms)
 				ProcessInitializeOnLoadMethodAttributes (13ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
 Platform modules already initialized, skipping
 OnLevelWasLoaded was found on WitService
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 4.70 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.13 ms.
-Unloading 4971 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (130.9 KB). Loaded Objects now: 5583.
-Memory consumption went from 204.6 MB to 204.4 MB.
-Total: 2.776958 ms (FindLiveObjects: 0.164500 ms CreateObjectMapping: 0.059666 ms MarkObjects: 2.453000 ms  DeleteObjects: 0.099166 ms)
+Refreshing native plugins compatible for Editor in 4.72 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.20 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (133.2 KB). Loaded Objects now: 5522.
+Memory consumption went from 179.7 MB to 179.6 MB.
+Total: 3.415416 ms (FindLiveObjects: 0.538250 ms CreateObjectMapping: 0.085250 ms MarkObjects: 2.674834 ms  DeleteObjects: 0.116208 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -1861,44 +358,35 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 440.057283 seconds.
-  path: Assets/Bhaptics/HapticClips/Attack/Glove/Magic_charge_L.asset
-  artifactKey: Guid(8b4f1fe7a49647641b78fe1ab4f5993a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Bhaptics/HapticClips/Attack/Glove/Magic_charge_L.asset using Guid(8b4f1fe7a49647641b78fe1ab4f5993a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b636cf07bfbc5d218ade29d0e04be527') in 0.016107 seconds 
+  Time since last request: 532.134440 seconds.
+  path: Assets/DontDestroyOnLoadScript.cs
+  artifactKey: Guid(0c42979a7141b4fc0abee9f6cecc0639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DontDestroyOnLoadScript.cs using Guid(0c42979a7141b4fc0abee9f6cecc0639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '437e8c6e268667b13b940b2fc9436ce7') in 0.272966 seconds 
 ========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 11.93 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.16 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.8 KB). Loaded Objects now: 5583.
-Memory consumption went from 105.9 MB to 105.7 MB.
-Total: 3.554625 ms (FindLiveObjects: 0.199167 ms CreateObjectMapping: 0.062792 ms MarkObjects: 3.175666 ms  DeleteObjects: 0.116500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 4.091581 seconds.
+  path: Assets/Bhaptics
+  artifactKey: Guid(25ecec9b6da964bb3ab785a95d1fddd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bhaptics using Guid(25ecec9b6da964bb3ab785a95d1fddd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7607ee747157551170bb54a2b176528') in 0.000933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.258494 seconds.
+  path: Assets/HandDetector.cs
+  artifactKey: Guid(0ef27c815f1124b14970be9009e5f115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandDetector.cs using Guid(0ef27c815f1124b14970be9009e5f115) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26990089a3b50494178b88093cd4eae5') in 0.000869 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002602 seconds.
+Registered in 0.002556 seconds.
 Begin MonoManager ReloadAssembly
-Thread 0x17d9b7000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
+Thread 0x16bd1f000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/aneesh/Developer/Mixed Reality/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/aneesh/Developer/Mixed Reality/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.11 ms.
+Refreshing native plugins compatible for Editor in 1.10 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.34 ms.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
@@ -1906,180 +394,44 @@ Preloading 1 native plugins for Editor in 0.11 ms.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  0.822 seconds
+- Completed reload, in  0.752 seconds
 Domain Reload Profiling:
-	ReloadAssembly (823ms)
-		BeginReloadAssembly (104ms)
+	ReloadAssembly (753ms)
+		BeginReloadAssembly (119ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (651ms)
-			LoadAssemblies (38ms)
+			CreateAndSetChildDomain (61ms)
+		EndReloadAssembly (573ms)
+			LoadAssemblies (39ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (275ms)
+			SetupTypeCache (215ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (268ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (254ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (31ms)
+				InitializePlatformSupportModulesInManaged (14ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (45ms)
+				BeforeProcessingInitializeOnLoad (47ms)
 				ProcessInitializeOnLoadAttributes (176ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on WitService
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 4.87 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
-Unloading 4971 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.8 KB). Loaded Objects now: 5587.
-Memory consumption went from 204.6 MB to 204.4 MB.
-Total: 2.838542 ms (FindLiveObjects: 0.170042 ms CreateObjectMapping: 0.055750 ms MarkObjects: 2.502125 ms  DeleteObjects: 0.109917 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 11.19 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.16 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (131.1 KB). Loaded Objects now: 5587.
-Memory consumption went from 105.8 MB to 105.7 MB.
-Total: 3.160250 ms (FindLiveObjects: 0.184250 ms CreateObjectMapping: 0.080875 ms MarkObjects: 2.773041 ms  DeleteObjects: 0.121333 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002350 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x29aef3000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.25 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  0.954 seconds
-Domain Reload Profiling:
-	ReloadAssembly (956ms)
-		BeginReloadAssembly (240ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (152ms)
-		EndReloadAssembly (650ms)
-			LoadAssemblies (50ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (236ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (303ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (48ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (47ms)
-				ProcessInitializeOnLoadAttributes (191ms)
 				ProcessInitializeOnLoadMethodAttributes (14ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
 Platform modules already initialized, skipping
 OnLevelWasLoaded was found on WitService
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 4.44 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.12 ms.
-Unloading 4971 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (130.9 KB). Loaded Objects now: 5591.
-Memory consumption went from 204.6 MB to 204.5 MB.
-Total: 2.740916 ms (FindLiveObjects: 0.175666 ms CreateObjectMapping: 0.059417 ms MarkObjects: 2.399083 ms  DeleteObjects: 0.105875 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 11.42 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 5.32 ms, found 4 plugins.
 Preloading 1 native plugins for Editor in 0.21 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (131.2 KB). Loaded Objects now: 5591.
-Memory consumption went from 105.9 MB to 105.7 MB.
-Total: 3.238625 ms (FindLiveObjects: 0.181583 ms CreateObjectMapping: 0.063125 ms MarkObjects: 2.877667 ms  DeleteObjects: 0.115625 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 806.531138 seconds.
-  path: Assets/Scripts/changeReferenceText.cs
-  artifactKey: Guid(807c38153604f4b2e951fe6bb493e420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/changeReferenceText.cs using Guid(807c38153604f4b2e951fe6bb493e420) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd788e9b32b21b906300a928c644c29f1') in 0.019533 seconds 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 5.58 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.9 KB). Loaded Objects now: 5591.
-Memory consumption went from 105.9 MB to 105.7 MB.
-Total: 10.471666 ms (FindLiveObjects: 0.367875 ms CreateObjectMapping: 0.059834 ms MarkObjects: 9.896250 ms  DeleteObjects: 0.147041 ms)
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (133.1 KB). Loaded Objects now: 5526.
+Memory consumption went from 183.9 MB to 183.7 MB.
+Total: 3.851208 ms (FindLiveObjects: 0.258625 ms CreateObjectMapping: 0.128959 ms MarkObjects: 3.341083 ms  DeleteObjects: 0.121667 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -2094,12 +446,32 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 5.44 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
+Refreshing native plugins compatible for Editor in 13.69 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.24 ms.
 Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (131.1 KB). Loaded Objects now: 5591.
-Memory consumption went from 105.9 MB to 105.7 MB.
-Total: 10.906541 ms (FindLiveObjects: 0.309375 ms CreateObjectMapping: 0.059833 ms MarkObjects: 10.384042 ms  DeleteObjects: 0.152667 ms)
+Unloading 58 unused Assets / (130.6 KB). Loaded Objects now: 5526.
+Memory consumption went from 82.0 MB to 81.9 MB.
+Total: 8.875917 ms (FindLiveObjects: 0.252417 ms CreateObjectMapping: 0.064708 ms MarkObjects: 8.442458 ms  DeleteObjects: 0.115500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 11.16 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.20 ms.
+Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (130.5 KB). Loaded Objects now: 5526.
+Memory consumption went from 82.0 MB to 81.9 MB.
+Total: 23.008667 ms (FindLiveObjects: 0.242958 ms CreateObjectMapping: 0.062834 ms MarkObjects: 22.315000 ms  DeleteObjects: 0.387167 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -2114,17 +486,16 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002672 seconds.
+Registered in 0.002884 seconds.
 Begin MonoManager ReloadAssembly
-Thread 0x29aef3000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
+Thread 0x16bd1f000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/aneesh/Developer/Mixed Reality/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/aneesh/Developer/Mixed Reality/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
 Native extension for Android target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.25 ms.
+Refreshing native plugins compatible for Editor in 1.05 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.29 ms.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
@@ -2132,204 +503,104 @@ Preloading 1 native plugins for Editor in 0.25 ms.
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  0.900 seconds
+- Completed reload, in  0.869 seconds
 Domain Reload Profiling:
-	ReloadAssembly (901ms)
-		BeginReloadAssembly (171ms)
+	ReloadAssembly (870ms)
+		BeginReloadAssembly (176ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (91ms)
-		EndReloadAssembly (661ms)
-			LoadAssemblies (59ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (246ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (293ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (51ms)
-				ProcessInitializeOnLoadAttributes (204ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on WitService
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.53 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.15 ms.
-Unloading 4971 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (130.8 KB). Loaded Objects now: 5595.
-Memory consumption went from 204.6 MB to 204.5 MB.
-Total: 3.900333 ms (FindLiveObjects: 0.159917 ms CreateObjectMapping: 0.055500 ms MarkObjects: 3.567208 ms  DeleteObjects: 0.116792 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002230 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x29aef3000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.35 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.16 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  0.824 seconds
-Domain Reload Profiling:
-	ReloadAssembly (825ms)
-		BeginReloadAssembly (89ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (41ms)
-		EndReloadAssembly (660ms)
-			LoadAssemblies (60ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (262ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (43ms)
-			SetupLoadedEditorAssemblies (253ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (48ms)
-				ProcessInitializeOnLoadAttributes (168ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (1ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-OnLevelWasLoaded was found on WitService
-This message has been deprecated and will be removed in a later version of Unity.
-Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 2.66 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
-Unloading 4971 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (130.9 KB). Loaded Objects now: 5599.
-Memory consumption went from 204.6 MB to 204.5 MB.
-Total: 3.633042 ms (FindLiveObjects: 0.184000 ms CreateObjectMapping: 0.113708 ms MarkObjects: 3.170041 ms  DeleteObjects: 0.164208 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 12.43 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
-Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (139.0 KB). Loaded Objects now: 5599.
-Memory consumption went from 105.9 MB to 105.8 MB.
-Total: 7.737250 ms (FindLiveObjects: 0.261291 ms CreateObjectMapping: 0.055792 ms MarkObjects: 7.270250 ms  DeleteObjects: 0.149208 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002983 seconds.
-Begin MonoManager ReloadAssembly
-Thread 0x29aef3000 may have been prematurely finalized
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image /Users/vikashmediboina/XRIProject/XRProject/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  0.917 seconds
-Domain Reload Profiling:
-	ReloadAssembly (917ms)
-		BeginReloadAssembly (231ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (108ms)
-		EndReloadAssembly (621ms)
-			LoadAssemblies (86ms)
+			CreateAndSetChildDomain (83ms)
+		EndReloadAssembly (627ms)
+			LoadAssemblies (57ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (238ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (37ms)
-			SetupLoadedEditorAssemblies (272ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (265ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (31ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (46ms)
-				ProcessInitializeOnLoadAttributes (179ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (1ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (187ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
 Platform modules already initialized, skipping
 OnLevelWasLoaded was found on WitService
 This message has been deprecated and will be removed in a later version of Unity.
 Add a delegate to SceneManager.sceneLoaded instead to get notifications after scene loading has completed
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 4.55 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.12 ms.
-Unloading 4971 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.6 KB). Loaded Objects now: 5603.
-Memory consumption went from 204.6 MB to 204.5 MB.
-Total: 2.927500 ms (FindLiveObjects: 0.207500 ms CreateObjectMapping: 0.067791 ms MarkObjects: 2.540250 ms  DeleteObjects: 0.111292 ms)
+Refreshing native plugins compatible for Editor in 5.91 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.22 ms.
+Unloading 4972 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (130.5 KB). Loaded Objects now: 5530.
+Memory consumption went from 180.8 MB to 180.7 MB.
+Total: 4.261083 ms (FindLiveObjects: 0.259333 ms CreateObjectMapping: 0.118292 ms MarkObjects: 3.740792 ms  DeleteObjects: 0.141041 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 12.69 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.21 ms.
+Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (130.5 KB). Loaded Objects now: 5530.
+Memory consumption went from 82.1 MB to 81.9 MB.
+Total: 21.147292 ms (FindLiveObjects: 0.240584 ms CreateObjectMapping: 0.064875 ms MarkObjects: 20.713208 ms  DeleteObjects: 0.128292 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 5.87 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.21 ms.
+Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (130.6 KB). Loaded Objects now: 5530.
+Memory consumption went from 82.1 MB to 81.9 MB.
+Total: 27.658209 ms (FindLiveObjects: 0.686625 ms CreateObjectMapping: 0.064542 ms MarkObjects: 26.782417 ms  DeleteObjects: 0.124084 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 4.93 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.20 ms.
+Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (130.5 KB). Loaded Objects now: 5530.
+Memory consumption went from 82.1 MB to 81.9 MB.
+Total: 9.063125 ms (FindLiveObjects: 0.236833 ms CreateObjectMapping: 0.059917 ms MarkObjects: 8.486125 ms  DeleteObjects: 0.279834 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -2343,19 +614,103 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2102.134304 seconds.
+  Time since last request: 3720.855366 seconds.
+  path: Assets/Scenes/EndScene.unity
+  artifactKey: Guid(d3afdd78158eb421b8fb05db919be4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/EndScene.unity using Guid(d3afdd78158eb421b8fb05db919be4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '442e7641cce17a72adbcb3e516906019') in 0.040371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 164.452623 seconds.
+  path: Assets/Scenes/QwertySceneController.unity
+  artifactKey: Guid(e155669f1323fd341a1e607eeffb1f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/QwertySceneController.unity using Guid(e155669f1323fd341a1e607eeffb1f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f9da95aa69cc778023de3511a149d1f') in 0.002958 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 83.407793 seconds.
+  path: Assets/Scenes/QwertyScenePoke.unity
+  artifactKey: Guid(e487fd038a7c0411499a6c4d391f89e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/QwertyScenePoke.unity using Guid(e487fd038a7c0411499a6c4d391f89e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0e5ecdf27d5d4d4a52d056547bb997') in 0.001272 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 83.633779 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d5cb52f6731ab6f8574842f938f0d94') in 0.001605 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.831048 seconds.
+  path: Assets/Scenes/SceneManagment.unity
+  artifactKey: Guid(4215a9c38cc554f45a98443a01e9bb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SceneManagment.unity using Guid(4215a9c38cc554f45a98443a01e9bb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c51386258f58bbe6de57cafbaa8b0d6c') in 0.001814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.527717 seconds.
+  path: Assets/Scenes/QwertyScenePoke.unity
+  artifactKey: Guid(e487fd038a7c0411499a6c4d391f89e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/QwertyScenePoke.unity using Guid(e487fd038a7c0411499a6c4d391f89e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc55e2cb5f936bd1b55c63e338f318aa') in 0.002900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.415052 seconds.
+  path: Assets/Scenes/QwertySceneController.unity
+  artifactKey: Guid(e155669f1323fd341a1e607eeffb1f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/QwertySceneController.unity using Guid(e155669f1323fd341a1e607eeffb1f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc848dc4248fb3d98df3357c324990de') in 0.002705 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 94.147477 seconds.
+  path: Assets/Scenes/SelectSeen.unity
+  artifactKey: Guid(2965d8b722035440a8f8482b5d50b26c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SelectSeen.unity using Guid(2965d8b722035440a8f8482b5d50b26c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a7ee92bb645a4fb00b3a338e22f85db') in 0.003078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 30.537264 seconds.
+  path: Assets/Scenes/SphericalSceneController.unity
+  artifactKey: Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SphericalSceneController.unity using Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df556eb57f702259da0442c1b6d5ab31') in 0.001289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46.871566 seconds.
   path: Assets/Scenes/SphericalScenePoke.unity
   artifactKey: Guid(6b034a661217f46cda838946851d1d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SphericalScenePoke.unity using Guid(6b034a661217f46cda838946851d1d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7e20ffe089b7bdd4699a0b2588bab50') in 0.011706 seconds 
+Start importing Assets/Scenes/SphericalScenePoke.unity using Guid(6b034a661217f46cda838946851d1d39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7e20ffe089b7bdd4699a0b2588bab50') in 0.001466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.039057 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(8274d2f2d87be4a8786baec24adebe7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(8274d2f2d87be4a8786baec24adebe7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eed4ed1bb1fb852126652d4ff84fd4cc') in 0.001755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.735493 seconds.
+  path: Assets/Scenes/SphericalSceneController.unity
+  artifactKey: Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SphericalSceneController.unity using Guid(50bb5fe7cee1af04497bd13284a59e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '578d799e8698e25b2baa1fc093a487ff') in 0.002803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.898630 seconds.
+  path: Assets/Scenes/SceneManagment.unity
+  artifactKey: Guid(4215a9c38cc554f45a98443a01e9bb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SceneManagment.unity using Guid(4215a9c38cc554f45a98443a01e9bb59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bbf129143e2d8264037f5d3ebb365ed') in 0.000797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.092702 seconds.
+  path: Assets/Scenes/IntroScene.unity
+  artifactKey: Guid(022bc269538676a41ac4f35739b05a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/IntroScene.unity using Guid(022bc269538676a41ac4f35739b05a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '887a9c49f71b001da0415a548530fe66') in 0.001006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.231740 seconds.
+  path: Assets/Scenes/EndScene.unity
+  artifactKey: Guid(d3afdd78158eb421b8fb05db919be4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/EndScene.unity using Guid(d3afdd78158eb421b8fb05db919be4eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77d483ffc786f89b796486ddd8966068') in 0.001188 seconds 
 ========================================================================
 Received Prepare
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 12.86 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
+Refreshing native plugins compatible for Editor in 5.34 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
 Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.8 KB). Loaded Objects now: 5603.
-Memory consumption went from 105.9 MB to 105.8 MB.
-Total: 7.100333 ms (FindLiveObjects: 0.181833 ms CreateObjectMapping: 0.063458 ms MarkObjects: 6.706458 ms  DeleteObjects: 0.147916 ms)
+Unloading 58 unused Assets / (130.6 KB). Loaded Objects now: 5530.
+Memory consumption went from 82.1 MB to 81.9 MB.
+Total: 8.866541 ms (FindLiveObjects: 0.299167 ms CreateObjectMapping: 0.059250 ms MarkObjects: 8.397584 ms  DeleteObjects: 0.110209 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -2370,12 +725,32 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 6.24 ms, found 4 plugins.
-Preloading 1 native plugins for Editor in 0.17 ms.
+Refreshing native plugins compatible for Editor in 4.97 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.20 ms.
 Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 58 unused Assets / (138.8 KB). Loaded Objects now: 5603.
-Memory consumption went from 105.9 MB to 105.8 MB.
-Total: 8.487667 ms (FindLiveObjects: 0.291708 ms CreateObjectMapping: 0.062708 ms MarkObjects: 7.985917 ms  DeleteObjects: 0.146792 ms)
+Unloading 58 unused Assets / (130.7 KB). Loaded Objects now: 5530.
+Memory consumption went from 82.1 MB to 81.9 MB.
+Total: 9.107417 ms (FindLiveObjects: 0.233792 ms CreateObjectMapping: 0.060083 ms MarkObjects: 8.379875 ms  DeleteObjects: 0.433083 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 11.59 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.19 ms.
+Unloading 58 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (130.7 KB). Loaded Objects now: 5530.
+Memory consumption went from 82.1 MB to 81.9 MB.
+Total: 9.437959 ms (FindLiveObjects: 0.256834 ms CreateObjectMapping: 0.063583 ms MarkObjects: 8.989458 ms  DeleteObjects: 0.127667 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 

@@ -16,6 +16,7 @@
 		<type fullname="BluetoothPermissionScript" preserve="nothing"/>
 		<type fullname="changeReferenceText" preserve="nothing"/>
 		<type fullname="ChangeText" preserve="nothing"/>
+		<type fullname="DontDestroyOnLoadScript" preserve="nothing"/>
 		<type fullname="EndButton" preserve="nothing"/>
 		<type fullname="EndNumpad" preserve="nothing"/>
 		<type fullname="GenderChoice" preserve="nothing"/>
