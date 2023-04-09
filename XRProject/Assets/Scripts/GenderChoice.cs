@@ -7,8 +7,8 @@ public class GenderChoice : MonoBehaviour
 {
     public TextMeshPro button;
     public GameObject nextButton;
-    TextMeshPro selectedButton;
-    Color normalColor;
+    static TextMeshPro selectedButton;
+    static Color normalColor;
     public static string selection = "";
     void Start()
     {
@@ -29,8 +29,6 @@ public class GenderChoice : MonoBehaviour
         }
         normalColor = button.color;
         button.color = Color.red;
-        button.outlineWidth = 0.2f;
-        button.outlineColor = Color.red;
         selection = button.text;
         selectedButton = button;
     }

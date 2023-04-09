@@ -75,6 +75,8 @@ private bool TimeBool=true;
 private string PID;
 public string Scene_No;
 private string url="https://neu.co1.qualtrics.com/jfe/form/SV_3fT8qgIOPUgibki";
+private string url_individual = "https://neu.co1.qualtrics.com/jfe/form/SV_6lCYN1hr4cJqQD4";
+    
 public TextMeshPro buttons;
 
     // Start is called before the first frame update
@@ -107,6 +109,7 @@ public TextMeshPro buttons;
                 TimeTaken=Time.time-StartTime;
                 Wpm[index%7] = CalculateWpm(typedText.text, TimeTaken);
                 ErrorRate[index%7] = CalculateErrorRate(textArray[index], typedText.text);
+                StartCoroutine(sendQualtricsDataIndividually(TimeTaken.ToString(), CalculateErrorRate(textArray[index], typedText.text).ToString(), textArray[index], typedText.text));
                 index += 1;
                 textToEnter.text = textArray[index];
                 typedText.text = "Enter Text...";
@@ -119,6 +122,7 @@ public TextMeshPro buttons;
                 Wpm[index%7] = CalculateWpm(typedText.text, TimeTaken);
                 ErrorRate[index%7] = CalculateErrorRate(textArray[index], typedText.text);
                 numpad.SetActive(true);
+                StartCoroutine(sendQualtricsDataIndividually(TimeTaken.ToString(), CalculateErrorRate(textArray[index], typedText.text).ToString(), textArray[index], typedText.text));
                 infoText.text = "Kindly rest for 2-3 mintues before submission";
                 textToEnter.text = "On the sacle of 1-9 Please rate how accessible was the keyboard?";
                 textToEnter.fontSize = 12;
@@ -128,6 +132,7 @@ public TextMeshPro buttons;
                 keyboard.SetActive(false);
                 nextButton.SetActive(false);
                 index += 1;
+
             }
             else if(index % 7 == 6)
             {
@@ -141,18 +146,36 @@ public TextMeshPro buttons;
                 TimeTaken = Time.time - StartTime;
                 Wpm[index%7] = CalculateWpm(typedText.text, TimeTaken);
                 ErrorRate[index%7] = CalculateErrorRate(textArray[index], typedText.text);
+                StartCoroutine(sendQualtricsDataIndividually(TimeTaken.ToString(), CalculateErrorRate(textArray[index], typedText.text).ToString(), textArray[index], typedText.text));
                 index += 1;
                 textToEnter.text = textArray[index];
-                typedText.text = "Enter Text...";
                 TimeBool = true;
+                typedText.text = "Enter Text...";
+
             }
 
 
         }
 
     }
-    
-   public IEnumerator sendQualtricsData()
+    public IEnumerator sendQualtricsDataIndividually(string Type_Time,string Error_Rate,string Actual_text, string Typed_text)
+    {
+        WWWForm survey = new WWWForm();
+
+        survey.AddField("PID", PID);
+        survey.AddField("Scene_No", Scene_No);
+        survey.AddField("Type_Time", Type_Time);
+        survey.AddField("Error_Rate", Error_Rate);
+        survey.AddField("Actual_text", Actual_text);
+        survey.AddField("Typed_text", Typed_text);
+        //Debug.Log(url);
+        UnityWebRequest form = UnityWebRequest.Post(url_individual, survey);
+        //Debug.Log(form.ToString());
+
+        yield return form.SendWebRequest();
+    }
+
+    public IEnumerator sendQualtricsData()
     {
         WWWForm survey = new WWWForm();
        
@@ -170,7 +193,7 @@ public TextMeshPro buttons;
    
    private static float CalculateErrorRate(string presentedText, string transcribedText)
    {
-       int msd = CalculateMsd(presentedText, transcribedText);
+       int msd = CalculateMsd(presentedText.ToLower(), transcribedText.ToLower());
        int maxLen = Mathf.Max(presentedText.Length, transcribedText.Length);
        float errorRate = 100f * (float)msd / (float)maxLen;
        return errorRate;

@@ -55,7 +55,7 @@ public class SceneSelector : MonoBehaviour
 
             if (hand.IsTracked)
             {
-                textDisplay.text = "Click on continue to go to next Keyboard";
+                textDisplay.text = "Move to the next keyboard where the user will use \"hands\", simply click the \"next\" button.";
                 nextObject.SetActive(true);
             }
         }
@@ -64,7 +64,7 @@ public class SceneSelector : MonoBehaviour
             textDisplay.text = "Wait untill detect Controllers ....";
             if (controller.activeSelf)
             {
-                textDisplay.text = "Click on continue to go to next Keyboard";
+                textDisplay.text = "Move to the next keyboard where the user will use \"controllers\", simply click the \"next\" button.";
                 nextObject.SetActive(true);
 
             }
