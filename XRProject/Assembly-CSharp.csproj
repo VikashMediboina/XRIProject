@@ -180,6 +180,7 @@
     <Compile Include="Assets/Scripts/GenderChoice.cs" />
     <Compile Include="Assets/Oculus/SampleFramework/Core/DebugUI/Scripts/LaserPointer.cs" />
     <Compile Include="Assets/Oculus/SampleFramework/Core/Locomotion/Scripts/TeleportTransition.cs" />
+    <Compile Include="Assets/Scripts/HandDetector.cs" />
     <Compile Include="Assets/Bhaptics/SDK/Scripts/HapticSource.cs" />
     <Compile Include="Assets/Bhaptics/SDK/Examples/Scripts/BhapticsWidgetInstiate.cs" />
     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/SelectionCylinder.cs" />
@@ -193,6 +194,7 @@
     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/BrushController.cs" />
     <Compile Include="Assets/Oculus/SampleFramework/Usage/TouchPro/Scripts/SceneSettings.cs" />
     <Compile Include="Assets/Oculus/SampleFramework/Core/HandsInteraction/Scripts/ButtonTriggerZone.cs" />
+    <Compile Include="Assets/Scripts/DontDestroyOnLoadScript.cs" />
     <Compile Include="Assets/Bhaptics/SDK/Scripts/BhapticsVisualizer.cs" />
     <Compile Include="Assets/Scripts/EnableInteractable.cs" />
     <Compile Include="Assets/Oculus/SampleFramework/Usage/Firebase/AnalyticsUI.cs" />
@@ -270,8 +272,6 @@
     <Compile Include="Assets/Oculus/SampleFramework/Usage/Passthrough/Scripts/SelectivePassthroughExperience.cs" />
     <Compile Include="Assets/Bhaptics/SDK/Examples/Scripts/BhapticsVisualFeedbackOnMotors.cs" />
     <Compile Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Scripts/TrackSegment.cs" />
-    <Compile Include="Assets/Scripts/HandDetector.cs" />
-    <Compile Include="Assets/Scripts/DontDestroyOnLoadScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Oculus/SampleFramework/Usage/HandsTrainExample/Shaders/XingLightShader.shader" />

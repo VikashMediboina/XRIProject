@@ -954,7 +954,6 @@ IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_
 IL2CPP_EXTERN_C RuntimeClass* WWWForm_t0DAE123504AB1B2BC17C18714741B92AB3B3B045_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* changeReferenceText_tE76D98B90EC3CF001ADC9788DCF22B61CE9F770D_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C String_t* _stringLiteral0411D635335360C0092B621179FD0730AFE34B72;
 IL2CPP_EXTERN_C String_t* _stringLiteral05C50615D1EA91C839C560A0FAEDC32D1E9B2265;
 IL2CPP_EXTERN_C String_t* _stringLiteral09684B67A5909FD48E1F14A8AF8DDD483C620B10;
 IL2CPP_EXTERN_C String_t* _stringLiteral0E45C94732A542DCA9289C311C0D1F2DD4D4EC64;
@@ -1028,6 +1027,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral5CDE7EAA0146D59FB3730E6A86AAE577BAD19E5A
 IL2CPP_EXTERN_C String_t* _stringLiteral5DACE5D7A672D8A438A89B03F6E2AE5BC4206EA0;
 IL2CPP_EXTERN_C String_t* _stringLiteral5E59A9F9DA37A05B58E7A1FCC2DE7D33725F73CA;
 IL2CPP_EXTERN_C String_t* _stringLiteral62ACE5B7A5F7EA020973944952499E14B4C26D58;
+IL2CPP_EXTERN_C String_t* _stringLiteral635DE183210CAD3093F6BD81192DFA801429F601;
 IL2CPP_EXTERN_C String_t* _stringLiteral6419EFF794B97CBA6DF3ADB0F2BA840DC6AE5EEE;
 IL2CPP_EXTERN_C String_t* _stringLiteral6571AE939292848EBB3B5D0ADC71FE4C53B6929A;
 IL2CPP_EXTERN_C String_t* _stringLiteral65B765E57FB5C4FD535DD94284BB778550277D81;
@@ -1103,7 +1103,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralCD77E18A15FD928FA3C84EE9AE3D12A241A8241F
 IL2CPP_EXTERN_C String_t* _stringLiteralCEE4BEC9969079A1DA2F65E0F044E4FF1AF5EEAE;
 IL2CPP_EXTERN_C String_t* _stringLiteralCF342E4353D346C139B692A20A6790AA0FCD835D;
 IL2CPP_EXTERN_C String_t* _stringLiteralD05FC7829399E1576ACA86331DB31E493BBD0B13;
-IL2CPP_EXTERN_C String_t* _stringLiteralD197B9E935E0ECC3739D25026474289AFF902529;
 IL2CPP_EXTERN_C String_t* _stringLiteralD1C27252A3198C020E606E6F1791AAAE544FAB69;
 IL2CPP_EXTERN_C String_t* _stringLiteralD24A9783E65125D03FDD17F1930CBAE06AB93DA8;
 IL2CPP_EXTERN_C String_t* _stringLiteralD5D2875F228D651E1289522AEAAB8C492001C1BE;
@@ -1137,6 +1136,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralF4DF35E4FFFCB87F475B433F31A6B3ED71EF06EC
 IL2CPP_EXTERN_C String_t* _stringLiteralF8851D9BD6F74890B3B8707221A22FD5C9A3A894;
 IL2CPP_EXTERN_C String_t* _stringLiteralF944DCD635F9801F7AC90A407FBC479964DEC024;
 IL2CPP_EXTERN_C String_t* _stringLiteralF96D56179982327DA4DB9A216A4C13A5C87329D4;
+IL2CPP_EXTERN_C String_t* _stringLiteralFAF371ADD8BFFC9B79548F9FADFFF690929ADF1C;
 IL2CPP_EXTERN_C String_t* _stringLiteralFCA440D9A4F7E2D10772A726D6FB427BAE128D34;
 IL2CPP_EXTERN_C String_t* _stringLiteralFD60316EE3ADB7B16A998DF8AE0D68C293F6622E;
 IL2CPP_EXTERN_C String_t* _stringLiteralFF465BC16AF3F1D459327FD82B70597E6F388182;
@@ -23712,15 +23712,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneSelector_Update_mB1623E90FB9B086FC3
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_mB63183A9151F4345A9DD444A7CBE0D6E03F77C7C_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m21AEC50E791371101DC22ABCF96A2E46800811F8_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneSelector_tE51731A7E84DFAC7C7326F61E8527E39B84613B3_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0411D635335360C0092B621179FD0730AFE34B72);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral05C50615D1EA91C839C560A0FAEDC32D1E9B2265);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0FDF08723B74D7302B706E2FF48741A13AD35C77);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral26F78F7CB4F6E3AD4EEFB9FA95BCBE8DBBF71B0A);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5CDE7EAA0146D59FB3730E6A86AAE577BAD19E5A);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral635DE183210CAD3093F6BD81192DFA801429F601);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB72F31F1F74B2629FDA1E6C46CCF1E363DF21EAD);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCD350788B8A8C1C600DAC6A1DBC10F43EE4A821C);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD197B9E935E0ECC3739D25026474289AFF902529);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF423EB75E0460050383A7DCE48C2A3CE1556B1DD);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFAF371ADD8BFFC9B79548F9FADFFF690929ADF1C);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -23795,10 +23795,10 @@ IL_005f:
 		}
 	}
 	{
-		// textDisplay.text = "Move to the next keyboard where the user will use hands, simply click the \"next\" button.";
+		// textDisplay.text = "Move to the next keyboard where the user will use \"hands\", simply click the \"next\" button.";
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_15 = __this->___textDisplay_8;
 		NullCheck(L_15);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_15, _stringLiteralD197B9E935E0ECC3739D25026474289AFF902529);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_15, _stringLiteralFAF371ADD8BFFC9B79548F9FADFFF690929ADF1C);
 		// nextObject.SetActive(true);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_16 = __this->___nextObject_11;
 		NullCheck(L_16);
@@ -23854,10 +23854,10 @@ IL_00d2:
 		}
 	}
 	{
-		// textDisplay.text = "Move to the next keyboard where the user will use controllers, simply click the \"next\" button.";
+		// textDisplay.text = "Move to the next keyboard where the user will use \"controllers\", simply click the \"next\" button.";
 		TextMeshPro_t4560AB28A3EAF503895A781A9C625273D833270E* L_28 = __this->___textDisplay_8;
 		NullCheck(L_28);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_28, _stringLiteral0411D635335360C0092B621179FD0730AFE34B72);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_28, _stringLiteral635DE183210CAD3093F6BD81192DFA801429F601);
 		// nextObject.SetActive(true);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = __this->___nextObject_11;
 		NullCheck(L_29);
